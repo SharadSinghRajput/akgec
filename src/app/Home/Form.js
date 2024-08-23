@@ -46,7 +46,7 @@ export default function Form() {
   };
 
   return (
-    <div className="flex items-center justify-center h-full ">
+    <div className="flex items-center justify-center h-full pb-4 md:pt-20">
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full overflow-hidden">
         <div className='bg-gray-100 flex flex-col justify-center items-center p-8 pb-4'>
           <h2 className="text-sm font-normal text-center">

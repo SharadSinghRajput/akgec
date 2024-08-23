@@ -165,7 +165,7 @@ export default function Example() {
                         className={`text-white font-bold  ${isScrolled ? "text-sm" : "text-base"
                           }`}
                       >
-                        1800121288800
+                        1800-200-0777
                       </p>
                     </div>
                   </div>

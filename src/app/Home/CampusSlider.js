@@ -38,13 +38,13 @@ const CartData = [
 
 export default function Example() {
     return (
-        <div className="bg-white py-14">
+        <div className="bg-white py-8">
             <div className="">
-                <div className='max-w-4xl mx-auto relative z-10 pb-10 max-lg:px-5'>
-                    <h2 className="text-2xl font-extralight text-center tracking-tight text-gray-900 sm:text-4xl">
+                <div className='max-w-4xl mx-auto relative z-10 max-lg:px-5'>
+                    <h2 className="text-lg font-extralight text-center tracking-tight text-gray-900 sm:text-4xl">
                         Uniting Students & Faculty from Every Corner of India and Around the World!
                     </h2>
-                    <p className="mt-2 mb-6 text-xl text-gray-600 px-6 sm:px-20 text-center font-extralight">
+                    <p className="mt-2 mb-6 text-sm sm:text-xl text-gray-600 px-6 sm:px-20 text-center font-extralight">
                         Bringing together students from around the world, our platform creates a dynamic network with unparalleled learning opportunities and experiences.
                     </p>
                 </div>
@@ -55,11 +55,11 @@ export default function Example() {
                             src={product.imageSrc}
                             className="object-cover object-center h-full rounded-lg max-lg:rounded-none w-full"
                         />
-                        <div className="absolute max-lg:relative max-lg:bg-white max-lg:rounded-none inset-0 pb-10 pl-10 flex flex-col items-start justify-end bg-black bg-opacity-50 rounded-lg p-4">
-                            <h2 className="text-white max-lg:text-gray-800 text-2xl  md:text-2xl lg:text-3xl font-light mb-2">
+                        <div className="absolute max-lg:relative max-lg:bg-white max-lg:rounded-none inset-0 pb-8 pl-10 flex flex-col items-start justify-end bg-black bg-opacity-50 rounded-lg p-4">
+                            <h2 className="text-white max-lg:text-gray-800 text-lg md:text-2xl lg:text-3xl font-light mb-2">
                                 World-Class Campus
                             </h2>
-                            <p className="text-white max-lg:text-gray-800 text-xl md:text-base lg:text-base font-light mb-2 w-full ">
+                            <p className="text-white max-lg:text-gray-800 text-sm md:text-base lg:text-base font-light mb-2 w-full ">
                                 AKGEC's global student body fosters personal growth through diverse cultural interactions, spanning regions across India and beyond.
                             </p>
                         </div>
