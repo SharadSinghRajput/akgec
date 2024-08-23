@@ -1,0 +1,162 @@
+"use client";
+import { useState } from 'react';
+
+const programData = [
+  {
+    discipline: 'B.Tech',
+    programs: [
+      "B.Tech Computer Science and Engineering",
+      "B.Tech Computer Science and Engineering (Artificial Intelligence & Machine Learning)",
+      "B.Tech Computer Science and Engineering (Data Science)",
+      "B.Tech Computer Science",
+      "B.Tech Computer Science and Engineering (Hindi)",
+      "B.Tech Artificial Intelligence & Machine Learning",
+      "B.Tech Information Technology",
+      "B.Tech Computer Science and Information Technology",
+      "B.Tech Electronics and Communication Engineering",
+      "B.Tech Mechanical Engineering",
+      "B.Tech Electrical and Electronics Engineering",
+      "B.Tech Civil Engineering"
+    ]
+  },
+  {
+    discipline: 'M.Tech',
+    programs: [
+      "M.Tech Computer Science and Engineering",
+      "M.Tech Electrical and Electronics Engineering",
+      "M.Tech Electronics and Communication Engineering",
+      "M.Tech Mechanical Engineering"
+    ]
+  },
+  {
+    discipline: 'Master of Computer Applications (MCA)',
+    programs: ["MCA"]
+  }
+];
+
+export default function Form() {
+  const [selectedDiscipline, setSelectedDiscipline] = useState('');
+  const [programs, setPrograms] = useState([]);
+
+  const handleDisciplineChange = (e) => {
+    const selected = e.target.value;
+    setSelectedDiscipline(selected);
+    const selectedPrograms = programData.find(p => p.discipline === selected)?.programs || [];
+    setPrograms(selectedPrograms);
+  };
+
+  return (
+    <div className="flex items-center justify-center h-full ">
+      <div className="bg-white rounded-lg shadow-lg max-w-md w-full overflow-hidden">
+        <div className='bg-gray-100 flex flex-col justify-center items-center p-8 pb-4'>
+          <h2 className="text-sm font-normal text-center">
+            APPLY TODAY FOR
+          </h2>
+          <h1 className="font-bold text-center text-xl">
+            AKG UNIVERSITY PROGRAMS
+          </h1>
+          <p className="bg-blue-800 text-white text-center mb-6 text-sm w-max py-1 px-2 rounded-sm mt-2">
+            Registration End Date (Phase-II) - 30 Aug 2024
+          </p>
+        </div>
+
+        <form className='p-8'>
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <input
+              type="text"
+              placeholder="Enter your Name"
+              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+            />
+            <input
+              type="email"
+              placeholder="Enter your Email Address"
+              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <input
+              type="tel"
+              placeholder="Enter Mobile No"
+              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+            />
+            <input
+              type="text"
+              placeholder="Type your city & select..."
+              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <select
+              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+              value={selectedDiscipline}
+              onChange={handleDisciplineChange}
+            >
+              <option value="">Select Discipline</option>
+              {programData.map((item, index) => (
+                <option key={index} value={item.discipline}>
+                  {item.discipline}
+                </option>
+              ))}
+            </select>
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light">
+              <option value="">Select Program</option>
+              {programs.map((program, index) => (
+                <option key={index} value={program}>
+                  {program}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 mb-6">
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light">
+              <option>DD</option>
+              {[...Array(31)].map((_, i) => (
+                <option key={i}>{String(i + 1).padStart(2, '0')}</option>
+              ))}
+            </select>
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light">
+              <option>MM</option>
+              {[
+                'January',
+                'February',
+                'March',
+                'April',
+                'May',
+                'June',
+                'July',
+                'August',
+                'September',
+                'October',
+                'November',
+                'December',
+              ].map((month, i) => (
+                <option key={i}>{month}</option>
+              ))}
+            </select>
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light">
+              <option>YYYY</option>
+              {Array.from({ length: 100 }, (_, i) => 2024 - i).map((year) => (
+                <option key={year}>{year}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="flex justify-between items-center gap-6">
+            <button
+              type="submit"
+              className="bg-blue-800 text-white font-semibold py-2 px-2 md:px-8 text-xs lg:px-10 md:text-base rounded-md"
+            >
+              REGISTER NOW
+            </button>
+            <a href="#" className="text-sm text-gray-600 underline">
+              ALREADY REGISTERED
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}
