@@ -216,18 +216,18 @@ export default function SlickSlider() {
                 </figure>
                 <div className="py-1 ml-3">
                   <h2 className="uppercase text-center font-bold text-lg max-2xl:text-[14px] max-xl:text-[14px] max-sm:text-[12px] text-white">
-                    AKGEC University is the{" "}
+                    AKGEC hosts ACET 2024:{" "}
                     <span className="text-orange-300">
-                      Official Coordination Office for UNA
+                      1st International Conference
                     </span>{" "}
-                    in India
+                    on Advanced Computing and Emerging Technologies
                   </h2>
                 </div>
               </div>
               <figure className="h-full w-full max-2xl:h-48">
                 <img
                   className="rounded-xl max-2xl:h-full ml-auto max-lg:w-full max-lg:ml-0 object-cover"
-                  src="https://www.cuchd.in/latest-assets/images/una-bg.webp"
+                  src="/image/ajay-kumar-garg-750x375-1.jpg"
                   alt="UNA Background"
                 />
               </figure>

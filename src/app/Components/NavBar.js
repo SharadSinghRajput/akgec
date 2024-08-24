@@ -881,7 +881,7 @@ export default function Example() {
               </li>
               <li className="relative group">
                 <button className="px-3 py-2 focus:outline-none text-white text-xs">
-                  CAMPUS LIFECareer Opportunities
+                  CAMPUS LIFE
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
