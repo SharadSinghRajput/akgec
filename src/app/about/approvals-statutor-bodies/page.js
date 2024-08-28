@@ -3,6 +3,7 @@ import Header from '../../Components/Header';
 import { AboutSideBar } from '../../Components/AboutSideBar';
 import Breadcrumb from '../../Components/Breadcrumb';
 
+
 const ButtoName = {
   name: "Apply Now",
   Link: "",
@@ -20,6 +21,7 @@ const BreadCrumb = [
 export default function Home() {
   return (
     <>
+    
       <Header title={"Approvals by Statutory Bodies"} />
       <div className="max-w-[1400px] w-full mx-auto pt-16 p-5">
         <Breadcrumb data={BreadCrumb} />
