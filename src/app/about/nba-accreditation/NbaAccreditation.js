@@ -2,19 +2,19 @@ export const NbaAccreditation = () => {
     return (
         <>
             <section>
-                <div className="flex bg-gray-50 w-full">
-                    <div className="p-6 bg-gray-50">
-                        <h2 className="text-xl md:text-3xl mb-9 text-center">REGARDING NBA ACCREDITATION</h2>
-                        <p className="text-base mb-4">All students are hereby informed that following B.tech branches are NBA accredited upto June 2025.</p>
+                <div className="flexw-full">
+                    <div className="">
+                        <h2 className="text-xl md:text-2xl mb-4">REGARDING NBA ACCREDITATION</h2>
+                        <p className="text-sm mb-4">All students are hereby informed that following B.tech branches are NBA accredited upto June 2025.</p>
                         <table className="w-full bg-white border border-gray-200 shadow-md rounded-lg">
                             <thead className="text-white bg-indigo-900">
                                 <tr>
-                                    <th className="py-2 px-4 border-b-4">S.No.</th>
-                                    <th className="py-2 px-4 border-b-4 border-l">Name of the Program</th>
-                                    <th className="py-2 px-4 border-b-4 border-l">Accrediation Status</th>
+                                    <th className="py-2 px-4 font-normal text-sm border-b-4">S.No.</th>
+                                    <th className="py-2 px-4 font-normal text-sm border-b-4 border-l">Name of the Program</th>
+                                    <th className="py-2 px-4 font-normal text-sm border-b-4 border-l">Accrediation Status</th>
                                 </tr>
                             </thead>
-                            <tbody className="text-white bg-blue-950">
+                            <tbody className="text-white bg-blue-950 text-sm font-light">
                                 <tr>
                                     <td className="py-2 px-4 border-b border-r border-gray-300 border-opacity-50 text-center">1</td>
                                     <td className="py-2 px-4 border-b border-r border-gray-300 border-opacity-50 text-start">Computer Science & Engineering</td>

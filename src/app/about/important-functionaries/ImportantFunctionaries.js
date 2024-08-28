@@ -132,23 +132,22 @@ const managementTeam = [
         imageUrl: '/image/6690538.png'
     }
 ];
-
-
-
 export default function ImportantFunctionaries() {
     return (
         <div>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div>
                 <ul
                     role="list"
-                    className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
+                    className="grid grid-cols-5 gap-4"
                 >
                     {managementTeam.map((person) => (
-                        <li key={person.name} className="border shadow-xl rounded-lg p-4 text-center">
-                            <img alt="" src={person.imageUrl} className="aspect-[14/13] w-full rounded-2xl object-contain" />
-                            <h3 className="mt-6 text-lg font-semibold text-gray-500 leading-8 tracking-tight">{person.name}</h3>
-                            <p className="text-base leading-7 text-gray-500">{person.role}</p>
-                            <p className="text-base leading-7 text-gray-500">{person.contact}</p>
+                        <li key={person.name} className="border border-gray-300 shadow-lg rounded-md">
+                            <img alt="" src={person.imageUrl} className="w-full aspect-square p-5 object-cover" />
+                            <div className="p-4">
+                                <h3 className="font-normal text-sm text-gray-900">{person.name}</h3>
+                                <p className="font-normal text-xs text-gray-800">{person.role}</p>
+                                <p className="font-bold text-xs text-gray-800">{person.contact}</p>
+                            </div>
 
                         </li>
                     ))}

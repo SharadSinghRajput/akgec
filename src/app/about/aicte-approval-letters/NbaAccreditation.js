@@ -30,12 +30,9 @@ const data = [
 export default function ApprovalLetter() {
     return (
         <>
-            <div className="flex items-center justify-center bg-gray-50">
-                <div className="p-6 bg-gray-50 shadow-md w-full">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-                        AICTE Approval Letters
-                    </h2>
-                    <table className="w-full bg-white border border-gray-200 shadow-md mt-10 rounded-lg">
+            <div className="flex items-center justify-center ">
+                <div className=" w-full">
+                    <table className="w-full bg-white border border-gray-200 shadow-md rounded-lg">
                         <thead className="text-white bg-indigo-900">
                             <tr>
                                 <th className="py-2 px-4 border-b-4">S.No.</th>
@@ -43,10 +40,10 @@ export default function ApprovalLetter() {
                                 <th className="py-2 px-4 border-b-4 border-l">Links</th>
                             </tr>
                         </thead>
-                        <tbody className="text-white bg-blue-950">
+                        <tbody className="text-white bg-blue-950 text-sm font-light">
                             {data.map((item) => (
                                 <tr key={item.id}>
-                                    <td className="py-2 px-4 border-b border-r border-gray-300 border-opacity-50 text-center">
+                                    <td className="py-2 w-14 px-4 border-b border-r border-gray-300 border-opacity-50 text-center">
                                         {item.id}
                                     </td>
                                     <td className="py-2 px-4 border-b border-r border-gray-300 border-opacity-50 text-center">

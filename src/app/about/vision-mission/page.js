@@ -13,7 +13,7 @@ const BreadCrumb = [
     Link: "",
   },
   {
-    name: "LeaderShip",
+    name: "Vision & Mission",
     Link: "about",
   }
 

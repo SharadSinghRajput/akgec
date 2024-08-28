@@ -169,8 +169,6 @@ const committee = [
     }
 ];
 
-
-
 export default function Management() {
     return (
         <div className=" flex flex-col gap-10">

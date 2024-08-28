@@ -28,32 +28,27 @@ const people = [
 
 export default function Example() {
     return (
-        <div className="bg-white py-24 sm:py-32">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl sm:text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Approvals by Statutory Bodies</h2>
-                </div>
-                <ul
-                    role="list"
-                    className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-10 xl:max-w-none"
-                >
-                    {people.map((person) => (
-                        <li key={person.name} className="flex flex-col gap-6 xl:flex-row border p-4">
-                            <img
-                                alt=""
-                                src={person.imageUrl}
-                                className="aspect-[4/5] w-52 flex rounded-2xl object-contain mx-auto lg:mx-0 lg:flex lg:items-center lg:justify-center"
-                            />
+        <div className="">
+            <ul
+                role="list"
+                className="grid grid-cols-2 gap-10"
+            >
+                {people.map((person) => (
+                    <li key={person.name} className="flex flex-col col-span-1 max-lg:col-span-2 gap-6 xl:flex-row border p-4 justify-start items-start">
+                        <img
+                            alt=""
+                            src={person.imageUrl}
+                            className="aspect-[4/5] w-32 flex rounded-2xl object-contain mx-auto lg:mx-0 lg:flex lg:items-center lg:justify-center"
+                        />
 
-                            <div className="flex-auto">
-                                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
-                                <p className="text-base leading-7 text-gray-600">{person.fullName}</p>
-                                <p className="mt-6 text-base leading-7 text-gray-600">{person.bio}</p>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+                        <div className="flex-auto">
+                            <h3 className="text-lg font-medium">{person.name}</h3>
+                            <p className="text-sm text-gray-600">{person.fullName}</p>
+                            <p className="mt-4 text-sm font-light  text-gray-600">{person.bio}</p>
+                        </div>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }
