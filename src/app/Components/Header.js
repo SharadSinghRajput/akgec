@@ -4,10 +4,10 @@ export default function Header({ title, Butto }) {
             <div className="absolute inset-0 -z-10 h-full w-full">
                 <img
                     alt=""
-                    src="/image/Building2.jpg"
+                    src="/image/header-img.jpg"
                     className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black opacity-70"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-white/0"></div>
             </div>
             <div
                 aria-hidden="true"
@@ -16,10 +16,10 @@ export default function Header({ title, Butto }) {
             </div>
             <div className="mx-auto max-w-7xl px-6 mt-36 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">{title}</h2>
+                    <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">{title}</h2>
                     {Butto ? <>
                         <a href={Butto.Link} target="_blank" rel="noopener noreferrer" >
-                            <button className="rounded-md bg-white/30 px-3.5 py-2.5 mt-4 text-sm font-semibold text-white shadow-sm hover:bg-white/20">{Butto.name}</button> 
+                            <button className="rounded-md bg-yellow-500 px-3.5 py-2.5 mt-4 text-sm font-semibold text-white shadow-sm hover:bg-white/20">{Butto.name}</button> 
                         </a>
                     </> : null}
                 </div>

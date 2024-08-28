@@ -2,26 +2,27 @@ export const LeaderShip = () => {
     return (
         <>
             <section className="grid grid-cols-1">
-                <div className="pt-6 ">
-                    <div className="grid grid-cols-1 md:grid-cols-2 2xl:pb-10 lg:grid-cols-2 sm:grid-cols-1 lg:flex-row w-full h-auto lg:h-6/6 border-b-2 mb-20 gap-7">
-                        <div className="w-full lg:w-full">
+                <div className="">
+                    <div className="grid grid-cols-8 gap-5 mb-20">
+                        <div className="col-span-3 max-md:col-span-8">
                             <div className="relative">
                                 <img
                                     src="/image/leadership/director-1.webp"
                                     alt="director-general"
-                                    className="w-full h-auto lg:h-3/5"
+                                    className="w-full aspect-square object-cover"
                                 />
-                                <div className="absolute bottom-0 left-0 w-full bg-white bg-opacity-70 p-2 rounded-b">
-                                    <p className="font-bold text-lg text-black">Dr R.K. Agarwal</p>
-                                    <p className="text-black text-sm">Director General, AKGEC</p>
+                                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-white/0 pt-16 p-4">
+                                    <p className="font-bold text-base text-white">Dr R.K. Agarwal</p>
+                                    <p className="text-white text-sm font-light">Director General, AKGEC</p>
                                 </div>
                             </div>
-                            <p className="w-full pt-1 text-start text-xs md:text-sm 2xl:text-sm">
-                                <cite>Dr. R.K. Agarwal has an exceptionally brilliant academic background with B.Tech from IIT Kanpur, M.S. from CIT, Cranfield, UK and PhD from IISc Bangalore. During his illustrious career of nearly three decades in the Indian Air Force and Defence Research & Development Organization (DRDO)</cite>
+                            <p className="w-full pt-1 text-start font-light text-xs md:text-sm 2xl:text-sm">
+                                <span className="font-bold text-6xl block font-serif italic">"</span>
+                                <cite className="-mt-5 block">Dr. R.K. Agarwal has an exceptionally brilliant academic background with B.Tech from IIT Kanpur, M.S. from CIT, Cranfield, UK and PhD from IISc Bangalore. During his illustrious career of nearly three decades in the Indian Air Force and Defence Research & Development Organization (DRDO)</cite>
                             </p>
                         </div>
 
-                        <div className="relative w-full lg:w-full h-[580px] md:h-[420px] 2xl:h-[700px] overflow-y-scroll mb-10 text-start text-xs md:text-sm scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300">
+                        <div className="relative col-span-5 max-md:col-span-8 h-full max-h-[550px] overflow-y-scroll text-sm font-light scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300 text-justify pr-5">
                             <p className="leading-relaxed text-gray-700">
                                 He has held various key appointments including Chief Engineering Officer of an Operational Base, Director (Engg) at Air HQ and Project Director at Centre for Airborne Systems. His vast managerial, administrative, research and academic experience includes teaching assignments at Air Force Technical College and nine years of pioneering R&D work on the prestigious AWACS project in DRDO. He has also been a member of the Aeronautical Research & Development Board (ARDB) panel for approval and review of sponsored research projects at various centres of Excellence established at IITs and CSIR Laboratories.
                             </p>
@@ -39,8 +40,8 @@ export const LeaderShip = () => {
                             </blockquote>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 2xl:pb-10 lg:grid-cols-2 sm:grid-cols-1 lg:flex-row w-full h-auto lg:h-6/6 border-b-2 mb-10 gap-7">
-                        <div className="relative w-full lg:w-full h-[580px] md:h-[420px] overflow-y-scroll mb-10 text-start text-xs md:text-sm 2xl:text-sm scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300">
+                    <div className="grid grid-cols-8 gap-5 mb-20 max-md:border-t-2 max-md:border-t-gray-200 pt-5">
+                        <div className="relative col-span-5 max-md:col-span-8 h-full max-h-[550px] overflow-y-scroll text-sm font-light scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300 text-justify pr-5">
                             <p className=" leading-relaxed text-gray-700">
                                 Graduating with honors in Electrical Engineering from Kurukshetra University in 2001, Dr. Ahuja's journey continued with an M.Tech. in Energy and Environmental Management from the Indian Institute of Technology, Delhi, in 2008. His exceptional academic prowess was recognized with the Prof. O.P. Gupta Gold Medal, an accolade bestowed upon him for achieving the highest CGPA during his M.Tech. program. Dr. Ahuja's academic pursuits culminated in a PhD from IIT Delhi in 2013, cementing his reputation as a dedicated scholar.
                             </p>
@@ -54,20 +55,21 @@ export const LeaderShip = () => {
                                 Dr. Hemant Ahuja's multifaceted expertise, dedication to academia, and active involvement in research and collaboration position him as a visionary leader at the helm of Ajay Kumar Garg Engineering College, driving excellence and innovation in engineering education.
                             </p>
                         </div>
-                        <div className="w-full lg:w-full">
+                        <div className="col-span-3 max-md:col-span-8">
                             <div className="relative">
                                 <img
                                     src="/image/leadership/Director_AKGEC.webp"
                                     alt="director-general"
-                                    className="w-full h-auto lg:h-3/5"
+                                    className="w-full aspect-square object-cover"
                                 />
-                                <div className="absolute bottom-0 left-0 w-full bg-white bg-opacity-70 p-2 rounded-b">
-                                    <p className="font-bold text-lg text-black">Dr. Hemant Ahuja</p>
-                                    <p className="text-black text-sm">Director, AKGEC</p>
+                                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-white/0 pt-16 p-4">
+                                    <p className="font-bold text-lg text-white">Dr. Hemant Ahuja</p>
+                                    <p className="text-white text-sm">Director, AKGEC</p>
                                 </div>
                             </div>
                             <p className="w-full pt-1 text-start text-xs md:text-sm 2xl:text-sm">
-                                <cite>Dr. Hemant Ahuja, the esteemed Director of Ajay Kumar Garg Engineering College, Ghaziabad, is a seasoned professional with an illustrious career spanning over 22 years in academia and industry.</cite>
+                                <span className="font-bold text-6xl block font-serif italic">"</span>
+                                <cite className="-mt-5 block">Dr. Hemant Ahuja, the esteemed Director of Ajay Kumar Garg Engineering College, Ghaziabad, is a seasoned professional with an illustrious career spanning over 22 years in academia and industry.</cite>
                             </p>
                         </div>
                     </div>
