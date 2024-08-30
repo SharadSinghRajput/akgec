@@ -75,7 +75,7 @@ export default function Example() {
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/image/slider-home/naac-a-logo.webp"
+                  src="/image/slider-home/a++.png"
                   alt="Chandigarh University Logo"
                   className="h-20 w-full object-contain"
                 />

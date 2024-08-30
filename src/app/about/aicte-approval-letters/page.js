@@ -17,7 +17,6 @@ const BreadCrumb = [
     Link: "about",
   }
 ]
-
 export default function Home() {
   return (
     <>
