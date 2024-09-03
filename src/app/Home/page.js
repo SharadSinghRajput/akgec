@@ -26,7 +26,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='w-full h-full object-cover absolute left-0 top-0 z-10 bg-gradient-to-r from-black/60 to-white/0 '></div>
+      <div className='w-full h-full object-cover absolute left-0 top-0 z-10 bg-gradient-to-r from-black/20 to-white/0 '></div>
       <Image src={Building} className='w-full h-full object-cover absolute left-0 top-0 z-0 animate-zoomInOut' />
     </div>
     <div>

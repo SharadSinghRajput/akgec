@@ -57,27 +57,27 @@ export default function Example() {
   return (
     <header
       className={`z-50 w-full fixed top-0 left-0 ${
-        isScrolled100 ? "bg-blue-900" : ""
+        isScrolled100 ? "bg-gray-950" : ""
       } transition-all duration-200`}
     >
       <div className="grid grid-cols-8 max-lg:grid-cols-3 gap-x-10">
         <div className="col-span-2 flex max-lg:col-span-1 max-sm:col-span-2 ">
           <div
-            className={`text-white py-3 max-sm:py-0 ${isScrolled ? "px-14" : ""} `}
+            className={`text-white py-3 max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
           >
-            <div className="flex justify-center gap-2">
+            <div className="flex justify-start items-center gap-2 pl-2">
               <div className="flex justify-center">
                 <img
-                  src="/image/akg-new.png"
+                  src="/image/akg-new-bg.png"
                   alt="Chandigarh University Logo"
                   className="h-16 w-full object-contain"
                 />
               </div>
               <div className="flex justify-center p-2">
                 <img
-                  src="/image/slider-home/naac-a-logo.webp"
+                  src="/image/naac-a-logo.png"
                   alt="Chandigarh University Logo"
-                  className="h-14 w-full object-contain"
+                  className="h-12 w-full object-contain"
                 />
               </div>
             </div>
