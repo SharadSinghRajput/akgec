@@ -5,7 +5,7 @@ const PlacementData = [
       company : "ATLASIAN",
       name : "Uttam Kumar",
       course : "CSE General",
-      salary : "₹36 LPA",
+      salary : "36",
       image_url : "image/student/1.png",
       Logo : "/image/slider-home/6.webp",
       G1 : "#0a65a4",
@@ -15,7 +15,7 @@ const PlacementData = [
       company : "PALOALTO NETWORKS",
       name : "Vandana Chauhan",
       course : "CSE General",
-      salary : "₹54.75 LPA",
+      salary : "54.75",
       image_url : "image/student/2.png",
       Logo : "/image/company-logos/MicrosoftIcon.webp",
       G1 : "#fbb03b",
@@ -25,7 +25,7 @@ const PlacementData = [
       company : "MICROSOFT",
       name : "Ameya Ohri",
       course : "CSE General Student",
-      salary : "₹52.11 LPA",
+      salary : "52.11",
       image_url : "image/student/3.png",
       Logo : "/image/company-logos/Adobe.webp",      
       G1 : "#0d254d",
@@ -35,7 +35,7 @@ const PlacementData = [
       company : "NUTANIX",
       name : "Gaurav Maheshwari",
       course : "",
-      salary : "₹24 LPA",
+      salary : "24",
       image_url : "image/student/4.png",
       Logo : "/image/company-logos/GoogleIcon.webp",
       G1 : "#f3f3f3",
@@ -44,30 +44,30 @@ const PlacementData = [
   ]
 export default function PlacementHighlights() {
     return (
-        <div className="grid grid-cols-10 ">
-            <div className="col-span-6 max-lg:col-span-10">
+        <div className="grid grid-cols-10 h-screen">
+            <div className="col-span-5 max-lg:col-span-10 ">
                 <div className="grid h-full grid-cols-1 sm:grid-cols-2">
                     {PlacementData.map((item, index)=>(
                         <div key={index} className={`relative max-full`}
                             style={{ background: `linear-gradient(to right, ${item.G1}, ${item.G2})` }}
                         >
-                            <img src={item.image_url} alt={item.name} className=" w-64 overflow-hidden  grayscale" />
+                            <img src={item.image_url} alt={item.name} className="mt-5 overflow-hidden  grayscale" />
                             <div className={`absolute top-10 right-5 p-4 ${index === 3 ? "text-[#212529]" : "text-white"} `}>
                                 <img
                                     src={item.Logo}
                                     alt="Ageas Federal"
-                                    className="h-14 w-36 bg-white object-contain p-1  rounded-lg"
+                                    className="h-16 w-48 bg-white object-contain  rounded-lg"
                                 />
-                                <h3 className="text-base font-bold mt-5">{item.name}</h3>
-                                <p className="text-xs font-normal">{item.course}</p>
-                                <p className="text-2xl font-bold">{item.salary}</p>
-                            </div>
+                                <h3 className="text-2xl font-novaBold mt-2">{item.name}</h3>
+                                <p className="text-xs font-novaReg">- {item.course}</p>
+                                <p className="text-4xl font-novaBold"><sup className="font-novaBold text-lg">₹</sup>{item.salary} <small className="font-novaSemi text-lg">LPA</small></p>
+                            </div>m
                         </div>
                     ))}
                     
                 </div>
             </div>
-            <div className="col-span-4 items-center text-white p-20 max-lg:col-span-10 max-md:p-5 bg-BG2 bg-no-repeat bg-cover">
+            <div className="col-span-5 items-center text-white p-20 max-lg:col-span-10 max-md:p-5 bg-BG2 bg-no-repeat bg-cover">
                 <div className="">
                     <h2 className="text-3xl font-extralight">Placements Overview</h2>
                     <p className="text-xl font-extralight">Record-Breaking Achievements and Industry-Driven Success</p>
