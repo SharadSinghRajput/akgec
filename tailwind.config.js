@@ -26,6 +26,15 @@ module.exports = {
       novaLight: ['nova-light', 'proximanova-light'],
       novaThin: ['nova-thin', 'proximanova-thin'],
     },
+    keyframes: {
+      zoomInOut: {
+        '0%, 100%': { transform: 'scale(1)' },
+        '50%': { transform: 'scale(1.2)' },
+      },
+    },
+    animation: {
+      zoomInOut: 'zoomInOut 20s ease-in-out infinite',
+    },
   },
   plugins: [],
 };
