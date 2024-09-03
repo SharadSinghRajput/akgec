@@ -40,14 +40,14 @@ export const TopCard = () => {
                         <img
                             src="/image/card-1.jpg"
                             alt="card-top"
-                            className="w-full h-40 border rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out"
+                            className="w-full h-60 border rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out"
                         />
                     </div>
                     <div className="flex-1 p-2">
                         <img
                             src="/image/card-2.jpg"
                             alt="card-top"
-                            className="w-full h-40 border rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out"
+                            className="w-full h-60 border rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out"
                         />
                     </div>
                 </div>
