@@ -4,7 +4,7 @@ import {
   faAmazon,
   faGoogle,
   faMicrosoft,
-  faShopify
+  faShopify,
 } from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
 import {
@@ -56,40 +56,40 @@ export default function Example() {
 
   return (
     <header
-      className={`z-50 w-full fixed top-0 left-0 ${isScrolled100 ? "bg-blue-900" : ""
-        } transition-all duration-200`}
+      className={`z-50 w-full fixed top-0 left-0 ${
+        isScrolled100 ? "bg-blue-900" : ""
+      } transition-all duration-200`}
     >
-      <div className="grid grid-cols-8 max-lg:grid-cols-3">
-        <div className="col-span-2 flex max-lg:col-span-1 max-sm:col-span-2">
+      <div className="grid grid-cols-8 max-lg:grid-cols-3 gap-x-10">
+        <div className="col-span-2 flex max-lg:col-span-1 max-sm:col-span-2 ">
           <div
-            className={`text-white p-2 max-sm:py-0 ${isScrolled ? "" : "bg-white/10 backdrop-blur-3xl"
-              } `}
+            className={`text-white py-3 max-sm:py-0 ${isScrolled ? "px-14" : ""} `}
           >
-            <div className="flex gap-3">
+            <div className="flex justify-center gap-2">
               <div className="flex justify-center">
                 <img
                   src="/image/akg-new.png"
                   alt="Chandigarh University Logo"
-                  className="h-16 w-full object-contain bg-white px-2"
+                  className="h-16 w-full object-contain"
                 />
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center p-2">
                 <img
                   src="/image/slider-home/naac-a-logo.webp"
                   alt="Chandigarh University Logo"
-                  className="h-20 w-full object-contain"
+                  className="h-14 w-full object-contain"
                 />
               </div>
             </div>
             <div hidden={isScrolled} className="max-lg:hidden">
-              <div className="flex items-center ">
-                <div className="flex-grow border-t border-white opacity-60"></div>
-                <p className="mx-4 text-center opacity-60 text-[8px] ">
-                  Notification
+              <div className="flex items-center px-5">
+                <div className="flex-grow border-t border-white opacity-40"></div>
+                <p className="mx-4 text-center opacity-40 text-xs font-novaThin ">
+                  Notifications
                 </p>
-                <div className="flex-grow border-t border-white  opacity-60"></div>
+                <div className="flex-grow border-t border-white  opacity-40"></div>
               </div>
-              <p className="mx-4 font-extralight py-2 text-center text-[10px]">
+              <p className="font-novaReg mx-10 py-2 text-center text-[11px]">
                 The college was established in 1998 and offers B.Tech Courses in
                 all major disciplines of Engineering.
               </p>
@@ -110,71 +110,64 @@ export default function Example() {
         <div className="col-span-6 max-lg:col-span-1 max-md:col-span-2 max-lg:flex max-lg:items-center">
           <nav className="px-5 ">
             <div
-              className={` lg:flex lg:gap-x-8 justify-around items-center  py-2 ${isScrolled ? "" : "pt-4"
-                }`}
+              className={` lg:flex lg:gap-x-8 justify-between px-7 items-center  py-2 ${
+                isScrolled ? "" : "pt-4"
+              }`}
             >
-              <div className="hidden lg:flex gap-4 justify-start">
-                <a
-                  href="#"
-                  className="text-xs leading-6 uppercase text-white font-light"
-                >
+              <div className="hidden lg:flex gap-20 justify-start text-[13px] font-novaLight">
+                <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500 ">
                   Campus
                 </a>
-                <a
-                  href="#"
-                  className="text-xs leading-6 uppercase text-white font-light"
-                >
+                <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
                   Library
                 </a>
-                <a
-                  href="#"
-                  className="text-xs leading-6 uppercase text-white font-light"
-                >
+                <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
                   Student Services
                 </a>
-                <a
-                  href="#"
-                  className="text-xs leading-6 uppercase text-white font-light"
-                >
+                <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
                   Contact us
                 </a>
               </div>
               <div className="flex justify-center max-md:justify-start gap-4">
                 <div
-                  className={`flex items-center justify-center transition-all ${isScrolled ? "px-2 py-1" : "p-2"
-                    } bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full max-w-md mx-auto max-md:mx-0`}
+                  className={`flex items-center justify-center transition-all ${
+                    isScrolled ? "px-2 py-1" : "px-4 py-3"
+                  } bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full max-w-md mx-auto max-md:mx-0`}
                 >
                   <div className="flex items-center space-x-3">
                     <div
                       className={`bg-white  p-2 rounded-full flex items-center justify-center`}
                     >
                       <PhoneIcon
-                        className={`${isScrolled ? "h-3 w-3" : "h-5 w-5"
-                          } text-cyan-500`}
+                        className={`${
+                          isScrolled ? "h-3 w-3" : "h-5 w-5"
+                        } text-cyan-500`}
                         aria-hidden="true"
                       />
                     </div>
-                    <div className="">
+                    <div className="border-r pr-6 border-[#46a7d1] font-novaReg">
                       <p
-                        className={`text-white  ${isScrolled ? "text-[10px]" : "text-xs"
-                          }`}
+                        className={`text-white  ${
+                          isScrolled ? "text-[10px]" : "text-xs"
+                        }`}
                       >
                         Admission Helpline
                       </p>
                       <p
-                        className={`text-white font-bold  ${isScrolled ? "text-sm" : "text-base"
-                          }`}
+                        className={`text-white font-bold  ${
+                          isScrolled ? "text-sm" : "text-base leading-none"
+                        }`}
                       >
                         1800-200-0777
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center ml-3">
+                  <div className="flex items-center ml-3 ">
                     <button className="text-white p-2 rounded-full hover:bg-blue-700">
                       {/* Button content */}
                     </button>
                     <Bars3Icon
-                      className="text-white mr-2 h-6"
+                      className="text-white mr-2 h-8"
                       aria-hidden="true"
                     />
                   </div>
@@ -193,10 +186,11 @@ export default function Example() {
               </div>
             </div>
             <ul
-              className={`${BigMenuToggle
+              className={`${
+                BigMenuToggle
                   ? "fixed w-full h-full left-0 top-0 bg-blue-800 pt-10"
-                  : `hidden relative ${isScrolled ? "py-1" : "py-3 mt-4"}`
-                }  lg:flex items-center text-black font-semibold text-sm bg-white/10
+                  : `hidden relative ${isScrolled ? "py-1" : "py-0 mt-4 "}`
+              }  lg:flex items-center justify-between text-black font-semibold text-sm bg-white/10
                                         backdrop-blur-xl px-5 rounded-lg backdrop-contrast-125`}
             >
               {BigMenuToggle ? (
@@ -224,75 +218,91 @@ export default function Example() {
                 </>
               ) : null}
               <li className="relative group">
-                <button className="px-3 py-2 focus:outline-none text-white text-xs ">
-                  ABOUT
+                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                  ABOUT{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${
+                    BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
+                  } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-3">
                     <div className="col-span-2 max-md:col-span-3 pr-4 p-0 group-hover:p-5 transition-all">
                       <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
                         <div className="w-1/2 pr-4 max-md:w-full">
-                          <h3 className="font-bold text-md">WHO WE ARE</h3>
+                          <h3 className="font-bold">WHO WE ARE</h3>
                           <ul className="mt-2">
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Vision And Mission
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Director General
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Director
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Management
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Important Functionaries
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Approvals by Statutory Bodies
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               NBA Accreditation
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               AICTE Approval Letters
                             </li>
                           </ul>
                         </div>
                         <div className="w-1/2">
                           <div>
-                            <h3 className="font-bold text-md">VISUAL TOUR</h3>
+                            <h3 className="font-bold">VISUAL TOUR</h3>
                             <ul className="mt-2">
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Academic Complex
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Hostel
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Centres Of Excellence
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Faith Centre
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Support Facilities
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Stationary Shop
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 College Canteen
                               </li>
@@ -301,37 +311,37 @@ export default function Example() {
                         </div>
                         <div className="w-1/2">
                           <div>
-                            <h3 className="font-bold text-md">RELATED LINKS</h3>
+                            <h3 className="font-bold">RELATED LINKS</h3>
                             <ul className="mt-2">
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 AKGEC Visual Tour
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Centre of Excellence Visual Tour
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Mandatory Disclosure
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 NIRF Data for Ranking
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Grievance Committee
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Organisation Chart
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Testimonials
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Gallery
                               </li>
@@ -341,19 +351,19 @@ export default function Example() {
                       </div>
                     </div>
                     <div className="col-span-1 max-md:hidden">
-                      <div className="bg-About ">
+                      <div className="bg-About bg-cover">
                         <div className="flex flex-col items-center p-4">
                           <p className="flex flex-col">
-                            <span className="text-center font-normal text-base text-white">
+                            <span className="text-center font-normal text-xl font-novaReg text-white">
                               AKG University
                             </span>
-                            <span className="text-center font-bold text-xl text-cyan-500">
+                            <span className="text-center font-novaBold text-3xl text-cyan-500 leading-none">
                               of Excellence
                             </span>
                           </p>
                         </div>
                         <div className="grid grid-cols-2 bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6]">
-                          <div className="flex flex-col items-center text-white border-r border-t-white/50 p-7">
+                          <div className="flex flex-col items-center text-white border-r border-b border-t-white/50 p-7">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -368,7 +378,7 @@ export default function Example() {
                                 d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
                               />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-light">
+                            <span className="mt-2 text-xs text-white font-novaThin">
                               Human Dignity
                             </span>
                           </div>
@@ -390,11 +400,11 @@ export default function Example() {
                               <path d="m2 15 6 6" />
                               <path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-light">
+                            <span className="mt-2 text-xs text-white font-novaThin">
                               Empathy
                             </span>
                           </div>
-                          <div className="flex flex-col items-center text-white border-t border-t-white/50 p-7">
+                          <div className="flex flex-col items-center text-white border-r border-t-white/50 p-7">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="40"
@@ -413,11 +423,11 @@ export default function Example() {
                               <circle cx="16" cy="9" r="2.9" />
                               <circle cx="6" cy="5" r="3" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-light">
+                            <span className="mt-2 text-xs text-white font-novaThin">
                               Humility
                             </span>
                           </div>
-                          <div className="flex flex-col items-center text-white border-l border-t-white/50 p-7">
+                          <div className="flex flex-col items-center text-white border-t-white/50 p-7">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="40"
@@ -433,7 +443,7 @@ export default function Example() {
                               <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
                               <path d="M15.8 9.2a2.5 2.5 0 0 0-3.5 0l-.3.4-.35-.3a2.42 2.42 0 1 0-3.2 3.6l3.6 3.5 3.6-3.5c1.2-1.2 1.1-2.7.2-3.7" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-light">
+                            <span className="mt-2 text-xs text-white font-novaThin">
                               Giving
                             </span>
                           </div>
@@ -444,12 +454,28 @@ export default function Example() {
                 </div>
               </li>
               <li className="group">
-                <button className="px-3 py-2 focus:outline-none text-white text-xs">
-                  PROGRAMS
+                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                  PROGRAMS{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${
+                    BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
+                  } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
                   <div className="grid grid-cols-3">
@@ -458,28 +484,28 @@ export default function Example() {
                         <div className="w-1/2 pr-4 max-md:w-full ">
                           <h3 className="font-bold text-md">DEPARTMENTS</h3>
                           <ul className="mt-2">
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Applied Sciences & Humanities
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Civil Engineering
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Computer Science and Engineering
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Electronics and Communication Engineering
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Electrical and Electronics Engineering
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Information Technology
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Mechanical Engineering
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Master of Computer Applications
                             </li>
                           </ul>
@@ -488,19 +514,19 @@ export default function Example() {
                           <div>
                             <h3 className="font-bold text-md">PROGRAMS</h3>
                             <ul className="mt-2">
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 UG Courses
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 PG Courses
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Online Courses
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Certification
                               </li>
@@ -520,26 +546,26 @@ export default function Example() {
                         <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
                       </div>
                       <div className="relative z-10 p-6 text-white">
-                        <h3 className="text-sm font-light">University of</h3>
-                        <h2 className="text-2xl font-bold text-blue-300">
+                        <h3 className="text-xl font-novaThin">University of</h3>
+                        <h2 className="text-3xl font-novaBold leading-none text-[#43ffe6]">
                           Top Placements
                         </h2>
-                        <div className="space-y-2 mt-4">
-                          <div className="bg-blue-500 w-max p-2 rounded-md">
-                            <h3 className="text-xl font-bold">1406</h3>
-                            <p className="text-xs">PLACEMENTS</p>
+                        <div className="mt-4">
+                          <div className="bg-[#087e8a] w-40 p-2 rounded-md">
+                            <h3 className="text-3xl font-novaBold">1406</h3>
+                            <p className="text-xs font-novaThin">PLACEMENTS</p>
                           </div>
-                          <p className="text-xs">Offered in Batch 2023-24</p>
-                          <div className="bg-blue-500 w-max p-2 rounded-md">
-                            <h3 className="text-xl font-bold">1.13 CR</h3>
-                            <p className="text-xs">INTERNATIONAL</p>
+                          <p className="text-xs font-novaThin mb-2">Offered in Batch 2023-24</p>
+                          <div className="bg-[#087e8a] w-40 p-2 rounded-md">
+                            <h3 className="text-3xl font-novaBold">1.13 <small className="-ml-1 text-lg">CR</small></h3>
+                            <p className="text-xs font-novaThin">INTERNATIONAL</p>
                           </div>
-                          <p className="text-xs">Highest Package Offered</p>
-                          <div className="bg-blue-500 p-2 w-max rounded-md">
-                            <h3 className="text-xl font-bold">33.80 LPA</h3>
-                            <p className="text-xs">NATIONAL</p>
+                          <p className="text-xs font-novaThin mb-2">Highest Package Offered</p>
+                          <div className="bg-[#087e8a] p-2 w-40 rounded-md">
+                            <h3 className="text-3xl font-novaBold">33.80 <small className="-ml-1 text-lg">LPA</small></h3>
+                            <p className="text-xs font-novaThin">NATIONAL</p>
                           </div>
-                          <p className="text-xs">Highest Package Offered</p>
+                          <p className="text-xs font-novaThin">Highest Package Offered</p>
                         </div>
                       </div>
                     </div>
@@ -547,12 +573,28 @@ export default function Example() {
                 </div>
               </li>
               <li className="relative group">
-                <button className="px-3 py-2 focus:outline-none text-white text-xs">
-                  ACADEMICS
+                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                  ACADEMICS{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${
+                    BigMenuToggle ? "relative w-full" : "absolute w-max"
+                  } left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2 ">
@@ -560,25 +602,25 @@ export default function Example() {
                       <div className="full pr-4 max-md:max-h-72 max-md:overflow-y-scroll">
                         <h3 className="font-bold text-md">ACADEMICS</h3>
                         <ul className="mt-2">
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Academic Calendar
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             List of Holidays
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             AKGEC Digital School
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Syllabus
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Policy and Process for Refund of Caution Money
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Educational Verification
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Issuance of certificates for passout students
                           </li>
                         </ul>
@@ -588,10 +630,10 @@ export default function Example() {
                       <div className="bg-About ">
                         <div className="flex flex-col items-center p-4">
                           <p className="flex flex-col">
-                            <span className="text-center font-normal text-base text-white">
+                            <span className="text-center text-lg font-novaThin text-white">
                               Milestones in
                             </span>
-                            <span className="text-center font-bold text-lg text-cyan-500">
+                            <span className="text-center text-2xl font-novaBold leading-none text-cyan-500">
                               Educational Achievement
                             </span>
                           </p>
@@ -623,7 +665,7 @@ export default function Example() {
                               <path d="m12 8 4.74-2.85" />
                               <path d="M12 13.5V8" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-light">
+                            <span className="mt-2 text-xs text-white font-novaThin">
                               Flexible Choice
                             </span>
                           </div>
@@ -647,7 +689,7 @@ export default function Example() {
                               <path d="M2 18h4" />
                               <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-light">
+                            <span className="mt-2 text-xs text-white font-novaThin">
                               Electives
                             </span>
                           </div>
@@ -669,7 +711,7 @@ export default function Example() {
                               <path d="M12 17v4" />
                               <path d="M8 21h8" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-light">
+                            <span className="mt-2 text-xs text-white font-novaThin">
                               Technologies
                             </span>
                           </div>
@@ -691,7 +733,7 @@ export default function Example() {
                               <path d="M18 19c-2.8 0-5-2.2-5-5v8" />
                               <circle cx="20" cy="19" r="2" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-light">
+                            <span className="mt-2 text-xs text-white font-novaThin">
                               Experiential Learning
                             </span>
                           </div>
@@ -702,12 +744,28 @@ export default function Example() {
                 </div>
               </li>
               <li className="relative group">
-                <button className="px-3 py-2 focus:outline-none text-white text-xs">
-                  ADMISSIONS
+                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                  ADMISSIONS{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${
+                    BigMenuToggle ? "relative w-full" : "absolute w-max"
+                  } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="flex group-hover:p-4 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col max-md:gap-5">
@@ -715,31 +773,31 @@ export default function Example() {
                       <div>
                         <h3 className="font-bold text-md">ADMISSIONS</h3>
                         <ul className="mt-2">
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Courses Offered
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Admission
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Fee Structure for New Students
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Admissions through UPTAC Counselling
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Fee Structure for Existing Students
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Fee Refund Norms
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Scholarship
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Admission Brochure 2024-25
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Information Booklet 2024-25
                           </li>
                         </ul>
@@ -748,19 +806,19 @@ export default function Example() {
                     <div className="w-52 pr-4">
                       <h3 className="font-bold text-md">AKGEC Programs</h3>
                       <ul className="mt-2">
-                        <li className="py-1 hover:underline font-normal text-xs">
+                        <li className="py-0.5 hover:underline font-novaThin text-sm">
                           B.Tech Programs
                         </li>
-                        <li className="py-1 hover:underline font-normal text-xs">
+                        <li className="py-0.5 hover:underline font-novaThin text-sm">
                           M.Tech Programs
                         </li>
-                        <li className="py-1 hover:underline font-normal text-xs">
+                        <li className="py-0.5 hover:underline font-novaThin text-sm">
                           MCA Programs
                         </li>
-                        <li className="py-1 hover:underline font-normal text-xs">
+                        <li className="py-0.5 hover:underline font-novaThin text-sm">
                           Industry-Academia Collaborations
                         </li>
-                        <li className="py-1 hover:underline font-normal text-xs">
+                        <li className="py-0.5 hover:underline font-novaThin text-sm">
                           Research & Development
                         </li>
                       </ul>
@@ -768,25 +826,25 @@ export default function Example() {
                     <div className="w-52">
                       <div>
                         <ul className="mt-2">
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Domestic Enrollment
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Global Admissions
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Enrollment Centers
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Campus Tours
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Transfer Guidelines
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Refund Policy
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             2024 Welcome Week
                           </li>
                         </ul>
@@ -805,7 +863,7 @@ export default function Example() {
                     </div>
                     <div className="relative bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6] bg-opacity-75 ">
                       <div className="relative h-1/2 z-10 text-white">
-                        <h3 className="text-xl py-2 text-center font-medium">
+                        <h3 className="text-xl py-2 text-center font-novaLight">
                           Open Doors to Your Future
                         </h3>
                       </div>
@@ -827,7 +885,7 @@ export default function Example() {
                             <path d="M22 10v6" />
                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
                           </svg>
-                          <span className="mt-2 text-xs text-white font-light">
+                          <span className="mt-2 text-xs text-white font-novaThin">
                             Scholarships
                           </span>
                         </div>
@@ -850,7 +908,7 @@ export default function Example() {
                             <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
                             <path d="M3 4h8" />
                           </svg>
-                          <span className="mt-2 text-xs text-white font-light">
+                          <span className="mt-2 text-xs text-white font-novaThin">
                             Education Loan
                           </span>
                         </div>
@@ -870,7 +928,7 @@ export default function Example() {
                             <path d="M3 3v16a2 2 0 0 0 2 2h16" />
                             <path d="M7 16c.5-2 1.5-7 4-7 2 0 2 3 4 3 2.5 0 4.5-5 5-7" />
                           </svg>
-                          <span className="mt-2 text-xs text-white font-light">
+                          <span className="mt-2 text-xs text-white font-novaThin">
                             Futuristic
                           </span>
                         </div>
@@ -880,12 +938,28 @@ export default function Example() {
                 </div>
               </li>
               <li className="relative group">
-                <button className="px-3 py-2 focus:outline-none text-white text-xs">
-                  CAMPUS LIFE
+                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                  CAMPUS LIFE{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${
+                    BigMenuToggle ? "relative w-full" : "absolute w-max"
+                  } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -902,7 +976,7 @@ export default function Example() {
                         </div>
                         <div className="relative bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6] bg-opacity-75 ">
                           <div className="relative h-1/2 z-10 text-white">
-                            <h3 className="text-xl py-2 text-center font-medium">
+                            <h3 className="text-xl py-2 text-center font-novaLight">
                               A Place Like Home
                             </h3>
                           </div>
@@ -930,7 +1004,7 @@ export default function Example() {
                                 <path d="M8 22h8" />
                                 <path d="M18 18.7a9 9 0 1 0-12 0" />
                               </svg>
-                              <span className="mt-2 text-xs text-white font-light">
+                              <span className="mt-2 text-xs text-white font-novaThin">
                                 Festivals
                               </span>
                             </div>
@@ -953,7 +1027,7 @@ export default function Example() {
                                 <circle cx="16" cy="9" r="2.9" />
                                 <circle cx="6" cy="5" r="3" />
                               </svg>
-                              <span className="mt-2 text-xs text-white font-light">
+                              <span className="mt-2 text-xs text-white font-novaThin">
                                 Culturally Diverse
                               </span>
                             </div>
@@ -976,7 +1050,7 @@ export default function Example() {
                                 <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
                                 <path d="M3 4h8" />
                               </svg>
-                              <span className="mt-2 text-xs text-white font-light">
+                              <span className="mt-2 text-xs text-white font-novaThin">
                                 Student-Friendly
                               </span>
                             </div>
@@ -1009,7 +1083,7 @@ export default function Example() {
                                 <path d="M15 12h5" />
                                 <path d="M15 17h5" />
                               </svg>
-                              <span className="mt-2 text-xs text-white font-light">
+                              <span className="mt-2 text-xs text-white font-novaThin">
                                 Technology integration
                               </span>
                             </div>
@@ -1020,37 +1094,37 @@ export default function Example() {
                         <div className="w-1/2 pr-4">
                           <h3 className="font-bold text-md">CAMPUS LIFE</h3>
                           <ul className="mt-2">
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Overview
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Convocations
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Tech Invent & Events
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Cultural
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Evoke & Youth Summits
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Sports & Adventure
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Latest News
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Bollywood Celebrities
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               National & International Conferences
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               International Faculties
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Notable Alumni
                             </li>
                           </ul>
@@ -1060,25 +1134,25 @@ export default function Example() {
                             SOCIAL RESPONSIBILITIES
                           </h3>
                           <ul className="mt-2">
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Unnat Bharat Abhiyan & NSS
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Nature Club
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Adarsh Vikas Kendra
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Blood Donation Camp
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Eco Friendly Environment
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               SDP For Village Students
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               SDP Under PMKVY
                             </li>
                           </ul>
@@ -1087,15 +1161,15 @@ export default function Example() {
                           <div>
                             <h3 className="font-bold text-md">SOCIETIES</h3>
                             <ul className="mt-2">
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Departmental Societies
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Extra Curricular Societies
                               </li>
-                              <li className="py-1 hover:underline font-normal text-xs">
+                              <li className="py-0.5 hover:underline font-novaThin text-sm">
                                 {" "}
                                 Student Chapters
                               </li>
@@ -1108,12 +1182,28 @@ export default function Example() {
                 </div>
               </li>
               <li className="xl:relative group">
-                <button className="px-3 py-2 focus:outline-none text-white text-xs">
-                  PLACEMENTS
+                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                  PLACEMENTS{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${
+                    BigMenuToggle ? "relative w-full" : "absolute w-max"
+                  } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -1121,19 +1211,19 @@ export default function Example() {
                       <div className="bg-About ">
                         <div className="flex flex-col items-center p-4">
                           <p className="flex flex-col">
-                            <span className="text-center font-normal text-base text-white">
+                            <span className="text-center font-novaLight text-base text-white">
                               Corporate Ties
                             </span>
-                            <span className="text-center font-bold text-lg text-cyan-500">
+                            <span className="text-center font-novaBold text-2xl text-cyan-500">
                               &
                             </span>
-                            <span className="text-center font-normale text-base text-white">
+                            <span className="text-center font-novaLight text-base text-white">
                               Career Opportunities
                             </span>
                           </p>
                         </div>
                         <div className="grid grid-cols-2 bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6]">
-                          <div className="flex flex-col items-center text-white border-r border-t-white/50 p-7">
+                          <div className="flex flex-col items-center text-white border-r border-b border-t-white/50 p-7">
                             <FontAwesomeIcon icon={faGoogle} size="3x" />
                             <span className="mt-2 text-xs text-white font-light">
                               Google
@@ -1145,13 +1235,13 @@ export default function Example() {
                               Amazon
                             </span>
                           </div>
-                          <div className="flex flex-col items-center text-white border-t border-t-white/50 p-7">
+                          <div className="flex flex-col items-center text-white border-r border-t-white/50 p-7">
                             <FontAwesomeIcon icon={faMicrosoft} size="3x" />
                             <span className="mt-2 text-xs text-white font-light">
                               Microsoft
                             </span>
                           </div>
-                          <div className="flex flex-col items-center text-white border-l border-t-white/50 p-7">
+                          <div className="flex flex-col items-center text-white border-t-white/50 p-7">
                             <FontAwesomeIcon icon={faShopify} size="3x" />
                             <span className="mt-2 text-xs text-white font-light">
                               Shopify
@@ -1164,25 +1254,25 @@ export default function Example() {
                       <div className="w-max pr-4">
                         <h3 className="font-bold text-md">PLACEMENTS</h3>
                         <ul className="mt-2">
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             T&P Department
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Our Recruiters
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Placement Records
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Placement Highlights
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Placement Brochure
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             Placement Booklet 2022
                           </li>
-                          <li className="py-1 hover:underline font-normal text-xs">
+                          <li className="py-0.5 hover:underline font-novaThin text-sm">
                             T&P Programmes
                           </li>
                         </ul>
@@ -1192,52 +1282,68 @@ export default function Example() {
                 </div>
               </li>
               <li className="group relative">
-                <button className="px-3 py-2 focus:outline-none text-white text-xs">
-                  RESEARCH & INNOVATION
+                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                  RESEARCH & INNOVATION{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${
+                    BigMenuToggle ? "relative w-full" : "absolute w-max"
+                  } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
                   <div className="grid grid-cols-2">
                     <div className="col-span-1 max-md:hidden">
                       <div className="bg-About h-full">
-                        <div className="flex flex-col items-center py-50">
-                          <p className="flex flex-col py-10">
-                            <span className="text-center font-bold text-lg text-cyan-500">
+                        <div className="flex flex-col justify-start items-start pt-5 px-6">
+                          <p className="flex flex-col pb-10">
+                            <span className="font-novaLight text-xl text-white">
                               {" "}
                               Our Academic
                             </span>
-                            <span className="text-center font-normale text-base text-white">
-                            Ambitions
+                            <span className="font-novaLight text-xl text-white">
+                              Ambitions
                             </span>
                           </p>
                         </div>
-                        <div className="bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6] h-full">
+                        <div className="h-full">
                           <div className="relative z-10 p-6 text-white">
-                            <h3 className="text-sm font-light">
+                            {/* <h3 className="text-sm font-novaLight">
                               University with
                             </h3>
-                            <h2 className="text-2xl font-bold text-blue-300">
+                            <h2 className="text-2xl font-bold text-[#2fbdff] leading-none">
                               Best Placements
-                            </h2>
-                            <div className="grid grid-cols-2 gap-4">
-                              <div className="bg-blue-500 w-max p-2 rounded-md">
-                                <h3 className="text-xl font-bold">1406</h3>
-                                <p className="text-xs">PLACEMENTS</p>
+                            </h2> */}
+                            <div className="grid grid-cols-2 gap-4 mt-3">
+                              <div className="bg-[#087e8a] w-36 px-10 py-4 rounded-md flex flex-col items-center text-center">
+                                <h3 className="text-3xl font-novaBold">19K+</h3>
+                                <p className="text-xs font-novaThin">Students Graduated</p>
                               </div>
-                              <div className="bg-blue-500 w-max p-2 rounded-md">
-                                <h3 className="text-xl font-bold">1.13 CR</h3>
-                                <p className="text-xs">INTERNATIONAL</p>
+                              <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                                <h3 className="text-3xl font-novaBold">8</h3>
+                                <p className="text-xs font-novaThin">Departmental Research Groups</p>
                               </div>
-                              <div className="bg-blue-500 p-2 w-max rounded-md">
-                                <h3 className="text-xl font-bold">33.80 LPA</h3>
-                                <p className="text-xs">NATIONAL</p>
+                              <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                                <h3 className="text-3xl font-novaBold">213</h3>
+                                <p className="text-xs font-novaThin">Students in Univ. Merit List</p>
                               </div>
-                              <div className="bg-blue-500 p-2 w-max rounded-md">
-                                <h3 className="text-xl font-bold">32.75 LPA</h3>
-                                <p className="text-xs">NATIONAL</p>
+                              <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                                <h3 className="text-3xl font-novaBold">2000+</h3>
+                                <p className="text-xs font-novaThin">Students Placed (2021-22)</p>
                               </div>
                             </div>
                           </div>
@@ -1247,45 +1353,47 @@ export default function Example() {
                     <div className="col-span-1 max-md:col-span-2 pr-4 p-0 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
                       <div className="flex">
                         <div className=" pr-4">
-                          <h3 className="font-bold text-md uppercase">Academic Research Hub</h3>
+                          <h3 className="font-bold text-md uppercase">
+                            Academic Research Hub
+                          </h3>
                           <ul className="mt-2">
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               R & D Policy
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Journal Papers
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Conference Papers
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Book/Book Chapters
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Patent
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Funded Projects
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Consultancy
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Research Incentives
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               AKGEC Journals
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Research & Development Centres
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               Conferences
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               FDPs
                             </li>
-                            <li className="py-1 hover:underline font-normal text-xs">
+                            <li className="py-0.5 hover:underline font-novaThin text-sm">
                               MoUs
                             </li>
                           </ul>

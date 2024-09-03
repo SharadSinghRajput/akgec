@@ -49,13 +49,13 @@ export default function Form() {
     <div className="flex items-center justify-center h-full pb-4 md:pt-20">
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full overflow-hidden">
         <div className='bg-gray-100 flex flex-col justify-center items-center p-8 pb-4'>
-          <h2 className="text-sm font-normal text-center">
+          <h2 className="text-base font-novaReg text-center">
             APPLY TODAY FOR
           </h2>
-          <h1 className="font-bold text-center text-xl">
+          <h1 className="font-novaBold text-center text-xl">
             AKG UNIVERSITY PROGRAMS
           </h1>
-          <p className="bg-blue-800 text-white text-center mb-6 text-sm w-max py-1 px-2 rounded-sm mt-2">
+          <p className="bg-blue-800 text-white text-center font-novaBold mb-6 text-xs w-max py-1 px-2 rounded-lg mt-2">
             Registration End Date (Phase-II) - 30 Aug 2024
           </p>
         </div>
@@ -65,12 +65,12 @@ export default function Form() {
             <input
               type="text"
               placeholder="Enter your Name"
-              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+              className="w-full px-4 py-3 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"
             />
             <input
               type="email"
               placeholder="Enter your Email Address"
-              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+              className="w-full px-4 py-3 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"
             />
           </div>
 
@@ -78,18 +78,18 @@ export default function Form() {
             <input
               type="tel"
               placeholder="Enter Mobile No"
-              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+              className="w-full px-4 py-3 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"
             />
             <input
               type="text"
               placeholder="Type your city & select..."
-              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+              className="w-full px-4 py-3 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"
             />
           </div>
 
           <div className="grid grid-cols-2 gap-4 mb-4">
             <select
-              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light"
+              className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg"
               value={selectedDiscipline}
               onChange={handleDisciplineChange}
             >
@@ -100,7 +100,7 @@ export default function Form() {
                 </option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light">
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option value="">Select Program</option>
               {programs.map((program, index) => (
                 <option key={index} value={program}>
@@ -111,13 +111,13 @@ export default function Form() {
           </div>
 
           <div className="grid grid-cols-3 gap-4 mb-6">
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light">
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>DD</option>
               {[...Array(31)].map((_, i) => (
                 <option key={i}>{String(i + 1).padStart(2, '0')}</option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light">
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>MM</option>
               {[
                 'January',
@@ -136,7 +136,7 @@ export default function Form() {
                 <option key={i}>{month}</option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-light">
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>YYYY</option>
               {Array.from({ length: 100 }, (_, i) => 2024 - i).map((year) => (
                 <option key={year}>{year}</option>
@@ -144,14 +144,14 @@ export default function Form() {
             </select>
           </div>
 
-          <div className="flex justify-between items-center gap-6">
+          <div className="flex justify-between items-center">
             <button
               type="submit"
-              className="bg-blue-800 text-white font-semibold py-2 px-2 md:px-8 text-xs lg:px-10 md:text-base rounded-md"
+              className="bg-blue-800 text-white font-novaBold py-4 px-12 text-xs rounded-md"
             >
               REGISTER NOW
             </button>
-            <a href="#" className="text-sm text-gray-600 underline">
+            <a href="#" className="text-xs font-novaBold text-gray-600 underline">
               ALREADY REGISTERED
             </a>
           </div>

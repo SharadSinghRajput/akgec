@@ -15,11 +15,11 @@ export default function Home() {
     <div className='min-h-screen overflow-hidden relative'>
       <div className='flex justify-center relative z-20 min-h-screen'>
         <div className='grid grid-cols-2 max-lg:grid-cols-1'>
-          <div className='flex justify-center flex-col pl-20 max-lg:mt-52 max-lg:items-center max-lg:px-5'>
-            <h1 className='text-[60px] font-extralight text-white max-lg:text-4xl max-lg:text-center'>AKG UNIVERSITY</h1>
-            <p className='text-white text-2xl font-extralight max-lg:text-base max-lg:text-center'>The only engineering college in Uttar Pradesh (AKTU)
+          <div className='flex justify-center max-w-3xl flex-col pl-20 max-lg:mt-52 max-lg:items-center max-lg:px-5'>
+            <h1 className='text-[60px] font-novaThin text-white max-lg:text-4xl max-lg:text-center leading-none mb-5'>Top Private Engineering University in Uttar Pradesh</h1>
+            <p className='text-white text-xl font-novaLight max-lg:text-base max-lg:text-center'>The only engineering college in Uttar Pradesh (AKTU)
             Accredited by NAAC with an A++ grade</p>
-            <button className='py-3 px-7 mt-5 rounded-md font-semibold uppercase bg-yellow-500 text-gray-800 w-max'>Apply Today</button>
+            <button className='py-3 px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-[#fbb03b] text-gray-800 w-max'>Apply Today</button>
           </div>
           <div className='max-md:mt-10 pt-5'>
             <Form />

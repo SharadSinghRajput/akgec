@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'proximanova-regular';
+    src: url('/fonts/proximanova-regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'proximanova-semibold';
+    src: url('/fonts/proximanova-semibold.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'proximanova-bold';
+    src: url('/fonts/proximanova-bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'proximanova-light';
+    src: url('/fonts/proximanova-light.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'proximanova-thin';
+    src: url('/fonts/proximanova-thin.ttf') format('truetype');
+  }
+  
