@@ -23,27 +23,35 @@ export default function Home() {
   const [showStickyBar, setShowStickyBar] = useState(false);
 
   useEffect(() => {
+    let lastScrollPosition = window.scrollY;
+  
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const viewportHeight = window.innerHeight;
-
-      if (scrollPosition > viewportHeight * .30) {
-        // 1.2 * viewport height = 120vh
-        setShowStickyBar(true);
-      } else {
+      const currentScrollPosition = window.scrollY;
+  
+      if (currentScrollPosition < 150) {
+        // Hide the sticky bar when scrolling is less than 150px
         setShowStickyBar(false);
+      } else if (currentScrollPosition > lastScrollPosition) {
+        // Scrolling down
+        setShowStickyBar(false);
+      } else if (currentScrollPosition < lastScrollPosition) {
+        // Scrolling up
+        setShowStickyBar(true);
       }
+  
+      lastScrollPosition = currentScrollPosition;
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
   return (
     <>
-      <div className=" h-[110vh] overflow-hidden relative">
+      <div className="h-[95vh] overflow-hidden relative">
         <div className="flex justify-center relative z-20 min-h-screen">
           <div className="grid grid-cols-2 max-lg:grid-cols-1">
             <div className="flex justify-center max-w-3xl flex-col pl-20 max-lg:mt-52 max-lg:items-center max-lg:px-5">
@@ -84,7 +92,11 @@ export default function Home() {
         {/* <MiddleSection/> */}
         <FooterCard />
         <Footer />
-        {showStickyBar ? <StickyFooter /> : null}
+  
+        
+          <StickyFooter ShowState={showStickyBar} />
+        
+        
         {/* <AwardSection/> */}
       </div>
     </>

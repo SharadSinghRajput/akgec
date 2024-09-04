@@ -54,7 +54,7 @@ export default function ResearchEnvironment() {
                                 />
                             </div>
                             <div className="">
-                                <h3 className=" px-8 text-lg font-light leading-6 text-gray-900 group-hover:text-gray-600">
+                                <h3 className="relative px-8 text-lg font-light leading-6 text-gray-900 group-hover:text-gray-600">
                                     <a href={post.href}>
                                         <span className="absolute inset-0" />
                                         {post.title}

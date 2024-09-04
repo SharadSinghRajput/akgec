@@ -1,13 +1,13 @@
 "use client";
 
-export const StickyFooter = () => {
+export const StickyFooter = ({ShowState}) => {
   return (
-    <section className=" max-w-screen-2xl mx-auto w-full bg-red-300 duration-500 ">
-      <div className="z-50 fixed bottom-5 left-0 w-full flex justify-center items-center gap-5 px-5">
-        <div className="flex-1 bg-[#fbb03b] rounded-xl overflow-hidden w-full">
-          <button className=" marquee font-novaBold text-lg py-2 w-full">
-            APPLY NOW for CUET
-          </button>
+    <section className={` max-w-screen-2xl mx-auto w-full bg-red-300 duration-500`}>
+      <div className={`transition-all overflow-hidden ${ShowState ? "h-0" : "h-24"} z-50 fixed bottom-5 left-0 w-full flex justify-center items-center gap-5 px-5`}>
+        <div className="flex-1 bg-[#fbb03b] rounded-lg pt-2 pb-1 overflow-hidden w-full">
+            <marquee className="font-bold">
+              APPLY NOW for Ajay Kumar Garg Engineering College 
+            </marquee>
         </div>
         <div className="w-96 bg-[#0965a4] rounded-xl">
           <div className="flex items-center justify-center gap-5 px-2 py-1.5">

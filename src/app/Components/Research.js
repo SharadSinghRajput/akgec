@@ -31,7 +31,7 @@ const posts = [
 export default function Example() {
     return (
         <section className="bg-[#0d244d] py-10 sm:py-16 md:py-20">
-            <div className="px-4 sm:px-6 lg:px-8 text-white">
+            <div className="break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 text-white">
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[43px] font-novaLight text-center tracking-tight">
                     Explore Our Courses
                 </h2>
@@ -50,7 +50,7 @@ export default function Example() {
                         ))}
                     </dl>
                 </div>
-                <div className="mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-5 lg:px-32  " >
+                <div className="mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-5 " >
                     {posts.map((post) => (
                         <article key={post.id} className="relative bg-gray-900 rounded-lg shadow-md overflow-hidden">
                             <img
