@@ -38,7 +38,7 @@ const MilestonesSection = () => {
 
   return (
     
-    <div className="break1:max-w-[1650px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto py-12 bg-white">
+    <div className="break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto py-12 bg-white">
       <div className="text-center mb-10 ">
         <div className='flex gap-1 justify-center text-yellow-400'>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star">
