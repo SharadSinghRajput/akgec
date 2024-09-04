@@ -60,6 +60,12 @@ export default function Example() {
                         </div>
                     </div>
                 </div>
+                <div className="w-full flex justify-center items-center">
+                    <button className="mt-10 mx-auto py-4 px-10 text-[15px] rounded-xl font-novaBold uppercase bg-[#fbb03b]  text-white w-max hover:bg-[#3092DD] hover:border-b-4 hover:border-[#4070af] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105">
+                        Read All Reviews
+                    </button>
+
+                </div>
             </div>
         </section>
     )

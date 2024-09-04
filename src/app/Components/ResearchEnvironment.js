@@ -32,10 +32,10 @@ const posts = [
 export default function ResearchEnvironment() {
     return (
         <div className="bg-white">
-            <div className="max-w-[1350px] mx-auto py-10">
-                <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-3xl font-light tracking-tight text-gray-700">Explore Our Insights & Stories</h2>
-                    <p className="mt-2 text-base font-light leading-8 text-gray-600">
+            <div className="max-w-[1350px] mx-auto py-10 mt-10  ">
+                <div className="mx-auto flex justify-center items-center flex-col text-center">
+                    <h2 className="text-4xl font-light tracking-tight text-gray-700">Explore Our Insights & Stories</h2>
+                    <p className="mt-2 text-xl font-light leading-8 text-gray-600 text-center w-[80%] mb-10">
                         Dive into a collection of in-depth articles and blogs that spark thought, inspire action, and keep you informed on the latest trends and ideas.
                     </p>
                 </div>
