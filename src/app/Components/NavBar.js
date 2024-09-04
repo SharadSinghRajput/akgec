@@ -68,7 +68,7 @@ export default function Example() {
             <div className="flex justify-start items-center gap-2 pl-2">
               <div className="flex justify-center">
                 <img
-                  src="/image/akg-new-bg.png"
+                  src="/image/akg-logo.png"
                   alt="Chandigarh University Logo"
                   className="h-16 w-full object-contain"
                 />
@@ -1489,6 +1489,8 @@ export default function Example() {
     </header>
   );
 }
+
+
 
 
 
