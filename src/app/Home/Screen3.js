@@ -48,17 +48,17 @@ export default function PlacementHighlights() {
             <div className="col-span-5 max-lg:col-span-10 ">
                 <div className="grid h-full grid-cols-1 sm:grid-cols-2">
                     {PlacementData.map((item, index)=>(
-                        <div key={index} className={`relative max-full`}
+                        <div key={index} className={`relative max-full overflow-hidden`}
                             style={{ background: `linear-gradient(to right, ${item.G1}, ${item.G2})` }}
                         >
-                            <img src={item.image_url} alt={item.name} className="absolute bottom-0 w-80 object-cover grayscale" />
-                            <div className={`absolute max-2xl:top-60 max-2xl:left-2 top-10 right-5 p-2 ${index === 3 ? "text-[#212529]" : "text-white"} `}>
+                            <img src={item.image_url} alt={item.name} className="absolute -left-5 bottom-0 w-80 object-cover grayscale" />
+                            <div className={`absolute max-2xl:top-60 max-2xl:left-2 top-10 right-2 p-2 ${index === 3 ? "text-[#212529]" : "text-white"} `}>
                                 <img
                                     src={item.Logo}
                                     alt="Ageas Federal"
-                                    className="h-16 w-48 bg-white object-contain  rounded-lg"
+                                    className="h-16 w-48 lg:w-40 bg-white object-contain  rounded-lg"
                                 />
-                                <h3 className="text-2xl font-novaBold mt-2">{item.name}</h3>
+                                <h3 className="w-32 text-2xl font-novaBold mt-2">{item.name}</h3>
                                 <p className="text-xs font-novaReg">- {item.course}</p>
                                 <p className="text-4xl font-novaBold"><sup className="font-novaBold text-lg">₹</sup>{item.salary} <small className="font-novaSemi text-lg">LPA</small></p>
                             </div>
