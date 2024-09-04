@@ -17,7 +17,7 @@ const PlacementData = [
       course : "CSE General",
       salary : "54.75",
       image_url : "image/student/2.png",
-      Logo : "/image/company-logos/MicrosoftIcon.webp",
+      Logo : "/image/company-logos/Microsoft.png",
       G1 : "#fbb03b",
       G2 : "#fbb03b"
     },
@@ -27,7 +27,7 @@ const PlacementData = [
       course : "CSE General Student",
       salary : "52.11",
       image_url : "image/student/3.png",
-      Logo : "/image/company-logos/Adobe.webp",      
+      Logo : "/image/company-logos/Adobe.png",      
       G1 : "#0d254d",
       G2 : "#0d254d"
     },
@@ -37,7 +37,7 @@ const PlacementData = [
       course : "",
       salary : "24",
       image_url : "image/student/4.png",
-      Logo : "/image/company-logos/GoogleIcon.webp",
+      Logo : "/image/company-logos/Google.png",
       G1 : "#f3f3f3",
       G2 : "#f3f3f3"
     }

@@ -67,10 +67,10 @@ export default function SlickSlider() {
           <div className="col-span-4 max-lg:col-span-10 max-lg:mb-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-lg:grid-cols-2 max-lg:px-20 max-sm:px-5">
               <article className="border-r border-b border-gray-300 p-6 max-xl:p-4 leading-5 max-lg:text-center">
-                <h2 className="text-5xl  xl:text-6xl  font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-700 ">
+                <h2 className="text-5xl  xl:text-5xl  font-novaThin mb-2   max-lg:text-3xl max-lg:mb-3 text-gray-700 ">
                   282
                 </h2>
-                <span className="bg-yellow-500 text-white py-1.5 px-2 text-sm uppercase font-novaBold rounded-md">
+                <span className="bg-[#FBB03B] text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
                   Companies
                 </span>
                 <p className="mt-3 text-gray-600 text-[13px] font-novaReg max-md:text-xs leading-4">
@@ -79,10 +79,10 @@ export default function SlickSlider() {
               </article>
 
               <article className="border-b border-gray-300 p-6 max-xl:p-4 leading-5 max-lg:text-center">
-                <h2 className="text-5xl  xl:text-6xl  font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-700">
+                <h2 className="text-5xl  xl:text-5xl  font-novaThin mb-2 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                   1406
                 </h2>
-                <span className="bg-yellow-500 text-white py-1.5 px-2 text-sm uppercase font-novaBold rounded-md">
+                <span className="bg-[#FBB03B] text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
                   placements
                 </span>
                 <p className="mt-3 text-gray-600 text-[13px] font-novaReg max-md:text-xs leading-4">
@@ -91,15 +91,15 @@ export default function SlickSlider() {
               </article>
 
               <article className="border-r border-gray-300 p-6 max-xl:p-4 leading-5 max-lg:text-center">
-                <h2 className="text-5xl  xl:text-6xl  font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-700">
+                <h2 className="text-5xl  xl:text-5xl  font-novaThin mb-2 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                   <span className="whitespace-nowrap">
                     33.80{" "}
-                    <span className="text-gray-600 text-3xl font-novaThin -ml-3 max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
+                    <span className="text-gray-600 text-xl -ml-1   max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
                       LPA
                     </span>
                   </span>
                 </h2>
-                <span className="bg-[linear-gradient(41deg,#087e8b_30%,#0a65a4_100%)] text-white py-1.5 px-2 text-sm uppercase font-novaBold rounded-md">
+                <span className="bg-[linear-gradient(41deg,#087e8b_30%,#0a65a4_100%)] text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
                   Engineering
                 </span>
                 <p className="mt-3 text-gray-600 text-[13px] font-novaReg max-md:text-xs leading-4">
@@ -109,15 +109,15 @@ export default function SlickSlider() {
               </article>
 
               <article className="p-6 max-xl:p-4 leading-5 max-lg:text-center">
-                <h2 className="text-5xl  xl:text-6xl  font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-700">
+                <h2 className="text-5xl  xl:text-5xl  font-novaThin mb-2 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                   <span className="whitespace-nowrap">
                     1.13{" "}
-                    <span className="text-gray-600 text-3xl font-novaThin -ml-3 max-lg:-ml-2 max-lg:text-xl max-2xl:text-2xl max-md:text-lg max-sm:text-base">
+                    <span className="text-gray-600 text-xl -ml-1  max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
                       CR
                     </span>
                   </span>
                 </h2>
-                <span className="bg-[linear-gradient(41deg,#087e8b_30%,#0a65a4_100%)] text-white py-1.5 px-2 text-sm uppercase font-novaBold rounded-md">
+                <span className="bg-[linear-gradient(41deg,#087e8b_30%,#0a65a4_100%)] text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
                   Engineering
                 </span>
                 <p className="mt-3 text-gray-600 text-[13px] font-novaReg max-md:text-xs leading-4">
@@ -208,7 +208,7 @@ export default function SlickSlider() {
               </div>
             </aside>
           </div>
-          <div className="col-span-8 max-lg:col-span-10 max-lg:mb-4 max-lg:ml-0">
+          <div className=" m-2 col-span-8 max-lg:col-span-10 max-lg:mb-4 max-lg:ml-0">
             <section className="bg-[#1b9fb1] rounded-lg">
               <div className="grid grid-cols-12">
                 <div className="col-span-2 p-2 flex justify-center items-center">

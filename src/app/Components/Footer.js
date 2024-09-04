@@ -128,15 +128,15 @@ const navigation2 = [
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-white">
-            <div className="mx-auto px-4 py-8">
+        <footer className="bg-[#000] text-white py-20">
+            <div className="mx-auto max-w-[1400px] max-2xl:max-w-[1200px] px-4">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                    {navigation.map((section) => (
+                    {navigation.map((section) => (  
                         <div key={section.name} className="w-full mb-6">
-                            <h3 className="text-base font-semibold mb-4 text-cyan-500">{section.name}</h3>
-                            <ul>
+                            <h3 className="text-base font-novaSemi mb-4 text-[#62cdd7]">{section.name}</h3>
+                            <ul className='space-y-3'>
                                 {section.links.map((link) => (
-                                    <li key={link.name} className="mb-2 text-xs">
+                                    <li key={link.name} className="mb-2 text-xs font-novaSemi">
                                         <a href={link.href} className="hover:underline">
                                             {link.name}
                                         </a>
@@ -146,30 +146,30 @@ export default function Footer() {
                         </div>
                     ))}
                     <div>
-                        <h3 className="text-base font-semibold text-cyan-500">Get in Touch</h3>
-                        <p className="mb-2 text-xs">Ajay Kumar Garg Engineering College</p>
-                        <p className="mb-2 text-xs">27th Km Milestone,Delhi-Meerut Expressway, P.O. Adhyatmik Nagar,Ghaziabad - 201015</p>
-                        <p className="text-base font-light text-cyan-500"><strong>Student Helpline No:</strong></p>
-                        <p className="mb-2 text-xs">7290034978</p>
-                        <p className="text-base font-light text-cyan-500"><strong>Toll Free:</strong></p>
-                        <p className="mb-2 text-xs">8744052891-93</p>
-                        <p className="text-base font-light text-cyan-500"><strong>Email:</strong></p>
-                        <p><a href="#" className="text-xs hover:underline">info@akgec.ac.in</a></p>
+                        <h3 className="text-base font-novaSemi text-[#62cdd7] mb-4">Get in Touch</h3>
+                        <p className="text-xs font-novaSemi">Ajay Kumar Garg Engineering College</p>
+                        <p className="mb-1 text-xs font-novaSemi">27th Km Milestone,Delhi-Meerut Expressway, P.O. Adhyatmik Nagar,Ghaziabad - 201015</p>
+                        <p className="mb-2 text-xs font-novaSemi text-[#62cdd7]"><strong>Student Helpline No:</strong></p>
+                        <p className="mb-2 text-xs font-novaSemi">7290034978</p>
+                        <p className="mb-2 text-xs font-novaSemi text-[#62cdd7]"><strong>Toll Free:</strong></p>
+                        <p className="mb-2 text-xs font-novaSemi">8744052891-93</p>
+                        <p className="text-xs font-novaSemi text-[#62cdd7]"><strong>Email:</strong></p>
+                        <p><a href="#" className="text-xs hover:underline font-novaSemi">info@akgec.ac.in</a></p>
                     </div>
                 </div>
+           
 
-
-                <div className="mx-auto px-6 py-6 md:flex md:items-center md:justify-between lg:px-8 border-t border-b border-gray-500">
-                    <div className="flex justify-center space-x-6 md:order-2">
+                <div className="mx-auto py-4 md:flex md:items-center md:justify-between border-t border-b border-[#222222]">
+                    <div className="flex justify-center space-x-10 md:order-2">
                         {navigation2.map((item) => (
-                            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+                            <a key={item.name} href={item.href} className="text-white hover:text-gray-500">
                                 <span className="sr-only">{item.name}</span>
-                                <item.icon aria-hidden="true" className="h-6 w-6" />
+                                <item.icon aria-hidden="true" className="h-5 w-5" />
                             </a>
                         ))}
                     </div>
-                    <div className="text-xs md:text-xs mt-8 md:order-1 md:mt-0">
-                        <ul className='flex gap-6 md:gap-8 lg:gap-16 xl:lg:gap-22  justify-center sm:justify-center'>
+                    <div className="text-xs md:text-xs font-novaSemi mt-8 md:order-1 md:mt-0">
+                        <ul className='flex gap-6 md:gap-8 lg:gap-16 xl:lg:gap-28  justify-center sm:justify-center'>
                             <li>NAAC</li>
                             <li>NIRF</li>
                             <li>NATS</li>
@@ -180,28 +180,28 @@ export default function Footer() {
                 </div>
 
                 <div className="items-center justify-center mt-4 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="flex items-center justify-center space-x-6">
-                        <div className="p-4 rounded-md border border-gray-700">
+                    <div className="flex items-center justify-center space-x-2">
+                        <div className="flex justify-center py-4 w-full rounded-md border border-[#222222]">
                             <img src="/image/hgcas.jpg" alt="Radio Punjab" className="h-12" />
                         </div>
-                        <div className="p-4  rounded-md border border-gray-700">
+                        <div className="flex justify-center py-4 w-full  rounded-md border border-[#222222]">
                             <img src="/image/UNAi.png" alt="Virtual Tour" className="bg-white h-12" />
                         </div>
                     </div>
-                    <div className="text-center font-light text-xs md:text-left">
-                        <h2 className="text-teal-400 text-base mb-2">About Us</h2>
-                        <p>
-                            Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, affiliated with Dr. A.P.J. Abdul Kalam Technical University, offers NBA-accredited B.Tech programs in various engineering disciplines, including Computer Science, IT, AI & ML, and more. It also provides M.Tech and MCA courses. Established in 1998, AKGEC is AICTE-approved.<a href="#" className="text-teal-400 hover:underline">Apply Now</a>
+                    <div className="text-center font-light md:text-left">
+                        <h2 className="text-base font-novaSemi text-[#62cdd7] mb-2">About Us</h2>
+                        <p className='text-xs font-novaSemi leading-none'>
+                            Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, affiliated with Dr. A.P.J. Abdul Kalam Technical University, offers NBA-accredited B.Tech programs in various engineering disciplines, including Computer Science, IT, AI & ML, and more. It also provides M.Tech and MCA courses. Established in 1998, AKGEC is AICTE-approved.<a href="#" className="text-[#62cdd7] text-xs font-novaSemi hover:underline"> Apply Now</a>
                         </p>
                     </div>
                     <div className="px-20">
                         <img src="/image/NaaC.png" alt="UN Academic Impact" className="h-auto" />
                     </div>
                 </div>
-                <div className="mt-8 text-xs text-center border-t border-gray-700 pt-4">
+                <div className="mt-8 text-xs font-novaSemi text-center border-t border-[#222222] pt-4">
                     <p>© All rights reserved 2024</p>
                 </div>
-            </div>
+                </div>
         </footer>
     );
 }
