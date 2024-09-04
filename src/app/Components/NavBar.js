@@ -57,7 +57,7 @@ export default function Example() {
   return (
     <header
       className={`z-50 w-full fixed top-0 left-0 ${
-        isScrolled100 ? "bg-gray-950" : ""
+        isScrolled100 ? "bg-blue-600" : ""
       } transition-all duration-200`}
     >
       <div className="grid grid-cols-8 max-lg:grid-cols-3 gap-x-10">
@@ -218,7 +218,7 @@ export default function Example() {
                 </>
               ) : null}
               <li className="relative group">
-                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
                   ABOUT{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -454,7 +454,7 @@ export default function Example() {
                 </div>
               </li>
               <li className="group">
-                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
                   PROGRAMS{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -573,7 +573,7 @@ export default function Example() {
                 </div>
               </li>
               <li className="relative group">
-                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
                   ACADEMICS{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -744,7 +744,7 @@ export default function Example() {
                 </div>
               </li>
               <li className="relative group">
-                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
                   ADMISSIONS{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -938,7 +938,7 @@ export default function Example() {
                 </div>
               </li>
               <li className="relative group">
-                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
                   CAMPUS LIFE{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1182,7 +1182,7 @@ export default function Example() {
                 </div>
               </li>
               <li className="xl:relative group">
-                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
                   PLACEMENTS{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1282,7 +1282,7 @@ export default function Example() {
                 </div>
               </li>
               <li className="group relative">
-                <button className="relative px-3 py-3 focus:outline-none text-white font-novaBold text-lg flex items-center gap-1">
+                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
                   RESEARCH & INNOVATION{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
