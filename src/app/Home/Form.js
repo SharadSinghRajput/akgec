@@ -55,7 +55,7 @@ export default function Form() {
           <h1 className="font-novaBold text-center text-xl">
             AKG UNIVERSITY PROGRAMS
           </h1>
-          <p className="bg-blue-800 text-white text-center font-novaBold mb-6 text-xs w-max py-1 px-2 rounded-lg mt-2">
+          <p className="bg-blue-600 text-white text-center font-novaBold mb-6 text-xs w-max py-2 px-4 rounded-lg mt-2">
             Registration End Date (Phase-II) - 30 Aug 2024
           </p>
         </div>
@@ -147,7 +147,7 @@ export default function Form() {
           <div className="flex justify-between items-center">
             <button
               type="submit"
-              className="bg-blue-800 text-white font-novaBold py-4 px-12 text-xs rounded-md"
+              className="bg-blue-600 text-white font-novaBold py-4 px-12 text-xs rounded-md"
             >
               REGISTER NOW
             </button>

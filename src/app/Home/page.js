@@ -27,7 +27,7 @@ export default function Home() {
               <h1 className='text-[60px] font-novaThin text-white max-lg:text-4xl max-lg:text-center leading-none mb-5'>Top Private Engineering University in Uttar Pradesh</h1>
               <p className='text-white text-xl font-novaLight max-lg:text-base max-lg:text-center'>The only engineering college in Uttar Pradesh (AKTU)
                 Accredited by NAAC with an A++ grade</p>
-              <button className='py-3 px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-[#fbb03b] text-gray-800 w-max'>Apply Today</button>
+              <button className='py-3 px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-blue-600 text-white w-max'>Apply Today</button>
             </div>
             <div className='max-md:mt-10 pt-5'>
               <Form />

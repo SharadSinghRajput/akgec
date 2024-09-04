@@ -209,7 +209,7 @@ export default function SlickSlider() {
             </aside>
           </div>
           <div className=" m-2 col-span-8 max-lg:col-span-10 max-lg:mb-4 max-lg:ml-0">
-            <section className="bg-[#1b9fb1] rounded-lg">
+            <section className="bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg">
               <div className="grid grid-cols-12">
                 <div className="col-span-2 p-2 flex justify-center items-center">
                   <img
