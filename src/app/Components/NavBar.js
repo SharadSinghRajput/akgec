@@ -84,12 +84,12 @@ export default function Example() {
             <div hidden={isScrolled} className="max-lg:hidden">
               <div className="flex items-center px-5">
                 <div className="flex-grow border-t border-white opacity-40"></div>
-                <p className="mx-4 text-center opacity-40 text-xs font-novaThin ">
+                <p className="mx-4 text-center opacity-40 text-xs font-novaLight ">
                   Notifications
                 </p>
                 <div className="flex-grow border-t border-white  opacity-40"></div>
               </div>
-              <p className="font-novaReg mx-10 py-2 text-center text-[11px]">
+              <p className="font-novaLight mx-10 py-2 text-center text-[11px]">
                 The college was established in 1998 and offers B.Tech Courses in
                 all major disciplines of Engineering.
               </p>
@@ -145,7 +145,7 @@ export default function Example() {
                         aria-hidden="true"
                       />
                     </div>
-                    <div className="border-r pr-6 border-[#46a7d1] font-novaReg">
+                    <div className="border-r pr-6 border-[#46a7d1] font-novaLight">
                       <p
                         className={`text-white  ${
                           isScrolled ? "text-[10px]" : "text-xs"
@@ -206,10 +206,10 @@ export default function Example() {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-x"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-x"
                     >
                       <path d="M18 6 6 18" />
                       <path d="m6 6 12 12" />
@@ -227,10 +227,10 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-down"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down"
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -248,28 +248,28 @@ export default function Example() {
                         <div className="w-1/2 pr-4 max-md:w-full">
                           <h3 className="font-bold">WHO WE ARE</h3>
                           <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Vision And Mission
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Director General
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Director
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Management
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Important Functionaries
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Approvals by Statutory Bodies
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               NBA Accreditation
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               AICTE Approval Letters
                             </li>
                           </ul>
@@ -278,31 +278,31 @@ export default function Example() {
                           <div>
                             <h3 className="font-bold">VISUAL TOUR</h3>
                             <ul className="mt-2">
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Academic Complex
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Hostel
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Centres Of Excellence
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Faith Centre
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Support Facilities
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Stationary Shop
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 College Canteen
                               </li>
@@ -313,35 +313,35 @@ export default function Example() {
                           <div>
                             <h3 className="font-bold">RELATED LINKS</h3>
                             <ul className="mt-2">
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 AKGEC Visual Tour
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Centre of Excellence Visual Tour
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Mandatory Disclosure
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 NIRF Data for Ranking
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Grievance Committee
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Organisation Chart
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Testimonials
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Gallery
                               </li>
@@ -354,7 +354,7 @@ export default function Example() {
                       <div className="bg-About bg-cover">
                         <div className="flex flex-col items-center p-4">
                           <p className="flex flex-col">
-                            <span className="text-center font-normal text-xl font-novaReg text-white">
+                            <span className="text-center font-normal text-xl font-novaLight text-white">
                               AKG University
                             </span>
                             <span className="text-center font-novaBold text-3xl text-cyan-500 leading-none">
@@ -378,7 +378,7 @@ export default function Example() {
                                 d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"
                               />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-novaThin">
+                            <span className="mt-2 text-xs text-white font-novaLight">
                               Human Dignity
                             </span>
                           </div>
@@ -390,17 +390,17 @@ export default function Example() {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-hand-heart"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-hand-heart"
                             >
                               <path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" />
                               <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
                               <path d="m2 15 6 6" />
                               <path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-novaThin">
+                            <span className="mt-2 text-xs text-white font-novaLight">
                               Empathy
                             </span>
                           </div>
@@ -412,10 +412,10 @@ export default function Example() {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-hand-coins"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-hand-coins"
                             >
                               <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
                               <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
@@ -423,7 +423,7 @@ export default function Example() {
                               <circle cx="16" cy="9" r="2.9" />
                               <circle cx="6" cy="5" r="3" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-novaThin">
+                            <span className="mt-2 text-xs text-white font-novaLight">
                               Humility
                             </span>
                           </div>
@@ -435,15 +435,15 @@ export default function Example() {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-message-circle-heart"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-message-circle-heart"
                             >
                               <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
                               <path d="M15.8 9.2a2.5 2.5 0 0 0-3.5 0l-.3.4-.35-.3a2.42 2.42 0 1 0-3.2 3.6l3.6 3.5 3.6-3.5c1.2-1.2 1.1-2.7.2-3.7" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-novaThin">
+                            <span className="mt-2 text-xs text-white font-novaLight">
                               Giving
                             </span>
                           </div>
@@ -463,10 +463,10 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-down"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down"
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -484,28 +484,28 @@ export default function Example() {
                         <div className="w-1/2 pr-4 max-md:w-full ">
                           <h3 className="font-bold text-md">DEPARTMENTS</h3>
                           <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Applied Sciences & Humanities
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Civil Engineering
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Computer Science and Engineering
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Electronics and Communication Engineering
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Electrical and Electronics Engineering
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Information Technology
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Mechanical Engineering
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Master of Computer Applications
                             </li>
                           </ul>
@@ -514,19 +514,19 @@ export default function Example() {
                           <div>
                             <h3 className="font-bold text-md">PROGRAMS</h3>
                             <ul className="mt-2">
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 UG Courses
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 PG Courses
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Online Courses
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Certification
                               </li>
@@ -546,26 +546,26 @@ export default function Example() {
                         <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
                       </div>
                       <div className="relative z-10 p-6 text-white">
-                        <h3 className="text-xl font-novaThin">University of</h3>
+                        <h3 className="text-xl font-novaLight">University of</h3>
                         <h2 className="text-3xl font-novaBold leading-none text-[#43ffe6]">
                           Top Placements
                         </h2>
                         <div className="mt-4">
                           <div className="bg-[#087e8a] w-40 p-2 rounded-md">
                             <h3 className="text-3xl font-novaBold">1406</h3>
-                            <p className="text-xs font-novaThin">PLACEMENTS</p>
+                            <p className="text-xs font-novaLight">PLACEMENTS</p>
                           </div>
-                          <p className="text-xs font-novaThin mb-2">Offered in Batch 2023-24</p>
+                          <p className="text-xs font-novaLight mb-2">Offered in Batch 2023-24</p>
                           <div className="bg-[#087e8a] w-40 p-2 rounded-md">
                             <h3 className="text-3xl font-novaBold">1.13 <small className="-ml-1 text-lg">CR</small></h3>
-                            <p className="text-xs font-novaThin">INTERNATIONAL</p>
+                            <p className="text-xs font-novaLight">INTERNATIONAL</p>
                           </div>
-                          <p className="text-xs font-novaThin mb-2">Highest Package Offered</p>
+                          <p className="text-xs font-novaLight mb-2">Highest Package Offered</p>
                           <div className="bg-[#087e8a] p-2 w-40 rounded-md">
                             <h3 className="text-3xl font-novaBold">33.80 <small className="-ml-1 text-lg">LPA</small></h3>
-                            <p className="text-xs font-novaThin">NATIONAL</p>
+                            <p className="text-xs font-novaLight">NATIONAL</p>
                           </div>
-                          <p className="text-xs font-novaThin">Highest Package Offered</p>
+                          <p className="text-xs font-novaLight">Highest Package Offered</p>
                         </div>
                       </div>
                     </div>
@@ -582,10 +582,10 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-down"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down"
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -602,25 +602,25 @@ export default function Example() {
                       <div className="full pr-4 max-md:max-h-72 max-md:overflow-y-scroll">
                         <h3 className="font-bold text-md">ACADEMICS</h3>
                         <ul className="mt-2">
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Academic Calendar
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             List of Holidays
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             AKGEC Digital School
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Syllabus
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Policy and Process for Refund of Caution Money
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Educational Verification
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Issuance of certificates for passout students
                           </li>
                         </ul>
@@ -630,7 +630,7 @@ export default function Example() {
                       <div className="bg-About ">
                         <div className="flex flex-col items-center p-4">
                           <p className="flex flex-col">
-                            <span className="text-center text-lg font-novaThin text-white">
+                            <span className="text-center text-lg font-novaLight text-white">
                               Milestones in
                             </span>
                             <span className="text-center text-2xl font-novaBold leading-none text-cyan-500">
@@ -647,10 +647,10 @@ export default function Example() {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-boxes"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-boxes"
                             >
                               <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" />
                               <path d="m7 16.5-4.74-2.85" />
@@ -665,7 +665,7 @@ export default function Example() {
                               <path d="m12 8 4.74-2.85" />
                               <path d="M12 13.5V8" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-novaThin">
+                            <span className="mt-2 text-xs text-white font-novaLight">
                               Flexible Choice
                             </span>
                           </div>
@@ -677,10 +677,10 @@ export default function Example() {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-notebook-pen"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-notebook-pen"
                             >
                               <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
                               <path d="M2 6h4" />
@@ -689,7 +689,7 @@ export default function Example() {
                               <path d="M2 18h4" />
                               <path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-novaThin">
+                            <span className="mt-2 text-xs text-white font-novaLight">
                               Electives
                             </span>
                           </div>
@@ -701,17 +701,17 @@ export default function Example() {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-monitor-dot"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-monitor-dot"
                             >
                               <circle cx="19" cy="6" r="3" />
                               <path d="M22 12v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9" />
                               <path d="M12 17v4" />
                               <path d="M8 21h8" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-novaThin">
+                            <span className="mt-2 text-xs text-white font-novaLight">
                               Technologies
                             </span>
                           </div>
@@ -723,17 +723,17 @@ export default function Example() {
                               viewBox="0 0 24 24"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              class="lucide lucide-folder-git-2"
+                              strokeWidth="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="lucide lucide-folder-git-2"
                             >
                               <path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5" />
                               <circle cx="13" cy="12" r="2" />
                               <path d="M18 19c-2.8 0-5-2.2-5-5v8" />
                               <circle cx="20" cy="19" r="2" />
                             </svg>
-                            <span className="mt-2 text-xs text-white font-novaThin">
+                            <span className="mt-2 text-xs text-white font-novaLight">
                               Experiential Learning
                             </span>
                           </div>
@@ -753,10 +753,10 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-down"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down"
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -773,31 +773,31 @@ export default function Example() {
                       <div>
                         <h3 className="font-bold text-md">ADMISSIONS</h3>
                         <ul className="mt-2">
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Courses Offered
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Admission
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Fee Structure for New Students
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Admissions through UPTAC Counselling
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Fee Structure for Existing Students
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Fee Refund Norms
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Scholarship
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Admission Brochure 2024-25
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Information Booklet 2024-25
                           </li>
                         </ul>
@@ -806,19 +806,19 @@ export default function Example() {
                     <div className="w-52 pr-4">
                       <h3 className="font-bold text-md">AKGEC Programs</h3>
                       <ul className="mt-2">
-                        <li className="py-0.5 hover:underline font-novaThin text-sm">
+                        <li className="py-0.5 hover:underline font-novaLight text-sm">
                           B.Tech Programs
                         </li>
-                        <li className="py-0.5 hover:underline font-novaThin text-sm">
+                        <li className="py-0.5 hover:underline font-novaLight text-sm">
                           M.Tech Programs
                         </li>
-                        <li className="py-0.5 hover:underline font-novaThin text-sm">
+                        <li className="py-0.5 hover:underline font-novaLight text-sm">
                           MCA Programs
                         </li>
-                        <li className="py-0.5 hover:underline font-novaThin text-sm">
+                        <li className="py-0.5 hover:underline font-novaLight text-sm">
                           Industry-Academia Collaborations
                         </li>
-                        <li className="py-0.5 hover:underline font-novaThin text-sm">
+                        <li className="py-0.5 hover:underline font-novaLight text-sm">
                           Research & Development
                         </li>
                       </ul>
@@ -826,25 +826,25 @@ export default function Example() {
                     <div className="w-52">
                       <div>
                         <ul className="mt-2">
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Domestic Enrollment
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Global Admissions
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Enrollment Centers
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Campus Tours
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Transfer Guidelines
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Refund Policy
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             2024 Welcome Week
                           </li>
                         </ul>
@@ -876,16 +876,16 @@ export default function Example() {
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-graduation-cap"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="lucide lucide-graduation-cap"
                           >
                             <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
                             <path d="M22 10v6" />
                             <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
                           </svg>
-                          <span className="mt-2 text-xs text-white font-novaThin">
+                          <span className="mt-2 text-xs text-white font-novaLight">
                             Scholarships
                           </span>
                         </div>
@@ -897,10 +897,10 @@ export default function Example() {
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-handshake"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="lucide lucide-handshake"
                           >
                             <path d="m11 17 2 2a1 1 0 1 0 3-3" />
                             <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
@@ -908,7 +908,7 @@ export default function Example() {
                             <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
                             <path d="M3 4h8" />
                           </svg>
-                          <span className="mt-2 text-xs text-white font-novaThin">
+                          <span className="mt-2 text-xs text-white font-novaLight">
                             Education Loan
                           </span>
                         </div>
@@ -920,15 +920,15 @@ export default function Example() {
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-chart-spline"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="lucide lucide-chart-spline"
                           >
                             <path d="M3 3v16a2 2 0 0 0 2 2h16" />
                             <path d="M7 16c.5-2 1.5-7 4-7 2 0 2 3 4 3 2.5 0 4.5-5 5-7" />
                           </svg>
-                          <span className="mt-2 text-xs text-white font-novaThin">
+                          <span className="mt-2 text-xs text-white font-novaLight">
                             Futuristic
                           </span>
                         </div>
@@ -947,10 +947,10 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-down"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down"
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -989,10 +989,10 @@ export default function Example() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-ferris-wheel"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-ferris-wheel"
                               >
                                 <circle cx="12" cy="12" r="2" />
                                 <path d="M12 2v4" />
@@ -1004,7 +1004,7 @@ export default function Example() {
                                 <path d="M8 22h8" />
                                 <path d="M18 18.7a9 9 0 1 0-12 0" />
                               </svg>
-                              <span className="mt-2 text-xs text-white font-novaThin">
+                              <span className="mt-2 text-xs text-white font-novaLight">
                                 Festivals
                               </span>
                             </div>
@@ -1016,10 +1016,10 @@ export default function Example() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-hand-coins"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-hand-coins"
                               >
                                 <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
                                 <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
@@ -1027,7 +1027,7 @@ export default function Example() {
                                 <circle cx="16" cy="9" r="2.9" />
                                 <circle cx="6" cy="5" r="3" />
                               </svg>
-                              <span className="mt-2 text-xs text-white font-novaThin">
+                              <span className="mt-2 text-xs text-white font-novaLight">
                                 Culturally Diverse
                               </span>
                             </div>
@@ -1039,10 +1039,10 @@ export default function Example() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-handshake"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-handshake"
                               >
                                 <path d="m11 17 2 2a1 1 0 1 0 3-3" />
                                 <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
@@ -1050,7 +1050,7 @@ export default function Example() {
                                 <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
                                 <path d="M3 4h8" />
                               </svg>
-                              <span className="mt-2 text-xs text-white font-novaThin">
+                              <span className="mt-2 text-xs text-white font-novaLight">
                                 Student-Friendly
                               </span>
                             </div>
@@ -1062,10 +1062,10 @@ export default function Example() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-notebook-tabs"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-notebook-tabs"
                               >
                                 <path d="M2 6h4" />
                                 <path d="M2 10h4" />
@@ -1083,7 +1083,7 @@ export default function Example() {
                                 <path d="M15 12h5" />
                                 <path d="M15 17h5" />
                               </svg>
-                              <span className="mt-2 text-xs text-white font-novaThin">
+                              <span className="mt-2 text-xs text-white font-novaLight">
                                 Technology integration
                               </span>
                             </div>
@@ -1094,37 +1094,37 @@ export default function Example() {
                         <div className="w-1/2 pr-4">
                           <h3 className="font-bold text-md">CAMPUS LIFE</h3>
                           <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Overview
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Convocations
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Tech Invent & Events
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Cultural
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Evoke & Youth Summits
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Sports & Adventure
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Latest News
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Bollywood Celebrities
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               National & International Conferences
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               International Faculties
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Notable Alumni
                             </li>
                           </ul>
@@ -1134,25 +1134,25 @@ export default function Example() {
                             SOCIAL RESPONSIBILITIES
                           </h3>
                           <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Unnat Bharat Abhiyan & NSS
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Nature Club
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Adarsh Vikas Kendra
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Blood Donation Camp
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Eco Friendly Environment
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               SDP For Village Students
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               SDP Under PMKVY
                             </li>
                           </ul>
@@ -1161,15 +1161,15 @@ export default function Example() {
                           <div>
                             <h3 className="font-bold text-md">SOCIETIES</h3>
                             <ul className="mt-2">
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Departmental Societies
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Extra Curricular Societies
                               </li>
-                              <li className="py-0.5 hover:underline font-novaThin text-sm">
+                              <li className="py-0.5 hover:underline font-novaLight text-sm">
                                 {" "}
                                 Student Chapters
                               </li>
@@ -1191,10 +1191,10 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-down"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down"
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -1202,7 +1202,7 @@ export default function Example() {
                 </button>
                 <div
                   className={`${
-                    BigMenuToggle ? "relative w-full" : "absolute w-max"
+                    BigMenuToggle ? "relative w-full" : "absolute w-[550px]"
                   } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
@@ -1254,25 +1254,25 @@ export default function Example() {
                       <div className="w-max pr-4">
                         <h3 className="font-bold text-md">PLACEMENTS</h3>
                         <ul className="mt-2">
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             T&P Department
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Our Recruiters
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Placement Records
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Placement Highlights
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Placement Brochure
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             Placement Booklet 2022
                           </li>
-                          <li className="py-0.5 hover:underline font-novaThin text-sm">
+                          <li className="py-0.5 hover:underline font-novaLight text-sm">
                             T&P Programmes
                           </li>
                         </ul>
@@ -1291,10 +1291,10 @@ export default function Example() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-chevron-down"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-chevron-down"
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -1331,19 +1331,19 @@ export default function Example() {
                             <div className="grid grid-cols-2 gap-4 mt-3">
                               <div className="bg-[#087e8a] w-36 px-10 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">19K+</h3>
-                                <p className="text-xs font-novaThin">Students Graduated</p>
+                                <p className="text-xs font-novaLight">Students Graduated</p>
                               </div>
                               <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">8</h3>
-                                <p className="text-xs font-novaThin">Departmental Research Groups</p>
+                                <p className="text-xs font-novaLight">Departmental Research Groups</p>
                               </div>
                               <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">213</h3>
-                                <p className="text-xs font-novaThin">Students in Univ. Merit List</p>
+                                <p className="text-xs font-novaLight">Students in Univ. Merit List</p>
                               </div>
                               <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">2000+</h3>
-                                <p className="text-xs font-novaThin">Students Placed (2021-22)</p>
+                                <p className="text-xs font-novaLight">Students Placed (2021-22)</p>
                               </div>
                             </div>
                           </div>
@@ -1357,43 +1357,43 @@ export default function Example() {
                             Academic Research Hub
                           </h3>
                           <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               R & D Policy
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Journal Papers
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Conference Papers
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Book/Book Chapters
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Patent
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Funded Projects
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Consultancy
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Research Incentives
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               AKGEC Journals
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Research & Development Centres
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               Conferences
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               FDPs
                             </li>
-                            <li className="py-0.5 hover:underline font-novaThin text-sm">
+                            <li className="py-0.5 hover:underline font-novaLight text-sm">
                               MoUs
                             </li>
                           </ul>
@@ -1489,3 +1489,6 @@ export default function Example() {
     </header>
   );
 }
+
+
+

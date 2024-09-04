@@ -18,6 +18,16 @@ export default function LogoSlider() {
         { alt: "Adobe", src: "/image/company-logos/Adobe.webp", width: 158, height: 48 },
         { alt: "TCS", src: "/image/company-logos/tcs.webp", width: 158, height: 48 },
         { alt: "Amdocs", src: "/image/company-logos/amdocsIcon.webp", width: 158, height: 48 },
+        { alt: "Wipro", src: "/image/company-logos/WIPRO.webp", width: 158, height: 48 },
+        { alt: "Amazon", src: "/image/company-logos/AmozonIcon.webp", width: 158, height: 48 },
+        { alt: "Google", src: "/image/company-logos/GoogleIcon.webp", width: 158, height: 48 },
+        { alt: "Microsoft", src: "/image/company-logos/MicrosoftIcon.webp", width: 158, height: 48 },
+        { alt: "IBM", src: "/image/company-logos/ibm.webp", width: 158, height: 48 },
+        { alt: "Accenture", src: "/image/company-logos/AccentureIcon.webp", width: 158, height: 48 },
+        { alt: "Infosys", src: "/image/company-logos/infosys.webp", width: 158, height: 48 },
+        { alt: "Adobe", src: "/image/company-logos/Adobe.webp", width: 158, height: 48 },
+        { alt: "TCS", src: "/image/company-logos/tcs.webp", width: 158, height: 48 },
+        { alt: "Amdocs", src: "/image/company-logos/amdocsIcon.webp", width: 158, height: 48 },
         { alt: "Wipro", src: "/image/company-logos/WIPRO.webp", width: 158, height: 48 }
     ];
     const breakpoints = {
@@ -25,17 +35,19 @@ export default function LogoSlider() {
         480: { slidesPerView: 3 },
         768: { slidesPerView: 4 },
         1024: { slidesPerView: 5 },
-        1280: { slidesPerView: 6 }
+        1280: { slidesPerView: 9 }
     };
 
     return (
-        <div className="bg-white ">
-            <div className="mx-auto max-w-[1350px] mb-5">
+        
+        <div className="break1:max-w-[1650px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto bg-white mt-20 mb-10 px-16">
+            <div className="mx-auto mb-5 ">
                 <Swiper
                     modules={[Autoplay, Navigation]}
                     spaceBetween={10}
                     loop={true}
-                    autoplay={{ delay: 800, disableOnInteraction: false }}
+                    autoplay={{ delay: 0, disableOnInteraction: false }}
+                    speed={3000}
                     breakpoints={breakpoints}
                 >
                     {images.map((image, index) => (

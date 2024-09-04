@@ -57,17 +57,17 @@ export default function SlickSlider() {
 
   return (
     <section className="h-full bg-[#F3F3F3] py-8 ">
-      <div className="max-w-[1600px] mx-auto">
+      <div className="break1:max-w-[1650px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto">
         <header className="text-center mb-8 max-xl:mb-5">
-          <h1 className="text-5xl font-novaLight max-md:text-2xl max-sm:text-xl max-sm:px-4">
+          <h1 className="text-[42px] font-novaLight max-md:text-2xl max-sm:text-xl max-sm:px-4 text-gray-700">
             A Glimpse into Our Vibrant Journey
           </h1>
         </header>
-        <div className="grid grid-cols-10">
-          <div className="col-span-3 max-lg:col-span-10 max-lg:mb-4">
+        <div className="grid grid-cols-12">
+          <div className="col-span-4 max-lg:col-span-10 max-lg:mb-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-lg:grid-cols-2 max-lg:px-20 max-sm:px-5">
               <article className="border-r border-b border-gray-300 p-6 max-xl:p-4 leading-5 max-lg:text-center">
-                <h2 className="text-6xl font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-800 ">
+                <h2 className="text-5xl  xl:text-6xl  font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-700 ">
                   282
                 </h2>
                 <span className="bg-yellow-500 text-white py-1.5 px-2 text-sm uppercase font-novaBold rounded-md">
@@ -79,7 +79,7 @@ export default function SlickSlider() {
               </article>
 
               <article className="border-b border-gray-300 p-6 max-xl:p-4 leading-5 max-lg:text-center">
-                <h2 className="text-6xl font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-800">
+                <h2 className="text-5xl  xl:text-6xl  font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                   1406
                 </h2>
                 <span className="bg-yellow-500 text-white py-1.5 px-2 text-sm uppercase font-novaBold rounded-md">
@@ -91,7 +91,7 @@ export default function SlickSlider() {
               </article>
 
               <article className="border-r border-gray-300 p-6 max-xl:p-4 leading-5 max-lg:text-center">
-                <h2 className="text-6xl font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-800">
+                <h2 className="text-5xl  xl:text-6xl  font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                   <span className="whitespace-nowrap">
                     33.80{" "}
                     <span className="text-gray-600 text-3xl font-novaThin -ml-3 max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
@@ -109,11 +109,12 @@ export default function SlickSlider() {
               </article>
 
               <article className="p-6 max-xl:p-4 leading-5 max-lg:text-center">
-                <h2 className="text-6xl font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-800">
-                  <span className="whitespace-nowrap">1.13{" "}
-                  <span className="text-gray-600 text-3xl font-novaThin -ml-3 max-lg:-ml-2 max-lg:text-xl max-2xl:text-2xl max-md:text-lg max-sm:text-base">
-                    CR
-                  </span>
+                <h2 className="text-5xl  xl:text-6xl  font-novaThin mb-1 max-lg:text-3xl max-lg:mb-3 text-gray-700">
+                  <span className="whitespace-nowrap">
+                    1.13{" "}
+                    <span className="text-gray-600 text-3xl font-novaThin -ml-3 max-lg:-ml-2 max-lg:text-xl max-2xl:text-2xl max-md:text-lg max-sm:text-base">
+                      CR
+                    </span>
                   </span>
                 </h2>
                 <span className="bg-[linear-gradient(41deg,#087e8b_30%,#0a65a4_100%)] text-white py-1.5 px-2 text-sm uppercase font-novaBold rounded-md">
@@ -126,7 +127,7 @@ export default function SlickSlider() {
               </article>
             </div>
           </div>
-          <div className="ml-14 col-span-7 max-lg:col-span-10">
+          <div className="ml-5 col-span-8 max-lg:col-span-10">
             <section className="max-lg:px-16 max-sm:px-0">
               <Swiper
                 slidesPerView={1}
@@ -168,8 +169,8 @@ export default function SlickSlider() {
             </section>
           </div>
         </div>
-        <div className="grid grid-cols-10 mt-10 gap-12 ">
-          <div className="col-span-3 max-lg:col-span-10 max-lg:mb-4">
+        <div className="grid grid-cols-12 mt-10 gap-5 ">
+          <div className="col-span-4 max-lg:col-span-10 max-lg:mb-4">
             <aside className="m-2">
               <div className="max-lg:px-20 max-md:px-14 max-sm:px-1 h-full ">
                 <section className="swiper-container ">
@@ -207,33 +208,29 @@ export default function SlickSlider() {
               </div>
             </aside>
           </div>
-          <div className="ml-10 col-span-7 max-lg:col-span-10 max-lg:mb-4 max-lg:ml-0">
-            <section className="bg-[#1b9fb1] rounded-xl flex justify-between max-lg:flex-col gap-3 items-center max-lg:mx-20 max-sm:mx-2">
-              <div className="flex justify-between items-center max-lg:p-4">
-                <figure className="px-5">
+          <div className="col-span-8 max-lg:col-span-10 max-lg:mb-4 max-lg:ml-0">
+            <section className="bg-[#1b9fb1] rounded-lg">
+              <div className="grid grid-cols-12">
+                <div className="col-span-2 p-2 flex justify-center items-center">
                   <img
                     src="https://www.akgec.ac.in/wp-content/themes/twentysixteen/img/AKGEC_1_0.png"
                     alt="UNA Logo"
-                    className="w-80 max-2xl:w-52 max-xl:w-40 max-lg:w-32"
+                    className="w-28 aspect-square"
                   />
-                </figure>
-                <div className="py-1 ml-3">
-                  <h2 className="uppercase text-center font-novaBold text-xl max-2xl:text-[14px] max-xl:text-[14px] max-sm:text-[12px] text-white">
-                    AKGEC hosts ACET 2024:{" "}
-                    <span className="text-orange-300">
-                      1st International Conference
-                    </span>{" "}
-                    on Advanced Computing and Emerging Technologies
+                </div>
+                <div className="col-span-5 flex justify-center items-center">
+                  <h2 className="uppercase text-center max-w-96 font-novaBold leading-5 text-xl max-2xl:text-[18px] max-xl:text-[14px] max-sm:text-[12px] text-white">
+                    AKGEC hosts ACET 2024: <span className="text-orange-300"> 1st International Conference </span> on Advanced Computing and Emerging Technologies
                   </h2>
                 </div>
+                <div className="col-span-5">
+                  <img
+                    className="rounded-xl max-2xl:h-full h-[150px] w-full ml-auto max-lg:w-full max-lg:ml-0 object-cover"
+                    src="/image/ajay-kumar-garg-750x375-1.jpg"
+                    alt="UNA Background"
+                  />
+                </div>
               </div>
-              <figure className="">
-                <img
-                  className="rounded-xl max-2xl:h-full ml-auto max-lg:w-full max-lg:ml-0 object-cover"
-                  src="/image/ajay-kumar-garg-750x375-1.jpg"
-                  alt="UNA Background"
-                />
-              </figure>
             </section>
           </div>
         </div>

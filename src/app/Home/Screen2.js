@@ -29,15 +29,16 @@ const MilestonesSection = () => {
       sup: 'st',
       description: 'Universities In India By IIRF Rankings 2023',
     },
-    {
-      rank: '149',
-      sup: 'th',
-      description: 'Universities In India By TOI Rankings 2024',
-    },
+    // {
+    //   rank: '149',
+    //   sup: 'th',
+    //   description: 'Universities In India By TOI Rankings 2024',
+    // },
   ];
 
   return (
-    <div className="max-w-[1450px] mx-auto py-12 bg-white">
+    
+    <div className="break1:max-w-[1650px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto py-12 bg-white">
       <div className="text-center mb-10 ">
         <div className='flex gap-1 justify-center text-yellow-400'>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star">
@@ -68,13 +69,13 @@ const MilestonesSection = () => {
           <img src="/image/company-logos/times-of-india.webp" alt="TTI" className="h-12" />
         </div>
       </div>
-      <div className="flex justify-between space-x-0 max-lg:space-x-0 mx-auto max-lg:grid max-lg:grid-cols-3 max-md:grid-cols-2 max-lg:justify-start max-lg:gap-y-5">
+      <div className="flex justify-between space-x-0 max-lg:space-x-0  mx-auto max-lg:grid max-lg:grid-cols-3 max-md:grid-cols-2 max-lg:justify-start max-lg:gap-y-5">
         {milestones.map((milestone, index) => (
-          <div key={index} className="text-left border-l border-gray-400 px-3">
-            <p className="text-xs uppercase font-novaSemi text-gray-900 max-lg:text-xs">Ranked</p>
-            <p className="text-5xl font-novaLight text-gray-900 max-lg:text-2xl">{milestone.rank}<sup className='text-3xl font-novaLight max-lg:text-lg'>th</sup></p>
+          <div key={index} className="text-left after:content-link relative after:absolute after:right-0 after:top-0 after:w-10 after:h-full pr-10 ">
+            <p className="text-xs uppercase font-novaReg text-gray-900 font-extralight">Ranked</p>
+            <p className="text-4xl font-novaLight text-gray-900 max-lg:text-2xl">{milestone.rank}<sup className='text-3xl font-novaLight max-lg:text-lg ml-1'>th</sup></p>
             <p className="text-sm font-novaReg text-black max-lg:text-[10px]">among The Best</p>
-            <p className="text-[15px] text-gray-800 font-novaSemi capitalize max-lg:text-[10px]">{milestone.description}</p>
+            <p className="text-[15px] text-gray-900 font-novaReg capitalize max-lg:text-[10px] ">{milestone.description}</p>
           </div>
         ))}
       </div>

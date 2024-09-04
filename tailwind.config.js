@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      content: {
+        'link': 'url("/image/rank-side-star.webp")',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,6 +20,12 @@ module.exports = {
         'BG3': "url('/image/MainBG.jpg')",
         'BG4': "url('/image/dotted-map-bg.webp')",
         'BG5': "url('/image/dotted-map-bg.png')",
+      },
+      screens: {
+        'break1': '1800px',
+        'break2': '1400px',
+        'break3': '1200px',
+        'break4': '992px',
       },
     },
     fontFamily: {
