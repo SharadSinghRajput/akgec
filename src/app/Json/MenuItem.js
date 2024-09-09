@@ -1,200 +1,417 @@
-export const menuItems = [
-    { name: 'Home' },
-    {
-        name: 'About',
-        sublinks: [
-            { name: 'Overview' },
-            { name: 'Our Identity' },
-            { name: 'Vision & Mission' },
+const Home = {
+    name: 'Home',
+    links: '/',
+    sublinks: []
+}
+const About = {
+    name: 'About',
+    links: '/',
+    sublinks: {
+        "Who We Are": [
             {
-                name: 'Leadership',
-                sublinksL2: [
-                    { name: 'Director Message' },
-                    { name: 'Director General Message' }
-                ]
+                name: 'Overview',
+                url: '/'
             },
-            { name: 'Recognition & Approvals' },
-            { name: 'Awards & Rankings' },
-            { name: 'NBA Accreditation' },
-            { name: 'AICTE Approval Letters' },
-            { name: 'Management' }
+            {
+                name: 'Our Identity',
+                url: '/'
+            },
+            {
+                name: 'Vision & Mission',
+                url: '/'
+            },
+            {
+                name: 'LeaderShip',
+                url: '/'
+            },
+            {
+                name: 'Core Value',
+                url: '/'
+            },
+            {
+                name: 'Recognition & Approvals',
+                url: '/'
+            },
+            {
+                name: 'Awards & Rankings',
+                url: '/'
+            },
+            {
+                name: 'Institutional Social Responsibility',
+                url: '/'
+            },
+            {
+                name: 'AKG Edge',
+                url: '/'
+            },],
+        "Related Links": [
+            {
+                name: 'Institutes & Departments',
+                url: '/'
+            },
+            {
+                name: 'Admissions',
+                url: '/'
+            },
+            {
+                name: 'Scholarships',
+                url: '/'
+            },
+            {
+                name: 'Governance',
+                url: '/'
+            },
+            {
+                name: 'Hostel Facility',
+                url: '/'
+            },
+            {
+                name: 'Student Services',
+                url: '/'
+            },
+            {
+                name: 'How to Reach Us?',
+                url: '/'
+            },
+            {
+                name: 'GATI Charter Institution',
+                url: '/'
+            },
+            {
+                name: 'ABET Engineering Accreditation',
+                url: '/'
+            },
         ]
-    },
-    {
-        name: 'Programs',
-        sublinks: [
+    }
+}
+
+const Academics = {
+    name: 'Academics',
+    links: '/',
+    sublinks: {
+        "Academics": [
             {
-                name: 'UG Courses',
-                sublinksL2: [
-                    { name: 'B.Tech.' },
-                    { name: 'BBA' },
-                    { name: 'BCA' },
-                    { name: 'B.Com.' },
-                    { name: 'B.Sc.' }
-                ]
+                name: 'Academics Overview',
+                url: '/'
             },
             {
-                name: 'PG Courses',
-                sublinksL2: [
-                    { name: 'PGDM' },
-                    { name: 'MBA' },
-                    { name: 'MCA' },
-                    { name: 'M.Tech.' }
-                ]
+                name: 'Institutes',
+                url: '/'
             },
             {
-                name: 'Online Courses',
-                sublinksL2: [
-                    { name: 'BCA' },
-                    { name: 'MCA' },
-                    { name: 'MBA' }
-                ]
+                name: 'Program (Courses)',
+                url: '/'
             },
             {
-                name: 'Certification',
-                sublinksL2: [
-                    { name: 'Cybersecurity' },
-                    { name: 'Google Data Analytics' },
-                    { name: 'Digital Marketing' },
-                    { name: 'Artificial Intelligence' }
-                ]
-            }
+                name: 'Academic Calendar',
+                url: '/'
+            },
+            {
+                name: 'List of Holidays',
+                url: '/'
+            },
+            {
+                name: 'Teaching Practices',
+                url: '/'
+            },
+            {
+                name: 'System of Evaluation',
+                url: '/'
+            },
+            {
+                name: 'Professional Bodies',
+                url: '/'
+            },
+            {
+                name: 'Professors of Practice',
+                url: '/'
+            },
         ]
-    },
-    {
-        name: 'Academics',
-        sublinks: [
-            { name: 'Academics Overview' },
-            { name: 'Academic Calendar' },
+    }
+}
+
+const Admissions = {
+    name: 'Admissions',
+    links: '/',
+    sublinks: {
+        "Job Oriented Programs": [
             {
-                name: 'Institute',
-                sublinksL2: [
-                    { name: 'AKG Institute of Technology' },
-                    { name: 'AKG Institute of Management' }
-                ]
+                name: 'After 12th',
+                url: '/'
             },
-            { name: 'List of Holidays' },
-            { name: 'Admission Procedure' },
-            { name: 'MOUs' },
-            { name: 'FDPs' },
-            { name: 'Curriculum Design and Development' },
-            { name: 'Examination Cell' },
-            { name: 'Download Forms' },
-            { name: 'Awards' },
-            { name: 'Achievements' },
-            { name: 'Educational Verification' },
             {
-                name: 'Infrastructure/Visual Tour',
-                sublinksL2: [
-                    { name: 'Academic Complex' },
-                    { name: 'Hostel' },
-                    { name: 'Centres Of Excellence' },
-                    { name: 'Faith Centre' },
-                    { name: 'Support Facilities' },
-                    { name: 'Stationary Shop' },
-                    { name: 'College Canteen' }
-                ]
+                name: 'After Graduation',
+                url: '/'
             },
-            { name: 'Consultancy' }
-        ]
-    },
-    {
-        name: 'Admissions',
-        sublinks: [
-            { name: 'Overview' },
+            {
+                name: 'Leet Programs',
+                url: '/'
+            },
+            {
+                name: 'Specialized Programs',
+                url: '/'
+            },
+            {
+                name: 'Integrated Programs',
+                url: '/'
+            },
+            {
+                name: 'After Post Graduation',
+                url: '/'
+            },
+            {
+                name: 'AKG Advantages',
+                url: '/'
+            },
+            {
+                name: 'ABET Engineering Accreditation',
+                url: '/'
+            },
+        ],
+        "Admission": [
+            {
+                name: 'Overview',
+                url: '/'
+            },
             {
                 name: 'Course Fee',
-                sublinksL2: [
-                    { name: 'B.Tech.' },
-                    { name: 'PGDM' },
-                    { name: 'MBA' },
-                    { name: 'BBA' },
-                    { name: 'BCA' },
-                    { name: 'B.Com.' },
-                    { name: 'B.Sc.' },
-                    { name: 'MCA' }
-                ]
+                url: '/'
             },
-            { name: 'Course Offered' },
-            { name: 'Fee Structure' },
-            { name: 'Admission Brochure 2024' },
-            { name: 'How to Apply?' },
-            { name: 'Admission Criteria' },
-            { name: 'Scholarship' },
-            { name: 'Education Loan' },
-            { name: 'Hostel Fee' },
-            { name: 'Admissions Status' },
-            { name: 'International Admissions' },
-            { name: 'Migration Policy' },
-            { name: 'Refund Policy' },
-            { name: 'Syllabus' }
-        ]
-    },
-    {
-        name: 'Placements',
-        sublinks: [
-            { name: 'Overview' },
-            { name: 'Convocations' },
-            { name: 'Tech Invent & Events' },
-            { name: 'Cultural' },
-            { name: 'Evoke & Youth Summits' },
-            { name: 'Sports & Adventure' },
-            { name: 'Latest News' },
-            { name: 'Bollywood Celebrities' },
-            { name: 'National & International Conferences' },
-            { name: 'International Faculties' },
-            { name: 'Notable Alumni' }
-        ]
-    },
-    {
-        name: 'R&D',
-        sublinks: [
-            { name: 'Research' },
-            { name: 'R & D Policy' },
-            { name: 'Journal Papers' },
-            { name: 'Conference Papers' },
-            { name: 'Patents' },
-            { name: 'Centers Of Research' },
-            { name: 'Centers of Excellence' },
-            { name: 'Policies & Mandates' },
-            { name: 'AKGEC Journals' },
-            { name: 'Funded Projects' },
             {
-                name: 'College Publications',
-                sublinksL2: [
-                    { name: 'Information Booklet 2024' },
-                    { name: 'Brochure AKGEC' },
-                    { name: 'College Magazine (Sampark)' },
-                    { name: 'CSR Brochure' },
-                    { name: 'ECO-Friendly Brochure' },
-                    { name: 'Emergence (Value Education Cell)' }
-                ]
-            }
-        ]
-    },
-    {
-        name: 'VE Cell',
-        sublinks: [
-            { name: 'About VE Cell' },
-            { name: 'Transformative Sharing' },
-            { name: 'Participation in Societal Development' },
-            { name: 'Gallery' },
-            { name: 'Upcoming Events' },
+                name: 'How to Apply?',
+                url: '/'
+            },
             {
-                name: 'Activities',
-                sublinksL2: [
-                    { name: 'Faculty/Staff Development Programs (FDPs/SDPs)' },
-                    { name: 'Student Development Programs (SDPs)' },
-                    { name: 'UHV Departmental Seminars' },
-                    { name: 'Guest Lectures/Webinars' },
-                    { name: 'Conceptual Enrichment' },
-                    { name: 'Nature Club' },
-                    { name: 'Future Forward: Sustainability Club' },
-                    { name: 'Extension Activities' },
-                    { name: 'UHV Projects' }
-                ]
+                name: 'Admission Criteria',
+                url: '/'
+            },
+            {
+                name: 'AKG Scholarship',
+                url: '/'
+            },
+            {
+                name: 'Education Loan',
+                url: '/'
+            },
+            {
+                name: 'Hostel Fee',
+                url: '/'
+            },
+            {
+                name: 'National Admissions',
+                url: '/'
+            },
+            {
+                name: 'International Admissions',
+                url: '/'
+            },
+            {
+                name: 'Admission Offices',
+                url: '/'
+            },
+            {
+                name: 'Visit the Campus',
+                url: '/'
+            },
+            {
+                name: 'Migration Policy',
+                url: '/'
+            },
+            {
+                name: 'Refund Policy',
+                url: '/'
+            },
+            {
+                name: 'Orientation Schedule 2024',
+                url: '/'
+            },
+        ]
+    }
+}
+
+const CampusLife = {
+    name: 'Campus Life',
+    links: '/',
+    sublinks: [
+        {
+            name: "Overview",
+            url: "/"
+        },
+        {
+            name: "Convocations",
+            url: "/"
+        },
+        {
+            name: "Live-in-Concerts",
+            url: "/"
+        },
+        {
+            name: "Tech Invent & Events",
+            url: "/"
+        },
+        {
+            name: "Cultural & Cosmopolitan",
+            url: "/"
+        },
+        {
+            name: "Evoke & Youth Summits",
+            url: "/"
+        },
+        {
+            name: "Glorious Stars at AKG",
+            url: "/"
+        },
+        {
+            name: "Sports & Adventure",
+            url: "/"
+        },
+        {
+            name: "Latest News",
+            url: "/"
+        },
+        {
+            name: "Bollywood Celebrities",
+            url: "/"
+        },
+        {
+            name: "Prominent Visitors",
+            url: "/"
+        },
+        {
+            name: "CU-RHYTHMS International Folklore Festival",
+            url: "/"
+        },
+        {
+            name: "National & International Conferences",
+            url: "/"
+        },
+        {
+            name: "International Faculties",
+            url: "/"
+        },
+        {
+            name: "Notable Alumni",
+            url: "/"
+        },
+        {
+            name: "Canadian Alumni Chapter",
+            url: "/"
+        },
+    ]
+}
+
+const Placements = {
+    name: 'Placements',
+    links: '/',
+    sublinks: {
+        "Placements": [
+            {
+                name: "About Placements",
+                url: "/"
+            },
+            {
+                name: "Placement Tracker",
+                url: "/"
+            },
+            {
+                name: "Department of Career Planning & Development",
+                url: "/"
+            },
+            {
+                name: "Joint Placement Programme",
+                url: "/"
+            },
+            {
+                name: "Best Engineering Placement",
+                url: "/"
+            },
+            {
+                name: "Best Management Placement",
+                url: "/"
+            },
+            {
+                name: "Best Hotel Management Placement",
+                url: "/"
+            },
+            {
+                name: "Best Pharma Sciences Placement",
+                url: "/"
+            },
+            {
+                name: "Best Physics Placement",
+                url: "/"
+            },
+            {
+                name: "Best TCS Placement",
+                url: "/"
+            },
+            {
+                name: "Placement Day",
+                url: "/"
+            },
+            {
+                name: "Our Leading Recruiters",
+                url: "/"
             }
         ]
     }
+}
 
-];
+const ResearchInnovation = {
+    name: 'Research & Innovation',
+    links: '/',
+    sublinks: {
+        "Research Intensive University":[
+            {
+                name:"Research",
+                url:"/"
+            },
+            {
+                name:"Patents",
+                url:"/"
+            },
+            {
+                name:"Centers Of Research",
+                url:"/"
+            },
+            {
+                name:"Centers of Excellence",
+                url:"/"
+            },
+            {
+                name:"Visiting Scholars",
+                url:"/"
+            },
+            {
+                name:"AKG Global Management Review",
+                url:"/"
+            }
+        ],
+        "Entrepreneurship Cells":[
+            {
+                name:"Technology Business Incubator (TBI)",
+                url:"/"
+            },
+            {
+                name:"Innovation & Entrepreneurship Development Cell (IEDC)",
+                url:"/"
+            }
+        ],
+        "Sustainable Development Goals (SDG's)":[
+            {
+                name:"Policies & Strategies",
+                url:"/"
+            }
+        ]
+    }
+}
+
+export {
+    Home,
+    About,
+    Academics,
+    Admissions,
+    CampusLife,
+    Placements,
+    ResearchInnovation
+}

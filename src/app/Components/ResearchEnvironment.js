@@ -63,7 +63,7 @@ export default function ResearchEnvironment() {
                                 <p className="mt-5 line-clamp-3 px-8 mb-8 text-xs text-gray-600">{post.description}</p>
                                 <a
                                     href={post.href}
-                                    className="text-xs font-bold px-8 text-black hover:text-blue-500"
+                                    className="text-xs font-bold px-8 text-black hover:text-[#fecc00]"
                                 >
                                     Read More &#8594;
                                 </a>

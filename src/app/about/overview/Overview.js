@@ -602,7 +602,7 @@ export const Overview = () => {
               <div className="text-center space-y-2">
                 <p className="text-5xl max-sm:text-3xl font-extralight">1406</p>
                 <p className="text-xs">Placement Offers</p>
-              </div>
+              </div>  
               <div className="text-center space-y-2">
                 <p className="text-5xl max-sm:text-3xl font-extralight">
                   33.80<span className="text-xl max-sm:text-lg">LPA</span>

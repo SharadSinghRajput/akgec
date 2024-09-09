@@ -1,53 +1,54 @@
 import React from "react";
+import { Button } from "../Components/Button";
 
 const PlacementData = [
     {
-      company : "ATLASIAN",
-      name : "Uttam Kumar",
-      course : "CSE General",
-      salary : "36",
-      image_url : "image/student/1.png",
-      Logo : "/image/slider-home/6.webp",
-      G1 : "#0a65a4",
-      G2 : "#087e8b"
+        company: "ATLASIAN",
+        name: "Uttam Kumar",
+        course: "CSE General",
+        salary: "36",
+        image_url: "image/student/1.png",
+        Logo: "/image/slider-home/6.webp",
+        G1: "#0a65a4",
+        G2: "#087e8b"
     },
     {
-      company : "PALOALTO NETWORKS",
-      name : "Vandana Chauhan",
-      course : "CSE General",
-      salary : "54.75",
-      image_url : "image/student/2.png",
-      Logo : "/image/company-logos/Microsoft.png",
-      G1 : "#fbb03b",
-      G2 : "#fbb03b"
+        company: "PALOALTO NETWORKS",
+        name: "Vandana Chauhan",
+        course: "CSE General",
+        salary: "54.75",
+        image_url: "image/student/2.png",
+        Logo: "/image/company-logos/Microsoft.png",
+        G1: "#fbb03b",
+        G2: "#fecc00"
     },
     {
-      company : "MICROSOFT",
-      name : "Ameya Ohri",
-      course : "CSE General Student",
-      salary : "52.11",
-      image_url : "image/student/3.png",
-      Logo : "/image/company-logos/Adobe.png",      
-      G1 : "#0d254d",
-      G2 : "#0d254d"
+        company: "MICROSOFT",
+        name: "Ameya Ohri",
+        course: "CSE General Student",
+        salary: "52.11",
+        image_url: "image/student/3.png",
+        Logo: "/image/company-logos/Adobe.png",
+        G1: "#3c5686",
+        G2: "#3c5682"
     },
     {
-      company : "NUTANIX",
-      name : "Gaurav Maheshwari",
-      course : "",
-      salary : "24",
-      image_url : "image/student/4.png",
-      Logo : "/image/company-logos/Google.png",
-      G1 : "#f3f3f3",
-      G2 : "#f3f3f3"
+        company: "NUTANIX",
+        name: "Gaurav Maheshwari",
+        course: "",
+        salary: "24",
+        image_url: "image/student/4.png",
+        Logo: "/image/company-logos/Google.png",
+        G1: "#f3f3f3",
+        G2: "#f3f3f3"
     }
-  ]
+]
 export default function PlacementHighlights() {
     return (
         <div className="grid grid-cols-10">
             <div className="col-span-5 max-lg:col-span-10 ">
                 <div className="grid h-full grid-cols-1 sm:grid-cols-2">
-                    {PlacementData.map((item, index)=>(
+                    {PlacementData.map((item, index) => (
                         <div key={index} className={`relative max-full overflow-hidden`}
                             style={{ background: `linear-gradient(to right, ${item.G1}, ${item.G2})` }}
                         >
@@ -64,7 +65,7 @@ export default function PlacementHighlights() {
                             </div>
                         </div>
                     ))}
-                    
+
                 </div>
             </div>
             <div className="col-span-5 p-32 max-2xl:p-20 items-center flex justify-center text-white max-lg:col-span-10 max-md:p-5 bg-BG2 bg-no-repeat bg-cover">
@@ -110,12 +111,8 @@ export default function PlacementHighlights() {
                     </div>
 
                     <div className="flex justify-start space-x-4 z-10 mt-10">
-                        <button className="bg-yellow-500  text-white text-sm font-novaBold px-8 py-3 rounded-md">
-                            APPLY TODAY
-                        </button>
-                        <button className="border border-white text-white text-sm font-novaBold px-6 py-3 rounded-md">
-                            VIEW PLACEMENTS
-                        </button>
+                    <Button text={"APPLY TODAY"} className="bg-secondary text-white text-sm font-novaBold px-8 py-3 rounded-md  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#4070af] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105" />
+                    <Button text={"VIEW PLACEMENTS"} className="border border-white text-white text-sm font-novaBold px-6 py-3 rounded-md  hover:bg-white hover:text-black" />
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ export default function Header({ title, Butto }) {
                     <h2 className="text-3xl font-normal tracking-tight text-white sm:text-4xl">{title}</h2>
                     {Butto ? <>
                         <a href={Butto.Link} target="_blank" rel="noopener noreferrer" >
-                            <button className="rounded-md bg-yellow-500 px-3.5 py-2.5 mt-4 text-sm font-semibold text-white shadow-sm hover:bg-white/20">{Butto.name}</button> 
+                            <button className="rounded-md bg-secondary px-3.5 py-2.5 mt-4 text-sm font-semibold text-white shadow-sm hover:bg-white/20">{Butto.name}</button> 
                         </a>
                     </> : null}
                 </div>

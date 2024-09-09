@@ -49,7 +49,7 @@ export default function NewsEvents() {
                                 <p className="text-base leading-none font-novaLight text-justify mt-5">
                                     The UP government’s One District, One Product (ODOP) Programme aims to improve development and production of indigenous and specialized products. Ghaziabad is identified as a hub for manufacturing of General Engineering Products. Many of these manufacturers are small and medium industries that need modernization, machinery and productivity enhancement.
                                 </p>
-                                <button type="button" className="text-base font-novaBold mt-10" >
+                                <button type="button" className="text-base font-novaBold mt-10 text-secondary" >
                                     Read More ►
                                 </button>
                             </div>
@@ -76,7 +76,7 @@ export default function NewsEvents() {
                                                 </p>
                                                 <button
                                                     type="button"
-                                                    className="text-sm font-bold mt-10"
+                                                    className="text-sm font-bold mt-10 text-secondary"
                                                 >
                                                     Read More ►
                                                 </button>

@@ -24,7 +24,7 @@ export default function Example() {
   };
 
   return (
-    <Disclosure as="header" className="bg-yellow-500">
+    <Disclosure as="header" className="bg-secondary">
       <div className="mx-auto max-w-7xl px-2 sm:px-4 shadow backdrop-blur-3xl lg:divide-y lg:divide-gray-200 lg:px-8">
         <nav aria-label="Global" className="hidden lg:flex lg:space-x-8 lg:py-2">
           <div className="relative" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>

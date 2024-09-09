@@ -43,3 +43,17 @@
 .marquee:hover {
   animation-play-state: paused;
 }
+.bg-primary {
+  background-color: #3c5686;
+}
+.text-primary {
+  color: #3c5686;
+}
+.bg-secondary {
+  background-color: #fecc00;
+}
+.text-secondary {
+  color: #fecc00;
+}
+/* Yellow : #FECC00  */
+/* Blue : #3C5686 */

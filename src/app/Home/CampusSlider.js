@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+import { Button } from '../Components/Button'
 
 const product = {
     name: 'Application UI Icon Pack',
@@ -77,8 +77,8 @@ export default function Example() {
                             </div>
                             <div className='col-span-1 max-lg:col-span-3'>
                                 <div class="flex justify-end space-x-4 z-10 ">
-                                    <button class="bg-yellow-500  text-white text-sm font-novaBold px-10 py-3.5 rounded-xl">APPLY TODAY</button>
-                                    <button class="border border-white text-white text-sm font-novaBold px-12 py-3.5 rounded-xl">VIEW PLACEMENTS</button>
+                                    <Button text={"APPLY TODAY"} className="bg-secondary text-white text-sm font-novaBold px-10 py-3.5 rounded-xl hover:bg-[#3c5686]" />
+                                    <Button text={"VIEW PLACEMENTS"} className="border border-white text-white text-sm font-novaBold px-12 py-3.5 rounded-xl hover:bg-white hover:text-black" />
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react';
+import { Button } from '../Components/Button';
 
 const programData = [
   {
@@ -52,10 +53,10 @@ export default function Form() {
           <h2 className="text-base font-novaReg text-center">
             APPLY TODAY FOR
           </h2>
-          <h1 className="font-novaBold text-center text-xl">
+          <h1 className="font-novaBold text-center text-xl">  
             AKG UNIVERSITY PROGRAMS
           </h1>
-          <p className="bg-blue-600 text-white text-center font-novaBold mb-6 text-xs w-max py-2 px-4 rounded-lg mt-2">
+          <p className="bg-primary text-white text-center font-novaBold mb-6 text-xs w-max py-2 px-4 rounded-lg mt-2">
             Registration End Date (Phase-II) - 30 Aug 2024
           </p>
         </div>
@@ -145,12 +146,7 @@ export default function Form() {
           </div>
 
           <div className="flex justify-between items-center">
-            <button
-              type="submit"
-              className="bg-blue-600 text-white font-novaBold py-4 px-12 text-xs rounded-md"
-            >
-              REGISTER NOW
-            </button>
+          <Button text={'REGISTER NOW'} type='submit' className="bg-primary text-white font-novaBold py-4 px-12 text-xs rounded-md" />
             <a href="#" className="text-xs font-novaBold text-gray-600 underline">
               ALREADY REGISTERED
             </a>

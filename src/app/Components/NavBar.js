@@ -56,12 +56,11 @@ export default function Example() {
 
   return (
     <header
-      className={`z-50 w-full fixed top-0 left-0 ${
-        isScrolled100 ? "bg-blue-600" : ""
-      } transition-all duration-200`}
+      className={`z-50 w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary" : ""
+        } transition-all duration-200`}
     >
-      <div className="grid grid-cols-8 max-lg:grid-cols-3 gap-x-10">
-        <div className="col-span-2 flex max-lg:col-span-1 max-sm:col-span-2 ">
+      <div className="grid grid-cols-8 max-xl:grid-cols-10  gap-x-10">
+        <div className="col-span-2 flex max-xl:col-span-2 max-md:col-span-3 max-sm:col-span-5 ">
           <div
             className={`text-white py-3 max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
           >
@@ -73,15 +72,15 @@ export default function Example() {
                   className="h-16 w-full object-contain"
                 />
               </div>
-              <div className="flex justify-center p-2">
+              <div className="flex justify-center p-2 items-center ">
                 <img
-                  src="/image/naac-a-logo.png"
+                  src="/image/NAAC.png"
                   alt="Chandigarh University Logo"
-                  className="h-12 w-full object-contain"
+                  className="h-12 w-full object-contain bg-blend-color-dodge"
                 />
               </div>
             </div>
-            <div hidden={isScrolled} className="max-lg:hidden">
+            <div hidden={isScrolled} className="max-xl:hidden">
               <div className="flex items-center px-5">
                 <div className="flex-grow border-t border-white opacity-40"></div>
                 <p className="mx-4 text-center opacity-40 text-xs font-novaLight ">
@@ -96,7 +95,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="flex lg:hidden max-lg:col-span-1 max-md:col-span-2 max-sm:col-span-1 max-md:justify-end max-md:mr-5 justify-center">
+        <div className="flex lg:hidden max-xl:col-span-1 max-md:col-span-3 max-sm:col-span-1 max-md:justify-end max-md:mr-5 justify-center">
           <button
             type="button"
             onClick={() => setBigMenuToggle(!BigMenuToggle)}
@@ -107,14 +106,13 @@ export default function Example() {
             <p className="text-xs uppercase -mt-1">Menu</p>
           </button>
         </div>
-        <div className="col-span-6 max-lg:col-span-1 max-md:col-span-2 max-lg:flex max-lg:items-center">
-          <nav className="px-5 ">
+        <div className="col-span-6 max-sm:col-span-10 max-xl:col-span-8 max-md:col-span-6 max-xl:flex max-xl:items-center">
+          <nav className="px-5 max-md:px-1  ">
             <div
-              className={` lg:flex lg:gap-x-8 justify-between px-7 items-center  py-2 ${
-                isScrolled ? "" : "pt-4"
-              }`}
+              className={` lg:flex lg:gap-x-8 justify-between px-7 items-center  max-md:px-1 py-2 ${isScrolled ? "" : "pt-4"
+                }`}
             >
-              <div className="hidden lg:flex gap-20 justify-start text-[13px] font-novaLight">
+              <div className="hidden lg:flex gap-20 justify-start max-xl:gap-8  text-[13px] font-novaLight">
                 <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500 ">
                   Campus
                 </a>
@@ -130,33 +128,29 @@ export default function Example() {
               </div>
               <div className="flex justify-center max-md:justify-start gap-4">
                 <div
-                  className={`flex items-center justify-center transition-all ${
-                    isScrolled ? "px-2 py-1" : "px-4 py-3"
-                  } bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full max-w-md mx-auto max-md:mx-0`}
+                  className={`flex max-sm:px-2 max-sm:py-2  items-center justify-center transition-all ${isScrolled ? "px-2 py-1" : "px-4 py-3"
+                    } bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full max-w-md mx-auto max-md:mx-0`}
                 >
                   <div className="flex items-center space-x-3">
                     <div
                       className={`bg-white  p-2 rounded-full flex items-center justify-center`}
                     >
                       <PhoneIcon
-                        className={`${
-                          isScrolled ? "h-3 w-3" : "h-5 w-5"
-                        } text-cyan-500`}
+                        className={`${isScrolled ? "h-3 w-3" : "h-5 w-5"
+                          } text-cyan-500`}
                         aria-hidden="true"
                       />
                     </div>
                     <div className="border-r pr-6 border-[#46a7d1] font-novaLight">
                       <p
-                        className={`text-white  ${
-                          isScrolled ? "text-[10px]" : "text-xs"
-                        }`}
+                        className={`text-white  ${isScrolled ? "text-[10px]" : "text-xs"
+                          }`}
                       >
                         Admission Helpline
                       </p>
                       <p
-                        className={`text-white font-bold  ${
-                          isScrolled ? "text-sm" : "text-base leading-none"
-                        }`}
+                        className={`text-white max-xl:text-xs font-bold  ${isScrolled ? "text-sm" : "text-base leading-none"
+                          }`}
                       >
                         1800-200-0777
                       </p>
@@ -164,7 +158,7 @@ export default function Example() {
                   </div>
                   <div className="flex items-center ml-3 ">
                     <button className="text-white p-2 rounded-full hover:bg-blue-700">
-                      {/* Button content */}
+
                     </button>
                     <Bars3Icon
                       className="text-white mr-2 h-8"
@@ -172,25 +166,13 @@ export default function Example() {
                     />
                   </div>
                 </div>
-                {/* <div className="lg:hidden flex items-center ml-3">
-                                    <button onClick={} className="text-white p-2 rounded-full hover:bg-blue-700">
-                                        <Bars3Icon className="text-white mr-2 h-6" aria-hidden="true" />
-                                    </button>
-                                </div> */}
-
-                {/* <div className="flex justify-center items-center mt-2 text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width={24} height={24} strokeWidth={1.5} stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                                    </svg>
-                                </div> */}
               </div>
             </div>
             <ul
-              className={`${
-                BigMenuToggle
-                  ? "fixed w-full h-full left-0 top-0 bg-blue-800 pt-10"
-                  : `hidden relative ${isScrolled ? "py-1" : "py-0 mt-4 "}`
-              }  lg:flex items-center justify-between text-black font-semibold text-sm bg-white/10
+              className={`${BigMenuToggle
+                ? "fixed w-full h-full left-0 top-0 bg-blue-800 pt-10"
+                : `hidden relative ${isScrolled ? "py-1" : "py-0 mt-4 "}`
+                }  xl:flex items-center justify-between text-black font-semibold text-sm bg-white/10
                                         backdrop-blur-xl px-5 rounded-lg backdrop-contrast-125`}
             >
               {BigMenuToggle ? (
@@ -234,12 +216,11 @@ export default function Example() {
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
-                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
+                  <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${
-                    BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
-                  } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-3">
@@ -357,12 +338,12 @@ export default function Example() {
                             <span className="text-center font-normal text-xl font-novaLight text-white">
                               AKG University
                             </span>
-                            <span className="text-center font-novaBold text-3xl text-cyan-500 leading-none">
+                            <span className="text-center font-novaBold text-3xl text-secondary leading-none">
                               of Excellence
                             </span>
                           </p>
                         </div>
-                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6]">
+                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#3c5686] to-[#3c568696]">
                           <div className="flex flex-col items-center text-white border-r border-b border-t-white/50 p-7">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -470,12 +451,11 @@ export default function Example() {
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
-                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
+                  <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${
-                    BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
-                  } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
                   <div className="grid grid-cols-3">
@@ -547,21 +527,21 @@ export default function Example() {
                       </div>
                       <div className="relative z-10 p-6 text-white">
                         <h3 className="text-xl font-novaLight">University of</h3>
-                        <h2 className="text-3xl font-novaBold leading-none text-[#43ffe6]">
+                        <h2 className="text-3xl font-novaBold leading-none text-secondary">
                           Top Placements
                         </h2>
                         <div className="mt-4">
-                          <div className="bg-[#087e8a] w-40 p-2 rounded-md">
+                          <div className="bg-[#3c5686c4] w-40 p-2 rounded-md">
                             <h3 className="text-3xl font-novaBold">1406</h3>
                             <p className="text-xs font-novaLight">PLACEMENTS</p>
                           </div>
                           <p className="text-xs font-novaLight mb-2">Offered in Batch 2023-24</p>
-                          <div className="bg-[#087e8a] w-40 p-2 rounded-md">
+                          <div className="bg-[#3c5686c4] w-40 p-2 rounded-md">
                             <h3 className="text-3xl font-novaBold">1.13 <small className="-ml-1 text-lg">CR</small></h3>
                             <p className="text-xs font-novaLight">INTERNATIONAL</p>
                           </div>
                           <p className="text-xs font-novaLight mb-2">Highest Package Offered</p>
-                          <div className="bg-[#087e8a] p-2 w-40 rounded-md">
+                          <div className="bg-[#3c5686c4] p-2 w-40 rounded-md">
                             <h3 className="text-3xl font-novaBold">33.80 <small className="-ml-1 text-lg">LPA</small></h3>
                             <p className="text-xs font-novaLight">NATIONAL</p>
                           </div>
@@ -589,12 +569,11 @@ export default function Example() {
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
-                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
+                  <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${
-                    BigMenuToggle ? "relative w-full" : "absolute w-max"
-                  } left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
+                    } left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2 ">
@@ -633,12 +612,12 @@ export default function Example() {
                             <span className="text-center text-lg font-novaLight text-white">
                               Milestones in
                             </span>
-                            <span className="text-center text-2xl font-novaBold leading-none text-cyan-500">
+                            <span className="text-center text-2xl font-novaBold leading-none text-secondary">
                               Educational Achievement
                             </span>
                           </p>
                         </div>
-                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6]">
+                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#3c5686] to-[#3c5686a8]">
                           <div className="flex flex-col items-center text-white border-r border-t-white/50 p-7">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -760,12 +739,11 @@ export default function Example() {
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
-                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
+                  <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${
-                    BigMenuToggle ? "relative w-full" : "absolute w-max"
-                  } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="flex group-hover:p-4 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col max-md:gap-5">
@@ -861,7 +839,7 @@ export default function Example() {
                     >
                       <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
                     </div>
-                    <div className="relative bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6] bg-opacity-75 ">
+                    <div className="relative bg-gradient-to-r from-[#3c5686c4] to-[#3c568693] bg-opacity-75 ">
                       <div className="relative h-1/2 z-10 text-white">
                         <h3 className="text-xl py-2 text-center font-novaLight">
                           Open Doors to Your Future
@@ -954,12 +932,11 @@ export default function Example() {
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
-                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
+                  <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${
-                    BigMenuToggle ? "relative w-full" : "absolute w-max"
-                  } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -974,7 +951,7 @@ export default function Example() {
                         >
                           <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
                         </div>
-                        <div className="relative bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6] bg-opacity-75 ">
+                        <div className="relative bg-gradient-to-r from-[#3c5686c4] to-[#3c568693] bg-opacity-75 ">
                           <div className="relative h-1/2 z-10 text-white">
                             <h3 className="text-xl py-2 text-center font-novaLight">
                               A Place Like Home
@@ -1198,12 +1175,11 @@ export default function Example() {
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
-                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
+                  <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${
-                    BigMenuToggle ? "relative w-full" : "absolute w-[550px]"
-                  } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[550px]"
+                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -1214,7 +1190,7 @@ export default function Example() {
                             <span className="text-center font-novaLight text-base text-white">
                               Corporate Ties
                             </span>
-                            <span className="text-center font-novaBold text-2xl text-cyan-500">
+                            <span className="text-center font-novaBold text-2xl text-secondary">
                               &
                             </span>
                             <span className="text-center font-novaLight text-base text-white">
@@ -1222,7 +1198,7 @@ export default function Example() {
                             </span>
                           </p>
                         </div>
-                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#087e8be6] to-[#0a65a4e6]">
+                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#3c5686c4] to-[#3c568693]">
                           <div className="flex flex-col items-center text-white border-r border-b border-t-white/50 p-7">
                             <FontAwesomeIcon icon={faGoogle} size="3x" />
                             <span className="mt-2 text-xs text-white font-light">
@@ -1298,12 +1274,11 @@ export default function Example() {
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
-                  <span className="absolute inset-x-0 top-0 h-2 bg-[#087397] transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
+                  <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${
-                    BigMenuToggle ? "relative w-full" : "absolute w-max"
-                  } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
+                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
                   <div className="grid grid-cols-2">
@@ -1329,19 +1304,19 @@ export default function Example() {
                               Best Placements
                             </h2> */}
                             <div className="grid grid-cols-2 gap-4 mt-3">
-                              <div className="bg-[#087e8a] w-36 px-10 py-4 rounded-md flex flex-col items-center text-center">
+                              <div className="bg-[#3c568693] w-36 px-10 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">19K+</h3>
                                 <p className="text-xs font-novaLight">Students Graduated</p>
                               </div>
-                              <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                              <div className="bg-[#3c568693] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">8</h3>
                                 <p className="text-xs font-novaLight">Departmental Research Groups</p>
                               </div>
-                              <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                              <div className="bg-[#3c568693] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">213</h3>
                                 <p className="text-xs font-novaLight">Students in Univ. Merit List</p>
                               </div>
-                              <div className="bg-[#087e8a] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                              <div className="bg-[#3c568693] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">2000+</h3>
                                 <p className="text-xs font-novaLight">Students Placed (2021-22)</p>
                               </div>

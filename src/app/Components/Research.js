@@ -30,7 +30,7 @@ const posts = [
 ]
 export default function Example() {
     return (
-        <section className="bg-[#0d244d] py-10 sm:py-16 md:py-20">
+        <section className="bg-primary   py-10 sm:py-16 md:py-20">
             <div className="break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 text-white">
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[43px] font-novaLight text-center tracking-tight">
                     Explore Our Courses
@@ -54,7 +54,7 @@ export default function Example() {
                     {posts.map((post) => (
                         <article key={post.id} className="relative bg-gray-900 rounded-lg shadow-md overflow-hidden">
                             <img
-                                alt=""  
+                                alt=""
                                 src={post.imageUrl}
                                 className="h-[180px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover"
                             />
@@ -68,7 +68,7 @@ export default function Example() {
                                     </p>
                                     <a
                                         href={post.href}
-                                        className="mt-1 text-[12px] sm:text-[13px] md:text-[14px] uppercase font-novaBold text-blue-600 hover:text-blue-500 self-end"
+                                        className="mt-1 text-[12px] sm:text-[13px] md:text-[14px] uppercase font-novaBold text-secondary hover:text-[#3c5686] duration-300 self-end"
                                     >
                                         Read More
                                     </a>
