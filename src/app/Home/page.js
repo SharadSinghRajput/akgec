@@ -78,28 +78,27 @@ export default function Home() {
           className="w-full h-full object-cover absolute left-0 top-0 z-0 animate-zoomInOut"
         />
       </div>
-      <div className="relative">
+      <div className="relative h-auto">
         <TopCard />
         <ScreenOne />
         <ScreenTwo />
         <ScreenThree />
-        <LogoSlider />
+        <LogoSlider /> 
         <CampusSlider />
         <StudentReviews />
         <NewsEvents />
         <Research />
         <ResearchEnvironment />
 
-        {/* <MiddleSection/> */}
-        <FooterCard />
-        <Footer />
+        <MiddleSection/>
+         <FooterCard />
+        <Footer /> 
 
 
         <StickyFooter ShowState={showStickyBar} />
 
-
         {/* <AwardSection/> */}
-      </div>
+      </div >
     </>
   );
 }

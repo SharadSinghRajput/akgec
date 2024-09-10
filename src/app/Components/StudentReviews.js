@@ -37,9 +37,16 @@ export default function Example() {
                         
                     </figure>
                 </div> */}
-                <div className="max-w-4xl mx-auto mt-10">
+               <div className="max-w-4xl mx-auto mt-10">
                     <div className="grid grid-cols-12 bg-[#f3f3f3] min-h-[380px] rounded-lg overflow-hidden">
-                        <div className="col-span-8 p-10 ">
+                        <div className="col-span-12 sm:col-span-4 sm:order-last max-sm:w-64 max-sm:m-auto">
+                            <img
+                                alt=""
+                                src="/image/str-1.jpg"
+                                className="h-full w-full object-cover"
+                            />
+                        </div>
+                        <div className="col-span-12 sm:col-span-8 p-10">
                             <figure className="relative isolate h-full flex flex-col justify-between">
                                 <blockquote className="text-base font-extralight text-gray-700 sm:text-xl">
                                     <p>
@@ -52,13 +59,7 @@ export default function Example() {
                                 </figcaption>
                             </figure>
                         </div>
-                        <div className="col-span-4">
-                            <img
-                                alt=""
-                                src="/image/str-1.jpg"
-                                className="h-full w-full object-cover"
-                            />
-                        </div>
+
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center">
