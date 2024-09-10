@@ -31,7 +31,7 @@ import {
   ChevronDownIcon,
   PhoneIcon,
 } from "@heroicons/react/20/solid";
-
+import { SVG } from "../constants/SvgConstants";
 const products = [{ icon: ChartPieIcon }, { icon: CursorArrowRaysIcon }];
 
 import {
@@ -88,8 +88,8 @@ export default function Example() {
       className={`z-50 w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary" : ""
         } transition-all duration-200`}
     >
-      <div className="grid grid-cols-8 max-xl:grid-cols-10  gap-x-10">
-        <div className="col-span-2 flex max-xl:col-span-2 max-md:col-span-3 max-sm:col-span-5 ">
+      <div className="grid grid-cols-8 max-xl:grid-cols-10 max-lg:grid-cols-12  gap-x-10">
+        <div className="col-span-2 flex max-xl:col-span-2 max-md:col-span-4  max-lg:col-span-3 max-sm:col-span-5 ">
           <div
             className={`text-white py-3 max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
           >
@@ -155,10 +155,10 @@ export default function Example() {
                   Contact us
                 </a>
               </div>
-              <div className="flex justify-center max-md:justify-start gap-4">
+              <div className="flex justify-end max-md:justify-start gap-4">
                 <div
-                  className={`flex max-sm:px-2 max-sm:py-2  items-center justify-center transition-all ${isScrolled ? "px-2 py-1" : "px-4 py-3"
-                    } bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full max-w-md mx-auto max-md:mx-0`}
+                  className={`flex max-sm:p-1  max-lg:p-1  items-center justify-center transition-all ${isScrolled ? "px-2 py-1" : "px-4 py-3"
+                    } bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full max-w-md mx-auto max-lg:mx-0 max-md:mx-0`}
                 >
                   <div className="flex items-center space-x-3">
                     <div
@@ -1204,7 +1204,11 @@ export default function Example() {
             </ul>
           </nav>
         </div>
-        <div className="hidden max-md:col-span-1 max-md:flex justify-center"></div>
+        <div className="hidden max-md:col-span-4 max-md:flex justify-center">
+          <div>
+            {/* {SVG.Call}   */}
+          </div>
+        </div>
       </div>
 
       <Dialog
