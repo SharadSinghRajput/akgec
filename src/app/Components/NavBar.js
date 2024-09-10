@@ -34,6 +34,10 @@ import {
 
 const products = [{ icon: ChartPieIcon }, { icon: CursorArrowRaysIcon }];
 
+import {
+  Home, About, Academics, Admissions, CampusLife, ResearchInnovation,
+  Placements
+} from "../Json/MenuItem";
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled100, setIsScrolled100] = useState(false);
@@ -54,6 +58,31 @@ export default function Example() {
     };
   }, []);
 
+  // const LinksList = ({ title, links }) => (
+  //   <div className=" ">
+  //     <h3 className="font-bold">{title}</h3>
+  //     <ul className="mt-2">
+  //       {links?.map(link => (
+  //         <li key={link.url} className="py-0.5 hover:underline font-novaLight text-sm">
+  //           <a href={link.url}>{link.name}</a>
+  //         </li>
+  //       ))}
+  //     </ul>
+  //   </div>
+    
+  // );
+  const LinksList = ({ title, links, titleClassName }) => (
+    <div className="pr-4 max-md:w-full">
+        {title && <h3 className={`font-bold ${titleClassName}`}>{title}</h3>}
+        <ul className="mt-2">
+            {links?.map(link => (
+                <li key={link.url} className="py-0.5 hover:underline font-novaLight text-sm">
+                    <a href={link.url}>{link.name}</a>
+                </li>
+            ))}
+        </ul>
+    </div>
+);
   return (
     <header
       className={`z-50 w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary" : ""
@@ -95,7 +124,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="flex lg:hidden max-xl:col-span-1 max-md:col-span-3 max-sm:col-span-1 max-md:justify-end max-md:mr-5 justify-center">
+        <div className="flex xl:hidden max-xl:col-span-3 max-md:col-span-3 max-sm:col-span-1 max-md:justify-end max-md:mr-5 justify-center">
           <button
             type="button"
             onClick={() => setBigMenuToggle(!BigMenuToggle)}
@@ -106,13 +135,13 @@ export default function Example() {
             <p className="text-xs uppercase -mt-1">Menu</p>
           </button>
         </div>
-        <div className="col-span-6 max-sm:col-span-10 max-xl:col-span-8 max-md:col-span-6 max-xl:flex max-xl:items-center">
+        <div className="col-span-6 max-sm:col-span-10 max-xl:col-span-5 max-md:col-span-6 max-xl:flex max-xl:items-center max-xl:justify-end  max-md:justify-start">
           <nav className="px-5 max-md:px-1  ">
             <div
               className={` lg:flex lg:gap-x-8 justify-between px-7 items-center  max-md:px-1 py-2 ${isScrolled ? "" : "pt-4"
                 }`}
             >
-              <div className="hidden lg:flex gap-20 justify-start max-xl:gap-8  text-[13px] font-novaLight">
+              <div className="hidden xl:flex gap-20 justify-start max-xl:gap-8  text-[13px] font-novaLight">
                 <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500 ">
                   Campus
                 </a>
@@ -172,7 +201,7 @@ export default function Example() {
               className={`${BigMenuToggle
                 ? "fixed w-full h-full left-0 top-0 bg-blue-800 pt-10"
                 : `hidden relative ${isScrolled ? "py-1" : "py-0 mt-4 "}`
-                }  xl:flex items-center justify-between text-black font-semibold text-sm bg-white/10
+                }  xl:flex  items-center justify-between text-black font-semibold text-sm bg-white/10
                                         backdrop-blur-xl px-5 rounded-lg backdrop-contrast-125`}
             >
               {BigMenuToggle ? (
@@ -220,13 +249,13 @@ export default function Example() {
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-3">
                     <div className="col-span-2 max-md:col-span-3 pr-4 p-0 group-hover:p-5 transition-all">
                       <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
-                        <div className="w-1/2 pr-4 max-md:w-full">
+                        {/* <div className="w-1/2 pr-4 max-md:w-full">
                           <h3 className="font-bold">WHO WE ARE</h3>
                           <ul className="mt-2">
                             <li className="py-0.5 hover:underline font-novaLight text-sm">
@@ -328,7 +357,9 @@ export default function Example() {
                               </li>
                             </ul>
                           </div>
-                        </div>
+                        </div> */}
+                        <LinksList title="WHO WE ARE" links={About.sublinks["Who We Are"]} />
+                        <LinksList title="Related Links" links={About.sublinks["Related Links"]} />
                       </div>
                     </div>
                     <div className="col-span-1 max-md:hidden">
@@ -455,7 +486,7 @@ export default function Example() {
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
                   <div className="grid grid-cols-3">
@@ -573,40 +604,17 @@ export default function Example() {
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                    } left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2 ">
                     <div className="col-span-1 max-md:col-span-2 pr-4 p-0 group-hover:p-5 transition-all">
                       <div className="full pr-4 max-md:max-h-72 max-md:overflow-y-scroll">
-                        <h3 className="font-bold text-md">ACADEMICS</h3>
-                        <ul className="mt-2">
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Academic Calendar
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            List of Holidays
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            AKGEC Digital School
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Syllabus
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Policy and Process for Refund of Caution Money
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Educational Verification
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Issuance of certificates for passout students
-                          </li>
-                        </ul>
+                        <LinksList title="ACADEMICS" links={Academics.sublinks["Academics"]} />
                       </div>
                     </div>
-                    <div className="col-span-1 max-md:hidden">
-                      <div className="bg-About ">
+                    <div className="col-span-1 max-md:hidden h-full">
+                      <div className="bg-About h-full ">
                         <div className="flex flex-col items-center p-4">
                           <p className="flex flex-col">
                             <span className="text-center text-lg font-novaLight text-white">
@@ -743,90 +751,18 @@ export default function Example() {
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
-                  <div className="flex group-hover:p-4 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col max-md:gap-5">
-                    <div className="w-52">
-                      <div>
-                        <h3 className="font-bold text-md">ADMISSIONS</h3>
-                        <ul className="mt-2">
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Courses Offered
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Admission
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Fee Structure for New Students
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Admissions through UPTAC Counselling
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Fee Structure for Existing Students
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Fee Refund Norms
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Scholarship
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Admission Brochure 2024-25
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Information Booklet 2024-25
-                          </li>
-                        </ul>
-                      </div>
+                  <div className="flex group-hover:p-4 w-max transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col max-md:gap-5">
+                    <div className="w-max pr-4">
+                      <LinksList title="JOB ORIENTED PROGRAMS" links={Admissions?.sublinks["Job Oriented Programs"]} />
                     </div>
-                    <div className="w-52 pr-4">
-                      <h3 className="font-bold text-md">AKGEC Programs</h3>
-                      <ul className="mt-2">
-                        <li className="py-0.5 hover:underline font-novaLight text-sm">
-                          B.Tech Programs
-                        </li>
-                        <li className="py-0.5 hover:underline font-novaLight text-sm">
-                          M.Tech Programs
-                        </li>
-                        <li className="py-0.5 hover:underline font-novaLight text-sm">
-                          MCA Programs
-                        </li>
-                        <li className="py-0.5 hover:underline font-novaLight text-sm">
-                          Industry-Academia Collaborations
-                        </li>
-                        <li className="py-0.5 hover:underline font-novaLight text-sm">
-                          Research & Development
-                        </li>
-                      </ul>
+                    <div className="w-52 ">
+                      <LinksList title="ADMISSIONS" links={Admissions?.sublinks["Admission"].slice(0, Math.ceil(Admissions?.sublinks["Admission"].length / 2))} />
                     </div>
-                    <div className="w-52">
-                      <div>
-                        <ul className="mt-2">
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Domestic Enrollment
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Global Admissions
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Enrollment Centers
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Campus Tours
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Transfer Guidelines
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            Refund Policy
-                          </li>
-                          <li className="py-0.5 hover:underline font-novaLight text-sm">
-                            2024 Welcome Week
-                          </li>
-                        </ul>
-                      </div>
+                    <div className="w-52 ">
+                      <LinksList title='  ' titleClassName="mt-4"  links={Admissions?.sublinks["Admission"].slice(Math.ceil(Admissions?.sublinks["Admission"].length / 2))} />
                     </div>
                   </div>
                   <div className="w-full relative max-md:hidden ">
@@ -936,7 +872,7 @@ export default function Example() {
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -1068,92 +1004,14 @@ export default function Example() {
                         </div>
                       </div>
                       <div className="flex p-0 group-hover:p-4 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
-                        <div className="w-1/2 pr-4">
-                          <h3 className="font-bold text-md">CAMPUS LIFE</h3>
-                          <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Overview
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Convocations
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Tech Invent & Events
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Cultural
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Evoke & Youth Summits
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Sports & Adventure
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Latest News
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Bollywood Celebrities
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              National & International Conferences
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              International Faculties
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Notable Alumni
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="w-1/2 pr-4">
-                          <h3 className="font-bold text-md">
-                            SOCIAL RESPONSIBILITIES
-                          </h3>
-                          <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Unnat Bharat Abhiyan & NSS
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Nature Club
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Adarsh Vikas Kendra
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Blood Donation Camp
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Eco Friendly Environment
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              SDP For Village Students
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              SDP Under PMKVY
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="w-1/2">
-                          <div>
-                            <h3 className="font-bold text-md">SOCIETIES</h3>
-                            <ul className="mt-2">
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Departmental Societies
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Extra Curricular Societies
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Student Chapters
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
+                      <div className="w-52 ">
+                        <LinksList title="CAMPUS LIFE" links={CampusLife.sublinks.slice(0,Math.ceil(CampusLife?.sublinks.length / 2))} />
                       </div>
+                      <div className="w-52 ">
+                        <LinksList title="" links={CampusLife.sublinks.slice(Math.ceil(CampusLife?.sublinks.length / 2))} />
+                      </div>
+                      </div>
+                      {/* .slice(0, Math.ceil(Admissions?.sublinks["Admission"].length / 2)) */}
                     </div>
                   </div>
                 </div>
@@ -1179,7 +1037,7 @@ export default function Example() {
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-[550px]"
-                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -1226,9 +1084,9 @@ export default function Example() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-span-1 pr-4 p-0 group-hover:p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
-                      <div className="w-max pr-4">
-                        <h3 className="font-bold text-md">PLACEMENTS</h3>
+                    <div className="col-span-1 w-max pr-4 p-0 group-hover:p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                      <div className="w-max pr-5">
+                        {/* <h3 className="font-bold text-md">PLACEMENTS</h3>
                         <ul className="mt-2">
                           <li className="py-0.5 hover:underline font-novaLight text-sm">
                             T&P Department
@@ -1251,7 +1109,9 @@ export default function Example() {
                           <li className="py-0.5 hover:underline font-novaLight text-sm">
                             T&P Programmes
                           </li>
-                        </ul>
+                        </ul> */}
+                        
+                        <LinksList title="PLACEMENTS" links={Placements.sublinks["Placements"]} />
                       </div>
                     </div>
                   </div>
@@ -1277,12 +1137,12 @@ export default function Example() {
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-1 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-max" : "absolute w-max"
+                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
-                  <div className="grid grid-cols-2">
-                    <div className="col-span-1 max-md:hidden">
+                  <div className="grid grid-cols-5">
+                    <div className="col-span-2 max-md:hidden">
                       <div className="bg-About h-full">
                         <div className="flex flex-col justify-start items-start pt-5 px-6">
                           <p className="flex flex-col pb-10">
@@ -1325,53 +1185,16 @@ export default function Example() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-span-1 max-md:col-span-2 pr-4 p-0 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                    <div className="col-span-3 max-md:col-span-2 pr-4 p-0 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
                       <div className="flex">
-                        <div className=" pr-4">
-                          <h3 className="font-bold text-md uppercase">
-                            Academic Research Hub
-                          </h3>
-                          <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              R & D Policy
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Journal Papers
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Conference Papers
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Book/Book Chapters
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Patent
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Funded Projects
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Consultancy
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Research Incentives
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              AKGEC Journals
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Research & Development Centres
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Conferences
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              FDPs
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              MoUs
-                            </li>
-                          </ul>
+                        <div className=" w-40 pr-2">
+                          <LinksList title="Research Intensive University" links={ResearchInnovation.sublinks['Research Intensive University']} />
+                        </div>
+                        <div className="w-40 pr-2">
+                          <LinksList title="Entrepreneurship Cells" links={ResearchInnovation.sublinks['Entrepreneurship Cells']} />
+                        </div>
+                        <div className="w-40 pr-2">
+                          <LinksList title="Sustainable Development Goals (SDG's)" links={ResearchInnovation.sublinks[`Sustainable Development Goals (SDG's)`]} />
                         </div>
                       </div>
                     </div>
