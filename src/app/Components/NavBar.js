@@ -33,16 +33,18 @@ import {
 } from "@heroicons/react/20/solid";
 import { SVG } from "../constants/SvgConstants";
 const products = [{ icon: ChartPieIcon }, { icon: CursorArrowRaysIcon }];
-
 import {
   Home, About, Academics, Admissions, CampusLife, ResearchInnovation,
-  Placements
+  Placements,
+  Programs
 } from "../Json/MenuItem";
+
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled100, setIsScrolled100] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [BigMenuToggle, setBigMenuToggle] = useState(false);
+  const [activeTab, setActiveTab] = useState("School of Computer Science & Engineering");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,20 +71,20 @@ export default function Example() {
   //       ))}
   //     </ul>
   //   </div>
-    
+
   // );
-  const LinksList = ({ title, links, titleClassName }) => (
+  const LinksList = ({ title, links, titleClassName, ulClassName }) => (
     <div className="pr-4 max-md:w-full">
-        {title && <h3 className={`font-bold ${titleClassName}`}>{title}</h3>}
-        <ul className="mt-2">
-            {links?.map(link => (
-                <li key={link.url} className="py-0.5 hover:underline font-novaLight text-sm">
-                    <a href={link.url}>{link.name}</a>
-                </li>
-            ))}
-        </ul>
+      {title && <h3 className={`font-bold ${titleClassName}`}>{title}</h3>}
+      <ul className={`mt-2 ${ulClassName}`}>
+        {links?.map(link => (
+          <li key={link.url} className="py-0.5 hover:underline font-novaLight text-sm">
+            <a href={link.url}>{link.name}</a>
+          </li>
+        ))}
+      </ul>
     </div>
-);
+  );
   return (
     <header
       className={`z-50 w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary" : ""
@@ -255,109 +257,7 @@ export default function Example() {
                   <div className="grid grid-cols-3">
                     <div className="col-span-2 max-md:col-span-3 pr-4 p-0 group-hover:p-5 transition-all">
                       <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
-                        {/* <div className="w-1/2 pr-4 max-md:w-full">
-                          <h3 className="font-bold">WHO WE ARE</h3>
-                          <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Vision And Mission
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Director General
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Director
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Management
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Important Functionaries
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Approvals by Statutory Bodies
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              NBA Accreditation
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              AICTE Approval Letters
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="w-1/2">
-                          <div>
-                            <h3 className="font-bold">VISUAL TOUR</h3>
-                            <ul className="mt-2">
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Academic Complex
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Hostel
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Centres Of Excellence
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Faith Centre
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Support Facilities
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Stationary Shop
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                College Canteen
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="w-1/2">
-                          <div>
-                            <h3 className="font-bold">RELATED LINKS</h3>
-                            <ul className="mt-2">
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                AKGEC Visual Tour
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Centre of Excellence Visual Tour
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Mandatory Disclosure
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                NIRF Data for Ranking
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Grievance Committee
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Organisation Chart
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Testimonials
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Gallery
-                              </li>
-                            </ul>
-                          </div>
-                        </div> */}
+
                         <LinksList title="WHO WE ARE" links={About.sublinks["Who We Are"]} />
                         <LinksList title="Related Links" links={About.sublinks["Related Links"]} />
                       </div>
@@ -485,67 +385,34 @@ export default function Example() {
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[1200px]"
                     } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
                   <div className="grid grid-cols-3">
-                    <div className="col-span-2 max-md:col-span-3 pr-4 p-0 group-hover:p-5 transition-all">
-                      <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
-                        <div className="w-1/2 pr-4 max-md:w-full ">
-                          <h3 className="font-bold text-md">DEPARTMENTS</h3>
-                          <ul className="mt-2">
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Applied Sciences & Humanities
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Civil Engineering
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Computer Science and Engineering
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Electronics and Communication Engineering
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Electrical and Electronics Engineering
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Information Technology
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Mechanical Engineering
-                            </li>
-                            <li className="py-0.5 hover:underline font-novaLight text-sm">
-                              Master of Computer Applications
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="w-1/2 max-md:w-full">
-                          <div>
-                            <h3 className="font-bold text-md">PROGRAMS</h3>
-                            <ul className="mt-2">
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                UG Courses
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                PG Courses
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Online Courses
-                              </li>
-                              <li className="py-0.5 hover:underline font-novaLight text-sm">
-                                {" "}
-                                Certification
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
+                    <div className="col-span-2 max-md:col-span-3 p-0  transition-all">
+                      <div className=" w-full h-12   flex justify-center items-center  gap-1 ">
+                        {
+                          Object.keys(Programs.sublinks).map((key, index) => <button onClick={() => { setActiveTab(key) }} key={index} className={`h-full px-2 ${key === activeTab ? 'bg-secondary' : 'bg-primary'}`}>{key}</button>)
+                        }
+                      </div>
+                      <div className="flex flex-col p-10">
+                        {
+                          Object.keys(Programs.sublinks[activeTab]).map((key, index) => {
+                            if (key === 'Departments') {
+                              return <LinksList key={index} title={key} links={Programs.sublinks[activeTab][key]} />
+                            }
+                            if (key === 'Programs') {
+                              
+                              return Object.keys(Programs.sublinks[activeTab][key]).map((key1, index) => {
+                                return <LinksList key={index} title={key1} links={Programs.sublinks[activeTab][key][key1]} />
+                              })
+                            }
+                          })
+                        }
                       </div>
                     </div>
+
                     <div className="w-full relative max-md:hidden">
                       <div
                         className="absolute inset-0 bg-cover bg-center rounded-lg shadow-md"
@@ -762,7 +629,7 @@ export default function Example() {
                       <LinksList title="ADMISSIONS" links={Admissions?.sublinks["Admission"].slice(0, Math.ceil(Admissions?.sublinks["Admission"].length / 2))} />
                     </div>
                     <div className="w-52 ">
-                      <LinksList title='  ' titleClassName="mt-4"  links={Admissions?.sublinks["Admission"].slice(Math.ceil(Admissions?.sublinks["Admission"].length / 2))} />
+                      <LinksList title='  ' titleClassName="mt-4" links={Admissions?.sublinks["Admission"].slice(Math.ceil(Admissions?.sublinks["Admission"].length / 2))} />
                     </div>
                   </div>
                   <div className="w-full relative max-md:hidden ">
@@ -1004,12 +871,12 @@ export default function Example() {
                         </div>
                       </div>
                       <div className="flex p-0 group-hover:p-4 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
-                      <div className="w-52 ">
-                        <LinksList title="CAMPUS LIFE" links={CampusLife.sublinks.slice(0,Math.ceil(CampusLife?.sublinks.length / 2))} />
-                      </div>
-                      <div className="w-52 ">
-                        <LinksList title="" links={CampusLife.sublinks.slice(Math.ceil(CampusLife?.sublinks.length / 2))} />
-                      </div>
+                        <div className="w-52 ">
+                          <LinksList title="CAMPUS LIFE" links={CampusLife.sublinks.slice(0, Math.ceil(CampusLife?.sublinks.length / 2))} />
+                        </div>
+                        <div className="w-52 ">
+                          <LinksList title="" links={CampusLife.sublinks.slice(Math.ceil(CampusLife?.sublinks.length / 2))} />
+                        </div>
                       </div>
                       {/* .slice(0, Math.ceil(Admissions?.sublinks["Admission"].length / 2)) */}
                     </div>
@@ -1110,7 +977,7 @@ export default function Example() {
                             T&P Programmes
                           </li>
                         </ul> */}
-                        
+
                         <LinksList title="PLACEMENTS" links={Placements.sublinks["Placements"]} />
                       </div>
                     </div>

@@ -129,7 +129,106 @@ const Academics = {
         ]
     }
 }
-
+const Programs = {
+    name: "Programs",
+    links: "/",
+    sublinks: {
+        "School of Computer Science & Engineering": {
+            "Departments": [
+                {
+                    name: 'Department of Computer Science & Engineering',
+                    url: '/'
+                },
+                {
+                    name: 'Department of Information Technology',
+                    url: '/'
+                },
+                {
+                    name: 'Department of Artificial Intelligence & Machine Learning',
+                    url: '/'
+                }
+            ],
+            "Programs": {
+                "Graduate": [
+                    {
+                        name: 'B.Tech',
+                        url: '/'
+                    },
+                    {
+                        name: 'BCA',
+                        url: '/'
+                    }
+                ],
+                "Post Graduate": [
+                    {
+                        name: 'M.Tech',
+                        url: '/'
+                    },
+                    {
+                        name: 'MCA',
+                        url: '/'
+                    }
+                ]
+            }
+        },
+        "School of Engineering & Applied Science": {
+            "Departments": [
+                {
+                    name: 'Department of Electronics & Communication Engineering',
+                    url: '/'
+                },
+                {
+                    name: 'Department of Electrical Engineering',
+                    url: '/'
+                },
+                {
+                    name: 'Department of Mechanical Engineering',
+                    url: '/'
+                },
+                {
+                    name: 'Department of Civil Engineering',
+                    url: '/'
+                }
+            ],
+            "Programs": {
+                "Graduate": [
+                    {
+                        name: 'B.Tech',
+                        url: '/'
+                    }
+                ],
+                "Post Graduate": [
+                    {
+                        name: 'M.Tech',
+                        url: '/'
+                    }
+                ]
+            }
+        },
+        "School of Business Studies": {
+            "Departments": [
+                {
+                    name: 'Department of Management',
+                    url: '/'
+                }
+            ],
+            "Programs": {
+                "Graduate": [
+                    {
+                        name: 'BBA',
+                        url: '/'
+                    }
+                ],
+                "Post Graduate": [
+                    {
+                        name: 'MBA',
+                        url: '/'
+                    }
+                ]
+            }
+        }
+    }
+};
 const Admissions = {
     name: 'Admissions',
     links: '/',
@@ -413,5 +512,6 @@ export {
     Admissions,
     CampusLife,
     Placements,
-    ResearchInnovation
+    ResearchInnovation,
+    Programs
 }

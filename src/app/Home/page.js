@@ -10,7 +10,6 @@ import CampusSlider from "./CampusSlider";
 import { Star } from "./SVG";
 import { TopCard } from "./TopCard";
 import LogoSlider from "../Components/LogoSlider";
-
 import FooterCard from "../Components/FooterCard";
 import StudentReviews from "../Components/StudentReviews";
 import Research from "../Components/Research";
@@ -89,14 +88,10 @@ export default function Home() {
         <NewsEvents />
         <Research />
         <ResearchEnvironment />
-
         <MiddleSection/>
          <FooterCard />
         <Footer /> 
-
-
         <StickyFooter ShowState={showStickyBar} />
-
         {/* <AwardSection/> */}
       </div >
     </>
