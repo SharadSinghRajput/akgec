@@ -89,7 +89,6 @@ export default function Home() {
         <Research />
         <ResearchEnvironment />
          <FooterCard />
-        <Footer /> 
         <StickyFooter ShowState={showStickyBar} />
         {/* <AwardSection/> */}
       </div >

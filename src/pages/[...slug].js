@@ -11,7 +11,7 @@ export default function DynamicPage() {
 
   useEffect(() => {
     const routes = [
-      { url: "/about", componentName: "NewsEvents" },
+      { url: "/about", componentName: "Overview" },
       { url: "/contact", componentName: "BlogDetails" },
       { url: "/services", componentName: "Services" }
     ];
@@ -19,11 +19,16 @@ export default function DynamicPage() {
     const fetchPageComponent = async () => {
       try {
         const routeMatch = routes.find(route => route.url === asPath);
-
+console.log(routeMatch)
         if (routeMatch) {
-          const PageModule = await import(`./${routeMatch.componentName}`);
-          const component = PageModule.default;
-          setPageComponent(() => component);
+          if(routeMatch.componentName){
+            console.log(routeMatch.componentName)
+
+            const PageModule = await import(`./${routeMatch.componentName}`);
+            console.log(PageModule);
+            const component = PageModule.default;
+            setPageComponent(() => component);
+          }
         } else {
           setPageComponent(null); // No match found
         }
