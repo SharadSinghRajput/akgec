@@ -10,7 +10,7 @@ const About = {
         "Who We Are": [
             {
                 name: 'Overview',
-                url: '/'
+                url: '/about'
             },
             {
                 name: 'Our Identity',

@@ -29,9 +29,9 @@ export default function Overview() {
 
     sectionRefs.current.forEach((section) => observer.observe(section));
 
-    return () => {
-      sectionRefs.current.forEach((section) => observer.unobserve(section));
-    };
+    // return () => {
+    //   sectionRefs.current.forEach((section) => observer.unobserve(section));
+    // };
   }, []);
 
   useEffect(() => {
@@ -196,7 +196,7 @@ export default function Overview() {
               <h1 className="text-4xl font-normal text-center mb-10">
                 About AKGEC University
               </h1>
-              <p className="text-center">
+              <p className="text-center text-sm">
                 Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad is
                 affiliated to Dr. A.P.J. Abdul Kalam Technical University,
                 Lucknow, and is approved by the All India Council for Technical
