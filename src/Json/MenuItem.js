@@ -129,6 +129,21 @@ export const Academics = {
         ]
     }
 }
+export const Programs2 = [
+    {
+        name : "School of Computer Science & Engineering",
+        sublinks: [
+            { 
+                name: 'Department of Computer Science & Engineering', url: '/',
+                sublinkL2 : [
+                    
+                ]
+             },
+            { name: 'Department of Information Technology', url: '/' },
+            { name: 'Department of Artificial Intelligence & Machine Learning', url: '/' }
+        ]
+    }
+]
 export const Programs = {
     name: "Programs",
     links: "/",

@@ -1,19 +1,19 @@
 export const programFeatures = [
     {
       text: "Remarkable Industry Partnership",
-      imgSrc: "image/icons/industry-patronage.png",
+      imgSrc: "/image/icons/industry-patronage.png",
     },
     {
       text: "Original, Empowering Educational System",
-      imgSrc: "image/icons/academic-model.png",
+      imgSrc: "/image/icons/academic-model.png",
     },
     {
       text: "Global Partnerships",
-      imgSrc: "image/icons/patnerships.png",
+      imgSrc: "/image/icons/patnerships.png",
     },
     {
       text: "Richly Diverse Student Community",
-      imgSrc: "image/icons/student-life.png",
+      imgSrc: "/image/icons/student-life.png",
     },
   ];
 

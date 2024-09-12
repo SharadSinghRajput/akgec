@@ -68,8 +68,8 @@ export default function Example() {
       {title && <h3 className={`font-bold ${titleClassName}`}>{title}</h3>}
       <ul className={`mt-2 ${ulClassName}`}>
         {links?.map(link => (
-          <li key={link.url} className="py-0.5 hover:underline font-novaLight text-sm">
-            <button onClick={()=> router.push(link.url)}>{link.name}</button>
+          <li key={link.url} className="">
+            <button className="py-0.5 hover:underline cursor-pointer text-left font-novaLight text-sm" onClick={()=> router.push(link.url)}>{link.name}</button>
           </li>
         ))}
       </ul>
@@ -381,12 +381,14 @@ export default function Example() {
                 >
                   <div className="grid grid-cols-3">
                     <div className="col-span-2 max-md:col-span-3 p-0  transition-all">
-                      <div className=" w-full h-12   flex justify-center items-center  gap-1 ">
+                      <div className=" w-full h-16 flex justify-center items-center gap-1">
                         {
-                          Object.keys(Programs.sublinks).map((key, index) => <button onClick={() => { setActiveTab(key) }} key={index} className={`h-full px-2 ${key === activeTab ? 'bg-secondary' : 'bg-primary'}`}>{key}</button>)
+                          Object.keys(Programs.sublinks).map((key, index) => <button onClick={() => { setActiveTab(key) }} key={index}
+                            className={`h-full w-full border-r border-r-gray-200 text-sm font-novaLight px-2 ${key === activeTab ? 'bg-yellow-100/50' : 'bg-white'}`}>
+                          {key}</button>)
                         }
                       </div>
-                      <div className="flex flex-col p-10">
+                      <div className="flex p-10 gap-10 ">
                         {
                           Object.keys(Programs.sublinks[activeTab]).map((key, index) => {
                             if (key === 'Departments') {

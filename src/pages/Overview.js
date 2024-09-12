@@ -12,7 +12,7 @@ export default function Overview() {
 
   const logos = Array.from(
     { length: 10 },
-    (_, i) => `image/company-logos/logo${i + 1}.jpg`
+    (_, i) => `/image/company-logos/logo${i + 1}.jpg`
   );
 
   return (
@@ -231,7 +231,7 @@ export default function Overview() {
           <div className="relative flex items-center justify-between h-full max-xl:hidden">
             {/* Center Logo */}
             <img
-              src="image/company-logos/Akgec.png"
+              src="/image/company-logos/Akgec.png"
               alt="Center Logo"
               className="absolute w-40 h-40 p-3 bg-white rounded-full"
             />
