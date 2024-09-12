@@ -1,151 +1,19 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import useScrollAndIntersection from "@/hooks/useScrollAndIntersection";
+import { programFeatures, recruitmentPartners, sectionData } from "@/Json/OverviewData";
 import { motion } from "framer-motion";
-export default function Overview() {
 
-  const [activeSection, setActiveSection] = useState(0);
-  const [translateY, setTranslateY] = useState(0);
-  const [translateX, setTranslateX] = useState(0);
+export default function Overview() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const sectionRefs = useRef([]);
-
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5, // 50% of the section must be visible
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const sectionIndex = sectionRefs.current.indexOf(entry.target);
-          setActiveSection(sectionIndex);
-        }
-      });
-    }, options);
-
-    sectionRefs.current.forEach((section) => observer.observe(section));
-
-    // return () => {
-    //   sectionRefs.current.forEach((section) => observer.unobserve(section));
-    // };
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const sectionHeight = window.innerHeight;
-      console.log(scrollY);
-      console.log(sectionHeight);
-
-      if (scrollY > 200) {
-        setTranslateX(300);
-      }
-      if (scrollY >= 5 && scrollY < sectionHeight * 0.6) {
-        setTranslateY(-80); // Move up slightly
-      } else if (scrollY >= 30) {
-        setTranslateX(300); // Move to the right
-      } else {
-        setTranslateX(0); // Reset X translation
-        setTranslateY(0); // Reset Y translation
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [activeSection]);
+  const { activeSection, translateX, translateY, sectionRefs } = useScrollAndIntersection();
 
   const logos = Array.from(
     { length: 10 },
-    (_, i) => `image/about/logo${i + 1}.jpg`
+    (_, i) => `image/company-logos/logo${i + 1}.jpg`
   );
-
-  const items = [
-    {
-      text: "Remarkable Industry Partnership",
-      imgSrc: "https://www.cuchd.in/about/ugc-logo/industry-patronage.png",
-    },
-    {
-      text: "Original, Empowering Educational System",
-      imgSrc: "https://www.cuchd.in/about/ugc-logo/academic-model.png",
-    },
-    {
-      text: "Global Partnerships",
-      imgSrc: "https://www.cuchd.in/about/ugc-logo/patnerships.png",
-    },
-    {
-      text: "Richly Diverse Student Community",
-      imgSrc: "https://www.cuchd.in/about/ugc-logo/student-life.png",
-    },
-  ];
-
-  const images = [
-    {
-      alt: "Amazon",
-      src: "/image/company-logos/AmozonIcon.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "Google",
-      src: "/image/company-logos/GoogleIcon.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "Microsoft",
-      src: "/image/company-logos/MicrosoftIcon.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "IBM",
-      src: "/image/company-logos/ibm.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "Accenture",
-      src: "/image/company-logos/AccentureIcon.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "Infosys",
-      src: "/image/company-logos/infosys.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "Adobe",
-      src: "/image/company-logos/Adobe.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "TCS",
-      src: "/image/company-logos/tcs.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "Amdocs",
-      src: "/image/company-logos/amdocsIcon.webp",
-      width: 158,
-      height: 48,
-    },
-    {
-      alt: "Wipro",
-      src: "/image/company-logos/WIPRO.webp",
-      width: 158,
-      height: 48,
-    },
-  ];
 
   return (
     <div>
@@ -162,137 +30,39 @@ export default function Overview() {
         }}
       >
         <div className="h-full w-full px-5">
-          {activeSection === 0 && (
-            <div className="flex flex-col items-center justify-center px-10 h-full w-full">
-              <h1 className="text-4xl uppercase tracking-wide text-center">
-                Top University
-              </h1>
-              <span className="text-green-500 w-60 text-center tracking-wide text-4xl uppercase">
-                for Students
-              </span>
-              {/* <p className="text-gray-700 text-[13px] font-medium mb-4">
-                By Star Group
-              </p> */}
-              <p className="text-gray-500 text-[14px] font-normal mb-6 text-center mt-5">
-                Ajay Kumar Garg Engineering College (AKGEC) is a full-fledged
-                engineering college affiliated with Dr. A.P.J. Abdul Kalam
-                Technical University (AKTU), Lucknow. It is approved by the All
-                India Council for Technical Education (AICTE) and recognized for
-                its right to offer undergraduate and postgraduate degrees in
-                engineering and technology.
-              </p>
-              <button className="bg-[#d91f23] hover:bg-blue-700 text-white font-bold text-sm py-3 px-6 rounded focus:outline-none focus:shadow-outline">
-                READ MORE
-              </button>
-            </div>
-          )}
-          {activeSection === 1 && (
-            <motion.div
-              animate={{ y: 0 }}
-              initial={{ opacity: 0, bottom: -300 }}
-              whileInView={{ opacity: 1, scale: 1, bottom: 0 }}
-              className="absolute inset-0 flex flex-col items-center justify-center px-10 h-full w-full py-10"
-            >
-              <h1 className="text-4xl font-normal text-center mb-10">
-                About AKGEC University
-              </h1>
-              <p className="text-center text-sm">
-                Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad is
-                affiliated to Dr. A.P.J. Abdul Kalam Technical University,
-                Lucknow, and is approved by the All India Council for Technical
-                Education. The college was established in 1998 and offers B.Tech
-                courses in nine disciplines of Engineering namely Computer
-                Science and Engineering, Information Technology, Computer
-                Science, Computer Science & Information Technology, Computer
-                Science and Engineering (Artificial Intelligence & Machine
-                Learning), Computer Science and Engineering (Data Science),
-                Computer Science and Engineering (Hindi), Artificial
-                Intelligence & Machine Learning, Electronics and Communication
-                Engineering, Electrical and Electronics Engineering, Mechanical
-                Engineering and Civil Engineering.
-              </p>
-            </motion.div>
-          )}
-          {activeSection === 2 && (
-            <motion.div
-              animate={{ y: 0 }}
-              initial={{ opacity: 0, bottom: -500 }}
-              whileInView={{ opacity: 1, scale: 1, bottom: 0 }}
-              className="flex flex-col items-center justify-center px-5 h-full w-full py-10"
-            >
-              <h1 className="text-4xl font-normal text-center mb-10">
-                AKG Engineering College
-              </h1>
-              <p className="text-center text-sm mb-5">
-                Ajay Kumar Garg Engineering College (AKGEC) is recognized and
-                actively participates as a member of various professional
-                associations.
-              </p>
-              <button className="bg-[#d91f23] mt-5 hover:bg-blue-700 text-white font-bold text-sm py-3 px-6 rounded focus:outline-none focus:shadow-outline">
-                READ MORE
-              </button>
-            </motion.div>
-          )}
-          {activeSection === 3 && (
-            <motion.div
-              animate={{ y: 0 }}
-              initial={{ opacity: 0, bottom: -500 }}
-              whileInView={{ opacity: 1, scale: 1, bottom: 0 }}
-              className="flex flex-col items-center justify-center px-5 h-full w-full py-10"
-            >
-              <h1 className="text-4xl font-normal text-center mb-10">
-                Leading Academic Institution
-              </h1>
-              <p className="mb-5 text-center text-sm">
-                Ajay Kumar Garg Engineering College (AKGEC) is ranked among the
-                leading and best educational institutions in North India. AKGEC
-                consistently ranks among the top engineering colleges in Uttar
-                Pradesh for its academic excellence, innovative teaching
-                methods, research achievements, and placement records, as
-                recognized by national and international accreditation bodies
-                and media outlets.
-              </p>
-              <p className="text-center text-sm">
-                Ajay Kumar Garg Engineering College (AKGEC) has established
-                itself as a leader in campus placements. The repeated visits by
-                top-tier multinational companies underscore AKGEC's reputation
-                as a premier institution with exceptional placement
-                opportunities in India.
-              </p>
-              <button className="bg-[#d91f23] mt-5 hover:bg-blue-700 text-white font-bold text-sm py-3 px-6 rounded focus:outline-none focus:shadow-outline">
-                READ MORE
-              </button>
-            </motion.div>
-          )}
-          {activeSection === 4 && (
-            <motion.div
-              animate={{ y: 0 }}
-              initial={{ opacity: 0, bottom: -500 }}
-              whileInView={{ opacity: 1, scale: 1, bottom: 0 }}
-              className="flex flex-col items-center justify-center px-5 h-full w-full py-10"
-            >
-              <h1 className="text-5xl font-normal text-center uppercase">
-                Unblemished
-              </h1>
-              <h1 className="text-4xl font-normal text-center mb-10">
-                Batch of 2023-24 Placements
-              </h1>
-              <p className="text-center text-sm">
-                Ajay Kumar Garg Engineering College (AKGEC) has become an
-                undisputed leader in campus placements. The consistent presence
-                of top-tier companies highlights AKGEC's reputation as the
-                'University with the Best Placements' in India.
-              </p>
-            </motion.div>
-          )}
-          {activeSection === 5 && (
-            <motion.div
-              animate={{ y: 0 }}
-              initial={{ opacity: 0, bottom: -500 }}
-              whileInView={{ opacity: 1, scale: 1, bottom: 0 }}
-              className="hidden"
-            ></motion.div>
-          )}
+          {sectionData.map((section, index) => (
+            activeSection === index && (
+              <motion.div
+                key={index}
+                animate={{ y: 0 }}
+                initial={{ opacity: 0, bottom: -500 }}
+                whileInView={{ opacity: 1, scale: 1, bottom: 0 }}
+                className="flex flex-col items-center justify-center px-5 h-full w-full py-10"
+              >
+                <h1 className="text-4xl font-normal text-center">
+                  {section.title}
+                </h1>
+                {section.subtitle && (
+                  <h2 className="text-green-500 w-60 text-center tracking-wide text-4xl uppercase">
+                    {section.subtitle}
+                  </h2>
+                )}
+                <p className="text-gray-700 text-[14px] font-novaReg mb-6 text-center mt-5">
+                  {section.description}
+                </p>
+                {section.additionalText && (
+                  <p className="text-gray-700 text-[14px] font-novaReg mb-6 text-center mt-5">
+                    {section.additionalText}
+                  </p>
+                )}
+                {section.buttonText && (
+                  <button className="bg-[#d91f23] hover:bg-blue-700 text-white font-bold text-sm py-3 px-6 rounded focus:outline-none focus:shadow-outline">
+                    {section.buttonText}
+                  </button>
+                )}
+              </motion.div>
+            )
+          ))}
         </div>
       </div>
       {/* Sections */}
@@ -461,7 +231,7 @@ export default function Overview() {
           <div className="relative flex items-center justify-between h-full max-xl:hidden">
             {/* Center Logo */}
             <img
-              src="https://www.akgec.ac.in/wp-content/themes/twentysixteen/img/AKGEC_1_0.png"
+              src="image/company-logos/Akgec.png"
               alt="Center Logo"
               className="absolute w-40 h-40 p-3 bg-white rounded-full"
             />
@@ -555,13 +325,12 @@ export default function Overview() {
         <div className="h-64 max-sm:h-44 w-[70%] max-xl:w-full relative z-10 max-xl:flex max-xl:justify-center max-xl:items-center">
           <div className="w-1/2 max-xl:w-[70%] max-sm:w-full max-sm:mx-3 h-full bg-white flex rounded-lg shadow-lg">
             <div className="text-center text-[14px] font-serif border-r border-gray-300 flex flex-col">
-              {items.map((item, index) => (
+              {programFeatures.map((item, index) => (
                 <a
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`flex-1 flex max-sm:text-xs items-center justify-center px-5 ${
-                    activeIndex === index ? "bg-yellow-700" : ""
-                  }`}
+                  className={`flex-1 flex max-sm:text-xs items-center justify-center px-5 cursor-pointer ${activeIndex === index ? "bg-yellow-700" : ""
+                    }`}
                 >
                   {item.text}
                 </a>
@@ -569,8 +338,8 @@ export default function Overview() {
             </div>
             <div className="w-2/3 flex items-center justify-center">
               <img
-                src={items[activeIndex].imgSrc}
-                alt={items[activeIndex].text}
+                src={programFeatures[activeIndex].imgSrc}
+                alt={programFeatures[activeIndex].text}
                 className="max-w-full max-h-full object-contain"
               />
             </div>
@@ -650,10 +419,10 @@ export default function Overview() {
           </p>
           <div className="mt-6">
             <ul className="flex flex-wrap justify-center space-x-4 max-sm:space-x-0 space-y-4">
-              {images.map((image, index) => (
+              {recruitmentPartners.map((image, index) => (
                 <li
                   key={index}
-                  className="w-1/5 max-md:w-1/4 max-sm:w-1/3  px-8 py-6 max-lg:px-5 max-md:px-4 max-sm:px-3 text-center"
+                  className="w-1/5 max-md:w-1/4 max-sm:w-1/3  px-8 py-6 max-lg:px-5 max-md:px-4 max-sm:px-3 text-center flex items-center"
                 >
                   <img
                     src={image.src}

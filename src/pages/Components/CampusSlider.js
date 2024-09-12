@@ -76,7 +76,7 @@ export default function Example() {
                                 
                             </div>
                             <div className='col-span-1 max-lg:col-span-3'>
-                                <div class="flex justify-end space-x-4 z-10 ">
+                                <div className="flex justify-end space-x-4 z-10 ">
                                     <Button text={"APPLY TODAY"} className="bg-secondary text-white text-sm font-novaBold px-5 py-3 rounded-xl hover:bg-[#3c5686]" />
                                     <Button text={"VIEW PLACEMENTS"} className="border border-white text-white text-sm font-novaBold px-5 py-3 rounded-xl hover:bg-white hover:text-black" />
                                 </div>
@@ -90,7 +90,7 @@ export default function Example() {
                                 <div className='col-span-1 max-lg:col-span-3 mr-10 ' key={index}>
                                     <div className='grid grid-cols-3'>
                                         <h3 className='col-span-2 max-w-52 text-white text-2xl font-novaSemi leading-none'>{item.title}</h3>
-                                        <span className='text-white/50 col-span-1 flex justify-end'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" /><path d="m21 3-9 9" /><path d="M15 3h6v6" /></svg></span>
+                                        <span className='text-white/50 col-span-1 flex justify-end'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-square-arrow-out-up-right"><path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" /><path d="m21 3-9 9" /><path d="M15 3h6v6" /></svg></span>
                                     </div>
                                     <p className='text-white text-sm mt-5 font-novaReg'>{item.description}</p>
                                 </div>

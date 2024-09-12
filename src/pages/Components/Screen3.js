@@ -8,7 +8,7 @@ const PlacementData = [
         course: "CSE General",
         salary: "36",
         image_url: "image/student/1.png",
-        Logo: "/image/slider-home/6.webp",
+        Logo: "/image/company-logos/Wipro.webp",
         G1: "#0a65a4",
         G2: "#087e8b"
     },
