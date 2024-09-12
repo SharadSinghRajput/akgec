@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import { Star } from './SVG'
 
 const MilestonesSection = () => {
   const milestones = [

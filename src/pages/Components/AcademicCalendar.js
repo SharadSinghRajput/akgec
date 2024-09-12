@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 
-export const AcademicCalendar = () => {
+const AcademicCalendar = () => {
 
     const [currentSemester, setCurrentSemester] = useState('even');
 
@@ -38,3 +38,5 @@ export const AcademicCalendar = () => {
         </div>
     );
 };
+
+export default AcademicCalendar;

@@ -505,7 +505,7 @@ const ResearchInnovation = {
     }
 }
 
-export {
+export default {
     Home,
     About,
     Academics,

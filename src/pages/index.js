@@ -1,5 +1,5 @@
 import Home from "./Home";
-import NewsEvents from "./NewsEvents";
+import NewsEvents from "./Components/NewsEvents";
 import Menu from "./Components/NavBar";
 import Footer from "./Components/Footer";
 

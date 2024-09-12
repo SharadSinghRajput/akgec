@@ -1,4 +1,4 @@
-export const AboutSideBar = () => {
+const AboutSideBar = () => {
     return (
         <>
                 <div className="">
@@ -84,3 +84,5 @@ export const AboutSideBar = () => {
         </>
     );
 }
+
+export default AboutSideBar;

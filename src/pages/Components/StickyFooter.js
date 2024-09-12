@@ -1,6 +1,6 @@
 "use client";
 
-export const StickyFooter = ({ ShowState }) => {
+const StickyFooter = ({ ShowState }) => {
   return (
     <section className={` max-w-screen-2xl mx-auto w-full bg-red-300 duration-500`}>
       <div className={`transition-all overflow-hidden ${ShowState ? "h-0" : "h-20"} z-50 fixed bottom-5 left-0 w-full flex justify-center items-center max-md:gap-2 gap-5 px-5 max-md:flex-col-reverse`}>
@@ -104,3 +104,5 @@ export const StickyFooter = ({ ShowState }) => {
     </section>
   );
 };
+
+export default StickyFooter;
