@@ -1,5 +1,6 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from 'next/router';
 import {  faAmazon,  faGoogle,  faMicrosoft,  faShopify,} from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverPanel, } from "@headlessui/react";
@@ -29,6 +30,7 @@ const socialLinks = [
 
 
 export default function Example() {
+  const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled100, setIsScrolled100] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,7 +70,7 @@ export default function Example() {
       <ul className={`mt-2 ${ulClassName}`}>
         {links?.map(link => (
           <li key={link.url} className="py-0.5 hover:underline font-novaLight text-sm">
-            <a href={link.url}>{link.name}</a>
+            <button onClick={()=> router.push(link.url)}>{link.name}</button>
           </li>
         ))}
       </ul>
@@ -87,6 +89,7 @@ export default function Example() {
             <div className="flex justify-start items-center gap-2 pl-2">
               <div className="flex justify-center">
                 <img
+                  onClick={()=> router.push("/")}
                   src="/image/akg-logo.png"
                   alt="Chandigarh University Logo"
                   className="h-16 w-full object-contain"
