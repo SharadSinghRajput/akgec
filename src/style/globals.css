@@ -24,6 +24,10 @@
   font-family: "proximanova-thin";
   src: url("/fonts/proximanova-thin.ttf") format("truetype");
 }
+@font-face {
+  font-family: "slick";
+  src: url("/fonts/slick.ttf") format("truetype");
+}
 
 .marquee {
   display: inline-block;

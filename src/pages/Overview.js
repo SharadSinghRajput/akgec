@@ -76,7 +76,7 @@ export default function Overview() {
             backgroundImage: "url('/image/about/about1.jpg')",
           }}
         >
-          <div className="absolute inset-0 bg-blue-500 opacity-70"></div>
+          <div className="absolute inset-0 bg-[#2240c5] opacity-70"></div>
 
           <div className="hidden max-xl:block w-[95%] relative z-10">
             <div className=" h-full bg-white flex shadow-lg">
@@ -116,7 +116,7 @@ export default function Overview() {
             backgroundImage: "url('/image/about/about2.jpg')",
           }}
         >
-          <div className="absolute inset-0 bg-[#5c1894] opacity-70"></div>
+          <div className="absolute inset-0 bg-[#28bcc7] opacity-70"></div>
         </div>
         <div className="hidden max-xl:block max-xl:w-[95%] w-[50%] relative z-10">
           <div className="h-full bg-white flex shadow-lg">
@@ -205,7 +205,7 @@ export default function Overview() {
             backgroundImage: "url('/image/about/about3.jpg')",
           }}
         >
-          <div className="absolute inset-0 bg-[#d33838] opacity-70"></div>
+          <div className="absolute inset-0 bg-[#511ea3] opacity-70"></div>
         </div>
         <div className="hidden max-xl:block max-xl:w-[95%] w-[50%] relative z-10">
           <div className="h-full bg-white flex shadow-lg">
@@ -290,7 +290,7 @@ export default function Overview() {
             backgroundImage: "url('/image/about/about4.jpg')",
           }}
         >
-          <div className="absolute inset-0 bg-[#e0b62e] opacity-70"></div>
+          <div className="absolute inset-0 bg-[#c78f28] opacity-70"></div>
         </div>
         <div className="hidden max-xl:block max-xl:w-[95%] w-[50%] relative z-10">
           <div className="h-full bg-white flex shadow-lg">
@@ -356,33 +356,33 @@ export default function Overview() {
             backgroundImage: "url('/image/about/about5.jpg')",
           }}
         >
-          <div className="absolute inset-0 bg-[#30cf8c] opacity-80"></div>
+          <div className="absolute inset-0 bg-[#23aa98] opacity-80"></div>
         </div>
         <div className="max-xl:flex max-xl:justify-center max-xl:items-center w-[70%] max-xl:w-full relative z-10 text-white">
           <div className="h-full w-1/2 max-xl:w-full flex flex-col p-6">
-            <h2 className="text-4xl max-sm:text-3xl font-normal max-xl:text-center mb-6">
+            <h2 className="text-4xl max-sm:text-3xl font-novaReg max-xl:text-center mb-6">
               2023-24 Placement Successes
             </h2>
-            <div className="flex justify-center gap-10 mb-6">
+            <div className="flex justify-start gap-10 mb-6">
               <div className="text-center space-y-2">
-                <p className="text-5xl max-sm:text-3xl font-extralight">282</p>
-                <p className="text-xs">Highest Number of Companies</p>
+                <p className="text-6xl max-sm:text-3xl font-slick">282</p>
+                <p className="text-sm font-novaReg w-32">Highest Number of Companies</p>
               </div>
               <div className="text-center space-y-2">
-                <p className="text-5xl max-sm:text-3xl font-extralight">1406</p>
-                <p className="text-xs">Placement Offers</p>
+                <p className="text-6xl max-sm:text-3xl font-slick">1406</p>
+                <p className="text-sm font-novaReg w-32">Placement Offers</p>
               </div>
               <div className="text-center space-y-2">
-                <p className="text-5xl max-sm:text-3xl font-extralight">
+                <p className="text-6xl max-sm:text-3xl font-slick">
                   33.80<span className="text-xl max-sm:text-lg">LPA</span>
                 </p>
-                <p className="text-xs">Highest Package Offered</p>
+                <p className="text-sm font-novaReg w-32">Highest Package Offered</p>
               </div>
             </div>
             <div className="border-b border-gray-300 mb-6"></div>
             <p className="text-sm max-xl:text-center">
               Continuing the Tradition of Excellence, AKGEC Secures{" "}
-              <span className="font-bold">1406</span> Placement Offers for{" "}
+              <span className="font-novaBold">1406</span> Placement Offers for{" "}
             </p>
           </div>
         </div>

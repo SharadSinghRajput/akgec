@@ -24,10 +24,6 @@ const useScrollAndIntersection = (threshold = 0.5) => {
     }, options);
 
     sectionRefs.current.forEach((section) => observer.observe(section));
-
-    return () => {
-      sectionRefs.current.forEach((section) => observer.unobserve(section));
-    };
   }, [threshold]);
 
   useEffect(() => {

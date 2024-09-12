@@ -34,6 +34,7 @@ module.exports = {
       novaBold: ['nova-bold', 'proximanova-bold'],
       novaLight: ['nova-light', 'proximanova-light'],
       novaThin: ['nova-thin', 'proximanova-thin'],
+      slick: ['slick', 'slick'],
     },
     keyframes: {
       zoomInOut: {
