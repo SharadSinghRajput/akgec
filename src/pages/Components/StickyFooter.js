@@ -105,4 +105,4 @@ const StickyFooter = ({ ShowState }) => {
   );
 };
 
-export default StickyFooter;
+export default StickyFooter

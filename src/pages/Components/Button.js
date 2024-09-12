@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Button = ({ text, onClick,className,type }) => {
+ const Button = ({ text, onClick,className,type }) => {
   return (
     <>
       <button onClick={onClick} className={className} type={type}>
@@ -12,4 +12,4 @@ const Button = ({ text, onClick,className,type }) => {
   );
 };
 
-export default Button;
+export default Button

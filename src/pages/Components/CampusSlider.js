@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
-import { Button } from './Button'
+import Button from './Button'
 
 const product = {
     name: 'Application UI Icon Pack',

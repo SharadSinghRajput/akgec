@@ -6,9 +6,8 @@ import { useState, useEffect } from "react";
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverPanel, } from "@headlessui/react";
 import { ArrowPathIcon,Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon, } from "@heroicons/react/24/outline";
 import { Bars2Icon, ChevronDownIcon, PhoneIcon, } from "@heroicons/react/20/solid";
-import { SVG } from "../constants/SvgConstants";
 const products = [{ icon: ChartPieIcon }, { icon: CursorArrowRaysIcon }];
-import { Home, About, Academics, Admissions, CampusLife, ResearchInnovation, Placements, Programs } from "../Json/MenuItem";
+import { About, Academics, Admissions, CampusLife, ResearchInnovation, Placements, Programs } from "../../Json/MenuItem";
 const socialLinks = [
   {
     name : "Facebook",
@@ -192,7 +191,7 @@ export default function Example() {
               </div>
             </div>
             <ul
-              className={`${BigMenuToggle
+            className={`${BigMenuToggle
                 ? "fixed w-full h-full left-0 top-0 bg-blue-800 pt-10"
                 : `hidden relative ${isScrolled ? "py-1" : "py-0 mt-4 "}`
                 }  xl:flex  items-center justify-between text-black font-semibold text-sm bg-white/10
@@ -249,7 +248,6 @@ export default function Example() {
                   <div className="grid grid-cols-3">
                     <div className="col-span-2 max-md:col-span-3 pr-4 p-0 group-hover:p-5 transition-all">
                       <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
-
                         <LinksList title="WHO WE ARE" links={About.sublinks["Who We Are"]} />
                         <LinksList title="Related Links" links={About.sublinks["Related Links"]} />
                       </div>

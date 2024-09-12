@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Building from "/public/image/Building.jpg";
 import Form from "./Components/Form";
@@ -7,15 +8,14 @@ import ScreenTwo from "./Components/Screen2";
 import ScreenThree from "./Components/Screen3";
 import NewsEvents from "./Components/NewsEvents";
 import CampusSlider from "./Components/CampusSlider";
-import { TopCard } from "./Components/TopCard";
+import TopCard from "./Components/TopCard";
 import LogoSlider from "./Components/LogoSlider";
 import FooterCard from "./Components/FooterCard";
 import StudentReviews from "./Components/StudentReviews";
 import Research from "./Components/Research";
 import ResearchEnvironment from "./Components/ResearchEnvironment";
-import { StickyFooter } from "./Components/StickyFooter";
-import { useState, useEffect } from "react";
-import { Button } from "./Components/Button";
+import StickyFooter from "./Components/StickyFooter";
+import Button from "./Components/Button";
 
 export default function Home() {
   const [showStickyBar, setShowStickyBar] = useState(false);

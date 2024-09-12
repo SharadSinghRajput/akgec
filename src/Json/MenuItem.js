@@ -1,9 +1,9 @@
-const Home = {
+export const Home = {
     name: 'Home',
     links: '/',
     sublinks: []
 }
-const About = {
+export const About = {
     name: 'About',
     links: '/',
     sublinks: {
@@ -85,7 +85,7 @@ const About = {
     }
 }
 
-const Academics = {
+export const Academics = {
     name: 'Academics',
     links: '/',
     sublinks: {
@@ -129,7 +129,7 @@ const Academics = {
         ]
     }
 }
-const Programs = {
+export const Programs = {
     name: "Programs",
     links: "/",
     sublinks: {
@@ -229,7 +229,7 @@ const Programs = {
         }
     }
 };
-const Admissions = {
+export const Admissions = {
     name: 'Admissions',
     links: '/',
     sublinks: {
@@ -328,7 +328,7 @@ const Admissions = {
     }
 }
 
-const CampusLife = {
+export const CampusLife = {
     name: 'Campus Life',
     links: '/',
     sublinks: [
@@ -399,7 +399,7 @@ const CampusLife = {
     ]
 }
 
-const Placements = {
+export const Placements = {
     name: 'Placements',
     links: '/',
     sublinks: {
@@ -456,7 +456,7 @@ const Placements = {
     }
 }
 
-const ResearchInnovation = {
+export const ResearchInnovation = {
     name: 'Research & Innovation',
     links: '/',
     sublinks: {
@@ -505,13 +505,3 @@ const ResearchInnovation = {
     }
 }
 
-export default {
-    Home,
-    About,
-    Academics,
-    Admissions,
-    CampusLife,
-    Placements,
-    ResearchInnovation,
-    Programs
-}

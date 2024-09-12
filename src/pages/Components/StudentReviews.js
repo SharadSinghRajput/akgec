@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Quote from "/public/image/quote.webp"
-import { Button } from "./Button";
+import Button from "./Button";
 
 export default function Example() {
     return (
