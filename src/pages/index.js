@@ -8,7 +8,7 @@ export default function HomePage({ children }) {
   return (
     <div>
         <Menu />
-      <main className="flex-grow bg-orange-50">{children || <Home />}</main>
+      <main className="flex-grow">{children || <Home />}</main>
         <Footer />
     </div>
   );

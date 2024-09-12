@@ -12,14 +12,15 @@ export default function DynamicPage() {
   useEffect(() => {
     const routes = [
       { url: "/about", componentName: "Overview" },
-      { url: "/contact", componentName: "BlogDetails" },
-      { url: "/services", componentName: "Services" }
+      { url: "/about/leadership", componentName: "Directors" },
+      { url: "/management", componentName: "Management" },
+      { url: "/about/vision-and-mission", componentName: "VisionMission" },
+      { url: "/hostal", componentName: "Hostel" }
     ];
 
     const fetchPageComponent = async () => {
       try {
         const routeMatch = routes.find(route => route.url === asPath);
-console.log(routeMatch)
         if (routeMatch) {
           if(routeMatch.componentName){
             console.log(routeMatch.componentName)

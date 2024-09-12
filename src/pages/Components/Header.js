@@ -1,13 +1,13 @@
-export default function Header({ title, Butto }) {
+export default function Header({ title, Butto, gradient }) {
     return (
-        <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <div className="relative isolate overflow-hidden  py-24 sm:py-32">
             <div className="absolute inset-0 -z-10 h-full w-full">
                 <img
                     alt=""
                     src="/image/header-img.jpg"
                     className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-white/0"></div>
+                <div className={`absolute inset-0 ${gradient}`}></div>
             </div>
             <div
                 aria-hidden="true"
