@@ -31,7 +31,7 @@ export default function Hostel() {
 
         <>
         <div className="bg-white">
-            <Header title={"Hostal"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
+            <Header title={"Hostel"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
             <section className="w-full max-w-7xl mx-auto grid grid-cols-12 pt-24 gap-10">
                 <div className="col-span-9 max-md:col-span-12">             
                     <div className="bg-white">

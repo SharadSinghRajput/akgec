@@ -11,11 +11,15 @@ export default function DynamicPage() {
 
   useEffect(() => {
     const routes = [
-      { url: "/about", componentName: "Overview" },
+      { url: "/about/overview", componentName: "Overview" },
       { url: "/about/leadership", componentName: "Directors" },
       { url: "/management", componentName: "Management" },
       { url: "/about/vision-and-mission", componentName: "VisionMission" },
-      { url: "/hostal", componentName: "Hostel" }
+      { url: "/hostel", componentName: "Hostel" },
+      { url: "/about/approvals-statutory-bodies", componentName: "ApprovalsStatutoryBodies" },
+      { url: "/about/important-functionaries", componentName: "ImportantFunctionaries" },
+      { url: "/about/approval-letter", componentName: "ApprovalLetter" },
+      { url: "/about/nba-accreditation", componentName: "NbaAccreditation" },
     ];
 
     const fetchPageComponent = async () => {
