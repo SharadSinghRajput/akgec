@@ -79,28 +79,28 @@ const BtechProgram = () => {
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-2">ONLY</h4>
                   <span className='text-3xl text-red-600 leading-5'>Private <br />University</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg">2024 Ist International Conference on Advanced Computing and Emerging Technologies (ACET 2024)</p>
+                  <p className="mt-3 leading-none text-sm font-novaReg">Ist International Conference on Advanced Computing and Emerging Technologies (ACET 2024)</p>
                   {/* <img src="/images/accreditation-logo.png" alt="Accreditation" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-2">RANKED</h4>
                   <span className='text-4xl text-red-600'><sup>#</sup>41</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg">in Top Private Engineering Colleges of India</p>
+                  <p className="mt-3 leading-none text-sm font-novaReg">Top Private Engineering Colleges of India</p>
                   {/* <img src="/images/india-today-logo.png" alt="India Today" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-2">RANKED</h4>
                   <span className='text-4xl text-red-600'><sup>#</sup>16</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg ">Among Top 100 Engineering Colleges Across India</p>
+                  <p className="mt-3 leading-none text-sm font-novaReg ">Top 100 Engineering Colleges Across India</p>
                   {/* <img src="/images/outlook-logo.png" alt="Outlook" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-2">RATED</h4>
                   <span className='text-3xl text-red-600 tracking-tighter'>A++</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg">by India's only Education Magazine Careers360</p>
+                  <p className="mt-3 leading-none text-sm font-novaReg">India's only Education Magazine</p>
                   {/* <img src="/images/careers360-logo.png" alt="Careers360" className="mt-4 w-16" /> */}
                 </div>
               </div>
@@ -265,7 +265,7 @@ const BtechProgram = () => {
         <section>
           <div className='relative bg-BG6 bg-cover bg-center min-h-screen'>
             <div className='hidden lg:block absolute z-30 bottom-40 right-[450px] max-2xl:right-[300px] max-xl:right-5  leading-none rounded-lg bg-[#e5e5e5] p-6'>
-              <img className='w-36 object-cover' src="https://www.cuchd.in/engineering/assets/images/paloalto-logo.webp" alt="" />
+              <img className='w-40 object-cover' src="/image/company-logos/Google.png" alt="" />
               <h5 className='mt-5 text-lg font-novaReg'>Vandana Chauhan</h5>
               <small className='text-sm font-novaReg'>Placed in Palo Alto Networks</small>
             </div>
@@ -329,9 +329,9 @@ const BtechProgram = () => {
             </div>
           </div>
           <div className='hidden relative h-[250px] overflow-hidden max-lg:block'>
-            <img className='w-full h-full object-cover object-top max-sm:object-right' src="/image/feature-bg-new.webp" alt="" />
+            <img className='w-full h-full object-cover object-top max-sm:object-right' src="/image/AKG_Student.jpg" alt="" />
             <div className='absolute bottom-2 left-3 leading-none rounded-lg bg-[#e5e5e5] p-6'>
-              <img className='w-36 object-cover' src="https://www.cuchd.in/engineering/assets/images/paloalto-logo.webp" alt="" />
+              <img className='w-28 object-cover' src="/image/company-logos/Google.png" alt="" />
               <h5 className='text-lg font-novaReg'>Vandana Chauhan</h5>
               <small className='font-novaReg'>Placed in Palo Alto Networks</small>
             </div>

@@ -22,7 +22,7 @@ module.exports = {
         'BG3': "url('/image/MainBG.jpg')",
         'BG4': "url('/image/dotted-map-bg.webp')",
         'BG5': "url('/image/dotted-map-bg.png')",
-        'BG6': "url('/image/feature-bg-new.webp')",
+        'BG6': "url('/image/AKG_Student.jpg')",
       },
       boxShadow: {
         'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',
