@@ -84,7 +84,6 @@ export const About = {
         ]
     }
 }
-
 export const Academics = {
     name: 'Academics',
     links: '/',
@@ -342,7 +341,6 @@ export const Admissions = {
         ]
     }
 }
-
 export const CampusLife = {
     name: 'Campus Life',
     links: '/',
@@ -413,7 +411,6 @@ export const CampusLife = {
         },
     ]
 }
-
 export const Placements = {
     name: 'Placements',
     links: '/',
@@ -470,7 +467,6 @@ export const Placements = {
         ]
     }
 }
-
 export const ResearchInnovation = {
     name: 'Research & Innovation',
     links: '/',
@@ -519,4 +515,3 @@ export const ResearchInnovation = {
         ]
     }
 }
-

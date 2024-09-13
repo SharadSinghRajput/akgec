@@ -16,7 +16,7 @@ export default function Header({ title, Butto, gradient }) {
             </div>
             <div className="mx-auto max-w-7xl px-6 mt-36 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-3xl font-normal tracking-tight text-white sm:text-4xl">{title}</h2>
+                    <h2 className="text-3xl font-novaReg tracking-tight text-white sm:text-[42px]">{title}</h2>
                     {Butto ? <>
                         <a href={Butto.Link} target="_blank" rel="noopener noreferrer" >
                             <button className="rounded-md bg-secondary px-3.5 py-2.5 mt-4 text-sm font-semibold text-white shadow-sm hover:bg-white/20">{Butto.name}</button> 

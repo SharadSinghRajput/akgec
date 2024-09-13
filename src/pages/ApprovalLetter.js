@@ -11,7 +11,7 @@ const SideBarLink = [
     { name: "Institution Social Responsibility", link: "" }
 ]
 
-const data = [
+const approvalLetter = [
     { id: 1, year: "Year 2024-25", link: "/pdf/approval-letter/Year-2024-25.pdf" },
     { id: 2, year: "Year 2023-24", link: "/pdf/approval-letter/Year-2023-24.pdf" },
     { id: 3, year: "Year 2022-23", link: "/pdf/approval-letter/Year-2022-23.pdf" },
@@ -37,7 +37,7 @@ const data = [
     { id: 23, year: "Year 2001-03", link: "/pdf/approval-letter/Year-2001-03.pdf" },
     { id: 24, year: "Year 2000-01", link: "/pdf/approval-letter/Year-2000-01.pdf" },
     { id: 25, year: "Year 1999-00", link: "/pdf/approval-letter/Year-1999-00.pdf" },
-    { id: 26, year: "Year 1998-99", link: "/pdf/approval-letter/Year-1998-99.pdf" }
+    { id: 26, year: "Year 1998-99", link: "/pdf/approval-letter/Year-1998-99.pdf" },
 ];
 
 export default function ApprovalLetter() {
@@ -58,7 +58,7 @@ export default function ApprovalLetter() {
                                         </tr>
                                     </thead>
                                     <tbody className="text-white bg-blue-950 text-sm font-light">
-                                        {data.map((item) => (
+                                        {approvalLetter.map((item) => (
                                             <tr key={item.id}>
                                                 <td className="py-2 w-14 px-4 border-b border-r border-gray-300 border-opacity-50 text-center">
                                                     {item.id}

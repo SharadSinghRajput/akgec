@@ -34,7 +34,6 @@ export default function Example() {
                                 className="bg-indigo-50 h-full object-cover rounded-md"
                             />
                         </div>
-                        
                     </figure>
                 </div> */}
                <div className="max-w-4xl mx-auto mt-10">

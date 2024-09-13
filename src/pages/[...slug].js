@@ -20,6 +20,10 @@ export default function DynamicPage() {
       { url: "/about/important-functionaries", componentName: "ImportantFunctionaries" },
       { url: "/about/approval-letter", componentName: "ApprovalLetter" },
       { url: "/about/nba-accreditation", componentName: "NbaAccreditation" },
+      { url: "/programs", componentName: "ProgramCourse" },
+      { url: "/programs/btech", componentName: "BtechProgram" },
+      { url: "/academics/academic-calendar-odd", componentName: "AcademicCalendarOdd" },
+      { url: "/academics/academic-calendar-even", componentName: "AcademicCalendarEven" },
     ];
 
     const fetchPageComponent = async () => {

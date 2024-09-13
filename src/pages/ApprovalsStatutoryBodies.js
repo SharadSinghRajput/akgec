@@ -11,7 +11,7 @@ const SideBarLink = [
     { name: "Institution Social Responsibility", link: "" }
 ]
 
-const people = [
+const peopleData = [
     {
         name: 'NAAC',
         fullName: 'National Assessment and Accreditation Council (NAAC)',
@@ -52,7 +52,7 @@ export default function ApprovalsStatutoryBodies() {
                                 role="list"
                                 className="grid grid-cols-2 gap-10"
                             >
-                                {people.map((person) => (
+                                {peopleData.map((person) => (
                                     <li key={person.name} className="flex flex-col col-span-1 max-lg:col-span-2 gap-6 xl:flex-row border p-4 justify-start items-start">
                                         <img
                                             alt=""
