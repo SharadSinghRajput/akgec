@@ -106,11 +106,11 @@ const BtechProgram = () => {
               </div>
             </div>
             <div className="container mx-auto py-8 mt-10">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Left Section */}
                 <div className="space-y-6">
-                  <div className="bg-gray-200 rounded-md">
-                    <img src="/image/Building2.jpg" alt="Mission10X Wipro" />
+                  <div className="bg-gray-200 rounded-md w-full h-full">
+                    <img className='w-full h-full object-cover' src="/image/Building2.jpg" alt="Mission10X Wipro" />
                   </div>
                 </div>
 
@@ -149,11 +149,11 @@ const BtechProgram = () => {
                       </p>
                     </li>
                   </ul>
-                  <div className="flex max-sm:flex-col max-sm:space-y-3 max-sm:space-x-0 max-sm:pl-7 space-x-1">
-                    <button className="px-6 py-2 w-fit uppercase bg-red-600 rounded-xl max-sm:text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
+                  <div className="flex max-sm:flex-col max-sm:space-y-3 max-sm:space-x-0 pl-7 space-x-1">
+                    <button className="px-3 py-2 w-fit uppercase bg-red-600 rounded-xl text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
                       APPLY TODAY →
                     </button>
-                    <button className="px-6 py-2 w-fit uppercase bg-red-600 rounded-xl max-sm:text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
+                    <button className="px-3 py-2 w-fit uppercase bg-red-600 rounded-xl text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
                       DOWNLOAD BROCHURE →
                     </button>
                   </div>
@@ -260,6 +260,81 @@ const BtechProgram = () => {
               ))}
             </div>
 
+          </div>
+        </section>
+        <section>
+          <div className='relative bg-BG6 bg-cover bg-center min-h-screen'>
+            <div className='hidden lg:block absolute z-30 bottom-40 right-[450px] max-2xl:right-[300px] max-xl:right-5  leading-none rounded-lg bg-[#e5e5e5] p-6'>
+              <img className='w-36 object-cover' src="https://www.cuchd.in/engineering/assets/images/paloalto-logo.webp" alt="" />
+              <h5 className='mt-5 text-lg font-novaReg'>Vandana Chauhan</h5>
+              <small className='text-sm font-novaReg'>Placed in Palo Alto Networks</small>
+            </div>
+            <div className='absolute left-0 w-[45%] max-lg:bg-white max-lg:w-full h-full bg-offwhite-gradient z-10'></div>
+            <div className='relative max-w-[1500px] mx-auto h-full z-20 px-5 max-sm:px-3'>
+              <div className='flex max-lg:flex-col'>
+                <div className='mt-20 '>
+                  <div className='relative z-20'>
+                    <h1 className='text-4xl font-novaReg max-w-md leading-none max-sm:text-center max-sm:text-3xl'>
+                      Upgrade your skills with our most sought-after Specializations
+                    </h1>
+                    <p className='mt-5 max-w-xl font-novaReg max-sm:text-center'>
+                      Explore your interests in greater depth and enhance your set of skills with the most in-demand specialization programs.
+                    </p>
+                  </div>
+                  <div className='grid grid-cols-2 md:grid-cols-4  gap-5 mt-8 relative z-20 max-w-7xl'>
+                    <div className='p-6 max-sm:p-4 bg-white shadow-cardShadow rounded-lg flex flex-col justify-start max-lg:items-center hover:bg-[#bfd3ff] transition-all duration-300 ease-in-out'>
+                      <div className='my-5 bg-svgElement h-[27px] bg-[0_-99px] w-[26px]'></div>
+                      <span className='font-novaReg leading-none text-start max-lg:text-center'>Satellite <br /> Design</span>
+                    </div>
+                    <div className='p-6 max-sm:p-4 bg-white shadow-cardShadow rounded-lg flex flex-col justify-start max-lg:items-center hover:bg-[#bfd3ff] transition-all duration-300 ease-in-out'>
+                      <div className='my-5 bg-svgElement h-[34px] w-[22px]'></div>
+                      <span className='font-novaReg leading-none text-start max-lg:text-center'>Digital <br /> Manufacturing</span>
+                    </div>
+                    <div className='p-6 max-sm:p-4 bg-white shadow-cardShadow rounded-lg flex flex-col justify-start max-lg:items-center hover:bg-[#bfd3ff] transition-all duration-300 ease-in-out'>
+                      <div className='my-5 bg-svgElement h-[24px] w-[24px] bg-[0_-39px]'></div>
+                      <span className='font-novaReg leading-none text-start max-lg:text-center'>Electric <br /> Vehicles</span>
+                    </div>
+                    <div className='p-6 max-sm:p-4 bg-white shadow-cardShadow rounded-lg flex flex-col justify-start max-lg:items-center hover:bg-[#bfd3ff] transition-all duration-300 ease-in-out'>
+                      <div className='my-5 bg-svgElement h-[26px] w-[27px] bg-[0_-68px]'></div>
+                      <span className='font-novaReg leading-none text-start max-lg:text-center'>Intelligent <br /> Transport System</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='my-20 max-w-2xl max-lg:max-w-5xl'>
+                <div className='relative z-20'>
+                  <h1 className='text-4xl font-novaReg max-w-md leading-none max-sm:text-center max-sm:text-3xl'>
+                    CU Engineering Placement Highlights
+                  </h1>
+                </div>
+                <div className='grid grid-cols-2 md:grid-cols-4 gap-5 mt-8 relative z-20'>
+                  <div className='p-5 shadow-cardShadow rounded-lg flex flex-col justify-center max-sm:items-center bg-[#29376d] text-white'>
+                    <h2 className='font-novaReg text-4xl'>1.7<small className='text-base'>CR</small></h2>
+                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>International Highest Package offered</span>
+                  </div>
+                  <div className='p-5 bg-white shadow-cardShadow rounded-lg flex flex-col max-sm:items-center justify-center'>
+                    <h2 className='font-novaReg text-4xl'>54.75</h2>
+                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>International Highest Package offered</span>
+                  </div>
+                  <div className='p-5 bg-white shadow-cardShadow rounded-lg flex flex-col max-sm:items-center justify-center'>
+                    <h2 className='font-novaReg text-4xl'>10<small className='text-base'>LPA</small></h2>
+                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>Highest Package offered</span>
+                  </div>
+                  <div className='p-5 bg-white shadow-cardShadow rounded-lg flex flex-col max-sm:items-center justify-center'>
+                    <h2 className='font-novaReg text-4xl'>5<small className='text-base'>LPA</small></h2>
+                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>Average Package offered</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='hidden relative h-[250px] overflow-hidden max-lg:block'>
+            <img className='w-full h-full object-cover object-top max-sm:object-right' src="/image/feature-bg-new.webp" alt="" />
+            <div className='absolute bottom-2 left-3 leading-none rounded-lg bg-[#e5e5e5] p-6'>
+              <img className='w-36 object-cover' src="https://www.cuchd.in/engineering/assets/images/paloalto-logo.webp" alt="" />
+              <h5 className='text-lg font-novaReg'>Vandana Chauhan</h5>
+              <small className='font-novaReg'>Placed in Palo Alto Networks</small>
+            </div>
           </div>
         </section>
       </div>

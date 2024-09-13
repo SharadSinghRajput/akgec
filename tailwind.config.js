@@ -12,14 +12,20 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "offwhite-gradient": 'linear-gradient(90deg, rgb(242, 244, 248) 70%, rgba(242, 244, 248, .1))',
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'custom-image': "url('/image/slider-home/asfdasda.jpg')",
         'About': "url('/image/about-dd-image.jpg')",
+        'svgElement': "url('/image/skills-sprite.webp')",
         'BG2': "url('/image/MainBG2.jpg')",
         'BG3': "url('/image/MainBG.jpg')",
         'BG4': "url('/image/dotted-map-bg.webp')",
         'BG5': "url('/image/dotted-map-bg.png')",
+        'BG6': "url('/image/feature-bg-new.webp')",
+      },
+      boxShadow: {
+        'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',
       },
       screens: {
         'break1': '1800px',

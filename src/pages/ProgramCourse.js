@@ -1,105 +1,19 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import Header from "./Components/Header";
 import SideBar from "./Components/SideBar";
+import { coursesData } from "@/Json/ProgramsData";
 
 const SideBarLink = [
-    {name: "Our Identity" , link : "/overview"},
-    {name: "Leadership" , link : ""},
-    {name: "Leadership" , link : ""},
-    {name: "Governance" , link : ""},
-    {name: "Recognition and Approvals" , link : ""},
-    {name: "Awards and Rankings" , link : ""},
-    {name: "Institution Social Responsibility" , link : ""}
+    { name: "Our Identity", link: "/overview" },
+    { name: "Leadership", link: "" },
+    { name: "Leadership", link: "" },
+    { name: "Governance", link: "" },
+    { name: "Recognition and Approvals", link: "" },
+    { name: "Awards and Rankings", link: "" },
+    { name: "Institution Social Responsibility", link: "" }
 ]
-
-const courses = [
-    {
-        "name": "Computer Science and Engineering",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Computer Science and Engineering (Artificial Intelligence & Machine Learning)",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Computer Science and Engineering (Data Science)",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Computer Science",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Computer Science and Engineering (Hindi)",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Artificial Intelligence & Machine Learning",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Information Technology",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Computer Science and Information Technology",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Electronics and Communication Engineering",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Mechanical Engineering",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Electrical and Electronics Engineering",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Civil Engineering",
-        "duration": "4 Years",
-        "fee": "71078/- INR"
-    },
-    {
-        "name": "Computer Science and Engineering (M.Tech)",
-        "duration": "2 Years",
-        "fee": "59628/- INR"
-    },
-    {
-        "name": "Electrical and Electronics Engineering (M.Tech)",
-        "duration": "2 Years",
-        "fee": "59628/- INR"
-    },
-    {
-        "name": "Electronics and Communication Engineering (M.Tech)",
-        "duration": "2 Years",
-        "fee": "59628/- INR"
-    },
-    {
-        "name": "Mechanical Engineering (M.Tech)",
-        "duration": "2 Years",
-        "fee": "59628/- INR"
-    },
-    {
-        "name": "Master of Computer Applications (MCA)",
-        "duration": "3 Years",
-        "fee": "67978/- INR"
-    }
-];
 
 const ProgramCourse = () => {
     const [entries, setEntries] = useState(10);
@@ -116,7 +30,7 @@ const ProgramCourse = () => {
         setCurrentPage(1); // Reset to first page whenever search term changes
     };
 
-    const filteredCourses = courses.filter(course =>
+    const filteredCourses = coursesData.filter(course =>
         course.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
@@ -127,8 +41,13 @@ const ProgramCourse = () => {
     const totalPages = Math.ceil(filteredCourses.length / entries);
 
     const handlePageChange = (newPage) => {
-        setCurrentPage(newPage);
+        if (newPage > 0 && newPage <= totalPages) {
+            setCurrentPage(newPage);
+        }
     };
+
+    const isPreviousDisabled = currentPage === 1;
+    const isNextDisabled = currentPage === totalPages || totalPages === 0;
 
     return (
         <>
@@ -137,7 +56,7 @@ const ProgramCourse = () => {
                 <section className="w-full max-w-7xl mx-auto grid grid-cols-12 pt-24 gap-10">
                     <div className="col-span-9 max-md:col-span-12">
                         <div className="container mx-auto p-4">
-                            <h1 className="text-4xl font-novaReg leading-none mb-4">
+                            <h1 className="text-[42px] font-novaReg leading-none mb-4">
                                 AKG University <br />
                                 Course Fee, Admission, Cutoff, Ranking
                             </h1>
@@ -195,9 +114,12 @@ const ProgramCourse = () => {
                                             {currentEntries.map((course, index) => (
                                                 <tr
                                                     key={index}
-                                                    className="bg-primary text-white border-inherit"
+                                                    className="bg-indigo-950 text-white border-inherit"
                                                 >
-                                                    <td className="py-4 px-4 text-sm border-b" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>{course.name}</td>
+                                                    <td className="py-4 px-4 text-sm border-b" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
+                                                        <Link href={`/course/${course.id}`} passHref className="text-white hover:underline hover:underline-animation">
+                                                        {course.name}
+                                                        </Link></td>
                                                     <td className="py-4 px-4 text-sm border-b border-l" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>{course.duration}</td>
                                                     <td className="py-4 px-4 text-sm border-b border-l" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>{course.fee}</td>
                                                 </tr>
@@ -211,29 +133,29 @@ const ProgramCourse = () => {
                                             Showing {indexOfFirstEntry + 1} to {Math.min(indexOfLastEntry, filteredCourses.length)} of {filteredCourses.length} entries
                                         </div>
                                         <div className="text-sm bg-blue-950 rounded-lg flex items-center">
-                                            <a
-                                                className="text-white px-4 py-2.5"
-                                                disabled={currentPage === 1}
+                                            <button
+                                                className="text-white px-4 py-2.5 cursor-pointer hover:bg-blue-900 hover:rounded-lg"
+                                                disabled={isPreviousDisabled}
                                                 onClick={() => handlePageChange(currentPage - 1)}
                                             >
                                                 Previous
-                                            </a>
+                                            </button>
                                             {[...Array(totalPages)].map((_, pageIndex) => (
                                                 <button
                                                     key={pageIndex + 1}
-                                                    className={`text-white px-4 py-2.5 rounded ${currentPage === pageIndex + 1 ? 'bg-primary' : ''}`}
+                                                    className={`text-white px-4 py-2.5 hover:bg-blue-900 rounded ${currentPage === pageIndex + 1 ? 'bg-blue-900' : ''}`}
                                                     onClick={() => handlePageChange(pageIndex + 1)}
                                                 >
                                                     {pageIndex + 1}
                                                 </button>
                                             ))}
-                                            <a
-                                                className="text-white px-3 py-2 rounded"
-                                                disabled={currentPage === totalPages}
+                                            <button
+                                                className="text-white px-3 py-2 rounded hover:bg-blue-900 "
+                                                disabled={isNextDisabled}
                                                 onClick={() => handlePageChange(currentPage + 1)}
                                             >
                                                 Next
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
