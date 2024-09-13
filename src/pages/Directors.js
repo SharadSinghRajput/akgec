@@ -93,7 +93,7 @@ export const LeaderShip = () => {
                     </div>
                 </div>
                 <div className="col-span-3">
-                    <SideBar title={"About US"} LinkList={SideBarLink} />
+                    <SideBar title={"About Us"} LinkList={SideBarLink} />
                 </div>
             </section>
         </div>

@@ -191,7 +191,7 @@ const AcademicCalendarOdd = () => {
                 </div>
                 <div className="col-span-3 max-md:col-span-12 pt-5">
                     <AcademicCalendar />
-                    <SideBar title={"About US"} LinkList={SideBarLink} />
+                    <SideBar title={"About Us"} LinkList={SideBarLink} />
                 </div>
             </section>
         </div>

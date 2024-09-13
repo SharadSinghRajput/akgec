@@ -252,7 +252,7 @@ export const Management = () => {
                     </div>
                 </div>
                 <div className="col-span-3 max-md:col-span-12">
-                    <SideBar title={"About US"} LinkList={SideBarLink} />
+                    <SideBar title={"About Us"} LinkList={SideBarLink} />
                 </div>
             </section>
         </div>
