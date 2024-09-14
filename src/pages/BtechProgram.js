@@ -68,7 +68,7 @@ const BtechProgram = () => {
                     Ever since its inception, the department has been a pioneering academic centre for higher education, research, and innovation in key areas of Computer Science. The department provides full support to MTech. scholars in terms dissertation guidance, lab facilities and access to international and national journals. Experienced and senior faculty members are assigned for MTech courses and dissertation work of the scholars. The faculty members and M Tech scholars have published good quality research papers in peer-reviewed and indexed journals and International Conferences in the previous years.
                   </p>
                 </div>
-                <button className="mt-4 px-6 py-2 max-sm:text-sm uppercase bg-red-600 text-white font-novaBold max-sm:py-1.5 tracking-widest rounded-xl hover:bg-red-700">
+                <button className="mt-4 px-6 py-2 max-sm:text-sm uppercase bg-red-600 text-white font-novaBold max-sm:py-1.5 tracking-widest rounded-lg hover:bg-red-700">
                   Know more →
                 </button>
               </div>
@@ -77,30 +77,30 @@ const BtechProgram = () => {
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
-                  <h4 className="font-novaReg text-sm tracking-widest mb-2">ONLY</h4>
-                  <span className='text-3xl text-red-600 leading-5'>Private <br />University</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg">Ist International Conference on Advanced Computing and Emerging Technologies (ACET 2024)</p>
+                  <h4 className="font-novaReg text-sm tracking-widest mb-3">ONLY</h4>
+                  <span className='text-3xl text-red-600 font-novaBold leading-4'>Private <br />University</span>
+                  <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Ist International Conference on Advanced Computing and Emerging Technologies (ACET 2024)</p>
                   {/* <img src="/images/accreditation-logo.png" alt="Accreditation" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
-                  <h4 className="font-novaReg text-sm tracking-widest mb-2">RANKED</h4>
-                  <span className='text-4xl text-red-600'><sup>#</sup>41</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg">Top Private Engineering Colleges of India</p>
+                  <h4 className="font-novaReg text-sm tracking-widest mb-3">RANKED</h4>
+                  <span className='text-4xl text-red-600 font-novaBold'><sup>#</sup>41</span>
+                  <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Top Private Engineering Colleges of India</p>
                   {/* <img src="/images/india-today-logo.png" alt="India Today" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
-                  <h4 className="font-novaReg text-sm tracking-widest mb-2">RANKED</h4>
-                  <span className='text-4xl text-red-600'><sup>#</sup>16</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg ">Top 100 Engineering Colleges Across India</p>
+                  <h4 className="font-novaReg text-sm tracking-widest mb-3">RANKED</h4>
+                  <span className='text-4xl text-red-600 font-novaBold'><sup>#</sup>16</span>
+                  <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Top 100 Engineering Colleges Across India</p>
                   {/* <img src="/images/outlook-logo.png" alt="Outlook" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
-                  <h4 className="font-novaReg text-sm tracking-widest mb-2">RATED</h4>
-                  <span className='text-3xl text-red-600 tracking-tighter'>A++</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg">India's only Education Magazine</p>
+                  <h4 className="font-novaReg text-sm tracking-widest mb-3">RATED</h4>
+                  <span className='text-3xl text-red-600 font-novaBold tracking-tighter'>A++</span>
+                  <p className="mt-3 leading-none text-sm font-novaReg max-w-48">India's only Education Magazine</p>
                   {/* <img src="/images/careers360-logo.png" alt="Careers360" className="mt-4 w-16" /> */}
                 </div>
               </div>
@@ -150,10 +150,10 @@ const BtechProgram = () => {
                     </li>
                   </ul>
                   <div className="flex max-sm:flex-col max-sm:space-y-3 max-sm:space-x-0 pl-7 space-x-1">
-                    <button className="px-3 py-2 w-fit uppercase bg-red-600 rounded-xl text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
+                    <button className="px-3 py-2 w-fit uppercase bg-red-600 rounded-lg text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
                       APPLY TODAY →
                     </button>
-                    <button className="px-3 py-2 w-fit uppercase bg-red-600 rounded-xl text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
+                    <button className="px-3 py-2 w-fit uppercase bg-red-600 rounded-lg text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
                       DOWNLOAD BROCHURE →
                     </button>
                   </div>
@@ -275,10 +275,10 @@ const BtechProgram = () => {
                 <div className='mt-20 '>
                   <div className='relative z-20'>
                     <h1 className='text-4xl font-novaReg max-w-md leading-none max-sm:text-center max-sm:text-3xl'>
-                      Upgrade your skills with our most sought-after Specializations
+                    Enhance Your Expertise with Our Top Specializations
                     </h1>
                     <p className='mt-5 max-w-xl font-novaReg max-sm:text-center'>
-                      Explore your interests in greater depth and enhance your set of skills with the most in-demand specialization programs.
+                    Unleash Your Potential: Dive Deep into Your Passions and Master In-Demand Skills with Our Elite Specialization Programs.
                     </p>
                   </div>
                   <div className='grid grid-cols-2 md:grid-cols-4  gap-5 mt-8 relative z-20 max-w-7xl'>
@@ -304,25 +304,25 @@ const BtechProgram = () => {
               <div className='my-20 max-w-2xl max-lg:max-w-5xl'>
                 <div className='relative z-20'>
                   <h1 className='text-4xl font-novaReg max-w-md leading-none max-sm:text-center max-sm:text-3xl'>
-                    CU Engineering Placement Highlights
+                  AKGEC University Engineering Placement Highlights
                   </h1>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-5 mt-8 relative z-20'>
                   <div className='p-5 shadow-cardShadow rounded-lg flex flex-col justify-center max-sm:items-center bg-[#29376d] text-white'>
-                    <h2 className='font-novaReg text-4xl'>1.7<small className='text-base'>CR</small></h2>
+                    <h2 className='font-novaReg text-4xl'>1.13<small className='text-base'>CR</small></h2>
                     <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>International Highest Package offered</span>
                   </div>
                   <div className='p-5 bg-white shadow-cardShadow rounded-lg flex flex-col max-sm:items-center justify-center'>
-                    <h2 className='font-novaReg text-4xl'>54.75</h2>
-                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>International Highest Package offered</span>
+                    <h2 className='font-novaReg text-4xl'>33.80</h2>
+                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'><strong>LPA</strong> National Highest Package offered</span>
                   </div>
                   <div className='p-5 bg-white shadow-cardShadow rounded-lg flex flex-col max-sm:items-center justify-center'>
                     <h2 className='font-novaReg text-4xl'>10<small className='text-base'>LPA</small></h2>
-                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>Highest Package offered</span>
+                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>Offered to Approx 306 Students</span>
                   </div>
                   <div className='p-5 bg-white shadow-cardShadow rounded-lg flex flex-col max-sm:items-center justify-center'>
                     <h2 className='font-novaReg text-4xl'>5<small className='text-base'>LPA</small></h2>
-                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>Average Package offered</span>
+                    <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>Offered to 1042 Students</span>
                   </div>
                 </div>
               </div>
@@ -330,7 +330,7 @@ const BtechProgram = () => {
           </div>
           <div className='hidden relative h-[250px] overflow-hidden max-lg:block'>
             <img className='w-full h-full object-cover object-top max-sm:object-right' src="/image/AKG_Student.jpg" alt="" />
-            <div className='absolute bottom-2 left-3 leading-none rounded-lg bg-[#e5e5e5] p-6'>
+            <div className='absolute bottom-3 left-3 leading-none rounded-lg bg-[#eeeeee] p-6 max-sm:p-2'>
               <img className='w-28 object-cover' src="/image/company-logos/Google.png" alt="" />
               <h5 className='text-lg font-novaReg'>Vandana Chauhan</h5>
               <small className='font-novaReg'>Placed in Palo Alto Networks</small>
