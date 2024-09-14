@@ -24,6 +24,7 @@ export default function DynamicPage() {
       { url: "/programs/btech", componentName: "BtechProgram" },
       { url: "/academics/academic-calendar-odd", componentName: "AcademicCalendarOdd" },
       { url: "/academics/academic-calendar-even", componentName: "AcademicCalendarEven" },
+      { url: "/admissions", componentName: "Admissions" },
     ];
 
     const fetchPageComponent = async () => {

@@ -53,7 +53,7 @@ const BtechProgram = () => {
   return (
     <>
       <div className="bg-gray-100">
-        <Header title={"B-Tech Program"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
+        <Header title={"B.Tech Program"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
         <section className="w-full max-w-[1400px] mx-auto pt-10">
           <div className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -65,7 +65,7 @@ const BtechProgram = () => {
                     Department of Computer Science and Engineering at AKGEC was formed in 1998 with inception of the college. The Department provides an outstanding research environment complemented by excellence in teaching.
                   </p>
                   <p className="leading-5 text-start font-novaReg">
-                    Ever since its inception, the department has been a pioneering academic centre for higher education, research, and innovation in key areas of Computer Science. The department provides full support to MTech. scholars in terms dissertation guidance, lab facilities and access to international and national journals. Experienced and senior faculty members are assigned for MTech courses and dissertation work of the scholars. The faculty members and M Tech scholars have published good quality research papers in peer-reviewed and indexed journals and International Conferences in the previous years.
+                    Ever since its inception, the department has been a pioneering academic centre for higher education, research, and innovation in key areas of Computer Science. The department provides full support to M.Tech. scholars in terms dissertation guidance, lab facilities and access to international and national journals. Experienced and senior faculty members are assigned for M.Tech courses and dissertation work of the scholars. The faculty members and M.Tech. scholars have published good quality research papers in peer-reviewed and indexed journals and International Conferences in the previous years.
                   </p>
                 </div>
                 <button className="mt-4 px-6 py-2 max-sm:text-sm uppercase bg-red-600 text-white font-novaBold max-sm:py-1.5 tracking-widest rounded-lg hover:bg-red-700">
@@ -117,7 +117,7 @@ const BtechProgram = () => {
                 {/* Right Section */}
                 <div className="space-y-4">
                   <h2 className="text-3xl font-novaReg">Your Future as a Professional Engineer</h2>
-                  <p className="ttracking-tight text-lg font-novaReg text-start leading-5">
+                  <p className="ttracking-tight text-base font-novaReg text-start leading-5">
                     Ajay Kumar Garg Engineering College (Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)
                   </p>
                   <ul className="list-none space-y-4">
@@ -126,7 +126,7 @@ const BtechProgram = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                       </svg>
                       </span>
-                      <p className="text-lg leading-6 text-start font-novaReg">
+                      <p className="text-base leading-6 text-start font-novaReg">
                         Elevate your professional portfolio with industry-aligned programs, a dynamic fraternity, state-of-the-art infrastructure, impeccable placements, and much more at Ajay Kumar Garg Engineering College.
                       </p>
                     </li>
@@ -135,8 +135,8 @@ const BtechProgram = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                       </svg>
                       </span>
-                      <p className="text-lg leading-6 text-start font-novaReg">
-                        Engineering offers unparalleled versatility and spans a vast array of areas in science and technology. As a career, it involves the application of science to design, develop, maintain, research, and enhance structures, machines, devices, systems, and processes. Pursue your Engineering degree from the best engineering college in Uttar Pradesh.
+                      <p className="text-base leading-6 text-start font-novaReg">
+                      Engineering provides unmatched versatility, covering a broad spectrum of disciplines in science and technology. As a profession, it focuses on applying scientific principles to design, develop, innovate, maintain, and improve structures, machines, devices, systems, and processes. Begin your journey towards an Engineering degree at the top-ranked engineering college in Uttar Pradesh.
                       </p>
                     </li>
                     <li className="flex">
@@ -144,8 +144,8 @@ const BtechProgram = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                       </svg>
                       </span>
-                      <p className="text-lg leading-6 text-start font-novaReg">
-                        From designing needles to aircraft, software to smartphones, chips to supercomputers—every product or technology in the realm of Science & Technology encompasses one or more aspects of Engineering. Choose Engineering as your career and pursue your degree at Ajay Kumar Garg Engineering College, one of the top engineering colleges in Uttar Pradesh and North India.
+                      <p className="text-base leading-6 text-start font-novaReg">
+                      From designing surgical needles to aircraft, software to smartphones, microchips to supercomputers—nearly every innovation in Science & Technology incorporates elements of Engineering. Choose Engineering as your career and pursue your degree at Ajay Kumar Garg Engineering College, one of the leading engineering institutions in Uttar Pradesh and North India.
                       </p>
                     </li>
                   </ul>
@@ -176,7 +176,7 @@ const BtechProgram = () => {
                         <p className="text-start mt-2 font-novaReg">
                           Level of Study:
                         </p>
-                        <span className='font-novaReg text-lg'>Under-Graduate, Post-Graduate & LEET Programs</span>
+                        <span className='font-novaReg text-lg'>Under-Graduate & Post-Graduate Programs</span>
                       </div>
                     </div>
 
@@ -317,11 +317,11 @@ const BtechProgram = () => {
                     <span className='mt-1 text-xs leading-none text-start max-sm:text-center'><strong>LPA</strong> National Highest Package offered</span>
                   </div>
                   <div className='p-5 bg-white shadow-cardShadow rounded-lg flex flex-col max-sm:items-center justify-center'>
-                    <h2 className='font-novaReg text-4xl'>10<small className='text-base'>LPA</small></h2>
+                    <h2 className='font-novaReg text-4xl'>11<small className='text-base'>LPA</small></h2>
                     <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>Offered to Approx 306 Students</span>
                   </div>
                   <div className='p-5 bg-white shadow-cardShadow rounded-lg flex flex-col max-sm:items-center justify-center'>
-                    <h2 className='font-novaReg text-4xl'>5<small className='text-base'>LPA</small></h2>
+                    <h2 className='font-novaReg text-4xl'>6<small className='text-base'>LPA</small></h2>
                     <span className='mt-1 text-xs leading-none text-start max-sm:text-center'>Offered to 1042 Students</span>
                   </div>
                 </div>
