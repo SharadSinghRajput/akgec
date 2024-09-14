@@ -332,8 +332,8 @@ const BtechProgram = () => {
             <img className='w-full h-full object-cover object-top max-sm:object-right' src="/image/AKG_Student.jpg" alt="" />
             <div className='absolute bottom-3 left-3 leading-none rounded-lg bg-[#eeeeee] p-6 max-sm:p-2'>
               <img className='w-28 object-cover' src="/image/company-logos/Google.png" alt="" />
-              <h5 className='text-lg font-novaReg'>Vandana Chauhan</h5>
-              <small className='font-novaReg'>Placed in Palo Alto Networks</small>
+              <h5 className='text-lg font-novaReg'>Sakshi Panchal</h5>
+              <small className='font-novaReg'>Placed in Google</small>
             </div>
           </div>
         </section>
