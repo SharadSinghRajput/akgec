@@ -21,6 +21,7 @@ export default function DynamicPage() {
       { url: "/about/approval-letter", componentName: "ApprovalLetter" },
       { url: "/about/nba-accreditation", componentName: "NbaAccreditation" },
       { url: "/programs/btech", componentName: "BtechProgram" },
+      { url: "/programs", componentName: "CourseFee" },
       { url: "/academics", componentName: "AcademicOverview" },
       { url: "/academics/academic-calendar-odd", componentName: "AcademicCalendarOdd" },
       { url: "/academics/academic-calendar-even", componentName: "AcademicCalendarEven" },
