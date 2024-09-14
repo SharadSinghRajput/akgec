@@ -23,6 +23,10 @@ module.exports = {
         'BG4': "url('/image/dotted-map-bg.webp')",
         'BG5': "url('/image/dotted-map-bg.png')",
         'BG6': "url('/image/AKG_Student.jpg')",
+        'BG7': "url('/image/academic-overview/bg-1.jpg')",
+        'BG8': "url('/image/academic-overview/bg-2.jpg')",
+        'BG9': "url('/image/academic-overview/bg-3.jpg')",
+        'BG10': "url('/image/academic-overview/bg-4.jpg')",
       },
       boxShadow: {
         'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',

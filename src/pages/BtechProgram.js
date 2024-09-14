@@ -53,7 +53,7 @@ const BtechProgram = () => {
   return (
     <>
       <div className="bg-gray-100">
-        <Header title={"B.Tech Program"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
+        <Header title={<h2 className="leading-[45px]">Bachelor of Technology <br />(B. Tech)</h2>} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
         <section className="w-full max-w-[1400px] mx-auto pt-10">
           <div className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -266,7 +266,7 @@ const BtechProgram = () => {
           <div className='relative bg-BG6 bg-cover bg-center min-h-screen'>
             <div className='hidden lg:block absolute z-30 bottom-40 right-[450px] max-2xl:right-[300px] max-xl:right-5  leading-none rounded-lg bg-[#e5e5e5] p-6'>
               <img className='w-40 object-cover' src="/image/company-logos/Google.png" alt="" />
-              <h5 className='mt-5 text-lg font-novaReg'>Sakshi Panchal</h5>
+              <h5 className='text-lg font-novaReg'>Sakshi Panchal</h5>
               <small className='text-sm font-novaReg'>Placed in Google</small>
             </div>
             <div className='absolute left-0 w-[45%] max-lg:bg-white max-lg:w-full h-full bg-offwhite-gradient z-10'></div>

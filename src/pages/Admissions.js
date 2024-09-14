@@ -10,26 +10,26 @@ const Admissions = () => {
   return (
     <>
       <div className="bg-gray-100">
-        <Header title={"B.Tech Program"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
+        <Header bg={"/image/admission/admission-bg.jpg"} Button={{ name: "Apply Now", Link: "/" }} title={<h2 className="text-4xl md:text-5xl lg:text-6xl pt-20">Experience First<br />Then Excel</h2>} subHeading={<>Empowering Futures & Realizing Dreams through <strong>Exclusive Scholarships at AKGEC University</strong></>} gradient={"bg-gradient-to-r from-black/50 to-black/20"} />
         <section className="py-12 w-full">
-          <div className="flex justify-center px-4 md:px-12 lg:px-24">
-            <div className="container max-w-full lg:max-w-[1300px] flex max-lg:flex-col-reverse gap-10">
-              <div className="w-full px-3">
+          <div className="relative flex justify-center px-1 md:px-12 lg:px-24">
+            <div className=" container max-w-full lg:max-w-[1400px] flex max-xl:flex-col-reverse gap-10">
+              <div className="max-w-3xl max-2xl:max-w-xl max-xl:w-full px-2">
                 <div className="mb-5">
-                  <h1 className="text-xl mb-3">
+                  <h1 className="text-xl font-novaReg mb-3">
                     AKG Engineering College
                     <br className="w-auto" />
-                    <div className="mt-2">
-                      <span className="text-3xl lg:text-5xl bg-red-600 text-white text-center w-fit h-fit px-2.5">
+                    <div className="">
+                      <span className="text-5xl max-sm:text-3xl max-sm:py-0.5 py-1 inline-block font-novaReg lg:text-5xl bg-secondary text-center w-fit h-fit px-2.5">
                         Admissions
                       </span>
                     </div>
                   </h1>
-                  <p className="bg-slate-200 py-1 px-2.5 w-fit mb-4">
-                    Apply for Admissions at AKG College
+                  <p className="bg-[#eeeeee] max-sm:leading-none max-sm:max-w-52 text-lg font-novaReg py-1 px-2.5 w-fit mb-4">
+                    Apply for Admissions at AKG University
                   </p>
                 </div>
-                <p className="pb-4">
+                <p className="pb-4 max-sm:leading-none font-novaReg">
                   AKG College offers admissions for a wide range of programs
                   including B.Tech in Computer Science and Engineering (CSE) with
                   various specializations like Artificial Intelligence & Machine
@@ -38,7 +38,7 @@ const Admissions = () => {
                   Engineering, Mechanical Engineering, Electrical and Electronics
                   Engineering, and Civil Engineering.
                 </p>
-                <p className="pb-4">
+                <p className="pb-4 max-sm:leading-none font-novaReg">
                   For postgraduate studies, AKG College offers M.Tech in Computer
                   Science and Engineering, Electrical and Electronics Engineering,
                   Electronics and Communication Engineering, and Mechanical
@@ -46,71 +46,53 @@ const Admissions = () => {
                   Applications (MCA) program, catering to advanced studies in
                   computer applications and many more...
                 </p>
-                <div className="border-l-4 border-red-600 pl-5 max-w-full lg:max-w-[420px] mt-5">
-                  <p className="mb-4 text-[16px] lg:text-[18px] leading-[24px] italic">
+                <div className="border-l-4 border-[#fecc00] pl-5 max-w-full lg:max-w-[420px] mt-5">
+                  <p className="mb-4 font-novaReg text-[18px] leading-[24px] italic">
                     Choose the program that interests you and make a wise decision
                     in your life
                   </p>
                 </div>
               </div>
-              <div className="w-full max-w-lg mx-auto bg-white border border-gray-300 rounded-lg shadow-lg mt-8 lg:mt-0">
-                <div className="bg-red-600 rounded-t-lg flex justify-center items-center h-20">
-                  <h1 className="w-full text-2xl tracking-wide font-normal ml-5 text-white rounded-md">
+              <div className="absolute max-xl:static -top-96 right-40 max-w-md md:max-w-2xl xl:max-w-md mx-auto bg-white rounded-lg mt-8 lg:mt-0">
+                <div className="bg-secondary rounded-t-lg flex justify-center items-center h-20">
+                  <h1 className="w-full text-[27px] tracking-tight font-novaSemi ml-5 rounded-md">
                     Register Today
                   </h1>
                 </div>
-                <div className="p-5">
-                  <p className="text-xs text-black mb-6 ">
+                <div className="p-10 max-sm:p-4">
+                  <p className="text-xs font-novaReg mb-6 ">
                     Fill the registration form and get information regarding
                     different programs at Chandigarh University or call us at 1800
                     1212 88800. Our experienced advisors are available 24*7.
                   </p>
 
                   <form action="#" method="POST">
-                    <div className="mb-2">
-                      <label
-                        htmlFor="name"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
-                        Full Name
-                      </label>
+                    <div className="mb-3">
                       <input
                         type="text"
                         id="name"
                         name="name"
-                        className="w-full px-4 py-2 border placeholder:font-serif placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="Enter your full name"
+                        className="w-full px-4 py-2 border placeholder:text-black placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        placeholder="Enter your full Name"
                         required
                       />
                     </div>
-                    <div className="mb-4">
-                      <label
-                        htmlFor="email"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
-                        Email Address
-                      </label>
+                    <div className="mb-3">
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        className="w-full px-4 py-2 border placeholder:font-serif placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border placeholder:text-black placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="Enter your email address"
                         required
                       />
                     </div>
                     <div className="mb-4">
-                      <label
-                        htmlFor="phone"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
-                        Phone Number
-                      </label>
                       <input
                         type="tel"
                         id="phone"
                         name="phone"
-                        className="w-full px-4 py-2 border placeholder:font-serif placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border placeholder:text-black placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="Enter your phone number"
                         required
                       />
@@ -173,12 +155,6 @@ const Admissions = () => {
                       </div>
                     </div>
                     <div className="mb-4">
-                      <label
-                        htmlFor="program"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
-                        Choose Your Interested Program
-                      </label>
                       <select
                         id="program"
                         name="program"
@@ -213,7 +189,7 @@ const Admissions = () => {
                     <div className="text-center">
                       <button
                         type="submit"
-                        className="w-full bg-red-600 text-sm font-serif uppercase text-white px-4 py-3 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full bg-secondary text-sm font-slick font-bold uppercase px-4 py-3 rounded-md hover:bg-indigo-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                       >
                         Submit Application
                       </button>
@@ -224,7 +200,7 @@ const Admissions = () => {
             </div>
           </div>
         </section>
-        <section className="w-full pb-16 flex justify-center">
+        <section className="w-full pb-16 flex justify-center mt-10">
           <div className="container max-w-full lg:max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-10 max-sm:mx-5">
             {/* Undergraduate Programs */}
             <div className="relative w-full h-[342px] flex flex-col items-center justify-between">
@@ -251,7 +227,7 @@ const Admissions = () => {
               <div className="flex flex-col sm:flex-row justify-evenly mt-4 w-full">
                 <a
                   href="#"
-                  className="bg-red-600 w-full sm:w-48 text-center text-white px-4 py-2.5 mb-2 sm:mb-0 sm:mr-2 rounded-md hover:bg-blue-950"
+                  className="bg-secondary uppercase text-sm font-novaSemi w-full sm:w-48 text-center px-4 py-2.5 mb-2 sm:mb-0 sm:mr-2 rounded-md hover:bg-blue-950 hover:text-white"
                 >
                   Apply Now
                 </a>
@@ -260,7 +236,7 @@ const Admissions = () => {
                   id="undergraduate-program"
                   onMouseEnter={() => setShowUndergraduateCourses(true)}
                   onMouseLeave={() => setShowUndergraduateCourses(false)}
-                  className="bg-white border border-black w-full sm:w-48 text-center text-black px-4 py-2 rounded-md hover:bg-blue-950 relative"
+                  className="bg-white uppercase text-sm font-novaReg border border-black w-full sm:w-48 text-center text-black px-4 py-2 rounded-md hover:bg-blue-950 hover:text-white relative"
                 >
                   Our Program
                   {showUndergraduateCourses && (
@@ -303,7 +279,7 @@ const Admissions = () => {
               <div className="flex flex-col sm:flex-row justify-evenly mt-4 w-full">
                 <a
                   href="#"
-                  className="bg-red-600 w-full sm:w-48 text-center text-white py-2.5 mb-2 sm:mb-0 sm:mr-2 rounded-md hover:bg-blue-950"
+                  className="bg-secondary w-full uppercase text-sm font-novaSemi sm:w-48 text-center py-2.5 mb-2 sm:mb-0 sm:mr-2 rounded-md hover:bg-blue-950 hover:text-white"
                 >
                   Apply Now
                 </a>
@@ -312,7 +288,7 @@ const Admissions = () => {
                   id="postgraduate-program"
                   onMouseEnter={() => setShowPostgraduateCourses(true)}
                   onMouseLeave={() => setShowPostgraduateCourses(false)}
-                  className="bg-white border border-black w-full sm:w-48 text-center text-black py-2.5 rounded-md hover:bg-blue-950 relative"
+                  className="bg-white border uppercase font-novaReg text-sm border-black w-full sm:w-48 text-center text-black py-2.5 rounded-md hover:bg-blue-950 hover:text-white relative"
                 >
                   Our Program
                   {showPostgraduateCourses && (
@@ -331,18 +307,20 @@ const Admissions = () => {
             </div>
           </div>
         </section>
-        <section className="relative grid grid-cols-2 max-lg:grid-cols-1 h-[80vh]">
-          <div className=" bg-no-repeat bg-cover max-lg:h-screen max-sm:min-h-[180%] bg-[url('https://www.cuchd.in/admissions/images/early-bird-bg.jpg')] bg-red-700 bg-blend-multiply">
+        <section className="relative grid grid-cols-2 max-xl:grid-cols-1">
+          <div className=" bg-no-repeat bg-cover h-full bg-[url('https://www.cuchd.in/admissions/images/early-bird-bg.jpg')] bg-red-700 bg-blend-multiply">
             <div className="flex justify-center items-center max-lg:justify-start max-lg:items-start max-lg:mt-10 max-lg:ml-10  h-full">
-              <div className="">
-                <h2 className="text-white text-5xl max-md:text-4xl leading-12 uppercase tracking-wide font-normal">
-                  Early Bird <br />
-                  Scholarship
-                </h2>
-                <p className="text-white text-base leading-6 my-3">
-                  For PG Students for the Academic <br />
-                  Year 2023-2024
-                </p>
+              <div className="max-xl:flex max-xl:items-end gap-10 py-10 max-sm:flex-col max-sm:items-start">
+                <div>
+                  <h2 className="text-white text-5xl max-md:text-4xl leading-12 uppercase tracking-wide font-normal">
+                    Early Bird <br />
+                    Scholarship
+                  </h2>
+                  <p className="text-white text-base leading-6 my-3">
+                    For PG Students for the Academic <br />
+                    Year 2023-2024
+                  </p>
+                </div>
                 <a
                   href=""
                   className="border bg-white text-black text-center inline-block rounded-md uppercase tracking-wide py-[14px] px-6 text-sm hover:bg-[#1c1f52] hover:text-white transition ease-in-out duration-200"
@@ -352,9 +330,9 @@ const Admissions = () => {
               </div>
             </div>
           </div>
-          <div className="max-lg:absolute max-lg:top-72 max-md:-left-10 flex justify-start items-start mx-10 mt-10 ">
+          <div className="flex max-sm:flex-wrap justify-start max-xl:justify-center items-start gap-5 mx-10 max-sm:mx-0 max-sm:gap-3 mt-10 ">
             <div className=" ">
-              <div className="mx-5 bg-[#f9f9f9] border w-80 max-md:w-full border-gray-300 shadow-lg">
+              <div className=" bg-[#f9f9f9] border w-full border-gray-300 shadow-lg">
                 <div className=" text-center bg-white py-3">
                   <img
                     src="/image/akg-new.png"
@@ -402,15 +380,15 @@ const Admissions = () => {
                 <div className="py-5 px-10">
                   <a
                     href=""
-                    className="border bg-red-600 text-white text-center inline-block rounded-md uppercase tracking-wide py-3 w-full text-sm hover:bg-blue-950 transition ease-in-out duration-200"
+                    className="font-novaBold border bg-secondary text-center inline-block rounded-md uppercase tracking-wide py-3 w-full text-sm hover:bg-blue-950 hover:text-white transition ease-in-out duration-200"
                   >
                     Apply Now
                   </a>
                 </div>
               </div>
             </div>
-            <div className="max-sm:absolute max-sm:top-[570px]">
-              <div className="mx-5 bg-[#f9f9f9] border max-md:w-full w-80 border-gray-300 shadow-lg ">
+            <div className=" ">
+              <div className=" bg-[#f9f9f9] border w-full border-gray-300 shadow-lg ">
                 <div className=" text-center bg-white py-3">
                   <img
                     src="/image/akg-new.png"
@@ -456,7 +434,7 @@ const Admissions = () => {
                 <div className="py-5 px-10">
                   <a
                     href=""
-                    className="border bg-red-600 w-full text-white text-center inline-block rounded-md uppercase tracking-wide py-3 px-6 text-sm hover:bg-blue-950 transition ease-in-out duration-200"
+                    className="border font-novaBold bg-secondary w-full text-center inline-block rounded-md uppercase tracking-wide py-3 px-6 text-sm hover:bg-blue-950 hover:text-white transition ease-in-out duration-200"
                   >
                     Apply Now
                   </a>
@@ -465,40 +443,30 @@ const Admissions = () => {
             </div>
           </div>
         </section>
-        <section className="pt-12 max-sm:py-0 pb-12">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 -mx-4">
-              <div className="w-full px-4 mb-8 max-sm:mb-0 max-sm:border-b max-sm:pb-5">
-                <div className="rounded-lg overflow-hidden">
-                  <div className="p-6 max-lg:px-0 max-sm:px-0">
-                    <h4 className="text-xl font-medium text-gray-900 mb-4">Scholarship Facility</h4>
-                    <p className="text-gray-700 max-sm:text-sm mb-6">This policy outlines the scholarship program for students securing an All India Rank (AIR) up to 25,000 in the Joint Entrance Examination (JEE) for admission.</p>
-                    <a href="#" className="inline-block py-3 px-6 max-sm:px-5 max-sm:py-2 max-sm:text-xs text-sm font-medium text-center text-white bg-red-600 hover:bg-blue-950 rounded transition duration-200">View More Details</a>
-                  </div>
-                  <img src="image/admission/scholar.webp" alt="Scholarship Facility" width={500} height={300} className="w-full rounded-lg" />
-                </div>
+        <section className=" max-w-7xl max-xl:max-w-5xl max-lg:max-w-2xl max-md:max-w-lg mx-auto py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-3">
+            <div className="min-h-52 flex flex-col group">
+              <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">Education Loan Facility</h4>
+              <p className="py-2 max-sm:leading-none text-base font-novaReg">Get a loan of up to ₹4 lakh without any security. To take advantage of this facility, visit your nearest PNB or Indian Overseas Bank branch today.</p>
+              <button className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
+              <div className="mt-auto">
+                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/scholar.webp" alt="" />
               </div>
-
-              <div className="w-full px-4 mb-8 max-sm:mb-0 max-sm:border-b max-sm:pb-5">
-                <div className="rounded-lg overflow-hidden">
-                  <div className="p-6 max-lg:px-0 max-sm:px-0">
-                    <h4 className="text-xl font-medium text-gray-900 mb-4">AKG Advantages</h4>
-                    <p className="text-gray-700 max-sm:text-sm mb-6">AKG University - Bridging academia and industry through transparent learning, objective assessments, and innovative collaboration.</p>
-                    <a href="#" className="inline-block py-3 px-6 max-md:mt-5 max-sm:mt-0 max-sm:px-5 max-sm:py-2 max-sm:text-xs text-sm font-medium text-center text-white bg-red-600 hover:bg-blue-950 rounded transition duration-200">View More Details</a>
-                  </div>
-                  <img src="/image/admission/advantages.webp" alt="AKG Advantages" width={500} height={300} className="w-full rounded-lg" />
-                </div>
+            </div>
+            <div className="min-h-52 flex flex-col group">
+              <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">AKG Advantages</h4>
+              <p className="py-2 max-sm:leading-none text-base font-novaReg">Industry-Institute Interface: Bridging Academics with Transparent Learning and Objective Assessment</p>
+              <button className="my-3 w-fit mt-auto px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
+              <div className="mt-auto">
+                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/scholarship.webp" alt="" />
               </div>
-
-              <div className="w-full px-4 mb-8 max-sm:mb-0 max-sm:border-b max-sm:pb-5">
-                <div className="rounded-lg overflow-hidden">
-                  <div className="p-6 max-lg:px-0 max-sm:px-0">
-                    <h4 className="text-xl font-medium text-gray-900 mb-4">Why AKG?</h4>
-                    <p className="text-gray-700 max-sm:text-sm mb-6">We strive to provide and maintain an academic environment and systems, enabling maximum learning to produce competent professionals.</p>
-                    <a href="#" className="inline-block py-3 px-6 max-sm:px-5 max-sm:py-2 max-sm:text-xs text-sm font-medium text-center text-white bg-red-600 hover:bg-blue-950 rounded transition duration-200">View More Details</a>
-                  </div>
-                  <img src="image/Building2.jpg" alt="Why AKG?" width={500} height={300} className="w-full rounded-lg" />
-                </div>
+            </div>
+            <div className="min-h-52 flex flex-col group">
+              <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">Why AKGEC ?</h4>
+              <p className="py-2 max-sm:leading-none text-base font-novaReg">History, Culture, Innovation, Technology, and more—AKGEC University provides a diverse array of opportunities.</p>
+              <button className="my-3 w-fit mt-auto px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
+              <div className="mt-auto">
+                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/advantages.webp" alt="" />
               </div>
             </div>
           </div>

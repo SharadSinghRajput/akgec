@@ -39,8 +39,8 @@ export default function Example() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setIsScrolled100(scrollY > 100);
-      setIsScrolled(scrollY > 100);
+      setIsScrolled100(scrollY > 10);
+      setIsScrolled(scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
