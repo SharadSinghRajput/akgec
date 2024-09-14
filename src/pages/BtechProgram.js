@@ -266,8 +266,8 @@ const BtechProgram = () => {
           <div className='relative bg-BG6 bg-cover bg-center min-h-screen'>
             <div className='hidden lg:block absolute z-30 bottom-40 right-[450px] max-2xl:right-[300px] max-xl:right-5  leading-none rounded-lg bg-[#e5e5e5] p-6'>
               <img className='w-40 object-cover' src="/image/company-logos/Google.png" alt="" />
-              <h5 className='mt-5 text-lg font-novaReg'>Vandana Chauhan</h5>
-              <small className='text-sm font-novaReg'>Placed in Palo Alto Networks</small>
+              <h5 className='mt-5 text-lg font-novaReg'>Sakshi Panchal</h5>
+              <small className='text-sm font-novaReg'>Placed in Google</small>
             </div>
             <div className='absolute left-0 w-[45%] max-lg:bg-white max-lg:w-full h-full bg-offwhite-gradient z-10'></div>
             <div className='relative max-w-[1500px] mx-auto h-full z-20 px-5 max-sm:px-3'>
