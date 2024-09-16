@@ -53,7 +53,7 @@ const CourseFee = () => {
         <>
             <div className="bg-gray-100">
                 <Header Button={{ name: "Apply Now", Link: "/" }} title={<h2 className="leading-[45px]">AKG University <br />Course Fee 2024 </h2>} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
-                <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 pt-16 gap-3 px-6 max-sm:px-0">
+                <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 pt-10 gap-3 px-6 max-sm:px-0">
                     <div className="col-span-9 max-lg:col-span-12 max-sm:px-2">
                         <div className="container mx-auto">
                             <h1 className="text-[42px] font-novaReg leading-none mb-4">

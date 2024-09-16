@@ -23,10 +23,15 @@ export default function DynamicPage() {
       { url: "/programs/btech", componentName: "BtechProgram" },
       { url: "/programs", componentName: "CourseFee" },
       { url: "/academics", componentName: "AcademicOverview" },
-      { url: "/academics/academic-calendar-odd", componentName: "AcademicCalendarOdd" },
-      { url: "/academics/academic-calendar-even", componentName: "AcademicCalendarEven" },
+      { url: "/academics/academic-calendar-odd", componentName: "AcademicCalendar" },
+      { url: "/academics/academic-calendar-even", componentName: "AcademicCalendar" },
       { url: "/admissions", componentName: "Admissions" },
       { url: "/admissions/course-fee", componentName: "CourseFee" },
+      { url: "/academics/institutes", componentName: "Institutes" },
+      { url: "/academics/list-of-holidays", componentName: "ListOfHolidays" },
+      { url: "/academics/teaching-practices", componentName: "TeachingPractices" },
+      { url: "/academics/list-of-restricted-holidays", componentName: "ListOfHolidays" },
+      { url: "/professional-bodies", componentName: "ProfessionalBodies" },
     ];
 
     const fetchPageComponent = async () => {

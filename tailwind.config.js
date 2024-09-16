@@ -27,6 +27,9 @@ module.exports = {
         'BG8': "url('/image/academic-overview/bg-2.jpg')",
         'BG9': "url('/image/academic-overview/bg-3.jpg')",
         'BG10': "url('/image/academic-overview/bg-4.jpg')",
+        'BG11': "url('/image/woman-bg.jpg')",
+        'BG12': "url('/image/main-banner.jpg')",
+        'BG13': "url('/image/esteemed-partners-bg.jpg')",
       },
       boxShadow: {
         'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',

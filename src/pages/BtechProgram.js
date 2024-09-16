@@ -2,47 +2,9 @@
 import React from 'react';
 import { useState } from 'react';
 import Header from "./Components/Header";
+import SliderOne from './Components/Slider1';
+import { tabs, slidesData } from '@/Json/BtechData';
 
-
-const tabs = [
-  {
-    name: 'Program Educational Objectives (PEO) of CSE Department', content: (
-      <div>
-        <p><strong>PEO 1:</strong> The graduates of CSE will have a strong foundation in mathematical, scientific and engineering fundamentals necessary to formulate, solve and analyze engineering problems in their career.</p>
-        <p><strong>PEO 2:</strong> The graduates of CSE will have the ability to analyse the requirements, understand the technical specifications and design the engineering solutions by applying computer science theory and principles.</p>
-        <p><strong>PEO 3:</strong> The graduates of CSE will have exposure to work as teams on emerging cutting edge technologies with effective communication skills and leadership qualities.</p>
-        <p><strong>PEO 4:</strong> The graduates of CSE will have successful careers by engaging in life long learning.</p>
-        <p><strong>PEO 5:</strong> The graduates of CSE will have skills to work collaboratively on multidisciplinary projects and exhibit high level of professional and ethical values.</p>
-      </div>
-    )
-  },
-  {
-    name: 'Updated Program Outcomes (PO) of CSE Department w.e.f. Session 2017-18', content: (
-      <div>
-        <p><strong>PO 1:</strong> Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex Computer Science & Engineering problems.</p>
-        <p><strong>PO 2:</strong> Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</p>
-        <p><strong>PO 3:</strong> Design solutions for complex Computer Science & Engineering problems and design system components or processes that meet the specified needs with appropriate consideration for public health and safety, and the cultural, societal, and environmental considerations.</p>
-        <p><strong>PO 4:</strong> Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</p>
-        <p><strong>PO 5:</strong> Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex Computer Science & engineering activities with an understanding of the limitations.</p>
-        <p><strong>PO 6:</strong> Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</p>
-        <p><strong>PO 7:</strong> Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</p>
-        <p><strong>PO 8:</strong> Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.</p>
-        <p><strong>PO 9:</strong> Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.</p>
-        <p><strong>PO 10:</strong> Communicate effectively on complex Computer Science & engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.</p>
-        <p><strong>PO 11:</strong> Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</p>
-        <p><strong>PO 12:</strong> Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological changes in the field of Computer Science.</p>
-      </div>
-    )
-  },
-  {
-    name: 'Program Specific Outcomes (PSOs) w.e.f. Session 2016-17', content: (
-      <div>
-        <p><strong>PSO 1:</strong> Ability to exhibit analytical & logical skills and apply knowledge of Maths and Computer Science to design, develop, test, and maintain software solutions.</p>
-        <p><strong>PSO 2:</strong> Ability to identify, formulate, and resolve real life/social problems by using current computer technology.</p>
-      </div>
-    )
-  }
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -53,7 +15,7 @@ const BtechProgram = () => {
   return (
     <>
       <div className="bg-gray-100">
-        <Header title={<h2 className="leading-[45px]">Bachelor of Technology <br />(B. Tech)</h2>} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+        <Header title={<h2 className="leading-[45px]">Bachelor of Technology <br />(B. Tech)</h2>} Button={{ name: "Apply Now", Link: "/" }} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
         <section className="w-full max-w-[1400px] mx-auto pt-10">
           <div className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -68,7 +30,7 @@ const BtechProgram = () => {
                     Ever since its inception, the department has been a pioneering academic centre for higher education, research, and innovation in key areas of Computer Science. The department provides full support to M.Tech. scholars in terms dissertation guidance, lab facilities and access to international and national journals. Experienced and senior faculty members are assigned for M.Tech courses and dissertation work of the scholars. The faculty members and M.Tech. scholars have published good quality research papers in peer-reviewed and indexed journals and International Conferences in the previous years.
                   </p>
                 </div>
-                <button className="mt-4 px-6 py-2 max-sm:text-sm uppercase bg-red-600 text-white font-novaBold max-sm:py-1.5 tracking-widest rounded-lg hover:bg-red-700">
+                <button className="mt-4 px-6 py-2 max-sm:text-sm uppercase bg-secondary font-novaBold max-sm:py-1.5 tracking-widest rounded-lg hover:bg-red-700">
                   Know more →
                 </button>
               </div>
@@ -78,28 +40,28 @@ const BtechProgram = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-3">ONLY</h4>
-                  <span className='text-3xl text-red-600 font-novaBold leading-4'>Private <br />University</span>
+                  <span className='text-3xl text-blue-600 font-novaBold leading-4'>Private <br />University</span>
                   <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Ist International Conference on Advanced Computing and Emerging Technologies (ACET 2024)</p>
                   {/* <img src="/images/accreditation-logo.png" alt="Accreditation" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-3">RANKED</h4>
-                  <span className='text-4xl text-red-600 font-novaBold'><sup>#</sup>41</span>
+                  <span className='text-4xl text-blue-600 font-novaBold'><sup>#</sup>41</span>
                   <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Top Private Engineering Colleges of India</p>
                   {/* <img src="/images/india-today-logo.png" alt="India Today" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-3">RANKED</h4>
-                  <span className='text-4xl text-red-600 font-novaBold'><sup>#</sup>16</span>
+                  <span className='text-4xl text-blue-600 font-novaBold'><sup>#</sup>16</span>
                   <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Top 100 Engineering Colleges Across India</p>
                   {/* <img src="/images/outlook-logo.png" alt="Outlook" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-3">RATED</h4>
-                  <span className='text-3xl text-red-600 font-novaBold tracking-tighter'>A++</span>
+                  <span className='text-3xl text-blue-600 font-novaBold tracking-tighter'>A++</span>
                   <p className="mt-3 leading-none text-sm font-novaReg max-w-48">India's only Education Magazine</p>
                   {/* <img src="/images/careers360-logo.png" alt="Careers360" className="mt-4 w-16" /> */}
                 </div>
@@ -136,7 +98,7 @@ const BtechProgram = () => {
                       </svg>
                       </span>
                       <p className="text-base leading-6 text-start font-novaReg">
-                      Engineering provides unmatched versatility, covering a broad spectrum of disciplines in science and technology. As a profession, it focuses on applying scientific principles to design, develop, innovate, maintain, and improve structures, machines, devices, systems, and processes. Begin your journey towards an Engineering degree at the top-ranked engineering college in Uttar Pradesh.
+                        Engineering provides unmatched versatility, covering a broad spectrum of disciplines in science and technology. As a profession, it focuses on applying scientific principles to design, develop, innovate, maintain, and improve structures, machines, devices, systems, and processes. Begin your journey towards an Engineering degree at the top-ranked engineering college in Uttar Pradesh.
                       </p>
                     </li>
                     <li className="flex">
@@ -145,15 +107,15 @@ const BtechProgram = () => {
                       </svg>
                       </span>
                       <p className="text-base leading-6 text-start font-novaReg">
-                      From designing surgical needles to aircraft, software to smartphones, microchips to supercomputers—nearly every innovation in Science & Technology incorporates elements of Engineering. Choose Engineering as your career and pursue your degree at Ajay Kumar Garg Engineering College, one of the leading engineering institutions in Uttar Pradesh and North India.
+                        From designing surgical needles to aircraft, software to smartphones, microchips to supercomputers—nearly every innovation in Science & Technology incorporates elements of Engineering. Choose Engineering as your career and pursue your degree at Ajay Kumar Garg Engineering College, one of the leading engineering institutions in Uttar Pradesh and North India.
                       </p>
                     </li>
                   </ul>
                   <div className="flex max-sm:flex-col max-sm:space-y-3 max-sm:space-x-0 pl-7 space-x-1">
-                    <button className="px-3 py-2 w-fit uppercase bg-red-600 rounded-lg text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
+                    <button className="px-3 py-2 w-fit uppercase bg-secondary rounded-lg text-sm font-novaBold tracking-widest hover:bg-red-700">
                       APPLY TODAY →
                     </button>
-                    <button className="px-3 py-2 w-fit uppercase bg-red-600 rounded-lg text-sm text-white font-novaBold tracking-widest hover:bg-red-700">
+                    <button className="px-3 py-2 w-fit uppercase bg-secondary rounded-lg text-sm font-novaBold tracking-widest hover:bg-red-700">
                       DOWNLOAD BROCHURE →
                     </button>
                   </div>
@@ -275,10 +237,10 @@ const BtechProgram = () => {
                 <div className='mt-20 '>
                   <div className='relative z-20'>
                     <h1 className='text-4xl font-novaReg max-w-md leading-none max-sm:text-center max-sm:text-3xl'>
-                    Enhance Your Expertise with Our Top Specializations
+                      Enhance Your Expertise with Our Top Specializations
                     </h1>
                     <p className='mt-5 max-w-xl font-novaReg max-sm:text-center'>
-                    Unleash Your Potential: Dive Deep into Your Passions and Master In-Demand Skills with Our Elite Specialization Programs.
+                      Unleash Your Potential: Dive Deep into Your Passions and Master In-Demand Skills with Our Elite Specialization Programs.
                     </p>
                   </div>
                   <div className='grid grid-cols-2 md:grid-cols-4  gap-5 mt-8 relative z-20 max-w-7xl'>
@@ -304,7 +266,7 @@ const BtechProgram = () => {
               <div className='my-20 max-w-2xl max-lg:max-w-5xl'>
                 <div className='relative z-20'>
                   <h1 className='text-4xl font-novaReg max-w-md leading-none max-sm:text-center max-sm:text-3xl'>
-                  AKGEC University Engineering Placement Highlights
+                    AKGEC University Engineering Placement Highlights
                   </h1>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-5 mt-8 relative z-20'>
@@ -336,6 +298,7 @@ const BtechProgram = () => {
               <small className='font-novaReg'>Placed in Google</small>
             </div>
           </div>
+          <SliderOne slidesData={slidesData} />
         </section>
       </div>
     </>
