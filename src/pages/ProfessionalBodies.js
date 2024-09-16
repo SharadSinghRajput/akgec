@@ -75,7 +75,7 @@ function ProfessionalBodies() {
                 <div className='max-w-[1300px] mx-auto h-96 flex justify-end'>
                     <div className='p-10'>
                         <div className="container mx-auto px-4 py-10">
-                        <h2 className='text-4xl font-novaSemi mb-5'>Our Esteemed Partners</h2>
+                        <h2 className='text-4xl font-novaSemi mb-5'>Our Industry Partners</h2>
                             <table className="min-w-full bg-white border border-gray-300">
                                 <thead>
                                     <tr className="bg-[#333643]">
