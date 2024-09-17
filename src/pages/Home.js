@@ -53,7 +53,7 @@ export default function Home() {
         <div className="flex justify-center relative z-20 min-h-screen">
           <div className="grid grid-cols-2 max-lg:grid-cols-1">
             <div className="flex justify-center max-w-3xl flex-col pl-20 max-lg:mt-52 max-lg:items-center max-lg:px-5 max-sm:mt-40">
-              <h1 className="text-[60px] font-novaThin text-white max-lg:text-4xl max-lg:text-center leading-none mb-5 ">
+              <h1 className="text-[60px] font-novaThin text-white max-lg:text-4xl max-lg:text-center leading-none mb-5  ">
                 Top Private Engineering University in Uttar Pradesh
               </h1>
               <p className="text-white text-xl font-novaLight max-lg:text-base max-lg:text-center">
@@ -61,7 +61,7 @@ export default function Home() {
                 by NAAC with an A++ grade
               </p>
 
-              <Button text={'Apply Today'} className="py-3 px-10 mt-5 text-[15px]  rounded-xl font-novaBold uppercase bg-secondary text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#253c66] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105" />
+              <Button text={'Apply Today'} className="py-3 px-10 mt-5 text-[15px]  rounded-xl font-novaBold uppercase bg-secondary w-max  hover:bg-[#3c5686] hover:border-b-4 hover:text-white hover:border-[#e4d947] hover:transform  scale-y-105" />
             </div>
             <div className="max-md:mt-10  mt-10 pt-5">
               <Form />

@@ -35,7 +35,7 @@ const PlacementData = [
     {
         company: "NUTANIX",
         name: "Gaurav Maheshwari",
-        course: "",
+        course: "CSE General",
         salary: "24",
         image_url: "image/student/4.png",
         Logo: "/image/company-logos/Google.png",
@@ -61,7 +61,7 @@ export default function PlacementHighlights() {
                                 className="absolute -left-5 bottom-0 w-40  max-sm:min-w-[300px] sm:w-60 md:w-64 lg:w-64 object-cover grayscale"
                             />
                             <div
-                                className={`absolute top-5 max-sm:top-2 max-sm:right-10 right-2 p-2 ${index === 3 ? "text-[#212529]" : "text-white"} max-w-[90%] max-sm:p-10 max-sm:w-max`}
+                                className={`absolute top-5 max-sm:top-2 max-sm:right-10 right-2 p-2 ${index === 3 || index === 1 ? "text-[#212529]" : "text-white"} max-w-[90%] max-sm:p-10 max-sm:w-max`}
                             >
                                 <img
                                     src={item.Logo}
@@ -83,7 +83,7 @@ export default function PlacementHighlights() {
             {/* Right Panel */}
             <div className="flex flex-col justify-center p-5 md:p-10 lg:p-16 bg-BG2 bg-no-repeat bg-cover text-white">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-novaLight">
-                    Placements Overview
+                <span className='font-novaSemi bg-gradient-to-r from-teal-300 to-green-400 bg-clip-text text-transparent'>Placements</span> Overview
                 </h2>
                 <p className="text-lg md:text-xl lg:text-2xl font-novaLight mt-3">
                     Record-Breaking Achievements and Industry-Driven Success

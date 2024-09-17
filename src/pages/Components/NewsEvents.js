@@ -30,13 +30,13 @@ export default function NewsEvents() {
 
                 <div className="bg-[#ebebeb] h-[60%] w-full absolute top-0 left-0 -z-10"></div>
                 <h2 className="text-5xl font-novaLight text-center text-gray-700">
-                    Spotlight of Success
+                    Spotlight of <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Success</span>!
                 </h2>
                 <p className="mt-5 text-2xl leading-none font-novaLight text-center max-w-screen-lg mx-auto text-gray-700">
                     From our students clinching global honors to the university soaring in national and international rankings,
                     our triumphs consistently illuminate our path in the spotlight.
                 </p>
-                <div className="mx-auto break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto py-10 ">
+                <div className="break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto py-10 ">
                     <div className="grid grid-cols-2 max-lg:grid-cols-1">
                         <div className="col-span-1 rounded-xl mr-5 border border-gray-200 hover:shadow-lg bg-white ">
                             <img
@@ -50,7 +50,7 @@ export default function NewsEvents() {
                                 <p className="text-base leading-none font-novaLight text-justify mt-5">
                                     The UP government’s One District, One Product (ODOP) Programme aims to improve development and production of indigenous and specialized products. Ghaziabad is identified as a hub for manufacturing of General Engineering Products. Many of these manufacturers are small and medium industries that need modernization, machinery and productivity enhancement.
                                 </p>
-                                <button type="button" className="text-base font-novaBold mt-10 text-secondary" >
+                                <button type="button" className="text-base bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold mt-10 " >
                                     Read More ►
                                 </button>
                             </div>
@@ -77,7 +77,7 @@ export default function NewsEvents() {
                                                 </p>
                                                 <button
                                                     type="button"
-                                                    className="text-sm font-bold mt-10 text-secondary"
+                                                    className="text-sm font-bold mt-10 bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent"
                                                 >
                                                     Read More ►
                                                 </button>

@@ -34,8 +34,8 @@ export default function ResearchEnvironment() {
         <div className="bg-white">
             <div className="max-w-[1350px] mx-auto py-10 mt-10  ">
                 <div className="mx-auto flex justify-center items-center flex-col text-center">
-                    <h2 className="text-4xl font-light tracking-tight text-gray-700">Explore Our Insights & Stories</h2>
-                    <p className="mt-2 text-xl font-light leading-8 text-gray-600 text-center w-[80%] mb-10">
+                    <h2 className="text-5xl font-light tracking-tight text-gray-700">Explore Our <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Insights & Stories</span></h2>
+                    <p className="mt-2 text-xl font-light leading-8 text-center w-[80%] mb-10">
                         Dive into a collection of in-depth articles and blogs that spark thought, inspire action, and keep you informed on the latest trends and ideas.
                     </p>
                 </div>

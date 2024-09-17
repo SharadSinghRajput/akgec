@@ -59,8 +59,8 @@ export default function SlickSlider() {
     <section className="h-full bg-[#F3F3F3] py-8 ">
       <div className="break1:max-w-[1650px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto">
         <header className="text-center mb-8 max-xl:mb-5">
-          <h1 className="text-[42px] font-novaLight max-md:text-2xl max-sm:text-xl max-sm:px-4 text-gray-700">
-            A Glimpse into Our Vibrant Journey
+          <h1 className="text-[42px] font-novaReg max-md:text-2xl max-sm:text-xl max-sm:px-4 text-gray-700">
+            A Glimpse into Our <span className="font-novaSemi bg-text-gradient bg-clip-text text-transparent">Vibrant Journey</span>
           </h1>
         </header>
         <div className="grid grid-cols-12">
@@ -70,7 +70,7 @@ export default function SlickSlider() {
                 <h2 className="text-5xl  xl:text-5xl  font-novaThin mb-2   max-lg:text-3xl max-lg:mb-3 text-gray-700 ">
                   282
                 </h2>
-                <span className="bg-secondary text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
+                <span className="bg-gradient-to-tr from-amber-500 to-red-600 text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
                   Companies
                 </span>
                 <p className="mt-3 text-gray-600 text-[13px] font-novaReg max-md:text-xs leading-4">
@@ -82,7 +82,7 @@ export default function SlickSlider() {
                 <h2 className="text-5xl  xl:text-5xl  font-novaThin mb-2 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                   1406
                 </h2>
-                <span className="bg-secondary text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
+                <span className="bg-gradient-to-tr from-amber-500 to-red-600 text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
                   placements
                 </span>
                 <p className="mt-3 text-gray-600 text-[13px] font-novaReg max-md:text-xs leading-4">
@@ -99,7 +99,7 @@ export default function SlickSlider() {
                     </span>
                   </span>
                 </h2>
-                <span className="bg-primary text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
+                <span className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
                   Engineering
                 </span>
                 <p className="mt-3 text-gray-600 text-[13px] font-novaReg max-md:text-xs leading-4">
@@ -117,7 +117,7 @@ export default function SlickSlider() {
                     </span>
                   </span>
                 </h2>
-                <span className="bg-primary text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
+                <span className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-1.5 mb-2 px-2 text-sm uppercase font-novaBold rounded-md font-bold">
                   Engineering
                 </span>
                 <p className="mt-3 text-gray-600 text-[13px] font-novaReg max-md:text-xs leading-4">
@@ -186,7 +186,7 @@ export default function SlickSlider() {
                     {upcomingEvents.map((item) => (
                       <SwiperSlide key={item.id} className="h-full mb-10">
                         <article className="bg-[#FFFFFF] leading-nonen overflow-hidden p-5 h-full shadow-sm rounded-lg">
-                          <h5 className="text-sm uppercase font-novaReg">
+                          <h5 className="text-sm bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent uppercase font-novaBold">
                             Upcoming Events
                           </h5>
                           <div className="mt-5">
@@ -194,7 +194,7 @@ export default function SlickSlider() {
                               {item.title}
                             </h3>
                             <a
-                              className="mt-5 text-secondary text-[15px] font-novaBold uppercase w-full block text-right"
+                              className="mt-5 bg-gradient-to-r from-amber-500 to-orange-700 bg-clip-text text-transparent text-[15px] font-novaBold uppercase w-full block text-right"
                               href="#"
                             >
                               {item.btn}

@@ -15,6 +15,7 @@ module.exports = {
         "offwhite-gradient": 'linear-gradient(90deg, rgb(242, 244, 248) 70%, rgba(242, 244, 248, .1))',
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          'text-gradient': 'linear-gradient(to right, #dc2626, #1d4ed8)',
         'custom-image': "url('/image/slider-home/asfdasda.jpg')",
         'About': "url('/image/about-dd-image.jpg')",
         'svgElement': "url('/image/skills-sprite.webp')",

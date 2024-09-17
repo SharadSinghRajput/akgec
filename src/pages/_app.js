@@ -1,4 +1,5 @@
 import '../style/globals.css';
+import 'swiper/swiper-bundle.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 

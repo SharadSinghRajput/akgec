@@ -47,16 +47,16 @@ export default function Form() {
   };
 
   return (
-    <div className="flex items-center justify-center h-full pb-4 md:pt-20">
+    <div className="flex items-center justify-center h-full pb-4 md:pt-20 ">
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full overflow-hidden">
         <div className='bg-gray-100 flex flex-col justify-center items-center p-8 pb-4'>
-          <h2 className="text-base font-novaReg text-center">
+          <h2 className="text-sm bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold tracking-wider text-center">
             APPLY TODAY FOR
           </h2>
-          <h1 className="font-novaBold text-center text-xl">  
+          <h1 className="mt-3 font-novaBold text-center text-xl">  
             AKG UNIVERSITY PROGRAMS
           </h1>
-          <p className="bg-primary text-white text-center font-novaBold mb-6 text-xs w-max py-2 px-4 rounded-lg mt-2">
+          <p className="bg-gradient-to-r from-blue-600 to-violet-600 text-white text-center font-novaBold mb-6 text-xs w-max py-2 px-4 rounded-lg mt-2">
             Registration End Date (Phase-II) - 30 Aug 2024
           </p>
         </div>
@@ -146,7 +146,7 @@ export default function Form() {
           </div>
 
           <div className="flex justify-between items-center">
-          <Button text={'REGISTER NOW'} type='submit' className="bg-primary text-white font-novaBold py-4 px-12 text-xs rounded-md" />
+          <Button text={'REGISTER NOW'} type='submit' className="bg-gradient-to-r from-blue-600 to-violet-600 text-white font-novaBold py-4 px-12 text-xs rounded-md" />
             <a href="#" className="text-xs font-novaBold text-gray-600 underline">
               ALREADY REGISTERED
             </a>
