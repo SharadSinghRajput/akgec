@@ -895,7 +895,7 @@ export default function Example() {
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[550px]"
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[650px]"
                     } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >

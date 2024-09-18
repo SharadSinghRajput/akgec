@@ -33,6 +33,7 @@ export default function DynamicPage() {
       { url: "/academics/list-of-restricted-holidays", componentName: "ListOfHolidays" },
       { url: "/professional-bodies", componentName: "ProfessionalBodies" },
       { url: "/professors-of-practice", componentName: "ProfessorsOfPractice" },
+      { url: "/campus-life", componentName: "CampusLife" },
     ];
 
     const fetchPageComponent = async () => {
