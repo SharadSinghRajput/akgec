@@ -9,24 +9,24 @@ const slides = [
     {
         title: "Igniting",
         subHeading: "Minds",
-        subtitle: "Student-Centric University",
-        description: "Optimal learning experiences and services leading to student's success...",
+        subtitle: "University Focused on Student Success",
+        description: "Maximizing Learning Outcomes Through Comprehensive Experiences and Support Services",
         buttonText: "VIDEO TOUR",
         image: "/image/campus-life/main-banner-1.jpg",
     },
     {
         title: "Building",
         subHeading: "Leaders",
-        subtitle: "Research & Innovation",
-        description: "Technology-enhanced experiential learning with advanced learning centres & labs",
+        subtitle: "Pioneering Research and Cutting-Edge Innovation",
+        description: "Innovative Experiential Learning Through Advanced Technology and State-of-the-Art Labs",
         buttonText: "VIDEO TOUR",
         image: "/image/campus-life/main-banner-2.jpg",
     },
     {
         title: "Cultivating",
         subHeading: "Success",
-        subtitle: "World-Class Sports Infrastructure, Mentors & Opportunities",
-        description: "Quality Mentorship, State-Of-The-Art Sports Infrastructure and limitless opportunities",
+        subtitle: "Elite Sports Facilities, Expert Mentorship, and Exceptional Opportunities",
+        description: "Exceptional Mentorship, Cutting-Edge Sports Facilities, and Boundless Opportunities",
         buttonText: "VIDEO TOUR",
         image: "/image/campus-life/main-banner-3.jpg",
     },
@@ -233,14 +233,13 @@ const CampusLife = () => {
                 <div className="max-w-7xl max-xl:max-w-5xl max-lg:grid-cols-1 max-lg:max-w-3xl mx-auto grid grid-cols-5 gap-5 px-5">
                     <div className="col-span-2 max-lg:col-span-1">
                         <div className="space-y-6">
-                            <div>
-                                <h1 className="text-5xl font-bold max-w-lg max-lg:max-w-full">
-                                    A HOME <span className="text-orange-400">AWAY </span>
-                                    <span className="text-orange-400">FROM HOME</span>
+                            <div>  
+                                <h1 className="text-5xl font-bold max-w-lg max-lg:max-w-full uppercase">
+                                Where Comfort Meets<span className="text-orange-400"> New</span>
+                                    <span className="text-orange-400"> Beginnings</span>
                                 </h1>
-                                <p className="mt-4 text-3xl max-w-sm max-lg:max-w-xl leading-none font-novaReg">
-                                    Cosmopolitan Campus with <strong>vibrant cultures, multilateral ideas & a lot more</strong>
-                                </p>
+                                <p className="mt-4 text-3xl max-w-md max-lg:max-w-xl leading-none font-novaReg">
+                                A Cosmopolitan Campus: Where Cultures Converge, <strong>Ideas Flourish, and Opportunities Abound</strong> </p>
                             </div>
                             <button className="py-2.5 px-6 rounded-xl bg-yellow-500 text-black font-novaBold tracking-wider text-sm hover:bg-orange-600 flex items-center gap-2">
                                 {slides[currentSlide].buttonText}
@@ -256,7 +255,7 @@ const CampusLife = () => {
                                 WHAT PEOPLE SAY ABOUT US?
                             </h2>
                         </div>
-                        <div className="space-y-32 max-xl:space-y-3 max-lg:space-y-10 mt-10">
+                        <div className="space-y-12 max-xl:space-y-3 max-lg:space-y-10 mt-10">
                             <Slider heading={"Student Speaks"} slidesData={studentSpeaks} />
                             <Slider white={true} heading={"Faculty Speaks"} slidesData={facultySpeaks} />
                         </div>
