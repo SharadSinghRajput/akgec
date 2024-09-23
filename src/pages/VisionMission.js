@@ -16,7 +16,7 @@ export default function Example() {
         <>
          <div className="bg-white">
             <Header title={"Vision and Mission"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
-            <section className="w-full max-w-7xl mx-auto grid grid-cols-12 pt-24 gap-10">
+            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 pt-24 gap-10">
                 <div className="col-span-9 max-md:col-span-12">
                     <div className="flex flex-col items-center">
                         <div className="grid grid-cols-2 w-full border border-gray-300 shadow-lg mb-5">

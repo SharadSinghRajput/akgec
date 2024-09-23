@@ -11,8 +11,8 @@ export default function DynamicPage() {
 
   useEffect(() => {
     const routes = [
-      { url: "/about/overview", componentName: "Overview" },
-      { url: "/about/leadership", componentName: "Directors" },
+      { url: "/about/overview", componentName: "About" },
+      { url: "/about/leadership", componentName: "LeaderShip" },
       { url: "/management", componentName: "Management" },
       { url: "/about/vision-and-mission", componentName: "VisionMission" },
       { url: "/hostel", componentName: "Hostel" },
@@ -34,6 +34,8 @@ export default function DynamicPage() {
       { url: "/professional-bodies", componentName: "ProfessionalBodies" },
       { url: "/professors-of-practice", componentName: "ProfessorsOfPractice" },
       { url: "/campus-life", componentName: "CampusLife" },
+      { url: "/placements/placement_engineering", componentName: "PlacementEngineering" },
+      { url: "/research", componentName: "Research" },
     ];
 
     const fetchPageComponent = async () => {

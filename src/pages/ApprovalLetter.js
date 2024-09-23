@@ -44,8 +44,8 @@ export default function ApprovalLetter() {
     return (
         <>
             <div className="bg-gray-100">
-                <Header title={"Approval Letter"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
-                <section className="w-full max-w-7xl mx-auto grid grid-cols-12 pt-24 gap-10">
+                <Header title={"Approval Letters"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
+                <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 pt-24 gap-10">
                     <div className="col-span-9 max-md:col-span-12">
                         <div className="flex items-center justify-center ">
                             <div className=" w-full">
