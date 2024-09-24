@@ -133,7 +133,7 @@ const Research = () => {
           </div>
           <div className="w-[65%] flex items-center gap-20">
             <div className="grid grid-cols-2 md:grid-cols-1">
-              {statisticsData.map((item, index) => (
+              {statisticsData?.map((item, index) => (
                 <div key={index} className="p-3">
                   <h2 className="text-4xl font-novaBold">
                     {item.number}
@@ -207,7 +207,7 @@ const Research = () => {
             }}
             className="multiple-slide-carousel"
           >
-            {slides.map((slide) => (
+            {slides?.map((slide) => (
               <SwiperSlide key={slide.id}>
                 <div className="rounded-2xl shadow-cardShadow flex flex-col justify-center items-center flex-grow p-8 my-10 min-h-52 bg-white">
                   <div className="relative w-full mb-4">

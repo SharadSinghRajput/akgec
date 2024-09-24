@@ -40,7 +40,7 @@ export default function Example() {
                 </p>
                 <div className="my-5 mx-auto max-w-6xl">
                     <dl className="grid grid-cols-2 gap-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                        {stats.map((stat) => (
+                        {stats?.map((stat) => (
                             <div key={stat.id} className="mx-auto flex max-w-xs flex-col py-4">
                                 <dd className="order-first text-2xl sm:text-3xl md:text-4xl font-novaLight tracking-tight">
                                     {stat.value}
@@ -51,7 +51,7 @@ export default function Example() {
                     </dl>
                 </div>
                 <div className="mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-5 " >
-                    {posts.map((post) => (
+                    {posts?.map((post) => (
                         <article key={post.id} className="relative bg-gray-900 rounded-lg shadow-md overflow-hidden">
                             <img
                                 alt=""

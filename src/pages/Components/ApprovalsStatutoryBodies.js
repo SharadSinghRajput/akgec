@@ -37,7 +37,7 @@ export default function Example() {
                     role="list"
                     className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-10 xl:max-w-none"
                 >
-                    {people.map((person, index) => (
+                    {people?.map((person, index) => (
                         <li key={index} className="flex flex-col gap-6 xl:flex-row border p-4">
                             <img
                                 alt=""

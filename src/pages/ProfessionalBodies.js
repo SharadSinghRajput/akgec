@@ -88,7 +88,7 @@ function ProfessionalBodies() {
                                     </tr>
                                 </thead>
                                 <tbody className="bg-white divide-y border border-gray-500 divide-gray-200">
-                                    {data.map((item, index) => (
+                                    {data?.map((item, index) => (
                                         <tr key={index}>
                                             <td className="px-6 py-4 whitespace-nowrap border border-gray-500">
                                                 <div className="flex items-center">

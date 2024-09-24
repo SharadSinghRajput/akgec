@@ -55,7 +55,7 @@ export default function PlacementHighlights() {
                         Placement Highlights <span className="text-yellow-400">2022</span>
                     </p>
                     <dl className="grid max-w-lg mx-auto grid-cols-1 gap-3 sm:grid-cols-2">
-                        {stats.map((stat) => (
+                        {stats?.map((stat) => (
                             <div key={stat.id} className="flex items-center gap-x-3">
                                 <div className="relative flex flex-col items-center">
                                     <div className="absolute inset-0 flex items-center justify-center">
@@ -83,7 +83,7 @@ export default function PlacementHighlights() {
                         Placement Highlights <span className="text-yellow-400">2022</span>
                     </p>
                     <dl className="grid max-w-lg mx-auto grid-cols-1 gap-3 sm:grid-cols-2">
-                        {stats.map((stat) => (
+                        {stats?.map((stat) => (
                             <div key={stat.id} className="flex items-center gap-x-3">
                                 <div className="relative flex flex-col items-center">
                                     <div className="absolute inset-0 flex items-center justify-center">
@@ -110,7 +110,7 @@ export default function PlacementHighlights() {
 
                 {/* Student Placement Cards */}
                 <div className="grid grid-cols-2">
-                    {students.map((student, index) => (
+                    {students?.map((student, index) => (
                         <div key={index} className="relative max-w-96 max-h-64 w-full h-full shadow-lg">
                             <img src={student.imgSrc} alt={student.name} className="w-full object-cover" />
                             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">

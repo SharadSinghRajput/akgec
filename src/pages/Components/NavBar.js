@@ -383,20 +383,20 @@ export default function Example() {
                     <div className="col-span-2 max-md:col-span-3 p-0  transition-all">
                       <div className=" w-full h-16 flex justify-center items-center gap-1">
                         {
-                          Object.keys(Programs.sublinks).map((key, index) => <button onClick={() => { setActiveTab(key) }} key={index}
+                          Object.keys(Programs.sublinks)?.map((key, index) => <button onClick={() => { setActiveTab(key) }} key={index}
                             className={`h-full w-full border-r border-r-gray-200 text-sm font-novaLight px-2 ${key === activeTab ? 'bg-yellow-100/50' : 'bg-white'}`}>
                           {key}</button>)
                         }
                       </div>
                       <div className="flex p-10 gap-10 ">
                         {
-                          Object.keys(Programs.sublinks[activeTab]).map((key, index) => {
+                          Object.keys(Programs.sublinks[activeTab])?.map((key, index) => {
                             if (key === 'Departments') {
                               return <LinksList key={index} title={key} links={Programs.sublinks[activeTab][key]} />
                             }
                             if (key === 'Programs') {
                               
-                              return Object.keys(Programs.sublinks[activeTab][key]).map((key1, index) => {
+                              return Object.keys(Programs.sublinks[activeTab][key])?.map((key1, index) => {
                                 return <LinksList key={index} title={key1} links={Programs.sublinks[activeTab][key][key1]} />
                               })
                             }
@@ -1118,7 +1118,7 @@ export default function Example() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
                     <div className="p-3 grid grid-cols-2 gap-3">
-                      {products.map((item, index) => (
+                      {products?.map((item, index) => (
                         <div
                           key={index}
                           className="group relative flex justify-center rounded-lg text-sm hover:bg-gray-50"

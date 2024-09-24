@@ -58,7 +58,7 @@ export default function ApprovalLetter() {
                                         </tr>
                                     </thead>
                                     <tbody className="text-white bg-blue-950 text-sm font-light">
-                                        {approvalLetter.map((item) => (
+                                        {approvalLetter?.map((item) => (
                                             <tr key={item.id}>
                                                 <td className="py-2 w-14 px-4 border-b border-r border-gray-300 border-opacity-50 text-center">
                                                     {item.id}

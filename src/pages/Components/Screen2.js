@@ -68,7 +68,7 @@ const MilestonesSection = () => {
         </div>
       </div>
       <div className="flex justify-between space-x-0 max-lg:space-x-0  mx-auto max-lg:grid max-lg:grid-cols-3 max-md:grid-cols-2 max-lg:justify-start max-lg:gap-y-5">
-        {milestones.map((milestone, index) => (
+        {milestones?.map((milestone, index) => (
           <div key={index} className="text-left after:content-link relative after:absolute after:right-0 after:top-0 after:w-10 after:h-full pr-10 ">
             <p className="text-xs uppercase bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold">Ranked</p>
             <p className="text-4xl font-novaLight text-gray-900 max-lg:text-2xl">{milestone.rank}<sup className='text-3xl font-novaLight max-lg:text-lg ml-1'>th</sup></p>

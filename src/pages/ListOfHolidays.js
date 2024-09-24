@@ -72,7 +72,7 @@ const ListOfHolidays = () => {
                                     </tr>
                                 </thead>
                                 <tbody className="border-t-2 rounded-lg font-novaSemi text-xs sm:text-sm sm:font-novaReg">
-                                    {currentEntries.map((entry) => (
+                                    {currentEntries?.map((entry) => (
                                         <tr
                                             key={entry.SNo}
                                             className={`bg-indigo-950 text-white`}
@@ -106,7 +106,7 @@ const ListOfHolidays = () => {
                                     >
                                         Previous
                                     </button>
-                                    {[...Array(totalPages)].map((_, pageIndex) => (
+                                    {[...Array(totalPages)]?.map((_, pageIndex) => (
                                         <button
                                             key={pageIndex + 1}
                                             className={`text-white px-4 py-2.5 rounded ${currentPage === pageIndex + 1 ? 'bg-primary' : ''}`}

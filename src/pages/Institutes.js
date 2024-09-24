@@ -118,7 +118,7 @@ const Institutes = () => {
                             <div className="mt-6">
                                 <h3 className="text-[42px] font-novaReg mb-3">Our Institutes</h3>
                                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    {institute.map((inst, index) => (
+                                    {institute?.map((inst, index) => (
                                         <div key={index} className="relative overflow-hidden shadow-lg bg-zinc-700 group">
                                             <img src={inst.img} alt={inst.text} className="w-full h-full object-cover opacity-70 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0" />
                                             <div className="absolute inset-0 flex flex-col items-center justify-center bg-indigo-950 text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">

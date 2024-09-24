@@ -145,7 +145,7 @@ export default function SlickSlider() {
                   1024: { slidesPerView: 3, spaceBetween: 30 },
                 }}
               >
-                {cardDetails.map((item) => (
+                {cardDetails?.map((item) => (
                   <SwiperSlide key={item.id} className="mb-10">
                     <article className="relative h-[22rem] w-full max-sm:h-80 max-sm:w-72 max-2xl:w-64 max-2xl:h-80 max-xl:w-52 max-xl:h-72 max-lg:h-96 max-lg:w-80 max-md:w-60 max-md:h-80 bg-white rounded-lg shadow-md overflow-hidden">
                       <img
@@ -183,7 +183,7 @@ export default function SlickSlider() {
                     modules={[Pagination, Autoplay]}
                     className="mySwiper h-full"
                   >
-                    {upcomingEvents.map((item) => (
+                    {upcomingEvents?.map((item) => (
                       <SwiperSlide key={item.id} className="h-full mb-10">
                         <article className="bg-[#FFFFFF] leading-nonen overflow-hidden p-5 h-full shadow-sm rounded-lg">
                           <h5 className="text-sm bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent uppercase font-novaBold">

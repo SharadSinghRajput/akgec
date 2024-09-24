@@ -40,7 +40,7 @@ export default function ResearchEnvironment() {
                     </p>
                 </div>
                 <div className="mt-10 grid grid-cols-3 max-md:grid-cols-1">
-                    {posts.map((post) => (
+                    {posts?.map((post) => (
                         <article key={post.id} className="border rounded-md flex flex-col items-start justify-between pb-4 hover:shadow-xl">
                             <div className="grid grid-cols-2 gap-x-10 p-4 ml-8 mt-8 text-xs md:text-xs font-light">
                                 <p>{post.tag1}</p>

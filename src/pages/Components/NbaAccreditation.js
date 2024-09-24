@@ -49,7 +49,7 @@ export default function Example() {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-200 bg-white">
-                                {name.map((program) => (
+                                {name?.map((program) => (
                                     <tr key={program.name}>
                                         <td className="whitespace-nowrap py-5 pl-4 pr-3 text-sm sm:pl-0 border-b border-gray-300">
                                             <div className="flex items-center p-4">

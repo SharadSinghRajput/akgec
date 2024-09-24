@@ -15,7 +15,7 @@ const ProfessorsOfPractice = () => {
     return (
         <>
             <Header bg="/image/professors-bg.jpg" height="h-[300px] md:h-[500px] lg:h-[600px]" gradient={"bg-gradient-to-r from-zinc-900 to-transparent-900/40"} />
-            <div className="min-h-screen bg-orange-400 p-8 max-[450px]:p-2">
+            <div className="min-h-screen bg-blue-600 p-8 max-[450px]:p-2">
                 <div className="max-w-7xl mx-auto">
                     <div className="relative text-center">
                         <h1 className="relative text-3xl font-novaReg text-white mb-2 z-10 inline-block">
@@ -23,7 +23,7 @@ const ProfessorsOfPractice = () => {
                         </h1>
                         <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 w-full max-w-72 h-2 rounded-full bg-gray-800"></div>
                     </div>
-                    <p className="text-white text-center max-sm:text-sm mb-8">Mentors currently associated with Chandigarh University</p>
+                    <p className="text-white font-novaReg text-center max-sm:text-sm mb-8">Faculty currently associated with AKGEC University</p>
                     <div className="relative mb-8">
                         <input
                             type="text"

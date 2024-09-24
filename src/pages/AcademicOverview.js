@@ -414,12 +414,12 @@ const AcademicOverview = () => {
                     </p>
                     <div className="relative my-5">
                         <Slider {...settings} className="">
-                            {slides.map((slide, index) => (
+                            {slides?.map((slide, index) => (
                                 <div key={index} className="p-4">
                                     <h3 className="text-2xl font-novaReg mb-2">{slide.title}</h3>
                                     <p className="mb-4">{slide.description}</p>
                                     <ul className="list-disc pl-5">
-                                        {slide.points.map((point, i) => (
+                                        {slide.points?.map((point, i) => (
                                             <li key={i}>{point}</li>
                                         ))}
                                     </ul>

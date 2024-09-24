@@ -95,7 +95,7 @@ export default function Form() {
               onChange={handleDisciplineChange}
             >
               <option value="">Select Discipline</option>
-              {programData.map((item, index) => (
+              {programData?.map((item, index) => (
                 <option key={index} value={item.discipline}>
                   {item.discipline}
                 </option>
@@ -103,7 +103,7 @@ export default function Form() {
             </select>
             <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option value="">Select Program</option>
-              {programs.map((program, index) => (
+              {programs?.map((program, index) => (
                 <option key={index} value={program}>
                   {program}
                 </option>
@@ -114,7 +114,7 @@ export default function Form() {
           <div className="grid grid-cols-3 gap-4 mb-6">
             <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>DD</option>
-              {[...Array(31)].map((_, i) => (
+              {[...Array(31)]?.map((_, i) => (
                 <option key={i}>{String(i + 1).padStart(2, '0')}</option>
               ))}
             </select>
@@ -133,13 +133,13 @@ export default function Form() {
                 'October',
                 'November',
                 'December',
-              ].map((month, i) => (
+              ]?.map((month, i) => (
                 <option key={i}>{month}</option>
               ))}
             </select>
             <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>YYYY</option>
-              {Array.from({ length: 100 }, (_, i) => 2024 - i).map((year) => (
+              {Array.from({ length: 100 }, (_, i) => 2024 - i)?.map((year) => (
                 <option key={year}>{year}</option>
               ))}
             </select>

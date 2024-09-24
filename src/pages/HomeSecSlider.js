@@ -64,7 +64,7 @@ export default function Achievements() {
               1024: { slidesPerView: 2 },
             }}
           >
-            {achievements.map((achievement, index) => (
+            {achievements?.map((achievement, index) => (
               <SwiperSlide key={index}>
                 <div className="flex bg-white rounded-lg shadow-lg overflow-hidden">
                   <img

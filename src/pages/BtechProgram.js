@@ -179,7 +179,7 @@ const BtechProgram = () => {
                 onChange={(e) => setActiveTab(e.target.value)}
                 className="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm bg-white text-gray-700 hover:bg-gray-50 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 transition ease-in-out duration-300"
               >
-                {tabs.map((tab) => (
+                {tabs?.map((tab) => (
                   <option
                     key={tab.name}
                     value={tab.name}
@@ -192,7 +192,7 @@ const BtechProgram = () => {
             <div className="hidden sm:block mt-4">
               <div className="border-b border-gray-200">
                 <nav aria-label="Tabs" className="flex">
-                  {tabs.map((tab) => (
+                  {tabs?.map((tab) => (
                     <button
                       key={tab.name}
                       onClick={() => setActiveTab(tab.name)}
@@ -211,7 +211,7 @@ const BtechProgram = () => {
               </div>
             </div>
             <div className="mt-6">
-              {tabs.map((tab) => (
+              {tabs?.map((tab) => (
                 <div
                   key={tab.name}
                   className={`${activeTab === tab.name ? 'block' : 'hidden'
@@ -311,7 +311,7 @@ const BtechProgram = () => {
                 1100: { slidesPerView: 2 },
               }}
             >
-              {slidesData.map((slide, index) => (
+              {slidesData?.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <div className={`relative w-full h-[500px] max-sm:h-72 bg-cover bg-center p-6 max-sm:p-2`} style={{ backgroundImage: `url(${slide.imageUrl})` }}>
                     {slide.overlay && <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent-900/20"></div>}

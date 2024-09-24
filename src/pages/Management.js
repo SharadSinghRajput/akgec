@@ -198,7 +198,7 @@ export const Management = () => {
                             <ul
                                 role="list"
                                 className="grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-4 max-sm:grid-cols-2 gap-4">
-                                {governor.slice(1).map((person) => (
+                                {governor.slice(1)?.map((person) => (
                                     <li key={person.name} className="border border-gray-300 shadow-lg rounded-md bg-white">
                                         <img alt="" src={person.imageUrl} className="w-full aspect-square p-5 object-cover" />
                                         <div className="p-4">
@@ -219,7 +219,7 @@ export const Management = () => {
                                 role="list"
                                 className="grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-4 max-sm:grid-cols-2 gap-4"
                             >
-                                {council.slice(1).map((person) => (
+                                {council.slice(1)?.map((person) => (
                                 <li key={person.name} className="border border-gray-300 shadow-lg rounded-md bg-white">
                                         <img alt="" src={person.imageUrl} className="w-full aspect-square p-5 object-cover" />
                                         <div className="p-4">
@@ -238,7 +238,7 @@ export const Management = () => {
                                 role="list"
                                 className="grid grid-cols-5 max-lg:grid-cols-4 max-md:grid-cols-4 max-sm:grid-cols-2 gap-4"
                             >
-                                {committee.slice(1).map((person) => (
+                                {committee.slice(1)?.map((person) => (
                                     <li key={person.name} className="border border-gray-300 shadow-lg rounded-md bg-white">
                                         <img alt="" src={person.imageUrl} className="w-full aspect-square p-5 object-cover" />
                                         <div className="p-4">

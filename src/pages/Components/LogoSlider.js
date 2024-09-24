@@ -50,7 +50,7 @@ export default function LogoSlider() {
                     speed={3000}
                     breakpoints={breakpoints}
                 >
-                    {images.map((image, index) => (
+                    {images?.map((image, index) => (
                         <SwiperSlide key={index}>
                             <div className="flex justify-center items-center border rounded-md h-16 ">
                                 <Image

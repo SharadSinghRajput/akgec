@@ -10,7 +10,7 @@ export default function HomeSlider() {
         <div className="bg-white">
             <div className="w-full mx-auto">
                 <div className="">
-                    {people.map((person, index) => (
+                    {people?.map((person, index) => (
                         <div key={index} className="relative flex-shrink-0 w-screen h-auto flex flex-col">
                             <img
                                 alt=""

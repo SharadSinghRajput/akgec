@@ -86,7 +86,7 @@ export default function Example() {
                             </div>
                         </div>
                         <div className='grid grid-cols-3 mt-16 gap-5'>
-                            {CartData.map((item, index) => (
+                            {CartData?.map((item, index) => (
                                 <div className='col-span-1 max-lg:col-span-3 mr-10 ' key={index}>
                                     <div className='grid grid-cols-3'>
                                         <h3 className='col-span-2 max-w-52 text-white text-2xl font-novaSemi leading-none'>{item.title}</h3>

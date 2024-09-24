@@ -47,7 +47,7 @@ const AcademicCalendar = () => {
                                         </tr>
                                     </thead>
                                     <tbody className="border-t-2 rounded-lg text-xs lg:text-sm font-novaSemi">
-                                        {calendarData.map((entry, index) => (
+                                        {calendarData?.map((entry, index) => (
                                             <tr
                                                 key={index}
                                                 className={`bg-indigo-950 text-white ${index === calendarData.length - 1 ? 'rounded-bl-lg rounded-br-lg' : ''}`}

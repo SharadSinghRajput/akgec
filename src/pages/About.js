@@ -30,7 +30,7 @@ export default function About() {
         }}
       >
         <div className="h-full w-full px-5">
-          {sectionData.map((section, index) => (
+          {sectionData?.map((section, index) => (
             activeSection === index && (
               <motion.div
                 key={index}
@@ -237,7 +237,7 @@ export default function About() {
             />
 
             {/* Surrounding Logos */}
-            {logos.map((logo, index) => {
+            {logos?.map((logo, index) => {
               const angle = (index / logos.length) * 2 * Math.PI;
               const x = 240 * Math.cos(angle); // 240 is the radius of the circle
               const y = 240 * Math.sin(angle);
@@ -265,7 +265,7 @@ export default function About() {
           {/* Grid Layout Container (visible on smaller screens) */}
           <div className="hidden mt-10 max-xl:grid max-xl:grid-cols-6 max-md:grid-cols-4 max-lg:grid-cols-5 max-xl:absolute max-xl:inset-0 max-xl:justify-items-center max-xl:place-content-center max-xl:gap-x-32 max-xl:gap-y-5 max-sm:grid-cols-3 max-sm:gap-x-20 max-sm:gap-y-2">
             {/* Surrounding Logos in Grid Layout */}
-            {logos.map((logo, index) => (
+            {logos?.map((logo, index) => (
               <div
                 key={index}
                 className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-white rounded-full flex items-center justify-center"
@@ -325,7 +325,7 @@ export default function About() {
         <div className="h-64 max-sm:h-44 w-[70%] max-xl:w-full relative z-10 max-xl:flex max-xl:justify-center max-xl:items-center">
           <div className="w-1/2 max-xl:w-[70%] max-sm:w-full max-sm:mx-3 h-full bg-white flex rounded-lg shadow-lg">
             <div className="text-center text-[14px] font-serif border-r border-gray-300 flex flex-col">
-              {programFeatures.map((item, index) => (
+              {programFeatures?.map((item, index) => (
                 <a
                   key={index}
                   onClick={() => setActiveIndex(index)}
@@ -419,7 +419,7 @@ export default function About() {
           </p>
           <div className="mt-6">
             <ul className="flex flex-wrap justify-center space-x-4 max-sm:space-x-0 space-y-4">
-              {recruitmentPartners.map((image, index) => (
+              {recruitmentPartners?.map((image, index) => (
                 <li
                   key={index}
                   className="w-1/5 max-md:w-1/4 max-sm:w-1/3  px-8 py-6 max-lg:px-5 max-md:px-4 max-sm:px-3 text-center flex items-center"

@@ -10,7 +10,7 @@ export default function FooterCard() {
     <div className="bg-gradient-to-r from-cyan-500 to-cyan-500 ">
       <div className="mx-auto max-w-7xl px-32 sm:px-6 ">
         <div className="grid grid-cols-5 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2">
-          {stats.map((stat, index) => (
+          {stats?.map((stat, index) => (
             <div key={index} className="px-4 py-6 rounded-lg">
               <p className="mt-2 flex items-baseline gap-1">
                 <span className="text-lg sm:text-2xl md:text-xl 2xl:text-[42px] font-novaLight tracking-tight text-white">{stat.value}</span>

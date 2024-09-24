@@ -49,7 +49,7 @@ export default function PlacementHighlights() {
             {/* Left Panel */}
             <div className="flex flex-col justify-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 h-full">
-                    {PlacementData.map((item, index) => (
+                    {PlacementData?.map((item, index) => (
                         <div
                             key={index}
                             className="relative overflow-hidden flex items-center justify-center min-h-[400px] sm:min-h-[450px] "

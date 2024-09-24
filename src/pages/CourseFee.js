@@ -111,7 +111,7 @@ const CourseFee = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {currentEntries.map((course, index) => (
+                                            {currentEntries?.map((course, index) => (
                                                 <tr
                                                     key={index}
                                                     className="bg-indigo-950 text-white border-inherit"
@@ -140,7 +140,7 @@ const CourseFee = () => {
                                             >
                                                 Previous
                                             </button>
-                                            {[...Array(totalPages)].map((_, pageIndex) => (
+                                            {[...Array(totalPages)]?.map((_, pageIndex) => (
                                                 <button
                                                     key={pageIndex + 1}
                                                     className={`text-white px-4 py-2.5 hover:bg-blue-900 rounded ${currentPage === pageIndex + 1 ? 'bg-blue-900' : ''}`}

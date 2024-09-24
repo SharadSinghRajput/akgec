@@ -57,7 +57,7 @@ export default function NewsEvents() {
                         </div>
                         <div className="col-span-1 ml-5 ">
                             <div className="grid grid-cols-1 gap-y-5 h-full">
-                                {posts.map((post) => (
+                                {posts?.map((post) => (
                                     <article key={post.id} className="relative h-full isolate flex flex-col gap-4 lg:flex-row border border-gray-200 hover:shadow-lg rounded-lg overflow-hidden bg-white">
                                         <div className="mb-4 relative aspect-[16/12] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0 h-full">
                                             <img

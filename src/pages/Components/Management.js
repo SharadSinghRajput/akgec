@@ -119,7 +119,7 @@ export default function Example() {
                     role="list"
                     className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
                 >
-                    {governor.slice(1).map((person) => (
+                    {governor.slice(1)?.map((person) => (
                         <li key={person.name} className="border shadow-xl rounded-lg p-4 text-center">
                             <img alt="" src={person.imageUrl} className="aspect-[14/13] w-full rounded-2xl object-contain" />
                             <h3 className="mt-6 text-lg font-semibold text-gray-500 leading-8 tracking-tight">{person.name}</h3>
@@ -137,7 +137,7 @@ export default function Example() {
                     role="list"
                     className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
                 >
-                    {council.slice(1).map((person) => (
+                    {council.slice(1)?.map((person) => (
                         <li key={person.name} className="border shadow-xl rounded-lg p-4 text-center">
                             <img alt="" src={person.imageUrl} className="aspect-[14/13] w-full rounded-2xl object-contain" />
                             <h3 className="mt-6 text-lg font-semibold text-gray-600 tracking-tight">{person.name}</h3>

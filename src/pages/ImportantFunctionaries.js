@@ -157,7 +157,7 @@ export default function ImportantFunctionaries() {
                                 role="list"
                                 className="grid grid-cols-5 gap-4"
                             >
-                                {managementTeam.map((person) => (
+                                {managementTeam?.map((person) => (
                                     <li key={person.name} className="border border-gray-300 shadow-lg rounded-md">
                                         <img alt="" src={person.imageUrl} className="w-full aspect-square p-5 object-cover" />
                                         <div className="p-4">

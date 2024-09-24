@@ -47,7 +47,7 @@ export default function Hostel() {
                         <div className="max-w-7xl mx-auto my-10 p-6">
                             <h2 className="text-2xl font-normal text-center mb-8">Facilities at Hostels</h2>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {facilities.map((facility) => (
+                                {facilities?.map((facility) => (
                                     <div key={facility.id} className="flex flex-col text-center text-slate-700 shadow-lg shadow-gray-100 border border-gray-200 min-h-36
                                     justify-center items-center
                                     ">

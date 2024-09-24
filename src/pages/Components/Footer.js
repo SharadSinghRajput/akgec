@@ -131,11 +131,11 @@ export default function Footer() {
         <footer className="bg-[#000] text-white py-20">
             <div className="mx-auto max-w-[1400px] max-2xl:max-w-[1200px] px-4">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                    {navigation.map((section, index) => (  
+                    {navigation?.map((section, index) => (  
                         <div key={index} className="w-full mb-6">
                             <h3 className="text-base font-novaSemi mb-4 text-[#62cdd7]">{section.name}</h3>
                             <ul className='space-y-3'>
-                                {section.links.map((link, index) => (
+                                {section.links?.map((link, index) => (
                                     <li key={index} className="mb-2 text-xs font-novaSemi">
                                         <a href={link.href} className="hover:underline">
                                             {link.name}
@@ -161,7 +161,7 @@ export default function Footer() {
 
                 <div className="mx-auto py-4 md:flex md:items-center md:justify-between border-t border-b border-[#222222]">
                     <div className="flex justify-center space-x-10 md:order-2">
-                        {navigation2.map((item, index) => (
+                        {navigation2?.map((item, index) => (
                             <a key={index} href={item.href} className="text-white hover:text-gray-500">
                                 <span className="sr-only">{item.name}</span>
                                 <item.icon aria-hidden="true" className="h-5 w-5" />
