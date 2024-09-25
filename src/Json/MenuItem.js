@@ -14,23 +14,31 @@ export const About = {
             },
             {
                 name: 'Our Identity',
-                url: '/'
+                url: '/about/our-identity'
             },
             {
                 name: 'Vision & Mission',
-                url: '/'
+                url: '/about/vision-and-mission'
             },
             {
                 name: 'LeaderShip',
-                url: '/'
+                url: '/about/leadership'
             },
             {
                 name: 'Core Value',
                 url: '/'
             },
             {
+                name: 'Functionaries',
+                url: '/about/important-functionaries'
+            },
+            {
+                name: 'Approval Letter',
+                url: '/about/approval-letter'
+            },
+            {
                 name: 'Recognition & Approvals',
-                url: '/'
+                url: '/about/approvals-statutory-bodies'
             },
             {
                 name: 'Awards & Rankings',
@@ -43,7 +51,8 @@ export const About = {
             {
                 name: 'AKG Edge',
                 url: '/'
-            },],
+            },
+        ],
         "Related Links": [
             {
                 name: 'Institutes & Departments',
@@ -62,8 +71,12 @@ export const About = {
                 url: '/'
             },
             {
+                name: 'Management',
+                url: '/about/management'
+            },
+            {
                 name: 'Hostel Facility',
-                url: '/'
+                url: '/about/hostel'
             },
             {
                 name: 'Student Services',
@@ -91,27 +104,27 @@ export const Academics = {
         "Academics": [
             {
                 name: 'Academics Overview',
-                url: '/'
+                url: '/academics'
             },
             {
                 name: 'Institutes',
-                url: '/'
+                url: '/academics/institutes'
             },
             {
                 name: 'Program (Courses)',
-                url: '/'
+                url: '/academics/course-fee'
             },
             {
                 name: 'Academic Calendar',
-                url: '/'
+                url: '/academics/academic-calendar'
             },
             {
                 name: 'List of Holidays',
-                url: '/'
+                url: '/academics/list-of-holidays'
             },
             {
                 name: 'Teaching Practices',
-                url: '/'
+                url: '/academics/teaching-practices'
             },
             {
                 name: 'System of Evaluation',
@@ -119,11 +132,11 @@ export const Academics = {
             },
             {
                 name: 'Professional Bodies',
-                url: '/'
+                url: '/academics/professional-bodies'
             },
             {
                 name: 'Professors of Practice',
-                url: '/'
+                url: '/academics/professors-of-practice'
             },
         ]
     }
@@ -166,7 +179,7 @@ export const Programs = {
                 "Graduate": [
                     {
                         name: 'B.Tech',
-                        url: '/'
+                        url: '/programs/btech'
                     },
                     {
                         name: 'BCA',
@@ -284,11 +297,11 @@ export const Admissions = {
         "Admission": [
             {
                 name: 'Overview',
-                url: '/'
+                url: '/admissions'
             },
             {
                 name: 'Course Fee',
-                url: '/'
+                url: '/admissions/course-fee'
             },
             {
                 name: 'How to Apply?',
@@ -347,7 +360,7 @@ export const CampusLife = {
     sublinks: [
         {
             name: "Overview",
-            url: "/"
+            url: "/campus-life"
         },
         {
             name: "Convocations",
@@ -390,7 +403,7 @@ export const CampusLife = {
             url: "/"
         },
         {
-            name: "CU-RHYTHMS International Folklore Festival",
+            name: "AKG-RHYTHMS International Folklore Festival",
             url: "/"
         },
         {
@@ -434,7 +447,7 @@ export const Placements = {
             },
             {
                 name: "Best Engineering Placement",
-                url: "/"
+                url: "/placements/placement-engineering"
             },
             {
                 name: "Best Management Placement",
@@ -474,7 +487,7 @@ export const ResearchInnovation = {
         "Research Intensive University":[
             {
                 name:"Research",
-                url:"/"
+                url:"/research"
             },
             {
                 name:"Patents",

@@ -2,7 +2,7 @@ export const slidesData = [
     {
       imageUrl: '/image/Programs/slide-1.jpg',
       title: 'AKG University has Welcomed Students from more than 50 Countries',
-      description: 'With more than 100+ Bachelors, Masters, and Doctoral programs to choose from, CU is one of the highly preferred destinations for International Students.',
+      description: 'With more than 100+ Bachelors, Masters, and Doctoral programs to choose from, AKG is one of the highly preferred destinations for International Students.',
       linkText: 'EXPLORE MORE →',
       linkUrl: '#',
       text: 'text-white',

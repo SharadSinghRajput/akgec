@@ -34,7 +34,7 @@ module.exports = {
         'BG11': "url('/image/woman-bg.jpg')",
         'BG12': "url('/image/main-banner.jpg')",
         'BG13': "url('/image/esteemed-partners-bg.jpg')",
-        'BG14': "url('/image/research/hero-slide-3.jpg')",
+        'BG14': "url('/image/research/hero-slide-1.jpg')",
       },
       boxShadow: {
         'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',
