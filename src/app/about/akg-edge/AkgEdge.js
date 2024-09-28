@@ -1,5 +1,5 @@
 import React from 'react'
-import "@styles/globals.css";
+import "@/app/globals.css";
 import { GraduationCap, Briefcase, Globe, DollarSign } from "lucide-react"
 
 const AkgEdge = () => {
