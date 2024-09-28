@@ -5,7 +5,7 @@ export { default as TopCard } from "@/Components/TopCard";
 export { default as LogoSlider } from "@/Components/LogoSlider";
 export { default as FooterCard } from "@/Components/FooterCard";
 export { default as StudentReviews } from "@/Components/StudentReviews";
-export { default as Research } from "@/Components/Research";
+export { default as ExploreCourses } from "@/Components/ExploreCourses";
 export { default as ResearchEnvironment } from "@/Components/ResearchEnvironment";
 export { default as StickyFooter } from "@/Components/StickyFooter";
 export { default as Button } from "@/Components/Button";

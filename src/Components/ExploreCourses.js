@@ -28,7 +28,7 @@ const posts = [
         imageUrl: '/image/MCA_300X150.jpg',
     },
 ]
-export default function Research() {
+export default function ExploreCourses() {
     return (
         <section className="bg-primary py-10 sm:py-16 md:py-20">
             <div className="break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 text-white">

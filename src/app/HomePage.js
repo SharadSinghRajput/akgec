@@ -1,22 +1,9 @@
 "use client";
 
+import"@styles/globals.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import"@styles/globals.css";
-import Button from "@/Components/Button";
-import Form from "@/Components/Form";
-import TopCard from "@/Components/TopCard";
-import SlickSlider from "@/Components/SlickSlider";
-import MilestonesSection from "@/Components/MilestonesSection";
-import PlacementHighlights from "@/Components/PlacementHighlights";
-import LogoSlider from "@/Components/LogoSlider";
-import CampusSlider from "@/Components/CampusSlider";
-import StudentReviews from "@/Components/StudentReviews";
-import NewsEvents from "@/Components/NewsEvents";
-import Research from "@/Components/Research";
-import ResearchEnvironment from "@/Components/ResearchEnvironment";
-import FooterCard from "@/Components/FooterCard";
-import StickyFooter from "@/Components/StickyFooter";
+import { Button, Form, CampusSlider, FooterCard, LogoSlider, MilestonesSection, NewsEvents, PlacementHighlights, ExploreCourses, ResearchEnvironment, SlickSlider, StickyFooter, StudentReviews, TopCard } from "@/Components";
 
 
 export default function HomePage() {
@@ -88,7 +75,7 @@ export default function HomePage() {
         <CampusSlider />
         <StudentReviews />
         <NewsEvents />
-        <Research />
+        <ExploreCourses />
         <ResearchEnvironment />
          <FooterCard />
         <StickyFooter ShowState={showStickyBar} />
