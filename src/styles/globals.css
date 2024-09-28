@@ -20,6 +20,7 @@
   font-family: "proximanova-light";
   src: url("/fonts/proximanova-light.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "proximanova-thin";
   src: url("/fonts/proximanova-thin.ttf") format("truetype");
