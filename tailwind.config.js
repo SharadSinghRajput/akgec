@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "offwhite-gradient": 'linear-gradient(90deg, rgb(242, 244, 248) 70%, rgba(242, 244, 248, .1))',
+        "edgeGradient": 'linear-gradient(to right, #00949a, #f7cc23, #000)',
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           'text-gradient': 'linear-gradient(to right, #dc2626, #1d4ed8)',
@@ -21,7 +22,12 @@ module.exports = {
         'svgElement': "url('/image/skills-sprite.webp')",
         'world-map': "url('/image/placements/world-map.png')",
         'staff-bg': "url('/image/placements/staff-bg.jpg')",
-        'BG1': "url('/image/placements/banner-1.jpg')",
+        'Header': "url('/image/header-img.jpg')",
+
+        'Edge': "url('/image/edge-banner.jpg')",
+        'Empathy': "url('/image/core-value/empathy.webp')",
+        'HumanDignity': "url('/image/core-value/human-dignity.webp')",
+        'Giving': "url('/image/core-value/giving.webp')",
         'BG2': "url('/image/MainBG2.jpg')",
         'BG3': "url('/image/MainBG.jpg')",
         'BG4': "url('/image/dotted-map-bg.webp')",
@@ -35,6 +41,11 @@ module.exports = {
         'BG12': "url('/image/main-banner.jpg')",
         'BG13': "url('/image/esteemed-partners-bg.jpg')",
         'BG14': "url('/image/research/hero-slide-1.jpg')",
+        'BG15': "url('/image/placements/banner-1.jpg')",
+        'BG16': "url('/image/placements/banner-2.jpg')",
+        'BG17': "url('/image/recognitions-and-approvals/bottom-banner-bg.jpg')",
+        'BG18': "url('/image/scholarship/bottom-banner-bg.jpg')",
+        'BG19': "url('/image/awards-and-ranking/banner-bg.jpg')",
       },
       boxShadow: {
         'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',
@@ -64,5 +75,7 @@ module.exports = {
       zoomInOut: 'zoomInOut 20s ease-in-out infinite',
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };

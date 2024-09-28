@@ -1,7 +1,7 @@
 import React from 'react'
 import 'swiper/swiper-bundle.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Scrollbar, A11y, Autoplay } from 'swiper';
+import { Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 
 

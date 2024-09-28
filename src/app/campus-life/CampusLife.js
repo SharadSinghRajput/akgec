@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@headlessui/react"
-import Slider from "@/Components/Slider"
+import Slider from "@/Components/Slider";
 
 
 const slides = [

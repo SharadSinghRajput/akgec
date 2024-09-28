@@ -1,18 +1,18 @@
 "use client";
 
 import React from "react";
+import { placementsData } from "@/Json/PlacementData";
+import PlacementData from "@/Components/PlacementData";
 import LogoSlider from "@/Components/LogoSlider";
-import { placementsData, studentReviewsData } from "@/Json/PlacementData";
 import ReviewSlider from "@/Components/ReviewSlider";
 import PlacementLinks from "@/Components/PlacementLinks";
-import PlacementData from "@/Components/PlacementData";
 
 const PlacementEngineering = () => {
 
   return (
     <>
       <section>
-        <div className="w-full flex justify-center items-center h-[600px] max-lg:h-80 bg-cover bg-center bg-[#535353] bg-blend-overlay bg-BG1">
+        <div className="w-full flex justify-center items-center h-[600px] max-lg:h-80 bg-cover bg-center bg-[#535353] bg-blend-overlay bg-BG15">
           <div className="text-white text-center mt-auto mb-32 max-w-2xl max-md:max-w-lg max-sm:max-w-sm max-sm:px-2">
             <h3 className="text-xl tracking-wide font-novaReg max-sm:text-[18px]">
               University with Best Placements
@@ -101,7 +101,7 @@ const PlacementEngineering = () => {
         </main>
         <PlacementData placementsData={placementsData} />
         <LogoSlider />
-        <ReviewSlider studentReviewsData={studentReviewsData} />
+        <ReviewSlider />
         <PlacementLinks />
       </section>
     </>

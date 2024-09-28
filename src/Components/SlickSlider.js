@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay } from "swiper/modules";
 
 export default function SlickSlider() {
   const cardDetails = [

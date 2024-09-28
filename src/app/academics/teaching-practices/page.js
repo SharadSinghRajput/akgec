@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Header from "@/Components/Header";
-import SideBar from "@/Components/SideBar";
-import Calendar from "@/Components/Calendar";
 import TeachingPractices from "./TeachingPractices";
+import Header from "@/Components/Header";
+import Calendar from "@/Components/Calendar";
+import SideBar from "@/Components/SideBar";
 
 
 const SideBarLink = [

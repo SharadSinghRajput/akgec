@@ -1,6 +1,6 @@
-import ApprovalLetter from "./ApprovalLetter";
 import Header from "@/Components/Header";
 import SideBar from "@/Components/SideBar";
+import ApprovalLetter from "./ApprovalLetter";
 
 const Button = {
     name: "Apply Now",
@@ -17,7 +17,7 @@ const SideBarLink = [
     {name: "Institution Social Responsibility" , link : ""}
 ]
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
         <div className="bg-gray-100">

@@ -1,7 +1,11 @@
 import Header from "@/Components/Header";
 import SideBar from "@/Components/SideBar";
-import CourseFee from "./CourseFee";
+import SystemOfEvaluation from "./SystemOfEvaluation";
 
+const Button = {
+    name: "Apply Now",
+    Link: "",
+};
 
 const SideBarLink = [
     {name: "Our Identity" , link : "/overview"},
@@ -13,14 +17,14 @@ const SideBarLink = [
     {name: "Institution Social Responsibility" , link : ""}
 ]
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
         <div className="bg-gray-100">
-        <Header Button={{ name: "Apply Now", Link: "/" }} title={<>AKG University <br />Course Fee 2024 </>} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+        <Header title={"System of Evaluation"} Button={Button} gradient={"bg-gradient-to-r from-gray-900 to-zinc-900/40"} />
             <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-10">
                 <div className="col-span-9 max-md:col-span-12">
-                    <CourseFee />
+                    <SystemOfEvaluation />
                 </div>
                 <div className="col-span-3 max-md:col-span-12">
                     <SideBar title={"About Us"} LinkList={SideBarLink} />

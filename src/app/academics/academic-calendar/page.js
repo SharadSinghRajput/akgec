@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import AcademicCalendar from "./AcademicCalendar";
+import { calendarEven, calendarOdd } from "@/Json/CalendarData";
 import Header from "@/Components/Header";
 import SideBar from "@/Components/SideBar";
-import AcademicCalendar from "./AcademicCalendar";
 import Calendar from "@/Components/Calendar";
-import { calendarEven, calendarOdd } from "@/Json/CalendarData";
 
 
 const SideBarLink = [

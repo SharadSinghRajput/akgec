@@ -3,7 +3,21 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import"@styles/globals.css";
-import { Form, Button, CampusSlider, FooterCard, LogoSlider, MilestonesSection, NewsEvents, PlacementHighlights, Research, ResearchEnvironment, SlickSlider, StickyFooter, StudentReviews, TopCard } from "@/Components";
+import Button from "@/Components/Button";
+import Form from "@/Components/Form";
+import TopCard from "@/Components/TopCard";
+import SlickSlider from "@/Components/SlickSlider";
+import MilestonesSection from "@/Components/MilestonesSection";
+import PlacementHighlights from "@/Components/PlacementHighlights";
+import LogoSlider from "@/Components/LogoSlider";
+import CampusSlider from "@/Components/CampusSlider";
+import StudentReviews from "@/Components/StudentReviews";
+import NewsEvents from "@/Components/NewsEvents";
+import Research from "@/Components/Research";
+import ResearchEnvironment from "@/Components/ResearchEnvironment";
+import FooterCard from "@/Components/FooterCard";
+import StickyFooter from "@/Components/StickyFooter";
+
 
 export default function HomePage() {
   const [showStickyBar, setShowStickyBar] = useState(false);

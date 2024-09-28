@@ -26,7 +26,7 @@ export const About = {
             },
             {
                 name: 'Core Value',
-                url: '/'
+                url: '/about/core-values'
             },
             {
                 name: 'Functionaries',
@@ -38,11 +38,11 @@ export const About = {
             },
             {
                 name: 'Recognition & Approvals',
-                url: '/about/approvals-statutory-bodies'
+                url: '/about/recognitions-and-approvals'
             },
             {
                 name: 'Awards & Rankings',
-                url: '/'
+                url: '/about/awards-and-rankings'
             },
             {
                 name: 'Institutional Social Responsibility',
@@ -50,7 +50,7 @@ export const About = {
             },
             {
                 name: 'AKG Edge',
-                url: '/'
+                url: '/about/akg-edge'
             },
         ],
         "Related Links": [
@@ -60,15 +60,15 @@ export const About = {
             },
             {
                 name: 'Admissions',
-                url: '/'
+                url: '/admissions'
             },
             {
                 name: 'Scholarships',
-                url: '/'
+                url: '/admissions/scholarship'
             },
             {
                 name: 'Governance',
-                url: '/'
+                url: '/about/governance'
             },
             {
                 name: 'Management',
@@ -112,7 +112,7 @@ export const Academics = {
             },
             {
                 name: 'Program (Courses)',
-                url: '/academics/course-fee'
+                url: '/admissions/course-fee'
             },
             {
                 name: 'Academic Calendar',
@@ -128,7 +128,7 @@ export const Academics = {
             },
             {
                 name: 'System of Evaluation',
-                url: '/'
+                url: '/academics/system-of-evaluation'
             },
             {
                 name: 'Professional Bodies',
@@ -309,11 +309,11 @@ export const Admissions = {
             },
             {
                 name: 'Admission Criteria',
-                url: '/'
+                url: '/admissions/admission-criteria'
             },
             {
                 name: 'AKG Scholarship',
-                url: '/'
+                url: '/admissions/scholarship'
             },
             {
                 name: 'Education Loan',
@@ -321,7 +321,7 @@ export const Admissions = {
             },
             {
                 name: 'Hostel Fee',
-                url: '/'
+                url: '/about/hostel'
             },
             {
                 name: 'National Admissions',
@@ -435,7 +435,7 @@ export const Placements = {
             },
             {
                 name: "Placement Tracker",
-                url: "/"
+                url: "/placements/placement-tracker"
             },
             {
                 name: "Department of Career Planning & Development",

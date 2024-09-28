@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import 'swiper/swiper-bundle.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Scrollbar, A11y, Autoplay } from 'swiper';
+import { Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { tabs, slidesData } from '@/Json/BtechData';
 
 

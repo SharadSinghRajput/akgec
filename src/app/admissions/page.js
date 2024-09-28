@@ -1,5 +1,4 @@
-
-import Header from '../../Components/Header';
+import Header from '@/Components/Header';
 import Admissions from './Admissions';
 
 const Button = {

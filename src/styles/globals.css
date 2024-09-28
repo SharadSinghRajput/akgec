@@ -59,3 +59,30 @@
 .text-secondary {
   color: #fecc00;
 }
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.card:hover .custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card:hover .custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.card:hover .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #aaaaaa; 
+  border-radius: 10px;
+}
+
+.card:hover .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #777777;
+}
+
+.Cutout {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
