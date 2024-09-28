@@ -80,7 +80,7 @@ export const About = {
             },
             {
                 name: 'Student Services',
-                url: '/'
+                url: '/about/student-services'
             },
             {
                 name: 'How to Reach Us?',
@@ -305,7 +305,7 @@ export const Admissions = {
             },
             {
                 name: 'How to Apply?',
-                url: '/'
+                url: '/admissions/how-to-apply'
             },
             {
                 name: 'Admission Criteria',
@@ -317,7 +317,7 @@ export const Admissions = {
             },
             {
                 name: 'Education Loan',
-                url: '/'
+                url: '/admissions/education-loan'
             },
             {
                 name: 'Hostel Fee',
@@ -337,15 +337,15 @@ export const Admissions = {
             },
             {
                 name: 'Visit the Campus',
-                url: '/'
+                url: '/admissions/contact'
             },
             {
                 name: 'Migration Policy',
-                url: '/'
+                url: '/admissions/migration'
             },
             {
                 name: 'Refund Policy',
-                url: '/'
+                url: '/admisions/refund-policy'
             },
             {
                 name: 'Orientation Schedule 2024',
