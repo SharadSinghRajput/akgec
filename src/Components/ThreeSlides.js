@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css'
 
 const ThreeSlides = ({slides}) => {
     return (
@@ -24,10 +25,12 @@ const ThreeSlides = ({slides}) => {
                 >
                     {slides?.map((slide) => (
                         <SwiperSlide key={slide.id}>
-                            <div className="rounded-2xl shadow-cardShadow flex flex-col justify-center items-center flex-grow p-8 my-10 min-h-52 bg-white">
+                            <div className="rounded-2xl shadow-cardShadow flex flex-col justify-center items-center flex-grow p-8 my-10 pt-0 min-h-52 bg-white">
                                 <div className="relative w-full mb-4">
-                                    <div className="absolute -top-10 left-0 right-0 bg-gray-500 text-white text-center py-1 px-4 rounded-t-2xl transform -skew-x-12">
-                                        <span className="inline-block transform skew-x-12 font-novaBold uppercase">{slide.title}</span>
+                                    <div className="relative -top-[12px] left-[50%] -translate-x-[50%] right-0 text-white text-center w-max ">
+                                        <span className='w-5 h-2.5 bg-gray-800 absolute -left-2.5 top-0 z-0 rounded-t-xl'/>
+                                        <span className="font-novaBold uppercase bg-gradient-to-t from-gray-600 z-20 via-gray-400 px-10 rounded-b-3xl relative py-1 to-gray-600 text-white w-full block">{slide.title}</span>
+                                        <span className='w-5 h-2.5 bg-gray-800 absolute -right-2.5 top-0 z-0 rounded-t-xl'/>
                                     </div>
                                 </div>
                                 <p className="mt-4 text-left leading-4">{slide.description}</p>
