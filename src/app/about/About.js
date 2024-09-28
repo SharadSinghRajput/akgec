@@ -1,6 +1,6 @@
 "use client";
 
-import"@/app/globals.css";
+import"@/styles/globals.css";
 import React, { useState } from "react";
 import useScrollAndIntersection from "@/hooks/useScrollAndIntersection";
 import { programFeatures, recruitmentPartners, sectionData } from "@/Json/OverviewData";
