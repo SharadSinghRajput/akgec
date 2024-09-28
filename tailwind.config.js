@@ -50,6 +50,12 @@ module.exports = {
       boxShadow: {
         'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',
       },
+      screens: {
+        'break1': '1800px',
+        'break2': '1400px',
+        'break3': '1200px',
+        'break4': '992px',
+      },
     },
     fontFamily: {
       novaReg: ['nova-regular', 'proximanova-regular'],
@@ -69,7 +75,5 @@ module.exports = {
       zoomInOut: 'zoomInOut 20s ease-in-out infinite',
     },
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-  ],
+  plugins: [],
 };
