@@ -97,12 +97,12 @@ const RecognitionApprovals = () => {
                             <div className="p-11 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px]">
                                 <div className="flex mb-12 -mx-3">
                                     <div className="px-3">
-                                        <h3 className="text-2xl font-novaReg">AKG Enters The League of Top 0.1% of Indian Universities With ABET Accreditation In Engineering</h3>
-                                        <p className="text-lg font-novaReg mt-2.5 mb-5">Breaking barriers and setting records, AKGEC University proudly becomes the First Private University in India to earn ABET accreditation for the Highest Number of Engineering Programs.</p>
-                                        <img
+                                        <h3 className="text-2xl font-novaReg">AKG Joins the Elite 0.1% of Indian Universities with ABET Accreditation in Engineering</h3>
+                                        <p className="text-lg font-novaReg mt-2.5 mb-5">In a groundbreaking achievement, AKG University has made history as the first private university in India to receive ABET accreditation for an impressive number of engineering programs, breaking barriers and setting new standards in education.</p>
+                                        {/* <img
                                             src="/image/recognitions-and-approvals/abet-banner.jpg"
                                             className=""
-                                        />
+                                        /> */}
                                     </div>
                                 </div>
                             </div>
