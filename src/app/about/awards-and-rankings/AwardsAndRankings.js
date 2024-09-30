@@ -1,41 +1,44 @@
+"use client"
 const rank = [
     {
-        img: '/image/awards-and-ranking/qs-tag-logo.webp',
-        title: <>QS Asia Rankings<br />-2024</>,
+        img: '/image/awards-and-ranking/diamond-akg.webp',
+        title: <>QS I-Gauge overall<br />-2024</>,
         url: 'Click to Read More'
     },
     {
-        img: '/image/awards-and-ranking/qs-tag-logo.webp',
-        title: <>QS Asia Rankings<br />-2024</>,
+        img: '/image/awards-and-ranking/diamond-akg.webp',
+        title: <>QS I-Gauge Faculty Quality<br />-2024</>,
         url: 'Click to Read More'
     },
     {
-        img: '/image/awards-and-ranking/qs-tag-logo.webp',
-        title: <>QS Asia Rankings<br />-2024</>,
+        img: '/image/awards-and-ranking/diamond-akg.webp',
+        title: <>QS I-Gauge Governance & Structure<br />-2024</>,
         url: 'Click to Read More'
     },
     {
-        img: '/image/awards-and-ranking/qs-tag-logo.webp',
-        title: <>QS Asia Rankings<br />-2024</>,
+        img: '/image/awards-and-ranking/diamond-akg.webp',
+        title: <>QS I-Gauge Employability<br />-2024</>,
         url: 'Click to Read More'
     },
     {
-        img: '/image/awards-and-ranking/qs-tag-logo.webp',
-        title: <>QS Asia Rankings<br />-2024</>,
+        img: '/image/awards-and-ranking/diamond-akg.webp',
+        title: <>QS I-Gauge Academic Development<br />-2024</>,
         url: 'Click to Read More'
     },
     {
-        img: '/image/awards-and-ranking/qs-tag-logo.webp',
-        title: <>QS Asia Rankings<br />-2024</>,
+        img: '/image/awards-and-ranking/diamond-akg.webp',
+        title: <>QS I-Gauge Teaching & Learning<br />-2024</>,
         url: 'Click to Read More'
-    }
+    },
+    
 ];
 
-const AwardsAndRankings = () => {
+export default () => {
     return (
         <>
-            <section className="bg-BG19 w-full min-h-[115vh] bg-cover bg-black bg-blend-darken bg-opacity-50 bg-no-repeat">
-                <div className="max-w-[1400px] mx-auto px-3">
+            <section className="bg-BG16 w-full bg-cover bg-no-repeat relative">
+                <div className="absolute w-full h-full z-0 bg-gradient-to-r from-sky-700/70 from-10% via-sky-600/50 via-30% to-emerald-500/50 to-90%" />
+                <div className="max-w-[1400px] mx-auto px-3 relative z-10 py-28 pb-40 ">
                     <div className="pt-40 w-full">
                         <div className="flex gap-2 w-fit mb-4">
                             {/* Rating Stars */}
@@ -48,7 +51,7 @@ const AwardsAndRankings = () => {
                         <div className="w-6/12">
                             <div className="w-full">
                                 <h2 className="text-[42px] uppercase font-novaReg font-bold text-white leading-none">
-                                    <span className="text-secondary">Ranked #20</span>
+                                    <span className="text-secondary">Ranked #18</span>
                                     <br />
                                     among The Best
                                     <br />
@@ -57,15 +60,8 @@ const AwardsAndRankings = () => {
                                     <span className="text-secondary">NIRF Rankings 2024</span>
                                 </h2>
                                 <p className="w-9/12 text-lg font-novaBold mt-5 text-white">
-                                    AKGEC University has been Ranked 20th among the Best Universities In India under the NIRF Rankings 2024 released by the MoE (Ministry of Education).
+                                    AKG University has made a remarkable achievement by securing the 18th spot in the prestigious NIRF (National Institutional Ranking Framework) Rankings 2024, released by the Ministry of Education (MoE), Government of India.
                                 </p>
-                            </div>
-                            <div className="flex items-center mt-6">
-                                <img
-                                    src="/image/awards-and-ranking/nirf-2024-logo.png"
-                                    className="w-80"
-                                    alt="nrif-ranking "
-                                />
                             </div>
                         </div>
                     </div>
@@ -78,7 +74,7 @@ const AwardsAndRankings = () => {
                         <div className="px-3 w-full">
                             <div className="flex items-center w-full">
                                 <h3 className="text-3xl font-novaBold text-white items-center text-center w-full mb-6 uppercase">
-                                    QS Rankings
+                                    QS I-Gauge Ranking
                                 </h3>
                             </div>
                             <div className="w-full mb-12">
@@ -97,7 +93,7 @@ const AwardsAndRankings = () => {
                                                             padding: '10px 20px',
                                                             zIndex: 10
                                                         }}>
-                                                        QS Asia Rankings 2024
+                                                        QS I-Gauge Indian Ranking
                                                     </span>
                                                 </div>
                                                 <img src={item.img} alt={`Slide ${index + 1}`} className="w-44 object-cover rounded-md mb-8 -mt-3" />
@@ -179,8 +175,9 @@ const AwardsAndRankings = () => {
                 </div>
             </section>
 
-            <section className="bg-BG17 w-full bg-no-repeat bg-cover bg-center bg-black bg-blend-darken bg-opacity-60">
-                <div className="max-w-[1400px] mx-auto px-3">
+            <section className="bg-BG17 w-full bg-no-repeat bg-cover bg-center relative">
+                <div className="absolute w-full h-full bg-gradient-to-r from-sky-600 from-10% via-sky-500 via-30% to-emerald-500/10 to-90%" />
+                <div className="max-w-[1400px] mx-auto px-3 relative z-10">
                     <div className="py-36 w-6/12">
                         <div className="flex gap-2 w-fit mb-4">
                             {/* Rating Stars */}
@@ -191,8 +188,8 @@ const AwardsAndRankings = () => {
                             ))}
                         </div>
                         <h2 className="mb-2 text-[42px] font-novaBold text-white">Ranks <span className="text-secondary">#1</span> Among Top <br />Private Indian
-                            Universities in<br /><span className="text-secondary">QS Asia Rankings 2024</span></h2>
-                        <p className="text-lg font-novaBold text-white mt-5 w-11/12">Along with an impressive 149th overall rank in Asia, AKGEC University clinches the #1 position among all the Private Universities in India at the QS Asia University Rankings 2024.</p>
+                            Universities in<br /><span className="text-secondary">QS I-Gauge Indian Ranking 2024</span></h2>
+                        <p className="text-lg font-novaBold text-white mt-5 w-11/12">AKG University Achieves 134th Overall Rank in Asia and Ranks #1 Among Private Universities in India in QS I-Gauge Indian University Rankings 2024</p>
                     </div>
                 </div>
             </section>
@@ -346,4 +343,3 @@ const AwardsAndRankings = () => {
     );
 };
 
-export default AwardsAndRankings;
