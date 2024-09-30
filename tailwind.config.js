@@ -43,7 +43,7 @@ module.exports = {
         'BG12': "url('/image/main-banner.jpg')",
         'BG13': "url('/image/esteemed-partners-bg.jpg')",
         'BG14': "url('/image/research.jpg')",
-        'BG15': "url('/image/placements/banner-1.jpg')",
+        'BG15': "url('/image/placements/8464.png')",
         'BG16': "url('/image/placements/banner-2.jpg')",
         'BG17': "url('/image/recognitions-and-approvals/bottom-banner-bg.jpg')",
         'BG18': "url('/image/scholarship/bottom-banner-bg.jpg')",
