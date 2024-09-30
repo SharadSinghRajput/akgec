@@ -1,5 +1,3 @@
-import { Fragment } from 'react'
-import { StarIcon } from '@heroicons/react/20/solid'
 import Button from './Button'
 
 const product = {

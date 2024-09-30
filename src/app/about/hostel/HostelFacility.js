@@ -11,7 +11,7 @@ const facilities = [
     { id: 8, name: "Indoor and Outdoor Sports Facilities", icon: "/image/icons/indoor-and-outdoor.png" },
     { id: 9, name: "Canteen", icon: "/image/icons/canteen.png" },
 ];
-export default function Hostel() {
+export default function HostelFacility() {
     return (
 
         <div className="bg-white">
