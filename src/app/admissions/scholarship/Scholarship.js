@@ -15,9 +15,9 @@ const Scholarship = () => {
                 <div className="max-w-[1400px] mx-auto h-full px-3">
                     <div className="max-w-2xl">
                         <div className="Cutout py-1.5 bg-yellow-400 mb-10"><h2 className="text-4xl font-novaReg">Year 2024-2025</h2></div>
-                        <p className="font-novaReg text-lg leading-6">AKGEC is fully committed to its Institutional Social Responsibility. The University, besides being pioneers in quality education is proactive in uplifting the education standard and qualification of students of the nation in general and North region in particular. AKG is enthusiastic to encourage and motivate bright students by providing additional benefits and facilities to shining stars and super achievers.</p>
-                        <p className="mt-3 font-novaReg text-lg leading-6">As a sequel to this, fresh and impressive scholarship options have been added in the academic year 2024-2025.</p>
-                        <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">Avail Scholarship ➜</button> 
+                        <p className="font-novaLight text-lg leading-6">AKGEC is dedicated to its Institutional Social Responsibility. As a leader in quality education, the University actively works to enhance educational standards and qualifications for students across the nation, with a particular focus on the northern region. AKGEC is passionate about inspiring and supporting exceptional students by offering additional benefits and resources to recognize their achievements and potential.</p>
+                        <p className="mt-3 font-novaLight text-lg leading-6">As a continuation of this commitment, new and attractive scholarship opportunities have been introduced for the academic year 2024-2025.</p>
+                        <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">Avail Scholarship ➜</button>
                     </div>
                 </div>
             </div>
@@ -109,21 +109,21 @@ const Scholarship = () => {
                             <div className="p-11 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px]">
                                 <div className="flex mb-12 -mx-3">
                                     <div className="px-3">
-                                        <h3 className="text-2xl font-novaReg">AKG University For The Academic Year 2024-2025</h3>
-                                        <p className="text-lg font-novaReg mt-2.5 mb-5">To offer an opportunity to bright and inquisitive young minds from across the country to study in a challenging and diverse academic environment, AKG University has launched its entrance examination, providing double benefits. This scholarship initiative of the year allows students to access a total of ₹170 Crores in scholarships. It aims to recognize and reward the brilliance and potential of young aspirants, enabling them to secure scholarships and pursue futuristic courses of their choice.</p>
+                                        <h3 className="text-2xl font-novaLight">AKG University For The Academic Year 2024-2025</h3>
+                                        <p className="text-lg font-novaLight mt-2.5 mb-5">To offer an opportunity to bright and inquisitive young minds from across the country to study in a challenging and diverse academic environment, AKG University has launched its entrance examination, providing double benefits. This scholarship initiative of the year allows students to access a total of ₹170 Crores in scholarships. It aims to recognize and reward the brilliance and potential of young aspirants, enabling them to secure scholarships and pursue futuristic courses of their choice.</p>
 
-                                        <h3 className="text-2xl font-novaReg">Scholarships Renewal Criteria & Renewal Process:</h3>
-                                        <p className="text-lg font-novaReg mt-2.5 mb-5">Scholarships once given will be for the entire duration of the program but subject to mandatory meeting of set norms which will be reviewed every year. Once the set norms are met, the scholarship shall be renewed.</p>
+                                        <h3 className="text-2xl font-novaLight">Scholarships Renewal Criteria & Renewal Process:</h3>
+                                        <p className="text-lg font-novaLight mt-2.5 mb-5">Once awarded, scholarships will be valid for the entire duration of the program, provided that students consistently meet the established criteria, which will be reviewed annually. Scholarships will be renewed upon successful compliance with these requirements.</p>
 
-                                        <h3 className="text-2xl font-novaReg">Current Renewal Criteria</h3>
-                                        <ul className="text-lg font-novaReg mt-2 mb-4 pl-4">
-                                            <li className="text-sm mb-2 list-disc">CUCET Scholarship Recipients should apply for renewal every year.</li>
-                                            <li className="text-sm mb-2 list-disc">Performance: 7.5 CGPA at the end of each year.</li>
-                                            <li className="text-sm mb-2 list-disc">Student should not indulge in any activity of indiscipline.</li>
-                                            <li className="text-sm mb-2 list-disc">Student should not have E, F or I in any of the subject each year.</li>
+                                        <h3 className="text-2xl font-novaLight">Current Renewal Criteria</h3>
+                                        <ul className="text-lg font-novaLight mt-2 mb-4 pl-4">
+                                            <li className="text-sm mb-2 list-disc">Scholarship Recipients should apply for renewal every year.</li>
+                                            <li className="text-sm mb-2 list-disc">Maintain a minimum CGPA of 7.5 at the end of each academic year.</li>
+                                            <li className="text-sm mb-2 list-disc">Refrain from engaging in any acts of indiscipline.</li>
+                                            <li className="text-sm mb-2 list-disc">Ensure that they do not receive grades of E, F, or I in any subject throughout the academic year.</li>
                                         </ul>
-                                        <p className="text-lg font-novaReg mt-2.5 mb-5"><b>Note:</b> Scholarship shall be discontinued if there is any case of indiscipline against the student at any point of time.</p>
-                                        <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">View More ➜</button> 
+                                        <p className="text-lg font-novaLight mt-2.5 mb-5"><b>Note:</b> The scholarship will be revoked if any instance of indiscipline occurs involving the student at any time.</p>
+                                        <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">View More ➜</button>
                                     </div>
                                 </div>
                             </div>
@@ -137,20 +137,20 @@ const Scholarship = () => {
                                             </svg>
                                         </span>
 
-                                        <p className="font-novaReg text-red-500">
-                                            <b>-</b> If the scholarship gets discontinued in one year due to not maintaining the mandatory requirements and in the coming year if the student maintains the minimum mandatory criteria. the student can apply for the scholarship again, however, in that case, the student would be eligible for only 50 percent of the earlier sanctioned scholarship in the consequent year of study.
+                                        <p className="font-novaLight text-red-500">
+                                            <b>-</b> If a scholarship is discontinued in one year due to failure to meet the required criteria, the student may reapply in the following year if they then satisfy the minimum requirements. However, in this case, the student will only be eligible for 50% of the previously awarded scholarship amount for that subsequent year of study.
                                             <br />
                                             <b>-</b>
-                                            Scholarship scheme swapping is not allowed.
+                                            Switching between scholarship schemes is not permitted.
                                             <br />
                                             <b>-</b>
-                                            The student can’t avail multiple scholarships.
+                                            Students are not allowed to receive multiple scholarships simultaneously.
                                             <br />
                                             <b>-</b>
-                                            In case of query regarding student’s marks percentage, Admission team member may contact the scholarship department.
+                                            If there are any inquiries regarding a student’s percentage of marks, a member of the admissions team may reach out to the scholarship department for clarification.
                                             <br />
                                             <b>-</b>
-                                            Student scholarship document should be verified by the admission counselor with signature and E-code before applying for scholarship on CUIMS.
+                                            Before applying for a scholarship on CUIMS, students must have their scholarship documentation verified by the admission counselor, including the necessary signature and E-code.
                                             <br />
                                         </p>
                                     </div>
@@ -168,10 +168,10 @@ const Scholarship = () => {
                                     <div className="p-12">
                                         <h3 className="text-2xl text-white font-novaReg">Get in Touch</h3>
                                         <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">For any information please contact the below mentioned helpline nos:</p>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">General Inquiries:+91-160-5017000</p>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Mobile: +91-99159-99223, +91-99159-99224</p>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Toll Free: 1800 1212 88800</p>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Email: admissions@cumail.in</p>
+                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">General Inquiries:+91-1800-200-0777</p>
+                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Mobile: +91-7290034978</p>
+                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Toll Free: 8744052891-93</p>
+                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Email: info@akgec.ac.in</p>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +179,6 @@ const Scholarship = () => {
                     </div>
                 </div>
             </section>
-
         </>
     );
 }
