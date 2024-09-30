@@ -101,32 +101,31 @@ export const studentReviewsData = [
       highestPackage: "15",
     },
   ];
-
   export const placementTrackerData = [
-    { href: "/highest-package-offered", label: "Highest Package Offered" },
-    { href: "/students-placed", label: "Students Placed" },
-    { href: "/companies-visited", label: "No. of Companies Visited" },
-    { href: "/campus-placements-covid", label: "Campus Placements during COVID-19 times" },
-    { href: "/job-roles-offered", label: "Various Job Roles Offered to Students" },
-    { href: "/student-diversity", label: "Explore Student Diversity throughout the countries" }
+    { href: "#", label: "Highest Package Offered" },
+    { href: "#", label: "Students Placed" },
+    { href: "#", label: "No. of Companies Visited" },
+    { href: "#", label: "Campus Placements during COVID-19 times" },
+    { href: "#", label: "Various Job Roles Offered to Students" },
+    { href: "#", label: "Explore Student Diversity throughout the countries" }
   ];
-
+  
   export const placementPackageData = [
-    { href: "/highest-package-offered", label: "Packages above 25 Lacs" },
-    { href: "/students-placed", label: "Packages above 20 Lacs" },
-    { href: "/companies-visited", label: "Packages above 15 Lacs" },
-    { href: "/campus-placements-covid", label: "Packages above 10-15 Lacs" },
-    { href: "/job-roles-offered", label: "Packages above 7-10 Lacs" },
-    { href: "/student-diversity", label: "Packages above 5-6 Lacs" },
-    { href: "/student-diversity", label: "Stipend Slab (Range)" },
+    { href: "#", label: "Packages above 25 Lacs" },
+    { href: "#", label: "Packages above 20 Lacs" },
+    { href: "#", label: "Packages above 15 Lacs" },
+    { href: "#", label: "Packages above 10-15 Lacs" },
+    { href: "#", label: "Packages above 7-10 Lacs" },
+    { href: "#", label: "Packages above 5-6 Lacs" },
+    { href: "#", label: "Stipend Slab (Range)" },
   ];
-
+  
   export const placementAnalysisData = [
-    { href: '/engineering-placement', label: 'Engineering Placement' },
-    { href: '/management-placement', label: 'Management Placement' },
-    { href: '/hotel-management-placement', label: 'Hotel Management Placement' },
-    { href: '/pharma-sciences-placement', label: 'Pharma Sciences Placement' },
-    { href: '/physics-placement', label: 'Physics Placement' },
-    { href: '/placement-tracker', label: 'Placement Tracker' },
-    { href: '/register-joint-placement', label: 'Register for Joint Placement Program' },
+    { href: "#", label: "Engineering Placement" },
+    { href: "#", label: "Management Placement" },
+    { href: "#", label: "Hotel Management Placement" },
+    { href: "#", label: "Pharma Sciences Placement" },
+    { href: "#", label: "Physics Placement" },
+    { href: "#", label: "Placement Tracker" },
+    { href: "#", label: "Register for Joint Placement Program" },
   ];
