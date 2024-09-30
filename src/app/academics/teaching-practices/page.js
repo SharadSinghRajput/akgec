@@ -27,15 +27,15 @@ export const Home = () => {
           <div className="col-span-9 max-md:col-span-12">
             <div className="container mx-auto p-4">
               <div className="px-3 max-sm:px-0">
-                <h2 className="text-4xl max-2xl:text-3xl max-lg:text-2xl font-novaReg mb-2.5">
+                <h2 className="text-2xl max-2xl:text-3xl max-lg:text-2xl font-novaBold mb-2.5">
                   Optimal Knowledge Acquisition at AKG University
                 </h2>
                 <p className="mb-5 mt-2.5 max-2xl:text-[15px] font-novaReg leading-6 max-2xl:leading-5">
-                  At AKG University, students learn the skill of perceiving and understanding the world. Learning at AKG involves creating conceptual principles, accepting results, recalling realistic information, acquiring methods and systems, analyzing, debating ideas, and developing behavior appropriate to specific situations.
+                   At AKG University, students cultivate the ability to perceive and comprehend the world around them. The learning experience at AKG emphasizes the development of conceptual frameworks, embracing outcomes, retaining practical knowledge, and mastering methods and systems. Students engage in analyzing and discussing ideas while also fostering behaviors suited to various contexts.
                 </p>
               </div>
               <div className="px-3 max-sm:px-0">
-                <h2 className="text-4xl max-2xl:text-3xl max-lg:text-2xl font-novaReg mb-2 leading-9">
+                <h2 className="text-2xl max-2xl:text-3xl max-lg:text-2xl font-novaBold mb-2 leading-9">
                   Your Learning Adventure Begins: Unveiling AKG University's Transformative Practices
                 </h2>
                 <p className="font-novaReg mb-5 mt-2.5 leading-6">
