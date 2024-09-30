@@ -9,7 +9,7 @@ const BreadCrumb = [
       Link: "#",
     },
     {
-      name: "after 12th",
+      name: "Specialized Programs",
       Link: "#",
     }
   ]
