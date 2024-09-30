@@ -18,6 +18,17 @@ const BreadCrumb = [
   }
 ]
 
+
+const SideBarLink = [
+  {name: "Our Identity" , link : "/overview"},
+  {name: "Leadership" , link : ""},
+  {name: "Leadership" , link : ""},
+  {name: "Governance" , link : ""},
+  {name: "Recognition and Approvals" , link : ""},
+  {name: "Awards and Rankings" , link : ""},
+  {name: "Institution Social Responsibility" , link : ""}
+]
+
 export default function Home() {
   return (
     <>
@@ -29,7 +40,7 @@ export default function Home() {
             <HowToApply />
           </div>
           <div className="sm:w-1/4 ">
-            <SideBar />
+              <SideBar title={"About Us"} LinkList={SideBarLink} />            
           </div>
         </div>
       </div>
