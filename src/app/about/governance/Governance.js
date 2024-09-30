@@ -124,7 +124,7 @@ export const Governance = () => {
                             {openIndex === 0 && (
                                 <div className="content py-4 px-5">
                                     <div className='block overflow-x-auto'>
-                                        <p className='text-sm font-novaReg mb-4'>The Governing Body of AKG University has been revised by the virtue of changes in senior positions for the academic session 2022-2024 and same is given below:</p>
+                                        <p className='text-sm font-novaReg mb-4'>The Governing Body of AKG University has undergone revisions for the 2022-2024 academic session due to changes in senior positions. The updated composition is as follows:</p>
                                         <table className="w-full ">
                                             <thead>
                                                 <tr className='text-white'>
