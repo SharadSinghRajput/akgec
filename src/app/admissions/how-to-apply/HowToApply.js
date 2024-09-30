@@ -4,91 +4,92 @@ import React, { useState } from 'react';
 
 const firstSteps = [
     {
-        main: "CUCET has been divided into three different phases namely CUCET-I and CUCET-II. Each phase of CUCET is active for a specific period and their benefits might vary. Choose the phase which is active and running during the time of your application."
+        main: "The AKG University Entrance Test (AKGET) consists of two phases: AKGET-I and AKGET-II. Each phase has specific dates, and benefits may vary between them."
     },
     {
-        title: "Log on and Generate User Id and Password at https://cucet.cuchd.in",
-        content: "Log on to the official website of CUCET to start the registration process. Visit https://cucet.cuchd.in and follow the following steps."
+        title: "Log on and Generate User Id and Password at https://erp.akg.edu.in/",
+        content: "Visit the official AKG University website to initiate the registration process. Navigate to https://www.akg.edu.in/ and follow these steps."
     },
     {
-        title: "Choose the running phase of CUCET",
-        content: "AKGEC University Common Entrance test has three phases namely CUCET-I and CUCET-II. Each phase will be running one by one and early comers are availed extra benefits. During the time of application, the candidate will have to select the active phase which would be necessary for admissions into Engineering and Management courses and scholarships for all the programs."
+        title: "Select the current phase of AKGET",
+        content: "The AKGET includes multiple phases such as AKGET-I and AKGET-II. Each phase operates sequentially, and early applicants may receive additional advantages. Candidates must choose the active phase during their application for admissions into various courses."
     },
     {
-        title: "Register by filling in your Name, Email, Contact Number and City",
-        content: "After logging on to CUCET’s official website, the candidate has to register by filling in his details such as Name, Email, Contact Number and City. The required information is to be filled in on the registration columns available on the homepage of CUCET’s website."
+        title: "Register by providing your Name, Email, Contact Number, and City",
+        content: "Upon accessing the AKG University official website, candidates must register by filling in their details, including Name, Email, Contact Number, and City, in the designated fields on the homepage."
     },
     {
-        title: "Choose the discipline and program that interests you",
-        content: "After providing the above information, the candidate needs to select the discipline and program of his interest that he wishes to apply for and then register."
+        title: "Choose the program that interests you",
+        content: "After entering the required information, candidates should select the program they wish to apply for before completing the registration."
     },
     {
-        title: "Create your profile after registration",
-        content: "After the above process has been completed, the candidate needs to complete his profile after logging into it using the User ID and password sent through Email and SMS. A candidate may also use a registered Email ID as a username to log in."
+        title: "Complete your profile after registration",
+        content: "Once registered, candidates should log in using the User ID and password sent via Email or SMS and complete their profile. Alternatively, a registered Email ID can be used as a username."
     },
     {
-        title: "After successful registration, a confirmation message is sent through SMS/Email",
-        content: "The candidate will receive the confirmation for successful registration on his/her registered contact number and Email address through an Email or SMS."
+        title: "Confirmation message sent via SMS/Email after successful registration",
+        content: "Candidates will receive a confirmation message regarding their successful registration on the provided contact number and Email address via SMS or Email."
     }
 ];
 
 const offlineFirstSteps = [
     {
-        main: "Admission Office, AKGEC University, SCO 223, First Floor, Sector 36 D, Chandigarh, 160036"
+        main: "Admission Office, AKG University, 27th Km Milestone, Delhi-Meerut Expressway, P.O. Adhyatmik Nagar, Ghaziabad - 201015"
     },
     {
-        content: "To download the admission form, please visit www.cuchd.in."
+        content: "To download the admission form, please visit www.akguniversity.edu."
     },
     {
-        content: "Send duly filled admission form along with demand draft of Rs 1000/- drawn in name of “Chandigarh University” payable at Chandigarh at the following address:"
+        content: "Send the completed admission form along with a demand draft of $100 drawn in the name of 'AKG University', payable at City Name, to the following address:"
     },
 ];
 
 const secondSteps = [
     {
-        title: "After registration, download the e-Prospectus by paying Rs. 1000/- online",
-        content: "The process following Registration requires you to download the e-Prospectus made available after candidate’s successful registration. The e-Prospectus includes the application form admission and to appear for the entrance test."
+        title: "Post-registration, download the e-Prospectus for $10 online",
+        content: "Following registration, candidates are required to download the e-Prospectus, which is accessible after successful registration. The e-Prospectus includes the application form for admission and details about the entrance exam."
     },
     {
-        title: "Fill application form for Entrance Test, Admission included in the e-prospectus",
-        content: "After downloading the e-Prospectus, candidate needs to fill the application form for admission and to appear for the common entrance exam."
+        title: "Complete the application form for Entrance Test included in the e-Prospectus",
+        content: "After downloading the e-Prospectus, candidates must fill out the application form necessary for admission and participation in the entrance exam."
     }
 ];
 
 const offlineSecondSteps = [
     {
-        main: "Submit the admission form and receive prospectus on payment of Rs 1000/- from AKGEC University Campus or any local Admission Office of the University."
+        main: "Submit the admission form and obtain the prospectus by paying $10 at AKG University Campus or any local admission office."
     },
 ];
 
 const thirdSteps = [
     {
-        title: "Book your seat by paying registration fee online through Payment Gateway or offline by generating Challan",
-        content: "The registration fee can be paid online via net banking or using debit/credit cards through the payment gateway."
+        title: "Secure your seat by paying the registration fee online or offline",
+        content: "Candidates can pay the registration fee online via net banking or debit/credit cards, or offline by generating a payment Challan."
     },
     {
-        title: "Log on to https://cucet.cuchd.in",
-        content: "For the payment of registration fee, one needs to log on to CUCET’s website https://cucet.cuchd.in and further log into their respective account."
+        title: "Access the registration portal at https://akget.akguniversity.edu",
+        content: "To pay the registration fee, candidates must visit the AKG University registration portal at https://akget.akguniversity.edu and log into their account."
     },
     {
-        title: "Log in to your account with your CUCET-ID or Registered Email ID",
-        content: "Candidate needs to log in to his account using allotted CUCET-ID or Registered Email ID and password. The options following will lead to the payment of registration fee."
+        title: "Log in using your AKG-ID or Registered Email ID",
+        content: "Candidates should log in to their account using their assigned AKG-ID or Registered Email ID and password. Subsequent options will facilitate the registration fee payment."
     },
     {
-        title: "Fill the application form available after you log in to your profile",
-        content: "The process would then require the candidate to fill the application form made available after logging in. The application form would require the candidate to fill his personal and academic information."
+        title: "Complete the application form available after logging into your profile",
+        content: "Candidates must fill out the application form that appears after logging in, providing personal and academic information as required."
     }
 ];
 
 const offlineThirdSteps = [
     {
-        main: "Call Toll Free 1800 1212 88800 or email at admissions@cumail.in or SMS (Space) “YOUR NAME” to 9501437000"
+        main: "For assistance, call Toll-Free 8744052891-93\n7290034978 Admissions Enquiry: 1800-200-0777 or email info@akgec.ac.in or SMS (Space) 'YOUR NAME' to 1234567890"
     },
 ];
 
+
 const OnlineStepSection = ({ title, steps, isOpen, toggle }) => (
     <div className="border">
-        <h2 className={`${isOpen ? 'bg-indigo-950 text-white' : ''}`}>
+        <h2 className={`${isOpen ? 'bg-secondary' : ''}`}>
             <button
                 className="flex py-4 px-5 font-novaReg w-full"
                 onClick={toggle}
@@ -123,7 +124,7 @@ const OnlineStepSection = ({ title, steps, isOpen, toggle }) => (
 
 const OfflineStepSection = ({ title, steps, isOpen, toggle }) => (
     <div className="border">
-        <h2 className={`${isOpen ? 'bg-indigo-950 text-white' : ''}`}>
+        <h2 className={`${isOpen ? 'bg-secondary' : ''}`}>
             <button
                 className="flex py-4 px-5 font-novaReg w-full"
                 onClick={toggle}
@@ -169,15 +170,15 @@ export const HowToApply = () => {
 
     return (
         <div className="px-3">
-            <h1 className="text-2xl md:text-4xl font-novaReg mb-2.5 w-full">AKGEC University Admissions 2024</h1>
-            <h3 className="text-xl md:text-[32px] font-novaReg mb-8 w-full">How to Apply AKGEC University Admissions 2024</h3>
+            <h1 className="text-2xl md:text-4xl font-novaReg mb-2.5 w-full">AKG University Admissions 2024</h1>
+            <h3 className="text-xl md:text-[32px] font-novaReg mb-8 w-full">How to Apply for AKG University Admissions 2024</h3>
             <hr className="w-full my-4" />
 
             {/* Online Mode Section */}
             <div className="w-full">
-                <h4 className="mb-2 text-xl md:text-2xl font-novaReg">Online Mode - CUCET Registration</h4>
+                <h4 className="mb-2 text-xl md:text-2xl font-novaReg">Online Mode - AKG Registration</h4>
                 <OnlineStepSection
-                    title="Step 1 - Register at CUCET"
+                    title="Step 1 - Register at AKGET"
                     steps={firstSteps}
                     isOpen={openIndexOnline === 0}
                     toggle={() => toggleOnlineContent(0)}
@@ -198,7 +199,7 @@ export const HowToApply = () => {
             <br />
             <br />
             <div className="w-full">
-                <h4 className="mb-2 text-xl md:text-2xl font-novaReg">Offline Mode - CUCET Registration</h4>
+                <h4 className="mb-2 text-xl md:text-2xl font-novaReg">Offline Mode - AKG Registration</h4>
                 <OfflineStepSection
                     title="Option 1 - Download Admission Form"
                     steps={offlineFirstSteps}

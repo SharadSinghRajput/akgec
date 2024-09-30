@@ -1,35 +1,38 @@
-import Header from "@/Components/Header";
-import SideBar from "@/Components/SideBar";
-import { HowToApply } from "./HowToApply";
+import Header from '@/Components/Header';
+import SideBar from '@/Components/SideBar';
+import Breadcrumb from '@/Components/Breadcrumb';
+import { HowToApply } from './HowToApply';
 
-
-const SideBarLink = [
-    {name: "Our Identity" , link : "/overview"},
-    {name: "Leadership" , link : ""},
-    {name: "Leadership" , link : ""},
-    {name: "Governance" , link : ""},
-    {name: "Recognition and Approvals" , link : ""},
-    {name: "Awards and Rankings" , link : ""},
-    {name: "Institution Social Responsibility" , link : ""}
+const ButtoName = {
+  name: "Apply Now",
+  Link: "",
+};
+const BreadCrumb = [
+  {
+    name: "about",
+    Link: "",
+  },
+  {
+    name: "Hostel",
+    Link: "about",
+  }
 ]
 
-export const Home = () => {
-    return (
-        <>
-        <div className="bg-gray-100">
-        <Header Button={{ name: "Apply Now", Link: "/" }} title={<span className="leading-[45px]">Way to Apply <br /> in AKGEC University</span>} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
-            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-10">
-                <div className="col-span-9 max-md:col-span-12">
-                    <HowToApply />
-                </div>
-                <div className="col-span-3 max-md:col-span-12">
-                    <SideBar title={"About Us"} LinkList={SideBarLink} />
-                </div>
-            </section>
+export default function Home() {
+  return (
+    <>
+      <Header title={"How To Apply"} gradient={"bg-gradient-to-r from-gray-900 to-transparent"} />
+      <div className="max-w-[1400px] w-full mx-auto pt-16 p-5">
+        <Breadcrumb data={BreadCrumb} />
+        <div className="flex flex-col lg:flex-row flex-1 gap-5 mt-5">
+          <div className="flex-1">
+            <HowToApply />
+          </div>
+          <div className="sm:w-1/4 ">
+            <SideBar />
+          </div>
         </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }
-
-
-export default Home;
