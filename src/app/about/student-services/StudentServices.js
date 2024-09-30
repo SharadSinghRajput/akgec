@@ -36,7 +36,7 @@ const studentService = [
     {
         id: 1,
         image: "/image/student-services/transport1.jpg",
-        description: "Safety and added comfort, both are the prime concerns of Chandigarh University."
+        description: "Safety and added comfort, both are the prime concerns of AKG University."
     },
     {
         id: 2,

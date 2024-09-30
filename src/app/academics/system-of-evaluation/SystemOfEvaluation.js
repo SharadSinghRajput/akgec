@@ -71,11 +71,13 @@ const SystemOfEvaluation = () => {
     return (
         <>
             <div className="px-3 pb-12">
-                <h2 className="text-[32px] font-novaReg mb-2.5">System Of Evaluation <br /> at AKG University</h2>
-                <p className="mb-5 mt-2.5 font-novaReg text-lg">The examination system of AKGEC University has been designed keeping in view the best available options of evaluation &amp; certification along with their global acceptability. The basic principle of the system is that it is “scientific, objective and transparent” with the least possibility of subjectivity caused due to the individual evaluator, particular subject, or a particular batch of students.</p>
-                <p className="mb-5 mt-2.5 font-novaReg text-lg">The examination system is divided as follows:</p>
-                <p className="mb-5 mt-2.5 font-novaReg text-lg">1. Internal Assessment: It includes 1st hourly test, 2nd hourly test, surprise test, quiz, tutorials, and assignments.</p>
-                <p className="mb-5 mt-2.5 font-novaReg text-lg">2. External Assessment: At the end of semester, a final examination is conducted to evaluate a student’s performance.</p>
+                <h2 className="text-[32px] font-novaReg mb-2.5">Evaluation System <br /> at AKG University</h2>
+                <p className="mb-5 mt-2.5 font-novaReg text-lg">The examination system at AKG University has been crafted to incorporate the best practices for evaluation and certification, ensuring global recognition. Its fundamental principle is rooted in being “scientific, objective, and transparent,” minimizing any potential bias from individual evaluators, specific subjects, or particular groups of students.</p>
+                <p className="mb-5 mt-2.5 font-novaReg text-lg">The examination system is categorized as follows:</p>
+                <p className="mb-5 mt-2.5 font-novaReg text-lg">1. Internal Assessment:
+                    This includes the first hourly test, second hourly test, surprise tests, quizzes, tutorials, and assignments.</p>
+                <p className="mb-5 mt-2.5 font-novaReg text-lg">2. External Assessment:
+                    A final examination is conducted at the end of the semester to assess a student’s overall performance.</p>
                 <div>
                     <table className="min-w-full my-4 bg-white rounded-lg">
                         <thead className="bg-[#363c83] text-white h-[44px] rounded-t-lg">
@@ -110,29 +112,43 @@ const SystemOfEvaluation = () => {
                     </table>
                 </div>
                 <h3 className="font-novaReg text-2xl">Salient Features</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">The salient features of the examination system are listed below:</p>
+                <p className="text-lg font-novaReg mt-2.5 mb-5">The examination system at AKG University incorporates the following key features:</p>
                 <ul className="list-disc mb-6 pl-4">
-                    <li className="mb-2 text-sm">The papers for the final exams are set through automated software base process out of the question banks created for this purpose.</li>
-                    <li className="mb-2 text-sm">The evaluation of the final semester examination would be done through Table Marking at the University. Question-wise evaluation will be done to maintain uniformity.</li>
-                    <li className="mb-2 text-sm">10% of the answer books shall be randomly evaluated by outside experts to ensure fairness and equity.</li>
-                    <li className="mb-2 text-sm">The evaluated answer books shall be shown to the students. The student will see & sign the Answer books for having agreed to the evaluation.</li>
-                    <li className="mb-2 text-sm">In case a student disagrees with the evaluation, he/she can get the answer sheet reviewed by the Evaluation Review Board constituted for the same purpose, on payment of prescribed fee. No change in marks shall be done by any individual teacher.</li>
-                    <li className="mb-2 text-sm">The decision of the Evaluation Review Board shall be final and binding.</li>
-                    <li className="mb-2 text-sm">If the increase in marks recommended by the Evaluation Review Board is more than 10% of the maximum marks for the subject, the fee submitted for the review shall be refunded to the students.</li>
-                    <li className="mb-2 text-sm">Final Internal Evaluation shall be displayed by the departments/Institutes before submission to the University.</li>
-                    <li className="mb-2 text-sm">The total marks obtained in Internal and External Examination shall be submitted to the Controller of Examination Office for conversion into grades based on relative grading system.</li>
-                    <li className="mb-2 text-sm">Grades shall be awarded to the obtained marks in each paper using Normal Distribution, without any subjectivity.</li>
-                    <li className="mb-2 text-sm">A student getting less than 35% of the highest marks obtained in the class shall be awarded ‘F’ grade.</li>
-                    <li className="mb-2 text-sm">A student getting more than 50% of the highest marks scored in the class shall not get ‘F’ Grade.</li>
-                    <li className="mb-2 text-sm">A student getting marks between 35% to 50% of the highest marks scored in the class may be awarded “F” grade depending upon the mean and variance for the subject.</li>
-                    <li className="mb-2 text-sm">The final grades of the semester will be displayed along with SGPA (Semester Grade Point Average) at the time of declaration of results.</li>
+                    <li className="mb-2 text-sm">Automated Paper Setting:
+                        Final exam papers are generated using automated software from a dedicated question bank created specifically for this purpose.</li>
+                    <li className="mb-2 text-sm">Uniform Evaluation:
+                        Final semester examinations are evaluated through Table Marking at the University, with question-wise assessments to ensure consistency.</li>
+                    <li className="mb-2 text-sm">External Review:
+                        To maintain fairness and equity, 10% of answer scripts will be randomly evaluated by external experts.</li>
+                    <li className="mb-2 text-sm">Student Access to Evaluated Papers:
+                        Evaluated answer books will be made available to students for review. Students must sign these papers to acknowledge their agreement with the evaluation.</li>
+                    <li className="mb-2 text-sm">Review Process:
+                        If a student disputes the evaluation, they can request a review by the Evaluation Review Board for a prescribed fee. Individual teachers cannot change marks.</li>
+                    <li className="mb-2 text-sm">Finality of Decisions:
+                        The decisions made by the Evaluation Review Board are final and binding.</li>
+                    <li className="mb-2 text-sm">Refund Policy:
+                        If the Evaluation Review Board recommends a mark increase exceeding 10% of the maximum for the subject, the review fee will be refunded to the student.</li>
+                    <li className="mb-2 text-sm">Transparency in Internal Evaluation:
+                        The final internal evaluations will be displayed by departments/institutes prior to submission to the University.</li>
+                    <li className="mb-2 text-sm">Grade Conversion:
+                        The total marks from both internal and external examinations will be submitted to the Controller of Examination Office for conversion into grades using a relative grading system.</li>
+                    <li className="mb-2 text-sm">Objective Grading:
+                        Grades will be assigned based on Normal Distribution, ensuring an absence of subjectivity.</li>
+                    <li className="mb-2 text-sm">Grade Criteria:<br />
+                        Students scoring below 35% of the highest marks in the class will receive an ‘F’ grade.<br />
+                        Students achieving over 50% of the highest marks will not receive an ‘F’ grade.<br />
+                        Students with scores between 35% and 50% of the highest marks may receive an ‘F’ grade based on the subject's mean and variance.</li>
+                    <li className="mb-2 text-sm">Grade Reporting:
+                        Final semester grades, along with the Semester Grade Point Average (SGPA), will be published at the time of results declaration.</li>
+                    {/* <li className="mb-2 text-sm">A student getting marks between 35% to 50% of the highest marks scored in the class may be awarded “F” grade depending upon the mean and variance for the subject.</li>
+                    <li className="mb-2 text-sm">The final grades of the semester will be displayed along with SGPA (Semester Grade Point Average) at the time of declaration of results.</li> */}
                 </ul>
-                <h3 className="text-2xl font-novaReg w-full">Prevention of unfair means</h3>
-                <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">Credit and Grade point system of evaluation system</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">Any student found to be using unfair means including talking to each other, getting any kind of help from outside, carrying any written material or mobile phone inside the examination hall etc, shall be awarded punishment varying from cancellation of one paper up to disqualification from any examination up to two years. For this purpose a special committee for prevention of unfair means (CPUM) is constituted.</p>
+                <h3 className="text-2xl font-novaReg w-full">Prevention of Unfair Means</h3>
+                <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">Credit and Grade Point System</h3>
+                <p className="text-lg font-novaReg mt-2.5 mb-5">The examination system at AKG University emphasizes integrity and fairness. Any student found using unfair means—such as communicating with others, seeking outside assistance, bringing written materials, or using a mobile phone in the examination hall—will face penalties ranging from cancellation of one exam paper to disqualification from all examinations for up to two years. To address these issues, a special committee for the Prevention of Unfair Means (CPUM) has been established.</p>
                 <ul className="pl-4 mb-6 list-decimal text-sm font-novaReg">
-                    <li>At the end of the semester, the students will be awarded a letter grade in each registered course for the semester depending on the total performance that consists of mid semester examinations, tests and quizzes(announced and surprise) , laboratory evaluation, tutorial work, seminars, home assignments and end semester examination.</li>
-                    <li>Letter grades will be awarded to the students as indicated below. Each letter grade indicates the level of performance in the course and grade point for the purpose of computing the SGPA, AGPA and CGPA.
+                    <li>At the end of each semester, students will receive a letter grade for each registered course based on their overall performance, which includes mid-semester exams, both announced and surprise tests, laboratory evaluations, tutorial assignments, seminars, home assignments, and the end-semester examination.</li>
+                    <li>Letter grades will be assigned as follows, with each grade representing the level of performance in the course and corresponding grade points used for calculating the Semester Grade Point Average (SGPA), Aggregate Grade Point Average (AGPA), and Cumulative Grade Point Average (CGPA).
                         <br />
                         <div className="mb-4 mt-2">
                             <table className="min-w-full my-4 bg-white rounded-lg">
@@ -164,24 +180,33 @@ const SystemOfEvaluation = () => {
                             </table>
                         </div>
                     </li>
-                    <li>E Grade: - This grade is awarded to the student who has attended 75% of the scheduled lectures of the subject but is unable to appear in the End Semester Exam. The student is required to appear in the final exam in the relevant semester when it is offered by paying examination fee only. The student can also choose to get the grade based on the marks obtained in various internal evaluations.</li>
-                    <li>F Grade: - This grade is awarded to the student who has attended 75% of the scheduled lectures of the subject but scores very low marks in the subject. In this case student has to appear in the examination again in the relevant semester by paying Examination fee only.</li>
+                    <li>E Grade: This grade is given to students who have attended at least 75% of the scheduled lectures for a subject but are unable to sit for the End Semester Exam. Such students must take the final exam during the relevant semester when it is next offered, paying only the examination fee. Alternatively, they may opt to receive their grade based on the marks earned in various internal evaluations.</li>
+                    <li>F Grade: This grade is assigned to students who have attended 75% of the scheduled lectures but have performed poorly in the subject. These students are required to retake the examination in the relevant semester by paying the examination fee.</li>
                     <li>I Grade: - This grade is awarded to the student who is unable to attain the attendance requirements of 75% of the scheduled lectures of the respective subject. In this case student has to register again for the course when it is offered in the relevant semester by paying the requisite paper wise fee.</li>
-                    <li>In rare cases, if the number of students opting for a paper is four or more, any paper may be offered in Summer Semester. A student can register for maximum of two Theories and one Practical paper during the summer semester.</li>
+                    <li>In exceptional cases, if four or more students choose a specific paper, it may be offered during the Summer Semester. Students can register for a maximum of two theory papers and one practical paper during the summer session.</li>
                 </ul>
-                <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">Cumulative Grade Point Average</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">CGPA is the weighted average of all the grades awarded to the student since his/her entry into the university up to and including latest semester. CGPA =; Ci = Credits for ith paper Gi = Grade points of the grade earned in ith paper</p>
+                <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">
+                    Cumulative Grade Point Average (CGPA)</h3>
+                <p className="text-lg font-novaReg mt-2.5 mb-5">The Cumulative Grade Point Average (CGPA) reflects the weighted average of all grades a student has received since starting at the university, including the most recent semester. To calculate it, each course's grade points are multiplied by its corresponding credits. Then, the total of these weighted grade points is divided by the total number of credits attempted. This process gives a comprehensive measure of a student's academic performance over time.</p>
                 <hr className="my-4" />
-                <h3 className="text-2xl font-novaReg w-full">Promotion to Next year and Condition for Year Back</h3>
+                <h3 className="text-2xl font-novaReg w-full">
+                    Promotion to the Next Year and Conditions for Year Back</h3>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Undergraduate Courses</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">A student will be allowed to continue in the program only if, at the end of first year he/she secures CGPA of 3.5 or more or earns 40% of the credits offered in first year, similarly at the end of 2nd year. He/she secures CGPA of greater than or equal to 4.50 or earns 40% of the credits offered during Ist and IInd year. Lateral Entry students are treated as second year students. Students who are unable to fulfill the minimum requirement of CGPA shall lose one year.</p>
-                <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Post-graduate Courses</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">In case of Post Graduation, minimum required CGPA at the end of first year is 4.50 or earning of 40% credits offered in first year. Students who are unable to fulfill this requirement shall lose one year.</p>
-                <h3 className="text-2xl font-novaReg w-full">Requirement for award of degree</h3>
+                <p className="text-lg font-novaReg mt-2.5 mb-5">A student must meet the following criteria to continue in the program:<br />
+                    End of First Year: The student must secure a CGPA of 3.5 or higher, or earn at least 40% of the credits offered during the first year.<br />
+                    End of Second Year: The student must achieve a CGPA of 4.50 or higher, or earn at least 40% of the credits offered during both the first and second years.
+                    Lateral entry students are considered as second-year students.<br />
+                    Students who do not meet the minimum CGPA requirement will lose one academic year.</p>
+                <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Post-Graduate Courses</h3>
+                <p className="text-lg font-novaReg mt-2.5 mb-5">For post-graduate students, the following criteria apply:<br />
+                    End of First Year: The minimum required CGPA is 4.50, or the student must earn at least 40% of the credits offered during the first year.<br />
+                    Failure to meet this requirement will result in the loss of one academic year.<br /></p>
+                <h3 className="text-2xl font-novaReg w-full">
+                    Requirements for Award of Degree</h3>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Undergraduate Courses</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">A student is deemed to have completed the requirements for a program and is eligible for the award of degree if, she/he has earned a CGPA of greater than or equal to 4.50 for UG programs.</p>
+                <p className="text-lg font-novaReg mt-2.5 mb-5">To be eligible for the award of an undergraduate degree, a student must have earned a CGPA of 4.50 or higher.</p>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Post-graduate Courses</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">The minimum CGPA required for the award of all Post-graduate degrees is 5.0.</p>
+                <p className="text-lg font-novaReg mt-2.5 mb-5">The minimum CGPA required for the award of all post-graduate degrees is 5.0.</p>
             </div>
         </>
     );

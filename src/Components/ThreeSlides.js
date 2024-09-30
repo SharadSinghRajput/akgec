@@ -34,7 +34,7 @@ const ThreeSlides = ({slides}) => {
                                         <span className='w-5 h-2.5 bg-gray-800 absolute -right-2.5 top-0 z-0 rounded-t-xl'/>
                                     </div>
                                 </div>
-                                <p className="mt-4 text-left leading-4 font-novaReg">{slide.description}</p>
+                                <p className="mt-4 text-left leading-5 font-novaLight">{slide.description}</p>
                             </div>
                         </SwiperSlide>
                     ))}

@@ -73,13 +73,13 @@ const Research = () => {
                 <div className="flex flex-wrap flex-row -mx-3">
                   <div className="px-3 border-r-white border-r-2">
                     <div className="flex flex-col w-32">
-                      <h2 className="text-5xl text-white mb-2 font-novaBold">150</h2>
+                      <h2 className="text-5xl text-white mb-2 font-novaBold">120</h2>
                       <span className="font-novaBold text-[#f7a600] uppercase">Startups</span>
                     </div>
                   </div>
                   <div className="pl-12 pr-3">
                     <div className="flex flex-col ">
-                      <h2 className="text-5xl text-white mb-2 font-novaBold">2400+</h2>
+                      <h2 className="text-5xl text-white mb-2 font-novaBold">2300+</h2>
                       <span className="font-novaBold text-[#f7a600] uppercase">Patents</span>
                     </div>
                   </div>
@@ -98,19 +98,19 @@ const Research = () => {
                 <div className="flex flex-wrap w-full">
                   <div className="col-span-12 w-full px-3">
                     <div className="flex flex-col w-full mb-4">
-                      <h3 className="text-[42px] text-white mb-2 w-full font-novaBold">520</h3>
+                      <h3 className="text-[42px] text-white mb-2 w-full font-novaBold">420</h3>
                       <span className="text-[#f7a600] font-novaBold leading-none uppercase w-full">Million INR<br /> received as grants in<br /> last 5 years</span>
                     </div>
                   </div>
                   <div className="w-[55%] px-4 border-r-2">
                     <div className="flex flex-col pr-4 w-full">
-                      <h3 className="text-[42px] text-white font-novaBold mb-2 w-full">10000+</h3>
+                      <h3 className="text-[42px] text-white font-novaBold mb-2 w-full">9000+</h3>
                       <span className="text-[#f7a600] font-novaBold leading-none text-sm uppercase w-full">Published in Referred Journals</span>
                     </div>
                   </div>
                   <div className="w-[45%] pl-6">
                     <div className="flex flex-col">
-                      <h3 className="text-[42px] text-white mb-2 w-full font-novaBold">60</h3>
+                      <h3 className="text-[42px] text-white mb-2 w-full font-novaBold">70</h3>
                       <span className="text-[#f7a600] font-novaBold leading-none uppercase w-full">Center of Research</span>
                     </div>
                   </div>
@@ -128,7 +128,7 @@ const Research = () => {
         <div className="max-w-7xl mx-auto h-full flex gap-10">
           <div className="w-[35%] relative bg-blue-600 py-20 flex flex-col gap-5 text-white px-5">
             <h2 className="text-4xl font-novaBold">About Research</h2>
-            <p className="leading-5 font-novaLight">The research landscape at AKGEC University is extensive and impactful. Scholars at the university engage in research across diverse fields, striving to enhance human knowledge through rigorous inquiry, innovation, and insight. AKGEC University is acknowledged by the Department of Scientific and Industrial Research (DSIR) for its contributions to scientific advancement.</p>
+            <p className="leading-5 font-novaLight ">The research landscape at AKGEC University is extensive and impactful. Scholars at the university engage in research across diverse fields, striving to enhance human knowledge through rigorous inquiry, innovation, and insight. AKGEC University is acknowledged by the Department of Scientific and Industrial Research (DSIR) for its contributions to scientific advancement.</p>
             <a className="w-fit py-2.5 px-6 border rounded-xl bg-[#f7a600] border-none text-white text-sm font-novaBold uppercase" href="#">Read More</a>
           </div>
           <div className="w-[65%] flex items-center gap-20">
@@ -171,7 +171,7 @@ const Research = () => {
         <div className="max-w-5xl mx-auto px-4 py-12">
           <h1 className="text-4xl font-novaBold text-center mb-6">Know About Us</h1>
           <div className="space-y-6 text-center">
-            <p className="leading-5 font-novaReg">
+            <p className="leading-5 font-novaLight text-lg">
               AKG University research is strengthened by additional 52 Crore of funded research by the government bodies and corporates.
               The research is conceded at both in the department itself and at University Centre for Research & Development and at the 60 Research
               centers within the campus. AKG University Research fraternity includes teaching staff members, scholars, postgraduate and
@@ -179,7 +179,7 @@ const Research = () => {
               joint research and guidance. University is also focusing on the innovation and patents. The innovation and entrepreneurship activities is
               carried out at AKG University Technology Business Incubator.
             </p>
-            <p className="leading-5 font-novaReg">
+            <p className="leading-5 font-novaLight text-lg">
               Technology Business Incubator is an innovative platform offering mentorship and financial support to passionate individuals aspiring to
               be entrepreneurs. TBI is accelerating the development of young entrepreneurial start-ups from early to mid-stage entrepreneurial
               development. AKG University filed 2400+ Patents, which is second highest number of patent filed by any institution/organization
@@ -204,7 +204,7 @@ const Research = () => {
           />
           <div className="p-4 mb-10">
             <h2 className="text-xl font-novaBold mb-2">AKG University students invent 'King Belt' for women's safety</h2>
-            <p className="leading-5 font-novaReg">
+            <p className="leading-5 font-novaLight">
               At a time when rape cases are increasing at an alarming rate, a group of students from AKG
               University have invented a device for women's safety. The students have invented.
             </p>
@@ -220,7 +220,7 @@ const Research = () => {
           />
           <div className="p-4 mb-10">
             <h2 className="text-xl font-novaBold mb-2">AKG University student invents app-based, battery-operated</h2>
-            <p className="leading-5">
+            <p className="leading-5 font-novaLight">
               A university student in AKG invented an application-based battery-operated for the
               students living in hostel to travel to their classes.Spot can be traced through.
             </p>
