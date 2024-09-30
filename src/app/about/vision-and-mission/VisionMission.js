@@ -6,9 +6,7 @@ export default function VisionAndMission() {
                     <div className="flex w-full h-full flex-col justify-center items-start p-5">
                         <h2 className="text-3xl font-normal mb-4">Vision</h2>
                         <p className="text-sm font-light text-gray-600 max-w-[350px] ">
-                            To be globally recognized as a Centre of Excellence for Research, Innovation,
-                            Entrepreneurship and disseminating knowledge by providing inspirational learning
-                            to produce professional leaders for serving the society.
+                        To achieve global recognition as a Centre of Excellence in Research, Innovation, and Entrepreneurship, committed to imparting knowledge and inspiring learning that nurtures professional leaders dedicated to serving society.
                         </p>
                     </div>
                 </div>
