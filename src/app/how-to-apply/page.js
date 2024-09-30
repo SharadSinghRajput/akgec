@@ -21,7 +21,7 @@ const BreadCrumb = [
 export default function Home() {
   return (
     <>
-      <Header title={"Hostel"} />
+      <Header title={"How To Apply"} gradient={"bg-gradient-to-r from-gray-900 to-transparent"} />
       <div className="max-w-[1400px] w-full mx-auto pt-16 p-5">
         <Breadcrumb data={BreadCrumb} />
         <div className="flex flex-col lg:flex-row flex-1 gap-5 mt-5">

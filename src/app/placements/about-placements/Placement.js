@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
-import { Button } from "@/Components/Button";
+import Button  from "@/Components/Button";
 
 
 const topslides = [
@@ -263,6 +263,7 @@ const Placement = () => {
   return (
     <>
       <div className="relative w-full h-[95vh] max-md:h-[80vh] max-sm:h-[50vh] overflow-hidden">
+        {topslides ? 
         <AnimatePresence initial={false}>
           {topslides[currentTopSlide] && (
             <motion.div
@@ -284,7 +285,8 @@ const Placement = () => {
             </motion.div>
           )}
         </AnimatePresence>
-        <Button
+        : null}
+        <button
           variant="outline"
           size="icon"
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white opacity-50 rounded-full hover:bg-opacity-75 p-4 w-4 h-4 lg:w-12 lg:h-12 max-md:w-6 max-md:h-6 "
@@ -304,8 +306,8 @@ const Placement = () => {
             <path d="M6 8L2 12L6 16" />
             <path d="M2 12H22" />
           </svg>
-        </Button>
-        <Button
+        </button>
+        <button
           variant="outline"
           size="icon"
           className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white opacity-50 rounded-full hover:bg-opacity-75 p-4 w-4 h-4 lg:w-12 lg:h-12 max-md:w-6 max-md:h-6"
@@ -325,7 +327,7 @@ const Placement = () => {
             <path d="M18 8L22 12L18 16" />
             <path d="M2 12H22" />
           </svg>
-        </Button>
+        </button>
       </div>
 
       <section className="pt-16 h-fit">
