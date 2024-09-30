@@ -3,8 +3,8 @@ import React from 'react'
 const Migration = () => {
   return (
     <div className="">
-      <h1 className="text-[42px] leading-none max-w-md font-novaReg mb-4">AKGEC University Migration Policy</h1>
-      <ul className="list-disc ml-6 space-y-2">
+      <h1 className="text-2xl leading-none max-w-md font-novaBold mb-4">AKGEC University Migration Policy</h1>
+      <ul className="list-disc ml-6 space-y-2 font-novaReg text-sm">
         <li>There will be no migration in Postgraduate courses, because of the limited period of degree.</li>
         <li>In the case of undergraduate courses, migration will be restricted to the 3rd semester. After that, no migration will be allowed.</li>
         <li>Migration can be done only if the number of deficient courses are not more than 3 subjects.</li>

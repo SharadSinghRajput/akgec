@@ -16,7 +16,8 @@ const SideBar = ({ title, LinkList }) => {
                         />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-novaReg pl-6 p-4 max-lg:p-5">{title}</h2>
+                        <h2 className="text-2xl font-novaReg pl-6 p-4 max-lg:p-5">Quick Link</h2>
+                        {/* <h2 className="text-2xl font-novaReg pl-6 p-4 max-lg:p-5">{title}</h2> */}
                         <div>
                             {LinkList?.map((item, index) => (
                                 <button
