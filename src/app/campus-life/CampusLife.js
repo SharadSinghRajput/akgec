@@ -178,7 +178,7 @@ const CampusLife = () => {
                             </div>
                             <button className="py-2.5 px-6 rounded-xl bg-yellow-500 text-black font-novaBold tracking-wider text-sm hover:bg-orange-600 flex items-center gap-2">
                                 {slides[currentSlide].buttonText}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play"><circle cx="12" cy="12" r="10" /><polygon points="10 8 16 12 10 16 10 8" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-play"><circle cx="12" cy="12" r="10" /><polygon points="10 8 16 12 10 16 10 8" /></svg>
                             </button>
                         </div>
 

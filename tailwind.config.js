@@ -48,6 +48,12 @@ module.exports = {
         'BG17': "url('/image/recognitions-and-approvals/bottom-banner-bg.jpg')",
         'BG18': "url('/image/scholarship/bottom-banner-bg.jpg')",
         'BG19': "url('/image/awards-and-ranking/banner-bg.jpg')",
+        'BG20': "url('/image/Pages/545.jpg')",
+        'BG21': "url('/image/Pages/546.jpg')",
+        'BG22': "url('/image/Pages/547.jpg')",
+        'BG23': "url('/image/Pages/548.jpg')",
+        'BG24': "url('/image/Pages/549.jpg')",
+        'BG25': "url('/image/Pages/550.jpg')",
       },
       boxShadow: {
         'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',
