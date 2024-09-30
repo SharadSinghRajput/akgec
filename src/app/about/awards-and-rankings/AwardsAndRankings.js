@@ -96,7 +96,7 @@ export default () => {
                                                         QS I-Gauge Indian Ranking
                                                     </span>
                                                 </div>
-                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-44 object-cover rounded-md mb-8 -mt-3" />
+                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-28 object-cover rounded-md mb-8 -mt-3" />
                                                 <h4 className="text-lg font-bold text-black mb-4">{item.title}</h4>
                                                 <a href="#" className="text-sm hover:text-blue-700 mt-1">{item.url}</a>
                                             </div>
@@ -129,7 +129,7 @@ export default () => {
                                                         QS Asia Rankings 2024
                                                     </span>
                                                 </div>
-                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-44 object-cover rounded-md mb-8 -mt-3" />
+                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-28 object-cover rounded-md mb-8 -mt-3" />
                                                 <h4 className="text-lg font-bold text-black mb-4">{item.title}</h4>
                                                 <a href="#" className="text-sm hover:text-blue-700 mt-1">{item.url}</a>
                                             </div>
@@ -162,7 +162,7 @@ export default () => {
                                                         QS Asia Rankings 2024
                                                     </span>
                                                 </div>
-                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-44 object-cover rounded-md mb-8 -mt-3" />
+                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-28 object-cover rounded-md mb-8 -mt-3" />
                                                 <h4 className="text-lg font-bold text-black mb-4">{item.title}</h4>
                                                 <a href="#" className="text-sm hover:text-blue-700 mt-1">{item.url}</a>
                                             </div>
@@ -222,7 +222,7 @@ export default () => {
                                                         QS Asia Rankings 2024
                                                     </span>
                                                 </div>
-                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-44 object-cover rounded-md mb-8 -mt-3" />
+                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-28 object-cover rounded-md mb-8 -mt-3" />
                                                 <h4 className="text-lg font-bold text-black mb-4">{item.title}</h4>
                                                 <a href="#" className="text-sm hover:text-blue-700 mt-1">{item.url}</a>
                                             </div>
@@ -293,7 +293,7 @@ export default () => {
                                                         QS Asia Rankings 2024
                                                     </span>
                                                 </div>
-                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-44 object-cover rounded-md mb-8 -mt-3" />
+                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-28 object-cover rounded-md mb-8 -mt-3" />
                                                 <h4 className="text-lg font-bold text-black mb-4">{item.title}</h4>
                                                 <a href="#" className="text-sm hover:text-blue-700 mt-1">{item.url}</a>
                                             </div>
@@ -327,7 +327,7 @@ export default () => {
                                                         QS Asia Rankings 2024
                                                     </span>
                                                 </div>
-                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-44 object-cover rounded-md mb-8 -mt-3" />
+                                                <img src={item.img} alt={`Slide ${index + 1}`} className="w-28 object-cover rounded-md mb-8 -mt-3" />
                                                 <h4 className="text-lg font-bold text-black mb-4">{item.title}</h4>
                                                 <a href="#" className="text-sm hover:text-blue-700 mt-1">{item.url}</a>
                                             </div>
