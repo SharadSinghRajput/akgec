@@ -102,7 +102,7 @@ export const Governance = () => {
                 <div>
                     <h3 className="text-4xl font-novaReg mb-2.5">Governance</h3>
                     <p className="text-sm font-novaReg mb-4">
-                        The AKG University Act has conferred specific powers & functions on various bodies of AKG University. These University Bodies play a crucial and effective role in framing the policies, maintaining educational standards and character as well as financial probity and judicious use of resources. These bodies also give policy directions, monitor their implementation and take corrective measures wherever necessary. The University has the following bodies for governance:
+                    The AKG University Act grants distinct powers and responsibilities to various governing bodies within the university. These entities play a vital role in shaping policies, upholding academic standards, and ensuring both the integrity of financial management and the responsible use of resources. They also provide strategic direction, oversee policy implementation, and intervene with corrective actions when required. The University's governance is supported by the following bodies:
                     </p>
                     <br />
                     <div className="mb-6">
@@ -170,7 +170,7 @@ export const Governance = () => {
                             {openIndex === 1 && (
                                 <div className="content py-4 px-5">
                                     <div className='block overflow-x-auto'>
-                                        <p className='text-sm font-novaReg mb-4'>The Board of Management of AKG University is constituted herewith by the virtue of changes in senior positions for academic session 2022-2024 as given below:</p>
+                                        <p className='text-sm font-novaReg mb-4'>The Board of Management of AKG University has been reformed due to adjustments in senior leadership positions for the 2022-2024 academic session, as outlined below:</p>
                                         <table className="w-full ">
                                             <thead>
                                                 <tr className='text-white'>
@@ -216,7 +216,7 @@ export const Governance = () => {
                             {openIndex === 2 && (
                                 <div className="content py-4 px-5">
                                     <div className='block overflow-x-auto'>
-                                        <p className='text-sm font-novaReg mb-4'>The Board of Management of AKG University is constituted herewith by the virtue of changes in senior positions for academic session 2022-2024 as given below:</p>
+                                        <p className='text-sm font-novaReg mb-4'>The Academic Council of AKG University has been newly formed in light of changes in senior leadership positions for the 2022-2024 academic session. The updated structure is provided below:</p>
                                         <table className="w-full ">
                                             <thead>
                                                 <tr className='text-white'>
@@ -262,7 +262,7 @@ export const Governance = () => {
                             {openIndex === 3 && (
                                 <div className="content py-4 px-5">
                                     <div className='block overflow-x-auto'>
-                                        <p className='text-sm font-novaReg mb-4'>The Board of Management of AKG University is constituted herewith by the virtue of changes in senior positions for academic session 2022-2024 as given below:</p>
+                                        <p className='text-sm font-novaReg mb-4'>The Corporate Patronage of AKG University has been restructured in light of recent changes in senior leadership for the 2022-2024 academic session, as detailed below:</p>
                                         <table className="w-full ">
                                             <thead>
                                                 <tr className='text-white'>

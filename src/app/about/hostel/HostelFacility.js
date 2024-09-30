@@ -14,7 +14,7 @@ const facilities = [
 export default function HostelFacility() {
     return (
 
-        <div className="bg-white">
+        <div className="">
             <div className="">
                 <h1 class="text-2xl font-normal mb-4 ">Hostels – Home Away from Home</h1>
                 <p class="text-gray-700 mb-6 text-sm text-justify">
@@ -28,7 +28,7 @@ export default function HostelFacility() {
                 <h2 className="text-2xl font-normal text-center mb-8">Facilities at Hostels</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {facilities?.map((facility) => (
-                        <div key={facility.id} className="flex flex-col text-center text-slate-700 shadow-lg shadow-gray-100 border border-gray-200 min-h-36
+                        <div key={facility.id} className="flex bg-white flex-col text-center text-slate-700 shadow-lg shadow-gray-100 border border-gray-200 min-h-36
                     justify-center items-center
                     ">
                             <Image src={facility.icon} alt={facility.name} width={50} height={50} className="mb-4" />
