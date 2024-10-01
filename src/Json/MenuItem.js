@@ -24,10 +24,10 @@ export const About = {
                 name: 'LeaderShip',
                 url: '/about/leadership'
             },
-            {
-                name: 'Management',
-                url: '/about/management'
-            },
+            // {
+            //     name: 'Management',
+            //     url: '/about/management'
+            // },
             {
                 name: 'Core Value',
                 url: '/about/core-values'
@@ -41,13 +41,25 @@ export const About = {
                 url: '/about/awards-and-rankings'
             },
             {
-                name: 'Approval Letter',
-                url: '/about/approval-letter'
+                name: 'Institutional Social Responsibility',
+                url: '/'
             },
             {
-                name: 'AKG Edge',
-                url: '/about/akg-edge'
+                name: 'University Handbooks',
+                url: '/'
             },
+            {
+                name: 'University Calendar ',
+                url: '/'
+            },
+            // {
+            //     name: 'Approval Letter',
+            //     url: '/about/approval-letter'
+            // },
+            // {
+            //     name: 'AKG Edge',
+            //     url: '/about/akg-edge'
+            // },
         ],
         "Related Links": [
             {
@@ -66,10 +78,10 @@ export const About = {
                 name: 'Governance',
                 url: '/about/governance'
             },
-            {
-                name: 'Functionaries',
-                url: '/about/important-functionaries'
-            },
+            // {
+            //     name: 'Functionaries',
+            //     url: '/about/important-functionaries'
+            // },
             {
                 name: 'Hostel Facility',
                 url: '/about/hostel'
@@ -82,10 +94,6 @@ export const About = {
                 name: 'How to Reach Us?',
                 url: '/about/how-to-reach-us'
             },
-            {
-                name: 'Institutional Social Responsibility',
-                url: '/'
-            },
         ]
     }
 }
@@ -93,23 +101,73 @@ export const Academics = {
     name: 'Academics',
     links: '/',
     sublinks: {
+        "Schools":[
+            {
+                name: "AKGU School of Engineering and Technology",
+                url: "/academics/school-of-engineering-and-technology"
+            },
+            {
+                name: "AKGU School of Business Studies",
+                url: "/academics/school-of-business-studies"
+            },
+            {
+                name: "AKGU School of Humanities & Social Sciences",
+                url: "/academics/school-of-humanities-and-social-sciences"
+            },
+        ],
         "Academics": [
             {
-                name: 'Academics Overview',
-                url: '/academics'
+                name: 'Exam Results',
+                url: '/'
             },
             {
-                name: 'Institutes',
-                url: '/academics/institutes'
+                name: 'Examination Schedule',
+                url: '/'
             },
             {
-                name: 'Program (Courses)',
-                url: '/admissions/course-fee'
+                name: 'Examination Annual Report',
+                url: '/'
             },
+            // {
+            //     name: 'Academics Overview',
+            //     url: '/academics'
+            // },
             {
                 name: 'Academic Calendar',
                 url: '/academics/academic-calendar'
             },
+            {
+                name: 'System of Evaluation',
+                url: '/academics/system-of-evaluation'
+            },
+            {
+                name: 'Degree Verification',
+                url: '/'
+            },
+            {
+                name: 'National Academic Depository(NAD)',
+                url: '/'
+            },
+            {
+                name: 'Academic Bank of Credits (ABC)',
+                url: '/'
+            },
+            {
+                name: 'Curricula Feedback',
+                url: '/'
+            },
+            {
+                name: 'University Brochure',
+                url: '/'
+            },
+            // {
+            //     name: 'Institutes',
+            //     url: '/'
+            // },
+            // {
+            //     name: 'Program (Courses)',
+            //     url: '/admissions/course-fee'
+            // },
             {
                 name: 'List of Holidays',
                 url: '/academics/list-of-holidays'
@@ -117,10 +175,6 @@ export const Academics = {
             {
                 name: 'Teaching Practices',
                 url: '/academics/teaching-practices'
-            },
-            {
-                name: 'System of Evaluation',
-                url: '/academics/system-of-evaluation'
             },
             {
                 name: 'Professional Bodies',
@@ -252,39 +306,39 @@ export const Admissions = {
     name: 'Admissions',
     links: '/',
     sublinks: {
-        "Job Oriented Programs": [
-            {
-                name: 'After 12th',
-                url: '/admissions/after-12th'
-            },
-            {
-                name: 'After Graduation',
-                url: '/admissions/after-graduation'
-            },
-            {
-                name: 'Specialized Programs',
-                url: '/admissions/specialized-programs'
-            },
-            {
-                name: 'Integrated Programs',
-                url: '/admissions/integrated-programs'
-            },
-            {
-                name: 'After Post Graduation',
-                url: '/admissions/after-post-graduation'
-            },
-            {
-                name: 'AKG Advantages',
-                url: '/admissions/akg-advantages'
-            },
-        ],
+        // "Job Oriented Programs": [
+        //     {
+        //         name: 'After 12th',
+        //         url: '/admissions/after-12th'
+        //     },
+        //     {
+        //         name: 'After Graduation',
+        //         url: '/admissions/after-graduation'
+        //     },
+        //     {
+        //         name: 'Specialized Programs',
+        //         url: '/admissions/specialized-programs'
+        //     },
+        //     {
+        //         name: 'Integrated Programs',
+        //         url: '/admissions/integrated-programs'
+        //     },
+        //     {
+        //         name: 'After Post Graduation',
+        //         url: '/admissions/after-post-graduation'
+        //     },
+        //     {
+        //         name: 'AKG Advantages',
+        //         url: '/admissions/akg-advantages'
+        //     },
+        // ],
         "Admission": [
             {
                 name: 'Overview',
                 url: '/admissions'
             },
             {
-                name: 'Course Fee',
+                name: 'Programme Fee',
                 url: '/admissions/course-fee'
             },
             {
@@ -296,16 +350,40 @@ export const Admissions = {
                 url: '/admissions/admission-criteria'
             },
             {
-                name: 'AKG Scholarship',
+                name: 'AKGU Scholarship',
                 url: '/admissions/scholarship'
-            },
-            {
-                name: 'Education Loan',
-                url: '/admissions/education-loan'
             },
             {
                 name: 'Hostel Fee',
                 url: '/about/hostel'
+            },
+            {
+                name: 'Transportation Fee',
+                url: '/'
+            },
+            {
+                name: 'Education Loan Assistance',
+                url: '/admissions/education-loan'
+            },
+            {
+                name: 'Payment Procedure',
+                url: '/'
+            },
+            {
+                name: 'Refund Policy',
+                url: '/admissions/refund-policy'
+            },
+            // {
+            //     name: 'Visit the Campus',
+            //     url: '/contact'
+            // },
+            {
+                name: 'Campus Virtual Tour',
+                url: '/'
+            },
+            {
+                name: 'Migration Policy',
+                url: '/admissions/migration'
             },
             {
                 name: 'National Admissions',
@@ -316,23 +394,7 @@ export const Admissions = {
                 url: '/'
             },
             {
-                name: 'Admission Offices',
-                url: '/'
-            },
-            {
-                name: 'Visit the Campus',
-                url: '/admissions/contact'
-            },
-            {
-                name: 'Migration Policy',
-                url: '/admissions/migration'
-            },
-            {
-                name: 'Refund Policy',
-                url: '/admisions/refund-policy'
-            },
-            {
-                name: 'Orientation Schedule 2024',
+                name: 'FAQs',
                 url: '/'
             },
         ]
@@ -347,12 +409,40 @@ export const CampusLife = {
             url: "/campus-life"
         },
         {
-            name: "Convocations",
+            name: "Infrastructure",
             url: "/"
         },
         {
-            name: "Live-in-Concerts",
+            name: "Academic Facilities",
             url: "/"
+        },
+        {
+            name: "Campus Facilities",
+            url: "/"
+        },
+        {
+            name: "Transportation",
+            url: "/"
+        },
+        {
+            name: "Residential Facilities",
+            url: "/"
+        },
+        {
+            name: "Library",
+            url: "/"
+        },
+        {
+            name: "Auditorium",
+            url: "/"
+        },
+        {
+            name: "Student Welfare",
+            url: "/"
+        },
+        {
+            name: "Convocations",
+            url: "/campus-life/convocations"
         },
         {
             name: "Tech Invent & Events",
@@ -360,50 +450,6 @@ export const CampusLife = {
         },
         {
             name: "Cultural & Cosmopolitan",
-            url: "/"
-        },
-        {
-            name: "Evoke & Youth Summits",
-            url: "/"
-        },
-        {
-            name: "Glorious Stars at AKG",
-            url: "/"
-        },
-        {
-            name: "Sports & Adventure",
-            url: "/"
-        },
-        {
-            name: "Latest News",
-            url: "/"
-        },
-        {
-            name: "Bollywood Celebrities",
-            url: "/"
-        },
-        {
-            name: "Prominent Visitors",
-            url: "/"
-        },
-        {
-            name: "AKG-RHYTHMS International Folklore Festival",
-            url: "/"
-        },
-        {
-            name: "National & International Conferences",
-            url: "/"
-        },
-        {
-            name: "International Faculties",
-            url: "/"
-        },
-        {
-            name: "Notable Alumni",
-            url: "/"
-        },
-        {
-            name: "Canadian Alumni Chapter",
             url: "/"
         },
     ]
@@ -418,49 +464,65 @@ export const Placements = {
                 url: "/placements"
             },
             {
-                name: "Placement Tracker",
-                url: "/placements/placement-tracker"
-            },
-            {
                 name: "Department of Career Planning & Development",
                 url: "/"
             },
             {
-                name: "Joint Placement Programme",
+                name: "Top Placement",
                 url: "/"
             },
             {
-                name: "Best Engineering Placement",
-                url: "/placements/placement-engineering"
-            },
-            {
-                name: "Best Management Placement",
+                name: "Placement Highlights",
                 url: "/"
             },
             {
-                name: "Best Hotel Management Placement",
-                url: "/"
-            },
-            {
-                name: "Best Pharma Sciences Placement",
-                url: "/"
-            },
-            {
-                name: "Best Physics Placement",
-                url: "/"
-            },
-            {
-                name: "Best TCS Placement",
-                url: "/"
-            },
-            {
-                name: "Placement Day",
+                name: "Placement Policy",
                 url: "/"
             },
             {
                 name: "Our Leading Recruiters",
                 url: "/"
-            }
+            },
+            {
+                name: "Contact Placement Cell",
+                url: "/"
+            },
+            // {
+            //     name: "Placement Tracker",
+            //     url: "/placements/placement-tracker"
+            // },
+            // {
+            //     name: "Joint Placement Programme",
+            //     url: "/"
+            // },
+            // {
+            //     name: "Best Engineering Placement",
+            //     url: "/placements/placement-engineering"
+            // },
+            // {
+            //     name: "Best Management Placement",
+            //     url: "/"
+            // },
+            // {
+            //     name: "Best Hotel Management Placement",
+            //     url: "/"
+            // },
+            // {
+            //     name: "Best Pharma Sciences Placement",
+            //     url: "/"
+            // },
+            // {
+            //     name: "Best Physics Placement",
+            //     url: "/"
+            // },
+            // {
+            //     name: "Best TCS Placement",
+            //     url: "/"
+            // },
+            // {
+            //     name: "Placement Day",
+            //     url: "/"
+            // },
         ]
     }
 }
@@ -470,11 +532,11 @@ export const ResearchInnovation = {
     sublinks: {
         "Research Intensive University":[
             {
-                name:"Research",
+                name:"Research Overview",
                 url:"/research"
             },
             {
-                name:"Patents",
+                name:"Patent & Publications",
                 url:"/"
             },
             {
@@ -489,10 +551,10 @@ export const ResearchInnovation = {
                 name:"Visiting Scholars",
                 url:"/"
             },
-            {
-                name:"AKG Global Management Review",
-                url:"/"
-            }
+            // {
+            //     name:"AKG Global Management Review",
+            //     url:"/"
+            // }
         ],
         "Entrepreneurship Cells":[
             {

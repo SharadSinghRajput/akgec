@@ -56,6 +56,7 @@ module.exports = {
         'BG24': "url('/image/Pages/549.jpg')",
         'BG25': "url('/image/Pages/550.jpg')",
         'BG26': "url('/image/placements/middle-banner.jpg')",
+        'BG27': "url('/image/campus-life/convocation-banner.jpg')",
         
         
       },
