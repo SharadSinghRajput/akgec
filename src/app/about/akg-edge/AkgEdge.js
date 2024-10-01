@@ -5,38 +5,43 @@ import { GraduationCap, Briefcase, Globe, DollarSign } from "lucide-react"
 const AkgEdge = () => {
   return (
     <>
-      <section className='relative bg-Edge bg-cover h-[75vh] w-full text-white'>
-        <div className='absolute inset-0 bg-edgeGradient opacity-75'></div>
-        <div className='absolute z-20 bottom-10 left-1/2 -translate-x-1/2 w-[72%] max-xl:w-[90%] flex flex-col justify-between min-h-96'>
-          <div className='max-w-xl'>
-            <h2 className='text-4xl max-lg:text-3xl max-md:text-2xl  font-novaReg leading-10'><span className='font-novaSemi'>AKGEC:</span> Innovating for a Brighter Tomorrow</h2>
-            <p className='text-xs mt-4 leading-5'>More than just a center for higher education, AKGEC stands as a beacon of academic innovation, cultural richness, and a community dedicated to transforming the future through contemporary ideas and technology-driven solutions.</p>
-          </div>
-          <div className=''>
-            <ul className='flex flex-wrap justify-center gap-8 max-lg:gap-4 text-xs max-lg:text-[9px]'>
-              <li className='flex items-center gap-2'>
-                <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-academic-excellence.png" alt="academic logo" />
-                <p>Educational Mastery</p>
-              </li>
-              <li className='flex items-center gap-2'>
-                <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-industry-patronage.png" alt="industry logo" />
-                <p>Industry Collaboration</p>
-              </li>
-              <li className='flex items-center gap-2'>
-                <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-blobal-exposure.png" alt="global logo" />
-                <p>International Outlook</p>
-              </li>
-              <li className='flex items-center gap-2'>
-                <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-based-careers.png" alt="career logo" />
-                <p>Flexible Career Paths</p>
-              </li>
-              <li className='flex items-center gap-2'>
-                <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-return-on-investment.png" alt="investment logo" />
-                <p>Value for Investment</p>
-              </li>
-            </ul>
-          </div>
+      <section className='relative bg-cover w-full bg-gray-700 text-white'>
+        <div className='absolute inset-0 bg-Edge bg-cover bg-center  w-[50%] max-lg:w-full  opacity-75'></div>
+        <div className='absolute inset-0 max-lg:w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-[50%]  opacity-75'></div>
+        
+        <div className='max-w-6xl pt-56 mx-auto relative z-10'>
+          <div className='grid grid-cols-2 gap-10 pb-10 max-lg:pb-0 max-lg:grid-cols-1'>
+            <div className='pb-10 px-5 max-lg:pb-0'>
+              <h2 className='text-4xl max-lg:text-3xl max-md:text-2xl  font-novaReg leading-10'><span className='font-novaSemi'>AKGEC:</span> Innovating for a Brighter Tomorrow</h2>
+              <p className='text-xs mt-4 leading-5'>More than just a center for higher education, AKGEC stands as a beacon of academic innovation, cultural richness, and a community dedicated to transforming the future through contemporary ideas and technology-driven solutions.</p>
+              <ul className='grid grid-cols-2 gap-5 mt-16'>
+                <li className='flex items-center gap-2'>
+                  <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-academic-excellence.png" alt="academic logo" />
+                  <p>Educational Mastery</p>
+                </li>
+                <li className='flex items-center gap-2'>
+                  <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-industry-patronage.png" alt="industry logo" />
+                  <p>Industry Collaboration</p>
+                </li>
+                <li className='flex items-center gap-2'>
+                  <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-blobal-exposure.png" alt="global logo" />
+                  <p>International Outlook</p>
+                </li>
+                <li className='flex items-center gap-2'>
+                  <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-based-careers.png" alt="career logo" />
+                  <p>Flexible Career Paths</p>
+                </li>
+                <li className='flex items-center gap-2'>
+                  <img className='w-8 h-8 max-lg:w-5 max-lg:h-5' src="/image/icons/icon-return-on-investment.png" alt="investment logo" />
+                  <p>Value for Investment</p>
+                </li>
+              </ul>
+            </div>
+            <div className='relative bg-Edge bg-cover bg-center max-lg:rounded-none flex justify-center items-center rounded-lg overflow-hidden max-lg:min-h-[300px]'> 
+              <button className='w-14 h-14 rounded-full relative z-10 flex justify-center items-center bg-white/40 text-white'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"/></svg></button>
+            </div>
 
+          </div>
         </div>
 
       </section>
