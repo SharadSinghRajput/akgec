@@ -25,16 +25,12 @@ export const About = {
                 url: '/about/leadership'
             },
             {
+                name: 'Management',
+                url: '/about/management'
+            },
+            {
                 name: 'Core Value',
                 url: '/about/core-values'
-            },
-            {
-                name: 'Functionaries',
-                url: '/about/important-functionaries'
-            },
-            {
-                name: 'Approval Letter',
-                url: '/about/approval-letter'
             },
             {
                 name: 'Recognition & Approvals',
@@ -45,8 +41,8 @@ export const About = {
                 url: '/about/awards-and-rankings'
             },
             {
-                name: 'Institutional Social Responsibility',
-                url: '/'
+                name: 'Approval Letter',
+                url: '/about/approval-letter'
             },
             {
                 name: 'AKG Edge',
@@ -56,7 +52,7 @@ export const About = {
         "Related Links": [
             {
                 name: 'Institutes & Departments',
-                url: '/'
+                url: '/academics/institutes'
             },
             {
                 name: 'Admissions',
@@ -71,8 +67,8 @@ export const About = {
                 url: '/about/governance'
             },
             {
-                name: 'Management',
-                url: '/about/management'
+                name: 'Functionaries',
+                url: '/about/important-functionaries'
             },
             {
                 name: 'Hostel Facility',
@@ -84,14 +80,10 @@ export const About = {
             },
             {
                 name: 'How to Reach Us?',
-                url: '/'
+                url: '/about/how-to-reach-us'
             },
             {
-                name: 'GATI Charter Institution',
-                url: '/'
-            },
-            {
-                name: 'ABET Engineering Accreditation',
+                name: 'Institutional Social Responsibility',
                 url: '/'
             },
         ]
@@ -263,35 +255,27 @@ export const Admissions = {
         "Job Oriented Programs": [
             {
                 name: 'After 12th',
-                url: '/'
+                url: '/admissions/after-12th'
             },
             {
                 name: 'After Graduation',
-                url: '/'
-            },
-            {
-                name: 'Leet Programs',
-                url: '/'
+                url: '/admissions/after-graduation'
             },
             {
                 name: 'Specialized Programs',
-                url: '/'
+                url: '/admissions/specialized-programs'
             },
             {
                 name: 'Integrated Programs',
-                url: '/'
+                url: '/admissions/integrated-programs'
             },
             {
                 name: 'After Post Graduation',
-                url: '/'
+                url: '/admissions/after-post-graduation'
             },
             {
                 name: 'AKG Advantages',
-                url: '/'
-            },
-            {
-                name: 'ABET Engineering Accreditation',
-                url: '/'
+                url: '/admissions/akg-advantages'
             },
         ],
         "Admission": [
@@ -431,7 +415,7 @@ export const Placements = {
         "Placements": [
             {
                 name: "About Placements",
-                url: "/"
+                url: "/placements"
             },
             {
                 name: "Placement Tracker",

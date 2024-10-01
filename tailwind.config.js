@@ -30,6 +30,7 @@ module.exports = {
         'Empathy': "url('/image/core-value/empathy.webp')",
         'HumanDignity': "url('/image/core-value/human-dignity.webp')",
         'Giving': "url('/image/core-value/giving.webp')",
+        'PaperBackground': "url('/image/background-paper.png')",
         'BG2': "url('/image/MainBG2.jpg')",
         'BG3': "url('/image/MainBG.jpg')",
         'BG4': "url('/image/dotted-map-bg.webp')",
@@ -54,6 +55,9 @@ module.exports = {
         'BG23': "url('/image/Pages/548.jpg')",
         'BG24': "url('/image/Pages/549.jpg')",
         'BG25': "url('/image/Pages/550.jpg')",
+        'BG26': "url('/image/placements/middle-banner.jpg')",
+        
+        
       },
       boxShadow: {
         'cardShadow': '0 0.5rem 1rem rgba(0, 0, 0, 0.15)',

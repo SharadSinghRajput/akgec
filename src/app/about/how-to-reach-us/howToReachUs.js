@@ -24,7 +24,7 @@ const ReachUs = () => {
                     <div className="flex justify-between items-center p-3 cursor-pointer" onClick={() => toggleOption(1)}>
                         <h2 className="text-sm text-black font-semibold">OPTION 1: By Road (Bus/Auto-Rickshaw/Taxi)</h2>
                         <span className={`transform transition-transform ${activeOption === 1 ? 'rotate-180' : ''}`}>
-                            ▼
+                        ↓
                         </span>
                     </div>
                     {activeOption === 1 && (
@@ -71,7 +71,7 @@ const ReachUs = () => {
                     <div className="flex justify-between items-center p-3 cursor-pointer" onClick={() => toggleOption(2)}>
                         <h2 className="text-sm text-black font-semibold">OPTION 2: By Metro</h2>
                         <span className={`transform transition-transform ${activeOption === 2 ? 'rotate-180' : ''}`}>
-                            ▼
+                            ↓
                         </span>
                     </div>
                     {activeOption === 2 && (
@@ -97,7 +97,7 @@ const ReachUs = () => {
                     <div className="flex justify-between items-center p-3 cursor-pointer" onClick={() => toggleOption(3)}>
                         <h2 className="text-sm text-black font-semibold">OPTION 3: By Train (Nearest Railway Station)</h2>
                         <span className={`transform transition-transform ${activeOption === 3 ? 'rotate-180' : ''}`}>
-                            ▼
+                            ↓
                         </span>
                     </div>
                     {activeOption === 3 && (
@@ -123,7 +123,7 @@ const ReachUs = () => {
                     <div className="flex justify-between items-center p-3 cursor-pointer" onClick={() => toggleOption(4)}>
                         <h2 className="text-sm text-black font-semibold">OPTION 4: By Air</h2>
                         <span className={`transform transition-transform ${activeOption === 4 ? 'rotate-180' : ''}`}>
-                            ▼
+                            ↓
                         </span>
                     </div>
                     {activeOption === 4 && (

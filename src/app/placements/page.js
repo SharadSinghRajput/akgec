@@ -1,3 +1,4 @@
+import Placement from "./Placement";
 
 
 const ButtoName = {
@@ -8,7 +9,7 @@ const ButtoName = {
 export default function Home() {
   return (
     <>
-      
+      <Placement />
     </>
   );
 }

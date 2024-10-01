@@ -64,11 +64,11 @@ export default function NavBar() {
   // );
 
   const LinksList = ({ title, links, titleClassName, ulClassName }) => (
-    <div className="pr-4 max-md:w-full">
+    <div className="pr-6 max-md:w-full">
       {title && <h3 className={`font-bold ${titleClassName}`}>{title}</h3>}
       <ul className={`mt-2 ${ulClassName}`}>
-        {links?.map(link => (
-          <li key={link.url} className="">
+        {links?.map((link, index) => (
+          <li key={index} className="">
             <button className="py-0.5 hover:underline cursor-pointer text-left font-novaLight text-sm" onClick={()=> router.push(link.url)}>{link.name}</button>
           </li>
         ))}
