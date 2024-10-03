@@ -42,15 +42,15 @@ export const About = {
             },
             {
                 name: 'Institutional Social Responsibility',
-                url: '/'
+                url: '/about/institutional-social-responsibility'
             },
             {
                 name: 'University Handbooks',
-                url: '/'
+                url: '/about/university-handbooks'
             },
             {
                 name: 'University Calendar ',
-                url: '/'
+                url: '/about/university-calendar'
             },
             // {
             //     name: 'Approval Letter',
@@ -118,15 +118,15 @@ export const Academics = {
         "Academics": [
             {
                 name: 'Exam Results',
-                url: '/'
+                url: '/academics/exam-results'
             },
             {
                 name: 'Examination Schedule',
-                url: '/'
+                url: '/academics/examination-schedule'
             },
             {
                 name: 'Examination Annual Report',
-                url: '/'
+                url: '/academics/examination-annual-report'
             },
             // {
             //     name: 'Academics Overview',
@@ -142,23 +142,23 @@ export const Academics = {
             },
             {
                 name: 'Degree Verification',
-                url: '/'
+                url: '/academics/degree-verification'
             },
             {
                 name: 'National Academic Depository(NAD)',
-                url: '/'
+                url: '/academics/national-academic-depository'
             },
             {
                 name: 'Academic Bank of Credits (ABC)',
-                url: '/'
+                url: '/academics/academic-bank-of-credits'
             },
             {
                 name: 'Curricula Feedback',
-                url: '/'
+                url: '/academics/curricula-feedback'
             },
             {
                 name: 'University Brochure',
-                url: '/'
+                url: '/academics/university-brochure'
             },
             // {
             //     name: 'Institutes',
@@ -410,7 +410,7 @@ export const CampusLife = {
         },
         {
             name: "Infrastructure",
-            url: "/"
+            url: "/campus-life/infrastructure"
         },
         {
             name: "Academic Facilities",

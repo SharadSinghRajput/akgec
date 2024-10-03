@@ -152,10 +152,10 @@ const DepartmentCareerDevelopment = () => {
 
     return (
         <section className='bg-PaperBackground'>
-            <div className='bg-BG28 bg-cover min-h-screen bg-top flex items-end'>
-                <div className='text-white w-full max-w-7xl mx-auto mb-20 px-4'>
+            <div className='bg-BG28 bg-cover h-[100vh] max-2xl:h-[90vh] max-lg:h-[80vh] max-md:h-[70vh] bg-top flex items-end'>
+                <div className='text-white w-full max-w-7xl mx-auto mb-20 max-md:mb-5 px-4'>
                     <span className='text-sm text-gray-300 tracking-widest uppercase font-novaReg'>Career - placements</span>
-                    <h1 className='my-2 text-5xl max-w-2xl font-novaSemi uppercase'>Today's Actions Shape Tomorrow's Success</h1>
+                    <h1 className='my-2 text-5xl max-lg:text-4xl max-w-2xl font-novaSemi uppercase'>Today's Actions Shape Tomorrow's Success</h1>
                 </div>
             </div>
             <div className="max-w-7xl mx-auto px-4 py-16">
@@ -272,7 +272,7 @@ const DepartmentCareerDevelopment = () => {
                     <h1 className="text-4xl font-montserrat font-bold leading-none text-center mb-2">Benefits of Choosing the Department of Career</h1>
                     <h1 className="text-4xl font-montserrat font-bold text-center mb-4">Planning for Future Development</h1>
                     <p className="text-center text-sm">Provides Diverse Career Pathways Beyond Your Main Discipline</p>
-                    <div className="grid md:grid-cols-2 gap-8 mt-14">
+                    <div className="grid md:grid-cols-2 gap-8 mt-14 px-3">
                         <div>
                             {leftSections.map(renderSection)}
                         </div>

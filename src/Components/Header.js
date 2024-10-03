@@ -5,7 +5,7 @@ export default function Header({ title, height, subHeading, Button, gradient, bg
                 <img
                     alt=""
                     src={bg}
-                    className="h-full w-full object-top object-cover"
+                    className="h-full w-full object-center object-cover"
                 />
                 <div className={`absolute inset-0 ${gradient}`}></div>
             </div>
