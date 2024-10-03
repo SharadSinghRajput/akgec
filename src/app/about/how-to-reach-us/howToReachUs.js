@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const HowToReachUs = () => {
+const howToReachUs = () => {
     const [activeOption, setActiveOption] = useState(1);
 
     const toggleOption = (optionIndex) => {
@@ -144,4 +144,4 @@ const HowToReachUs = () => {
     );
 };
 
-export default HowToReachUs;
+export default howToReachUs;
