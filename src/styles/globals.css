@@ -29,6 +29,10 @@
   font-family: "slick";
   src: url("/fonts/slick.ttf") format("truetype");
 }
+@font-face {
+  font-family: "montserrat";
+  src: url("/fonts/montserrat.ttf") format("truetype");
+}
 
 .marquee {
   display: inline-block;

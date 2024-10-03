@@ -465,27 +465,27 @@ export const Placements = {
             },
             {
                 name: "Department of Career Planning & Development",
-                url: "/"
+                url: "/placements/department-of-career-development"
             },
             {
                 name: "Top Placement",
-                url: "/"
+                url: "/placements/top-placement"
             },
             {
                 name: "Placement Highlights",
-                url: "/"
+                url: "/placements/placement-highlights"
             },
             {
                 name: "Placement Policy",
-                url: "/"
+                url: "/placements/placement-policy"
             },
             {
                 name: "Our Leading Recruiters",
-                url: "/"
+                url: "/placements/our-leading-recruiters"
             },
             {
                 name: "Contact Placement Cell",
-                url: "/"
+                url: "/placements/contact-placement-cell"
             },
             // {
             //     name: "Placement Tracker",

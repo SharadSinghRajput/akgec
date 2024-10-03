@@ -4,9 +4,9 @@ const Convocations = () => {
     return (
         <section className='bg-[#dddddd]'>
             <div className='bg-BG27 bg-cover min-h-screen bg-bottom flex items-end'>
-                <div className='text-white max-w-[1400px] mx-auto mb-20'>
+                <div className='text-white  max-w-[1400px] mx-auto mb-20'>
                     <span className='text-sm text-gray-300 tracking-widest font-novaReg'>CAMPUS - LIFE</span>
-                    <h1 className='mt-2 text-4xl max-w-2xl font-novaSemi uppercase'>Convocations at Ajay Kumar Garg Engineering College</h1>
+                    <h1 className='mt-2 text-5xl max-w-2xl font-novaSemi uppercase'>Convocations at Ajay Kumar Garg Engineering College</h1>
                 </div>
             </div>
             <div className='max-w-7xl mx-auto text-center py-10'>

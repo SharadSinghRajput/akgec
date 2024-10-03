@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 
-const ReachUs = () => {
+const HowToReachUs = () => {
     const [activeOption, setActiveOption] = useState(1);
 
     const toggleOption = (optionIndex) => {
@@ -142,4 +142,4 @@ const ReachUs = () => {
     );
 };
 
-export default ReachUs;
+export default HowToReachUs;

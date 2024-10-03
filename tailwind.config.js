@@ -57,6 +57,7 @@ module.exports = {
         'BG25': "url('/image/Pages/550.jpg')",
         'BG26': "url('/image/placements/middle-banner.jpg')",
         'BG27': "url('/image/campus-life/convocation-banner.jpg')",
+        'BG28': "url('/image/placements/career-banner.jpg')",
         
         
       },
@@ -77,6 +78,7 @@ module.exports = {
       novaLight: ['nova-light', 'proximanova-light'],
       novaThin: ['nova-thin', 'proximanova-thin'],
       slick: ['slick', 'slick'],
+      montserrat: ['montserrat', 'montserrat'],
     },
     keyframes: {
       zoomInOut: {

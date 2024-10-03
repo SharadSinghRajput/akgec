@@ -1,7 +1,6 @@
 import Header from "@/Components/Header";
 import SideBar from "@/Components/SideBar";
-import HowToReachUs from "@/app/about/how-to-reach-us/howToReachUs";
-import './index.css'
+import HowToReachUs from "./HowToReachUs";
 
 const SideBarLink = [
     { name: "Our Identity", link: "/overview" },
