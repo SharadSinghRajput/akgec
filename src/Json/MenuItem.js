@@ -42,7 +42,7 @@ export const About = {
             },
             {
                 name: 'Institutional Social Responsibility',
-                url: '/about/institutional-social-responsibility'
+                url: '/about/institution-social-responsibility'
             },
             {
                 name: 'University Handbooks',
@@ -151,6 +151,10 @@ export const Academics = {
             {
                 name: 'Academic Bank of Credits (ABC)',
                 url: '/academics/academic-bank-of-credits'
+            },
+            {
+                name: 'Programme Curriculum',
+                url: '/academics/programme-curriculum'
             },
             {
                 name: 'Curricula Feedback',

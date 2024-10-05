@@ -58,6 +58,7 @@ module.exports = {
         'BG26': "url('/image/placements/middle-banner.jpg')",
         'BG27': "url('/image/campus-life/convocation-banner.jpg')",
         'BG28': "url('/image/placements/career-banner.jpg')",
+        'BG29': "url('/image/environment-protection/middle-banner.webp')",
         
         
       },
