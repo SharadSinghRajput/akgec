@@ -71,7 +71,7 @@ const SystemOfEvaluation = () => {
     return (
         <>
             <div className="px-3 pb-12">
-                <h2 className="text-[32px] font-novaReg mb-2.5">Evaluation System <br /> at AKG University</h2>
+                <h2 className="text-4xl leading-none font-novaReg mb-2.5">Evaluation System <br /> at AKG University</h2>
                 <p className="mb-5 mt-2.5 font-novaReg text-lg">The examination system at AKG University has been crafted to incorporate the best practices for evaluation and certification, ensuring global recognition. Its fundamental principle is rooted in being “scientific, objective, and transparent,” minimizing any potential bias from individual evaluators, specific subjects, or particular groups of students.</p>
                 <p className="mb-5 mt-2.5 font-novaReg text-lg">The examination system is categorized as follows:</p>
                 <p className="mb-5 mt-2.5 font-novaReg text-lg">1. Internal Assessment:

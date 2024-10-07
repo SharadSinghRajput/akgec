@@ -3,35 +3,35 @@ import Image from 'next/image';
 
 const plant = [
   {
-    img: '/image/environment-protection/garbage.webp',
-    title: 'Mission Haryali (Green Initiative)',
-    desc: 'Mission Haryali is an environmental initiative by AKGEC University focused on increasing the green cover in Uttar Pradesh. Every student is encouraged to plant trees and care for them, fostering a sense of environmental responsibility. The project aims to support sustainable development in the region without adding financial strain on local communities.'
+    img: '/image/environment-protection/plantation.jpg',
+    title: 'Eco Friendly Environment',
+    desc: 'In view of the increasing problems of global warming, deforestation, ozone layer depletion, pollution and many more due to modern development, it is believed globally that the awareness about the present status of the environment to sensitize people about the inherent relationships with Nature has become very important.'
   },
   {
-    img: '/image/environment-protection/nature-girl.webp',
-    title: 'Tree Plantation Drives',
-    desc: 'AKGEC University organizes frequent tree plantation drives on campus and in neighboring areas, in collaboration with environmental groups and NGOs. These efforts contribute towards reforestation, addressing the urgent need to restore lost forest areas and enhance the local ecosystem.'
+    img: '/image/environment-protection/nature-club-1.jpg',
+    title: 'Nature Club Activities',
+    desc: 'The club organized the event VASUDHA-2K19 during 15-19 April, 2019. During the event various competitions like Poster Making and Creative Ideas on enrichment, protection and right utilization of nature and Best Out of Waste were organized. The club celebrated International Earth Day on 22 April, 2019.'
   },
   {
-    img: '/image/environment-protection/save-earth.webp',
-    title: 'Clean Campus Movement',
-    desc: 'To promote cleanliness and environmental hygiene, AKGEC University regularly hosts Clean Campus Movements. Students actively participate in cleaning the campus and nearby communities, reinforcing the importance of maintaining a clean and healthy environment.'
+    img: '/image/environment-protection/nature-club-2.jpg',
+    title: 'Nature Club',
+    desc: 'AKGEC has established ‘Nature Club’ which is committed not only to spreading awareness about the problems but also to motivate students to find solutions to the problems in the light of inherent relationships.'
   },
   {
-    img: '/image/environment-protection/waste-paper.webp',
-    title: 'Sustainable Recycling Program',
+    img: '/image/environment-protection/nature-club-3.jpg',
+    title: 'Unnat Bharat',
     desc: 'AKGEC University’s Recycling Program is aimed at educating students on waste segregation and recycling practices. Through this program, the university fosters a culture of sustainability, ensuring proper waste management and minimizing environmental impact.'
   }
 ];
 
 
-function EnvironmentProtection() {
+function InstitutionalSocialResponsibilities() {
   return (
     <section className='pt-10'>
       <div className='max-w-[1400px] mx-auto px-4'>
         <h1 className="text-4xl font-novaReg mb-1">Environment Protection</h1>
         <p className="">
-          AKGU University has launched ‘Save Me- My Environment, My Earth’ Campaign in collaboration with National Green Tribunal (NGT)
+          AKGEC University Launches ‘Eco Friendly Environment: Our Earth, Our Responsibility’ Initiative to Promote Environmental Awareness
         </p>
       </div>
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-5 px-4">
@@ -57,43 +57,43 @@ function EnvironmentProtection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-gray-800 text-white rounded-lg overflow-hidden flex flex-col justify-between">
             <div className="p-6 space-y-4">
-              <h2 className="text-2xl font-bold">SMART Scholars Initiative</h2>
+              <h2 className="text-2xl font-bold">Unnat Bharat Abhiyaan</h2>
               <p className="text-sm">
-                The SMART Scholars Initiative at AKGEC University is dedicated to nurturing young talent by providing school students with valuable skills and a dynamic platform to demonstrate their potential. This initiative empowers students to explore their creativity, develop critical thinking, and prepare for future academic and career success through engaging activities and practical learning experiences.
+                An Awareness campaign for cleanliness and environment was conducted by the Ajay Kumar Garg Engineering College, Ghaziabad under Unnat Bharat Abhiyan by college National Social Service students at Galand and Raghunathpur villages.
               </p>
               <p className="text-sm">
-                The primary goal of this program is to inspire children to confidently unlock and express their inherent abilities, ultimately enabling them to contribute meaningfully to the progress and development of Indian society.
+                First of all the students inititated a cleanliness drive at Panchayat house of Galand village of Ghaziabad district in which the cooperation of the village head Mr.Sanjay Singh ji was unforgettable.The program moved ahead when students have started a rally on swachh bharat abhiyan through an awareness was created for cleanliness program under Swachh Bharat Abhiyan on the main road of Galand village.
               </p>
               <button className="bg-yellow-500 uppercase px-2 py-1 font-novaSemi rounded-md hover:bg-yellow-600 text-black">SEE OUR PROGRAM</button>
             </div>
             <Image
-              src="/image/environment-protection/garbage.webp"
-              alt="SMART Junior Program"
+              src="/image/environment-protection/unnat-bharat.jpg"
+              alt="Unnat Bharat Abhiyaan"
               width={400}
               height={200}
-              className="w-full h-64 object-cover"
+              className="w-full h-64 object-cover object-bottom"
             />
           </div>
           <div className="space-y-4">
             <div className="bg-cyan-600 text-white rounded-lg p-6 space-y-4">
-              <h2 className="text-2xl font-bold">Local Schools Partnership Program</h2>
+              <h2 className="text-2xl font-bold">Nature Club Programs</h2>
               <p className="text-sm">
-                Knowledge plays a pivotal role in shaping and empowering the youth. In line with this belief, AKGEC University runs the Local Schools Partnership Program, which hosts a variety of competitions, including quizzes, problem-solving challenges, music, dance, and more. This initiative aims to engage students from local schools, fostering intellectual and creative development in a fun and competitive environment.
+                In view of the increasing problems of global warming, deforestation, ozone layer depletion, pollution and many more due to modern development, it is believed globally that the awareness about the present status of the environment to sensitize people about the inherent relationships with Nature has become very important.
               </p>
-              <h3 className="text-xl font-semibold">» Knowledge Challenge</h3>
+              <h3 className="text-xl font-semibold">» Establish Program</h3>
               <p className="text-sm">
-                The goal of this initiative is to inspire students to go beyond textbook knowledge and bridge the gap between theoretical concepts and practical learning. By engaging in hands-on activities and real-world challenges, students develop a deeper understanding and appreciation of the subjects they study.
+                AKGEC has established ‘Nature Club’ which is committed not only to spreading awareness about the problems but also to motivate students to find solutions to the problems in the light of inherent relationships. The effort will improve the competence of students to contribute towards the sustainability of nature and avoid environmental degradation in their individual capacity as well as in groups.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="/image/environment-protection/nature-girl.webp"
+                  src="/image/environment-protection/nature-club-1.jpg"
                   alt="Quiz Competition 1"
                   width={200}
                   height={150}
                   className="w-full h-full object-cover"
                 />
                 <Image
-                  src="/image/environment-protection/save-earth.webp"
+                  src="/image/environment-protection/nature-club-2.jpg"
                   alt="Quiz Competition 2"
                   width={200}
                   height={150}
@@ -133,4 +133,4 @@ function EnvironmentProtection() {
   );
 }
 
-export default EnvironmentProtection;
+export default InstitutionalSocialResponsibilities;

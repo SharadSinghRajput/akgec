@@ -2,7 +2,7 @@ import React from 'react'
 
 const PlacementPolicy = () => {
   return (
-    <section className="px-3">
+    <section className="">
       <h2 className="text-4xl font-novaReg mb-2">Placement Policy</h2>
       <main className="space-y-6">
         <p className="">

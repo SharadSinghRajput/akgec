@@ -3,9 +3,9 @@ export default function VisionAndMission() {
         <div className="flex flex-col items-center">
             <div className="grid grid-cols-2 w-full border border-gray-300 shadow-lg mb-5">
                 <div className="col-span-1">
-                    <div className="flex w-full h-full flex-col justify-center items-start p-5">
-                        <h2 className="text-3xl font-normal mb-4">Vision</h2>
-                        <p className="text-sm font-light text-gray-600 max-w-[350px] ">
+                    <div className="flex w-full h-full flex-col justify-center items-center">
+                        <h2 className="text-4xl w-full text-start font-novaReg mb-4 max-w-[350px]">Vision</h2>
+                        <p className="font-novaReg text-gray-600 max-w-[350px] ">
                         To achieve global recognition as a Centre of Excellence in Research, Innovation, and Entrepreneurship, committed to imparting knowledge and inspiring learning that nurtures professional leaders dedicated to serving society.
                         </p>
                     </div>
@@ -23,10 +23,10 @@ export default function VisionAndMission() {
             </div>
             <div className="grid grid-cols-2 w-full border border-gray-300 shadow-lg mb-5">
                 <div className="col-span-1">
-                    <div className="flex w-full h-full flex-col justify-center items-start p-5">
-                        <h2 className="text-3xl font-normal mb-4">Mission</h2>
-                        <p className="text-sm font-light text-gray-600 max-w-[350px] ">
-                            We strive to provide and maintain academic environment and systems, enabling maximum learning to produce competent professionals. We also aim at achieving this through transparent academic and administrative policies in the college. We intend to provide conducive atmosphere for research, development and consultancy services to our faculty at national and international level.
+                    <div className="flex w-full h-full flex-col justify-center items-center ">
+                        <h2 className="text-4xl w-full text-start font-novaReg max-w-[350px] mb-4">Mission</h2>
+                        <p className="font-novaReg text-gray-600 max-w-[350px] ">
+                            We strive to provide and maintain academic environment and systems, enabling maximum learning to produce competent professionals. We also aim at achieving this through transparent academic and administrative policies in the college.
                         </p>
                     </div>
                 </div>
@@ -43,9 +43,9 @@ export default function VisionAndMission() {
             </div>
             <div className="grid grid-cols-2 w-full border border-gray-300 shadow-lg mb-5">
                 <div className="col-span-1">
-                    <div className="flex w-full h-full flex-col justify-center items-start p-5">
-                        <h2 className="text-3xl font-normal mb-4">Quality Policy</h2>
-                        <p className="text-sm font-light text-gray-600 max-w-[350px] ">
+                    <div className="flex w-full h-full flex-col justify-center items-center">
+                        <h2 className="text-4xl w-full text-start font-novaReg mb-4 max-w-[350px]">Quality Policy</h2>
+                        <p className="font-novaReg text-gray-600 max-w-[350px] ">
                             To provide and continually improve academic environment and systems which give total satisfaction and enable students to develop their full potential and mature into competent professionals and responsible members of society.
                         </p>
                     </div>

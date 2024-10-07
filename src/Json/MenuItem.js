@@ -363,7 +363,7 @@ export const Admissions = {
             },
             {
                 name: 'Transportation Fee',
-                url: '/'
+                url: '/admisions/transportation-fee'
             },
             {
                 name: 'Education Loan Assistance',
@@ -371,7 +371,7 @@ export const Admissions = {
             },
             {
                 name: 'Payment Procedure',
-                url: '/'
+                url: '/admisions/payment-procedure'
             },
             {
                 name: 'Refund Policy',
@@ -383,7 +383,7 @@ export const Admissions = {
             // },
             {
                 name: 'Campus Virtual Tour',
-                url: '/'
+                url: '/admisions/campus-virtual-tour'
             },
             {
                 name: 'Migration Policy',
@@ -391,15 +391,15 @@ export const Admissions = {
             },
             {
                 name: 'National Admissions',
-                url: '/'
+                url: '/admissions/national-admissions'
             },
             {
                 name: 'International Admissions',
-                url: '/'
+                url: '/admissions/international-admissions'
             },
             {
                 name: 'FAQs',
-                url: '/'
+                url: '/admissions/faqs'
             },
         ]
     }
@@ -418,31 +418,31 @@ export const CampusLife = {
         },
         {
             name: "Academic Facilities",
-            url: "/"
+            url: "/campus-life/academic-facilities"
         },
         {
             name: "Campus Facilities",
-            url: "/"
+            url: "/campus-life/campus-facilities"
         },
         {
             name: "Transportation",
-            url: "/"
+            url: "/campus-life/transportation"
         },
         {
             name: "Residential Facilities",
-            url: "/"
+            url: "/campus-life/residential-facilities"
         },
         {
             name: "Library",
-            url: "/"
+            url: "/campus-life/library"
         },
         {
             name: "Auditorium",
-            url: "/"
+            url: "/campus-life/auditorium"
         },
         {
             name: "Student Welfare",
-            url: "/"
+            url: "/campus-life/student-welfare"
         },
         {
             name: "Convocations",
@@ -450,11 +450,11 @@ export const CampusLife = {
         },
         {
             name: "Tech Invent & Events",
-            url: "/"
+            url: "/campus-life/tech-invent-and-events"
         },
         {
             name: "Cultural & Cosmopolitan",
-            url: "/"
+            url: "/campus-life/cultural-and-cosmopolitan"
         },
     ]
 }

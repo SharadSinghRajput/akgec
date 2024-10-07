@@ -114,11 +114,11 @@ const TopPlacement = () => {
     return (
         <section>
             <div className="mb-8">
-                <h2 className="text-3xl font-semibold text-primary mb-4">AKG University - Student Success in Placements</h2>
-                <p className="text-gray-700 mb-2">
+                <h2 className="text-4xl font-novaReg mb-4">AKG University - Student Success in Placements</h2>
+                <p className="text-gray-700 font-novaReg mb-2">
                     AKG University takes pride in shaping the future of its students by offering top-notch academic programs and world-class placement opportunities. Below is a glimpse of our recent graduates who have secured placements in prestigious companies.
                 </p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 font-novaReg">
                     Explore the student placement details across various courses and industries, showcasing the diverse talents nurtured at our institution.
                 </p>
             </div>
