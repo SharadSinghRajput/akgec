@@ -34,7 +34,7 @@ export default function NavBar() {
   const [isScrolled100, setIsScrolled100] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [BigMenuToggle, setBigMenuToggle] = useState(false);
-  const [activeTab, setActiveTab] = useState("School of Computer Science & Engineering");
+  const [activeTab, setActiveTab] = useState("School of Engineering & Technology");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -291,11 +291,10 @@ export default function NavBar() {
                       <div className="flex p-10 gap-10 ">
                         {
                           Object.keys(Programs.sublinks[activeTab])?.map((key, index) => {
-                            if (key === 'Departments') {
+                            if (key === 'Programs') {
                               return <LinksList key={index} title={key} links={Programs.sublinks[activeTab][key]} />
                             }
-                            if (key === 'Programs') {
-                              
+                            if (key === 'Program') {
                               return Object.keys(Programs.sublinks[activeTab][key])?.map((key1, index) => {
                                 return <LinksList key={index} title={key1} links={Programs.sublinks[activeTab][key][key1]} />
                               })

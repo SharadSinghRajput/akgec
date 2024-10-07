@@ -67,7 +67,7 @@ const ExamResults = () => {
 
     return (
         <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg mr-10">
-            <h1 className="text-2xl font-bold px-5 mb-4">Examination Results</h1>
+            <h1 className="text-4xl font-novaReg p-5 mb-4">Examination Results</h1>
             <div className="w-full text-black">
                 {results.map((result, index) => (
                     <div key={index} className="mb-4 border-b border-gray-300">

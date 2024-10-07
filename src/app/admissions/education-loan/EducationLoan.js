@@ -96,6 +96,47 @@ const CollaboratingBanks = [
     { src: '/image/admission/bank6.png', alt: 'Bank 6 Logo', name: 'AXIS' },
 ];
 
+const bankData = [
+    {
+        logo: '/image/admission/bank1.png', alt: 'Bank 1 Logo', name: 'SBI',
+        contacts: [
+            { name: 'Bhupender Sharma', mobile: '+91-987654321', email: ['bhupender.shivam@icicibank.com'] },
+
+        ]
+    },
+    {
+        logo: '/image/admission/bank6.png', alt: 'Bank 6 Logo', name: 'AXIS',
+        contacts: [
+
+            { name: 'Anita Jat', mobile: '+91-8732868465', email: ['anita.sharma@axisbank.com'] },
+
+        ]
+    },
+    {
+        logo: '/image/admission/bank3.png', alt: 'Bank 3 Logo', name: 'ICICI',
+        contacts: [
+
+            { name: 'Ranveer Singh', mobile: '+91-7889638683', email: ['ranveer.mehta@icicibank.com'] },
+
+        ]
+    },
+    {
+        logo: '/image/admission/bank4.png', alt: 'Bank 4 Logo', name: 'BOI',
+        contacts: [
+
+            { name: 'Aarohi Roy', mobile: '+91-9784597865', email: ['sneha.roy@boi.com'] },
+
+        ]
+    },
+    {
+        logo: '/image/admission/bank2.png', alt: 'Bank 2 Logo', name: 'HDFC',
+        contacts: [
+
+            { name: 'Yatish Singh', mobile: '+91-84678674645', email: ['yatish.choudhary@hdfcbank.com'] }
+        ]
+    }
+];
+
 const EducationLoan = () => {
     const [selectedTab, setSelectedTab] = useState(0);
 
@@ -206,8 +247,54 @@ const EducationLoan = () => {
                     </div>
                 </div>
             </div>
-
+            <div className="container mx-auto px-6 py-4 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] bg-white">
+                <h1 className="text-2xl font-bold mb-4">FOR ANY QUERY REGARDING BANK</h1>
+                <div className="overflow-x-auto">
+                    <table className="min-w-full border-gray-300">
+                        <thead>
+                            <tr className="bg-primary text-white">
+                                <th className="py-2 px-4 rounded-tl-lg">BANK NAME</th>
+                                <th className="py-2 px-4">NAME/MOBILE</th>
+                                <th className="py-2 px-4">EMAIL ID</th>
+                                <th className="py-2 px-4 rounded-tr-lg">LOAN OFFER</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {bankData.map((bank, index) => (
+                                <tr key={index} className="bg-blend-multiply text-center">
+                                    <td className={`py-2 px-4 border-b border-r ${index === bankData.length - 1 ? 'rounded-bl-lg border-b-0' : ''}`}>
+                                        <img className="bg-center w-28 h-16 rounded-md p-2 bg-white object-contain" src={bank.logo} alt={bank.name} />
+                                    </td>
+                                    <td className={`py-2 px-4 border-r ${index === bankData.length - 1 ? 'border-b-0' : 'border-b'}`}>
+                                        {bank.contacts.map((contact, contactIndex) => (
+                                            <div key={contactIndex}>
+                                                <p>{contact.name}</p>
+                                                <p className="text-sm text-gray-600">{contact.mobile}</p>
+                                            </div>
+                                        ))}
+                                    </td>
+                                    <td className={`py-2 px-4 border-r ${index === bankData.length - 1 ? 'border-b-0' : 'border-b'}`}>
+                                        {bank.contacts.map((contact, contactIndex) => (
+                                            <div key={contactIndex}>
+                                                {contact.email.map((email, emailIndex) => (
+                                                    <p key={emailIndex} className="text-sm text-blue-600">{email}</p>
+                                                ))}
+                                            </div>
+                                        ))}
+                                    </td>
+                                    <td className={`py-2 px-4 ${index === bankData.length - 1 ? 'border-b-0 rounded-br-lg' : 'border-b'}`}>
+                                        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                                            Download
+                                        </button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+
 
     );
 };

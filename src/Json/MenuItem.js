@@ -210,8 +210,8 @@ export const Programs = {
     name: "Programs",
     links: "/",
     sublinks: {
-        "School of Computer Science & Engineering": {
-            "Departments": [
+        "School of Engineering & Technology": {
+            "Programs": [
                 {
                     name: 'Department of Computer Science & Engineering',
                     url: '/'
@@ -225,7 +225,7 @@ export const Programs = {
                     url: '/'
                 }
             ],
-            "Programs": {
+            "Program": {
                 "Graduate": [
                     {
                         name: 'B.Tech',
@@ -248,8 +248,8 @@ export const Programs = {
                 ]
             }
         },
-        "School of Engineering & Applied Science": {
-            "Departments": [
+        "School of Applied Science Engineering": {
+            "Programs": [
                 {
                     name: 'Department of Electronics & Communication Engineering',
                     url: '/'
@@ -267,7 +267,7 @@ export const Programs = {
                     url: '/'
                 }
             ],
-            "Programs": {
+            "Program": {
                 "Graduate": [
                     {
                         name: 'B.Tech',
@@ -283,13 +283,13 @@ export const Programs = {
             }
         },
         "School of Business Studies": {
-            "Departments": [
+            "Programs": [
                 {
                     name: 'Department of Management',
                     url: '/'
                 }
             ],
-            "Programs": {
+            "Program": {
                 "Graduate": [
                     {
                         name: 'BBA',
@@ -553,7 +553,7 @@ export const ResearchInnovation = {
             },
             {
                 name:"Visiting Scholars",
-                url:"/"
+                url:"/research/visiting-scholars"
             },
             // {
             //     name:"AKG Global Management Review",

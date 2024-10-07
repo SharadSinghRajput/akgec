@@ -56,9 +56,10 @@ module.exports = {
         'BG24': "url('/image/Pages/549.jpg')",
         'BG25': "url('/image/Pages/550.jpg')",
         'BG26': "url('/image/placements/middle-banner.jpg')",
-        'BG27': "url('/image/campus-life/convocation-banner.jpg')",
+        'BG27': "url('/image/convocation/convocation-banner.jpg')",
         'BG28': "url('/image/placements/career-banner.jpg')",
         'BG29': "url('/image/environment-protection/middle-banner.webp')",
+        'BG30': "url('/image/tech-invent-&-events/tech-invent-banner.jpg')",
         
         
       },
