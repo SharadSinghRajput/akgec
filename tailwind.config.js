@@ -60,6 +60,11 @@ module.exports = {
         'BG28': "url('/image/placements/career-banner.jpg')",
         'BG29': "url('/image/environment-protection/middle-banner.webp')",
         'BG30': "url('/image/tech-invent-&-events/tech-invent-banner.jpg')",
+        'BG31': "url('/image/tbi/banner-bg-4.jpg')",
+        'BG32': "url('/image/tbi/rabindranath-tagore-.jpg')",
+        'BG33': "url('/image/center-of-research/astronaut.jpg')",
+        'BG34': "url('/image/center-of-research/build.jpg')",
+        'BG35': "url('/image/scholars/scholars.jpg')",
         
         
       },

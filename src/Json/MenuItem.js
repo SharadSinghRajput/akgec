@@ -354,6 +354,10 @@ export const Admissions = {
                 url: '/admissions/admission-criteria'
             },
             {
+                name: 'Admission Flow',
+                url: '/admissions/admission-flow'
+            },
+            {
                 name: 'AKGU Scholarship',
                 url: '/admissions/scholarship'
             },
@@ -363,7 +367,7 @@ export const Admissions = {
             },
             {
                 name: 'Transportation Fee',
-                url: '/admisions/transportation-fee'
+                url: '/campus-life/transportation#transportation-fee'
             },
             {
                 name: 'Education Loan Assistance',
@@ -371,7 +375,7 @@ export const Admissions = {
             },
             {
                 name: 'Payment Procedure',
-                url: '/admisions/payment-procedure'
+                url: '/admissions/payment-procedure'
             },
             {
                 name: 'Refund Policy',
@@ -383,7 +387,7 @@ export const Admissions = {
             // },
             {
                 name: 'Campus Virtual Tour',
-                url: '/admisions/campus-virtual-tour'
+                url: '/admissions/campus-virtual-tour'
             },
             {
                 name: 'Migration Policy',
@@ -541,15 +545,15 @@ export const ResearchInnovation = {
             },
             {
                 name:"Patent & Publications",
-                url:"/"
+                url:"/research/patent"
             },
             {
                 name:"Centers Of Research",
-                url:"/"
+                url:"/research/centers-of-research"
             },
             {
                 name:"Centers of Excellence",
-                url:"/"
+                url:"/research/centers-of-excellence"
             },
             {
                 name:"Visiting Scholars",
@@ -563,17 +567,17 @@ export const ResearchInnovation = {
         "Entrepreneurship Cells":[
             {
                 name:"Technology Business Incubator (TBI)",
-                url:"/"
+                url:"/research/technology-business-incubator"
             },
             {
                 name:"Innovation & Entrepreneurship Development Cell (IEDC)",
-                url:"/"
+                url:"/research/entrepreneurship"
             }
         ],
         "Sustainable Development Goals (SDG's)":[
             {
                 name:"Policies & Strategies",
-                url:"/"
+                url:"/research/policies-and-strategies"
             }
         ]
     }

@@ -214,10 +214,60 @@ const transportRoutes = {
     ],
 };
 
+const year = [
+    {
+        city: "Noida",
+        amount: "78,500/-"
+    },
+    {
+        city: "Delhi & Ghaziabad",
+        amount: "65,300/-"
+    },
+    {
+        city: "Faridabad",
+        amount: "92,400/-"
+    }
+];
+
+const quarter = [
+    {
+        city: "Noida",
+        amount: "53,750/-"
+    },
+    {
+        city: "Delhi & Ghaziabad",
+        amount: "59,950/-"
+    },
+    {
+        city: "Faridabad",
+        amount: "73,600/-"
+    }
+];
+
+const halfyear = [
+    {
+        city: "Noida",
+        amount: "51,300/-"
+    },
+    {
+        city: "Delhi & Ghaziabad",
+        amount: "62,800/-"
+    },
+    {
+        city: "Faridabad",
+        amount: "75,900/-"
+    }
+];
+
 
 const TransportationFacilities = () => {
     const [openIndices, setOpenIndices] = useState([0]);
     const [currentRoutes, setCurrentRoutes] = useState(transportRoutes.delhi);
+    const [selectedData, setSelectedData] = useState(year);
+
+    const handleButtonClick = (data) => {
+        setSelectedData(data);
+    };
 
     const toggleRoute = (index) => {
         if (openIndices.includes(index)) {
@@ -322,6 +372,49 @@ const TransportationFacilities = () => {
                     ))}
                 </div>
             </div>
+            <section id="transportation-fee" className="py-10">
+                <div className="mb-10 bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] p-7">
+                    <h3 className="text-3xl font-novaBold mb-5">Transportation Fee</h3>
+                    <div className="mb-5">
+                        <button
+                            className="mr-4 p-3 bg-blue-500 text-white rounded"
+                            onClick={() => handleButtonClick(year)}
+                        >
+                            Yearly
+                        </button>
+                        <button
+                            className="mr-4 p-3 bg-blue-500 text-white rounded"
+                            onClick={() => handleButtonClick(halfyear)}
+                        >
+                            Half-Yearly
+                        </button>
+                        <button
+                            className="p-3 bg-blue-500 text-white rounded"
+                            onClick={() => handleButtonClick(quarter)}
+                        >
+                            Quarterly
+                        </button>
+                    </div>
+                    {selectedData.length > 0 && (
+                        <table className="w-full border-collapse">
+                            <thead>
+                                <tr className="bg-gray-200 bg-primary text-white">
+                                    <th className="p-4 w-6/12 rounded-tl-lg border-r border-current">City</th>
+                                    <th className="p-4 rounded-tr-lg">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {selectedData.map((item, index) => (
+                                    <tr key={index} className="bg-white">
+                                        <td className="border  border-gray-400 p-4">{item.city}</td>
+                                        <td className="border border-gray-400 p-4">{item.amount}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    )}
+                </div>
+            </section>
         </>
     );
 };
