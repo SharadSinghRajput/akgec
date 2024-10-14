@@ -11,7 +11,7 @@ const event = [
                 viewBox="0 0 24 24"
                 width="60"
                 height="48"
-                className="text-primary fill-[#fecc00]"
+                className="text-primary fill-[#ffffff]"
             >
                 <path d="M12 2a2 2 0 100 4 2 2 0 000-4zm-7 7a2 2 0 100 4 2 2 0 000-4zm0 7a2 2 0 100 4 2 2 0 000-4zm14-7a2 2 0 100 4 2 2 0 000-4zm0 7a2 2 0 100 4 2 2 0 000-4zm-7-3a2 2 0 100 4 2 2 0 000-4zm2-2h-4v-4h4v4zm-4 2h4v4h-4v-4z" />
             </svg>
@@ -26,7 +26,7 @@ const event = [
                 viewBox="0 0 24 24"
                 width="60"
                 height="48"
-                className="text-red-500 fill-[#fecc00]"
+                className="text-red-500 fill-[#000000]"
             >
                 <path d="M12 2a9.93 9.93 0 00-7.07 2.93A9.93 9.93 0 002 12c0 2.77 1.12 5.29 2.93 7.07A9.93 9.93 0 0012 22c2.77 0 5.29-1.12 7.07-2.93A9.93 9.93 0 0022 12c0-2.77-1.12-5.29-2.93-7.07A9.93 9.93 0 0012 2zm0 2c2.21 0 4.21.89 5.66 2.34A7.938 7.938 0 0120 12h-8V4zm-6 8a8.013 8.013 0 011.34-4.66L12 12H4zm0 2h8v8a7.938 7.938 0 01-5.66-2.34A7.938 7.938 0 014 14zm10 6v-8h6a8.013 8.013 0 01-1.34 4.66A7.938 7.938 0 0114 20z" />
             </svg>
@@ -41,7 +41,7 @@ const event = [
                 viewBox="0 0 24 24"
                 width="60"
                 height="48"
-                className="text-red-500 fill-[#fecc00]"
+                className="text-red-500 fill-[#ffffff]"
             >
                 <path d="M12 2c-4.42 0-8 3.58-8 8 0 3.87 2.75 7.06 6.37 7.81.2-.13.43-.23.68-.29a4.992 4.992 0 014.9 2.2A8.013 8.013 0 0020 10c0-4.42-3.58-8-8-8zm-.5 8H9V9h1.5v1zm4.5 0h-1.5V9H16v1zm-6 4.5h1v-1H10v1zm6 0h-1v-1h1v1zm1-3.5H8V9h8v1.5z" />
             </svg>
@@ -87,12 +87,12 @@ const supportItems = [
 const TechnologyBusinessIncubator = () => {
     return (
         <>
-            <section className="bg-BG31 h-screen bg-no-repeat flex justify-center items-center">
+            <section className="bg-BG31 h-screen bg-no-repeat bg-cover flex justify-center items-center bg-black bg-blend-darken bg-opacity-60">
                 <div className="max-w-[1400px] px-3">
                     <div className="flex">
                         <div className="w-3/4 px-3">
                             <div className="w-2/3">
-                                <span className="font-novaSemi text-base text-white mb-5 block w-full">AKG University</span>
+                                <span className="font-novaReg text-2xl text-white block w-full">AKG University</span>
                                 <h3 className="text-6xl text-white font-novaBold mb-6">INNOVATION HUB</h3>
                                 <p className="text-base font-novaReg text-white mb-7">
                                     Backed by the National Science and Technology Entrepreneurship Development Board (NSTEDB)
@@ -113,12 +113,12 @@ const TechnologyBusinessIncubator = () => {
             </section>
 
             <section className="py-12">
-                <div className="max-w-[1400px] mx-auto px-3 -mt-24">
+                <div className="max-w-[1400px] mx-auto px-3 -mt-32">
                     <div className="flex justify-between gap-7">
                         {event.map((e, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col w-full md:w-1/3 bg-black text-white p-6 rounded-lg shadow-lg group my-8"
+                                className="flex flex-col w-full md:w-1/3 bg-gradient-to-r from-blue-600 to-violet-600 text-white p-6 rounded-lg shadow-lg group my-8"
                             >
                                 <div className="flex items-center mb-5 ">
                                     <div className="mr-3 transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]">
@@ -158,7 +158,7 @@ const TechnologyBusinessIncubator = () => {
                 </div>
             </section>
 
-            <section className="w-full bg-BG30 items-center py-24">
+            <section className="w-full bg-BG30 items-center py-24 bg-indigo-950 bg-blend-multiply bg-opacity-60">
                 <div className="max-w-[1400px] mx-auto px-3">
                     <div className="mb-6">
                         <h2 className="text-center text-3xl text-white font-bold mb-8">Support</h2>
@@ -189,22 +189,22 @@ const TechnologyBusinessIncubator = () => {
                                     </h1>
                                 </div>
                                 <div className="flex flex-col space-y-5">
-                                    <div className="px-3 items-start border">
-                                        <div className="flex p-5 mb-6 items-center w-full">
-                                            <span className="text-6xl font-thin text-gray-300 mr-4">01</span>
-                                            <p className="">A dedicated platform for fostering creativity and business acumen.</p>
+                                    <div className="px-3 border bg-gradient-to-r from-blue-600 to-violet-600">
+                                        <div className="flex p-5 my-3 items-center w-full ">
+                                            <span className="text-6xl font-thin text-gray-300 mr-3 w-20 ">01</span>
+                                            <p className="text-white">A dedicated platform for fostering creativity and business acumen.</p>
                                         </div>
                                     </div>
-                                    <div className="px-3 items-start border">
-                                        <div className="flex p-5 mb-6 items-center w-full">
-                                            <span className="text-6xl font-thin text-gray-300 mr-4">02</span>
-                                            <p className="">Over 100 Start-ups launched and 15 Start-ups successfully transitioned to the market.</p>
+                                    <div className="px-3 border bg-gradient-to-r from-blue-600 to-violet-600">
+                                        <div className="flex p-5 my-3 items-center w-full">
+                                            <span className="text-6xl font-thin text-gray-300 mr-4 w-20">02</span>
+                                            <p className="text-white">Over 100 Start-ups launched and 15 Start-ups successfully transitioned to the market.</p>
                                         </div>
                                     </div>
-                                    <div className="px-3 items-start border">
-                                        <div className="flex p-5 mb-6 items-center w-full">
-                                            <span className="text-6xl font-thin text-gray-300 mr-4">03</span>
-                                            <p className="">Collaborations with industry leaders to provide mentorship and resources for aspiring entrepreneurs.</p>
+                                    <div className="px-3 border bg-gradient-to-r from-blue-600 to-violet-600">
+                                        <div className="flex p-5 my-3 items-center w-full">
+                                            <span className="text-6xl font-thin text-gray-300 mr-4 w-20">03</span>
+                                            <p className="text-white">Collaborations with industry leaders to provide mentorship and resources for aspiring entrepreneurs.</p>
                                         </div>
                                     </div>
                                 </div>
