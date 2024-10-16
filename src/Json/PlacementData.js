@@ -48,10 +48,7 @@ export const studentReviewsData = [
       With a focus on cutting-edge technologies like Artificial Intelligence, Machine Learning, Data Science, and Cloud Computing, 
       students have demonstrated exceptional skills and innovation, attracting some of the biggest IT firms in the country. 
       Renowned companies such as TCS, Infosys, Wipro, Capgemini, Cognizant, and Accenture visited the campus, offering lucrative packages 
-      to over 500 students. The highest international package reached Rs. 45 LPA, and the national package went up to Rs. 20 LPA. 
-      AKGEC has consistently focused on holistic student development, integrating academic learning with real-world problem solving, 
-      which has made its students stand out in the competitive job market. The increase in the number of recruiters and offers reflects 
-      the college's strong industry connect and commitment to excellence...`,
+      to over 500 students. The highest international package reached Rs. 45 LPA, and the national package went up to Rs. 20 LPA.`,
       companies: 80,
       studentsSelected: 500,
       highestPackage: "45",
@@ -62,10 +59,7 @@ export const studentReviewsData = [
       placements this year, with over 40 companies hiring more than 200 students. Companies like Tata Motors, Hero MotoCorp, 
       Mahindra & Mahindra, and Escorts visited the campus, offering packages as high as Rs. 12 LPA. These placements are a testament 
       to the college's state-of-the-art laboratories and industry-relevant curriculum, which enable students to gain practical 
-      experience in areas such as robotics, automation, and advanced automotive systems. AKGEC’s continuous efforts in collaborating 
-      with industries for internships and training have greatly benefited the students, making them highly sought after by employers 
-      in both core engineering and interdisciplinary fields. This year’s successful placements underscore the rising demand 
-      for mechanical and mechatronics engineers in sectors like manufacturing, automation, and aerospace...`,
+      experience in areas such as robotics, automation, and advanced automotive systems.`,
       companies: 40,
       studentsSelected: 200,
       highestPackage: "12",
@@ -77,10 +71,7 @@ export const studentReviewsData = [
       Engineering students were particularly successful in securing roles in construction management, urban planning, and 
       structural engineering, while Electrical Engineering students were recruited for power generation, automation, and renewable 
       energy projects. The highest package offered to students in these branches was Rs. 10 LPA, with multiple offers coming from 
-      companies that are known for large-scale infrastructure projects both in India and abroad. AKGEC’s focus on sustainability 
-      and green energy has also helped students align with emerging trends in the construction and electrical engineering industries. 
-      Through hands-on training, expert faculty guidance, and exposure to real-world challenges, AKGEC continues to equip its students 
-      for successful careers in these critical sectors...`,
+      companies that are known for large-scale infrastructure projects both in India and abroad.`,
       companies: 50,
       studentsSelected: 150,
       highestPackage: "10",
@@ -91,11 +82,7 @@ export const studentReviewsData = [
       technical excellence, as reflected in this year’s stellar placement results. More than 60 companies, including Samsung, 
       Texas Instruments, Bharat Electronics, and Ericsson, visited the campus, offering positions to over 180 students. With a 
       focus on emerging technologies such as 5G, IoT, semiconductor technology, and embedded systems, ECE students from AKGEC 
-      have consistently demonstrated their ability to contribute to high-impact projects and cutting-edge research. The highest 
-      package offered in this branch was Rs. 15 LPA, with students being recruited for roles in telecommunications, product design, 
-      and hardware engineering. AKGEC's strong research culture, combined with its industry ties and state-of-the-art equipment, 
-      ensures that its ECE graduates are well-prepared to meet the demands of global tech companies. These placements further reinforce 
-      the college's reputation as a leading institution for technical education in India...`,
+      have consistently demonstrated their ability to contribute to high-impact projects and cutting-edge research.`,
       companies: 60,
       studentsSelected: 180,
       highestPackage: "15",

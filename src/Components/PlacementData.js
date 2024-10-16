@@ -2,12 +2,12 @@ import React from 'react'
 
 const PlacementData = ({placementsData}) => {
     return (
-        <section className="mx-auto max-w-7xl max-xl:max-w-5xl max-lg:max-w-2xl max-md:max-w-xl grid grid-cols-2 max-lg:grid-cols-1 gap-5 pb-10 px-4 max-md:px-2">
+        <section className="mx-auto max-w-7xl max-xl:max-w-5xl max-lg:max-w-2xl max-md:max-w-xl grid grid-cols-2 max-lg:grid-cols-1 gap-5 pb-10 px-4 max-md:px-2 py-10">
             {placementsData?.map((placement, index) => (
                 <div key={index} className="flex flex-col justify-between shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px]">
                     <div className="p-6 max-sm:p-4">
                         <span className="text-[#df8934] text-xl font-novaSemi">Placements</span>
-                        <h1 className="mt-3 text-4xl font-novaBold leading-none">{placement.title}</h1>
+                        <h1 className="mt-3 text-3xl font-novaReg leading-none">{placement.title}</h1>
                         <p className="text-[13px] leading-4 mt-3">{placement.description}</p>
                     </div>
                     <div className="flex w-full text-white">
