@@ -2,7 +2,6 @@
 
 import { LogoSlider } from '@/Components';
 import AnnouncementSlider from '@/Components/AnnouncementSlider';
-import CardSwiper from '@/Components/CardSwiper';
 import DirectorMessage from '@/Components/DirectorMessage';
 import FacultySlider from '@/Components/FacultySlider';
 import HighlightsSection from '@/Components/HighlightsSection';

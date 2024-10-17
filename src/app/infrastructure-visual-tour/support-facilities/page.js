@@ -1,7 +1,11 @@
 import Header from "@/Components/Header";
 import SideBar from "@/Components/SideBar";
-import HostelFacility from "./Hostel";
+import SupportFacilities from "./SupportFacilities";
 
+const Button = {
+    name: "Apply Now",
+    Link: "",
+};
 
 const SideBarLink = [
     {name: "Our Identity" , link : "/overview"},
@@ -13,14 +17,14 @@ const SideBarLink = [
     {name: "Institution Social Responsibility" , link : ""}
 ]
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
         <div className="bg-gray-100">
-        <Header title={"Hostel Facility"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
+        <Header title={"Approval Letters"} Button={Button} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
             <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-10">
                 <div className="col-span-9 max-md:col-span-12">
-                    <HostelFacility />
+                    <SupportFacilities />
                 </div>
                 <div className="col-span-3 max-md:col-span-12">
                     <SideBar title={"About Us"} LinkList={SideBarLink} />

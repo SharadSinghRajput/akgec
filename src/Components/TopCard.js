@@ -7,7 +7,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 const TopCard = () => {
     return (
         // 
-        <div className="relative bg-[#F3F3F3]">
+        <div className="relative bg-gray-100">
             {/* Swiper Slider for Mobile */}
             <div className="block md:hidden">
                 <Swiper

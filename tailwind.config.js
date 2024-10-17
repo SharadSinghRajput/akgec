@@ -69,6 +69,7 @@ module.exports = {
         'BG37': "url('/image/schools/banner-2.jpg')",
         'BG38': "url('/image/schools/banner-3.jpg')",
         'BG39': "url('/image/national-admission/bottom-banner.jpg')",
+        'BG40': "url('/image/national-admission/main-banner.jpg')",
         
       },
       boxShadow: {
