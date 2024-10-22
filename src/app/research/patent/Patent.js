@@ -44,7 +44,7 @@ const Patent = () => {
                             </td>
                             <td className="py-4 px-4 text-sm border-b border-l" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
                                 <Link href={item.link}>
-                                    <span className="text-white hover:underline cursor-pointer">{item.patents}</span>
+                                    <span className=" hover:underline cursor-pointer text-blue-300">View More</span>
                                 </Link>
                             </td>
                         </tr>

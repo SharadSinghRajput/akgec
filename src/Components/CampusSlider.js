@@ -75,7 +75,7 @@ export default function CampusSlider() {
                             </div>
                             <div className='col-span-1 max-lg:col-span-3'>
                                 <div className="flex justify-end space-x-4 z-10 ">
-                                    <Button text={"APPLY TODAY"} className="bg-secondary text-white text-sm font-novaBold px-5 py-3 rounded-xl hover:bg-[#3c5686]" />
+                                    <Button text={"APPLY TODAY"} className="bg-btn-gradient animate-gradient text-white text-sm font-novaBold px-5 py-3 rounded-xl hover:bg-[#3c5686]" />
                                     <Button text={"VIEW PLACEMENTS"} className="border border-white text-white text-sm font-novaBold px-5 py-3 rounded-xl hover:bg-white hover:text-black" />
                                 </div>
                             </div>

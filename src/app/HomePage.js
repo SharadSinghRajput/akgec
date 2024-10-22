@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button, Form, CampusSlider, FooterCard, LogoSlider, MilestonesSection, NewsEvents, PlacementHighlights, ExploreCourses, ResearchEnvironment, SlickSlider, StickyFooter, StudentReviews, TopCard } from "@/Components";
+import NotificationSlider from "@/Components/NotificationSlider";
 
 
 
@@ -61,7 +62,7 @@ export default function HomePage() {
         <div className="flex justify-center relative z-20 min-h-screen">
           <div className="grid grid-cols-2 max-lg:grid-cols-1">
             <div className="flex justify-center max-w-3xl flex-col pl-20 max-lg:mt-52 max-lg:items-center max-lg:px-5 max-sm:mt-40">
-              <h1 className="max-w-4xl font-novaThin max-sm:text-3xl tracking-tight text-white max-xl:text-5xl text-6xl">
+              <h1 className="max-w-4xl font-novaThin max-sm:text-3xl tracking-tight text-white max-xl:text-5xl text-6xl max-lg:text-center max-md:pt-20">
                 One of the Top Private
                 <span className="relative whitespace-nowrap ">
                   <svg
@@ -95,6 +96,7 @@ export default function HomePage() {
       <div className="relative h-auto">
         <TopCard />
         <SlickSlider />
+        <NotificationSlider />
         <ExploreCourses />
         <MilestonesSection />
         <PlacementHighlights />

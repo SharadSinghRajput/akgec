@@ -42,8 +42,7 @@ export default function StudentReviews() {
                     </div>
                 </div>
                 <div className="w-full flex justify-center items-center">
-                <Button text={'Read All Reviews'} className="py-3 px-10 mt-5 text-[15px]  rounded-xl font-novaBold uppercase bg-secondary  w-max  hover:bg-[#3c5686] hover:border-b-4 hover:text-white hover:border-[#e4d947] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105" />
-
+                <Button text={'Read All Reviews'} className=" py-3 px-10 mt-5 text-[15px] text-white rounded-xl font-novaBold uppercase bg-btn-gradient  w-max  hover:bg-[#3c5686] hover:border-b-4 hover:text-white hover:border-[#beb6ff] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105" />
                 </div>
             </div>
         </section>  
