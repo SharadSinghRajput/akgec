@@ -77,7 +77,7 @@ export default function NavBar() {
   );
   return (
     <header
-      className={`z-[100] w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary pb-4" : ""
+      className={`z-[100] w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary pb-3" : ""
         } transition-all duration-200`}
     >
       <div className="grid grid-cols-8 max-xl:grid-cols-10 max-lg:grid-cols-12 max-md:grid-cols-4  gap-x-10">
@@ -91,7 +91,7 @@ export default function NavBar() {
                   onClick={() => router.push("/")}
                   src="/image/akg-logo.jpg"
                   alt="AKG University Logo"
-                  className={`${isScrolled100 ? "h-20" : "h-24" } w-full object-contain shadow-effect-right`}
+                  className={`${isScrolled100 ? "h-20" : "h-24"} w-full object-contain shadow-effect-right`}
                 />
               </div>
               <div className={`${isScrolled100 ? "grid grid-cols-2 gap-1.5" : "flex gap-1"}`}>

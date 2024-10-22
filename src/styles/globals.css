@@ -68,6 +68,7 @@
 
 .shadow-effect-right {
   box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .marquee:hover {

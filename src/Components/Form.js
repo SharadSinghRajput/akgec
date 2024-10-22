@@ -117,7 +117,7 @@ export default function Form() {
           </div>
 
           <div className="flex justify-between items-center">
-          <Button text={'REGISTER NOW'} type='submit' className="bg-gradient-to-r from-blue-600 to-violet-600 text-white font-novaBold py-4 px-12 text-xs rounded-md" />
+          <Button text={'REGISTER NOW'} type='submit' className="bg-btn-gradient animate-gradient text-white font-novaBold py-4 px-12 text-xs rounded-md" />
             <a href="#" className="text-xs font-novaBold text-gray-600 underline">
               ALREADY REGISTERED
             </a>
