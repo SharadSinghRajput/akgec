@@ -6,8 +6,27 @@ import Image from "next/image";
 import { Button, Form, CampusSlider, FooterCard, LogoSlider, MilestonesSection, NewsEvents, PlacementHighlights, ExploreCourses, ResearchEnvironment, SlickSlider, StickyFooter, StudentReviews, TopCard } from "@/Components";
 
 
+
+
 export default function HomePage() {
   const [showStickyBar, setShowStickyBar] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const buildingImages = [
+    "/image/building.jpg",
+    "/image/building-2.jpg",
+    "/image/building-3.jpg",
+    "/image/building-4.jpg",
+    "/image/building-5.jpg"
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % buildingImages.length);
+    }, 9000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     let lastScrollPosition = window.scrollY;
@@ -71,7 +90,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="w-full h-full object-cover absolute left-0 top-0 z-10 bg-gradient-to-r from-black/60 to-white/0 "></div>
-        <Image src="/image/building.jpg" width={1920} height={1080} alt="Building" className="w-full h-full object-cover absolute left-0 top-0 z-0 animate-zoomInOut" />
+        <Image src={buildingImages[currentImageIndex]} width={1920} height={1080} alt="Building" className="w-full h-full object-cover absolute left-0 top-0 z-0 animate-zoomInOut"/>
       </div>
       <div className="relative h-auto">
         <TopCard />

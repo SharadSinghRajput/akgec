@@ -11,6 +11,7 @@
   font-family: "proximanova-semibold";
   src: url("/fonts/proximanova-semibold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "proximanova-bold";
   src: url("/fonts/proximanova-bold.ttf") format("truetype");
@@ -25,10 +26,12 @@
   font-family: "proximanova-thin";
   src: url("/fonts/proximanova-thin.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "slick";
   src: url("/fonts/slick.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "montserrat";
   src: url("/fonts/montserrat.ttf") format("truetype");
@@ -44,6 +47,7 @@
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -53,9 +57,11 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -67,22 +73,26 @@
 }
 
 .shadow-effect-right {
-  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
+  box-shadow: 7px 0px 14px rgba(0, 0, 0, 0.4);
+
 }
 
 .marquee:hover {
   animation-play-state: paused;
 }
+
 .bg-primary {
   background-color: #3c5686;
 }
+
 .text-primary {
   color: #3c5686;
 }
+
 .bg-secondary {
   background-color: #fecc00;
 }
+
 .text-secondary {
   color: #fecc00;
 }
@@ -101,7 +111,7 @@
 }
 
 .card:hover .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #aaaaaa; 
+  background: #aaaaaa;
   border-radius: 10px;
 }
 

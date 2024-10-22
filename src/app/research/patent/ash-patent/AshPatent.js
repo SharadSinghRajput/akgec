@@ -1,39 +1,8 @@
 "use client";
-import Link from 'next/link'; // Import the Link component for routing
+
+import { ashPatentData, tableHeadings } from "@/Json/PatentsData";
 
 const AshPatent = () => {
-
-    // Table headings for the patent data
-    const tableHeadings = [
-        "S.No", 
-        "Patent Application No.", 
-        "Status of Patent (Filed / Published / Granted)", 
-        "Inventor/s Name", 
-        "Title of the Patent", 
-        "Applicant/s Name", 
-        "Patent Filed Date (DD/MM/YYYY)", 
-        "Patent Published Date / Granted Date (DD/MM/YYYY)",
-        "Patent Published Number / Patent Granted Number",
-
-
-
-         
-    ];
-
-    // Patent data for the table
-    const patentData = [
-        { 
-            sno: 1, 
-            applicationNo: "201811038028", 
-            status: "Granted", 
-            inventors: "Pradeep Jain", 
-            title: "Three Dimensional Printer", 
-            applicants: "AKGEC Skills foundation", 
-            filedDate: "10-08-2018", 
-            pubGrantedDate: "14-08-2020", 
-            publicationNumber: "344163" 
-        }
-    ];
 
     
     return (
@@ -58,7 +27,7 @@ const AshPatent = () => {
                 </thead>
                 <tbody>
                     {/* Rendering patent data rows */}
-                    {patentData.map((item, index) => (
+                    {ashPatentData.map((item, index) => (
                         <tr key={index} className="bg-indigo-950 text-white border-inherit">
                             <td className="py-4 px-4 text-sm border-b" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
                                 {item.sno}

@@ -1,49 +1,22 @@
 "use client";
 
+import { mePatentData, tableHeadings } from "@/Json/PatentsData";
+
 const MePatent = () => {
 
     const tableHeadings = [
-        "S.No", 
-        "Patent Application No.", 
-        "Status of Patent (Filed / Published / Granted)", 
-        "Inventor/s Name", 
-        "Title of the Patent", 
-        "Applicant/s Name", 
-        "Patent Filed Date (DD/MM/YYYY)", 
+        "S.No",
+        "Patent Application No.",
+        "Status of Patent (Filed / Published / Granted)",
+        "Inventor/s Name",
+        "Title of the Patent",
+        "Applicant/s Name",
+        "Patent Filed Date (DD/MM/YYYY)",
         "Patent Published Date / Granted Date (DD/MM/YYYY)",
         "Patent Published Number / Patent Granted Number",
-
-
-
-         
     ];
 
-    const patentData = [
-        { 
-            sno: 1, 
-            applicationNo: "201811038028", 
-            status: "Granted", 
-            inventors: "Pradeep Jain", 
-            title: "Three Dimensional Printer", 
-            applicants: "AKGEC Skills foundation", 
-            filedDate: "10-08-2018", 
-            pubGrantedDate: "14-08-2020", 
-            publicationNumber: "344163" 
-        },
-        { 
-            sno: 2, 
-            applicationNo: "202011010932", 
-            status: "Published", 
-            inventors: "Namrata Gangil", 
-            title: "Shape Memory Alloy Reinforced Functionally Graded Material Fabrication By Friction Stir Processing", 
-            applicants: "Namrata Gangil, Ajay Kumar Garg Engineering College, Dr. APJ Abdul Kalam Technical University", 
-            filedDate: "13-03-2020", 
-            pubGrantedDate: "18-09-2021", 
-            publicationNumber: "202011010932" 
-        }
-    ];
 
-    
     return (
         <div className="container mx-auto">
             <h1 className="text-[42px] font-novaReg leading-none mb-4 ">ME Patent </h1>
@@ -61,7 +34,7 @@ const MePatent = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {patentData.map((item, index) => (
+                    {mePatentData.map((item, index) => (
                         <tr key={index} className="bg-indigo-950 text-white border-inherit">
                             <td className="py-4 px-4 text-sm border-b" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
                                 {item.sno}
@@ -90,7 +63,7 @@ const MePatent = () => {
                             <td className="py-4 px-4 text-sm border-b border-l" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
                                 {item.publicationNumber}
                             </td>
-                            
+
                         </tr>
                     ))}
                 </tbody>

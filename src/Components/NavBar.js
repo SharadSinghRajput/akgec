@@ -98,22 +98,22 @@ export default function NavBar() {
                 <img
                   src="/image/naac-a++.jpg"
                   alt="NAAC Logo"
-                  className="h-9 w-full object-contain bg-blend-color-dodge shadow-effect-right"
+                  className="h-9 w-full object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right"
                 />
                 <img
                   src="/image/nba.jpg"
                   alt="NBA Logo"
-                  className="h-9 w-full object-contain bg-blend-color-dodge shadow-effect-right"
+                  className="h-9 w-full object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right"
                 />
                 <img
                   src="/image/qs-i-gauge.jpg"
                   alt="QS-I-GAUGE Logo"
-                  className="h-9 w-full object-contain bg-blend-color-dodge shadow-effect-right"
+                  className="h-9 w-full object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right"
                 />
                 <img
                   src="/image/iic.jpg"
                   alt="IIC Logo"
-                  className="h-9 w-full object-contain bg-blend-color-dodge shadow-effect-right"
+                  className="h-9 w-full object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right"
                 />
               </div>
             </div>
