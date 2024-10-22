@@ -49,6 +49,27 @@
   }
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
+
+.shadow-effect-right {
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
 .marquee:hover {
   animation-play-state: paused;
 }

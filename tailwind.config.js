@@ -14,6 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        'btn-gradient': 'linear-gradient(to right, #2563eb, #7c3aed)',
         "offwhite-gradient": 'linear-gradient(90deg, rgb(242, 244, 248) 70%, rgba(242, 244, 248, .1))',
         "edgeGradient": 'linear-gradient(to right, #00949a, #f7cc23, #000)',
         "gradient-conic":

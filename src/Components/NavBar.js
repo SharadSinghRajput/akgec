@@ -77,32 +77,47 @@ export default function NavBar() {
   );
   return (
     <header
-      className={`z-[100] w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary" : ""
+      className={`z-[100] w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary pb-4" : ""
         } transition-all duration-200`}
     >
-      <div className="grid grid-cols-8 max-xl:grid-cols-10 max-lg:grid-cols-12 max-md:grid-cols-4    gap-x-10">
+      <div className="grid grid-cols-8 max-xl:grid-cols-10 max-lg:grid-cols-12 max-md:grid-cols-4  gap-x-10">
         <div className="col-span-2 flex max-xl:col-span-2 max-md:col-span-2 max-sm:col-span-3 max-lg:col-span-3 max-sm:mb-4  ">
           <div
             className={`text-white py-3 max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
           >
-            <div className="flex justify-start items-center gap-2 pl-2">
+            <div className={`flex justify-start items-center gap-1 pl-5 ${isScrolled100 ? "flex-row" : "flex-col"}`}>
               <div className="flex justify-center">
                 <img
                   onClick={() => router.push("/")}
-                  src="/image/akg-logo.png"
+                  src="/image/akg-logo.jpg"
                   alt="AKG University Logo"
-                  className="h-16 w-full object-contain"
+                  className={`${isScrolled100 ? "h-20" : "h-24" } w-full object-contain shadow-effect-right`}
                 />
               </div>
-              <div className="flex justify-center p-2 items-center ">
+              <div className={`${isScrolled100 ? "grid grid-cols-2 gap-1.5" : "flex gap-1"}`}>
                 <img
-                  src="/image/NAAC.png"
-                  alt="AKG University Logo"
-                  className="h-12 w-full object-contain bg-blend-color-dodge"
+                  src="/image/naac-a++.jpg"
+                  alt="NAAC Logo"
+                  className="h-9 w-full object-contain bg-blend-color-dodge shadow-effect-right"
+                />
+                <img
+                  src="/image/nba.jpg"
+                  alt="NBA Logo"
+                  className="h-9 w-full object-contain bg-blend-color-dodge shadow-effect-right"
+                />
+                <img
+                  src="/image/qs-i-gauge.jpg"
+                  alt="QS-I-GAUGE Logo"
+                  className="h-9 w-full object-contain bg-blend-color-dodge shadow-effect-right"
+                />
+                <img
+                  src="/image/iic.jpg"
+                  alt="IIC Logo"
+                  className="h-9 w-full object-contain bg-blend-color-dodge shadow-effect-right"
                 />
               </div>
             </div>
-            <div hidden={isScrolled} className="max-xl:hidden">
+            {/* <div hidden={isScrolled} className="max-xl:hidden">
               <div className="flex items-center px-5">
                 <div className="flex-grow border-t border-white opacity-40"></div>
                 <p className="mx-4 text-center opacity-40 text-xs font-novaLight ">
@@ -114,7 +129,7 @@ export default function NavBar() {
                 The college was established in 1998 and offers B.Tech Courses in
                 all major disciplines of Engineering.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex xl:hidden max-xl:col-span-3 max-md:col-span-2 max-sm:col-span-1 max-md:pt-0 max-md:justify-end max-md:mr-5 justify-center max-sm:mb-4">
