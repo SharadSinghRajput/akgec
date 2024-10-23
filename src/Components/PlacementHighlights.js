@@ -65,24 +65,19 @@ export default function PlacementHighlights() {
                                 className={`h-full object-cover grayscale transition duration-500 ease-in-out max-lg:absolute -left-5 bottom-0 max-lg:h-96 max-md:h-80   ${hoveredIndex === index ? "-translate-x-28 translate-y-8 scale-90" : null}`}
                             />
                             <div className={`${hoveredIndex === index ? null : "translate-x-60"} max-lg:translate-x-0 transition duration-500 ease-in-out absolute top-5 max-sm:top-2 max-sm:right-2 right-2 p-2 ${index === 3 || index === 1 ? "text-[#212529]" : "text-white"} max-w-[90%] max-sm:p-2 max-sm:w-max`}>
-                                        <img src={item.Logo} alt="Company Logo" className="h-12 sm:h-16 max-sm:h-20 max-sm:w-44 bg-white object-contain rounded-lg mb-2" />
-                                        <h3 className="text-lg sm:text-xl font-novaBold">{item.name}</h3>
-                                        <p className="text-xs font-novaReg">- {item.course}</p>
-                                        <p className="text-2xl sm:text-3xl md:text-4xl font-novaBold">
-                                            <sup className="font-novaBold text-lg">₹</sup>{item.salary}{" "}
-                                            <small className="font-novaSemi text-lg">LPA</small>
-                                        </p>
-                                    </div>
-                            {/* {hoveredIndex === index && (
-                                <>
-                                    
-                                </>
-                            )} */}
+                                <img src={item.Logo} alt="Company Logo" className="h-12 sm:h-16 max-sm:h-20 max-sm:w-44 bg-white object-contain rounded-lg mb-2" />
+                                <h3 className="text-lg sm:text-xl font-novaBold">{item.name}</h3>
+                                <p className="text-xs font-novaReg">- {item.course}</p>
+                                <p className="text-2xl sm:text-3xl md:text-4xl font-novaBold">
+                                    <sup className="font-novaBold text-lg">₹</sup>{item.salary}{" "}
+                                    <small className="font-novaSemi text-lg">LPA</small>
+                                </p>
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
-            <div className="flex flex-col justify-center p-5 md:p-10 lg:p-16 bg-BG2 bg-no-repeat bg-cover text-white">
+            <div className="flex flex-col justify-center p-5 md:p-10 lg:p-16 bg-BG14 bg-center bg-cover text-white bg-black bg-blend-multiply bg-opacity-50">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-novaLight">
                     <span className='font-novaSemi bg-gradient-to-r from-teal-300 to-green-400 bg-clip-text text-transparent'>Placements</span> Overview
                 </h2>

@@ -1,12 +1,79 @@
 "use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
 
-import ProgramHighlightsSlider from "./ProgramHighlightsSlider";
+const cardDetails = [
+  {
+    id: 1,
+    title: "Honored at the Tech Startups Conclave & Awards 2022",
+    subheading: "Ishu Bansal",
+    img: "/image/home/IshuBansal.jpg",
+  },
+  {
+    id: 2,
+    title:
+      "The AKGEC Robotics club is a student chapter formed on 8'MAY '2013",
+    subheading: "Robotics Club",
+    img: "/image/home/RoboticsHome.jpg",
+  },
+  {
+    id: 3,
+    title: "Explore ICI Membership Benefits and Advanced Concrete Technology",
+    subheading: " A Grand Inaugural Ceremony",
+    img: "/image/home/ICI4.jpg",
+  },
+  {
+    id: 4,
+    title: "Developing Top Engineers and Technicians for a Thriving Industry",
+    subheading: "ISTE",
+    img: "/image/home/iste.jpg",
+  },
+  {
+    id: 4,
+    title: "SAE International: A Century of Engineering Excellence",
+    subheading: "SAE International",
+    img: "/image/home/Aacar2.jpg",
+  },
+  {
+    id: 5,
+    title: "Honored at the Tech Startups Conclave & Awards 2022",
+    subheading: "Ishu Bansal",
+    img: "/image/home/IshuBansal.jpg",
+  },
+  {
+    id: 6,
+    title:
+      "The AKGEC Robotics club is a student chapter formed on 8'MAY '2013",
+    subheading: "Robotics Club",
+    img: "/image/home/RoboticsHome.jpg",
+  },
+  {
+    id: 7,
+    title: "Explore ICI Membership Benefits and Advanced Concrete Technology",
+    subheading: " A Grand Inaugural Ceremony",
+    img: "/image/home/ICI4.jpg",
+  },
+  {
+    id: 8,
+    title: "Developing Top Engineers and Technicians for a Thriving Industry",
+    subheading: "ISTE",
+    img: "/image/home/iste.jpg",
+  },
+  {
+    id: 9,
+    title: "SAE International: A Century of Engineering Excellence",
+    subheading: "SAE International",
+    img: "/image/home/Aacar2.jpg",
+  },
+];
 
 export default function SlickSlider() {
 
   return (
     <section className="h-full bg-[#F3F3F3] py-8 ">
-      <div className="break1:max-w-[1650px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto">
+      <div className="break1:max-w-[1500px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto">
         <header className="text-center mb-8 max-xl:mb-5">
           <h1 className="text-[42px] font-novaReg max-md:text-2xl max-sm:text-xl max-sm:px-4 text-gray-700">
             A Glimpse into Our <span className="font-novaSemi bg-text-gradient bg-clip-text text-transparent">Vibrant Journey</span>
@@ -77,7 +144,49 @@ export default function SlickSlider() {
             </div>
           </div>
           <div className="ml-5 col-span-8 max-lg:col-span-12">
-            <ProgramHighlightsSlider />
+            <section className="max-lg:px-16 max-sm:px-0">
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={5}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                loop={true}
+                modules={[Pagination, Autoplay]}
+                className="mySwiper"
+                breakpoints={{
+                  400: { slidesPerView: 2, spaceBetween: 20 },
+                  450: { slidesPerView: 2 },
+                  640: { slidesPerView: 2 },
+                  789: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3, spaceBetween: 30 },
+                }}
+              >
+                {cardDetails?.map((item) => (
+                  <SwiperSlide key={item.id} className="mb-10">
+                    <article className="relative h-[22rem] w-full max-sm:h-80 max-sm:w-72 max-2xl:w-64 max-2xl:h-80 max-xl:w-52 max-xl:h-72 max-lg:h-96 max-lg:w-80 max-md:w-60 max-md:h-80 bg-white rounded-3xl shadow-md overflow-hidden flex items-end">
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div aria-hidden="true" className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black from-[calc(7/16*100%)] ring-1 ring-inset ring-gray-950/10 sm:from-5%" />
+                      <figure className="relative p-10">
+                        <blockquote>
+                          <p className="relative text-xs uppercase text-white">{item.subheading}</p>
+                        </blockquote>
+                        <figcaption className="mt-3 border-t border-white/20 pt-2">
+                          <p className="font-novaReg">
+                            <span className="bg-gradient-to-r text-sm line-clamp-2 from-[#fff1be] from-[28%] via-[#ee87cb] via-[70%] to-[#b060ff] bg-clip-text text-transparent">
+                              {item.title}
+                            </span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </article>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </section>
           </div>
         </div>
       </div>

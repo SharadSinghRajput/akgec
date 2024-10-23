@@ -8,7 +8,7 @@ const TopCard = () => {
     return (
         // 
         <div className="relative bg-gray-100">
-            <div className="block md:hidden">
+            <div className="block lg:hidden">
                 <Swiper
                     modules={[Autoplay, Navigation]}
                     spaceBetween={10}
@@ -32,13 +32,13 @@ const TopCard = () => {
                     </SwiperSlide>
                 </Swiper>
             </div>
-            <div className="py-20 bg-gray-200">
+            <div className="lg:block hidden py-20 bg-gray-200">
                 <h2 className="text-[42px] font-novaReg text-center text-black">
                     <span className="font-novaSemi bg-text-gradient bg-clip-text text-transparent">Achievements</span> &
                     <span className="font-novaSemi bg-text-gradient bg-clip-text text-transparent"> Milestones</span></h2>
                 <p className="max-w-3xl mx-auto text-xl font-novaReg text-center">This section showcases our <strong>Notable Achievements & Significant Milestones</strong>, reflecting our dedication, growth, and commitment to excellence over time.</p>
-                <div className="mt-5 hidden md:flex items-center justify-center">
-                    <div className="flex justify-between gap-2">
+                <div className="mt-5 md:flex items-center justify-center">
+                    <div className="flex flex-wrap justify-between gap-2">
                         <div className="flex-1 p-2">
                             <img
                                 src="/image/card-1.jpg"
