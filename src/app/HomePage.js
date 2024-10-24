@@ -91,7 +91,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="w-full h-full object-cover absolute left-0 top-0 z-10 bg-gradient-to-r from-black/60 to-white/0 "></div>
-        <Image src="/image/building.jpg" width={1920} height={1080} alt="Building" className="w-full h-full object-cover absolute left-0 top-0 z-0"/>
+        <Image src={buildingImages[currentImageIndex]} width={1920} height={1080} alt="Building" className="w-full h-full object-cover absolute left-0 top-0 z-0 animate-zoomInOut"/>
       </div>
       <div className="relative h-auto">
         <TopCard />
