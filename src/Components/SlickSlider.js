@@ -110,7 +110,7 @@ export default function SlickSlider() {
                 <h2 className="text-5xl  xl:text-5xl  font-novaThin mb-2 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                   <span className="whitespace-nowrap">
                     33.80{" "}
-                    <span className="text-gray-600 font-novaLight text-xl -ml-3 pr-5  max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
+                    <span className="text-gray-600 font-novaLight text-xl -ml-2 pr-5  max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
                       LPA
                     </span>
                   </span>
@@ -128,7 +128,7 @@ export default function SlickSlider() {
                 <h2 className="text-5xl  xl:text-5xl  font-novaThin mb-2 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                   <span className="whitespace-nowrap">
                     1.13{" "}
-                    <span className="text-gray-600 font-novaLight text-xl -ml-3 max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
+                    <span className="text-gray-600 font-novaLight text-xl -ml-2 max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
                       CR
                     </span>
                   </span>

@@ -163,22 +163,113 @@ export default function NavBar() {
                   Contact us
                 </a>
               </div>
-              <div className="flex justify-end max-md:justify-start gap-4">
+              <div className="flex justify-end max-2xl:flex-col gap-4">
+                <div className="max-md:w-full max-md:flex  max-md:justify-between  max-md:items-center max-md:py-1">
+                  <div className="flex items-center justify-center gap-5 px-2 py-1.5 max-md:w-full">
+                    <div className="max-md:hidden">
+                      <ul className="flex items-center gap-5 text-white max-md:p-2 justify-center w-full ">
+                        <li className=" ">
+                          <a className="flex flex-col items-center gap-1" href="">
+                            <img
+                              className="w-4 h-4"
+                              src="/image/social-icons/whatsapp.webp"
+                              alt="Whatsapp"
+                            />
+                            <span className="text-[9px] max-md:hidden">Whatsapp</span>
+                          </a>
+                        </li>
+                        {/* <li>
+                          <a className="flex flex-col items-center gap-1" href="">
+                            <img
+                              className="w-4 h-4"
+                              src="/image/social-icons/calling.webp"
+                              alt="Call Us"
+                            />
+                            <span className="text-[9px] max-md:hidden">Call Us</span>
+                          </a>
+                        </li> */}
+                        <li>
+                          <a className="flex flex-col items-center gap-1" href="">
+                            <img
+                              className="w-4 h-4"
+                              src="/image/social-icons/compass.webp"
+                              alt="360°"
+                            />
+                            <span className="text-[9px] max-md:hidden">360°</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="flex flex-col items-center px-3 border-l border-gray-400 space-y-1 max-md:border-none max-md:w-full ">
+                      <ul className="flex items-center justify-center gap-4 leading-none max-md:w-full max-md:justify-evenly">
+                        <li>
+                          <a href="">
+                            <img
+                              className="w-4 h-4"
+                              src="/image/social-icons/facebook.webp"
+                              alt="Facebook"
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <img
+                              className="w-4 h-4"
+                              src="/image/social-icons/twitter.webp"
+                              alt="twitter"
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <img
+                              className="w-4 h-4"
+                              src="/image/social-icons/linkedin.webp"
+                              alt="linkedin"
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <img
+                              className="w-4 h-4"
+                              src="/image/social-icons/instagram.webp"
+                              alt="instagram"
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <img
+                              className="w-4 h-4"
+                              src="/image/social-icons/youtube.webp"
+                              alt="youtube"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                      <small className="text-[9px] max-md:hidden text-white">
+                        Get Social with us
+                      </small>
+                    </div>
+                  </div>
+                </div>
                 <div
-                  className={`flex max-sm:p-1  max-lg:p-1  items-center justify-center transition-all ${isScrolled ? "px-2 py-1" : "px-4 py-3"
-                    } bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full max-w-md mx-auto max-lg:mx-0 max-md:mx-0`}
+                  className={`flex max-sm:p-1  max-lg:p-1  items-center justify-center transition-all ${isScrolled ? "px-2.5 py-0.5" : "px-2.5 py-2"
+                    } bg-btn-gradient animate-gradient rounded-full max-w-md mx-auto max-lg:mx-0 max-md:mx-0`}
                 >
                   <div className="flex items-center space-x-3">
                     <div
-                      className={`bg-white  p-2 rounded-full flex items-center justify-center`}
+                      className={`bg-white p-2 rounded-full flex items-center justify-center`}
                     >
-                      <PhoneIcon
-                        className={`${isScrolled ? "h-3 w-3" : "h-5 w-5"
-                          } text-cyan-500`}
-                        aria-hidden="true"
-                      />
+                      <a href="tel:1800-200-0777">
+                        <PhoneIcon
+                          className={`${isScrolled ? "h-3 w-3" : "h-4 w-4"} text-cyan-500`}
+                          aria-hidden="true"
+                        />
+                      </a>
                     </div>
-                    <div className="border-r pr-6 border-[#46a7d1] font-novaLight max-sm:hidden">
+                    {/* <div className="font-novaLight max-sm:hidden">
                       <p
                         className={`text-white  ${isScrolled ? "text-[10px]" : "text-xs"
                           }`}
@@ -186,14 +277,14 @@ export default function NavBar() {
                         Admission Helpline
                       </p>
                       <p
-                        className={`text-white max-xl:text-xs font-bold  ${isScrolled ? "text-sm" : "text-base leading-none"
+                        className={`text-white max-xl:text-xs font-bold  ${isScrolled ? "text-xs" : "text-sm leading-none"
                           }`}
                       >
                         1800-200-0777
                       </p>
-                    </div>
+                    </div> */}
                   </div>
-                  <div className="flex items-center ml-3 max-sm:hidden">
+                  {/* <div className="flex items-center ml-3 max-sm:hidden">
                     <button className="text-white p-2 rounded-full hover:bg-blue-700">
 
                     </button>
@@ -201,7 +292,7 @@ export default function NavBar() {
                       className="text-white mr-2 h-8"
                       aria-hidden="true"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
