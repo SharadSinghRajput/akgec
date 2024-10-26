@@ -55,6 +55,7 @@ const MetaData = ({
           "url": `${path}/blog`
         })
       }} />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
@@ -62,14 +63,15 @@ const MetaData = ({
           "name": "Ajay Kumar Garg Engineering College",
           "url": path,
           "sameAs": [
-            "https://www.facebook.com/GniotGroup",
-            "https://twitter.com/GNIOTCollege",
-            "https://www.instagram.com/gniotgroupnoida/",
-            "https://www.linkedin.com/school/greater-noida-institute-of-technology-greater-noida/about/",
-            "https://www.youtube.com/channel/UCgakka57xq5deagDmuc6YpQ/videos?view=0&shelf_id=3&sort=dd",
+            "https://www.facebook.com/Official.AKGEC",
+            "https://x.com/official_akgec",
+            "https://www.instagram.com/official.akgec/",
+            "https://www.linkedin.com/school/officialakgec",
+            "https://www.youtube.com/@AKGECDigitalSchool",
           ]
         })
       }} />
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -109,6 +111,7 @@ const MetaData = ({
           })
         }}
       />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -127,6 +130,7 @@ const MetaData = ({
           })
         }}
       />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -151,6 +155,7 @@ const MetaData = ({
           })
         }}
       />
+      
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
