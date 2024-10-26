@@ -9,7 +9,7 @@ import 'swiper/css/effect-cube'
 export default function CubeSlider({slides}) {
 
     return (
-        <div className="w-full max-w-xs mx-auto p-4">
+        <div className="w-full mx-auto p-4">
             <Swiper
                 effect={'cube'}
                 grabCursor={true}

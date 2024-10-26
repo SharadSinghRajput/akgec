@@ -36,16 +36,9 @@ const FDPS = () => {
           <div className="w-full text-black">
             {fdpsData.map((result, index) => (
               <div key={index} className="border-b border-gray-300">
-                <a
-                  onClick={() => toggleDomain(index)}
-                  className={`flex justify-between items-center w-full px-5 ${openIndices.includes(index) ? 'text-white bg-indigo-950' : 'text-black'} py-6 cursor-pointer rounded-lg transition-colors duration-200 hover:bg-indigo-900 hover:text-white`}
-                >
+                <a onClick={() => toggleDomain(index)} className={`flex justify-between items-center w-full px-5 ${openIndices.includes(index) ? 'text-white bg-indigo-950' : 'text-black'} py-6 cursor-pointer rounded-lg transition-colors duration-200 hover:bg-indigo-900 hover:text-white`}>
                   <span className="font-semibold">{result.title}</span>
-                  {openIndices.includes(index) ? (
-                    <ChevronUp className="w-6 h-6" />
-                  ) : (
-                    <ChevronDown className="w-6 h-6" />
-                  )}
+                  {openIndices.includes(index) ? (<ChevronUp className="w-6 h-6" />) : (<ChevronDown className="w-6 h-6" />)}
                 </a>
                 {openIndices.includes(index) && (
                   <div className="pl-5 py-10 bg-gray-200">

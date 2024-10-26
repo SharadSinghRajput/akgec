@@ -36,37 +36,6 @@ const cardDetails = [
     subheading: "SAE International",
     img: "/image/home/Aacar2.jpg",
   },
-  {
-    id: 5,
-    title: "Honored at the Tech Startups Conclave & Awards 2022",
-    subheading: "Ishu Bansal",
-    img: "/image/home/IshuBansal.jpg",
-  },
-  {
-    id: 6,
-    title:
-      "The AKGEC Robotics club is a student chapter formed on 8'MAY '2013",
-    subheading: "Robotics Club",
-    img: "/image/home/RoboticsHome.jpg",
-  },
-  {
-    id: 7,
-    title: "Explore ICI Membership Benefits and Advanced Concrete Technology",
-    subheading: " A Grand Inaugural Ceremony",
-    img: "/image/home/ICI4.jpg",
-  },
-  {
-    id: 8,
-    title: "Developing Top Engineers and Technicians for a Thriving Industry",
-    subheading: "ISTE",
-    img: "/image/home/iste.jpg",
-  },
-  {
-    id: 9,
-    title: "SAE International: A Century of Engineering Excellence",
-    subheading: "SAE International",
-    img: "/image/home/Aacar2.jpg",
-  },
 ];
 
 export default function SlickSlider() {
