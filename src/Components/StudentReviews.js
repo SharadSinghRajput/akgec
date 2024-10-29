@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Quote from "/public/image/quote.webp"
 import Button from "./Button";
+import StudentStories from "./StudentStories";
 
 export default function StudentReviews() {
     return (
@@ -16,7 +17,8 @@ export default function StudentReviews() {
                         Discover the enriching stories and valuable insights directly from our accomplished graduates.
                     </p>
                 </div>
-               <div className="max-w-4xl mx-auto mt-10">
+                <StudentStories />
+                {/* <div className="max-w-4xl mx-auto mt-10">
                     <div className="grid grid-cols-12 bg-[#f3f3f3] min-h-[380px] rounded-lg overflow-hidden">
                         <div className="col-span-12 sm:col-span-4 sm:order-last max-sm:w-64 max-sm:m-auto">
                             <img
@@ -38,13 +40,12 @@ export default function StudentReviews() {
                                 </figcaption>
                             </figure>
                         </div>
-
                     </div>
-                </div>
+                </div> */}
                 <div className="w-full flex justify-center items-center">
-                <Button text={'Read All Reviews'} className=" py-3 px-10 mt-5 text-[15px] text-white rounded-xl font-novaBold uppercase bg-btn-gradient  w-max  hover:bg-[#3c5686] hover:border-b-4 hover:text-white hover:border-[#beb6ff] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105" />
+                    <Button text={'Read All Reviews'} className=" py-3 px-10 mt-5 text-[15px] text-white rounded-xl font-novaBold uppercase bg-btn-gradient  w-max  hover:bg-[#3c5686] hover:border-b-4 hover:text-white hover:border-[#beb6ff] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105" />
                 </div>
             </div>
-        </section>  
+        </section>
     )
 }

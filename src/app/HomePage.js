@@ -82,7 +82,7 @@ export default function HomePage() {
               </p>
 
               <div className="h-20">
-                <Button text={'Apply Today'} className="py-3 px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-btn-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform  scale-y-105 animate-gradient tracking-widest" />
+                <Button text={'Apply Today'} className="py-3 px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-btn-gradient animate-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform  scale-y-105 tracking-widest" />
               </div>
             </div>
             <div className="max-md:mt-10  mt-10 pt-5">
@@ -95,9 +95,9 @@ export default function HomePage() {
       </div>
       <div className="relative h-auto">
         <TopCard />
+        <ExploreCourses />
         <SlickSlider />
         <NotificationSlider />
-        <ExploreCourses />
         <MilestonesSection />
         <PlacementHighlights />
         <LogoSlider />
