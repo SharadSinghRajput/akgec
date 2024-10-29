@@ -165,7 +165,7 @@ export default function NavBar() {
               </div>
               <div className="flex justify-end max-2xl:flex-col gap-4">
                 <div className="max-md:w-full max-md:flex  max-md:justify-between  max-md:items-center max-md:py-1">
-                  <div className="flex items-center justify-center gap-5 px-2 py-1.5 max-md:w-full">
+                  {/* <div className="flex items-center justify-center gap-5 px-2 py-1.5 max-md:w-full">
                     <div className="max-md:hidden">
                       <ul className="flex items-center gap-5 text-white max-md:p-2 justify-center w-full ">
                         <li className=" ">
@@ -178,7 +178,7 @@ export default function NavBar() {
                             <span className="text-[9px] max-md:hidden">Whatsapp</span>
                           </a>
                         </li>
-                        {/* <li>
+                        <li>
                           <a className="flex flex-col items-center gap-1" href="">
                             <img
                               className="w-4 h-4"
@@ -187,7 +187,7 @@ export default function NavBar() {
                             />
                             <span className="text-[9px] max-md:hidden">Call Us</span>
                           </a>
-                        </li> */}
+                        </li>
                         <li>
                           <a className="flex flex-col items-center gap-1" href="">
                             <img
@@ -252,11 +252,11 @@ export default function NavBar() {
                         Get Social with us
                       </small>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
                 <div
-                  className={`flex max-sm:p-1  max-lg:p-1  items-center justify-center transition-all ${isScrolled ? "px-2.5 py-0.5" : "px-2.5 py-2"
-                    } bg-btn-gradient animate-gradient rounded-full max-w-md mx-auto max-lg:mx-0 max-md:mx-0`}
+                  className={`flex max-sm:p-1  max-lg:p-1  items-center justify-center transition-all ${isScrolled ? "px-2 py-2" : "px-2 py-2"
+                    } bg-gradient-to-tr from-amber-500 to-purple-600 animate-gradient rounded-full max-w-md mx-auto max-lg:mx-0 max-md:mx-0`}
                 >
                   <div className="flex items-center space-x-3">
                     <div
@@ -269,30 +269,7 @@ export default function NavBar() {
                         />
                       </a>
                     </div>
-                    {/* <div className="font-novaLight max-sm:hidden">
-                      <p
-                        className={`text-white  ${isScrolled ? "text-[10px]" : "text-xs"
-                          }`}
-                      >
-                        Admission Helpline
-                      </p>
-                      <p
-                        className={`text-white max-xl:text-xs font-bold  ${isScrolled ? "text-xs" : "text-sm leading-none"
-                          }`}
-                      >
-                        1800-200-0777
-                      </p>
-                    </div> */}
                   </div>
-                  {/* <div className="flex items-center ml-3 max-sm:hidden">
-                    <button className="text-white p-2 rounded-full hover:bg-blue-700">
-
-                    </button>
-                    <Bars3Icon
-                      className="text-white mr-2 h-8"
-                      aria-hidden="true"
-                    />
-                  </div> */}
                 </div>
               </div>
             </div>
