@@ -15,7 +15,7 @@ const Admissions = () => {
               <div className="max-w-3xl max-2xl:max-w-xl max-xl:w-full px-2">
                 <div className="mb-5">
                   <h1 className="text-xl font-novaReg mb-3">
-                    AKG Engineering College
+                    AKG University
                     <br className="w-auto" />
                     <div className="">
                       <span className="text-5xl max-sm:text-3xl max-sm:py-0.5 py-1 inline-block font-novaReg lg:text-5xl bg-secondary text-center w-fit h-fit px-2.5">
