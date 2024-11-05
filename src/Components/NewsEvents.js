@@ -28,7 +28,7 @@ export default function NewsEvents() {
         <div className="bg-gray-100/50 py-10 relative">
             <div className="">
 
-                <div className="bg-[#ebebeb] h-[60%] w-full absolute top-0 left-0 -z-10"></div>
+                <div className="bg-[#ebebeb] h-[70%] w-full absolute top-0 left-0 -z-10"></div>
                 <h2 className="text-5xl font-novaLight text-center text-gray-700">
                     Spotlight of <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Success</span>!
                 </h2>

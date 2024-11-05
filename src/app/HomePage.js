@@ -104,8 +104,8 @@ export default function HomePage() {
         <CampusSlider />
         <StudentReviews />
         <NewsEvents />
-        <ResearchEnvironment />
         <FooterCard />
+        <ResearchEnvironment />
         <StickyFooter ShowState={showStickyBar} />
         {/* <AwardSection/> */}
       </div >

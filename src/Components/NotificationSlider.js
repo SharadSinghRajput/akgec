@@ -62,7 +62,7 @@ const NotificationSlider = () => {
                     </aside>
                 </div>
                 <div className="col-span-8 max-lg:col-span-12 h-full max-lg:mb-4 max-lg:px-4 max-lg:ml-0 ">
-                    <section className="bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg">
+                    <section className="bg-gradient-to-r from-cyan-500 to-indigo-600 animate-gradient rounded-lg">
                         <div className="grid grid-cols-12">
                             <div className="col-span-2 p-2 flex justify-center items-center">
                                 <img

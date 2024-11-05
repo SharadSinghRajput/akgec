@@ -7,7 +7,7 @@ const stats = [
 ];
 export default function FooterCard() {
   return (
-    <div className="bg-gradient-to-r from-cyan-500 to-cyan-500 ">
+    <div className="bg-blue-600">
       <div className="mx-auto max-w-7xl px-32 sm:px-6 ">
         <div className="grid grid-cols-5 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2">
           {stats?.map((stat, index) => (

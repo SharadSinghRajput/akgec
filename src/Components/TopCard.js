@@ -18,14 +18,14 @@ const TopCard = () => {
                 >
                     <SwiperSlide>
                         <img
-                            src="/image/card-1.jpg"
+                            src="/image/card-1.webp"
                             alt="card-top"
                             className="w-3/4 h-auto border rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                            src="/image/card-2.jpg"
+                            src="/image/card-2.webp"
                             alt="card-top"
                             className="w-3/4 h-auto border rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                         />
@@ -41,21 +41,21 @@ const TopCard = () => {
                     <div className="flex flex-wrap justify-between gap-2">
                         <div className="flex-1 p-2">
                             <img
-                                src="/image/card-1.jpg"
+                                src="/image/card-1.webp"
                                 alt="card-top"
                                 className=" h-48 rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                             />
                         </div>
                         <div className="flex-1 p-2">
                             <img
-                                src="/image/card-2.jpg"
+                                src="/image/card-2.webp"
                                 alt="card-top"
                                 className=" h-48 rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                             />
                         </div>
                         <div className="flex-1 p-2">
                             <img
-                                src="/image/card-1.jpg"
+                                src="/image/card-1.webp"
                                 alt="card-top"
                                 className=" h-48 rounded-2xl transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                             />
