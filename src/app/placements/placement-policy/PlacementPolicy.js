@@ -6,7 +6,7 @@ const PlacementPolicy = () => {
       <h2 className="text-4xl font-novaReg mb-2">Placement Policy</h2>
       <main className="space-y-6">
         <p className="">
-          The objective of the placement policy at AKGEC is to outline the overall structure and processes involved in
+          The objective of the placement policy at AKGU is to outline the overall structure and processes involved in
           the Training and Placement, ensuring clear responsibilities for all teams working toward successful placements.
         </p>
 
@@ -23,11 +23,11 @@ const PlacementPolicy = () => {
         <div>
           <h3 className="text-lg font-semibold mb-2">Scope</h3>
           <p className="">
-            This policy applies to all Engineering, Management, and other programs coordinated by AKGEC and relevant to:
+            This policy applies to all Engineering, Management, and other programs coordinated by AKGU and relevant to:
           </p>
           <ul className="list-disc pl-10 space-y-1 mt-2">
             <li>Students being assessed for their respective courses</li>
-            <li>Completion requirements necessary for the award of an AKGEC degree</li>
+            <li>Completion requirements necessary for the award of an AKGU degree</li>
             <li>Campus recruitment available exclusively for final-year students</li>
           </ul>
         </div>
@@ -35,7 +35,7 @@ const PlacementPolicy = () => {
         <div>
           <h3 className="text-lg font-semibold mb-2">The University</h3>
           <ul className="list-disc pl-10 space-y-1">
-            <li>The term "University" in this policy refers to AKGEC University</li>
+            <li>The term "University" in this policy refers to AKGU University</li>
             <li>T&P stands for Training and Placement teams</li>
             <li>
               The role of T&P is to provide placement support to graduating students. T&P strives to bridge the gap between students
@@ -43,9 +43,9 @@ const PlacementPolicy = () => {
             </li>
             <li>
               T&P communicates with organizations, arranges interviews, and coordinates the various activities related to placements
-              for AKGEC students.
+              for AKGU students.
             </li>
-            <li>All placements at AKGEC are managed through the T&P department</li>
+            <li>All placements at AKGU are managed through the T&P department</li>
           </ul>
         </div>
       </main>

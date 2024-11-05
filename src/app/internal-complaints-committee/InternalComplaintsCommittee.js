@@ -49,7 +49,7 @@ const InternalComplaintsCommittee = () => {
             </div>
             <div className='p-4'>
                 <p className='font-novaReg text-lg'>
-                    In continuation to notice AKGEC/D.O.Notice/28/09-10 dated 9th August, 2009 and under the provision of the Sexual Harassment of Women at Prevention, Prohibition and Redressal Act, 2013, the following internal Complaint Committee is reformed with the following composition.
+                    In continuation to notice AKGU/D.O.Notice/28/09-10 dated 9th August, 2009 and under the provision of the Sexual Harassment of Women at Prevention, Prohibition and Redressal Act, 2013, the following internal Complaint Committee is reformed with the following composition.
                 </p>
 
                 <div className="mb-6 mt-4 rounded-lg">

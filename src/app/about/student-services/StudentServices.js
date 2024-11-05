@@ -18,7 +18,7 @@ const slides = [
         title: "Student Services",
         subHeading: "Experience Exceptional Campus Living",
         subtitle: "A Comfortable and Modern Residence",
-        description: "At AKGEC, we provide state-of-the-art accommodations that prioritize comfort, ensuring a conducive environment for personal growth.",
+        description: "At AKGU, we provide state-of-the-art accommodations that prioritize comfort, ensuring a conducive environment for personal growth.",
         buttonText: "Explore Accommodation",
         image: "/image/student-services/main-banner-2.jpg",
     },
@@ -26,7 +26,7 @@ const slides = [
         title: "Student Services",
         subHeading: "Celebrate Cultural Diversity",
         subtitle: "Bringing Together a Global Community",
-        description: "AKGEC takes pride in its culturally diverse student body, fostering an inclusive environment for learning and collaboration.",
+        description: "AKGU takes pride in its culturally diverse student body, fostering an inclusive environment for learning and collaboration.",
         buttonText: "Explore Diversity",
         image: "/image/student-services/main-banner-3.jpg",
     },
@@ -73,8 +73,8 @@ const StudentServices = () => {
         <>
             <BannerSlider slides={slides} />
             <div className='max-w-7xl mx-auto py-8'>
-                <h2 className='text-3xl font-novaSemi'>Exciting Student Journey at AKGEC University!</h2>
-                <p className='mt-2 text-sm font-novaReg'>At AKGEC, the university experience is about embracing independence and personal growth. Our campus is fully equipped with everything you need—comfortable accommodation, diverse entertainment, dining options, and excellent sports facilities. With students from various Indian states and union territories, as well as an increasing global presence, AKGEC offers abundant opportunities for making lifelong friends, engaging in cultural exchange, and creating lasting memories.</p>
+                <h2 className='text-3xl font-novaSemi'>Exciting Student Journey at AKGU University!</h2>
+                <p className='mt-2 text-sm font-novaReg'>At AKGU, the university experience is about embracing independence and personal growth. Our campus is fully equipped with everything you need—comfortable accommodation, diverse entertainment, dining options, and excellent sports facilities. With students from various Indian states and union territories, as well as an increasing global presence, AKGU offers abundant opportunities for making lifelong friends, engaging in cultural exchange, and creating lasting memories.</p>
                 <div className='py-20'>
                     <ul className='grid grid-cols-4 gap-4 '>
                         <li className='flex items-center justify-center group'>
@@ -82,7 +82,7 @@ const StudentServices = () => {
                                 <span>
                                     <img src="/image/icons/accommodation.png" alt="accommodation" />
                                 </span>
-                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050]'>Home at AKGEC
+                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050]'>Home at AKGU
                                 </strong>
                             </Link>
                         </li>
@@ -177,7 +177,7 @@ const StudentServices = () => {
                                                 <div>
                                                     <h2 className="text-lg font-novaBold mb-5">Banking Facilities</h2>
                                                     <p className='border-y border-gray-300 text-sm py-5'>
-                                                        At AKGEC University, we provide the best banking facilities to our students. In order
+                                                        At AKGU University, we provide the best banking facilities to our students. In order
                                                         to cater to their banking needs, we have on-campus, fully air-conditioned and fully computerized branches of the State Bank of India.
                                                     </p>
                                                 </div>
@@ -196,7 +196,7 @@ const StudentServices = () => {
                                                 <div>
                                                     <h2 className="text-lg font-novaBold mb-5">Eating Joints</h2>
                                                     <p className='border-y border-gray-300 text-sm py-5'>
-                                                        AKGEC campus has multiple food courts and cafeterias that serve a variety of healthy and delicious meals.
+                                                        AKGU campus has multiple food courts and cafeterias that serve a variety of healthy and delicious meals.
                                                     </p>
                                                 </div>
                                             )}

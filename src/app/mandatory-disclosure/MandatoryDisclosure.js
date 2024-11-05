@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const documents = [
-    { title: "Mandatory Disclosure 2024-25", link: "/pdf/mandatory-disclosure/AKGEC-Mandatory-Disclosure-_2024-25.pdf" },
+    { title: "Mandatory Disclosure 2024-25", link: "/pdf/mandatory-disclosure/AKGU-Mandatory-Disclosure-_2024-25.pdf" },
     { title: "Income and Expenditure account", link: "/pdf/mandatory-disclosure/Income_Expenditure.xls" },
     { title: "Balance Sheet", link: "/pdf/mandatory-disclosure/BALANCE_SHEET.xls" },
     { title: "Disability Resource Center", link: "/disability-resource-center" },

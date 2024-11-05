@@ -31,17 +31,17 @@ const conferenceData = [
     {
         title: "National Conference - Mechanical and Automation Engineering (MAAE-2020)",
         summary: [
-            "Department of Mechanical Engineering AKGEC organized the conference Mechanical and Automation Engineering (MAAE-2020), during 7-8 February 2020. The aim of the conference was to provide a knowledge sharing platform for researchers, academicians and industry personnel. The conference also provided an opportunity to students to get exposed to the culture of academic development and to the field of research and innovation.",
+            "Department of Mechanical Engineering AKGU organized the conference Mechanical and Automation Engineering (MAAE-2020), during 7-8 February 2020. The aim of the conference was to provide a knowledge sharing platform for researchers, academicians and industry personnel. The conference also provided an opportunity to students to get exposed to the culture of academic development and to the field of research and innovation.",
 
             "Research papers were invited on topics including Unconventional Manufacturing, Automation & Robotics, product Development and PLM, Non Destructive Testing, Mechatronics, Additive Manufacturing, Flexible Manufacturing System, Concurrent Engineering, Simulation and Modelling and more.",
 
             "The patrons and organizers were honored to have senior academicians from IITs, NITs and other eminent technical institutions on the Technical and Advisory Board of the Conference.",
 
-            "Air Marsal R.K.S. Shera, PVSM, AVSM, VSM (Retd.), graced the opening ceremony as the Chief Guest, Dr. P.C. Pant, Director, HRD Innovative Projects, Ministry of New and Renewable Energy, was the Guest of Honour and Dr. Rajeev Agrawal, Associate Professor and Associate Dean (Research) , Malaviya National Institute Of Technology, Jaipur, was the Key Note Speaker. The opening ceremony was attended by Director General AKGEC Dr. R.K. Agarwal, Heads of Departments, Deans, faulty, delegates and the students.",
+            "Air Marsal R.K.S. Shera, PVSM, AVSM, VSM (Retd.), graced the opening ceremony as the Chief Guest, Dr. P.C. Pant, Director, HRD Innovative Projects, Ministry of New and Renewable Energy, was the Guest of Honour and Dr. Rajeev Agrawal, Associate Professor and Associate Dean (Research) , Malaviya National Institute Of Technology, Jaipur, was the Key Note Speaker. The opening ceremony was attended by Director General AKGU Dr. R.K. Agarwal, Heads of Departments, Deans, faulty, delegates and the students.",
 
             "Dr. Devender Singh, HoD Mechanical Engineering and Convenor of the Conference, introduced the theme of the Conference by sharing his industrial experiences.",
 
-            "Dr. R.K. Agarwal, Director General AKGEC, welcomed the guests and the participants and expressed his views on the various aspects of Automation. He conveyed his best wishes to the participants and urged them to use the conference as a great opportunity for learning and sharing.",
+            "Dr. R.K. Agarwal, Director General AKGU, welcomed the guests and the participants and expressed his views on the various aspects of Automation. He conveyed his best wishes to the participants and urged them to use the conference as a great opportunity for learning and sharing.",
 
             "The Chief Guest R.K.S. Shera made note of his illustrious career at the Indian Air Force and pointed out the opportunities and challenges that engineers can find in a career at the IAF. He urged the budding engineers to join the Indian Air Force for a fruitful career and service to the Nation.",
 

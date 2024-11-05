@@ -26,7 +26,7 @@ const PlacementEngineering = () => {
           <div className="h-full mx-auto max-w-[1250px] max-xl:max-w-[1000px] max-lg:max-w-[600px] max-sm:max-w-[5x00px] py-5 grid grid-cols-2 max-lg:grid-cols-1 gap-5">
             <div className="max-w-2xl max-sm:px-2 ">
               <h1 className="leading-none text-4xl tracking-wide font-novaBold max-w-md">
-                Engineering Placements at AKGEC University: A Glance
+                Engineering Placements at AKGU University: A Glance
               </h1>
               <p className="text-sm leading-4 my-5">
                 Campus Placements for the session Batch 2023-24 at AKG University saw major recruiters like TCS, Infosys, Accenture, Capgemini, HCL, Siemens, Mahindra, Cognizant, and Oracle offering positions to engineering students. A record number of 2,850 engineering students were successfully placed, with over 180 multinational companies participating in the placement drive.

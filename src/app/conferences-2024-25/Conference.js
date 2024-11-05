@@ -5,7 +5,7 @@ import React from 'react';
 
 const acetSummary = [
     {
-        desc: "Ajay Kumar Garg Engineering College, known for its dedication to high-quality education and promoting research initiatives, successfully organized the 1st International Conference on “Advanced Computing and Emerging Technologies (ACET-2024)\". The two-day event, held on August 23-24, 2024, was organized by the Department of Computer Science and Engineering and was technically co-sponsored by IEEE UP Section and Ghaziabad Management Association (GMA). The conference attracted significant interest, with over 800 research papers submitted globally, of which 148 were selected for presentation, highlighting the exceptional quality of the work showcased."
+        desc: "Ajay Kumar Garg University, known for its dedication to high-quality education and promoting research initiatives, successfully organized the 1st International Conference on “Advanced Computing and Emerging Technologies (ACET-2024)\". The two-day event, held on August 23-24, 2024, was organized by the Department of Computer Science and Engineering and was technically co-sponsored by IEEE UP Section and Ghaziabad Management Association (GMA). The conference attracted significant interest, with over 800 research papers submitted globally, of which 148 were selected for presentation, highlighting the exceptional quality of the work showcased."
     },
     {
         desc: "Researchers from across India and various international institutions participated, engaging in a wide range of technical sessions. Scholars from esteemed institutions such as IIT, JNU, and IIIT shared their research, facilitating a rich exchange of ideas. The event served as a vital platform for discussing the societal impact of emerging technologies and research advancements."
@@ -17,7 +17,7 @@ const acetSummary = [
         desc: "Additionally, invited talks were delivered by esteemed experts such as Dr. Balakrishnan Athiyaman, Head of the Supercomputing Division at the Ministry of Earth Sciences; Dr. Srinivas Singh, Director of ABV-IIITM Gwalior; Dr. J. RamKumar, Professor at IIT Kanpur; and Dr. Satish Kumar Singh, Associate Professor at IIIT Allahabad. These discussions emphasized the critical role of research in societal progress and India's journey toward innovation-driven development."
     },
     {
-        desc: "The Chief Patron of the conference was Dr. R. K. Agarwal, Director General of Ajay Kumar Garg Engineering College, whose leadership and vision were instrumental in making the event a grand success."
+        desc: "The Chief Patron of the conference was Dr. R. K. Agarwal, Director General of Ajay Kumar Garg University, whose leadership and vision were instrumental in making the event a grand success."
     }
 ];
 

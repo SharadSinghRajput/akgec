@@ -37,7 +37,7 @@ const StickyFooter = ({ ShowState }) => {
         <div className={`transition-all overflow-hidden ${ShowState ? "h-0" : "h-20"} z-50 fixed bottom-5 left-0 w-full flex justify-center items-center max-md:gap-2 gap-5 px-5 max-md:flex-col-reverse`}>
           <div className="flex-1 max-md:flex max-md:items-center bg-btn-gradient animate-gradient text-white rounded-lg pt-2 pb-1 overflow-hidden w-full px-2">
             <marquee className="font-bold">
-              APPLY NOW for Ajay Kumar Garg Engineering College
+              APPLY NOW for Ajay Kumar Garg University
             </marquee>
           </div>
 

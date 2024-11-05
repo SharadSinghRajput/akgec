@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const slides = [
     {
         title: 'Advanced Research Programs',
-        description: `AKGEC University offers cutting-edge research programs in collaboration with leading institutions. Students can engage in groundbreaking projects and gain practical experience...`,
+        description: `AKGU University offers cutting-edge research programs in collaboration with leading institutions. Students can engage in groundbreaking projects and gain practical experience...`,
         points: [
             'Access to research labs and resources across various disciplines.',
             'Opportunities for publishing papers and presenting at conferences.',
@@ -18,7 +18,7 @@ const slides = [
     },
     {
         title: 'Industry-Academia Partnerships',
-        description: `AKGEC University has established partnerships with top industry players to bridge the gap between academic learning and real-world applications...`,
+        description: `AKGU University has established partnerships with top industry players to bridge the gap between academic learning and real-world applications...`,
         points: [
             'Internships and co-op programs with leading companies.',
             'Guest lectures and workshops by industry experts.',
@@ -38,7 +38,7 @@ const slides = [
     },
     {
         title: 'Global Learning Opportunities',
-        description: `AKGEC University provides numerous global learning opportunities, including exchange programs and international collaborations to broaden students' horizons...`,
+        description: `AKGU University provides numerous global learning opportunities, including exchange programs and international collaborations to broaden students' horizons...`,
         points: [
             'Student exchange programs with partner universities worldwide.',
             'International research collaborations and projects.',
@@ -73,7 +73,7 @@ const Academics = () => {
                                     <h1 className="text-[22px] lg:text-4xl mb-4 pt-2.5 font-novaReg uppercase">Innovative and Inspiring Academic Pathways</h1>
                                     <p className="mb-4 pb-2.5 text-sm font-novaReg max-w-2xl">
                                         <em>
-                                            At AKGEC University, we are committed to providing a dynamic and transformative educational experience. Our aim is to empower students by encouraging exploration, fostering innovation, and supporting continuous growth through a diverse range of academic and extracurricular opportunities.
+                                            At AKGU University, we are committed to providing a dynamic and transformative educational experience. Our aim is to empower students by encouraging exploration, fostering innovation, and supporting continuous growth through a diverse range of academic and extracurricular opportunities.
                                         </em>
                                     </p>
                                 </article>
@@ -136,9 +136,9 @@ const Academics = () => {
                                     <img src="/image/academic-overview/flexible-cbcs.png" alt="Innovative Curriculum Diagram" className="lg:w-full md:w-36 sm:items-center sm:w-28 max-w-full item-center h-auto opacity-90 object-cover" />
                                 </div>
                                 <article className="px-3">
-                                    <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGEC's Academic Excellence: Pioneering Your Journey to Success</h2>
+                                    <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGU's Academic Excellence: Pioneering Your Journey to Success</h2>
                                     <p className="mb-5 text-[14px] lg:text-[15px] md:text-[15px] sm:text-[15px] font-novaReg">
-                                        At AKGEC University, our academic philosophy is designed to foster a comprehensive educational experience. We offer a diverse and adaptable curriculum that emphasizes critical thinking, creative problem-solving, and practical skills to prepare students for the dynamic demands of the professional world.
+                                        At AKGU University, our academic philosophy is designed to foster a comprehensive educational experience. We offer a diverse and adaptable curriculum that emphasizes critical thinking, creative problem-solving, and practical skills to prepare students for the dynamic demands of the professional world.
                                     </p>
                                     <ul className="list-disc text-[14px] lg:text-[15px] md:text-[15px] font-novaReg space-y-2 mb-4 mt-5">
                                         <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">Global Perspectives - Preparing for a globalized world</li>
@@ -160,8 +160,8 @@ const Academics = () => {
                         <div className="w-full max-w-7xl mx-auto p-10">
                             <div className="flex justify-around max-sm:flex-col relative text-white -mx-3">
                                 <article className="px-3">
-                                    <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGEC's Academic Focus: Pioneering Your Path to Success</h2>
-                                    <p className="mb-5 text-[15px] font-novaReg">At AKGEC University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
+                                    <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGU's Academic Focus: Pioneering Your Path to Success</h2>
+                                    <p className="mb-5 text-[15px] font-novaReg">At AKGU University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
                                     <ul className="list-disc font-novaReg space-y-2 mb-4 mt-5">
                                         <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">
                                             <b>Comprehensive Expertise</b> - World-class faculty provide both theoretical knowledge and practical application
@@ -200,7 +200,7 @@ const Academics = () => {
                                 </div>
                                 <article className="px-3">
                                     <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Embracing Outcome-Based Education: Your Path to Empowerment</h2>
-                                    <p className="mb-5 text-[15px] font-novaReg">At AKGEC, Outcome-Based Education (OBE) is central to our teaching philosophy. We are committed to providing a structured learning experience that focuses on achieving specific educational outcomes through continuous feedback and improvement.</p>
+                                    <p className="mb-5 text-[15px] font-novaReg">At AKGU, Outcome-Based Education (OBE) is central to our teaching philosophy. We are committed to providing a structured learning experience that focuses on achieving specific educational outcomes through continuous feedback and improvement.</p>
                                     <ul className="list-disc font-novaReg space-y-2 mb-4 mt-5">
                                         <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">
                                             <b>Defined Learning Outcomes</b> - Clear objectives guiding student achievements
@@ -229,9 +229,9 @@ const Academics = () => {
                         <div className="w-full max-w-7xl mx-auto p-10">
                             <div className="flex justify-around max-sm:flex-col relative text-white -mx-3">
                                 <article className="px-3">
-                                    <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Curriculum Structure: Crafting Your Learning Journey at AKGEC</h2>
+                                    <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Curriculum Structure: Crafting Your Learning Journey at AKGU</h2>
                                     <p className="mb-5 text-[15px] font-novaReg">
-                                        At AKGEC, we believe that education goes beyond traditional learning. Our curriculum is designed to equip students with the skills and knowledge required to excel in today’s competitive environment. We focus on a comprehensive approach that integrates both theoretical knowledge and practical experience.
+                                        At AKGU, we believe that education goes beyond traditional learning. Our curriculum is designed to equip students with the skills and knowledge required to excel in today’s competitive environment. We focus on a comprehensive approach that integrates both theoretical knowledge and practical experience.
                                     </p>
                                     <ul className="list-disc font-novaReg space-y-2 mb-4 mt-5">
                                         <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">
@@ -282,9 +282,9 @@ const Academics = () => {
                                     <img src="/image/academic-overview/project-learning.png" alt="Project-Based Learning" className="lg:w-full md:w-36 sm:w-28 max-w-full item-center h-auto opacity-90 object-cover" />
                                 </div>
                                 <article className="px-3">
-                                    <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Unlocking Your Potential: AKGEC's Innovative Evaluation System</h2>
+                                    <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Unlocking Your Potential: AKGU's Innovative Evaluation System</h2>
                                     <p className="mb-5 text-[15px] font-novaReg">
-                                        At AKGEC, our evaluation system is meticulously designed to foster student success through a blend of continuous assessment, personalized feedback, and comprehensive support. This approach ensures that every student can achieve their highest potential.
+                                        At AKGU, our evaluation system is meticulously designed to foster student success through a blend of continuous assessment, personalized feedback, and comprehensive support. This approach ensures that every student can achieve their highest potential.
                                     </p>
                                     <ul className="list-disc font-novaReg space-y-2 mb-4 mt-5">
                                         <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">

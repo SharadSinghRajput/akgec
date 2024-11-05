@@ -128,7 +128,7 @@ const Research = () => {
         <div className="max-w-7xl mx-auto h-full flex gap-10">
           <div className="w-[35%] relative bg-blue-600 py-20 flex flex-col gap-5 text-white px-5">
             <h2 className="text-4xl font-novaBold">About Research</h2>
-            <p className="leading-5 font-novaLight ">The research landscape at AKGEC University is extensive and impactful. Scholars at the university engage in research across diverse fields, striving to enhance human knowledge through rigorous inquiry, innovation, and insight. AKGEC University is acknowledged by the Department of Scientific and Industrial Research (DSIR) for its contributions to scientific advancement.</p>
+            <p className="leading-5 font-novaLight ">The research landscape at AKGU University is extensive and impactful. Scholars at the university engage in research across diverse fields, striving to enhance human knowledge through rigorous inquiry, innovation, and insight. AKGU University is acknowledged by the Department of Scientific and Industrial Research (DSIR) for its contributions to scientific advancement.</p>
             <a className="w-fit py-2.5 px-6 border rounded-xl bg-[#f7a600] border-none text-white text-sm font-novaBold uppercase" href="#">Read More</a>
           </div>
           <div className="w-[65%] flex items-center gap-20">

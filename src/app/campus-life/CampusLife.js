@@ -81,28 +81,28 @@ const facultySpeaks = [
         rating: 5
     },
     {
-        description: "At AKGEC, we emphasize interdisciplinary learning and hands-on experiences, ensuring students receive an education that goes beyond textbooks. The welcoming culture here, built on inclusivity and openness, has fostered a diverse community, with students joining us from more than 50 nations.",
+        description: "At AKGU, we emphasize interdisciplinary learning and hands-on experiences, ensuring students receive an education that goes beyond textbooks. The welcoming culture here, built on inclusivity and openness, has fostered a diverse community, with students joining us from more than 50 nations.",
         name: "Dr. Rakesh Gupta",
         title: "Dean of Engineering",
         img: "/image/student/2.png",
         rating: 5
     },
     {
-        description: "The academic framework at AKGEC encourages students to engage in experiential learning while exploring diverse disciplines, creating a unique and enriching educational experience. Our commitment to inclusivity and a friendly campus culture has been pivotal in attracting a growing international student body from 50+ countries.",
+        description: "The academic framework at AKGU encourages students to engage in experiential learning while exploring diverse disciplines, creating a unique and enriching educational experience. Our commitment to inclusivity and a friendly campus culture has been pivotal in attracting a growing international student body from 50+ countries.",
         name: "Dr. Anjali Sharma",
         title: "Head of ME",
         img: "/image/student/3.png",
         rating: 5
     },
     {
-        description: "We believe in an education that is flexible, practical, and interdisciplinary, enabling students to gain valuable real-world experience alongside their academic studies. The inclusive and supportive environment here has been instrumental in building our diverse student community, with students from over 50 nations choosing AKGEC.",
+        description: "We believe in an education that is flexible, practical, and interdisciplinary, enabling students to gain valuable real-world experience alongside their academic studies. The inclusive and supportive environment here has been instrumental in building our diverse student community, with students from over 50 nations choosing AKGU.",
         name: "Dr. Vijay Singh",
         title: "Professor of EE",
         img: "/image/student/1.png",
         rating: 5
     },
     {
-        description: "AKGEC offers students a dynamic blend of experiential learning and interdisciplinary education, preparing them to excel in an ever-changing world. The sense of belonging and inclusivity we foster on campus has been a key driver in attracting a diverse range of students from more than 50 countries.",
+        description: "AKGU offers students a dynamic blend of experiential learning and interdisciplinary education, preparing them to excel in an ever-changing world. The sense of belonging and inclusivity we foster on campus has been a key driver in attracting a diverse range of students from more than 50 countries.",
         name: "Dr. Priya Mehta",
         title: "Professor of CE",
         img: "/image/student/2.png",
@@ -119,35 +119,35 @@ const distinguishedGuests = [
         rating: 5
     },
     {
-        description: "AKGEC has created an incredible platform for fostering innovation and collaboration. The dedication to shaping the next generation of leaders is truly commendable. I was honored to be part of such an inspiring event.",
+        description: "AKGU has created an incredible platform for fostering innovation and collaboration. The dedication to shaping the next generation of leaders is truly commendable. I was honored to be part of such an inspiring event.",
         name: "Ms. Shalini Verma",
         title: "CEO, Global Tech Solutions",
         img: "/image/student/2.png",
         rating: 5
     },
     {
-        description: "It was an absolute pleasure to witness the brilliant minds at AKGEC. The institution is not just advancing knowledge but also shaping future innovators who will positively impact the world.",
+        description: "It was an absolute pleasure to witness the brilliant minds at AKGU. The institution is not just advancing knowledge but also shaping future innovators who will positively impact the world.",
         name: "Prof. Arvind Sharma",
         title: "Nobel Laureate, Physics",
         img: "/image/student/3.png",
         rating: 5
     },
     {
-        description: "The academic excellence and community engagement at AKGEC are truly impressive. It’s clear that this institution is committed to pushing the boundaries of knowledge and creating global leaders.",
+        description: "The academic excellence and community engagement at AKGU are truly impressive. It’s clear that this institution is committed to pushing the boundaries of knowledge and creating global leaders.",
         name: "Mr. Rajiv Mehra",
         title: "Chairman",
         img: "/image/student/1.png",
         rating: 5
     },
     {
-        description: "AKGEC has established itself as a beacon of educational brilliance. It was a pleasure interacting with students and faculty alike, and I believe the impact this institution has on the future is profound.",
+        description: "AKGU has established itself as a beacon of educational brilliance. It was a pleasure interacting with students and faculty alike, and I believe the impact this institution has on the future is profound.",
         name: "Dr. Priya Menon",
         title: "Director",
         img: "/image/student/2.png",
         rating: 5
     },
     {
-        description: "My visit to AKGEC left me deeply impressed by their focus on both academic and personal development. The enthusiasm of the students and faculty is inspiring, and I look forward to seeing their continued contributions to society.",
+        description: "My visit to AKGU left me deeply impressed by their focus on both academic and personal development. The enthusiasm of the students and faculty is inspiring, and I look forward to seeing their continued contributions to society.",
         name: "Mr. Anil Kapoor",
         title: "Vice Chancellor",
         img: "/image/student/3.png",

@@ -4,9 +4,9 @@ const posts = [
         title: 'AICRA 2020 Awards',
         href: '#',
         description:
-            'AKGEC has been honored with STEM Award-2020 under India STEM College Award 2020 and Best Robolab Setup during 3rd edition of STEM Contribution Awards & Summit -2020 organized by the All India Council for Robotics & Automation (AICRA) India on 13 February, 2020.',
+            'AKGU has been honored with STEM Award-2020 under India STEM College Award 2020 and Best Robolab Setup during 3rd edition of STEM Contribution Awards & Summit -2020 organized by the All India Council for Robotics & Automation (AICRA) India on 13 February, 2020.',
         imageUrl:
-            'https://www.akgec.ac.in/wp-content/uploads/2020/02/Stem2.jpg',
+            '/image/spotlight/Stem2.jpg',
 
     },
     {
@@ -14,9 +14,9 @@ const posts = [
         title: '“30Hacks” Hackathon organised by Hitachi x GlobalLogic',
         href: '#',
         description:
-            'Team VidyutKavach from Ajay Kumar Garg Engineering College was recently selected to participate in the “30Hacks" Hackathon organized by Hitachi x GlobalLogic. The event took place on March 14th and 15th, 2024.',
+            'Team VidyutKavach from Ajay Kumar Garg University was recently selected to participate in the “30Hacks" Hackathon organized by Hitachi x GlobalLogic. The event took place on March 14th and 15th, 2024.',
         imageUrl:
-            'https://www.akgec.ac.in/wp-content/uploads/2024/05/Vidyut1.jpg',
+            '/image/spotlight/Vidyut1.jpg',
 
     },
     // More posts...
@@ -41,7 +41,7 @@ export default function NewsEvents() {
                         <div className="col-span-1 rounded-xl mr-5 border border-gray-200 hover:shadow-lg bg-white ">
                             <img
                                 alt=""
-                                src="https://www.akgec.ac.in/wp-content/uploads/2021/06/CFC4.jpeg"
+                                src="/image/spotlight/CFC4.jpeg"
                                 className="w-full rounded-xl bg-gray-50 object-cover lg:aspect-auto lg:h-80 md:h-64"
                             />
                             <div className="p-8">

@@ -84,27 +84,27 @@ export const sectionData = [
     {
       title: "Top University",
       subtitle: "for Students",
-      description: `Ajay Kumar Garg Engineering College (AKGEC) is a full-fledged engineering college affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow. It is approved by the All India Council for Technical Education (AICTE) and recognized for its right to offer undergraduate and postgraduate degrees in engineering and technology.`,
+      description: `Ajay Kumar Garg University (AKGU) is a full-fledged engineering college affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow. It is approved by the All India Council for Technical Education (AICTE) and recognized for its right to offer undergraduate and postgraduate degrees in engineering and technology.`,
       buttonText: "READ MORE",
     },
     {
-      title: "About AKGEC University",
-      description: `Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad is affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow, and is approved by the All India Council for Technical Education. The college was established in 1998 and offers B.Tech courses in nine disciplines of Engineering namely Computer Science and Engineering, Information Technology, Computer Science, Computer Science & Information Technology, Computer Science and Engineering (Artificial Intelligence & Machine Learning), Computer Science and Engineering (Data Science), Computer Science and Engineering (Hindi), Artificial Intelligence & Machine Learning, Electronics and Communication Engineering, Electrical and Electronics Engineering, Mechanical Engineering, and Civil Engineering.`,
+      title: "About AKGU University",
+      description: `Ajay Kumar Garg University (AKGU), Ghaziabad is affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow, and is approved by the All India Council for Technical Education. The college was established in 1998 and offers B.Tech courses in nine disciplines of Engineering namely Computer Science and Engineering, Information Technology, Computer Science, Computer Science & Information Technology, Computer Science and Engineering (Artificial Intelligence & Machine Learning), Computer Science and Engineering (Data Science), Computer Science and Engineering (Hindi), Artificial Intelligence & Machine Learning, Electronics and Communication Engineering, Electrical and Electronics Engineering, Mechanical Engineering, and Civil Engineering.`,
     },
     {
       title: "AKG Engineering College",
-      description: `Ajay Kumar Garg Engineering College (AKGEC) is recognized and actively participates as a member of various professional associations.`,
+      description: `Ajay Kumar Garg University (AKGU) is recognized and actively participates as a member of various professional associations.`,
       buttonText: "READ MORE",
     },
     {
       title: "Leading Academic Institution",
-      description: `Ajay Kumar Garg Engineering College (AKGEC) is ranked among the leading and best educational institutions in North India. AKGEC consistently ranks among the top engineering colleges in Uttar Pradesh for its academic excellence, innovative teaching methods, research achievements, and placement records, as recognized by national and international accreditation bodies and media outlets.`,
-      additionalText: `Ajay Kumar Garg Engineering College (AKGEC) has established itself as a leader in campus placements. The repeated visits by top-tier multinational companies underscore AKGEC's reputation as a premier institution with exceptional placement opportunities in India.`,
+      description: `Ajay Kumar Garg University (AKGU) is ranked among the leading and best educational institutions in North India. AKGU consistently ranks among the top engineering colleges in Uttar Pradesh for its academic excellence, innovative teaching methods, research achievements, and placement records, as recognized by national and international accreditation bodies and media outlets.`,
+      additionalText: `Ajay Kumar Garg University (AKGU) has established itself as a leader in campus placements. The repeated visits by top-tier multinational companies underscore AKGU's reputation as a premier institution with exceptional placement opportunities in India.`,
       buttonText: "READ MORE",
     },
     {
       title: "Unblemished",
       subtitle: "Batch of 2023-24 Placements",
-      description: `Ajay Kumar Garg Engineering College (AKGEC) has become an undisputed leader in campus placements. The consistent presence of top-tier companies highlights AKGEC's reputation as the 'University with the Best Placements' in India.`,
+      description: `Ajay Kumar Garg University (AKGU) has become an undisputed leader in campus placements. The consistent presence of top-tier companies highlights AKGU's reputation as the 'University with the Best Placements' in India.`,
     },
   ];

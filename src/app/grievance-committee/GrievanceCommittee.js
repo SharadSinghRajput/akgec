@@ -8,7 +8,7 @@ const grievances = [
     {
         title: "Internal Complaints Committee",
         link: "/internal-complaints-committee",
-        desc: <>In continuation to notice AKGEC/D.O.Notice/28/09-10<br /> dated 9th August, 2009 and under the provision</>
+        desc: <>In continuation to notice AKGU/D.O.Notice/28/09-10<br /> dated 9th August, 2009 and under the provision</>
     },
     {
         title: "Student Grievance Committee",

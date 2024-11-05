@@ -71,11 +71,11 @@ const HostelFees = () => {
             </ul>
 
             <strong>Mode of Payment:</strong>
-            <p className="mt-2 mb-2">1. By DD/PO in favour of “Ajay Kumar Garg Engineering College" payable at Ghaziabad or Delhi. Write your name and mobile number on the reverse of the draft. It may be submitted by post or in person.</p>
+            <p className="mt-2 mb-2">1. By DD/PO in favour of “Ajay Kumar Garg University" payable at Ghaziabad or Delhi. Write your name and mobile number on the reverse of the draft. It may be submitted by post or in person.</p>
             <strong>OR</strong>
             <p className="mt-2 mb-2">2. Online transfer through NEFT/RTGS. Bank Account details of College for online payment are as under:</p>
             <ul className='list-inside pl-5 mb-3'>
-                <li className='mb-2'>Name of the Beneficiary: Ajay Kumar Garg Engineering College</li>
+                <li className='mb-2'>Name of the Beneficiary: Ajay Kumar Garg University</li>
                 <li className='mb-2'>Name of the Bank: Kotak Mahindra Bank Ltd., Navyug Market, Ghaziabad -201001 (U.P.)-INDIA</li>
                 <li className='mb-2'>Bank Account No.: 508010250461 (Saving Bank Account)</li>
                 <li className='mb-2'>RTGS/NEFT/IFSC Code: KKBK0005295</li>

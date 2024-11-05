@@ -14,7 +14,7 @@ const cardDetails = [
   },
   {
     id: 2,
-    title: "The AKGEC Robotics club is a student chapter formed on 8'MAY '2013",
+    title: "The AKGU Robotics club is a student chapter formed on 8'MAY '2013",
     subheading: "Robotics Club",
     images: [
       "/image/home/RoboticsHome.jpg",

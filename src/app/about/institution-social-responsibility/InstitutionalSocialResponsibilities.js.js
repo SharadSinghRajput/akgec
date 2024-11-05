@@ -15,12 +15,12 @@ const plant = [
   {
     img: '/image/environment-protection/nature-club-2.jpg',
     title: 'Nature Club',
-    desc: 'AKGEC has established ‘Nature Club’ which is committed not only to spreading awareness about the problems but also to motivate students to find solutions to the problems in the light of inherent relationships.'
+    desc: 'AKGU has established ‘Nature Club’ which is committed not only to spreading awareness about the problems but also to motivate students to find solutions to the problems in the light of inherent relationships.'
   },
   {
     img: '/image/environment-protection/nature-club-3.jpg',
     title: 'Unnat Bharat',
-    desc: 'AKGEC University’s Recycling Program is aimed at educating students on waste segregation and recycling practices. Through this program, the university fosters a culture of sustainability, ensuring proper waste management and minimizing environmental impact.'
+    desc: 'AKGU University’s Recycling Program is aimed at educating students on waste segregation and recycling practices. Through this program, the university fosters a culture of sustainability, ensuring proper waste management and minimizing environmental impact.'
   }
 ];
 
@@ -31,7 +31,7 @@ function InstitutionalSocialResponsibilities() {
       <div className='max-w-[1400px] mx-auto px-4'>
         <h1 className="text-4xl font-novaReg mb-1">Environment Protection</h1>
         <p className="">
-          AKGEC University Launches ‘Eco Friendly Environment: Our Earth, Our Responsibility’ Initiative to Promote Environmental Awareness
+          AKGU University Launches ‘Eco Friendly Environment: Our Earth, Our Responsibility’ Initiative to Promote Environmental Awareness
         </p>
       </div>
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-5 px-4">
@@ -59,7 +59,7 @@ function InstitutionalSocialResponsibilities() {
             <div className="p-6 space-y-4">
               <h2 className="text-2xl font-bold">Unnat Bharat Abhiyaan</h2>
               <p className="text-sm">
-                An Awareness campaign for cleanliness and environment was conducted by the Ajay Kumar Garg Engineering College, Ghaziabad under Unnat Bharat Abhiyan by college National Social Service students at Galand and Raghunathpur villages.
+                An Awareness campaign for cleanliness and environment was conducted by the Ajay Kumar Garg University, Ghaziabad under Unnat Bharat Abhiyan by college National Social Service students at Galand and Raghunathpur villages.
               </p>
               <p className="text-sm">
                 First of all the students inititated a cleanliness drive at Panchayat house of Galand village of Ghaziabad district in which the cooperation of the village head Mr.Sanjay Singh ji was unforgettable.The program moved ahead when students have started a rally on swachh bharat abhiyan through an awareness was created for cleanliness program under Swachh Bharat Abhiyan on the main road of Galand village.
@@ -82,7 +82,7 @@ function InstitutionalSocialResponsibilities() {
               </p>
               <h3 className="text-xl font-semibold">» Establish Program</h3>
               <p className="text-sm">
-                AKGEC has established ‘Nature Club’ which is committed not only to spreading awareness about the problems but also to motivate students to find solutions to the problems in the light of inherent relationships. The effort will improve the competence of students to contribute towards the sustainability of nature and avoid environmental degradation in their individual capacity as well as in groups.
+                AKGU has established ‘Nature Club’ which is committed not only to spreading awareness about the problems but also to motivate students to find solutions to the problems in the light of inherent relationships. The effort will improve the competence of students to contribute towards the sustainability of nature and avoid environmental degradation in their individual capacity as well as in groups.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <Image

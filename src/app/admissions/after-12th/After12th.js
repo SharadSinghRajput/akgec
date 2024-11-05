@@ -40,7 +40,7 @@ export default () => {
                                 <h1 className="text-4xl max-xl:text-2xl text-gray-700">Job Oriented</h1>
                                 <h2 className="text-4xl max-xl:text-2xl text-gray-700 font-novaBold uppercase">Professional Programs</h2>
                                 <h3 className="text-9xl max-xl:text-5xl text-gray-900 font-novaBold lett tracking-tight">after 12th</h3>
-                                <p className="text-lg leading-5 font-novaLight mt-5 text-gray-700">AKGEC fosters a balanced environment that integrates academic excellence with opportunities for sports and extracurricular activities. By promoting both intellectual and personal growth, the institute ensures students excel in their studies while actively engaging in physical fitness, teamwork, and creative pursuits. This holistic approach equips students with diverse skills, preparing them for successful careers and well-rounded lives.</p>
+                                <p className="text-lg leading-5 font-novaLight mt-5 text-gray-700">AKGU fosters a balanced environment that integrates academic excellence with opportunities for sports and extracurricular activities. By promoting both intellectual and personal growth, the institute ensures students excel in their studies while actively engaging in physical fitness, teamwork, and creative pursuits. This holistic approach equips students with diverse skills, preparing them for successful careers and well-rounded lives.</p>
                             </div>
                         </div>
                         <div className='col-span-1'>

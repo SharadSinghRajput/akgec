@@ -14,12 +14,12 @@ const howToReachUs = () => {
             <h2 className='text-4xl font-novaReg mb-2'>How to Reach Us ?</h2>
             <div>
                 <p className="">
-                    Ajay Kumar Garg Engineering College (AKGEC), 27th KM Milestone, Delhi - Meerut Expy, Ghaziabad, Uttar Pradesh 201015.
+                    Ajay Kumar Garg University (AKGU), 27th KM Milestone, Delhi - Meerut Expy, Ghaziabad, Uttar Pradesh 201015.
                 </p>
             </div>
 
             <div className="mt-5">
-                <h2 className="text-2xl text-black font-novaSemi mb-5">Transport Options to Reach Ajay Kumar Garg Engineering College:</h2>
+                <h2 className="text-2xl text-black font-novaSemi mb-5">Transport Options to Reach Ajay Kumar Garg University:</h2>
 
                 {/* Option 1: By Road */}
                 <div className="border rounded-lg mb-2">
@@ -31,11 +31,11 @@ const howToReachUs = () => {
                     </div>
                     {activeOption === 1 && (
                         <div className="p-3 transition-all ease-in-out duration-1000 ">
-                            <p className=" mb-2">AKGEC is well-connected by road to nearby areas such as Ghaziabad city center, Delhi, and Noida.</p>
-                            <h2 className="text-black mb-2 font-semibold">DIRECT CAB to Ajay Kumar Garg Engineering College</h2>
+                            <p className=" mb-2">AKGU is well-connected by road to nearby areas such as Ghaziabad city center, Delhi, and Noida.</p>
+                            <h2 className="text-black mb-2 font-semibold">DIRECT CAB to Ajay Kumar Garg University</h2>
                             <ul className="list-disc pl-5">
                                 <li className="">
-                                    <span className="font-bold">From Ghaziabad Bus Stand (Old Bus Stand):</span> You can take an auto-rickshaw or taxi directly to AKGEC. The distance is about 12 km, and it takes approximately 30-40 minutes to reach.
+                                    <span className="font-bold">From Ghaziabad Bus Stand (Old Bus Stand):</span> You can take an auto-rickshaw or taxi directly to AKGU. The distance is about 12 km, and it takes approximately 30-40 minutes to reach.
                                 </li>
                                 <div className="mt-4 mb-10 w-1/2 max-sm:w-full bg-red-500 ">
                                     <a href="https://www.google.com/maps/dir/''/Bus+Station+Ghaziabad,+Hapur+Road,+Navyug+Market,+Naya+Ganj,+Ghaziabad,+Uttar+Pradesh+201001/@28.6859113,77.4485222,13.86z/data=!4m23!1m8!3m7!1s0x390cf1b689134b91:0xa96ed66f0c96eb!2sBus+Station+Ghaziabad!8m2!3d28.670256!4d77.431217!15sCjJidXMgc3RhbmQgbmVhciBBamF5IEt1bWFyIEdhcmcgRW5naW5lZXJpbmcgQ29sbGVnZVo0IjJidXMgc3RhbmQgbmVhciBhamF5IGt1bWFyIGdhcmcgZW5naW5lZXJpbmcgY29sbGVnZZIBC2J1c19zdGF0aW9u4AEA!16s%2Fg%2F1tfhdt1r!4m13!1m5!1m1!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2m2!1d77.5020041!2d28.6756736!1m5!1m1!1s0x390cf1b689134b91:0xa96ed66f0c96eb!2m2!1d77.431217!2d28.670256!3e0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
@@ -43,7 +43,7 @@ const howToReachUs = () => {
                                     </a>
                                 </div>
                                 <li className="">
-                                    <span className="font-bold">From ISBT Anand Vihar, Delhi:</span> Buses from Anand Vihar to Ghaziabad are available regularly. After reaching Ghaziabad, you can take a local bus, shared auto, or hire a taxi to reach AKGEC.
+                                    <span className="font-bold">From ISBT Anand Vihar, Delhi:</span> Buses from Anand Vihar to Ghaziabad are available regularly. After reaching Ghaziabad, you can take a local bus, shared auto, or hire a taxi to reach AKGU.
                                 </li>
                                 <div className="mt-4 mb-10 w-1/2 max-sm:w-full ">
                                     <a className="https://www.google.com/maps/dir/''/Isbt+Anand+Vihar,+Anand+Vihar,+Delhi,+110092/@28.6403612,77.3335071,13.04z/data=!4m14!4m13!1m5!1m1!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2m2!1d77.5020041!2d28.6756736!1m5!1m1!1s0x390cfb39486b2fcb:0x95107699484eb8d!2m2!1d77.3144936!2d28.6476506!3e0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" href="" target="_blank">
@@ -51,7 +51,7 @@ const howToReachUs = () => {
                                     </a>
                                 </div>
                                 <li className="">
-                                    <span className="font-bold">From Noida Sector 62 or Sector 18:</span> You can hire a cab or take local buses towards Ghaziabad and then proceed to AKGEC.
+                                    <span className="font-bold">From Noida Sector 62 or Sector 18:</span> You can hire a cab or take local buses towards Ghaziabad and then proceed to AKGU.
                                 </li>
                                 <div className="mt-4 mb-10 w-1/2 max-sm:w-full">
                                     <p className=" mb-2">Sector 62 </p>
@@ -78,7 +78,7 @@ const howToReachUs = () => {
                     </div>
                     {activeOption === 2 && (
                         <div className="p-3">
-                            <li className="">The nearest metro station to AKGEC is Vaishali Metro Station (on the Blue Line), around 15 km from the campus. From Vaishali, you can hire a cab or take a shared auto to reach the college.</li>
+                            <li className="">The nearest metro station to AKGU is Vaishali Metro Station (on the Blue Line), around 15 km from the campus. From Vaishali, you can hire a cab or take a shared auto to reach the college.</li>
                             <div className="mt-4 mb-10 w-1/2 max-sm:w-full">
                                 <a className="w-[50%] object-cover" href="https://www.google.com/maps/dir/Vaishali+Metro+Station,+Madan+Mohan+Malviya+Marg,+Gaur+Ganga+2,+Phase+1,+Sector+4,+Vaishali,+Ghaziabad,+Uttar+Pradesh+201010/Ajay+Kumar+Garg+Engineering+College,+Delhi+-+Meerut+Expressway,+Ghaziabad,+Uttar+Pradesh/@28.6578434,77.3401034,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x390cfadbb9d8f833:0xa063c0e377aae595!2m2!1d77.33968!2d28.64984!1m5!1m1!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2m2!1d77.5020041!2d28.6756736!3e0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                     <img className='w-[100%]  object-cover' src="/image/about/Metro1.png" alt="Map1" />
@@ -104,7 +104,7 @@ const howToReachUs = () => {
                     </div>
                     {activeOption === 3 && (
                         <div className="p-3">
-                            <li className="">The nearest railway station is Ghaziabad Junction (GZB), which is around 10 km from AKGEC. You can take an auto-rickshaw or taxi to reach the college from the station.</li>
+                            <li className="">The nearest railway station is Ghaziabad Junction (GZB), which is around 10 km from AKGU. You can take an auto-rickshaw or taxi to reach the college from the station.</li>
                             <div className="mt-4 mb-10 w-1/2 max-sm:w-full">
                                 <a className="w-[50%]  object-cover" href="https://www.google.com/maps/dir/Ghaziabad,+Bhur+Bharat+Nagar,+Railway+Colony,+Madhopura,+Ghaziabad,+Uttar+Pradesh+201009/Ajay+Kumar+Garg+Engineering+College,+Delhi+-+Meerut+Expressway,+Ghaziabad,+Uttar+Pradesh/@28.6586456,77.4274073,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x390cf1d263d479d5:0x1ec65e86735c7cf8!2m2!1d77.42744!2d28.6534785!1m5!1m1!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2m2!1d77.5020041!2d28.6756736!3e0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                     <img className='w-[100%] object-cover' src="/image/about/Map1.png" alt="Map1" />
@@ -130,7 +130,7 @@ const howToReachUs = () => {
                     </div>
                     {activeOption === 4 && (
                         <div className="p-3">
-                            <li className="">The nearest airport is Indira Gandhi International (IGI) Airport, New Delhi, which is approximately 50 km from AKGEC. You can hire a cab directly to the college or take the metro to Vaishali/Ghaziabad and then a cab or auto.</li>
+                            <li className="">The nearest airport is Indira Gandhi International (IGI) Airport, New Delhi, which is approximately 50 km from AKGU. You can hire a cab directly to the college or take the metro to Vaishali/Ghaziabad and then a cab or auto.</li>
                             <div className="mt-4 mb-10 w-1/2 max-sm:w-full">
                                 <a className="w-[50%]  object-cover" href="https://www.google.com/maps/dir/Indira+Gandhi+Int'l+Airport,+New+Delhi,+Delhi+110037/Ajay+Kumar+Garg+Engineering+College,+Delhi+-+Meerut+Expressway,+Ghaziabad,+Uttar+Pradesh/@28.5468665,77.2882397,12.04z/data=!4m14!4m13!1m5!1m1!1s0x390d1b85fc2a2d89:0xbef376182c43ed9d!2m2!1d77.0999623!2d28.5561437!1m5!1m1!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2m2!1d77.5020041!2d28.6756736!3e0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                     <img className='w-[100%] object-cover' src="/image/about/Airport.png" alt="Map1" />

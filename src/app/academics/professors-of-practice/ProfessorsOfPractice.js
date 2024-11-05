@@ -21,7 +21,7 @@ const ProfessorsOfPractice = () => {
                         </h1>
                         <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 w-full max-w-72 h-2 rounded-full bg-gray-800"></div>
                     </div>
-                    <p className="text-white font-novaReg text-center max-sm:text-sm mb-8">Faculty currently associated with AKGEC University</p>
+                    <p className="text-white font-novaReg text-center max-sm:text-sm mb-8">Faculty currently associated with AKGU University</p>
                     <div className="relative mb-8">
                         <input
                             type="text"

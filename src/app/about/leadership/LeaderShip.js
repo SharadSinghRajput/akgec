@@ -11,7 +11,7 @@ const LeaderShip = () => {
                         />
                         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-white/0 pt-16 p-4">
                             <b className="font-novaBold text-lg text-white">Dr R.K. Agarwal</b>
-                            <small className="block text-white text-[11px] -mt-1">Director General, AKGEC</small>
+                            <small className="block text-white text-[11px] -mt-1">Director General, AKGU</small>
                         </div>
                     </div>
                     <p className="w-full pt-1 text-start font-light text-xs md:text-sm 2xl:text-sm">
@@ -28,7 +28,7 @@ const LeaderShip = () => {
                         He is the recipient of the coveted Royal Aeronautical Society (UK) award for academic excellence at CIT and a citation with cash award by DRDO for his contribution to the design and development of Airborne Early Warning aircraft, culminating in its maiden flight. His name also features in the the book featuring “100 Great IITians: Dedicated to the Service of the Nation” by Commander V K Jately. This book will play its role of inspiring the youth of India who are on the path of making India विकसित भारत and विश्वगुरू.
                     </p>
                     <p className="mt-5  leading-5">
-                        After taking voluntary retirement in 2004, Dr. Agarwal decided to contribute in the field of technical education and has been the Director of Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad since then. He has been persistently working towards setting new benchmarks in academic excellence as well as industry-academia interface to make the students globally competitive and employable. During his tenure, the college has not only been consistently maintaining exceptional results and placements but has also made significant progress in research and industry relevant consultancy projects. A number of initiatives and collaborative ventures with eminent multi-national companies have lead to establishment of many multi-disciplinary, high technology industry relevant facilities. These include India's first Kuka Industrial Robotics Training Centre, NI-LabVIEW Academy, Bosch Rexroth Centre of Competence in Automation Technologies, Janatics Industrial Pneumatic Knowledge Centre and Mitsubishi Electric India. The college has also achieved the unique distinction of receiving the Academic Excellence Award for Best Engineering College in UPTU for two successive years under his able guidance.
+                        After taking voluntary retirement in 2004, Dr. Agarwal decided to contribute in the field of technical education and has been the Director of Ajay Kumar Garg University (AKGU), Ghaziabad since then. He has been persistently working towards setting new benchmarks in academic excellence as well as industry-academia interface to make the students globally competitive and employable. During his tenure, the college has not only been consistently maintaining exceptional results and placements but has also made significant progress in research and industry relevant consultancy projects. A number of initiatives and collaborative ventures with eminent multi-national companies have lead to establishment of many multi-disciplinary, high technology industry relevant facilities. These include India's first Kuka Industrial Robotics Training Centre, NI-LabVIEW Academy, Bosch Rexroth Centre of Competence in Automation Technologies, Janatics Industrial Pneumatic Knowledge Centre and Mitsubishi Electric India. The college has also achieved the unique distinction of receiving the Academic Excellence Award for Best Engineering College in UPTU for two successive years under his able guidance.
                     </p>
                     <p className="mt-5  leading-5">
                         He has also contributed in bringing about a culture of corporate social responsibility in academic institutions. The social activities initiated by him include running a free primary school in the college, adopting a municipal corporation school in a nearby village, providing tuition fee subsidy to children of class IV employees, donating computers to spread computer literacy and generously contributing for relief work after natural calamities. Involvement in these activities makes the students conscious of their civic and social responsibilities. He places special emphasis on all round development with focus on inculcating self discipline, good moral values, ethics, work culture and a positive attitude to make the students not just competent professionals but also good citizens and responsible members of the society.
@@ -50,7 +50,7 @@ const LeaderShip = () => {
                         As a valued member of influential professional bodies such as IEEE, PES, ISTE, and IEI, Dr. Ahuja actively contributes to the growth and development of his field. His collaboration with the IEI-Ghaziabad local center as an eminent engineer reflects his dedication to community-driven initiatives. Moreover, Dr. Ahuja plays a pivotal role in shaping Electrical Engineering activities at the Abdul Kalam Technical University level, serving as a member of the Board of Studies for Electrical Engineering at AKTU.
                     </p>
                     <p className="mt-4  leading-5">
-                        Dr. Hemant Ahuja's multifaceted expertise, dedication to academia, and active involvement in research and collaboration position him as a visionary leader at the helm of Ajay Kumar Garg Engineering College, driving excellence and innovation in engineering education.
+                        Dr. Hemant Ahuja's multifaceted expertise, dedication to academia, and active involvement in research and collaboration position him as a visionary leader at the helm of Ajay Kumar Garg University, driving excellence and innovation in engineering education.
                     </p>
                 </div>
                 <div className="col-span-3 max-md:col-span-8">
@@ -62,12 +62,12 @@ const LeaderShip = () => {
                         />
                         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-white/0 pt-16 p-4">
                             <b className="font-novaBold text-lg text-white">Dr. Hemant Ahuja</b>
-                            <small className="block text-white text-[11px] -mt-1">Director, AKGEC</small>
+                            <small className="block text-white text-[11px] -mt-1">Director, AKGU</small>
                         </div>
                     </div>
                     <p className="w-full pt-1 text-start text-xs md:text-sm 2xl:text-sm">
                         <span className="font-bold text-6xl block font-serif italic">"</span>
-                        <cite className="-mt-5 block">Dr. Hemant Ahuja, the esteemed Director of Ajay Kumar Garg Engineering College, Ghaziabad, is a seasoned professional with an illustrious career spanning over 22 years in academia and industry.</cite>
+                        <cite className="-mt-5 block">Dr. Hemant Ahuja, the esteemed Director of Ajay Kumar Garg University, Ghaziabad, is a seasoned professional with an illustrious career spanning over 22 years in academia and industry.</cite>
                     </p>
                 </div>
             </div>

@@ -178,7 +178,7 @@ const DepartmentCareerDevelopment = () => {
                     <div>
                         <h1 className="text-4xl font-montserrat font-bold mb-6">Career Development and Planning Department</h1>
                         <p className="mb-4 text-lg font-novaLight">
-                            <strong>AKGEC University</strong> is committed to fostering continuous learning and professional development among students. We strive to nurture their career growth from the moment they step into AKGEC University, guiding them to build strong personal and professional competencies. Through engaging and dynamic learning approaches, we fulfill the aptitude, verbal ability, and soft skills training needs across all Engineering and Non-Engineering departments at AKGEC University.
+                            <strong>AKGU University</strong> is committed to fostering continuous learning and professional development among students. We strive to nurture their career growth from the moment they step into AKGU University, guiding them to build strong personal and professional competencies. Through engaging and dynamic learning approaches, we fulfill the aptitude, verbal ability, and soft skills training needs across all Engineering and Non-Engineering departments at AKGU University.
                         </p>
                         <p className="text-lg font-novaLight mb-4">
                             <strong>Vision:</strong> To equip students with a robust platform to develop and refine their professional skills, empowering them for a successful career.

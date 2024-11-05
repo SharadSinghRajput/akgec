@@ -146,10 +146,10 @@ const EducationLoan = () => {
                 Financial Aid & Study Loans For AKG Students
             </h2>
             <p className="text-sm text-gray-600 mb-4 max-sm:text-xs">
-                Ajay Kumar Garg Engineering College (AKGEC) serves as a vital launchpad for students eager to turn their aspirations into achievements. Recognizing the financial barriers many students face in pursuing higher education, numerous banks, NBFCs, EMI service providers, and state governments have stepped in to offer student loans. This financial support aims to empower students to pursue their academic goals and unlock their potential for a successful future.
+                Ajay Kumar Garg University (AKGU) serves as a vital launchpad for students eager to turn their aspirations into achievements. Recognizing the financial barriers many students face in pursuing higher education, numerous banks, NBFCs, EMI service providers, and state governments have stepped in to offer student loans. This financial support aims to empower students to pursue their academic goals and unlock their potential for a successful future.
             </p>
             <p className="text-sm text-gray-600 mb-10 max-sm:text-xs">
-                Ajay Kumar Garg Engineering College (AKGEC) is committed to facilitating students in their pursuit of higher education. To aid students during the admission process—whether online or offline—the college has established a dedicated loan assistance cell. This initiative helps students secure financial support through loans from banks partnered with the university, ensuring they have the resources needed to achieve their academic ambitions.
+                Ajay Kumar Garg University (AKGU) is committed to facilitating students in their pursuit of higher education. To aid students during the admission process—whether online or offline—the college has established a dedicated loan assistance cell. This initiative helps students secure financial support through loans from banks partnered with the university, ensuring they have the resources needed to achieve their academic ambitions.
             </p>
             <div className="flex space-x-4 mb-6 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-2">
                 {loanData.map((loan, index) => (

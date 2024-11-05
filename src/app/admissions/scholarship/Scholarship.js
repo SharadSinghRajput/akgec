@@ -15,7 +15,7 @@ const Scholarship = () => {
                 <div className="max-w-[1400px] mx-auto h-full px-3">
                     <div className="max-w-2xl">
                         <div className="Cutout py-1.5 bg-yellow-400 mb-10"><h2 className="text-4xl font-novaReg">Year 2024-2025</h2></div>
-                        <p className="font-novaLight text-lg leading-6">AKGEC is dedicated to its Institutional Social Responsibility. As a leader in quality education, the University actively works to enhance educational standards and qualifications for students across the nation, with a particular focus on the northern region. AKGEC is passionate about inspiring and supporting exceptional students by offering additional benefits and resources to recognize their achievements and potential.</p>
+                        <p className="font-novaLight text-lg leading-6">AKGU is dedicated to its Institutional Social Responsibility. As a leader in quality education, the University actively works to enhance educational standards and qualifications for students across the nation, with a particular focus on the northern region. AKGU is passionate about inspiring and supporting exceptional students by offering additional benefits and resources to recognize their achievements and potential.</p>
                         <p className="mt-3 font-novaLight text-lg leading-6">As a continuation of this commitment, new and attractive scholarship opportunities have been introduced for the academic year 2024-2025.</p>
                         <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">Avail Scholarship ➜</button>
                     </div>

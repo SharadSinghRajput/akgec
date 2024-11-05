@@ -5,7 +5,7 @@ const Patent = () => {
     const tableHeadings = ["S.No.", "Department", "Patent"];
 
     const heading = "AKG University Patents by Department";
-    const paragraph = "Ajay Kumar Garg Engineering College (AKGEC) has made significant strides in innovation and research. The institution has filed multiple patents across various departments, reflecting its commitment to fostering a culture of research and development.";
+    const paragraph = "Ajay Kumar Garg University (AKGU) has made significant strides in innovation and research. The institution has filed multiple patents across various departments, reflecting its commitment to fostering a culture of research and development.";
 
     const patentData = [
         { sno: 1, department: "Computer Science & Engineering", patents: 42, link: "patent/cse-patent" },

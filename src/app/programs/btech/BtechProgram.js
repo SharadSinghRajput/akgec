@@ -26,7 +26,7 @@ const BtechProgram = () => {
                 <div>
                   <h2 className="text-3xl font-novaReg">Computer Science and Engineering</h2>
                   <p className="my-5 tracking-tight font-novaReg text-start leading-5">
-                    Department of Computer Science and Engineering at AKGEC was formed in 1998 with inception of the college. The Department provides an outstanding research environment complemented by excellence in teaching.
+                    Department of Computer Science and Engineering at AKGU was formed in 1998 with inception of the college. The Department provides an outstanding research environment complemented by excellence in teaching.
                   </p>
                   <p className="leading-5 text-start font-novaReg">
                     Ever since its inception, the department has been a pioneering academic centre for higher education, research, and innovation in key areas of Computer Science. The department provides full support to M.Tech. scholars in terms dissertation guidance, lab facilities and access to international and national journals. Experienced and senior faculty members are assigned for M.Tech courses and dissertation work of the scholars. The faculty members and M.Tech. scholars have published good quality research papers in peer-reviewed and indexed journals and International Conferences in the previous years.
@@ -82,7 +82,7 @@ const BtechProgram = () => {
                 <div className="space-y-4">
                   <h2 className="text-3xl font-novaReg">Your Future as a Professional Engineer</h2>
                   <p className="ttracking-tight text-base font-novaReg text-start leading-5">
-                    Ajay Kumar Garg Engineering College (Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)
+                    Ajay Kumar Garg University (Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)
                   </p>
                   <ul className="list-none space-y-4">
                     <li className="flex">
@@ -91,7 +91,7 @@ const BtechProgram = () => {
                       </svg>
                       </span>
                       <p className="text-base leading-6 text-start font-novaReg">
-                        Elevate your professional portfolio with industry-aligned programs, a dynamic fraternity, state-of-the-art infrastructure, impeccable placements, and much more at Ajay Kumar Garg Engineering College.
+                        Elevate your professional portfolio with industry-aligned programs, a dynamic fraternity, state-of-the-art infrastructure, impeccable placements, and much more at Ajay Kumar Garg University.
                       </p>
                     </li>
                     <li className="flex">
@@ -109,7 +109,7 @@ const BtechProgram = () => {
                       </svg>
                       </span>
                       <p className="text-base leading-6 text-start font-novaReg">
-                        From designing surgical needles to aircraft, software to smartphones, microchips to supercomputers—nearly every innovation in Science & Technology incorporates elements of Engineering. Choose Engineering as your career and pursue your degree at Ajay Kumar Garg Engineering College, one of the leading engineering institutions in Uttar Pradesh and North India.
+                        From designing surgical needles to aircraft, software to smartphones, microchips to supercomputers—nearly every innovation in Science & Technology incorporates elements of Engineering. Choose Engineering as your career and pursue your degree at Ajay Kumar Garg University, one of the leading engineering institutions in Uttar Pradesh and North India.
                       </p>
                     </li>
                   </ul>
@@ -268,7 +268,7 @@ const BtechProgram = () => {
               <div className='my-20 max-w-2xl max-lg:max-w-5xl'>
                 <div className='relative z-20'>
                   <h1 className='text-4xl font-novaReg max-w-md leading-none max-sm:text-center max-sm:text-3xl'>
-                    AKGEC University Engineering Placement Highlights
+                    AKGU University Engineering Placement Highlights
                   </h1>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-5 mt-8 relative z-20'>

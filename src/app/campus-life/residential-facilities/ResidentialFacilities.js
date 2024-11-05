@@ -43,10 +43,10 @@ const ResidentialFacilities = () => {
                 </button>
             </div>
             <p className="mb-4 text-gray-600">
-            AKGEC University offers on-campus accommodation to students, fostering a supportive and inclusive residential community. Hostels are available on a first-come, first-served basis and provide comfortable lodging and dining facilities for both male and female students. Each hostel is managed by dedicated wardens and faculty supervisors who prioritize the well-being and safety of residents, ensuring a well-rounded living experience with all necessary amenities to support students' academic and personal growth.
+            AKGU University offers on-campus accommodation to students, fostering a supportive and inclusive residential community. Hostels are available on a first-come, first-served basis and provide comfortable lodging and dining facilities for both male and female students. Each hostel is managed by dedicated wardens and faculty supervisors who prioritize the well-being and safety of residents, ensuring a well-rounded living experience with all necessary amenities to support students' academic and personal growth.
             </p>
             <p className="mb-6 text-gray-600">
-            AKGEC University organizes a diverse array of cultural, athletic, and social events to enrich students' campus life. Beyond the various interactive spaces on campus, each hostel features well-equipped common rooms where students can gather for daily interactions, fostering camaraderie and a sense of community.
+            AKGU University organizes a diverse array of cultural, athletic, and social events to enrich students' campus life. Beyond the various interactive spaces on campus, each hostel features well-equipped common rooms where students can gather for daily interactions, fostering camaraderie and a sense of community.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {hostels.map((hostel, index) => (

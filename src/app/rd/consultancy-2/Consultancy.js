@@ -9,7 +9,7 @@ const results = [
     title: "Innovations During Covid 19 Pandemic",
     desc: (
       <>
-        During the Covid 19 pandemic, AKGEC FabLab developed a low-cost yet environmentally friendly and reusable products – Respirator and Face shield using 3D printing Technology.<br />
+        During the Covid 19 pandemic, AKGU FabLab developed a low-cost yet environmentally friendly and reusable products – Respirator and Face shield using 3D printing Technology.<br />
         The respirator was developed using Polylactic Acid. The filter material used was disposable mask cloth but any material as per exposed environment can be used. Design considerations such as suitability for average male/female face size with ergonomic characteristics and perfect fit on the face without causing any problems due to prolonged usage were taken into consideration. The weight of the respirator was 47 grams and average cost of manufacture was INR 100.
       </>
     ),
@@ -24,7 +24,7 @@ const results = [
     title: "Indian Railways: Modern Coach Factory, Rai Bareilly",
     desc: (
       <>
-        AKGEC Skills Foundation (ASF) is working very closely with Modern Coach Factory, Rae Bareilly for training and upgradation of the competency of their engineers in Industrial Robotics and Automation. Further to this, MCF has agreed to organize joint In-Plant Training Programs through their Technical Training Centre on Robot Operation & Programming. The first program on “Robot Operation & Programming – In-Plant Training” was conducted at Modern Coach Factory Rae Bareilly during 17-28 September, 2018 for 15 participants.
+        AKGU Skills Foundation (ASF) is working very closely with Modern Coach Factory, Rae Bareilly for training and upgradation of the competency of their engineers in Industrial Robotics and Automation. Further to this, MCF has agreed to organize joint In-Plant Training Programs through their Technical Training Centre on Robot Operation & Programming. The first program on “Robot Operation & Programming – In-Plant Training” was conducted at Modern Coach Factory Rae Bareilly during 17-28 September, 2018 for 15 participants.
       </>
     ),
     slides: [
@@ -37,7 +37,7 @@ const results = [
     title: "Indian Air Force-Base Repair Depot",
     desc: (
       <>
-        AKGEC Skills Foundation (ASF) team led by Prof. IP Sharma and Mr. Som Ashutosh visited No. 1 & No. 4 Base Repair Depot (BRD) at Kanpur in May, 2018 and June, 2018 respectively and No. 7 BRD, Tughlakhabad Air Force Station in August, 2018. No. 7 BRD have sought ASF’s support in conducting repair and life enhancement studies of their Surface to Air Missile Launching Systems. ASF has also been requested to scan and develop a 3D printed model of their Surface to Air Missile Launcher which may be presented to the Prime Minister on the Air Force Day. AKGEC has been attached to Nodal Technological Centres (NTC) of No. 7 BRD, Tughlakhabad, New Delhi and No. 3 BRD, Chandigarh. Prof. Ashiv Shah, Prof. I. P. Sharma and Mr. Som Ashutosh participated in NTC Symposium organized by 7 BRD, Indian Air Force, at AIR Force Station, Tughlakabad on 27 September, 2018.
+        AKGU Skills Foundation (ASF) team led by Prof. IP Sharma and Mr. Som Ashutosh visited No. 1 & No. 4 Base Repair Depot (BRD) at Kanpur in May, 2018 and June, 2018 respectively and No. 7 BRD, Tughlakhabad Air Force Station in August, 2018. No. 7 BRD have sought ASF’s support in conducting repair and life enhancement studies of their Surface to Air Missile Launching Systems. ASF has also been requested to scan and develop a 3D printed model of their Surface to Air Missile Launcher which may be presented to the Prime Minister on the Air Force Day. AKGU has been attached to Nodal Technological Centres (NTC) of No. 7 BRD, Tughlakhabad, New Delhi and No. 3 BRD, Chandigarh. Prof. Ashiv Shah, Prof. I. P. Sharma and Mr. Som Ashutosh participated in NTC Symposium organized by 7 BRD, Indian Air Force, at AIR Force Station, Tughlakabad on 27 September, 2018.
       </>
     ),
     slides: [

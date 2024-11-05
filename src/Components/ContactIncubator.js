@@ -11,10 +11,10 @@ const ContactIncubator = () => {
                     />
                 </div>
                 <div className="md:w-1/2 md:pl-8">
-                    <h2 className="text-4xl font-novaLight mb-2">AKGEC-Technology Business</h2>
+                    <h2 className="text-4xl font-novaLight mb-2">AKGU-Technology Business</h2>
                     <h1 className="text-4xl font-novaBold mb-4">Incubator</h1>
                     <p className="mb-6 text-lg font-novaReg text-gray-600">
-                        AKGEC University is dedicated to fostering a culture of innovation and entrepreneurship, encouraging students to transform ideas into viable businesses.
+                        AKGU University is dedicated to fostering a culture of innovation and entrepreneurship, encouraging students to transform ideas into viable businesses.
                     </p>
                     <ul className="list-disc pl-4 text-gray-600">
                         <li className="text-sm mb-2.5">Government-Recognized Technology Business Incubator</li>

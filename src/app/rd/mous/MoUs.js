@@ -9,7 +9,7 @@ const results = [
     title: "MoU with AICRA",
     desc: (
       <>
-        AKGEC Skills Foundation signed MoU with AICRA (All India Council for Automation and Robotics) during ‘India STEM Summit & Awards 2020’ held at NDMC Convention Center, New Delhi on 13 February, 2020. <br /> The summit was inaugurated by Chief Guest Honorable Shri Nitin Gadkari – Union Cabinet Minister MSME, Road Transport & Highway. <br /> AKGEC Skills Foundation participated in the event as a sponsor and exhibitor showcasing the latest tools and technologies in the field of Industrial Automation & Robotics, Digital Manufacturing and 3D Printing etc.
+        AKGU Skills Foundation signed MoU with AICRA (All India Council for Automation and Robotics) during ‘India STEM Summit & Awards 2020’ held at NDMC Convention Center, New Delhi on 13 February, 2020. <br /> The summit was inaugurated by Chief Guest Honorable Shri Nitin Gadkari – Union Cabinet Minister MSME, Road Transport & Highway. <br /> AKGU Skills Foundation participated in the event as a sponsor and exhibitor showcasing the latest tools and technologies in the field of Industrial Automation & Robotics, Digital Manufacturing and 3D Printing etc.
       </>
     ),
     slides: [
@@ -21,7 +21,7 @@ const results = [
     title: "MoU with NFU",
     desc: (
       <>
-        AKGEC in its endeavor to promote global exposure in industry oriented teaching and international practices signed MoU with National Formosa University, Taiwan on 18 January, 2020. <br /> The MoU was signed to encourage cooperation in education and research areas of mutual interest and to promote direct contact between the faculty members, departments and students of both the parties. <br /> This initiative will be helpful for faculty and student exchange/internship programs and will encourage students to pursue joint research and development activities. The students will be benefitted by learning professional language and participation in cultural exchange programs.
+        AKGU in its endeavor to promote global exposure in industry oriented teaching and international practices signed MoU with National Formosa University, Taiwan on 18 January, 2020. <br /> The MoU was signed to encourage cooperation in education and research areas of mutual interest and to promote direct contact between the faculty members, departments and students of both the parties. <br /> This initiative will be helpful for faculty and student exchange/internship programs and will encourage students to pursue joint research and development activities. The students will be benefitted by learning professional language and participation in cultural exchange programs.
       </>
     ),
     slides: [
@@ -32,7 +32,7 @@ const results = [
     title: "MoU with BOSCH",
     desc: (
       <>
-        AKGEC signed MoU with BOSCH Automotive Ltd. on 14 November, 2019 at BOSCH head quarters at Bangalore. The primary purpose of this association is to develop facility for Joint Certification Training Centre and Express Bosch Car Service Workshop at AKGEC under AKGEC Skills initiative.
+        AKGU signed MoU with BOSCH Automotive Ltd. on 14 November, 2019 at BOSCH head quarters at Bangalore. The primary purpose of this association is to develop facility for Joint Certification Training Centre and Express Bosch Car Service Workshop at AKGU under AKGU Skills initiative.
       </>
     ),
     slides: [

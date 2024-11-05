@@ -148,7 +148,7 @@ export const facultyData = [
     title: "Assistant Professor",
     position: "Assistant Professor",
     department: "Electrical & Electronics Engg",
-    institute: "M.Tech (AKGEC, Gzb)",
+    institute: "M.Tech (AKGU, Gzb)",
     domain: "Embedded Systems, Smart Grid Technologies",
     image: "/image/faculty/Mr. Mahesh Sharma.jpg",
   },

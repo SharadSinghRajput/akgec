@@ -19,7 +19,7 @@ const MetaData = ({
       <meta name="author" content={author} />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="copyright" content="Copyright © AKGEC University. All Rights Reserved." />
+      <meta name="copyright" content="Copyright © AKGU University. All Rights Reserved." />
 
       <link rel="alternate" href={`${path}`} hreflang="es-us" />
       <link rel="canonical" href={`${path}`} />
@@ -40,7 +40,7 @@ const MetaData = ({
       <meta name="twitter:description" content={description} />
 
       {/* Geotag */}
-      <meta name="DC.title" content="Ajay Kumar Garg Engineering College" />
+      <meta name="DC.title" content="Ajay Kumar Garg University" />
       <meta name="geo.region" content="IN-UP" />
       <meta name="geo.placename" content="Ghaziabad" />
       <meta name="geo.position" content="28.6358;77.4377" />
@@ -60,10 +60,10 @@ const MetaData = ({
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "CollegeOrUniversity",
-          "name": "Ajay Kumar Garg Engineering College",
+          "name": "Ajay Kumar Garg University",
           "url": path,
           "sameAs": [
-            "https://www.facebook.com/Official.AKGEC",
+            "https://www.facebook.com/Official.AKGU",
             "https://x.com/official_akgec",
             "https://www.instagram.com/official.akgec/",
             "https://www.linkedin.com/school/officialakgec",

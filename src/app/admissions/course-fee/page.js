@@ -17,7 +17,7 @@ export const Home = () => {
     return (
         <>
         <div className="bg-gray-100">
-        <Header Button={{ name: "Apply Now", Link: "/" }} title={<span className="leading-[45px]">Ajay Kumar Garg Engineering College <br />Course Fee 2024 </span>} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+        <Header Button={{ name: "Apply Now", Link: "/" }} title={<span className="leading-[45px]">Ajay Kumar Garg University <br />Course Fee 2024 </span>} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
             <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-10">
                 <div className="col-span-9 max-md:col-span-12">
                     <CourseFee />

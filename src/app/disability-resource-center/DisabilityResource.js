@@ -3,7 +3,7 @@ const DisabilityResource = () => {
         <section className='px-5'>
             <div className=''>
                 <h2 className='text-4xl font-novaReg'>Disability Resource Center: Empowering All Students</h2>
-                <p className='mt-3 mb-6 text-xl font-novaReg'>A “Disability Resource Centre” has been established in Ajay Kumar Garg Engineering College, Ghaziabad, U.P.</p>
+                <p className='mt-3 mb-6 text-xl font-novaReg'>A “Disability Resource Centre” has been established in Ajay Kumar Garg University, Ghaziabad, U.P.</p>
                 <p className='font-novaReg text-lg'>Following are the members of this centre</p>
                 <div className='grid grid-cols-2 gap-4 mt-3'>
                     <div className='flex justify-center items-start flex-col border border-gray-300 rounded-3xl p-7 '>

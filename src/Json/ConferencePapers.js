@@ -1338,7 +1338,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1348,7 +1348,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1358,7 +1358,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1368,7 +1368,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1378,7 +1378,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1388,7 +1388,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1398,7 +1398,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1408,7 +1408,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1418,7 +1418,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1428,7 +1428,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1448,7 +1448,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2017-18',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1458,7 +1458,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2017-18',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1468,7 +1468,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2017-18',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
 
@@ -1480,7 +1480,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2017-18',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1490,7 +1490,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2017-18',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1500,7 +1500,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2017-18',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1510,7 +1510,7 @@ export const itResearchPapers = [
         conferenceName: 'National Conference on ‘Information Technology for Business Transformation’ ITBT’17',
         publicationYear: '2017-18',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1540,7 +1540,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC Ghaziabad',
+        publisherName: 'AKGU Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1550,7 +1550,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC Ghaziabad',
+        publisherName: 'AKGU Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1560,7 +1560,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC Ghaziabad',
+        publisherName: 'AKGU Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1570,7 +1570,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC, Ghaziabad',
+        publisherName: 'AKGU, Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1580,7 +1580,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC, Ghaziabad',
+        publisherName: 'AKGU, Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1590,7 +1590,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC, Ghaziabad',
+        publisherName: 'AKGU, Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1600,7 +1600,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC, Ghaziabad',
+        publisherName: 'AKGU, Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1610,7 +1610,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC Ghaziabad',
+        publisherName: 'AKGU Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1620,7 +1620,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC Ghaziabad',
+        publisherName: 'AKGU Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1630,7 +1630,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC, Ghaziabad',
+        publisherName: 'AKGU, Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1640,7 +1640,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC, Ghaziabad',
+        publisherName: 'AKGU, Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1650,7 +1650,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC, Ghaziabad',
+        publisherName: 'AKGU, Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1660,7 +1660,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC Ghaziabad',
+        publisherName: 'AKGU Ghaziabad',
         scopusStatus: '_'
     },
     {
@@ -1670,7 +1670,7 @@ export const itResearchPapers = [
         conferenceName: '6th National Conference on Information Technology for Business Transformation',
         publicationYear: '2018-19',
         isbnIssn: 'N/A',
-        publisherName: 'AKGEC Ghaziabad',
+        publisherName: 'AKGU Ghaziabad',
         scopusStatus: '_'
     },
 
@@ -1681,7 +1681,7 @@ export const itResearchPapers = [
         "conferenceName": "6th National Conference on Information Technology for Business Transformation",
         "publicationYear": "2018-19",
         "isbnIssn": "N/A",
-        "publisherName": "AKGEC Ghaziabad",
+        "publisherName": "AKGU Ghaziabad",
         "scopusStatus": "_"
     },
     {
@@ -1691,7 +1691,7 @@ export const itResearchPapers = [
         "conferenceName": "6th National Conference on Information Technology for Business Transformation",
         "publicationYear": "2018-19",
         "isbnIssn": "N/A",
-        "publisherName": "AKGEC Ghaziabad",
+        "publisherName": "AKGU Ghaziabad",
         "scopusStatus": "_"
     },
     {
@@ -1701,7 +1701,7 @@ export const itResearchPapers = [
         "conferenceName": "6th National Conference on Information Technology for Business Transformation",
         "publicationYear": "2018-19",
         "isbnIssn": "N/A",
-        "publisherName": "AKGEC Ghaziabad",
+        "publisherName": "AKGU Ghaziabad",
         "scopusStatus": "_"
     },
     {
@@ -1711,7 +1711,7 @@ export const itResearchPapers = [
         "conferenceName": "6th National Conference on Information Technology for Business Transformation",
         "publicationYear": "2018-19",
         "isbnIssn": "N/A",
-        "publisherName": "AKGEC Ghaziabad",
+        "publisherName": "AKGU Ghaziabad",
         "scopusStatus": "_"
     },
     {
@@ -1721,7 +1721,7 @@ export const itResearchPapers = [
         "conferenceName": "6th National Conference on Information Technology for Business Transformation",
         "publicationYear": "2018-19",
         "isbnIssn": "N/A",
-        "publisherName": "AKGEC Ghaziabad",
+        "publisherName": "AKGU Ghaziabad",
         "scopusStatus": "_"
     },
     {
@@ -1731,7 +1731,7 @@ export const itResearchPapers = [
         "conferenceName": "6th National Conference on Information Technology for Business Transformation",
         "publicationYear": "2018-19",
         "isbnIssn": "N/A",
-        "publisherName": "AKGEC Ghaziabad",
+        "publisherName": "AKGU Ghaziabad",
         "scopusStatus": "_"
     },
     {
@@ -1741,7 +1741,7 @@ export const itResearchPapers = [
         "conferenceName": "6th National Conference on Information Technology for Business Transformation",
         "publicationYear": "2018-19",
         "isbnIssn": "N/A",
-        "publisherName": "AKGEC Ghaziabad",
+        "publisherName": "AKGU Ghaziabad",
         "scopusStatus": "_"
     },
     {
@@ -1841,10 +1841,10 @@ export const eceResearchPapers = [
         id: '2',
         authorName: 'Dr. Amit Garg',
         paperTitle: 'Application of Image Processing in Wireless Sensor Networks',
-        conferenceName: 'National Conference on Latest Trends in Communication Engineering, Ajay Kumar Garg Engineering College, Ghaziabad',
+        conferenceName: 'National Conference on Latest Trends in Communication Engineering, Ajay Kumar Garg University, Ghaziabad',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1854,7 +1854,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Latest Trends in Communication Engineering',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1864,7 +1864,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Latest Trends in Communication Engineering',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1874,7 +1874,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Latest Trends in Communication Engineering',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1884,7 +1884,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Latest Trends in Communication Engineering',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1894,7 +1894,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Latest Trends in Communication Engineering',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1914,7 +1914,7 @@ export const eceResearchPapers = [
         conferenceName: 'IEEE Electronic Device Society Conference at Govt Engineering College Kalyani',
         publicationYear: '2016-17',
         isbnIssn: '978-1-5090-4725-3',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1944,7 +1944,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Emerging Trends in Electronics & Communication',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1954,27 +1954,27 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Emerging Trends in Electronics & Communication',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '14',
         authorName: 'Mr. Naresh Kumar',
         paperTitle: 'A Survey on Design Methods & Techniques for Circularly Polarized Micro strip Patch Antennas',
-        conferenceName: 'National Conference “ETEC-2017” at Ajay Kumar Garg Engineering College',
+        conferenceName: 'National Conference “ETEC-2017” at Ajay Kumar Garg University',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '15',
         authorName: 'Mr. Gaurav Sharma',
         paperTitle: 'Analysis of Shadowing Model for Ad-hoc Routing Protocols',
-        conferenceName: 'National Conference “ETEC-2017” at Ajay Kumar Garg Engineering College',
+        conferenceName: 'National Conference “ETEC-2017” at Ajay Kumar Garg University',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1984,7 +1984,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Emerging Trends in Electronics & Communication (ETEC-2017)',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -1994,7 +1994,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Emerging Trends in Electronics & Communication (ETEC-2017)',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -2014,7 +2014,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on Emerging Trends in Electronics & Communication (ETEC-2017)',
         publicationYear: '2016-17',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -2044,7 +2044,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)"',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -2054,7 +2054,7 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)"',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -2064,177 +2064,177 @@ export const eceResearchPapers = [
         conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)"',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '25',
         authorName: 'Mr. Om Krishna Gupta',
         paperTitle: 'AKIRA – A perfect human companion',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '26',
         authorName: 'Mr. Jitender Chhabra',
         paperTitle: 'Parking spot indicator in vicinity',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '27',
         authorName: 'Mr. Dushyant Singh Chauhan',
         paperTitle: 'Artificially Intelligent Integrated Security System',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '28',
         authorName: 'Mr. Amit Garg',
         paperTitle: 'A new method for copy move forgery detection in image forensic',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '29',
         authorName: 'Ms. Suvarna Mujumdar',
         paperTitle: 'A survey on nanoelectronics devices: an alternative to MOS devices',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '30',
         authorName: 'Ms. Pragya Srivastava',
         paperTitle: 'Low Power Investigation of MCML-Based Digital Circuit at 16-nm Technology Node.',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '31',
         authorName: 'Mr. Deepak Kumar Baghel',
         paperTitle: '2D Behaviour of Electronic Transport in GaAs MESFET by Ensemble Monte Carlo Method',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '32',
         authorName: 'Mr. Dushyant Singh Chauhan',
         paperTitle: 'Performance analysis of sac OCDMA system in free space optical medium using MIS codes',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '33',
         authorName: 'Mr. Himanshu Nagpal',
         paperTitle: 'Single-feed dual-band circularly polarized patch antenna for wi-max application',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '34',
         authorName: 'Mr. Karunesh',
         paperTitle: 'Monopole antenna for wlan, X- band and ITU with band notch filter',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '35',
         authorName: 'Ms. Nilufar Yasmin',
         paperTitle: 'Blockchain in healthcare : an overview',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '36',
         authorName: 'Ms. Sakshi Mittal',
         paperTitle: 'Wearable women protection Glove',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '37',
         authorName: 'Ms. Nilufar Yasmin',
         paperTitle: 'A Survey on Private Key Cryptography',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '38',
         authorName: 'Mr. Neeraj Sharma',
         paperTitle: 'MSPA with slotted ground structure for ultra wideband jamming',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '39',
         authorName: 'Ms. Anu Goel',
         paperTitle: 'A review on mixed RF/FSO cooperative relaying',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '40',
         authorName: 'Ms. Richa Sharma',
         paperTitle: 'Defense integrated security system',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
         id: '41',
         authorName: 'Prof. Neelesh Gupta',
         paperTitle: 'Clustering schemes in MANET-an overview',
-        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg Engineering College, Ghaziabad.',
+        conferenceName: 'National Conference on “Emerging Trends in Electronics & Communication (ETEC-2019)", Ajay Kumar Garg University, Ghaziabad.',
         publicationYear: '2018-19',
         isbnIssn: 'NA',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -2634,7 +2634,7 @@ export const eeeResearchPapers = [
         id: '20',
         authorName: 'Ravinder Kumar, Desh Deepak Sharma',
         paperTitle: 'PI Controlled Bridged Grid-Connected Solar PV Network For Electric Vehicle Battery Charging',
-        conferenceName: 'International Conference on Advancement and Key Challenges in Green Energy and Computing (AKGEC 2023)',
+        conferenceName: 'International Conference on Advancement and Key Challenges in Green Energy and Computing (AKGU 2023)',
         publicationYear: '2023',
         isbnIssn: 'accepted',
         publisherName: 'IoP Journal of Physics digital library',
@@ -2674,7 +2674,7 @@ export const eeeResearchPapers = [
         id: '24',
         authorName: 'Sarika Kalra',
         paperTitle: 'COMPARISON OF ELECTRIC MOTORS USED IN ELECTRIC VEHICLE: A REVIEW',
-        conferenceName: 'International Conference on Advancement and Key Challenges in Green Energy and Computing (AKGEC 2023)',
+        conferenceName: 'International Conference on Advancement and Key Challenges in Green Energy and Computing (AKGU 2023)',
         publicationYear: '2023',
         isbnIssn: 'accepted',
         publisherName: 'IoP Journal of Physics digital library',
@@ -2684,7 +2684,7 @@ export const eeeResearchPapers = [
         id: '25',
         authorName: 'Sarika Kalra',
         paperTitle: 'SMART FARMING: MONITORING OF FIELD STATUS AND CONTROL OF IRRIGATION USING SENSORS AND ESP8266 NODEMCU MODULE',
-        conferenceName: 'International Conference on Advancement and Key Challenges in Green Energy and Computing (AKGEC 2023)',
+        conferenceName: 'International Conference on Advancement and Key Challenges in Green Energy and Computing (AKGU 2023)',
         publicationYear: '2023',
         isbnIssn: 'accepted',
         publisherName: 'IoP Journal of Physics digital library',
@@ -2791,7 +2791,7 @@ export const meResearchPapers = [
         conferenceName: 'Advanced Concepts in Mechanical Engineering (ACME-2018)',
         publicationYear: '2018-19',
         isbnIssn: 'ISSN 0975 9514',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -2808,10 +2808,10 @@ export const meResearchPapers = [
         id: '12',
         authorName: 'Dr. Suman Gothwal',
         paperTitle: 'An Overview of flexibility of Flexible Manufacturing System (FMS)',
-        conferenceName: 'National Conference “ACME-2018” at Ajay Kumar Garg Engineering College, Ghaziabad',
+        conferenceName: 'National Conference “ACME-2018” at Ajay Kumar Garg University, Ghaziabad',
         publicationYear: '2019-19',
         isbnIssn: 'NIL',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {
@@ -2828,10 +2828,10 @@ export const meResearchPapers = [
         id: '14',
         authorName: 'Dr. Suman Gothwal',
         paperTitle: 'Investigation of surface integrity of cylinder liner of I.C. Engine by Honing Process using RSM Technique',
-        conferenceName: 'National Conference “MAAE-2020” at Ajay Kumar Garg Engineering College, Ghaziabad',
+        conferenceName: 'National Conference “MAAE-2020” at Ajay Kumar Garg University, Ghaziabad',
         publicationYear: '2019-20',
         isbnIssn: 'NIL',
-        publisherName: 'AKGEC',
+        publisherName: 'AKGU',
         scopusStatus: '_'
     },
     {

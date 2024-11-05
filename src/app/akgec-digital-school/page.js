@@ -10,7 +10,7 @@ const Button = {
 
 const BreadCrumb = [
     {
-        name: "AKGEC Digital School",
+        name: "AKGU Digital School",
         Link: "#",
     },
     // {
@@ -33,7 +33,7 @@ const Home = () => {
     return (
         <>
             <div className="bg-gray-100">
-                <Header title={"AKGEC Digital School"} Button={Button} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
+                <Header title={"AKGU Digital School"} Button={Button} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
                 <div className="w-full max-w-[1400px] pl-2 mt-20 mx-auto ">
                     <Breadcrumb data={BreadCrumb} />
                 </div>

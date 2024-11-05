@@ -13,7 +13,7 @@ const DirectorMessage = () => {
                         />
                         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-white/0 pt-16 p-4">
                             <b className="font-novaBold text-lg text-white">Dr. Hemant Ahuja</b>
-                            <small className="block text-white text-[11px] -mt-1">Director, AKGEC</small>
+                            <small className="block text-white text-[11px] -mt-1">Director, AKGU</small>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ const DirectorMessage = () => {
                         As a valued member of influential professional bodies such as IEEE, PES, ISTE, and IEI, Dr. Ahuja actively contributes to the growth and development of his field. His collaboration with the IEI-Ghaziabad local center as an eminent engineer reflects his dedication to community-driven initiatives. Moreover, Dr. Ahuja plays a pivotal role in shaping Electrical Engineering activities at the Abdul Kalam Technical University level, serving as a member of the Board of Studies for Electrical Engineering at AKTU.
                     </p>
                     <p className="mt-4  leading-5">
-                        Dr. Hemant Ahuja's multifaceted expertise, dedication to academia, and active involvement in research and collaboration position him as a visionary leader at the helm of Ajay Kumar Garg Engineering College, driving excellence and innovation in engineering education.
+                        Dr. Hemant Ahuja's multifaceted expertise, dedication to academia, and active involvement in research and collaboration position him as a visionary leader at the helm of Ajay Kumar Garg University, driving excellence and innovation in engineering education.
                     </p>
                 </div>
             </div>

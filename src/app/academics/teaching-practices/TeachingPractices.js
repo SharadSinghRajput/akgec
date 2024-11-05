@@ -5,8 +5,8 @@ const TeachingPractices = () => {
                 <div className="w-full max-w-7xl mx-auto p-10">
                     <div className="flex justify-around max-sm:flex-col relative text-white -mx-3">
                         <article className="px-3">
-                            <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGEC's Academic Focus: Pioneering Your Path to Success</h2>
-                            <p className="mb-5 text-[15px] font-novaReg">At AKGEC University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
+                            <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGU's Academic Focus: Pioneering Your Path to Success</h2>
+                            <p className="mb-5 text-[15px] font-novaReg">At AKGU University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
                             <ul className="list-disc text-sm font-novaReg space-y-2 mb-4 mt-5">
                                 <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">
                                     <b>Comprehensive Expertise</b> - World-class faculty provide both theoretical knowledge and practical application
@@ -39,7 +39,7 @@ const TeachingPractices = () => {
                         </div>
                         <article className="px-3">
                             <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Embracing Outcome-Based Education: Your Path to Empowerment</h2>
-                            <p className="mb-5 text-[15px] font-novaReg">At AKGEC, Outcome-Based Education (OBE) is central to our teaching philosophy. We are committed to providing a structured learning experience that focuses on achieving specific educational outcomes through continuous feedback and improvement.</p>
+                            <p className="mb-5 text-[15px] font-novaReg">At AKGU, Outcome-Based Education (OBE) is central to our teaching philosophy. We are committed to providing a structured learning experience that focuses on achieving specific educational outcomes through continuous feedback and improvement.</p>
                             <ul className="list-disc text-sm font-novaReg space-y-2 mb-4 mt-5">
                                 <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">
                                     <b>Defined Learning Outcomes</b> - Clear objectives guiding student achievements
@@ -64,7 +64,7 @@ const TeachingPractices = () => {
                         <article className="px-3">
                             <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Your Gateway to a Cutting-Edge Education</h2>
                             <p className="mb-5 text-[15px] font-novaReg">
-                                At AKGEC, we believe that education goes beyond traditional learning. Our curriculum is designed to equip students with the skills and knowledge required to excel in today’s competitive environment. We focus on a comprehensive approach that integrates both theoretical knowledge and practical experience.
+                                At AKGU, we believe that education goes beyond traditional learning. Our curriculum is designed to equip students with the skills and knowledge required to excel in today’s competitive environment. We focus on a comprehensive approach that integrates both theoretical knowledge and practical experience.
                             </p>
                             <ul className="list-disc text-sm font-novaReg space-y-2 mb-4 mt-5">
                                 <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">

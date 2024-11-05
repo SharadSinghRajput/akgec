@@ -32,7 +32,7 @@ const ContactPlacementCell = () => {
                 </div>
                 <div className="space-y-6">
                     <h2 className="text-2xl font-novaReg">Dr. Hemant Ahuja</h2>
-                    <p className=" font-novaReg">Joint Director AKGEC, Training and Placement Department</p>
+                    <p className=" font-novaReg">Joint Director AKGU, Training and Placement Department</p>
                     <div className="flex flex-col space-y-2">
                         <div className="flex items-center space-x-3">
                             <Mail className="w-6 h-6" />

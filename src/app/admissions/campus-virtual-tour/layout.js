@@ -7,7 +7,7 @@ import"@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hostel | AKGEC",
+  title: "Hostel | AKGU",
   description: "Hostel",
 };
 

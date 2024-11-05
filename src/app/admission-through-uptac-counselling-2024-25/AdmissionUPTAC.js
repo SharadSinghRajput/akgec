@@ -11,7 +11,7 @@ const AdmissionUPTAC = () => {
 
             <h1 className="font-novaSemi text-center mb-4">AJAY KUMAR GARG ENGINEERING COLLEGE, GHAZIABAD</h1>
             <p className="text-center font-novaSemi">
-                Physical Reporting Instructions for the candidates who have been allotted our college through Uttar Pradesh Technical Admission Counseling - 2024 and have Frozen their choices as one of the Courses / Branches in AKGEC during UPTAC Counselling - 2024
+                Physical Reporting Instructions for the candidates who have been allotted our college through Uttar Pradesh Technical Admission Counseling - 2024 and have Frozen their choices as one of the Courses / Branches in AKGU during UPTAC Counselling - 2024
             </p>
             <div className="py-5 mb-4 text-lg">
                 <p className="mb-4">

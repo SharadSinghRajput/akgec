@@ -18,7 +18,7 @@ const acegcSummary = [
         desc: "The conference received an overwhelming response with over 205 entries under 4 tracks. All the papers were blind peer reviewed by our esteemed reviewers from across the globe. The program flow of the conference was well-organized, and it included various sessions viz the inaugural program, keynote addresses, oral and poster paper presentations, panel discussions, and the valedictory program."
     },
     {
-        desc: "The conference was inaugurated in the benign presence of Prof. Bhim Singh, IIT Delhi as the Chief Guest, Mr. Sudhanshu Sekhar Barpanda, Director (MO), Grid Controller of India as Guest of Honour, Mr. Meenu Singhal, RMD, Socomac as the inaugural keynote and Dr. R. K. Agarwal, Director General, AKGEC."
+        desc: "The conference was inaugurated in the benign presence of Prof. Bhim Singh, IIT Delhi as the Chief Guest, Mr. Sudhanshu Sekhar Barpanda, Director (MO), Grid Controller of India as Guest of Honour, Mr. Meenu Singhal, RMD, Socomac as the inaugural keynote and Dr. R. K. Agarwal, Director General, AKGU."
     },
     {
         desc: "The keynote speakers from India and abroad included Dr. Sanjeet Dwivedi, Senior Project manager from Everfuel, Denmark, Prof. Akshay Rathore from SIT Singapore, Ms. Shivi Jindal, RSM from Fronius and Mr. Sumit Tiwari from SNU who shared their insights on various topics related to green energy and computing."

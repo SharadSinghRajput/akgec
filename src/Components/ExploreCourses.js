@@ -36,7 +36,7 @@ export default function ExploreCourses() {
                     Explore Our <span className='font-novaSemi bg-gradient-to-r from-red-300 to-teal-500 bg-clip-text text-transparent'>Courses</span>
                 </h2>
                 <p className="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl lg:text-[22px] leading-snug text-gray-200 mx-auto max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-screen-lg font-novaLight text-center">
-                    Ajay Kumar Garg Engineering College consistently excels in academics and placements. It stands out as the first and only institution in UP to receive the Academic Excellence Award for Best Engineering College in UPTU from the Governor of UP for two consecutive years.
+                    Ajay Kumar Garg University consistently excels in academics and placements. It stands out as the first and only institution in UP to receive the Academic Excellence Award for Best Engineering College in UPTU from the Governor of UP for two consecutive years.
                 </p>
                 <div className="my-5 mx-auto max-w-6xl">
                     <dl className="grid grid-cols-2 gap-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

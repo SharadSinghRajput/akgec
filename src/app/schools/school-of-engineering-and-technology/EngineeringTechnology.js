@@ -24,8 +24,8 @@ const departments = [
 
 const placementsData = [
   {
-    title: "Computer Science and IT branches lead campus placements at AKGEC",
-    description: `The Computer Science and Information Technology departments at AKGEC have set new records in campus placements this year. 
+    title: "Computer Science and IT branches lead campus placements at AKGU",
+    description: `The Computer Science and Information Technology departments at AKGU have set new records in campus placements this year. 
     With a focus on cutting-edge technologies like Artificial Intelligence, Machine Learning, Data Science, and Cloud Computing, 
     students have demonstrated exceptional skills and innovation, attracting some of the biggest IT firms in the country. 
     Renowned companies such as TCS, Infosys, Wipro, Capgemini, Cognizant, and Accenture visited the campus, offering lucrative packages 
@@ -35,8 +35,8 @@ const placementsData = [
     highestPackage: "45",
   },
   {
-    title: "Mechanical, Mechatronics, and Automobile Engineering placements soar at AKGEC",
-    description: `The Mechanical, Mechatronics, and Automobile Engineering departments at AKGEC have witnessed tremendous success in 
+    title: "Mechanical, Mechatronics, and Automobile Engineering placements soar at AKGU",
+    description: `The Mechanical, Mechatronics, and Automobile Engineering departments at AKGU have witnessed tremendous success in 
     placements this year, with over 40 companies hiring more than 200 students. Companies like Tata Motors, Hero MotoCorp, 
     Mahindra & Mahindra, and Escorts visited the campus, offering packages as high as Rs. 12 LPA. These placements are a testament 
     to the college's state-of-the-art laboratories and industry-relevant curriculum, which enable students to gain practical 
@@ -46,8 +46,8 @@ const placementsData = [
     highestPackage: "12",
   },
   {
-    title: "Civil and Electrical Engineering students at AKGEC excel in placements",
-    description: `AKGEC's Civil and Electrical Engineering branches have achieved commendable placement results this year, with 
+    title: "Civil and Electrical Engineering students at AKGU excel in placements",
+    description: `AKGU's Civil and Electrical Engineering branches have achieved commendable placement results this year, with 
     more than 50 top companies, including L&T, Shapoorji Pallonji, Siemens, and ABB, selecting over 150 students. Civil 
     Engineering students were particularly successful in securing roles in construction management, urban planning, and 
     structural engineering, while Electrical Engineering students were recruited for power generation, automation, and renewable 
@@ -58,11 +58,11 @@ const placementsData = [
     highestPackage: "10",
   },
   {
-    title: "Electronics and Communication Engineering placements shine at AKGEC",
-    description: `The Electronics and Communication Engineering (ECE) department at AKGEC continues to be a hub for innovation and 
+    title: "Electronics and Communication Engineering placements shine at AKGU",
+    description: `The Electronics and Communication Engineering (ECE) department at AKGU continues to be a hub for innovation and 
     technical excellence, as reflected in this year’s stellar placement results. More than 60 companies, including Samsung, 
     Texas Instruments, Bharat Electronics, and Ericsson, visited the campus, offering positions to over 180 students. With a 
-    focus on emerging technologies such as 5G, IoT, semiconductor technology, and embedded systems, ECE students from AKGEC 
+    focus on emerging technologies such as 5G, IoT, semiconductor technology, and embedded systems, ECE students from AKGU 
     have consistently demonstrated their ability to contribute to high-impact projects and cutting-edge research.`,
     companies: 60,
     studentsSelected: 180,

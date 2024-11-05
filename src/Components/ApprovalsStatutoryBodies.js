@@ -15,7 +15,7 @@ const people = [
         name: 'AKTU',
         fullName: 'Abdul Kalam Technical University (AKTU)',
         imageUrl: '/image/AKTU.png',
-        bio: 'Affiliation letter by AKTU for the academic year 2023-24 granted vide AKTU letter no. AKTU/RO/AS/2022/1891(027) dated 24-September-2023 addressed to the Director, Ajay Kumar Garg Engineering College.',
+        bio: 'Affiliation letter by AKTU for the academic year 2023-24 granted vide AKTU letter no. AKTU/RO/AS/2022/1891(027) dated 24-September-2023 addressed to the Director, Ajay Kumar Garg University.',
     },
     {
         name: 'NBA',

@@ -31,7 +31,7 @@ export default function StudentReviews() {
                             <figure className="relative isolate h-full flex flex-col justify-between">
                                 <blockquote className="text-base font-extralight text-gray-700 sm:text-xl">
                                     <p>
-                                        Ajay Kumar Garg Engineering College offers a robust Civil Engineering program with a strong focus on practical skills. The faculty are experienced and willing to help students with their queries.
+                                        Ajay Kumar Garg University offers a robust Civil Engineering program with a strong focus on practical skills. The faculty are experienced and willing to help students with their queries.
                                     </p>
                                 </blockquote>
                                 <figcaption className="mt-8 text-base">

@@ -244,11 +244,11 @@ const FeeNewStudents = () => {
                             </ul>
 
                             <strong>Mode of Payment:</strong>
-                            <p className="mt-2 mb-2">1. By DD/PO in favour of “Ajay Kumar Garg Engineering College" payable at Ghaziabad or Delhi. Write your name and mobile number on the reverse of the draft. It may be submitted by post or in person.</p>
+                            <p className="mt-2 mb-2">1. By DD/PO in favour of “Ajay Kumar Garg University" payable at Ghaziabad or Delhi. Write your name and mobile number on the reverse of the draft. It may be submitted by post or in person.</p>
                             <strong>OR</strong>
                             <p className="mt-2 mb-2">2. Online transfer through NEFT/RTGS. Bank Account details of College for online payment are as under:</p>
                             <ul className='list-inside pl-5 mb-3'>
-                                <li className='mb-2'>Name of the Beneficiary: Ajay Kumar Garg Engineering College</li>
+                                <li className='mb-2'>Name of the Beneficiary: Ajay Kumar Garg University</li>
                                 <li className='mb-2'>Name of the Bank: Kotak Mahindra Bank Ltd., Navyug Market, Ghaziabad -201001 (U.P.)-INDIA</li>
                                 <li className='mb-2'>Bank Account No.: 508010250461 (Saving Bank Account)</li>
                                 <li className='mb-2'>RTGS/NEFT/IFSC Code: KKBK0005295</li>
@@ -341,17 +341,17 @@ const FeeNewStudents = () => {
                                     <li className='mb-2'>The fee structure is subject to change by the State Govt. / Fee Fixation Committee.</li>
                                     <li className='mb-2'>Medical charges include Medical Insurance on hospitalization up to Rs.50,000/-, Accidental Insurance up to Rs.1,00,000/- and free OPD & annual medical checkup at Dr. R.S.G. (Indo-German) Hospital.</li>
                                     <li className='mb-2'>Fee is payable semester-wise.</li>
-                                    <li className='mb-2'>(a) Scholarship equivalent to 25% of tuition fee (Approx. Rs. 25,000) for candidates securing 65% (60% for AKGEC Alumni) or above aggregate marks in B.Tech</li>
-                                    <li className='mb-2'>(b) Scholarship equivalent to 50% of tuition fee (Approx. Rs. 50,000) for candidates securing 70% (65% for AKGEC Alumni) or above aggregate marks in B.Tech</li>
-                                    <li className='mb-2'>(c) Scholarship equivalent to 75% of tuition fee (Approx. Rs. 75,000) for candidates securing 75% (70% for AKGEC Alumni) or above aggregate marks in B.Tech</li>
-                                    <li className='mb-2'>(d) Scholarship equivalent to 100% of tuition fee (Approx. Rs. 1,00,000) for candidates securing 80% (75% for AKGEC Alumni) or above aggregate marks in B.Tech</li>
+                                    <li className='mb-2'>(a) Scholarship equivalent to 25% of tuition fee (Approx. Rs. 25,000) for candidates securing 65% (60% for AKGU Alumni) or above aggregate marks in B.Tech</li>
+                                    <li className='mb-2'>(b) Scholarship equivalent to 50% of tuition fee (Approx. Rs. 50,000) for candidates securing 70% (65% for AKGU Alumni) or above aggregate marks in B.Tech</li>
+                                    <li className='mb-2'>(c) Scholarship equivalent to 75% of tuition fee (Approx. Rs. 75,000) for candidates securing 75% (70% for AKGU Alumni) or above aggregate marks in B.Tech</li>
+                                    <li className='mb-2'>(d) Scholarship equivalent to 100% of tuition fee (Approx. Rs. 1,00,000) for candidates securing 80% (75% for AKGU Alumni) or above aggregate marks in B.Tech</li>
                                 </ul>
                                 <strong>Mode of Payment:</strong>
-                                <p className="mt-2 mb-2">1. By DD/PO in favour of “Ajay Kumar Garg Engineering College" payable at Ghaziabad or Delhi. Write your name and mobile number on the reverse of the draft. It may be submitted by post or in person.</p>
+                                <p className="mt-2 mb-2">1. By DD/PO in favour of “Ajay Kumar Garg University" payable at Ghaziabad or Delhi. Write your name and mobile number on the reverse of the draft. It may be submitted by post or in person.</p>
                                 <strong>OR</strong>
                                 <p className="mt-2 mb-2">2. Online transfer through NEFT/RTGS. Bank Account details of College for online payment are as under:</p>
                                 <ul className='list-inside pl-5 mb-3'>
-                                    <li className='mb-2'>Name of the Beneficiary: Ajay Kumar Garg Engineering College</li>
+                                    <li className='mb-2'>Name of the Beneficiary: Ajay Kumar Garg University</li>
                                     <li className='mb-2'>Name of the Bank: Kotak Mahindra Bank Ltd., Navyug Market, Ghaziabad -201001 (U.P.)-INDIA</li>
                                     <li className='mb-2'>Bank Account No.: 508010250461 (Saving Bank Account)</li>
                                     <li className='mb-2'>RTGS/NEFT/IFSC Code: KKBK0005295</li>

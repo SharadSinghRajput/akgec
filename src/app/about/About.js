@@ -92,7 +92,7 @@ export default function About() {
                     </span>
                   </h1>
                   <p className="text-gray-500 text-[14px] font-normal mb-6 text-center mt-5">
-                    Ajay Kumar Garg Engineering College (AKGEC) is a
+                    Ajay Kumar Garg University (AKGU) is a
                     full-fledged engineering college affiliated with Dr. A.P.J.
                     Abdul Kalam Technical University (AKTU), Lucknow. It is
                     approved by the All India Council for Technical Education
@@ -125,10 +125,10 @@ export default function About() {
             <div className="flex items-center justify-center w-full">
               <div className="max-xl:py-5 flex flex-col items-center justify-center h-full px-10">
                 <h1 className="text-4xl max-xl:text-3xl max-sm:text-2xl font-normal text-center mb-10 tracking-wide">
-                  About AKGEC University
+                  About AKGU University
                 </h1>
                 <p className="text-center text-[13px]">
-                  Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad is
+                  Ajay Kumar Garg University (AKGU), Ghaziabad is
                   affiliated to Dr. A.P.J. Abdul Kalam Technical University,
                   Lucknow, and is approved by the All India Council for
                   Technical Education. The college was established in 1998 and
@@ -150,7 +150,7 @@ export default function About() {
         <div className="bg-[#56397d] px-6 py-8 ml-20  max-2xl:ml-5 max-xl:ml-0 shadow-md max-w-[95%] max-xl:w-full w-[600px] relative z-10 text-left overflow-hidden">
           <ul className="list-disc pl-5 text-white text-[13px] space-y-2">
             <li>
-              AKGEC, Ghaziabad, is affiliated with Dr. A.P.J. Abdul Kalam
+              AKGU, Ghaziabad, is affiliated with Dr. A.P.J. Abdul Kalam
               Technical University, Lucknow, and approved by the AICTE.
             </li>
             <li>
@@ -165,7 +165,7 @@ export default function About() {
               Engineering, along with an MCA program.
             </li>
             <li>
-              AKGEC has received multiple accolades for academic performance,
+              AKGU has received multiple accolades for academic performance,
               including the Academic Excellence Award for the Best Engineering
               College in UPTU for two consecutive years and the Chancellor’s
               Award for the highest B.Tech marks for five consecutive years.
@@ -186,12 +186,12 @@ export default function About() {
               Bangalore.
             </li>
             <li>
-              AKGEC emphasizes industry collaboration, with partnerships for
+              AKGU emphasizes industry collaboration, with partnerships for
               student training, consultancy projects, and research in emerging
               technologies like Automation and Robotics.
             </li>
             <li>
-              AKGEC maintains transparent policies and systems, setting high
+              AKGU maintains transparent policies and systems, setting high
               standards and goals in all its activities.
             </li>
           </ul>
@@ -217,7 +217,7 @@ export default function About() {
                   AKG Engineering College
                 </h1>
                 <p className="text-center text-sm mb-5">
-                  Ajay Kumar Garg Engineering College (AKGEC) is recognized and
+                  Ajay Kumar Garg University (AKGU) is recognized and
                   actively participates as a member of various professional
                   associations.
                 </p>
@@ -302,18 +302,18 @@ export default function About() {
                   Leading Academic Institution
                 </h1>
                 <p className="mb-5 text-center text-sm">
-                  Ajay Kumar Garg Engineering College (AKGEC) is ranked among
+                  Ajay Kumar Garg University (AKGU) is ranked among
                   the leading and best educational institutions in North India.
-                  AKGEC consistently ranks among the top engineering colleges in
+                  AKGU consistently ranks among the top engineering colleges in
                   Uttar Pradesh for its academic excellence, innovative teaching
                   methods, research achievements, and placement records, as
                   recognized by national and international accreditation bodies
                   and media outlets.
                 </p>
                 <p className="text-center text-sm">
-                  Ajay Kumar Garg Engineering College (AKGEC) has established
+                  Ajay Kumar Garg University (AKGU) has established
                   itself as a leader in campus placements. The repeated visits
-                  by top-tier multinational companies underscore AKGEC's
+                  by top-tier multinational companies underscore AKGU's
                   reputation as a premier institution with exceptional placement
                   opportunities in India.
                 </p>
@@ -383,7 +383,7 @@ export default function About() {
             </div>
             <div className="border-b border-gray-300 mb-6"></div>
             <p className="text-sm max-xl:text-center">
-              Continuing the Tradition of Excellence, AKGEC Secures{" "}
+              Continuing the Tradition of Excellence, AKGU Secures{" "}
               <span className="font-novaBold">1406</span> Placement Offers for{" "}
             </p>
           </div>
@@ -399,9 +399,9 @@ export default function About() {
                   Batch of 2023-24
                 </h1>
                 <p className="text-center text-sm">
-                  Ajay Kumar Garg Engineering College (AKGEC) has become an
+                  Ajay Kumar Garg University (AKGU) has become an
                   undisputed leader in campus placements. The consistent
-                  presence of top-tier companies highlights AKGEC's reputation
+                  presence of top-tier companies highlights AKGU's reputation
                   as the 'University with the Best Placements' in India.
                 </p>
               </div>

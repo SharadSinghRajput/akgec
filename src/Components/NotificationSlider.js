@@ -14,7 +14,7 @@ const upcomingEvents = [
     {
         id: 2,
         title:
-            "2nd International Conference on Advancements and Key Challenges in Green Energy and Computing (AKGEC 2024)",
+            "2nd International Conference on Advancements and Key Challenges in Green Energy and Computing (AKGU 2024)",
         btn: "Read More",
     },
 ];
@@ -73,7 +73,7 @@ const NotificationSlider = () => {
                             </div>
                             <div className="col-span-5 flex justify-center items-center">
                                 <h2 className="uppercase text-center max-w-96 font-novaBold leading-5 text-xl max-2xl:text-[18px] max-xl:text-[14px] max-sm:text-[12px] text-white">
-                                    AKGEC hosts ACET 2024: <span className="text-orange-300"> 1st International Conference </span> on Advanced Computing and Emerging Technologies
+                                    AKGU hosts ACET 2024: <span className="text-orange-300"> 1st International Conference </span> on Advanced Computing and Emerging Technologies
                                 </h2>
                             </div>
                             <div className="col-span-5">

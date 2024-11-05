@@ -22,15 +22,15 @@ function classNames(...classes) {
 const CartData = [
     {
         title: "Research-Driven Excellence",
-        description: "At Ajay Kumar Garg Engineering College, we foster big dreams—whether it's leading cutting-edge research, launching successful startups, excelling in competitive exams, or achieving global recognition in sports. We cultivate a passion for innovation and success."
+        description: "At Ajay Kumar Garg University, we foster big dreams—whether it's leading cutting-edge research, launching successful startups, excelling in competitive exams, or achieving global recognition in sports. We cultivate a passion for innovation and success."
     },
     {
         title: "Unmatched Industry Support",
-        description: "Ajay Kumar Garg Engineering College benefits from the backing of industry leaders like Microsoft, IBM, and others. This strong industry collaboration, coupled with state-of-the-art infrastructure, drives technology-focused learning and continuous improvement."
+        description: "Ajay Kumar Garg University benefits from the backing of industry leaders like Microsoft, IBM, and others. This strong industry collaboration, coupled with state-of-the-art infrastructure, drives technology-focused learning and continuous improvement."
     },
     {
         title: "Cutting-Edge Learning Approach",
-        description: "At Ajay Kumar Garg Engineering College, we combine interactivity, technology, and innovation to foster adaptability and collaboration. Our modern learning dynamics provide personalized education, preparing students to meet the evolving demands of the future."
+        description: "At Ajay Kumar Garg University, we combine interactivity, technology, and innovation to foster adaptability and collaboration. Our modern learning dynamics provide personalized education, preparing students to meet the evolving demands of the future."
     }
 ]
 
@@ -58,7 +58,7 @@ export default function CampusSlider() {
                                 World-Class Campus
                             </h2>
                             <p className="text-white w-1/2 max-md:w-full  text-sm md:text-base lg:text-base font-light mb-2 ">
-                                AKGEC's global student body fosters personal growth through diverse cultural interactions, spanning regions across India and beyond.
+                                AKGU's global student body fosters personal growth through diverse cultural interactions, spanning regions across India and beyond.
                             </p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function CampusSlider() {
                                 </div>
                             </div>
                             <div className='col-span-3'>
-                                <p className='text-white text-xl leading-none font-novaLight max-md:pt-10'>At Ajay Kumar Garg Engineering College, we empower students to aim high—whether it's advancing in engineering research, launching successful startups, excelling in competitive exams, or pursuing a global career. We inspire dreams and nurture leaders for tomorrow's challenges.</p>
+                                <p className='text-white text-xl leading-none font-novaLight max-md:pt-10'>At Ajay Kumar Garg University, we empower students to aim high—whether it's advancing in engineering research, launching successful startups, excelling in competitive exams, or pursuing a global career. We inspire dreams and nurture leaders for tomorrow's challenges.</p>
                             </div>
                         </div>
                         <div className='grid grid-cols-3 mt-16 gap-5'>

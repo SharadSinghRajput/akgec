@@ -10,7 +10,7 @@ export const cseProject = [
     },
     {
         "departmentPrincipalInvestigator": "Compressed Parallel Wavelet Tree Based Semantic Search",
-        "namePrincipalInvestigator": "Dr. Sonam Gupta/Dr. Arun Kumar Yadav (AKGEC), Dr. Divakar Yadav (NIT Hamirpur)",
+        "namePrincipalInvestigator": "Dr. Sonam Gupta/Dr. Arun Kumar Yadav (AKGU), Dr. Divakar Yadav (NIT Hamirpur)",
         "yearAward": "2020-21",
         "amountSanctionedLakhs": "10.44",
         "projectDuration": "3 years",
@@ -28,7 +28,7 @@ export const cseProject = [
     },
     {
         "departmentPrincipalInvestigator": "Tracking and Alert of Blood Pressure and Similar Critical Circumstances",
-        "namePrincipalInvestigator": "Dr. Sonam Gupta/Ms. Lipika Goel (AKGEC) and Dr. Abhay Kumar Agarwal, (KNIT Sultanpur)",
+        "namePrincipalInvestigator": "Dr. Sonam Gupta/Ms. Lipika Goel (AKGU) and Dr. Abhay Kumar Agarwal, (KNIT Sultanpur)",
         "yearAward": "2019-20",
         "amountSanctionedLakhs": "3",
         "projectDuration": "1 year",
@@ -46,7 +46,7 @@ export const cseProject = [
     },
     {
         "departmentPrincipalInvestigator": "Compressed Parallel Wavelet Tree Based Semantic Search",
-        "namePrincipalInvestigator": "Dr. Sonam Gupta/Dr. Arun Kumar Yadav (AKGEC), Dr. Divakar Yadav (NIT Hamirpur)",
+        "namePrincipalInvestigator": "Dr. Sonam Gupta/Dr. Arun Kumar Yadav (AKGU), Dr. Divakar Yadav (NIT Hamirpur)",
         "yearAward": "2020-21",
         "amountSanctionedLakhs": "10.44",
         "projectDuration": "3 years",

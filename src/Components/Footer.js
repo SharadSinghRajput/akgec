@@ -21,7 +21,7 @@ const navigation = [
             { name: 'Alumni Achievements', href: '#' },
             { name: 'Faculty Achievements', href: '#' },
             { name: 'Research & Development Centers', href: '#' },
-            { name: 'AKGEC International Journal of Technology', href: '#' },
+            { name: 'AKGU International Journal of Technology', href: '#' },
             { name: 'NIRF Data for Ranking 2024', href: '#' },
             { name: 'AICTE Approval Letters', href: '#' }
         ],
@@ -36,7 +36,7 @@ const navigation = [
             { name: 'Placements', href: '#' },
             { name: 'Maps', href: '#' },
             { name: 'Distance Calculator', href: '#' },
-            { name: 'About AKGEC', href: '#' }
+            { name: 'About AKGU', href: '#' }
         ],
     },
     {
@@ -147,7 +147,7 @@ export default function Footer() {
                     ))}
                     <div>
                         <h3 className="text-base font-novaSemi text-[#62cdd7] mb-4">Get in Touch</h3>
-                        <p className="text-sm font-novaSemi">Ajay Kumar Garg Engineering College</p>
+                        <p className="text-sm font-novaSemi">Ajay Kumar Garg University</p>
                         <p className="mb-1 text-sm font-novaSemi">27th Km Milestone,Delhi-Meerut Expressway, P.O. Adhyatmik Nagar,Ghaziabad - 201015</p>
                         <p className="mb-2 text-sm font-novaSemi text-[#62cdd7]"><strong>Student Helpline No:</strong></p>
                         <p className="mb-2 text-sm font-novaSemi">7290034978</p>
@@ -191,7 +191,7 @@ export default function Footer() {
                     <div className="text-center font-light md:text-left">
                         <h2 className="text-base font-novaSemi text-[#62cdd7] mb-2">About Us</h2>
                         <p className='text-sm font-novaSemi leading-none'>
-                            Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, affiliated with Dr. A.P.J. Abdul Kalam Technical University, offers NBA-accredited B.Tech programs in various engineering disciplines, including Computer Science, IT, AI & ML, and more. It also provides M.Tech and MCA courses. Established in 1998, AKGEC is AICTE-approved.<a href="#" className="text-[#62cdd7] text-xs font-novaSemi hover:underline"> Apply Now</a>
+                            Ajay Kumar Garg University (AKGU), Ghaziabad, affiliated with Dr. A.P.J. Abdul Kalam Technical University, offers NBA-accredited B.Tech programs in various engineering disciplines, including Computer Science, IT, AI & ML, and more. It also provides M.Tech and MCA courses. Established in 1998, AKGU is AICTE-approved.<a href="#" className="text-[#62cdd7] text-xs font-novaSemi hover:underline"> Apply Now</a>
                         </p>
                     </div>
                     <div className="px-20">

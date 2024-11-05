@@ -6,7 +6,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const accounts = [
     {
         "img": "/image/admission/bank3.png",
-        "AccName": "Ajay Kumar Garg Engineering College",
+        "AccName": "Ajay Kumar Garg University",
         "AccNum": "1234567890",
         "IFSCCode": "ICIC0001234",
         "BankName": "ICICI Bank Ltd"

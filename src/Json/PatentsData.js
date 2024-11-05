@@ -17,7 +17,7 @@ export const ashPatentData = [
         status: "Granted",
         inventors: "Pradeep Jain",
         title: "Three Dimensional Printer",
-        applicants: "AKGEC Skills foundation",
+        applicants: "AKGU Skills foundation",
         filedDate: "10-08-2018",
         pubGrantedDate: "14-08-2020",
         publicationNumber: "344163"
@@ -70,14 +70,14 @@ export const csePatentData = [
 ];
 
 export const ecePatentData = [
-    { sno: 1, applicationNo: "202111046069", status: "Granted", inventors: "Arnav Sawhney, Harshit Kumar Rai, Adesh Kumar Shukla, Adarsh Kumar & Richa", title: "Active Rider Safety System For Two Wheelers", applicants: "Ajay Kumar Garg Engineering College, Ghaziabad, Ms. Richa", filedDate: "09-10-2021", pubGrantedDate: "12-05-2022", publicationNumber: "396781" },
+    { sno: 1, applicationNo: "202111046069", status: "Granted", inventors: "Arnav Sawhney, Harshit Kumar Rai, Adesh Kumar Shukla, Adarsh Kumar & Richa", title: "Active Rider Safety System For Two Wheelers", applicants: "Ajay Kumar Garg University, Ghaziabad, Ms. Richa", filedDate: "09-10-2021", pubGrantedDate: "12-05-2022", publicationNumber: "396781" },
     { sno: 2, applicationNo: "202111019788 A", status: "Published", inventors: "Devesh Mishra, Aditya Kumar Singh, Karunesh, Amrees Pandey, Sayed Salim Sayeed, Sweta Singh, Mohit Gupta", title: "Pipe Crawler", applicants: "Devesh Mishra, Aditya Kumar Singh, Karunesh, Amrees Pandey, Sayed Salim Sayeed, Sweta Singh, Mohit Gupta", filedDate: "30-04-2021", pubGrantedDate: "04-11-2022", publicationNumber: "202111019788 A" },
-    { sno: 3, applicationNo: "202311001874 A", status: "Published", inventors: "Dr. Karunesh", title: "Weed Uprooting Assistive Device", applicants: "Ajay Kumar Garg Engineering College, Ghaziabad", filedDate: "09-01-2023", pubGrantedDate: "13-01-2023", publicationNumber: "202311001874 A" },
+    { sno: 3, applicationNo: "202311001874 A", status: "Published", inventors: "Dr. Karunesh", title: "Weed Uprooting Assistive Device", applicants: "Ajay Kumar Garg University, Ghaziabad", filedDate: "09-01-2023", pubGrantedDate: "13-01-2023", publicationNumber: "202311001874 A" },
     { sno: 4, applicationNo: "202211054883", status: "Published", inventors: "Sulekha Saxena, Seema Garg, Kiranjot Kaur, Richa Adlakha, Ashish Grover, Rajesh Grover, Dr. Pratima Singh, Pooja Mishra", title: "Realtime Identification And Ranking Of Health Risk Factors Using Trained Predictive Models", applicants: "Sulekha Saxena, Seema Garg, Kiranjot Kaur, Richa Adlakha, Ashish Grover, Rajesh Grover, Dr. Pratima Singh, Pooja Mishra", filedDate: "25-09-2022", pubGrantedDate: "07-10-2022", publicationNumber: "202211054883" },
     { sno: 5, applicationNo: "202211056620", status: "Published", inventors: "Prasen Jeet, Smrati Tripathi, Seema Garg, Sulekha Saxena, Bharat Gupta, Praveen Kumar", title: "Machine Learning Based Disease Detection Using Openvino Technology", applicants: "Prasen Jeet, Smrati Tripathi, Seema Garg, Sulekha Saxena, Bharat Gupta, Praveen Kumar", filedDate: "02-10-2022", pubGrantedDate: "14-10-2022", publicationNumber: "202211056620" },
     { sno: 6, applicationNo: "202211063521", status: "Published", inventors: "Ms. Sulekha Saxena, Dr. Ram Sewak Singh, Dr. Praveen Kumar, Dr. Devendra Kumar Sinha, Dr. Seema Garg, Dr. Smriti Tripathi, Dr. Pushpendra Singh", title: "A Tongue-Driven Vehicle With Vehicle Tracking Technology And Flexible Speed Regulation For People With Disabilities", applicants: "Ms. Sulekha Saxena, Dr. Ram Sewak Singh, Dr. Praveen Kumar, Dr. Devendra Kumar Sinha, Dr. Seema Garg, Dr. Smriti Tripathi, Dr. Pushpendra Singh", filedDate: "07-11-2022", pubGrantedDate: "18-11-2022", publicationNumber: "202211063521" },
-    { sno: 7, applicationNo: "202311030989", status: "Published", inventors: "Meenakshi Awasthi, Asheesh Yadav, Ayush Sharma, Aslam Ahmad, Chetan Tomar", title: "Amphibious Garbage Collection System", applicants: "Ajay Kumar Garg Engineering College, Ghaziabad", filedDate: "01-05-2023", pubGrantedDate: "09-06-2023", publicationNumber: "202311030989" },
-    { sno: 8, applicationNo: "202311001875A", status: "Published", inventors: "Dr. Abhijeet Upadhya", title: "Hybrid Wireless Network Communication System", applicants: "Ajay Kumar Garg Engineering College, Ghaziabad", filedDate: "09-01-2023", pubGrantedDate: "13-01-2023", publicationNumber: "202311001875A" },
+    { sno: 7, applicationNo: "202311030989", status: "Published", inventors: "Meenakshi Awasthi, Asheesh Yadav, Ayush Sharma, Aslam Ahmad, Chetan Tomar", title: "Amphibious Garbage Collection System", applicants: "Ajay Kumar Garg University, Ghaziabad", filedDate: "01-05-2023", pubGrantedDate: "09-06-2023", publicationNumber: "202311030989" },
+    { sno: 8, applicationNo: "202311001875A", status: "Published", inventors: "Dr. Abhijeet Upadhya", title: "Hybrid Wireless Network Communication System", applicants: "Ajay Kumar Garg University, Ghaziabad", filedDate: "09-01-2023", pubGrantedDate: "13-01-2023", publicationNumber: "202311001875A" },
     { sno: 9, applicationNo: "202311012082", status: "Published", inventors: "Pratima Singh, Ishaan Saxena, Pranjali Singh, Shreyas Maitreya, Seema Garg", title: "Emotional health management system: a multimodal Approach to emotion detection using transfer learning and Transformer model", applicants: "Pratima Singh", filedDate: "07-10-2022", pubGrantedDate: "21-02-2023", publicationNumber: "202311012082" },
     { sno: 10, applicationNo: "367902-001", status: "Granted", inventors: "Devesh Mishra, Karunesh, Krishna Kant Agarwal, Avinash Kumar Sharma", title: "Device For Testing Moisture Control In Soil", applicants: "Devesh Mishra, Karunesh, Krishna Kant Agarwal, Avinash Kumar Sharma", filedDate: "18-07-2022", pubGrantedDate: "20-04-2023", publicationNumber: "367902-001" },
     { sno: 11, applicationNo: "365603-001", status: "Published", inventors: "Devesh Mishra, Karunesh, Amrees Pandey, Sharad Kumar Singh", title: "Iot Based Drainage Pipes Cleaning Robot", applicants: "Devesh Mishra, Karunesh, Amrees Pandey, Sharad Kumar Singh", filedDate: "04-11-2022", pubGrantedDate: "24-03-2023", publicationNumber: "365603-001" },
@@ -92,7 +92,7 @@ export const enPatentData = [
         status: "Published",
         inventors: "Dr. Sukhwinder Singh and Dr. Hemant Ahuja",
         title: "Wireless charging system for Vehicles",
-        applicants: "AKGEC",
+        applicants: "AKGU",
         filedDate: "03-06-2022",
         pubGrantedDate: "03-06-2022",
         publicationNumber: "202211031808"
@@ -121,7 +121,7 @@ export const itPatentData = [
     { sno: 8, applicationNo: "202311008611", status: "Published", inventors: "Mrignayni Kansal", title: "Internet Of Thing Enable Face Mask Detection Of Human Mankind In Crowded Space", applicants: "MRIGNAINY KANSAL", filedDate: "10-Feb-23", pubGrantedDate: "3-Mar-23" },
     { sno: 9, applicationNo: "202311008611", status: "Published", inventors: "Sachin Kumar Tyagi", title: "Internet Of Things Enabled Face Mask Detection Of Human Mankind In Crowded Space", applicants: "Sachin Kumar Tyagi", filedDate: "10-Feb-23", pubGrantedDate: "3-Mar-23" },
     { sno: 10, applicationNo: "202311008611", status: "Published", inventors: "Pankaj Singh", title: "Internet Of Things Enabled Face Mask Detection Of Human Mankind In Crowded Space", applicants: "Pankaj Singh", filedDate: "10-Feb-23", pubGrantedDate: "3-Mar-23" },
-    { sno: 11, applicationNo: "202311009453 A", status: "Published", inventors: "AKGEC", title: "Medicinal Drug Delivery Monitoring System", applicants: "Shilpi Gupta", filedDate: "", pubGrantedDate: "17-Feb-23" },
+    { sno: 11, applicationNo: "202311009453 A", status: "Published", inventors: "AKGU", title: "Medicinal Drug Delivery Monitoring System", applicants: "Shilpi Gupta", filedDate: "", pubGrantedDate: "17-Feb-23" },
     { sno: 12, applicationNo: "20231007172", status: "Published", inventors: "Priti Choudhary", title: "An Uhf Tag-Based System Using Characteristic Modes For Iot Application", applicants: "Priti Choudhary", filedDate: "", pubGrantedDate: "17-Feb-23" },
     { sno: 13, applicationNo: "202311015388 A", status: "Published", inventors: "Santosh Kumar Mishra", title: "AI-Enabled Edos Detection System", applicants: "Santosh Kumar Mishra", filedDate: "", pubGrantedDate: "3-Dec-22" },
     { sno: 14, applicationNo: "202111037373", status: "Granted", inventors: "Dr. Ruchi Gupta", title: "Data Distribution Between The Amulance And Railway Crossing Database Using An Intelligent Ambulance Guiding Unit", applicants: "Dr. Ruchi Gupta", filedDate: "18-Aug-21", pubGrantedDate: "29-Nov-22" },
@@ -132,10 +132,10 @@ export const itPatentData = [
     { sno: 19, applicationNo: "202211053191", status: "Published", inventors: "Mr.Sachin Kumar Tyagi", title: "An Effective Health Care Monitoring System Based On IOT And MACHINE Learning To Track On Old Age Patient’s Details", applicants: "Mr.Sachin Kumar Tyagi", filedDate: "17-Sep-22", pubGrantedDate: "23-Sep-22" },
     { sno: 20, applicationNo: "202211052282", status: "Published", inventors: "Dr. Ruchi Gupta", title: "Machine Learning Based Methodology For Database Migration In Cloud Computing Environment", applicants: "Dr. Ruchi Gupta", filedDate: "13-Sep-22", pubGrantedDate: "16-Sep-22" },
     { sno: 21, applicationNo: "202211038714", status: "Published", inventors: "Dr. Rashmi Sharma", title: "Smart Bins Using IOT Sensors", applicants: "Dr. Rashmi Sharma", filedDate: "7-Jun-22", pubGrantedDate: "29-Jul-22" },
-    { sno: 22, applicationNo: "202211042661", status: "Published", inventors: "Dr. Aditya Pratap Singh", title: "Secured Voting System", applicants: "AKGEC", filedDate: "26-Jul-22", pubGrantedDate: "29-Jul-22" },
-    { sno: 23, applicationNo: "202211042661", status: "Published", inventors: "Dr. Anupama Sharma", title: "Secured Voting System", applicants: "AKGEC", filedDate: "26-Jul-22", pubGrantedDate: "29-Jul-22" },
-    { sno: 24, applicationNo: "202211042661", status: "Published", inventors: "Dr. Ruchi Gupta", title: "Secured Voting System", applicants: "AKGEC", filedDate: "26-Jul-22", pubGrantedDate: "29-Jul-22" },
-    { sno: 25, applicationNo: "202211042661", status: "Published", inventors: "Dr. Anu Chaudhary", title: "Secured Voting System", applicants: "AKGEC", filedDate: "26-Jul-22", pubGrantedDate: "29-Jul-22" },
+    { sno: 22, applicationNo: "202211042661", status: "Published", inventors: "Dr. Aditya Pratap Singh", title: "Secured Voting System", applicants: "AKGU", filedDate: "26-Jul-22", pubGrantedDate: "29-Jul-22" },
+    { sno: 23, applicationNo: "202211042661", status: "Published", inventors: "Dr. Anupama Sharma", title: "Secured Voting System", applicants: "AKGU", filedDate: "26-Jul-22", pubGrantedDate: "29-Jul-22" },
+    { sno: 24, applicationNo: "202211042661", status: "Published", inventors: "Dr. Ruchi Gupta", title: "Secured Voting System", applicants: "AKGU", filedDate: "26-Jul-22", pubGrantedDate: "29-Jul-22" },
+    { sno: 25, applicationNo: "202211042661", status: "Published", inventors: "Dr. Anu Chaudhary", title: "Secured Voting System", applicants: "AKGU", filedDate: "26-Jul-22", pubGrantedDate: "29-Jul-22" },
     { sno: 26, applicationNo: "202211047175", status: "Published", inventors: "Avdhesh Gupta", title: "Smart Wrist Band", applicants: "Avdhesh Gupta", filedDate: "22-Aug-22", pubGrantedDate: "10-Jul-22" },
     { sno: 27, applicationNo: "202211032405", status: "Published", inventors: "Dr. Rashmi Sharma", title: "System And Method For Reckless Driving", applicants: "Dr. Rashmi Sharma", filedDate: "6-Jun-22", pubGrantedDate: "17-Jun-22" },
     { sno: 28, applicationNo: "202211032888", status: "Published", inventors: "Dr. Amrita Jyoti", title: "Smart Dustbin", applicants: "Dr. Amrita Jyoti", filedDate: "6-Aug-22", pubGrantedDate: "17-Jun-22" },
@@ -152,7 +152,7 @@ export const itPatentData = [
     { sno: 39, applicationNo: "2021105080", status: "Granted", inventors: "Dr. Anupama Sharma", title: "Machine Learning Model For Predicting Severity Prognosis In Patients Infected With COVID-19", applicants: "Dr. Anupama Sharma", filedDate: "", pubGrantedDate: "22-Sep-21" },
     { sno: 40, applicationNo: "202111000134", status: "Published", inventors: "Mr. Sumit Sharma", title: "IOT Based Real Time Infant Monitoring And Alerting System", applicants: "Mr. Sumit Sharma", filedDate: "1-Apr-21", pubGrantedDate: "1-Aug-21" },
     { sno: 41, applicationNo: "2021102036", status: "Granted", inventors: "Dr. Anupama Sharma", title: "Healthcare Data Exchange Using Blockchain Technology", applicants: "Dr. Anupama Sharma", filedDate: "", pubGrantedDate: "26-May-21" },
-    { sno: 42, applicationNo: "IN202311009453", status: "Filed", inventors: "Shiddarth Srivastava(student), Dr. Anupama Sharma, Ms. Shilpi Gupta, Dr. Aditya Pratap Singh, Dr. Ruchi Gupta", title: "Medicinal Drug Delivery Monitoring System", applicants: "AKGEC", filedDate: "13-Feb-23", pubGrantedDate: "" }
+    { sno: 42, applicationNo: "IN202311009453", status: "Filed", inventors: "Shiddarth Srivastava(student), Dr. Anupama Sharma, Ms. Shilpi Gupta, Dr. Aditya Pratap Singh, Dr. Ruchi Gupta", title: "Medicinal Drug Delivery Monitoring System", applicants: "AKGU", filedDate: "13-Feb-23", pubGrantedDate: "" }
 ];
 
 export const mePatentData = [
@@ -162,7 +162,7 @@ export const mePatentData = [
         status: "Granted",
         inventors: "Pradeep Jain",
         title: "Three Dimensional Printer",
-        applicants: "AKGEC Skills foundation",
+        applicants: "AKGU Skills foundation",
         filedDate: "10-08-2018",
         pubGrantedDate: "14-08-2020",
         publicationNumber: "344163"
@@ -173,7 +173,7 @@ export const mePatentData = [
         status: "Published",
         inventors: "Namrata Gangil",
         title: "Shape Memory Alloy Reinforced Functionally Graded Material Fabrication By Friction Stir Processing",
-        applicants: "Namrata Gangil, Ajay Kumar Garg Engineering College, Dr. APJ Abdul Kalam Technical University",
+        applicants: "Namrata Gangil, Ajay Kumar Garg University, Dr. APJ Abdul Kalam Technical University",
         filedDate: "13-03-2020",
         pubGrantedDate: "18-09-2021",
         publicationNumber: "202011010932"

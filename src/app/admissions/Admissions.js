@@ -325,8 +325,8 @@ const Admissions = () => {
               </div>
             </div>
             <div className="min-h-52 flex flex-col group">
-              <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">Why AKGEC ?</h4>
-              <p className="py-2 max-sm:leading-none text-base font-novaReg">History, Culture, Innovation, Technology, and more—AKGEC University provides a diverse array of opportunities.</p>
+              <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">Why AKGU ?</h4>
+              <p className="py-2 max-sm:leading-none text-base font-novaReg">History, Culture, Innovation, Technology, and more—AKGU University provides a diverse array of opportunities.</p>
               <button className="my-3 w-fit mt-auto px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
               <div className="mt-auto">
                 <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/advantages.webp" alt="" />
