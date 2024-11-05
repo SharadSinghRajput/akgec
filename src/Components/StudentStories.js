@@ -162,7 +162,7 @@ const StudentStories = () => {
       >
         <ChevronRight className="w-6 h-6" />
       </button> */}
-      <div className="grid grid-cols-4 gap-4 p-4">
+      <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 p-4">
       {testimonials.map((testimonial, index) => (
         <div className="col-span-1 bg-white shadow-lg rounded-lg p-6">
           <div>
@@ -178,7 +178,7 @@ const StudentStories = () => {
           </div>
           <p className="text-sm text-gray-500 mb-4"></p>
           <p className="text-gray-700 text-sm text-justify mb-4">{testimonial.desc}</p>
-          <p className="text-sm text-gray-400">0 min ago</p>
+          {/* <p className="text-sm text-gray-400">0 min ago</p> */}
         </div>
       ))}
 
