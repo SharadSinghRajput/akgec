@@ -13,21 +13,21 @@ const posts = [
         imageUrl: '/image/b.tech_.jpg',
     },
     {
-        id: 1,
-        title: 'Btech',
+        id: 2,
+        title: 'Bachelor of Technology (B.Tech)',
         href: '#',
         description: 'CSE, CS, CS&IT, CSE (AI&ML), CSE (DS),CSE',
-        imageUrl:
-            '/image/voc.jpg',
+        imageUrl: '/image/voc.jpg',
     },
     {
-        id: 1,
-        title: 'M.Tech',
+        id: 3,
+        title: 'Master of Technology (M.Tech)',
         href: '#',
         description: 'CSE, ECE, EN, ME',
         imageUrl: '/image/MCA_300X150.jpg',
     },
-]
+];
+
 export default function ExploreCourses() {
     return (
         <section className="bg-primary py-10 sm:py-16 md:py-20">
@@ -60,12 +60,14 @@ export default function ExploreCourses() {
                             />
                             <div className="bg-white p-4 h-full ">
                                 <div className="flex flex-col ">
+                                    <div className="h-16 max-xl:h-24 max-md:h-12">
                                     <h3 className="text-sm md:text-base lg:text-lg font-novaBold text-gray-900">
                                         {post.title}
                                     </h3>
                                     <p className="text-xs md:text-sm font-novaSemi text-gray-800">
                                         {post.description}
                                     </p>
+                                    </div>
                                     <a
                                         href={post.href}
                                         className="mt-1 text-[12px] sm:text-[13px] md:text-[14px] uppercase font-novaBold text-secondary hover:text-[#3c5686] duration-300 self-end"

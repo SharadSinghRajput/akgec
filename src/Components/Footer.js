@@ -195,7 +195,7 @@ export default function Footer() {
                         </p>
                     </div>
                     <div className="px-20">
-                        <img src="/image/NaaC.webp" alt="UN Academic Impact" className="h-auto" />
+                        <img src="/image/NaaC.webp" alt="UN Academic Impact" className="h-24" />
                     </div>
                 </div>
                 <div className="mt-8 text-xs font-novaSemi text-center border-t border-slate-400 pt-4">

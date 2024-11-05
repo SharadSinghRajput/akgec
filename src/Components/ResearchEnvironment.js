@@ -5,7 +5,7 @@ const posts = [
         href: '#',
         description: 'In today’s technology-driven world, a Bachelor of Technology (B.Tech) degree has become a gateway to numerous exciting career opportunities. AKG College, renowned for its excellence in engineering education, offers a B.Tech program designed to equip students with the skills and knowledge necessary to excel in the competitive tech industry.',
         imageUrl: '/image/article/Btech-article.webp',
-        tag1: 'BTECH',
+        tag1: 'B-TECH',
         tag2: 'College',
     },
     {
@@ -14,7 +14,7 @@ const posts = [
         href: '#',
         description: 'For engineering graduates looking to specialize and advance their careers, a Master of Technology (M.Tech) degree is an excellent choice. AKG College offers a comprehensive M.Tech program that provides in-depth knowledge and research opportunities in various engineering fields.',
         imageUrl: '/image/article/Mtech-article.webp',
-        tag1: 'MTECH',
+        tag1: 'M-TECH',
         tag2: 'College',
     },
     {
@@ -42,9 +42,9 @@ export default function ResearchEnvironment() {
                 <div className="mt-10 grid grid-cols-3 max-md:grid-cols-1">
                     {posts?.map((post) => (
                         <article key={post.id} className="border rounded-md flex flex-col items-start justify-between pb-4 hover:shadow-xl">
-                            <div className="grid grid-cols-2 gap-x-10 p-4 ml-8 mt-8 text-xs md:text-xs font-light">
-                                <p>{post.tag1}</p>
-                                <p>{post.tag2}</p>
+                            <div className="grid grid-cols-2 gap-x-10 p-4 ml-8 mt-8 md:text-xs font-novaSemi">
+                                <p className="text-lg">{post.tag1}</p>
+                                <p className="text-lg">{post.tag2}</p>
                             </div>
                             <div className="relative w-full h-80">
                                 <img

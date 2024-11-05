@@ -96,7 +96,7 @@ export default function NavBar() {
               </div>
               <div className={`${isScrolled100 ? "grid grid-cols-2 gap-1.5" : "flex gap-1"}`}>
                 <img
-                  src="/image/naac-a++.jpg"
+                  src="/image/NaaC.webp"
                   alt="NAAC Logo"
                   className="h-9 w-full object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right"
                 />
