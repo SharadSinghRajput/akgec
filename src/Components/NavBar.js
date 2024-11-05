@@ -81,7 +81,7 @@ export default function NavBar() {
         } transition-all duration-200`}
     >
       <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-4  gap-x-10">
-        <div className="col-span-2 flex max-xl:col-span-2 max-md:col-span-2 max-sm:col-span-3 max-lg:col-span-3 max-sm:mb-4  ">
+        <div className="col-span-2 flex max-xl:col-span-10 max-lg:col-span-8 max-md:col-span-2 max-md:pt-2 max-sm:col-span-3  max-sm:mb-4  ">
           <div
             className={`text-white py-3 max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
           >
@@ -132,7 +132,7 @@ export default function NavBar() {
             </div> */}
           </div>
         </div>
-        <div className="flex xl:hidden max-xl:col-span-3 max-md:col-span-2 max-sm:col-span-1 max-md:pt-0 max-md:justify-end max-md:mr-5 justify-center max-sm:mb-4">
+        <div className="flex xl:hidden max-xl:col-span-1 max-lg:col-span-2 max-md:col-span-2 max-sm:col-span-1 max-md:pt-0 max-md:justify-end max-md:mr-5 justify-center max-sm:mb-4">
           <button
             type="button"
             onClick={() => setBigMenuToggle(!BigMenuToggle)}
@@ -143,23 +143,23 @@ export default function NavBar() {
             <p className="text-xs uppercase -mt-1">Menu</p>
           </button>
         </div>
-        <div className="col-span-6 max-xl:col-span-5 max-lg:col-span-6 max-md:col-span-2 max-xl:flex max-xl:items-center max-xl:justify-end  max-md:justify-start">
+        <div className="col-span-6 max-xl:col-span-1 max-lg:col-span-2 max-md:col-span-2 max-xl:flex max-xl:items-center max-xl:justify-end  max-md:justify-start">
           <nav className="px-5 max-md:px-1  ">
             <div
               className={` lg:flex max-md:pt-0 lg:gap-x-8 justify-between px-7 items-center  max-md:px-1 py-2 ${isScrolled ? "max-md:hidden" : "pt-4"
                 }`}
             >
               <div className="hidden xl:flex gap-20  justify-start max-xl:gap-8  text-[13px] font-novaLight">
-                <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500 ">
+                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500 ">
                   Campus
                 </a>
-                <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
+                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
                   Library
                 </a>
-                <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
+                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
                   Student Services
                 </a>
-                <a href="#" className="leading-6 uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
+                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
                   Contact us
                 </a>
               </div>
