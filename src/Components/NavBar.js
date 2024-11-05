@@ -77,43 +77,43 @@ export default function NavBar() {
   );
   return (
     <header
-      className={`z-[100] w-full fixed top-0 left-0 ${isScrolled100 ? "bg-primary pb-3" : ""
+      className={`z-[100] w-full fixed top-0 left-0 max-md:bg-blue-700 ${isScrolled100 ? "bg-white" : ""
         } transition-all duration-200`}
     >
       <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-4  gap-x-10">
-        <div className="col-span-2 flex max-xl:col-span-10 max-lg:col-span-8 max-md:col-span-2 max-md:pt-2 max-sm:col-span-3  max-sm:mb-4  ">
+        <div className="col-span-2 flex max-xl:col-span-2 max-lg:col-span-8 max-md:col-span-2 max-md:pt-2 max-sm:col-span-2  max-sm:mb-4  ">
           <div
-            className={`text-white py-3 max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
+            className={`text-white max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
           >
-            <div className={`flex justify-start items-center gap-1 pl-5 ${isScrolled100 ? "flex-row" : "flex-col"}`}>
+            <div className={`flex justify-start items-center gap-1 pl-5 ${isScrolled100 ? "flex-row max-md:flex-col" : "flex-col"}`}>
               <div className="flex justify-center">
                 <img
                   onClick={() => router.push("/")}
                   src="/image/akg-logo.jpg"
                   alt="AKG University Logo"
-                  className={`${isScrolled100 ? "h-20" : "h-24"} w-full object-contain shadow-effect-right cursor-pointer`}
+                  className={`${isScrolled100 ? "h-20" : "h-24 max-xl:h-auto max-lg:w-48 shadow-effect-right"}  w-full object-contain cursor-pointer`}
                 />
               </div>
-              <div className={`${isScrolled100 ? "grid grid-cols-2 gap-1.5" : "flex gap-1"}`}>
+              <div className={`grid gap-0 ${isScrolled100 ? "grid-cols-2 max-md:grid-cols-4" : "grid-cols-4"}`}>
                 <img
                   src="/image/NaaC.webp"
                   alt="NAAC Logo"
-                  className="h-9 w-full object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right"
+                  className={`h-9 w-full max-xl:h-auto max-lg:w-12  object-contain bg-blend-color-dodge relative z-[4] ${isScrolled100 ? "" : "shadow-effect-right" }`}
                 />
                 <img
                   src="/image/nba.jpg"
                   alt="NBA Logo"
-                  className="h-9 w-full object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right"
+                  className={`h-9 w-full max-xl:h-auto max-lg:w-12 object-contain bg-blend-color-dodge relative z-[3] ${isScrolled100 ? "" : "shadow-effect-right" }`}
                 />
                 <img
                   src="/image/qs-i-gauge.jpg"
                   alt="QS-I-GAUGE Logo"
-                  className="h-9 w-full object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right"
+                  className={`h-9 w-full max-xl:h-auto max-lg:w-12 object-contain bg-blend-color-dodge relative z-[2] ${isScrolled100 ? "" : "shadow-effect-right" }`}
                 />
                 <img
                   src="/image/iic.jpg"
                   alt="IIC Logo"
-                  className="h-9 w-full object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right"
+                  className={`h-9 w-full max-xl:h-auto max-lg:w-12 object-contain bg-blend-color-dodge relative z-[1] ${isScrolled100 ? "" : "shadow-effect-right" }`}
                 />
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function NavBar() {
             </div> */}
           </div>
         </div>
-        <div className="flex xl:hidden max-xl:col-span-1 max-lg:col-span-2 max-md:col-span-2 max-sm:col-span-1 max-md:pt-0 max-md:justify-end max-md:mr-5 justify-center max-sm:mb-4">
+        <div className="flex lg:hidden  max-md:order-2 max-lg:col-span-2 max-md:col-span-1 max-sm:col-span-1 max-md:pt-0 max-md:justify-end max-md:mr-5 justify-center max-sm:mb-4">
           <button
             type="button"
             onClick={() => setBigMenuToggle(!BigMenuToggle)}
@@ -143,13 +143,13 @@ export default function NavBar() {
             <p className="text-xs uppercase -mt-1">Menu</p>
           </button>
         </div>
-        <div className="col-span-6 max-xl:col-span-1 max-lg:col-span-2 max-md:col-span-2 max-xl:flex max-xl:items-center max-xl:justify-end  max-md:justify-start">
+        <div className="col-span-6 max-md:order-3 max-xl:col-span-10 max-lg:col-span-2 max-md:col-span-1 max-xl:flex max-xl:items-center max-xl:justify-end  max-md:justify-start">
           <nav className="px-5 max-md:px-1  ">
             <div
-              className={` lg:flex max-md:pt-0 lg:gap-x-8 justify-between px-7 items-center  max-md:px-1 py-2 ${isScrolled ? "max-md:hidden" : "pt-4"
+              className={` bg-gray-700 max-md:hidden lg:flex max-md:pt-0 lg:gap-x-8 justify-end pl-7 max-xl:pl-0 items-center  max-md:px-1 ${isScrolled ? "max-md:hidden" : ""
                 }`}
             >
-              <div className="hidden xl:flex gap-20  justify-start max-xl:gap-8  text-[13px] font-novaLight">
+              <div className="hidden lg:flex gap-10  justify-start max-xl:gap-8  text-[13px] font-novaLight">
                 <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500 ">
                   Campus
                 </a>
@@ -164,121 +164,20 @@ export default function NavBar() {
                 </a>
               </div>
               <div className="flex justify-end max-2xl:flex-col gap-4">
-                <div className="max-md:w-full max-md:flex  max-md:justify-between  max-md:items-center max-md:py-1">
-                  {/* <div className="flex items-center justify-center gap-5 px-2 py-1.5 max-md:w-full">
-                    <div className="max-md:hidden">
-                      <ul className="flex items-center gap-5 text-white max-md:p-2 justify-center w-full ">
-                        <li className=" ">
-                          <a className="flex flex-col items-center gap-1" href="">
-                            <img
-                              className="w-4 h-4"
-                              src="/image/social-icons/whatsapp.webp"
-                              alt="Whatsapp"
-                            />
-                            <span className="text-[9px] max-md:hidden">Whatsapp</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a className="flex flex-col items-center gap-1" href="">
-                            <img
-                              className="w-4 h-4"
-                              src="/image/social-icons/calling.webp"
-                              alt="Call Us"
-                            />
-                            <span className="text-[9px] max-md:hidden">Call Us</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a className="flex flex-col items-center gap-1" href="">
-                            <img
-                              className="w-4 h-4"
-                              src="/image/social-icons/compass.webp"
-                              alt="360°"
-                            />
-                            <span className="text-[9px] max-md:hidden">360°</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="flex flex-col items-center px-3 border-l border-gray-400 space-y-1 max-md:border-none max-md:w-full ">
-                      <ul className="flex items-center justify-center gap-4 leading-none max-md:w-full max-md:justify-evenly">
-                        <li>
-                          <a href="">
-                            <img
-                              className="w-4 h-4"
-                              src="/image/social-icons/facebook.webp"
-                              alt="Facebook"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <img
-                              className="w-4 h-4"
-                              src="/image/social-icons/twitter.webp"
-                              alt="twitter"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <img
-                              className="w-4 h-4"
-                              src="/image/social-icons/linkedin.webp"
-                              alt="linkedin"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <img
-                              className="w-4 h-4"
-                              src="/image/social-icons/instagram.webp"
-                              alt="instagram"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <img
-                              className="w-4 h-4"
-                              src="/image/social-icons/youtube.webp"
-                              alt="youtube"
-                            />
-                          </a>
-                        </li>
-                      </ul>
-                      <small className="text-[9px] max-md:hidden text-white">
-                        Get Social with us
-                      </small>
-                    </div>
-                  </div> */}
-                </div>
-                <div
-                  className={`flex max-sm:p-1  max-lg:p-1  items-center justify-center transition-all ${isScrolled ? "px-2 py-2" : "px-2 py-2"
-                    } bg-gradient-to-tr from-amber-500 to-purple-600 animate-gradient rounded-full max-w-md mx-auto max-lg:mx-0 max-md:mx-0`}
-                >
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className={`bg-white p-2 rounded-full flex items-center justify-center`}
-                    >
-                      <a href="tel:1800-200-0777">
-                        <PhoneIcon
-                          className={`${isScrolled ? "h-3 w-3" : "h-4 w-4"} text-cyan-500`}
-                          aria-hidden="true"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <a href="tel:1800-200-0777" className="bg-cyan-500 max-xl:w-36 flex justify-start items-end gap-2 py-3 px-4">
+                  <PhoneIcon
+                    className={`h-4 w-4 text-white`}
+                    aria-hidden="true"
+                  />
+                  <span className="text-white text-sm uppercase font-bold">Call now</span>
+                </a>
               </div>
             </div>
             <ul
               className={`${BigMenuToggle
-                ? "fixed w-full h-full left-0 top-0 bg-blue-800 pt-10"
-                : `hidden relative ${isScrolled ? "py-1" : "py-0 mt-4 "}`
-                }  xl:flex  items-center justify-between text-black font-semibold text-sm bg-white/10
-                                        backdrop-blur-xl px-5 rounded-lg backdrop-contrast-125`}
+                ? "fixed w-full h-full left-0 top-0  pt-10"
+                : `hidden relative` }  lg:flex items-center justify-end gap-0 xl:gap-4
+                text-black font-semibold text-sm bg-white max-xl:pl-2`}
             >
               {BigMenuToggle ? (
                 <>
@@ -288,10 +187,10 @@ export default function NavBar() {
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
                   </button>
-                </>
+                </> 
               ) : null}
               <li className="relative group">
-                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   ABOUT{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
@@ -352,7 +251,7 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="group">
-                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm3 max-[1600px]:text-sm flex items-center gap-1`}>
                   PROGRAMS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
@@ -425,7 +324,7 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="relative group">
-                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   ACADEMICS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
@@ -486,7 +385,7 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="relative group">
-                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   ADMISSIONS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
@@ -546,7 +445,7 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="relative group">
-                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   CAMPUS LIFE{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
@@ -615,7 +514,7 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="xl:relative group">
-                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   PLACEMENTS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
@@ -678,7 +577,7 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="group relative">
-                <button className={`relative px-3 ${isScrolled ? "py-1" : "py-3"}  focus:outline-none text-white font-novaBold text-lg max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   RESEARCH & INNOVATION{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
@@ -745,19 +644,14 @@ export default function NavBar() {
             </ul>
           </nav>
         </div>
-        <div className={`md:hidden max-md:col-span-2 ${isScrolled100 ? "hidden" : ""}`}>
-          <div className="flex justify-end gap-2 pr-5">
+        <div className={`md:hidden max-md:order-1 max-md:col-span-1 ${isScrolled100 ? "hidden" : ""}`}>
+          <div className="grid grid-cols-2 pt-2 gap-2 pr-5">
             {socialLinks?.map((item, index) => (
               <a key={index} className="text-xs text-center flex flex-col gap-1 justify-start items-center text-white" href="">
                 {item.svg}
                 <span className="text-[10px]">{item.name}</span>
               </a>
             ))}
-          </div>
-        </div>
-        <div className="hidden max-md:col-span-4 max-md:flex justify-center">
-          <div>
-            {/* {SVG.Call}   */}
           </div>
         </div>
       </div>
