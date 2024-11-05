@@ -108,8 +108,8 @@ const StudentStories = () => {
       };
       
   return (
-    <div className="relative grid grid-cols-1 overflow-hidden pt-20 h-[570px]">
-      <AnimatePresence initial={false} custom={direction}>
+    <div className="relative grid grid-cols-1 overflow-hidden pt-20 ">
+      {/* <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentIndex}
           custom={direction}
@@ -161,7 +161,29 @@ const StudentStories = () => {
         aria-label="Next testimonial"
       >
         <ChevronRight className="w-6 h-6" />
-      </button>
+      </button> */}
+      <div className="grid grid-cols-4 gap-4 p-4">
+      {testimonials.map((testimonial, index) => (
+        <div className="col-span-1 bg-white shadow-lg rounded-lg p-6">
+          <div>
+            <div className="flex gap-5 border-b border-b-gray-100 pb-2">
+              <div className="w-10 h-10 rounded-full overflow-hidden border-2 bg-white border-cyan-500">
+                <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
+              </div>
+              <div className="flex-1">
+                <p className="text-sm text-gray-800 font-semibold">{testimonial.name}</p>
+                <p className="text-xs text-gray-800 font-normal">{testimonial.company}</p>
+              </div>
+            </div>
+          </div>
+          <p className="text-sm text-gray-500 mb-4"></p>
+          <p className="text-gray-700 text-sm text-justify mb-4">{testimonial.desc}</p>
+          <p className="text-sm text-gray-400">0 min ago</p>
+        </div>
+      ))}
+
+        
+      </div>
     </div>
   );
 };
