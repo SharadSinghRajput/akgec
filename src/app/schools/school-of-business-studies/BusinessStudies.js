@@ -75,7 +75,7 @@ const courses = {
 
 
 const CustomButton = ({ children, onClick, className }) => (
-  <button className={`pl-2 pr-8 py-2 w-full rounded-full font-semibold focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 ${className}`} onClick={onClick}>
+  <button className={`sm:pl-2 pl-1 sm:pr-8 pr-1 py-1 sm:py-2 w-full rounded-full font-semibold focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50 text-["7px"] sm:text-base ${className}`} onClick={onClick}>
     {children}
   </button>
 )
@@ -92,9 +92,9 @@ const BusinessStudies = () => {
       <SchoolHeader banner="bg-BG37" heading="AKGU School of Business Studies" desc={description} gradientColors={gradientColors} />
       <section className='max-w-7xl mx-auto px-5 max-sm:px-2 py-10'>
         <div>
-          <div className='flex justify-between'>
-            <h2 className='font-novaReg text-4xl'>School of Business Studies</h2>
-            <button className='px-6 py-2 text-sm bg-blue-600 text-white font-novaSemi uppercase tracking-wider rounded-full hover:bg-gray-300 hover:text-blue-600 hover:border border-gray-300 transition duration-200 ease-linear flex items-center gap-2'>
+          <div className='sm:flex justify-between'>
+            <h2 className='font-novaReg text-4xl md:w-1/2 lg:w-[60%] sm:w-[60%]'>School of Business Studies</h2>
+            <button className='lg:px-6 sm:px-3 mt-3 sm:mt-0 py-3 px-5 md:px-4 lg:py-2 text-sm bg-blue-600 text-white font-novaSemi uppercase tracking-wider rounded-full hover:bg-gray-300 hover:text-blue-600 hover:border border-gray-300 transition duration-200 ease-linear flex items-center  lg:gap-2 gap-3 sm:gap-1 md:gap-1'>
               <ArrowDownToLine size={18} strokeWidth={2} /> Download Brochure
             </button>
           </div>
@@ -109,7 +109,7 @@ const BusinessStudies = () => {
             With a distinguished faculty and a commitment to academic excellence, AKGU School of Business Studies offers comprehensive training that prepares students for rewarding careers in the corporate world. Our strong placement cell collaborates with leading companies such as Deloitte, Amazon, and HDFC Bank to provide outstanding career opportunities for our graduates.
           </p>
         </div>
-        <div className='grid grid-cols-2 gap-4 py-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 py-6 sm:py-10'>
           <div className="bg-[#96fffa] text-black rounded-3xl overflow-hidden pb-5">
             <div className='h-16 flex items-center pl-5 bg-indigo-950'>
               <img className='w-8 h-8' src="/image/icons/icon-return-on-investment.png" alt="investment logo" />
@@ -151,15 +151,15 @@ const BusinessStudies = () => {
           </div>
         </div>
       </section>
-      <div className='w-full bg-[#f2f6ff] py-20'>
+      <div className='w-full bg-[#f2f6ff] py-10 sm:py-20'>
         <div className="max-w-7xl mx-auto p-4 space-y-6 flex flex-col items-center">
-          <div className="flex space-x-2 justify-between bg-white w-1/2 p-1 rounded-full border border-gray-300">
+          <div className="flex sm:space-x-2 justify-between bg-white md:w-[65%] lg:w-1/2 w-full sm:w-[75%] p-1 rounded-full border border-gray-300">
             <CustomButton
               className={`${activeView === 'departments' ? "text-start bg-cyan-500 text-white" : "bg-white text-black"
                 }`}
               onClick={() => setActiveView('departments')}
             >
-              {activeView === 'departments' && <Check className="inline-block mr-2 h-7 w-7 bg-white rounded-full p-1 text-black" strokeWidth={3} />}
+              {activeView === 'departments' && <Check className="inline-block mr-2 h-5 w-5 sm:h-7 sm:w-7 bg-white rounded-full p-1 text-black" strokeWidth={3} />}
               Departments
             </CustomButton>
             <CustomButton

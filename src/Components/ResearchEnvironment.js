@@ -43,8 +43,8 @@ export default function ResearchEnvironment() {
                     {posts?.map((post) => (
                         <article key={post.id} className="border rounded-md flex flex-col items-start justify-between pb-4 hover:shadow-xl">
                             <div className="grid grid-cols-2 gap-x-10 p-4 ml-8 mt-8 md:text-xs font-novaSemi">
-                                <p className="text-lg">{post.tag1}</p>
-                                <p className="text-lg">{post.tag2}</p>
+                                <p className="text-lg bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{post.tag1}</p>
+                                <p className="text-lg bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{post.tag2}</p>
                             </div>
                             <div className="relative w-full h-80">
                                 <img

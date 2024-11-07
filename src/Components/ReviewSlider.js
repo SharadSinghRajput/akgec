@@ -48,12 +48,12 @@ const ReviewSlider = () => {
             ))}
           </Swiper>
 
-          <div id="slider-button-left" className="absolute -left-10 top-1/2 transform -translate-y-1/2 p-2 shadow-md cursor-pointer z-10">
+          <div id="slider-button-left" className="absolute -left-10 max-lg:-left-2 max-md:hidden top-1/2 transform -translate-y-1/2 p-2 shadow-md cursor-pointer z-10">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 opacity-50 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.3} d="M15 19l-7-7 7-7" />
             </svg>
           </div>
-          <div id="slider-button-right" className="absolute -right-10 top-1/2 transform -translate-y-1/2 p-2 shadow-md cursor-pointer z-10">
+          <div id="slider-button-right" className="absolute -right-10 max-lg:-right-2 max-md:hidden top-1/2 transform -translate-y-1/2 p-2 shadow-md cursor-pointer z-10">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 opacity-50 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.3} d="M9 5l7 7-7 7" />
             </svg>

@@ -43,7 +43,7 @@ const testimonials = [
     {
         image: "/image/testimonials/RS-Rajkumar.jpg",
         name: "Mr. R.S. Rajkumar",
-        description: "Orienting to the future of technical education bringing technologies to the industry and developing a sustained scalable model take AKGU to league of IIT's and beyond. Its no doubt AKGU will set trends in higher education!",
+        description: "Orienting to the future of technical education bringing technologies to the industry and developing a sustained scalable model take AKGEC to league of IIT's and beyond. Its no doubt AKGEC will set trends in higher education!",
         rating: 5,
         college: "Drives and Control Academy Bosch Rexroth, India",
         designation: "Head"
@@ -91,7 +91,7 @@ const testimonials = [
     {
         image: "/image/testimonials/atul_bhatnagar.jpg",
         name: "Shri Atul Bhatnagar",
-        description: "I was very impressed with the infrastructure, facilities and dedication of the faculty and students. I've no doubt that AKGU will continue to scale new heights in excellence and will contribute to nation building a big way. All the best & God Bless!",
+        description: "I was very impressed with the infrastructure, facilities and dedication of the faculty and students. I've no doubt that AKGEC will continue to scale new heights in excellence and will contribute to nation building a big way. All the best & God Bless!",
         rating: 5,
         college: "NSDC, New Delhi",
         designation: "Chief Operating Officer"
@@ -123,7 +123,7 @@ const testimonials = [
     {
         image: "/image/testimonials/Athawale.jpg",
         name: "Air Marshal P.V Athawale",
-        description: "When some great things happen in life, one wonders why not earlier. It's been a great day with AKGU. The commitment for excellence is visible. The college shows great promise for India's future. May you make a difference to Make India of Tomorrow! Best Wishes!",
+        description: "When some great things happen in life, one wonders why not earlier. It's been a great day with AKGEC. The commitment for excellence is visible. The college shows great promise for India's future. May you make a difference to Make India of Tomorrow! Best Wishes!",
         rating: 5,
         college: "",
         designation: "VC"
@@ -131,7 +131,7 @@ const testimonials = [
     {
         image: "/image/testimonials/Prof.-Prem-Vrat.jpg",
         name: "Prof. Prem Vrat",
-        description: "I am delighted to be present in the 15th Annual Convocation of AKGU and compliment the college and its Director, Board, faculties and students for maintaining very high standards of academic excellence. My best wishes for continued success of this great college!",
+        description: "I am delighted to be present in the 15th Annual Convocation of AKGEC and compliment the college and its Director, Board, faculties and students for maintaining very high standards of academic excellence. My best wishes for continued success of this great college!",
         rating: 5,
         college: "The NorthCap University, Gurgaon",
         designation: "Pro-Chancellor"
@@ -281,18 +281,18 @@ export const Testimonial = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <div id="slider-button-left" className="absolute left-14 top-1/2 transform -translate-y-1/2 bg-black rounded-full p-2 shadow-md cursor-pointer z-10">
+                <div id="slider-button-left" className="absolute left-8 sm:left-14 top-1/2 transform -translate-y-1/2 bg-black rounded-full p-2 shadow-md cursor-pointer z-10">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                 </div>
-                <div id="slider-button-right" className="absolute right-14 top-1/2 transform -translate-y-1/2 bg-black rounded-full p-2 shadow-md cursor-pointer z-10">
+                <div id="slider-button-right" className="absolute right-8 sm:right-14 top-1/2 transform -translate-y-1/2 bg-black rounded-full p-2 shadow-md cursor-pointer z-10">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </div>
             </div>
-            <div className="text-center mt-8 mb-4">
+            <div className="text-center mt-8 sm:mb-4">
                 <button className="bg-yellow-500 text-black px-6 py-2 rounded-md font-semibold">
                     View More
                 </button>

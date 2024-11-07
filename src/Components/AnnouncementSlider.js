@@ -102,7 +102,7 @@ export default function AnnouncementSlider() {
     }, [currentIndex])
 
     return (
-        <div className="w-full max-w-7xl mx-auto p-4">
+        <div className="w-full max-w-7xl mx-auto sm:p-4 p-2">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-2xl font-bold">ANNOUNCEMENTS</h2>
                 <div className="flex gap-2">
@@ -131,14 +131,14 @@ export default function AnnouncementSlider() {
                         className="w-full flex-shrink-0 scroll-snap-align-start "
                         style={{ scrollSnapAlign: 'start' }}
                     >
-                        <div className="bg-[#f1f5fe] rounded-lg shadow-md p-6 m-2">
+                        <div className="bg-[#f1f5fe] rounded-lg shadow-md sm:p-6 p-4 m-2">
                             <div className="flex items-center gap-4">
                                 <div className="bg-black text-white rounded-md p-2 text-center w-28">
                                     <div className="text-2xl font-bold">{announcement.date}</div>
                                     <div className="text-sm">{announcement.month}</div>
                                     <div className="text-sm">{announcement.year}</div>
                                 </div>
-                                <h3 className="text-lg font-semibold">{announcement.title}</h3>
+                                <h3 className="sm:text-lg font-semibold">{announcement.title}</h3>
                             </div>
                         </div>
                     </div>

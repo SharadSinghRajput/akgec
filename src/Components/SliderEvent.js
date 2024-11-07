@@ -10,8 +10,8 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 const events = [
   {
     date: '22 Aug 2023',
-    title: "Celebrating Diwali: Unity in Diversity at AKGU",
-    description: 'Ajay Kumar Garg University (AKGU), Ghaziabad, celebrated Diwali on November 4, 2023...',
+    title: "Celebrating Diwali: Unity in Diversity at AKGEC",
+    description: 'Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, celebrated Diwali on November 4, 2023...',
     image: '/image/event/Diwali2022_3.jpg ',
   },
   {
@@ -22,8 +22,8 @@ const events = [
   },
   {
     date: '03 Dec 2022',
-    title: 'AKGU celebrated the nation’s 75th Independence day',
-    description: '76th Independence day on 15 Aug 2022 was celebrated at Ajay Kumar Garg University...',
+    title: 'AKGEC celebrated the nation’s 75th Independence day',
+    description: '76th Independence day on 15 Aug 2022 was celebrated at Ajay Kumar Garg Engineering College...',
     image: '/image/event/Independence2023_4.jpg',
   },
   {
@@ -34,14 +34,14 @@ const events = [
   },
   {
     date: '22 Aug 2023',
-    title: "Innovating Insights: AKGU's Big Data Centre of Excellence",
-    description: 'The Big Data Centre of Excellence at AKGU, established...',
+    title: "Innovating Insights: AKGEC's Big Data Centre of Excellence",
+    description: 'The Big Data Centre of Excellence at AKGEC, established...',
     image: '/image/event/Sanrachna2.jpg',
   },
   {
     date: '13 February, 2020',
     title: 'India STEM College Award 2020',
-    description: 'AKGU has been honored with STEM Award–2020 under “India STEM College Award 2020...',
+    description: 'AKGEC has been honored with STEM Award–2020 under “India STEM College Award 2020...',
     image: '/image/event/Stem4.jpg',
   },
   {
@@ -53,7 +53,7 @@ const events = [
   {
     date: '15 March 2024',
     title: '"30Hacks” Hackathon organised by Hitachi x GlobalLogic',
-    description: 'Team VidyutKavach from Ajay Kumar Garg University was recently...',
+    description: 'Team VidyutKavach from Ajay Kumar Garg Engineering College was recently...',
     image: '/image/event/hackathon-organised.jpg',
   },
 ]
@@ -106,12 +106,12 @@ export default function SliderEvent() {
           ))}
 
         </Swiper>
-        <div id="slider-button-left" className="absolute left-14 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md cursor-pointer z-10">
+        <div id="slider-button-left" className="absolute left-6 sm:left-14 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md cursor-pointer z-10">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </div>
-        <div id="slider-button-right" className="absolute right-14 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md cursor-pointer z-10">
+        <div id="slider-button-right" className="absolute right-6 sm:right-14 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md cursor-pointer z-10">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
@@ -119,7 +119,7 @@ export default function SliderEvent() {
 
       </div>
 
-      <div className="text-center mt-8 mb-4">
+      <div className="text-center mt-8 sm:mb-4">
         <button className="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold">
           View More
         </button>

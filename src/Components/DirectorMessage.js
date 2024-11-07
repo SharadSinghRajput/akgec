@@ -13,11 +13,11 @@ const DirectorMessage = () => {
                         />
                         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-white/0 pt-16 p-4">
                             <b className="font-novaBold text-lg text-white">Dr. Hemant Ahuja</b>
-                            <small className="block text-white text-[11px] -mt-1">Director, AKGU</small>
+                            <small className="block text-white text-[11px] -mt-1">Director, AKGEC</small>
                         </div>
                     </div>
                 </div>
-                <div className="relative col-span-5 max-md:col-span-8 h-full max-h-[550px] text-sm font-novaReg scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300 text-justify pr-5">
+                <div className="relative col-span-5 max-md:col-span-8 h-full sm:max-h-[550px] text-sm font-novaReg scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300 text-justify px-3 sm:px-0 sm:pr-5">
                     <p className="leading-5">
                         Graduating with honors in Electrical Engineering from Kurukshetra University in 2001, Dr. Ahuja's journey continued with an M.Tech. in Energy and Environmental Management from the Indian Institute of Technology, Delhi, in 2008. His exceptional academic prowess was recognized with the Prof. O.P. Gupta Gold Medal, an accolade bestowed upon him for achieving the highest CGPA during his M.Tech. program. Dr. Ahuja's academic pursuits culminated in a PhD from IIT Delhi in 2013, cementing his reputation as a dedicated scholar.
                     </p>
@@ -28,7 +28,7 @@ const DirectorMessage = () => {
                         As a valued member of influential professional bodies such as IEEE, PES, ISTE, and IEI, Dr. Ahuja actively contributes to the growth and development of his field. His collaboration with the IEI-Ghaziabad local center as an eminent engineer reflects his dedication to community-driven initiatives. Moreover, Dr. Ahuja plays a pivotal role in shaping Electrical Engineering activities at the Abdul Kalam Technical University level, serving as a member of the Board of Studies for Electrical Engineering at AKTU.
                     </p>
                     <p className="mt-4  leading-5">
-                        Dr. Hemant Ahuja's multifaceted expertise, dedication to academia, and active involvement in research and collaboration position him as a visionary leader at the helm of Ajay Kumar Garg University, driving excellence and innovation in engineering education.
+                        Dr. Hemant Ahuja's multifaceted expertise, dedication to academia, and active involvement in research and collaboration position him as a visionary leader at the helm of Ajay Kumar Garg Engineering College, driving excellence and innovation in engineering education.
                     </p>
                 </div>
             </div>
