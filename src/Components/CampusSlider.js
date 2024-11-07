@@ -36,7 +36,7 @@ const CartData = [
 
 export default function CampusSlider() {
     return (
-        <div className="bg-white py-8">
+        <div className="bg-white py-8 max-sm:py-4">
             <div className="">
                 <div className='max-w-6xl mx-auto relative z-10 max-lg:px-5 px-24 flex flex-col gap-6 mb-10'>
                     <h2 className="max-w-4xl max-lg:text-4xl max-md:text-3xl mx-auto text-5xl font-novaLight text-center tracking-tight text-gray-900">

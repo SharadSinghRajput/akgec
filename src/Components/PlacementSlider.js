@@ -18,7 +18,7 @@ const PlacementSlider = ({placement, delay}) => {
               >
                 {placement?.map((item) => (
                   <SwiperSlide key={item.id}>
-                    <article className="max-xl:w-max mx-auto cursor-grab">
+                    <article className="max-xl:w-full mx-auto cursor-grab">
                       <img
                       className=""
                         src={item}
