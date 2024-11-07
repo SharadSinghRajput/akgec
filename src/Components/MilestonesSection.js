@@ -56,9 +56,8 @@ const MilestonesSection = () => {
           </svg>
 
         </div>
-        <h2 className="text-5xl font-novaLight text-gray-800 mt-5">A Journey of Exceptional <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Achievements</span>!</h2>
-        <div className="my-14 flex justify-center space-x-14 max-lg:grid max-lg:grid-cols-4 max-sm:grid-cols-3 max-lg:space-x-0 max-lg:gap-4 max-lg:p-5">
-          {/* Add your images or logos here */}
+        <h2 className="text-5xl font-novaLight max-lg:text-4xl max-md:text-3xl text-gray-800 mt-5">A Journey of Exceptional <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Achievements</span>!</h2>
+        <div className="my-14 flex justify-center space-x-14 max-lg:grid max-lg:grid-cols-3 max-sm:grid-cols-3 max-lg:space-x-0 max-lg:gap-4 max-lg:place-items-center">
           <img src="/image/company-logos/india_today.webp" alt="India Today" className="h-12" />
           <img src="/image/company-logos/the_week.webp" alt="The Week" className="h-12" />
           <img src="/image/company-logos/nirf.webp" alt="NIRF" className="h-12" />
@@ -69,11 +68,11 @@ const MilestonesSection = () => {
       </div>
       <div className="flex justify-between space-x-0 max-lg:space-x-0  mx-auto max-lg:grid max-lg:grid-cols-3 max-md:grid-cols-2 max-lg:justify-start max-lg:gap-y-5">
         {milestones?.map((milestone, index) => (
-          <div key={index} className="text-left after:content-link relative after:absolute after:right-0 after:top-0 after:w-10 after:h-full pr-10 ">
+          <div key={index} className="text-left after:content-link relative after:absolute after:left-5 after:top-0 after:w-6 after:h-full px-10 mb-1">
             <p className="text-xs uppercase bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold">Ranked</p>
             <p className="text-4xl font-novaLight text-gray-900 max-lg:text-2xl">{milestone.rank}<sup className='text-3xl font-novaLight max-lg:text-lg ml-1'>th</sup></p>
-            <p className="text-sm font-novaReg text-black max-lg:text-[10px]">among The Best</p>
-            <p className="text-[15px] font-novaReg capitalize max-lg:text-[10px] ">{milestone.description}</p>
+            <p className="text-sm font-novaReg text-black max-lg:text-xs max-sm:text-[10px]">among The Best</p>
+            <p className="text-[15px] font-novaReg capitalize max-lg:text-xs max-sm:text-[10px]">{milestone.description}</p>
           </div>
         ))}
       </div>

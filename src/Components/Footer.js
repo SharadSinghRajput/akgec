@@ -5,35 +5,34 @@ const navigation = [
         name: "Apply Here",
         links: [
             { name: 'Admission through UPTAC Counselling 2024-25', href: '#' },
-            { name: 'Admission', href: '#' },
+            // { name: 'Admission', href: '#' },
             { name: 'AKGIM-MBA Admission', href: '#' },
             { name: 'Scholarship', href: '#' },
             { name: 'Admission Office', href: '#' },
             { name: 'Student Feedback', href: '#' },
             { name: 'Student Facilitation', href: '#' },
-            { name: 'Admission Process', href: '#' },
+            // { name: 'Admission Process', href: '#' },
         ],
     },
     {
         name: "Learn Here",
         links: [
-            { name: 'Vision And Mission', href: '#' },
-            { name: 'Alumni Achievements', href: '#' },
+            // { name: 'Vision And Mission', href: '#' },
+            // { name: 'Alumni Achievements', href: '#' },
             { name: 'Faculty Achievements', href: '#' },
-            { name: 'Research & Development Centers', href: '#' },
+            // { name: 'Research & Development Centers', href: '#' },
             { name: 'AKGU International Journal of Technology', href: '#' },
             { name: 'NIRF Data for Ranking 2024', href: '#' },
-            { name: 'AICTE Approval Letters', href: '#' }
+            { name: 'AICTE Approval Letters', href: '#' },
+            { name: 'Anti-Ragging Policy', href: '#' }
         ],
     },
     {
         name: "Visit Here",
         links: [
             { name: 'Placements', href: '#' },
-            { name: 'College Awards', href: '#' },
             { name: 'Infrastructure/Visual Tour', href: '#' },
-            { name: 'College Awards', href: '#' },
-            { name: 'Placements', href: '#' },
+            // { name: 'College Awards', href: '#' },
             { name: 'Maps', href: '#' },
             { name: 'Distance Calculator', href: '#' },
             { name: 'About AKGU', href: '#' }
@@ -44,17 +43,16 @@ const navigation = [
         links: [
             { name: 'Nature Club', href: '#' },
             { name: 'Future Forward: Sustainability Club', href: '#' },
-            { name: 'Student Development Programs (SDPs)', href: '#' },
+            // { name: 'Student Development Programs (SDPs)', href: '#' },
             { name: 'UHV Departmental Seminars', href: '#' },
-            { name: 'Library', href: '#' },
-            { name: 'Anti-Ragging Policy', href: '#' }
+            { name: 'Library', href: '#' }
         ],
     },
     {
         name: "Others",
         links: [
-            { name: 'Courses Fee Details', href: '#' },
-            { name: 'Fee Structure for Existing Students', href: '#' },
+            // { name: 'Courses Fee Details', href: '#' },
+            // { name: 'Fee Structure for Existing Students', href: '#' },
             { name: 'Courses Offered', href: '#' },
             { name: 'Fee Structure for New Students', href: '#' },
             { name: 'Fee Refund Norms', href: '#' },
@@ -129,9 +127,9 @@ const navigation2 = [
 export default function Footer() {
     return (
         <footer className="bg-gradient-to-t from-blue-900 to-teal-700 text-white py-20">
-            <div className="mx-auto max-w-[1400px] max-2xl:max-w-[1200px] px-4">
+            <div className="mx-auto max-w-[1400px] max-[1400px]:max-w-7xl max-[1300px]:max-w-6xl max-[1160px]:max-w-5xl px-4">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                    {navigation?.map((section, index) => (  
+                    {navigation?.map((section, index) => (
                         <div key={index} className="w-full mb-6">
                             <h3 className="font-novaSemi mb-4 text-[#62cdd7]">{section.name}</h3>
                             <ul className='space-y-3'>
@@ -157,9 +155,9 @@ export default function Footer() {
                         <p><a href="#" className="text-sm hover:underline font-novaSemi">info@akgec.ac.in</a></p>
                     </div>
                 </div>
-           
 
-                <div className="mx-auto py-4 md:flex md:items-center md:justify-between border-t border-b border-slate-500">
+
+                {/* <div className="mx-auto py-4 md:flex md:items-center md:justify-between border-t border-b border-slate-500">
                     <div className="flex justify-center space-x-10 md:order-2">
                         {navigation2?.map((item, index) => (
                             <a key={index} href={item.href} className="text-white hover:text-gray-500">
@@ -177,15 +175,18 @@ export default function Footer() {
                             <li>National Ragging Prevention Programme</li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="items-center justify-center mt-4 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="flex items-center justify-center space-x-2">
-                        <div className="flex justify-center py-4 w-full rounded-md border border-slate-400">
-                            <img src="/image/hgcas.jpg" alt="Radio" className="h-12" />
+                {/* <div className="items-center justify-center mt-4 mx-auto grid grid-cols-2 gap-8">
+                    <div className="flex items-center space-x-2">
+                        <div className="flex justify-center py-4 w-32 rounded-md bg-white">
+                            <img src="/image/hgcas.jpg" alt="Radio" className="h-16" />
                         </div>
-                        <div className="flex justify-center py-4 w-full  rounded-md border border-slate-400">
-                            <img src="/image/UNAi.png" alt="Virtual Tour" className="bg-white h-12" />
+                        <div className="flex justify-center py-4 w-32  rounded-md bg-white">
+                            <img src="/image/UNAi.png" alt="Virtual Tour" className="h-16" />
+                        </div>
+                        <div className="flex justify-center py-4 w-32  rounded-md bg-white">
+                            <img src="/image/NaaC.webp" alt="UN Academic Impact" className="h-16" />
                         </div>
                     </div>
                     <div className="text-center font-light md:text-left">
@@ -197,11 +198,46 @@ export default function Footer() {
                     <div className="px-20">
                         <img src="/image/NaaC.webp" alt="UN Academic Impact" className="h-24" />
                     </div>
+                </div> */}
+
+                <div className="items-center justify-center mt-4 mx-auto grid grid-cols-12 gap-8 place-items-center">
+                    <div className="col-span-5 max-[1160px]:col-span-6 max-[850px]:col-span-12 flex items-center space-x-4">
+                        <div className="flex justify-center py-2 w-32 max-[420px]:w-24 max-[360px]:w-20 max-[420px]:py-0 bg-white">
+                            <img src="/image/hgcas.jpg" alt="Radio" className="h-16 max-[360px]:h-14" />
+                        </div>
+                        <div className="flex justify-center py-2 w-32 max-[420px]:w-24 max-[360px]:w-20 max-[420px]:py-0 bg-white">
+                            <img src="/image/UNAi.png" alt="Virtual Tour" className="h-16 max-[360px]:h-14" />
+                        </div>
+                        <div className="flex justify-center py-2 w-32 max-[420px]:w-24 max-[360px]:w-20 max-[420px]:py-0 bg-white">
+                            <img src="/image/NaaC.webp" alt="UN Academic Impact" className="h-16 max-[360px]:h-14" />
+                        </div>
+                    </div>
+                    <div className="col-span-3 max-[1160px]:col-span-6 max-[850px]:col-span-6 max-sm:col-span-12 flex justify-center items-center max-sm:px-2">
+                        <div className="flex max-[400px]:flex-col text-xs md:text-sm font-novaSemi gap-10">
+                            <ul className="flex flex-col max-sm:flex-row max-sm:items-center max-sm:space-y-0 max-sm:gap-3 space-y-3 justify-center sm:justify-center max-[350px]:pl-5">
+                                <li className='hover:underline cursor-pointer'>NAAC</li>
+                                <li className='hover:underline cursor-pointer'>NIRF</li>
+                                <li className='hover:underline cursor-pointer'>NATS</li>
+                            </ul>
+                            <ul className="flex flex-col max-sm:flex-row max-sm:items-center max-sm:space-y-0 max-sm:gap-3 space-y-3 justify-center sm:justify-center">
+                                <li className='max-[350px]:text-left hover:underline cursor-pointer'>Anti-Ragging</li>
+                                <li className='max-[350px]:text-left hover:underline cursor-pointer'>National Ragging Prevention Programme</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-span-4 max-[1160px]:col-span-12 max-[850px]:col-span-6 max-sm:col-span-12 flex justify-center space-x-10 md:order-2">
+                        {navigation2?.map((item, index) => (
+                            <a key={index} href={item.href} className="text-white hover:text-gray-500">
+                                <span className="sr-only">{item.name}</span>
+                                <item.icon aria-hidden="true" className="h-6 w-6" />
+                            </a>
+                        ))}
+                    </div>
                 </div>
                 <div className="mt-8 text-xs font-novaSemi text-center border-t border-slate-400 pt-4">
                     <p>© All rights reserved 2024</p>
                 </div>
-                </div>
+            </div>
         </footer>
     );
 }

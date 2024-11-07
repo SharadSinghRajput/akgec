@@ -13,7 +13,7 @@ export default function StudentReviews() {
                         The <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Echoes of Success</span> -
                         Hear More from Our Esteemed Graduates!
                     </h2>
-                    <p className="mt-6 text-xl text-gray-700 font-light px-6 sm:px-20 text-center">
+                    <p className="mt-6 text-xl max-md:text-lg text-gray-700 font-light px-6 sm:px-20 text-center">
                         Discover the enriching stories and valuable insights directly from our accomplished graduates.
                     </p>
                 </div>

@@ -49,22 +49,22 @@ export default function Form() {
   return (
     <div className="flex items-center justify-center h-full pb-4 md:pt-20 ">
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full overflow-hidden">
-        <div className='bg-gray-100 flex flex-col justify-center items-center p-8 pb-4'>
+        <div className='bg-gray-100 flex flex-col justify-center items-center px-8 py-8 max-sm:py-6'>
           <h2 className="text-sm bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold tracking-wider text-center">APPLY TODAY FOR</h2>
-          <h1 className="mt-3 font-novaBold text-center text-xl">AKG UNIVERSITY PROGRAMS</h1>
-          <p className="bg-btn-gradient animate-gradient text-white text-center font-novaBold mb-6 text-xs w-max py-2 px-4 rounded-lg mt-2">Registration End Date (Phase-II) - 30 Aug 2024</p>
+          <h1 className="mt-3 font-novaBold text-center text-xl max-sm:text-base">AKG UNIVERSITY PROGRAMS</h1>
+          <p className="bg-btn-gradient animate-gradient text-white text-center font-novaBold mb-6 max-sm:mb-0 text-xs w-max py-2 px-4 rounded-lg mt-2">Registration End Date (Phase-II) - 30 Aug 2024</p>
         </div>
-        <form className='p-8'>
+        <form className='p-6 max-sm:p-4'>
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <input type="text" placeholder="Enter your Name" className="w-full px-4 py-3 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
-            <input type="email" placeholder="Enter your Email Address" className="w-full px-4 py-3 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
+            <input type="text" placeholder="Enter your Name" className="w-full px-4 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
+            <input type="email" placeholder="Enter your Email Address" className="w-full px-4 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
           </div>
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <input type="tel" placeholder="Enter Mobile No" className="w-full px-4 py-3 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
-            <input type="text" placeholder="Type your city & select..." className="w-full px-4 py-3 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
+            <input type="tel" placeholder="Enter Mobile No" className="w-full px-4 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
+            <input type="text" placeholder="Type your city & select..." className="w-full px-4 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
           </div>
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg" value={selectedDiscipline} onChange={handleDisciplineChange}>
+            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg" value={selectedDiscipline} onChange={handleDisciplineChange}>
               <option value="">Select Discipline</option>
               {programData?.map((item, index) => (
                 <option key={index} value={item.discipline}>
@@ -72,7 +72,7 @@ export default function Form() {
                 </option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg">
               <option value="">Select Program</option>
               {programs?.map((program, index) => (
                 <option key={index} value={program}>
@@ -83,13 +83,13 @@ export default function Form() {
           </div>
 
           <div className="grid grid-cols-3 gap-4 mb-6">
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>DD</option>
               {[...Array(31)]?.map((_, i) => (
                 <option key={i}>{String(i + 1).padStart(2, '0')}</option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>MM</option>
               {[
                 'January',
@@ -108,7 +108,7 @@ export default function Form() {
                 <option key={i}>{month}</option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>YYYY</option>
               {Array.from({ length: 100 }, (_, i) => 2024 - i)?.map((year) => (
                 <option key={year}>{year}</option>
@@ -117,8 +117,8 @@ export default function Form() {
           </div>
 
           <div className="flex justify-between items-center">
-          <Button text={'REGISTER NOW'} type='submit' className="bg-btn-gradient animate-gradient text-white font-novaBold py-4 px-12 text-xs rounded-md" />
-            <a href="#" className="text-xs font-novaBold text-gray-600 underline">
+          <Button text={'REGISTER NOW'} type='submit' className="bg-btn-gradient animate-gradient text-white font-novaBold py-4 px-12 max-sm:px-6 max-sm:py-3 text-xs rounded-md" />
+            <a href="#" className="text-xs max-[350px]:text-[11px] text-right font-novaBold text-gray-600 underline">
               ALREADY REGISTERED
             </a>
           </div>

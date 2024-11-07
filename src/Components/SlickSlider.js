@@ -92,9 +92,9 @@ export default function SlickSlider() {
   return (
     <>
       <section className="h-full bg-[#F3F3F3] py-8">
-        <div className="break1:max-w-[1500px] break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto">
+        <div className="break1:max-w-[1500px] break2:max-w-[1320px] break3:max-w-[1200px] break4:max-w-[1040px] mx-auto">
           <header className="text-center mb-8 max-xl:mb-5">
-            <h1 className="text-[42px] font-novaReg max-md:text-2xl max-sm:text-xl max-sm:px-4 text-gray-700">
+            <h1 className="text-[42px] font-novaReg max-lg:text-4xl max-md:text-3xl max-sm:px-4 text-gray-700">
               A Glimpse into Our{" "}
               <span className="font-novaSemi bg-text-gradient bg-clip-text text-transparent">
                 Vibrant Journey
@@ -145,7 +145,7 @@ export default function SlickSlider() {
                   <h2 className="text-5xl xl:text-5xl font-novaThin mb-2 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                     <span className="whitespace-nowrap">
                       33.80{" "}
-                      <span className="text-gray-600 font-novaLight text-xl -ml-2 pr-5 max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
+                      <span className="text-gray-600 font-novaLight text-xl max-xl:-ml-3 max-lg:-ml-2 pr-5 max-2xl:text-xl max-md:text-lg max-sm:text-base">
                         LPA
                       </span>
                     </span>
@@ -162,7 +162,7 @@ export default function SlickSlider() {
                   <h2 className="text-5xl xl:text-5xl font-novaThin mb-2 max-lg:text-3xl max-lg:mb-3 text-gray-700">
                     <span className="whitespace-nowrap">
                       1.13{" "}
-                      <span className="text-gray-600 font-novaLight text-xl -ml-2 max-2xl:text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
+                      <span className="text-gray-600 font-novaLight text-xl max-xl:-ml-3 max-lg:-ml-2 max-2xl:text-xl max-md:text-lg max-sm:text-base">
                         CR
                       </span>
                     </span>

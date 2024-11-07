@@ -39,10 +39,10 @@ export default function CampusSlider() {
         <div className="bg-white py-8">
             <div className="">
                 <div className='max-w-6xl mx-auto relative z-10 max-lg:px-5 px-24 flex flex-col gap-6 mb-10'>
-                    <h2 className="max-w-4xl mx-auto text-5xl font-novaLight text-center tracking-tight text-gray-900">
+                    <h2 className="max-w-4xl max-lg:text-4xl max-md:text-3xl mx-auto text-5xl font-novaLight text-center tracking-tight text-gray-900">
                         Uniting <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Students & Faculty</span> from Every Corner of India and Around the World!
                     </h2>
-                    <p className="mt-2 mb-6 mx-auto text-2xl text-gray-600 text-center font-novaLight">
+                    <p className="mt-2 mb-6 mx-auto text-2xl max-lg:text-xl max-sm:text-lg text-gray-600 text-center font-novaLight">
                         Bringing together students from around the world, our platform creates a dynamic network with unparalleled learning opportunities and experiences.
                     </p>
                 </div>
@@ -63,8 +63,8 @@ export default function CampusSlider() {
                         </div>
                     </div>
                 </div>
-                <div className='bg-BG3 h-[800px] bg-cover w-full flex flex-col justify-end pb-28 lg:-mt-36 max-lg:-mt-10 max-lg:h-auto max-lg:px-10 max-md:px-5 max-lg:pt-16 px-40 pt-10 '>
-                    <div className='max-w-[1600px] mx-auto max-lg:p-10'>
+                <div className='bg-BG3 h-[800px] bg-cover w-full flex flex-col justify-end pb-28 max-sm:pb-10 lg:-mt-36 max-lg:-mt-10 max-lg:h-auto max-lg:px-10 max-sm:px-0 max-md:px-5 max-lg:pt-16 px-40 pt-10 '>
+                    <div className='max-w-[1600px] mx-auto max-lg:p-10 max-sm:p-3'>
                         <div className='grid grid-cols-3 '>
                             <div className='col-span-2 max-lg:col-span-3'>
                                 <h3 className='text-6xl max-md:text-4xl leading-[50px] font-novaLight text-white mb-5'>
@@ -74,13 +74,13 @@ export default function CampusSlider() {
                                 
                             </div>
                             <div className='col-span-1 max-lg:col-span-3'>
-                                <div className="flex justify-end space-x-4 z-10 ">
-                                    <Button text={"APPLY TODAY"} className="bg-btn-gradient animate-gradient text-white text-sm font-novaBold px-5 py-3 rounded-xl hover:bg-[#3c5686]" />
-                                    <Button text={"VIEW PLACEMENTS"} className="border border-white text-white text-sm font-novaBold px-5 py-3 rounded-xl hover:bg-white hover:text-black" />
+                                <div className="flex justify-start space-x-4 z-10 ">
+                                    <Button text={"APPLY TODAY"} className="bg-btn-gradient animate-gradient text-white text-sm font-novaBold px-5 py-3 max-[400px]:text-xs rounded-xl hover:bg-[#3c5686]" />
+                                    <Button text={"VIEW PLACEMENTS"} className="border border-white text-white text-sm font-novaBold px-5 py-3 rounded-xl max-[400px]:text-xs hover:bg-white hover:text-black" />
                                 </div>
                             </div>
                             <div className='col-span-3'>
-                                <p className='text-white text-xl leading-none font-novaLight max-md:pt-10'>At Ajay Kumar Garg University, we empower students to aim high—whether it's advancing in engineering research, launching successful startups, excelling in competitive exams, or pursuing a global career. We inspire dreams and nurture leaders for tomorrow's challenges.</p>
+                                <p className='text-white text-xl max-sm:text-lg max-sm:leading-5 leading-none font-novaLight max-md:pt-10'>At Ajay Kumar Garg University, we empower students to aim high—whether it's advancing in engineering research, launching successful startups, excelling in competitive exams, or pursuing a global career. We inspire dreams and nurture leaders for tomorrow's challenges.</p>
                             </div>
                         </div>
                         <div className='grid grid-cols-3 mt-16 gap-5'>
