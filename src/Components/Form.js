@@ -56,15 +56,15 @@ export default function Form() {
         </div>
         <form className='p-6 max-sm:p-4'>
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <input type="text" placeholder="Enter your Name" className="w-full px-4 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
-            <input type="email" placeholder="Enter your Email Address" className="w-full px-4 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
+            <input type="text" placeholder="Enter your Name" className="w-full px-4 max-sm:px-2 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
+            <input type="email" placeholder="Enter your Email" className="w-full px-4 max-sm:px-2 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
           </div>
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <input type="tel" placeholder="Enter Mobile No" className="w-full px-4 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
-            <input type="text" placeholder="Type your city & select..." className="w-full px-4 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
+            <input type="tel" placeholder="Enter Mobile No" className="w-full px-4 max-sm:px-2 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
+            <input type="text" placeholder="Type your City" className="w-full px-4 max-sm:px-2 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
           </div>
           <div className="grid grid-cols-2 gap-4 mb-4">
-            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg" value={selectedDiscipline} onChange={handleDisciplineChange}>
+            <select className="w-full px-4 max-sm:px-1 py-3 max-sm:py-1.5 border border-gray-500 rounded-md text-xs font-novaReg" value={selectedDiscipline} onChange={handleDisciplineChange}>
               <option value="">Select Discipline</option>
               {programData?.map((item, index) => (
                 <option key={index} value={item.discipline}>
@@ -72,7 +72,7 @@ export default function Form() {
                 </option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 max-sm:px-1 py-3 max-sm:py-1.5 border border-gray-500 rounded-md text-xs font-novaReg">
               <option value="">Select Program</option>
               {programs?.map((program, index) => (
                 <option key={index} value={program}>
@@ -83,13 +83,13 @@ export default function Form() {
           </div>
 
           <div className="grid grid-cols-3 gap-4 mb-6">
-            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 max-sm:px-1 py-3 max-sm:py-1.5 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>DD</option>
               {[...Array(31)]?.map((_, i) => (
                 <option key={i}>{String(i + 1).padStart(2, '0')}</option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 max-sm:px-1 py-3 max-sm:py-1.5 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>MM</option>
               {[
                 'January',
@@ -108,7 +108,7 @@ export default function Form() {
                 <option key={i}>{month}</option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 max-sm:px-1 py-3 max-sm:py-1.5 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>YYYY</option>
               {Array.from({ length: 100 }, (_, i) => 2024 - i)?.map((year) => (
                 <option key={year}>{year}</option>
