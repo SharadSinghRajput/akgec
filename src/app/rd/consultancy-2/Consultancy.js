@@ -13,6 +13,7 @@ const results = [
         The respirator was developed using Polylactic Acid. The filter material used was disposable mask cloth but any material as per exposed environment can be used. Design considerations such as suitability for average male/female face size with ergonomic characteristics and perfect fit on the face without causing any problems due to prolonged usage were taken into consideration. The weight of the respirator was 47 grams and average cost of manufacture was INR 100.
       </>
     ),
+    width: "w-72",
     slides: [
       { title: 'Innovation', img:"/image/consultancy/Innovation1.jpg" },
       { title: 'Innovation', img:"/image/consultancy/Innovation2.jpg" },
@@ -27,6 +28,7 @@ const results = [
         AKGU Skills Foundation (ASF) is working very closely with Modern Coach Factory, Rae Bareilly for training and upgradation of the competency of their engineers in Industrial Robotics and Automation. Further to this, MCF has agreed to organize joint In-Plant Training Programs through their Technical Training Centre on Robot Operation & Programming. The first program on “Robot Operation & Programming – In-Plant Training” was conducted at Modern Coach Factory Rae Bareilly during 17-28 September, 2018 for 15 participants.
       </>
     ),
+    width: "w-72",
     slides: [
       { title: 'Railways', img:"/image/consultancy/Railways.jpg" },
       { title: 'Railways', img:"/image/consultancy/Railways1.jpg" },
@@ -48,7 +50,7 @@ const results = [
 ];
 
 const Consultancy = () => {
-  const [openIndices, setOpenIndices] = useState([]);
+  const [openIndices, setOpenIndices] = useState([0]);
 
   const toggleDomain = (index) => {
     setOpenIndices((prev) => {
@@ -82,10 +84,9 @@ const Consultancy = () => {
                   )}
                 </a>
                 {openIndices.includes(index) && (
-                  <div className="pl-5 flex justify-around items-center py-10 bg-gray-200">
-                    <p className="font-novaReg text-lg mb-4 max-w-3xl">{result.desc}</p>
-                    {/* You can render images as needed */}
-                    <CubeSlider slides={result.slides} />
+                  <div className="px-5 flex justify-around items-center gap-10 py-10 bg-gray-200">
+                    <p className="font-novaReg text-base mb-4 leading-snug text-justify max-w-3xl">{result.desc}</p>
+                    <CubeSlider width={result.width} slides={result.slides} />
                   </div>
                 )}
               </div>

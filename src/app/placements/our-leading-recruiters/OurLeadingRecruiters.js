@@ -119,13 +119,13 @@ const OurLeadingRecruiters = () => {
                             <ul className="flex flex-wrap justify-between">
                                 {company.map((comp, index) => (
                                     <li key={index} className="w-36 m-2.5 max-md:m-1 max-md:w-28">
-                                        <a href="#" aria-label={`Logo of Company ${index + 1}`}>
+                                        <span aria-label={`Logo of Company ${index + 1}`}>
                                             <img
                                                 src={comp.img}
                                                 className="w-full h-40 object-contain p-2.5"
                                                 alt={`Logo of Company ${index + 1}`}
                                             />
-                                        </a>
+                                        </span>
                                     </li>
                                 ))}
                             </ul>

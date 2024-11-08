@@ -2,7 +2,7 @@ export default function VisionAndMission() {
     return (
         <div className="flex flex-col items-center">
             <div className="grid grid-cols-2 w-full border border-gray-300 shadow-lg mb-5">
-                <div className="col-span-1">
+                <div className="col-span-1 p-5 max-sm:p-2">
                     <div className="flex w-full h-full flex-col justify-center items-center">
                         <h2 className="text-4xl w-full text-start font-novaReg mb-4 max-w-[350px]">Our Vision</h2>
                         <p className="font-novaReg text-gray-600 max-w-[350px] ">
@@ -22,7 +22,7 @@ export default function VisionAndMission() {
                 </div>
             </div>
             <div className="grid grid-cols-2 w-full border border-gray-300 shadow-lg mb-5">
-                <div className="col-span-1">
+                <div className="col-span-1 p-5 max-sm:p-2">
                     <div className="flex w-full h-full flex-col justify-center items-center ">
                         <h2 className="text-4xl w-full text-start font-novaReg max-w-[350px] mb-4">Our Mission</h2>
                         <p className="font-novaReg text-gray-600 max-w-[350px] ">
@@ -36,13 +36,13 @@ export default function VisionAndMission() {
                         <img
                             alt=""
                             src="/image/mission-1.jpg"
-                            className="w-full object-cover"
+                            className="w-full max-w-sm object-cover"
                         />
                     </div>
                 </div>
             </div>
             <div className="grid grid-cols-2 w-full border border-gray-300 shadow-lg mb-5">
-                <div className="col-span-1">
+                <div className="col-span-1 p-5 max-sm:p-2">
                     <div className="flex w-full h-full flex-col justify-center items-center">
                         <h2 className="text-4xl w-full text-start font-novaReg mb-4 max-w-[350px]">Our Quality Policy</h2>
                         <p className="font-novaReg text-gray-600 max-w-[350px] ">
