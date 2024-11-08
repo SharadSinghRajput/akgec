@@ -66,34 +66,38 @@ const ExamResults = () => {
     };
 
     return (
-        <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg mr-10">
-            <h1 className="text-4xl font-novaReg p-5 mb-4">Examination Results</h1>
-            <div className="w-full text-black">
+        <div className="">
+            <h1 className="text-4xl max-sm:text-3xl font-novaReg p-1 mb-4">Examination Results</h1>
+            <div className="shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] w-full text-black">
                 {results.map((result, index) => (
-                    <div key={index} className="mb-4 border-b border-gray-300">
-                        <a
-                            onClick={() => toggleDomain(index)}
-                            className={`flex justify-between items-center w-full px-5 py-4 cursor-pointer rounded-lg transition-colors duration-200`}
-                        >
-                            <span className={`font-semibold ${activeIndex === index ? 'text-[#00BFE7]' : 'text-black'}`}>
-                                {result.title}
-                            </span>
+                    <div key={index} className=" border-b border-gray-300">
+                        <div className={`flex items-center pr-3 hover:bg-indigo-950 hover:text-white ${activeIndex === index ? 'bg-indigo-900 text-white' : 'text-black'}`}>
+                            <a
+                                onClick={() => toggleDomain(index)}
+                                className={`flex justify-between items-center w-full px-5 py-5 max-sm:py-3 cursor-pointer rounded-lg transition-colors duration-200`}
+                            >
+                                <span className={`font-novaSemi`}>
+                                    {result.title}
+                                </span>
+                            </a>
                             {openIndices.includes(index) ? (
                                 <ChevronUp className="w-6 h-6" />
                             ) : (
                                 <ChevronDown className="w-6 h-6" />
                             )}
-                        </a>
+                        </div>
                         {openIndices.includes(index) && (
-                            <div className="ml-5 pl-5">
-                                <a
-                                    href={result.link}
-                                    className="text-[#00BFE7] text-sm flex items-center"
-                                >
-                                    <FileText className="w-4 h-4 mr-2" />
-                                    {result.title}
-                                </a>
-                                <p className="text-xs font-novaReg mb-4">{result.date}</p>
+                            <div className="pt-3 pl-5">
+                                <FileText className="text-[#00BFE7] w-5 h-5 mb-1" />
+                                <div>
+                                    <a
+                                        href={result.link}
+                                        className="text-[#00BFE7] text-sm flex items-center"
+                                    >
+                                        {result.title}
+                                    </a>
+                                    <p className="text-xs font-novaReg mb-4">{result.date}</p>
+                                </div>
                             </div>
                         )}
                     </div>

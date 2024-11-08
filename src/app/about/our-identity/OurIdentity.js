@@ -8,7 +8,7 @@ const OurIdentity = () => {
                 <img className='w-96 max-[500px]:w-72 max-[470px]:w-64 ' src="/image/akg-logo.png" alt="Akg Logo" />
             </div>
             <div className="mt-10">
-                <h1 className="text-4xl font-novaReg mb-6">Official Emblem</h1>
+                <h1 className="text-4xl max-sm:text-3xl font-novaReg mb-6">Official Emblem</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="bg-gray-100 p-8 max-[470px]:p-2 border-y border-x border-gray-300">
                         <div className="flex items-center mb-2">
@@ -49,7 +49,7 @@ const OurIdentity = () => {
                 </div>
             </div>
             <div className='px-2'>
-                <h1 className="text-4xl font-novaReg mt-10 mb-6">How to use the Official Emblem?</h1>
+                <h1 className="text-4xl max-sm:text-3xl font-novaReg mt-10 mb-6">How to use the Official Emblem?</h1>
                 <ul className="list-disc space-y-2 pl-5 font-novaReg text-sm">
                     <li>The official emblem may not be modified in any way. Its design must remain intact to preserve its significance and visual identity.</li>
                     <li>When the emblem is used alongside the university's name, the designated wordmark "AKGU University" should be utilized in its standard format.</li>
