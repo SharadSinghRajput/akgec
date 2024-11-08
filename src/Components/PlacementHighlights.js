@@ -28,7 +28,7 @@ export default function PlacementHighlights() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-novaLight">
                     <span className='font-novaSemi bg-gradient-to-r from-teal-300 to-green-400 bg-clip-text text-transparent'>Placements</span> Overview
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl font-novaLight mt-3">Record-Breaking Achievements and Industry-Driven Success</p>
+                <p className="text-lg md:text-xl lg:text-2xl font-novaLight leading-5 mt-3">Record-Breaking Achievements and Industry-Driven Success</p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-6">
                     <div className="text-start">
                         <p className="text-2xl md:text-3xl lg:text-5xl font-novaThin mt-4">1406</p>

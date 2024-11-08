@@ -64,19 +64,19 @@ const NotificationSlider = () => {
                 <div className="col-span-8 max-lg:col-span-12 h-full max-lg:mb-4 max-lg:px-10 max-md:px-8 max-sm:px-1 max-lg:ml-0 ">
                     <section className="bg-gradient-to-r from-cyan-500 to-indigo-600 animate-gradient rounded-lg h-full">
                         <div className="grid grid-cols-12 h-full">
-                            <div className="col-span-2 p-2 flex justify-center items-center">
+                            <div className="col-span-2 max-sm:hidden p-2 flex justify-center items-center">
                                 <img
                                     src="https://www.akgec.ac.in/wp-content/themes/twentysixteen/img/AKGEC_1_0.png"
                                     alt="UNA Logo"
                                     className="w-28 aspect-square"
                                 />
                             </div>
-                            <div className="col-span-5 flex justify-center items-center">
+                            <div className="col-span-5 max-sm:col-span-5 flex justify-center items-center">
                                 <h2 className="uppercase text-center max-w-96 font-novaBold leading-5 text-xl max-lg:text-base max-md:text-sm max-sm:text-xs text-white">
                                     AKGU hosts ACET 2024: <span className="text-orange-300"> 1st International Conference </span> on Advanced Computing and Emerging Technologies
                                 </h2>
                             </div>
-                            <div className="col-span-5">
+                            <div className="col-span-5 max-sm:col-span-7">
                                 <img
                                     className="rounded-xl max-2xl:h-full h-full w-full ml-auto max-lg:w-full max-lg:ml-0 object-cover"
                                     src="/image/ajay-kumar-garg-750x375-1.jpg"

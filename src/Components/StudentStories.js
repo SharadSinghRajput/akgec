@@ -108,7 +108,7 @@ const StudentStories = () => {
       };
       
   return (
-    <div className="relative grid grid-cols-1 overflow-hidden pt-20 ">
+    <div className="relative grid grid-cols-1 overflow-hidden pt-10 ">
       {/* <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentIndex}
@@ -162,7 +162,7 @@ const StudentStories = () => {
       >
         <ChevronRight className="w-6 h-6" />
       </button> */}
-      <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 p-4">
+      <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 p-4 max-[400px]:p-2">
       {testimonials.map((testimonial, index) => (
         <div className="col-span-1 bg-white shadow-lg rounded-lg p-6">
           <div>

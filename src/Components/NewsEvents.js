@@ -29,16 +29,16 @@ export default function NewsEvents() {
             <div className="">
 
                 <div className="bg-[#ebebeb] h-[70%] w-full absolute top-0 left-0 -z-10"></div>
-                <h2 className="text-5xl font-novaLight text-center text-gray-700">
+                <h2 className="text-5xl max-lg:text-4xl max-md:text-3xl font-novaLight text-center text-gray-700">
                     Spotlight of <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Success</span>!
                 </h2>
-                <p className="mt-5 text-2xl leading-none font-novaLight text-center max-w-screen-lg mx-auto text-gray-700">
+                <p className="mt-5 text-2xl max-lg:xl max-md:text-lg font-novaLight text-center max-w-screen-lg max-sm:px-2 mx-auto text-gray-700">
                     From our students clinching global honors to the university soaring in national and international rankings,
                     our triumphs consistently illuminate our path in the spotlight.
                 </p>
                 <div className="break2:max-w-[1320px] break3:max-w-[1140px] break4:max-w-[960px] mx-auto py-10 ">
-                    <div className="grid grid-cols-2 max-lg:grid-cols-1">
-                        <div className="col-span-1 rounded-xl mr-5 border border-gray-200 hover:shadow-lg bg-white ">
+                    <div className="grid grid-cols-2 max-lg:grid-cols-1 max-sm:px-2">
+                        <div className="col-span-1 rounded-xl mr-5 max-lg:mr-0 border border-gray-200 hover:shadow-lg bg-white ">
                             <img
                                 alt=""
                                 src="/image/spotlight/CFC4.jpeg"
@@ -55,7 +55,7 @@ export default function NewsEvents() {
                                 </button>
                             </div>
                         </div>
-                        <div className="col-span-1 ml-5 ">
+                        <div className="col-span-1 ml-5 max-lg:ml-0 ">
                             <div className="grid grid-cols-1 gap-y-5 h-full">
                                 {posts?.map((post) => (
                                     <article key={post.id} className="relative h-full isolate flex flex-col gap-4 lg:flex-row border border-gray-200 hover:shadow-lg rounded-lg overflow-hidden bg-white">

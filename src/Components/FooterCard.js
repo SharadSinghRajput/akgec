@@ -13,7 +13,7 @@ export default function FooterCard() {
           {stats?.map((stat, index) => (
             <div key={index} className="px-2 py-6 rounded-lg max-sm:py-3">
               <p className="mt-2 flex items-baseline gap-1 max-sm:mt-1">
-                <span className="text-lg sm:text-2xl md:text-xl 2xl:text-[42px] font-novaLight tracking-tight text-white">{stat.value}</span>
+                <span className="text-3xl lg:text-4xl font-novaLight tracking-tight text-white">{stat.value}</span>
                 {stat.unit ? <span className="text-xs md:text-sm 2xl:text-xl font-novaLight text-white">{stat.unit}</span> : null}
               </p>
               <p className="mt-2 text-sm md:text-sm font-medium 2xl:text-base font-novaReg text-white max-sm:mt-1">{stat.text}</p>

@@ -13,7 +13,7 @@ export default function StudentReviews() {
                         The <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Echoes of Success</span> -
                         Hear More from Our Esteemed Graduates!
                     </h2>
-                    <p className="mt-6 text-xl max-md:text-lg text-gray-700 font-light px-6 sm:px-20 text-center">
+                    <p className="mt-6 text-xl max-md:text-lg text-gray-700 font-light px-3 sm:px-20 text-center">
                         Discover the enriching stories and valuable insights directly from our accomplished graduates.
                     </p>
                 </div>
@@ -43,7 +43,7 @@ export default function StudentReviews() {
                     </div>
                 </div> */}
                 <div className="w-full flex justify-center items-center">
-                    <Button text={'Read All Reviews'} className=" py-3 px-10 mt-5 text-[15px] text-white rounded-xl font-novaBold uppercase bg-btn-gradient  w-max  hover:bg-[#3c5686] hover:border-b-4 hover:text-white hover:border-[#beb6ff] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105" />
+                    <Button text={'Read All Reviews'} className=" py-3 max-[400px]:py-2 max-[400px]:px-6 px-10 mt-5 text-[15px] text-white rounded-xl font-novaBold uppercase bg-btn-gradient  w-max  hover:bg-[#3c5686] hover:border-b-4 hover:text-white hover:border-[#beb6ff] hover:transform hover:transition-transform hover:ease-in-out  hover:duration-500 scale-y-105" />
                 </div>
             </div>
         </section>

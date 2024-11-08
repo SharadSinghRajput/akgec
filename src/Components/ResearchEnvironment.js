@@ -34,12 +34,12 @@ export default function ResearchEnvironment() {
         <div className="bg-white">
             <div className="max-w-[1350px] mx-auto py-10 mt-10  ">
                 <div className="mx-auto flex justify-center items-center flex-col text-center">
-                    <h2 className="text-5xl font-light tracking-tight text-gray-700">Explore Our <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Insights & Stories</span></h2>
-                    <p className="mt-2 text-xl font-light leading-8 text-center w-[80%] mb-10">
+                    <h2 className="text-5xl max-lg:text-4xl max-md:text-3xl font-light tracking-tight text-gray-700">Explore Our <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Insights & Stories</span></h2>
+                    <p className="mt-2 text-base md:text-lg lg:text-xl font-light leading-6 text-center w-[80%] max-sm:w-full max-sm:px-3 mb-10">
                         Dive into a collection of in-depth articles and blogs that spark thought, inspire action, and keep you informed on the latest trends and ideas.
                     </p>
                 </div>
-                <div className="mt-10 grid grid-cols-3 max-md:grid-cols-1">
+                <div className="mt-10 max-sm:mt-2 grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 max-sm:px-2">
                     {posts?.map((post) => (
                         <article key={post.id} className="border rounded-md flex flex-col items-start justify-between pb-4 hover:shadow-xl">
                             <div className="grid grid-cols-2 gap-x-10 p-4 ml-8 mt-8 md:text-xs font-novaSemi">
@@ -53,17 +53,17 @@ export default function ResearchEnvironment() {
                                     className="w-full rounded-lg h-3/4 bg-gray-100 object-cover"
                                 />
                             </div>
-                            <div className="">
-                                <h3 className="relative px-8 text-lg font-light leading-6 text-gray-900 group-hover:text-gray-600">
+                            <div className="-mt-10">
+                                <h3 className="relative px-8 max-sm:px-2 text-lg font-light leading-6 text-gray-900 group-hover:text-gray-600">
                                     <a href={post.href}>
                                         <span className="absolute inset-0" />
                                         {post.title}
                                     </a>
                                 </h3>
-                                <p className="mt-5 line-clamp-3 px-8 mb-8 text-xs text-gray-600">{post.description}</p>
+                                <p className="mt-5 line-clamp-3 px-8 max-sm:px-2 mb-8 text-xs text-gray-600">{post.description}</p>
                                 <a
                                     href={post.href}
-                                    className="text-xs font-bold px-8 text-black hover:text-[#fecc00]"
+                                    className="text-xs font-bold px-8 max-sm:px-2 text-black hover:text-[#fecc00]"
                                 >
                                     Read More &#8594;
                                 </a>

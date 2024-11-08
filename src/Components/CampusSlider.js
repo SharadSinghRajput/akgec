@@ -38,23 +38,23 @@ export default function CampusSlider() {
     return (
         <div className="bg-white py-8 max-sm:py-4">
             <div className="">
-                <div className='max-w-6xl mx-auto relative z-10 max-lg:px-5 px-24 flex flex-col gap-6 mb-10'>
-                    <h2 className="max-w-4xl max-lg:text-4xl max-md:text-3xl mx-auto text-5xl font-novaLight text-center tracking-tight text-gray-900">
+                <div className='max-w-6xl mx-auto relative z-10 max-lg:px-2 px-24 flex flex-col gap-6 mb-10 max-sm:mb-2'>
+                    <h2 className="max-w-4xl mx-auto text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl font-novaLight text-center tracking-tight text-gray-900">
                         Uniting <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Students & Faculty</span> from Every Corner of India and Around the World!
                     </h2>
-                    <p className="mt-2 mb-6 mx-auto text-2xl max-lg:text-xl max-sm:text-lg text-gray-600 text-center font-novaLight">
+                    <p className="mt-2 mb-6 mx-auto text-2xl max-lg:text-xl max-sm:text-base text-gray-600 text-center font-novaLight">
                         Bringing together students from around the world, our platform creates a dynamic network with unparalleled learning opportunities and experiences.
                     </p>
                 </div>
-                <div className='max-w-7xl mx-auto max-lg:w-full max-lg:px-0 relative z-10 px-24   '>
+                <div className='max-w-7xl mx-auto max-lg:w-full max-lg:px-0 relative z-10 px-24'>
                     <div className="lg:col-span-4 lg:row-end-1 relative">
                         <img
                             alt={product.imageAlt}
                             src={product.imageSrc}
                             className="object-cover object-center h-full max-sm:h-72 rounded-lg max-lg:rounded-none w-full"
                         />
-                        <div className="absolute  max-lg:rounded-none inset-0 pb-8 pl-10 flex flex-col items-start justify-end bg-black bg-opacity-50 rounded-lg p-4">
-                            <h2 className="text-white  text-lg md:text-2xl lg:text-3xl font-light mb-2 w-1/6 max-md:w-full">
+                        <div className="absolute max-lg:rounded-none inset-0 pb-8 pl-10 flex flex-col items-start justify-end bg-black bg-opacity-50 rounded-lg p-4">
+                            <h2 className="text-white text-lg md:text-2xl lg:text-3xl font-light mb-2 w-1/6 max-md:w-full">
                                 World-Class Campus
                             </h2>
                             <p className="text-white w-1/2 max-md:w-full  text-sm md:text-base lg:text-base font-light mb-2 ">
@@ -65,7 +65,7 @@ export default function CampusSlider() {
                 </div>
                 <div className='bg-BG3 h-[800px] bg-cover w-full flex flex-col justify-end pb-28 max-sm:pb-10 lg:-mt-36 max-lg:-mt-10 max-lg:h-auto max-lg:px-10 max-sm:px-0 max-md:px-5 max-lg:pt-16 px-40 pt-10 '>
                     <div className='max-w-[1600px] mx-auto max-lg:p-10 max-sm:p-3'>
-                        <div className='grid grid-cols-3 '>
+                        <div className='grid grid-cols-3'>
                             <div className='col-span-2 max-lg:col-span-3'>
                                 <h3 className='text-6xl max-md:text-4xl leading-[50px] font-novaLight text-white mb-5'>
                                     Innovate and Inspire<br />
