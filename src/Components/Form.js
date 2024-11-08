@@ -89,7 +89,7 @@ export default function Form() {
                 <option key={i}>{String(i + 1).padStart(2, '0')}</option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>MM</option>
               {[
                 'January',
@@ -108,7 +108,7 @@ export default function Form() {
                 <option key={i}>{month}</option>
               ))}
             </select>
-            <select className="w-full px-4 py-3 max-sm:py-2 border border-gray-500 rounded-md text-xs font-novaReg">
+            <select className="w-full px-4 py-3 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>YYYY</option>
               {Array.from({ length: 100 }, (_, i) => 2024 - i)?.map((year) => (
                 <option key={year}>{year}</option>

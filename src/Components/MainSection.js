@@ -29,7 +29,7 @@ const MainSection = () => {
                 <div className="grid grid-cols-2 max-lg:grid-cols-1">
                     <div className="flex justify-center max-w-3xl flex-col pl-20 max-lg:mt-52 max-lg:items-center max-lg:px-5 max-sm:mt-40">
                         <h1 className="max-w-4xl font-novaThin max-sm:text-3xl tracking-tight text-white max-xl:text-5xl text-6xl max-lg:text-center max-md:pt-20 max-[350px]:text-2xl">
-                            One of the Top Private
+                            One of the Top Private <br />
                             <span className="relative whitespace-nowrap ">
                                 <svg
                                     aria-hidden="true"
