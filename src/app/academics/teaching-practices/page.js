@@ -23,8 +23,8 @@ export const Home = () => {
     <>
       <div className="bg-gray-100">
         <Header title={"Teaching Practices"} Button={{ name: "Apply Now", Link: "/" }} gradient={"bg-gradient-to-r from-zinc-900 to-gray-900/40"} />
-        <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-10">
-          <div className="col-span-9 max-md:col-span-12">
+        <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 max-sm:py-2 gap-10 px-2 max-sm:gap-0">
+          <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
             <div className="container mx-auto p-4">
               <div className="px-3 max-sm:px-0">
                 <h2 className="text-2xl max-2xl:text-3xl max-lg:text-2xl font-novaBold mb-2.5">
@@ -52,7 +52,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-3 max-md:col-span-12">
+          <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-12">
           <Calendar currentSemester={currentSemester} setCurrentSemester={setCurrentSemester} />
             <SideBar title={"About Us"} LinkList={SideBarLink} />
           </div>

@@ -26,7 +26,7 @@ export default function AboutPlacement() {
           <div className="col-span-9 max-md:col-span-12 ">
             <PoliciesAndStrategies />
           </div>
-          <div className="col-span-3 max-md:col-span-12">
+          <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-12">
             <SideBar title={"About Us"} LinkList={SideBarLink} />
           </div>
         </section>

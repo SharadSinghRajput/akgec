@@ -71,12 +71,12 @@ const UniversityHandbooks = () => {
 
   return (
     <>
-      <div className="">
-        <h2 className="text-4xl font-novaReg">University Handbooks</h2>
-        <p className="mt-1">
+      <div className="py-10">
+        <h2 className="text-4xl max-lg:text-3xl font-novaReg">University Handbooks</h2>
+        <p className="mt-2 font-novaReg leading-5">
           Explore our university handbooks to get comprehensive information and guidelines for your academic journey.
         </p>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-5 grid max-[420px]:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {handbooksData.map(({ id, title, description, image, link }) => (
             <div key={id} className="rounded-lg shadow-md p-3 min-h-96 flex flex-col justify-around">
               <img

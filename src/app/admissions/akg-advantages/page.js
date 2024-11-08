@@ -49,10 +49,10 @@ const Home = () => {
           <div className='absolute w-full h-full z-0 bg-white/50'></div>
           <div className="relative w-full z-10 max-w-[1400px] mx-auto">
             <section className="grid grid-cols-12 py-20 gap-10">
-              <div className="col-span-9 max-md:col-span-12">
+              <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
                 <AkgAdvantages />
               </div>
-              <div className="col-span-3 max-md:col-span-12">
+              <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-12">
                 <SideBar title={"About Us"} LinkList={SideBarLink} />
               </div>
             </section>
