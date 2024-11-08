@@ -21,7 +21,7 @@ export default function AboutPlacement() {
       <div className="bg-[#f2f6ff]">
         <Header title={"Entrepreneurship TBi"} bg="/image/tech-invent-&-events/tech-invent-banner.jpg" Button={{ name: "Apply Now", Link: "/" }} gradient={"bg-gradient-to-r from-zinc-900 to-gray-900/40"} />
         <section className="w-full mx-auto py-20 gap-8 max-sm:px-2">
-          <div className="col-span-9 max-md:col-span-12 ">
+          <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
             <InnovationAndEntrepreneurshipDevelopmentCell />
           </div>
         </section>

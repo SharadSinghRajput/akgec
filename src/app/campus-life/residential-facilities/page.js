@@ -34,7 +34,7 @@ export const Home = () => {
                             <Breadcrumb data={BreadCrumb} />
                         </div>
                         <section className="w-full max-w-[1400px] mx-auto px-4 max-sm:px-2">
-                            <div className="col-span-9 max-md:col-span-12 ">
+                            <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
                                 <ResidentialFacilities />
                             </div>
                             {/* <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-12">
