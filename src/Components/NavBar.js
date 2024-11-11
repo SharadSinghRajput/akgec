@@ -85,16 +85,16 @@ export default function NavBar() {
           <div
             className={`text-white max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
           >
-            <div className={`flex justify-start items-center gap-1 pl-5 ${isScrolled100 ? "flex-row max-md:flex-col" : "flex-col"}`}>
-              <div className="flex justify-center">
+            <div className={`flex justify-start items-center gap-1 pl-5 ${isScrolled100 ? "flex-row max-xl:flex-col" : "flex-col"}`}>
+              <div className="flex justify-center xl:w-full">
                 <img
                   onClick={() => router.push("/")}
                   src="/image/akg-logo.jpg"
                   alt="AKG University Logo"
-                  className={`${isScrolled100 ? "h-20" : "h-24 max-xl:h-auto max-lg:w-48 shadow-effect-right"}  w-full object-contain cursor-pointer`}
+                  className={`w-48 xl:w-60 xl:h-14 xl:object-contain xl:bg-white   cursor-pointer`}
                 />
               </div>
-              <div className={`grid gap-0 ${isScrolled100 ? "grid-cols-2 max-md:grid-cols-4" : "grid-cols-4"}`}>
+              <div className={`grid gap-0 ${isScrolled100 ? "grid-cols-2 max-xl:grid-cols-4 " : "grid-cols-4"}`}>
                 <img
                   src="/image/NaaC.webp"
                   alt="NAAC Logo"
