@@ -6,7 +6,7 @@ export default function VisionAndMission() {
                     <div className="flex w-full h-full flex-col justify-center items-center">
                         <h2 className="text-4xl w-full text-start font-novaReg mb-4 max-w-[350px]">Our Vision</h2>
                         <p className="font-novaReg text-gray-600 max-w-[350px] ">
-                        To introduce undergraduate and postgraduate courses for all engineering branches and award of Ph.D degree to be one of the best engineering colleges in the country and to be a deemed university.
+                        To introduce undergraduate and postgraduate courses for all engineering branches and award of Ph.D degree to be one of the best University in the country and to be a deemed university.
                         </p>
                     </div>
                 </div>

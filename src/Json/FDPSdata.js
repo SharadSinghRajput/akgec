@@ -7,7 +7,7 @@ export const fdpsData = [
           <strong>TAG THESE COLLEGES</strong>
           <ul className="mt-3 text-sm list-decimal list-inside">
             <li>NATIONAL INSTITUTE OF TECHNICAL TEACHERS TRAINING & RESEARCH, CHANDIGARH</li>
-            <li>AJAY KUMAR GARG ENGINEERING COLLEGE</li>
+            <li>AJAY KUMAR GARG UNIVERSITY</li>
             <li>JNTUA COLLEGE OF ENGINEERING (AUTONOMOUS) PULIVENDULA</li>
             <li>OP JINDAL UNIVERSITY</li>
             <li>ADGIPS</li>
@@ -62,7 +62,7 @@ export const fdpsData = [
       desc: (
         <>
           <ul className="font-novaReg space-y-2">
-            <li>Department of Information Technology, Ajay Kumar Garg University, Ghaziabad has organized a five day Faculty Development Programme on “UNBLOCK BLOCKCHAIN” in online mode from 1-5 August 2022. The FDP programme received an overwhelming response with 94 participants from various Engineering Colleges/ Universities.</li>
+            <li>Department of Information Technology, Ajay Kumar Garg University, Ghaziabad has organized a five day Faculty Development Programme on “UNBLOCK BLOCKCHAIN” in online mode from 1-5 August 2022. The FDP programme received an overwhelming response with 94 participants from various Universities.</li>
             <li>The FDP inaugurated on 1st August 2022 at 9:00 AM with the welcome speech of Dr. Anu Chaudhary, HoD IT. Followed by the address of Chief Guest Mr. Satish Chauhan Director Oracle India Pvt Ltd. He motivated FDP participants with his informative and encouraging words. Keynote Address had given by Mr. Ajay Singh, CTO, DLT Labs and welcome speech and vote of thanks by Dr. Aditya Pratap Singh, Associate Professor, IT Department.</li>
             <li>Day 1, first session was taken by Dr. Ferdous Ahmed Barbhuiya who is an Associate Professor at the Indian Institute of Information Technology Guwahati, in the department of Computer Science & Engineering. He is also the Associate Dean of Administration at IIT Guwahati provided excellent, interactive and informative session on Blockchain Technology and its Architecture.
               Next session was taken by Dr. Raju Halder an Associate Professor in the Dept. of Comp. Sc. and Engg. at IIT Patna. He had taken the session on Cryptocurrency and its mining process.</li>
@@ -277,7 +277,7 @@ export const fdpsData = [
           <li>Ajay Kumar Garg University, on behalf of AICTE, organized two day workshop for the Resource Persons of three week Students Induction Program (SIP) to be conducted for B.Tech first year students. The SIP, as per guidelines of AICTE, is primarily to make the students comfortable in the new environment and expose them with various facets of life, with emphasis on holistic approach towards life in the light of Universal Human Values. The objective of this workshop, conducted during 28-29 September, 2019, was to contemplate and strengthen the process and contents of SIP and its effectiveness by virtue of the methods and procedures adopted so far.</li>
           <li>The event commenced with the inaugural ceremony graced by eminent functionaries from AICTE & National Coordinator Committee – Induction Program (NCC-IP) – Prof. Rajive Kumar, Member Secretary AICTE; Dr. Manoj Tiwari, Regional Officer NRO – AICTE; Prof. Rajneesh Arora, Chairman NCC-IP and Dr. Shishir Gaur, Convener NCC-IP.</li>
           <li>Dr. R.K. Agarwal, Director AKGU (Host College) welcomed all the dignitaries and 88 delegates from AKTU affiliated colleges and seven different states as participants of the workshop. In his address, Director emphasized value based education for developing holistic perspective and a way of living for the well-being of all. He offered that college resources will be put at the complete disposal of AICTE and NCC-IP for implementation of Universal Human Values and Student Induction programs at all India level.</li>
-          <li>Prof. Rajneesh Arora projected that the focus of the two day workshop was to review the SIP program and to discuss ideas and proposals for refinement of the program. He expressed his happiness that AICTE has got this scheme implemented on a pan India level in all engineering colleges.</li>
+          <li>Prof. Rajneesh Arora projected that the focus of the two day workshop was to review the SIP program and to discuss ideas and proposals for refinement of the program. He expressed his happiness that AICTE has got this scheme implemented on a pan India level in all university.</li>
           <li>Prof Rajive Kumar, in his address, expressed that AICTE is committed to a full time support in any form and all financial help for effective implementation of program.</li>
           <li>Dr. M P Poonia, Vice-Chairman, AICTE also graced the event little late in the afternoon and held a meeting with Director, AKGU and all the functionaries of AICTE & NCC-IP.</li>
         </ul>

@@ -98,7 +98,7 @@ export const sectionData = [
     },
     {
       title: "Leading Academic Institution",
-      description: `Ajay Kumar Garg University (AKGU) is ranked among the leading and best educational institutions in North India. AKGU consistently ranks among the top engineering colleges in Uttar Pradesh for its academic excellence, innovative teaching methods, research achievements, and placement records, as recognized by national and international accreditation bodies and media outlets.`,
+      description: `Ajay Kumar Garg University (AKGU) is ranked among the leading and best educational institutions in North India. AKGU consistently ranks among the top university in Uttar Pradesh for its academic excellence, innovative teaching methods, research achievements, and placement records, as recognized by national and international accreditation bodies and media outlets.`,
       additionalText: `Ajay Kumar Garg University (AKGU) has established itself as a leader in campus placements. The repeated visits by top-tier multinational companies underscore AKGU's reputation as a premier institution with exceptional placement opportunities in India.`,
       buttonText: "READ MORE",
     },

@@ -8,7 +8,7 @@ const conferenceData = [
     {
         title: "National Conference - Emerging Trends in Electronics & Communication-2019 (ETEC-2019)",
         summary: [
-            "Department of Electronics & Communication Engineering organized two Days National Conference on Emerging Trends in Electronics & Communication-2019 (ETEC-2019) from 5-6 February, 2019. Emerging technologies of Electronics & Communication does not only satisfy the growing demands of end users but also poses several challenges to the researchers. Thus, the main objective of this conference (ETEC-2019) is to provide a platform for researchers, industry experts and faculty of various engineering colleges to share their ideas/ research work over the latest developments in this field",
+            "Department of Electronics & Communication Engineering organized two Days National Conference on Emerging Trends in Electronics & Communication-2019 (ETEC-2019) from 5-6 February, 2019. Emerging technologies of Electronics & Communication does not only satisfy the growing demands of end users but also poses several challenges to the researchers. Thus, the main objective of this conference (ETEC-2019) is to provide a platform for researchers, industry experts and faculty of various university to share their ideas/ research work over the latest developments in this field",
 
             "Undoubtedly, Electronics & Communication has crept into every sphere of human life e.g., pocket FM radio to televisions, computers, internet, mobile phones and even the high-end satellites, thus increasing its scope manifolds for mankind. The resource personnel for this conference were accomplished experts from organizations like ITU, BEL, ISRO, BSNL, IITs, NSIT, DTU etc.",
 

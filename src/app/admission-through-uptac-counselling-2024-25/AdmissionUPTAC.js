@@ -9,7 +9,7 @@ const AdmissionUPTAC = () => {
                 <Link className='text-sm' href="https://pages.razorpay.com/pl_OsdZ2yKIRhN826/view" target='_blank'>Online Fee Payment (Kotak)</Link>
             </div>
 
-            <h1 className="font-novaSemi text-center mb-4">AJAY KUMAR GARG ENGINEERING COLLEGE, GHAZIABAD</h1>
+            <h1 className="font-novaSemi text-center mb-4">AJAY KUMAR GARG UNIVERSITY, GHAZIABAD</h1>
             <p className="text-center font-novaSemi">
                 Physical Reporting Instructions for the candidates who have been allotted our college through Uttar Pradesh Technical Admission Counseling - 2024 and have Frozen their choices as one of the Courses / Branches in AKGU during UPTAC Counselling - 2024
             </p>
@@ -56,7 +56,7 @@ const AdmissionUPTAC = () => {
                         </tr>
                         <tr>
                             <td className="py-2 px-4 border">College Name</td>
-                            <td className="py-2 px-4 border">AJAY KUMAR GARG ENGINEERING COLLEGE GHAZIABAD</td>
+                            <td className="py-2 px-4 border">AJAY KUMAR GARG UNIVERSITY GHAZIABAD</td>
                         </tr>
                         <tr>
                             <td className="py-2 px-4 border">Director Name</td>

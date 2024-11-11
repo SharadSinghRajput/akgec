@@ -50,14 +50,14 @@ const BtechProgram = () => {
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-3">RANKED</h4>
                   <span className='text-4xl text-blue-600 font-novaBold'><sup>#</sup>41</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Top Private Engineering Colleges of India</p>
+                  <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Top Private University of India</p>
                   {/* <img src="/images/india-today-logo.png" alt="India Today" className="mt-4 w-16" /> */}
                 </div>
 
                 <div className="p-6 border border-gray-400 rounded-lg shadow-sm">
                   <h4 className="font-novaReg text-sm tracking-widest mb-3">RANKED</h4>
                   <span className='text-4xl text-blue-600 font-novaBold'><sup>#</sup>16</span>
-                  <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Top 100 Engineering Colleges Across India</p>
+                  <p className="mt-3 leading-none text-sm font-novaReg max-w-48">Top 100 University Across India</p>
                   {/* <img src="/images/outlook-logo.png" alt="Outlook" className="mt-4 w-16" /> */}
                 </div>
 
