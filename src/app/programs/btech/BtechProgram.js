@@ -100,7 +100,7 @@ const BtechProgram = () => {
                       </svg>
                       </span>
                       <p className="text-base leading-6 text-start font-novaReg">
-                        Engineering provides unmatched versatility, covering a broad spectrum of disciplines in science and technology. As a profession, it focuses on applying scientific principles to design, develop, innovate, maintain, and improve structures, machines, devices, systems, and processes. Begin your journey towards an Engineering degree at the top-ranked engineering college in Uttar Pradesh.
+                        Engineering provides unmatched versatility, covering a broad spectrum of disciplines in science and technology. As a profession, it focuses on applying scientific principles to design, develop, innovate, maintain, and improve structures, machines, devices, systems, and processes. Begin your journey towards an Engineering degree at the top-ranked University in Uttar Pradesh.
                       </p>
                     </li>
                     <li className="flex">

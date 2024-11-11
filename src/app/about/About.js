@@ -93,7 +93,7 @@ export default function About() {
                   </h1>
                   <p className="text-gray-500 text-[14px] font-normal mb-6 text-center mt-5">
                     Ajay Kumar Garg University (AKGU) is a
-                    full-fledged engineering college affiliated with Dr. A.P.J.
+                    full-fledged University affiliated with Dr. A.P.J.
                     Abdul Kalam Technical University (AKTU), Lucknow. It is
                     approved by the All India Council for Technical Education
                     (AICTE) and recognized for its right to offer undergraduate

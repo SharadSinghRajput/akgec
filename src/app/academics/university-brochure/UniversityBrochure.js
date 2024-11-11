@@ -38,14 +38,14 @@ const UniversityBrochure = () => {
     };
 
     return (
-        <div className="bg-[#eaf1ff] p-5 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg">
-            <h2 className="text-4xl font-novaReg mb-4 pl-2 w-full">University Brochure</h2>
+        <div className="bg-[#eaf1ff] p-5 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg mb-3">
+            <h2 className="text-4xl max-lg:text-3xl max-sm:text-2xl max-sm:font-novaSemi font-novaReg mb-4 w-full">University Brochure</h2>
             <ul className="list-none w-full">
                 {brochures.map((brochure, index) => (
                     <li key={index} className="mb-4 border-b border-gray-300">
                         <a
                             onClick={() => toggleBrochure(index)}
-                            className={`flex justify-between items-center w-full px-7 py-6 cursor-pointer transition-colors duration-200`}
+                            className={`flex justify-between items-center w-full px-7 max-sm:px-2 py-6 cursor-pointer transition-colors duration-200`}
                         >
                             <span className={`font-semibold ${openIndices.includes(index) ? 'text-[#00BFE7]' : 'text-black'}`}>
                                 {brochure.title}
@@ -57,7 +57,7 @@ const UniversityBrochure = () => {
                             )}
                         </a>
                         {openIndices.includes(index) && (
-                            <div className="ml-5 pl-5">
+                            <div className="pl-5">
                                 <a
                                     href={brochure.link}
                                     className="text-[#00BFE7] text-sm flex items-center pb-3"

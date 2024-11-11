@@ -12,19 +12,17 @@ const NationalAcademicDepository = () => {
 
     return (
         <>
-            <div className="p-5 bg-white">
-                <h1 className="text-4xl font-novaReg mb-4">National Academic Depository</h1>
+            <div className="p-5 mb-2 rounded-lg max-sm:p-2 bg-white">
+                <h1 className="text-4xl max-lg:text-3xl max-md:text-2xl max-sm:font-novaSemi font-novaReg mb-4">National Academic Depository</h1>
                 <p className="mb-4 text-sm">
                     Embracing digital advancements has become essential in today's world. At AKG University, we are committed to ensuring digital trust and efficiency in degree verification. We have partnered with validateMe.online - a digital vault powered by blockchain technology, to create, issue, and validate documents instantly.
                 </p>
                 <div className="p-6 rounded-lg mb-4 bg-[#f0f9fe]">
-                    <div className="flex justify-between items-center mb-4">
-                        <h2 className="text-lg font-novaSemi">Verify documents associated with AKG University in no time!</h2>
-                        <button className="text-blue-500 flex items-center">
-                            Need Help?
-                            <HelpCircle className="w-4 h-4 ml-1" />
-                        </button>
-                    </div>
+                    <h2 className="text-lg max-sm:text-sm font-novaSemi mb-4">Verify documents associated with AKG University in no time!</h2>
+                    <button className="text-blue-500 max-sm:text-sm flex items-center">
+                        Need Help?
+                        <HelpCircle className="w-4 h-4 ml-1" />
+                    </button>
                     <div
                         className="border-2 border-dashed border-gray-300 rounded-lg p-8 my-5 text-center cursor-pointer"
                         onClick={handleCloudUploadClick}

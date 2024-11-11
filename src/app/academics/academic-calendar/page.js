@@ -27,11 +27,11 @@ const Home = () => {
         <>
         <div className="bg-gray-100">
         <Header title={<>Academic <br /> Calendar 2024-25</>} Button={{ name: "Apply Now", Link: "/" }} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
-            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-10 px-6 max-sm:px-0">
-                <div className="col-span-9 max-lg:col-span-12 max-sm:px-2">
+            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 max-sm:py-5 gap-10 max-sm:gap-0 px-6 max-sm:px-0">
+                <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12 max-sm:px-2">
                   <AcademicCalendar calendarData={calendarData} currentSemester={currentSemester}/>
                 </div>
-                <div className="col-span-3 max-lg:col-span-12 pt-5 px-2">
+                <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-12 px-2">
                     <Calendar currentSemester={currentSemester} setCurrentSemester={setCurrentSemester} />
                     <SideBar title={"About Us"} LinkList={SideBarLink} />
                 </div>

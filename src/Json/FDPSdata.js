@@ -322,7 +322,7 @@ export const fdpsData = [
         <>
         <ul className="font-novaReg space-y-2">
           <li>Department of Computer Science and Engineering conducted five day Faculty Development Program (FDP) on <strong>Current Research Trends in Artificial Neural Networks</strong> during 8 – 12 July, 2019. The FDP, sponsored by Dr. APJ Abdul Kalam Technical University, Lucknow under TEQIP-III scheme, was conducted as an initiative to enrich the knowledge of faculty members through interaction with eminent resource persons from Jaypee Institute of Information Technology, Noida; IIT Jammu and M.M.M. University of Technology, Gorakhpur.</li>
-          <li>Total 50 participants from Manglayam Institute of Engineering & Technology, Greater Noida; Bhagwati Institute of Technology and Science, Ghaziabad; ITS Engineering College, Greater Noida; JSS Academy of Technical Education, Noida; ABES Engineering College, Ghaziabad; IMS Engineering College, Ghaziabad; Raj Kumar Goel Institute of Technology, Ghaziabad and Ajay Kumar Garg University, Ghaziabad attended the FDP and got benefited.</li>
+          <li>Total 50 participants from Manglayam Institute of Engineering & Technology, Greater Noida; Bhagwati Institute of Technology and Science, Ghaziabad; ITS University, Greater Noida; JSS Academy of Technical Education, Noida; ABES University, Ghaziabad; IMS University, Ghaziabad; Raj Kumar Goel Institute of Technology, Ghaziabad and Ajay Kumar Garg University, Ghaziabad attended the FDP and got benefited.</li>
         </ul>
         </>
       ),

@@ -1911,7 +1911,7 @@ export const eceResearchPapers = [
         id: '9',
         authorName: 'Dr. P.K. Chopra',
         paperTitle: 'Quantum effect in Nanoscale SOI FINFET Device Structure: A Simulation Study',
-        conferenceName: 'IEEE Electronic Device Society Conference at Govt Engineering College Kalyani',
+        conferenceName: 'IEEE Electronic Device Society Conference at Govt University Kalyani',
         publicationYear: '2016-17',
         isbnIssn: '978-1-5090-4725-3',
         publisherName: 'AKGU',

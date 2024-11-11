@@ -73,41 +73,41 @@ const StudentServices = () => {
         <>
             <BannerSlider slides={slides} />
             <div className='max-w-7xl mx-auto py-8'>
-                <h2 className='text-3xl font-novaSemi'>Exciting Student Journey at AKGU University!</h2>
-                <p className='mt-2 text-sm font-novaReg'>At AKGU, the university experience is about embracing independence and personal growth. Our campus is fully equipped with everything you need—comfortable accommodation, diverse entertainment, dining options, and excellent sports facilities. With students from various Indian states and union territories, as well as an increasing global presence, AKGU offers abundant opportunities for making lifelong friends, engaging in cultural exchange, and creating lasting memories.</p>
-                <div className='py-20'>
-                    <ul className='grid grid-cols-4 gap-4 '>
+                <h2 className='text-3xl max-sm:text-2xl font-novaSemi max-xl:px-4'>Exciting Student Journey at AKGU University!</h2>
+                <p className='mt-2 text-base font-novaReg max-xl:px-4 max-sm:text-sm max-sm:leading-tight'>At AKGU, the university experience is about embracing independence and personal growth. Our campus is fully equipped with everything you need—comfortable accommodation, diverse entertainment, dining options, and excellent sports facilities. With students from various Indian states and union territories, as well as an increasing global presence, AKGU offers abundant opportunities for making lifelong friends, engaging in cultural exchange, and creating lasting memories.</p>
+                <div className='py-20 max-md:py-16 max-sm:py-10 max-sm:px-2'>
+                    <ul className='grid grid-cols-4 gap-4 max-sm:grid-cols-2'>
                         <li className='flex items-center justify-center group'>
                             <Link href="/about/hostel" className='flex flex-col items-center gap-2'>
                                 <span>
-                                    <img src="/image/icons/accommodation.png" alt="accommodation" />
+                                    <img src="/image/icons/accommodation.png" alt="accommodation" className='max-lg:w-20 max-sm:w-16 max-[400px]:w-14'/>
                                 </span>
-                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050]'>Home at AKGU
+                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050] max-sm:text-sm'>HOME AT AKGU
                                 </strong>
                             </Link>
                         </li>
                         <li className='flex items-center justify-center group'>
                             <Link href="" className='flex flex-col items-center gap-2'>
                                 <span>
-                                    <img src="/image/icons/student-welfare.png" alt="student-welfare" />
+                                    <img src="/image/icons/student-welfare.png" alt="student-welfare" className='max-lg:w-20 max-sm:w-16 max-[400px]:w-14'/>
                                 </span>
-                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050]'>STUDENT WELFARE SERVICES</strong>
+                                <strong className='font-novaBold text-gray-500 text-center group-hover:text-[#c75050] max-sm:text-sm'>STUDENT WELFARE SERVICES</strong>
                             </Link>
                         </li>
                         <li className='flex items-center justify-center group'>
                             <Link href="" className='flex flex-col items-center gap-2'>
                                 <span>
-                                    <img src="/image/icons/sports.png" alt="sports" />
+                                    <img src="/image/icons/sports.png" alt="sports" className='max-lg:w-20 max-sm:w-16 max-[400px]:w-14'/>
                                 </span>
-                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050]'>SPORTS</strong>
+                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050] max-sm:text-sm'>SPORTS</strong>
                             </Link>
                         </li>
                         <li className='flex items-center justify-center group'>
                             <Link href="" className='flex flex-col items-center gap-2'>
                                 <span>
-                                    <img src="/image/icons/cultural.png" alt="cultural" />
+                                    <img src="/image/icons/cultural.png" alt="cultural" className='max-lg:w-20 max-sm:w-16 max-[400px]:w-14'/>
                                 </span>
-                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050]'>CULTURAL</strong>
+                                <strong className='font-novaBold text-gray-500 group-hover:text-[#c75050] max-sm:text-sm'>CULTURAL</strong>
                             </Link>
                         </li>
                     </ul>
@@ -115,7 +115,7 @@ const StudentServices = () => {
             </div>
             <div className='bg-[#0B4640]'>
                 <div className='max-w-7xl mx-auto py-14 px-5 max-sm:px-3'>
-                    <h2 className='text-3xl text-white font-novaBold'>More Services</h2>
+                    <h2 className='text-3xl text-white font-novaBold max-sm:text-xl'>More Services</h2>
                     <div className="grid max-[600px]:grid-cols-1 grid-cols-3 max-lg:grid-cols-2 gap-6 mt-10">
                         {studentService.map(({ id, description, image }) => (
                             <div key={id} className="bg-white rounded-md">
@@ -125,7 +125,7 @@ const StudentServices = () => {
                                         alt={image}
                                         width={400}
                                         height={200}
-                                        className="w-full h-80 object-cover"
+                                        className="w-full h-80 object-cover max-sm:h-40"
                                     />
                                 </div>
                                 <div className='p-5'>
@@ -137,38 +137,38 @@ const StudentServices = () => {
                         }
                     </div>
                     <div className='mt-5 text-white'>
-                        <h2 className='text-3xl font-novaBold'>Department of Student Welfare</h2>
+                        <h2 className='text-3xl font-novaBold max-sm:text-xl'>Department of Student Welfare</h2>
                         <div className='mt-7 flex items-start justify-between gap-5'>
-                            <p className='text-xs'>Dial: +91-7290034978 <br /> Email: info@akgec.ac.in <br /> Mailing Address <br /><br />27th Km Milestone, <br />Delhi-Meerut Expressway, <br />P.O. Adhyatmik Nagar, <br />Ghaziabad - 201015
+                            <p className='text-xs max-sm:pt-5'>Dial: +91-7290034978 <br /> Email: info@akgec.ac.in <br /> Mailing Address <br /><br />27th Km Milestone, <br />Delhi-Meerut Expressway, <br />P.O. Adhyatmik Nagar, <br />Ghaziabad - 201015
                             </p>
                             <div>
                                 {/* Facility List */}
-                                <ul className='flex items-center gap-10'>
+                                <ul className='flex items-center gap-10 max-sm:flex-col max-sm:gap-2'>
                                     <li>
                                         <button onClick={() => handleModalOpen('banking')} className='flex flex-col items-center gap-2'>
-                                            <span><img className='h-20 w-20' src="/image/icons/bank.png" alt="bank" /></span>
+                                            <span><img className='h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20' src="/image/icons/bank.png" alt="bank" /></span>
                                             <small className='text-[11px] uppercase'>Banking Facilities</small>
                                         </button>
                                     </li>
                                     <li>
                                         <button onClick={() => handleModalOpen('fitness')} className='flex flex-col items-center gap-2'>
-                                            <span><img className='h-20 w-20' src="/image/icons/gym.png" alt="gym" /></span>
+                                            <span><img className='h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20' src="/image/icons/gym.png" alt="gym" /></span>
                                             <small className='text-[11px] uppercase'>Fitness</small>
                                         </button>
                                     </li>
                                     <li>
                                         <button onClick={() => handleModalOpen('eating')} className='flex flex-col items-center gap-2'>
-                                            <span><img className='h-20 w-20' src="/image/icons/eat.png" alt="eat" /></span>
+                                            <span><img className='h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-16 lg:w-16 xl:h-20 xl:w-20' src="/image/icons/eat.png" alt="eat" /></span>
                                             <small className='text-[11px] uppercase'>Eating Joints</small>
                                         </button>
                                     </li>
                                 </ul>
                                 {activeModal && (
-                                    <div className="fixed inset-0 z-[100] bg-black flex justify-center items-start pt-5">
+                                    <div className="fixed inset-0 z-[100] bg-black flex justify-center items-start max-sm:items-center pt-5 px-2">
                                         <div className="bg-white text-black p-6 rounded shadow-lg max-w-3xl w-full relative">
                                             <button
                                                 onClick={handleModalClose}
-                                                className="absolute top-2 right-7 text-2xl font-bold text-gray-500 hover:text-gray-800"
+                                                className="absolute top-2 right-7 text-2xl max-sm:text-lg max-sm:top-6 font-bold text-gray-500 hover:text-gray-800"
                                             >
                                                 &#x2715; {/* Close icon */}
                                             </button>
@@ -203,7 +203,7 @@ const StudentServices = () => {
 
                                             <button
                                                 onClick={handleModalClose}
-                                                className="mt-4 bg-red-700 float-right text-white px-4 py-2 uppercase font-novaBold rounded-lg"
+                                                className="mt-4 bg-red-700 float-right text-white px-4 py-2 max-sm:py-1.5 max-sm:text-xs uppercase font-novaBold rounded-lg"
                                             >
                                                 Close
                                             </button>

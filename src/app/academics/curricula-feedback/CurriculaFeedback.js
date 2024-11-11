@@ -77,23 +77,23 @@ const CurriculaFeedback = () => {
     const columns = Object.keys(curriculaFeedback[selectedYear][0]);
 
     return (
-        <div className="container mx-auto p-4">
-            <div className="flex space-x-4 mb-6">
+        <div className="container mx-auto mb-5">
+            <div className="flex gap-3 flex-wrap max-sm:text-sm my-6">
                 <button
                     onClick={() => setSelectedYear("2021-22")}
-                    className={`px-4 py-2 ${selectedYear === "2021-22" ? 'bg-primary text-white rounded-br-lg rounded-tl-lg' : 'bg-secondary text-black border border-gray-300 rounded-bl-lg rounded-tr-lg'}`}
+                    className={`px-4 py-2 ${selectedYear === "2021-22" ? 'bg-indigo-950 text-white rounded-md' : 'bg-white text-black border border-gray-300 rounded-md'}`}
                 >
                     2021-22
                 </button>
                 <button
                     onClick={() => setSelectedYear("2020-21")}
-                    className={`px-4 py-2 ${selectedYear === "2020-21" ? 'bg-primary text-white rounded-br-lg rounded-tl-lg' : 'bg-secondary text-black border border-gray-300 rounded-bl-lg rounded-tr-lg'}`}
+                    className={`px-4 py-2 ${selectedYear === "2020-21" ? 'bg-indigo-950 text-white rounded-md' : 'bg-white text-black border border-gray-300 rounded-md'}`}
                 >
                     2020-21
                 </button>
                 <button
                     onClick={() => setSelectedYear("2019-20")}
-                    className={`px-4 py-2 ${selectedYear === "2019-20" ? 'bg-primary text-white rounded-br-lg rounded-tl-lg' : 'bg-secondary text-black border border-gray-300 rounded-bl-lg rounded-tr-lg'}`}
+                    className={`px-4 py-2 ${selectedYear === "2019-20" ? 'bg-indigo-950 text-white rounded-md' : 'bg-white text-black border border-gray-300 rounded-md'}`}
                 >
                     2019-20
                 </button>
@@ -104,7 +104,7 @@ const CurriculaFeedback = () => {
                     <thead>
                         <tr className="bg-gray-100">
                             {columns.map((col) => (
-                                <th key={col} className="border p-2 text-left bg-indigo-950 text-white font-novaReg capitalize">
+                                <th key={col} className="border p-2 max-sm:text-sm text-left bg-indigo-950 text-white font-novaReg capitalize">
                                     {col === 'curriculu' ? 'Curriculum' : col.replace(/([A-Z])/g, ' $1')}
                                 </th>
                             ))}
@@ -114,7 +114,7 @@ const CurriculaFeedback = () => {
                         {curriculaFeedback[selectedYear].map((programme, index) => (
                             <tr key={index} className="hover:bg-gray-50">
                                 {columns.map((col) => (
-                                    <td key={col} className="border font-novaReg p-2">
+                                    <td key={col} className="border max-sm:text-sm font-novaReg p-2">
                                         {col === 'curriculu' ? (
                                             <a
                                                 href={programme['curriculu']}

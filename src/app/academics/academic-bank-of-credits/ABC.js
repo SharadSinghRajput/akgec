@@ -13,26 +13,26 @@ const ABC = () => {
   
   return (
     <section>
-      <div className="max-w-[1400px] mx-auto px-6 max-sm:px-2 py-10 grid grid-cols-2 gap-5">
-        <div className='col-span-1 pr-5'>
-          <h1 className="text-4xl font-novaReg mb-4">Academic Bank of Credits (ABC)</h1>
-          <p className="text-gray-700 mb-6">
+      <div className="max-w-[1400px] mx-auto px-6 max-sm:px-2 py-10 grid grid-cols-1 lg:grid-cols-2  gap-5">
+        <div className='pr-5'>
+          <h1 className="text-4xl max-lg:text-3xl max-sm:text-2xl max-sm:font-novaSemi font-novaReg mb-4">Academic Bank of Credits (ABC)</h1>
+          <p className="text-gray-700 max-[400px]:text-sm mb-6">
             The <strong>Academic Bank of Credits (ABC)</strong> is an exciting new initiative by the <strong>Government of India</strong> to help students explore their educational journeys in a flexible way. Here’s what you need to know:
           </p>
 
           <h2 className="text-2xl font-novaReg mb-2">What is ABC?</h2>
-          <ul className="list-disc pl-5 text-gray-700 mb-4">
+          <ul className="list-disc pl-5 space-y-2 max-[400px]:text-sm text-gray-700 mb-4">
             <li>The ABC is a digital platform designed to support your learning experience by allowing you to collect, transfer, and redeem academic credits as you study.</li>
             <li>Think of it as a bank where you can store your academic achievements!</li>
           </ul>
 
           <h2 className="text-2xl font-novaReg mb-2">Why is ABC Important?</h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 max-[400px]:text-sm mb-4">
             It gives you the freedom to choose your subjects and courses from different colleges and universities. You can mix and match different subjects to create your own unique educational path, helping you build a strong foundation for your future goals.
           </p>
 
           <h2 className="text-2xl font-novaReg mb-2">How Does ABC Work?</h2>
-          <ul className="list-disc pl-5 text-gray-700 mb-4">
+          <ul className="list-disc pl-5 space-y-2 max-[400px]:text-sm text-gray-700 mb-4">
             <li><strong>Registration:</strong> To get started, you need to create an account using your <strong>DigiLocker</strong>. This will give you a unique ABC ID.</li>
             <li><strong>Interactive Dashboard:</strong> Once registered, you’ll have access to a user-friendly dashboard where you can easily track your credits and see how many you’ve accumulated.</li>
             <li><strong>Credit Transfer:</strong> If you decide to switch institutions or programs, ABC makes it easy to transfer your credits, so you don’t lose any of your hard work.</li>
@@ -40,17 +40,17 @@ const ABC = () => {
           </ul>
 
           <h2 className="text-2xl font-novaReg mb-2">Benefits of ABC:</h2>
-          <ul className="list-disc pl-5 text-gray-700 mb-4">
+          <ul className="list-disc pl-5 space-y-2 max-[400px]:text-sm text-gray-700 mb-4">
             <li><strong>Flexibility:</strong> You can customize your learning journey according to your interests and career goals.</li>
             <li><strong>Seamless Mobility:</strong> Easily move between different higher education institutions without losing your credits.</li>
             <li><strong>Diverse Learning:</strong> Explore subjects across various fields and gain knowledge from multiple disciplines.</li>
           </ul>
 
-          <p className="text-gray-700">
+          <p className="text-gray-700 max-[400px]:text-sm">
             With the <strong>Academic Bank of Credits</strong>, you have the power to shape your educational experience and pave the way for your future success!
           </p>
         </div>
-        <div className='col-span-1'>
+        <div className=''>
           <Image src="/image/ABC-ID.png" alt="Academic Bank of Credits" width={1400} height={800} />
           <div className='mt-5'>
             <ul className='list-disc pl-10 space-y-2 font-novaReg text-blue-700'>
@@ -67,7 +67,7 @@ const ABC = () => {
           </div>
           <div className='mt-8'>
             <h2 className='text-2xl font-novaReg'>Informative Videos about ABC</h2>
-            <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="mt-3 grid grid-cols-2 max-[450px]:grid-cols-1 gap-6">
               {videos.map(video => (
                 <div key={video.id} className="bg-white shadow-md rounded-lg overflow-hidden">
                   <iframe

@@ -84,7 +84,7 @@ export const sectionData = [
     {
       title: "Top University",
       subtitle: "for Students",
-      description: `Ajay Kumar Garg University (AKGU) is a full-fledged engineering college affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow. It is approved by the All India Council for Technical Education (AICTE) and recognized for its right to offer undergraduate and postgraduate degrees in engineering and technology.`,
+      description: `Ajay Kumar Garg University (AKGU) is a full-fledged University affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow. It is approved by the All India Council for Technical Education (AICTE) and recognized for its right to offer undergraduate and postgraduate degrees in engineering and technology.`,
       buttonText: "READ MORE",
     },
     {

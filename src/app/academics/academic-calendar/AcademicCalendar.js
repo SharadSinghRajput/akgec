@@ -1,9 +1,8 @@
 
 const AcademicCalendar = ({calendarData, currentSemester}) => {
-
     return (
         <div className="container mx-auto">
-            <h1 className="text-[40px] max-2xl:text-3xl leading-none font-novaReg mb-2.5 ">
+            <h1 className="text-[40px] max-2xl:text-3xl max-md:text-2xl leading-none font-novaReg mb-2.5 ">
                 {currentSemester === 'even' ? 'Even Semester' : 'Odd Semester'}
             </h1>
             <div className="mb-6 mt-4 rounded-lg">

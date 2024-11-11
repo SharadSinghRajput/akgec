@@ -11,7 +11,7 @@ const events = [
   {
     date: '22 Aug 2023',
     title: "Celebrating Diwali: Unity in Diversity at AKGEC",
-    description: 'Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad, celebrated Diwali on November 4, 2023...',
+    description: 'Ajay Kumar Garg University (AKGEC), Ghaziabad, celebrated Diwali on November 4, 2023...',
     image: '/image/event/Diwali2022_3.jpg ',
   },
   {
@@ -23,7 +23,7 @@ const events = [
   {
     date: '03 Dec 2022',
     title: 'AKGEC celebrated the nation’s 75th Independence day',
-    description: '76th Independence day on 15 Aug 2022 was celebrated at Ajay Kumar Garg Engineering College...',
+    description: '76th Independence day on 15 Aug 2022 was celebrated at Ajay Kumar Garg University...',
     image: '/image/event/Independence2023_4.jpg',
   },
   {
@@ -53,7 +53,7 @@ const events = [
   {
     date: '15 March 2024',
     title: '"30Hacks” Hackathon organised by Hitachi x GlobalLogic',
-    description: 'Team VidyutKavach from Ajay Kumar Garg Engineering College was recently...',
+    description: 'Team VidyutKavach from Ajay Kumar Garg University was recently...',
     image: '/image/event/hackathon-organised.jpg',
   },
 ]

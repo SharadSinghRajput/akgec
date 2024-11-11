@@ -91,16 +91,16 @@ const OnlineStepSection = ({ title, steps, isOpen, toggle }) => (
     <div className="border">
         <h2 className={`${isOpen ? 'bg-secondary' : ''}`}>
             <button
-                className="flex py-4 px-5 font-novaReg w-full"
+                className="flex py-4 px-5 text-base font-novaReg w-full max-sm:text-sm"
                 onClick={toggle}
             >
                 {title}
                 {isOpen ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-auto">
                         <path d="m18 15-6-6-6 6" />
                     </svg>
                 ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-auto">
                         <path d="m6 9 6 6 6-6" />
                     </svg>
                 )}
@@ -111,9 +111,9 @@ const OnlineStepSection = ({ title, steps, isOpen, toggle }) => (
                 <div className='block overflow-x-auto'>
                     {steps.map((step, index) => (
                         <div key={index} className="mb-4">
-                            <p className='font-novaReg mb-4'>{step.main}</p>
-                            <h5 className="font-novaReg text-xl mb-2">{step.title}</h5>
-                            <p className="mb-6 font-novaReg">{step.content}</p>
+                            <p className='text-base font-novaReg mb-4 max-sm:text-sm'>{step.main}</p>
+                            <h5 className="font-novaReg text-xl mb-2 max-sm:text-base">{step.title}</h5>
+                            <p className="text-base mb-6 font-novaReg max-sm:text-sm">{step.content}</p>
                         </div>
                     ))}
                 </div>
@@ -126,16 +126,16 @@ const OfflineStepSection = ({ title, steps, isOpen, toggle }) => (
     <div className="border">
         <h2 className={`${isOpen ? 'bg-secondary' : ''}`}>
             <button
-                className="flex py-4 px-5 font-novaReg w-full"
+                className="flex text-base py-4 px-5 font-novaReg w-full max-sm:text-sm"
                 onClick={toggle}
             >
                 {title}
                 {isOpen ? (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-auto">
                         <path d="m18 15-6-6-6 6" />
                     </svg>
                 ) : (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-auto">
                         <path d="m6 9 6 6 6-6" />
                     </svg>
                 )}
@@ -146,10 +146,10 @@ const OfflineStepSection = ({ title, steps, isOpen, toggle }) => (
                 <div className='block overflow-x-auto'>
                     <ul className="mb-4 pl-5 list-disc">
                         {steps.slice(1).map((step, index) => (
-                            <li key={index} className="mb-2 font-novaReg">{step.content}</li>
+                            <li key={index} className="text-base mb-2 font-novaReg max-sm:text-sm">{step.content}</li>
                         ))}
                     </ul>
-                    <p className="font-novaBold mb-4">{steps[0].main}</p>
+                    <p className="text-base font-novaBold mb-4 max-sm:text-sm">{steps[0].main}</p>
                 </div>
             </div>
         )}
@@ -169,56 +169,58 @@ export const HowToApply = () => {
     };
 
     return (
-        <div className="px-3">
-            <h1 className="text-2xl md:text-4xl font-novaReg mb-2.5 w-full">AKG University Admissions 2024</h1>
-            <h3 className="text-xl md:text-[32px] font-novaReg mb-8 w-full">How to Apply for AKG University Admissions 2024</h3>
-            <hr className="w-full my-4" />
+        <>
+            <div className="">
+                <h3 className="text-4xl font-novaReg mb-3 w-full max-lg:text-3xl max-sm:text-xl max-sm:font-novaSemi">AKG University Admissions 2024</h3>
+                <h3 className="text-2xl font-novaReg mb-5 w-full max-lg:text-xl max-md:mb-3 max-sm:text-lg max-sm:mb-3">How to Apply for AKG University Admissions 2024</h3>
+                <hr className="w-full my-4" />
 
-            {/* Online Mode Section */}
-            <div className="w-full">
-                <h4 className="mb-2 text-xl md:text-2xl font-novaReg">Online Mode - AKG Registration</h4>
-                <OnlineStepSection
-                    title="Step 1 - Register at AKGET"
-                    steps={firstSteps}
-                    isOpen={openIndexOnline === 0}
-                    toggle={() => toggleOnlineContent(0)}
-                />
-                <OnlineStepSection
-                    title="Step 2 - Download E-Prospectus"
-                    steps={secondSteps}
-                    isOpen={openIndexOnline === 1}
-                    toggle={() => toggleOnlineContent(1)}
-                />
-                <OnlineStepSection
-                    title="Step 3 - Complete Application Process"
-                    steps={thirdSteps}
-                    isOpen={openIndexOnline === 2}
-                    toggle={() => toggleOnlineContent(2)}
-                />
+                {/* Online Mode Section */}
+                <div className="w-full">
+                    <h4 className="mb-2 text-xl md:text-2xl font-novaReg max-sm:text-lg">Online Mode - AKG Registration</h4>
+                    <OnlineStepSection
+                        title="Step 1 - Register at AKGET"
+                        steps={firstSteps}
+                        isOpen={openIndexOnline === 0}
+                        toggle={() => toggleOnlineContent(0)}
+                    />
+                    <OnlineStepSection
+                        title="Step 2 - Download E-Prospectus"
+                        steps={secondSteps}
+                        isOpen={openIndexOnline === 1}
+                        toggle={() => toggleOnlineContent(1)}
+                    />
+                    <OnlineStepSection
+                        title="Step 3 - Complete Application Process"
+                        steps={thirdSteps}
+                        isOpen={openIndexOnline === 2}
+                        toggle={() => toggleOnlineContent(2)}
+                    />
+                </div>
+                <br />
+                <br />
+                <div className="w-full">
+                    <h4 className="mb-2 text-xl md:text-2xl font-novaReg max-sm:text-lg">Offline Mode - AKG Registration</h4>
+                    <OfflineStepSection
+                        title="Option 1 - Download Admission Form"
+                        steps={offlineFirstSteps}
+                        isOpen={openIndexOffline === 0}
+                        toggle={() => toggleOfflineContent(0)}
+                    />
+                    <OfflineStepSection
+                        title="Option 2 - Submit Admission Form"
+                        steps={offlineSecondSteps}
+                        isOpen={openIndexOffline === 1}
+                        toggle={() => toggleOfflineContent(1)}
+                    />
+                    <OfflineStepSection
+                        title="Option 3 - Email/ SMS"
+                        steps={offlineThirdSteps}
+                        isOpen={openIndexOffline === 2}
+                        toggle={() => toggleOfflineContent(2)}
+                    />
+                </div>
             </div>
-            <br />
-            <br />
-            <div className="w-full">
-                <h4 className="mb-2 text-xl md:text-2xl font-novaReg">Offline Mode - AKG Registration</h4>
-                <OfflineStepSection
-                    title="Option 1 - Download Admission Form"
-                    steps={offlineFirstSteps}
-                    isOpen={openIndexOffline === 0}
-                    toggle={() => toggleOfflineContent(0)}
-                />
-                <OfflineStepSection
-                    title="Option 2 - Submit Admission Form"
-                    steps={offlineSecondSteps}
-                    isOpen={openIndexOffline === 1}
-                    toggle={() => toggleOfflineContent(1)}
-                />
-                <OfflineStepSection
-                    title="Option 3 - Email/ SMS"
-                    steps={offlineThirdSteps}
-                    isOpen={openIndexOffline === 2}
-                    toggle={() => toggleOfflineContent(2)}
-                />
-            </div>
-        </div>
+        </>
     );
 };

@@ -3,7 +3,7 @@ const people = [
         name: 'NAAC',
         fullName: 'National Assessment and Accreditation Council (NAAC)',
         imageUrl: '/image/NAAC_LOGO.png',
-        bio: 'The only engineering college in Uttar Pradesh (AKTU) accredited by NAAC with the highest grading of A++.',
+        bio: 'The only University in Uttar Pradesh (AKTU) accredited by NAAC with the highest grading of A++.',
     },
     {
         name: 'AICTE',

@@ -27,23 +27,23 @@ const ListOfHolidays = ({holidays, activeTab}) => {
 
     return (
         <div className="container mx-auto">
-            <h1 className="text-[42px] font-novaReg mb-2.5 leading-none">
+            <h1 className="text-[42px] max-lg:text-3xl max-sm:text-2xl max-sm:font-novaSemi font-novaReg mb-2.5 leading-none">
                 List of {activeTab === "gazetted" ? "Gazetted" : "Restricted"} Holidays
             </h1>
             <div className="mb-6">
                 <table className="min-w-full my-4 bg-white rounded-lg">
                     <thead className="bg-indigo-950 text-white h-[44px] rounded-t-lg font-novaBold uppercase text-xs lg:text-sm">
                         <tr className="border-b">
-                            <th className="px-4 py-2 text-left border-r border-white border-opacity-10 rounded-tl-lg">
+                            <th className="px-4 max-[350px]:px-2 py-2 text-left border-r border-white border-opacity-10 rounded-tl-lg">
                                 S.No.
                             </th>
-                            <th className="px-4 py-2 border-r border-white border-opacity-10 text-left">
+                            <th className="px-4 max-[350px]:px-2 py-2 border-r border-white border-opacity-10 text-left">
                                 Festival
                             </th>
-                            <th className="px-4 py-2 text-left">
+                            <th className="px-4 max-[350px]:px-2 py-2 text-left">
                                 Date
                             </th>
-                            <th className="px-4 py-2 text-left rounded-tr-lg">
+                            <th className="px-4 max-[350px]:px-2 py-2 text-left rounded-tr-lg">
                                 Day
                             </th>
                         </tr>
@@ -54,16 +54,16 @@ const ListOfHolidays = ({holidays, activeTab}) => {
                                 key={entry.SNo}
                                 className={`bg-indigo-950 text-white`}
                             >
-                                <td className="py-4 px-4 border-b border-white border-opacity-20">
+                                <td className="py-4 px-4 max-[350px]:px-2 border-b border-white border-opacity-20">
                                     {entry.SNo}
                                 </td>
-                                <td className="py-4 px-4 border-b border-l border-white border-opacity-20">
+                                <td className="py-4 px-4 max-[350px]:px-2 border-b border-l border-white border-opacity-20">
                                     {entry.Festival}
                                 </td>
-                                <td className="py-4 px-4 border-b border-l border-white border-opacity-20">
+                                <td className="py-4 px-4 max-[350px]:px-2 border-b border-l border-white border-opacity-20">
                                     {entry.Date}
                                 </td>
-                                <td className="py-4 text-center px-4 border-b border-l border-white border-opacity-20">
+                                <td className="py-4 text-center px-4 max-[350px]:px-2 border-b border-l border-white border-opacity-20">
                                     {entry.Day}
                                 </td>
                             </tr>

@@ -70,22 +70,22 @@ const grades = [
 const SystemOfEvaluation = () => {
     return (
         <>
-            <div className="px-3 pb-12">
-                <h2 className="text-4xl leading-none font-novaReg mb-2.5">Evaluation System <br /> at AKG University</h2>
-                <p className="mb-5 mt-2.5 font-novaReg text-lg">The examination system at AKG University has been crafted to incorporate the best practices for evaluation and certification, ensuring global recognition. Its fundamental principle is rooted in being “scientific, objective, and transparent,” minimizing any potential bias from individual evaluators, specific subjects, or particular groups of students.</p>
-                <p className="mb-5 mt-2.5 font-novaReg text-lg">The examination system is categorized as follows:</p>
-                <p className="mb-5 mt-2.5 font-novaReg text-lg">1. Internal Assessment:
+            <div className="pb-12">
+                <h2 className="text-4xl max-md:text-3xl leading-none font-novaReg mb-2.5">Evaluation System <br /> at AKG University</h2>
+                <p className="mb-5 mt-2.5 font-novaReg text-lg max-sm:text-base">The examination system at AKG University has been crafted to incorporate the best practices for evaluation and certification, ensuring global recognition. Its fundamental principle is rooted in being “scientific, objective, and transparent,” minimizing any potential bias from individual evaluators, specific subjects, or particular groups of students.</p>
+                <p className="mb-5 mt-2.5 font-novaReg text-lg max-sm:text-base">The examination system is categorized as follows:</p>
+                <p className="mb-5 mt-2.5 font-novaReg text-lg max-sm:text-base">1. Internal Assessment:
                     This includes the first hourly test, second hourly test, surprise tests, quizzes, tutorials, and assignments.</p>
-                <p className="mb-5 mt-2.5 font-novaReg text-lg">2. External Assessment:
+                <p className="mb-5 mt-2.5 font-novaReg text-lg max-sm:text-base">2. External Assessment:
                     A final examination is conducted at the end of the semester to assess a student’s overall performance.</p>
                 <div>
                     <table className="min-w-full my-4 bg-white rounded-lg">
                         <thead className="bg-[#363c83] text-white h-[44px] rounded-t-lg">
                             <tr className="border-b">
-                                <th className="px-4 py-2 text-left border-r border-white border-opacity-10 text-base rounded-tl-lg">Criteria</th>
-                                <th className="px-4 py-2 border-r border-white border-opacity-10 text-left text-base">Internal Marks</th>
-                                <th className="px-4 py-2 border-r border-white border-opacity-10 text-left text-base">External Marks</th>
-                                <th className="px-4 py-2 border-r border-white border-opacity-10 text-left text-base rounded-tr-lg">Total Marks</th>
+                                <th className="px-4 max-[350px]:px-2 py-2 text-left border-r border-white border-opacity-10 text-base max-md:text-sm max-[400px]:text-xs rounded-tl-lg">Criteria</th>
+                                <th className="px-4 max-[350px]:px-2 py-2 border-r border-white border-opacity-10 text-left text-base max-md:text-sm max-[400px]:text-xs">Internal Marks</th>
+                                <th className="px-4 max-[350px]:px-2 py-2 border-r border-white border-opacity-10 text-left text-base max-md:text-sm max-[400px]:text-xs">External Marks</th>
+                                <th className="px-4 max-[350px]:px-2 py-2 border-r border-white border-opacity-10 text-left text-base max-md:text-sm max-[400px]:text-xs rounded-tr-lg">Total Marks</th>
                             </tr>
                         </thead>
                         <tbody className="border-t-2 rounded-lg">
@@ -94,16 +94,16 @@ const SystemOfEvaluation = () => {
                                     key={index}
                                     className={`bg-indigo-950 text-white ${index === marks.length - 1 ? 'rounded-bl-lg rounded-br-lg' : ''}`}
                                 >
-                                    <td className={`py-4 px-4 text-sm border-b border-white border-opacity-20 ${index === marks.length - 1 ? 'rounded-bl-lg' : ''}`}>
+                                    <td className={`py-4 max-[350px]:px-2 px-4 text-sm max-sm:text-xs border-b border-white border-opacity-20 ${index === marks.length - 1 ? 'rounded-bl-lg' : ''}`}>
                                         {entry.name}
                                     </td>
-                                    <td className="py-4 px-4 text-sm border-b border-l border-white border-opacity-20">
+                                    <td className="py-4 max-[350px]:px-2 px-4 text-sm max-sm:text-xs border-b border-l border-white border-opacity-20">
                                         {entry.internal}
                                     </td>
-                                    <td className="py-4 px-4 text-sm border-b border-l border-white border-opacity-20">
+                                    <td className="py-4 max-[350px]:px-2 px-4 text-sm max-sm:text-xs border-b border-l border-white border-opacity-20">
                                         {entry.external}
                                     </td>
-                                    <td className={`py-4 px-4 text-sm border-b border-l border-white border-opacity-20 ${index === marks.length - 1 ? 'rounded-br-lg' : ''}`}>
+                                    <td className={`py-4 max-[350px]:px-2 px-4 text-sm max-sm:text-xs border-b border-l border-white border-opacity-20 ${index === marks.length - 1 ? 'rounded-br-lg' : ''}`}>
                                         {entry.total}
                                     </td>
                                 </tr>
@@ -112,7 +112,7 @@ const SystemOfEvaluation = () => {
                     </table>
                 </div>
                 <h3 className="font-novaReg text-2xl">Salient Features</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">The examination system at AKG University incorporates the following key features:</p>
+                <p className="text-lg max-sm:text-base font-novaReg mt-2.5 mb-5">The examination system at AKG University incorporates the following key features:</p>
                 <ul className="list-disc mb-6 pl-4">
                     <li className="mb-2 text-sm">Automated Paper Setting:
                         Final exam papers are generated using automated software from a dedicated question bank created specifically for this purpose.</li>
@@ -136,6 +136,7 @@ const SystemOfEvaluation = () => {
                         Grades will be assigned based on Normal Distribution, ensuring an absence of subjectivity.</li>
                     <li className="mb-2 text-sm">Grade Criteria:<br />
                         Students scoring below 35% of the highest marks in the class will receive an ‘F’ grade.<br />
+
                         Students achieving over 50% of the highest marks will not receive an ‘F’ grade.<br />
                         Students with scores between 35% and 50% of the highest marks may receive an ‘F’ grade based on the subject's mean and variance.</li>
                     <li className="mb-2 text-sm">Grade Reporting:
@@ -145,7 +146,7 @@ const SystemOfEvaluation = () => {
                 </ul>
                 <h3 className="text-2xl font-novaReg w-full">Prevention of Unfair Means</h3>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">Credit and Grade Point System</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">The examination system at AKG University emphasizes integrity and fairness. Any student found using unfair means—such as communicating with others, seeking outside assistance, bringing written materials, or using a mobile phone in the examination hall—will face penalties ranging from cancellation of one exam paper to disqualification from all examinations for up to two years. To address these issues, a special committee for the Prevention of Unfair Means (CPUM) has been established.</p>
+                <p className="text-lg max-sm:text-base font-novaReg mt-2.5 mb-5">The examination system at AKG University emphasizes integrity and fairness. Any student found using unfair means—such as communicating with others, seeking outside assistance, bringing written materials, or using a mobile phone in the examination hall—will face penalties ranging from cancellation of one exam paper to disqualification from all examinations for up to two years. To address these issues, a special committee for the Prevention of Unfair Means (CPUM) has been established.</p>
                 <ul className="pl-4 mb-6 list-decimal text-sm font-novaReg">
                     <li>At the end of each semester, students will receive a letter grade for each registered course based on their overall performance, which includes mid-semester exams, both announced and surprise tests, laboratory evaluations, tutorial assignments, seminars, home assignments, and the end-semester examination.</li>
                     <li>Letter grades will be assigned as follows, with each grade representing the level of performance in the course and corresponding grade points used for calculating the Semester Grade Point Average (SGPA), Aggregate Grade Point Average (AGPA), and Cumulative Grade Point Average (CGPA).
@@ -154,9 +155,9 @@ const SystemOfEvaluation = () => {
                             <table className="min-w-full my-4 bg-white rounded-lg">
                                 <thead className="bg-[#363c83] text-white h-[44px] rounded-t-lg">
                                     <tr className="border-b">
-                                        <th className="px-4 py-2 text-left border-r border-white border-opacity-10 text-base rounded-tl-lg">Grade</th>
-                                        <th className="px-4 py-2 border-r border-white border-opacity-10 text-left text-base">Description</th>
-                                        <th className="px-4 py-2 border-r border-white border-opacity-10 text-left text-base rounded-tr-lg">Points</th>
+                                        <th className="px-4 py-2 text-left border-r border-white border-opacity-10 text-base max-sm:text-sm rounded-tl-lg">Grade</th>
+                                        <th className="px-4 py-2 border-r border-white border-opacity-10 text-left text-base max-sm:text-sm">Description</th>
+                                        <th className="px-4 py-2 border-r border-white border-opacity-10 text-left text-base max-sm:text-sm rounded-tr-lg">Points</th>
                                     </tr>
                                 </thead>
                                 <tbody className="border-t-2 rounded-lg">
@@ -187,26 +188,26 @@ const SystemOfEvaluation = () => {
                 </ul>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">
                     Cumulative Grade Point Average (CGPA)</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">The Cumulative Grade Point Average (CGPA) reflects the weighted average of all grades a student has received since starting at the university, including the most recent semester. To calculate it, each course's grade points are multiplied by its corresponding credits. Then, the total of these weighted grade points is divided by the total number of credits attempted. This process gives a comprehensive measure of a student's academic performance over time.</p>
+                <p className="text-lg max-sm:text-base font-novaReg mt-2.5 mb-5">The Cumulative Grade Point Average (CGPA) reflects the weighted average of all grades a student has received since starting at the university, including the most recent semester. To calculate it, each course's grade points are multiplied by its corresponding credits. Then, the total of these weighted grade points is divided by the total number of credits attempted. This process gives a comprehensive measure of a student's academic performance over time.</p>
                 <hr className="my-4" />
                 <h3 className="text-2xl font-novaReg w-full">
                     Promotion to the Next Year and Conditions for Year Back</h3>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Undergraduate Courses</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">A student must meet the following criteria to continue in the program:<br />
+                <p className="text-lg max-sm:text-base font-novaReg mt-2.5 mb-5">A student must meet the following criteria to continue in the program:<br />
                     End of First Year: The student must secure a CGPA of 3.5 or higher, or earn at least 40% of the credits offered during the first year.<br />
                     End of Second Year: The student must achieve a CGPA of 4.50 or higher, or earn at least 40% of the credits offered during both the first and second years.
                     Lateral entry students are considered as second-year students.<br />
                     Students who do not meet the minimum CGPA requirement will lose one academic year.</p>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Post-Graduate Courses</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">For post-graduate students, the following criteria apply:<br />
+                <p className="text-lg max-sm:text-base font-novaReg mt-2.5 mb-5">For post-graduate students, the following criteria apply:<br />
                     End of First Year: The minimum required CGPA is 4.50, or the student must earn at least 40% of the credits offered during the first year.<br />
                     Failure to meet this requirement will result in the loss of one academic year.<br /></p>
                 <h3 className="text-2xl font-novaReg w-full">
                     Requirements for Award of Degree</h3>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Undergraduate Courses</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">To be eligible for the award of an undergraduate degree, a student must have earned a CGPA of 4.50 or higher.</p>
+                <p className="text-lg max-sm:text-base font-novaReg mt-2.5 mb-5">To be eligible for the award of an undergraduate degree, a student must have earned a CGPA of 4.50 or higher.</p>
                 <h3 className="text-2xl font-novaReg w-full text-[#9fa3a7]">For Post-graduate Courses</h3>
-                <p className="text-lg font-novaReg mt-2.5 mb-5">The minimum CGPA required for the award of all post-graduate degrees is 5.0.</p>
+                <p className="text-lg max-sm:text-base font-novaReg mt-2.5 mb-5">The minimum CGPA required for the award of all post-graduate degrees is 5.0.</p>
             </div>
         </>
     );

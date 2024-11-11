@@ -27,7 +27,7 @@ const SpotlightHighlight = () => {
 
                         <div className="bg-teal-500 p-6 shadow-lg w-full h-auto rounded-l-3xl rounded-b-3xl">
                             <h3 className="text-xs uppercase mb-2 font-novaReg text-secondary">Dialogue India 2018 Award</h3>
-                            <p className="text-3xl font-novaBold my-4 text-white">Dialogue India 2018 Award for Best Private Engineering College in North India</p>
+                            <p className="text-3xl font-novaBold my-4 text-white">Dialogue India 2018 Award for Best Private University in North India</p>
                             <button className="bg-primary text-white font-bold py-3 px-5 rounded-lg hover:bg-transparent">KNOW MORE →</button>
                         </div>
                         <div className="shadow-lg w-full h-auto">

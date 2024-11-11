@@ -47,7 +47,7 @@ const conferenceData = [
 
             "Dr. P.C. Pant, Guest of Honor, deliberated on his personal experiences in the field of renewable energy and its importance in Automation and Robotics. Keynote Speaker Dr. Rajeev Agrawal, deliberated on Automation, the theme of the Conference, and further extended his talk to Autonomation – ‘Automation with human intelligence’ wherein machines can be made capable to predict defects. He sighted various case studies on Autonomation and advised the students and faculty to explore it as a new field for research.",
 
-            "5 papers were received from academicians and researchers from institutions including IIM Kolkata; YMCA, Faridabad; NIT Jamshedpur; Rajkiya Engineering College, Mainpuri; Chhatrapati Shivaji University, Navi Mumbai;  Thapar Institute of Engineering and Technology, Patiala and Colleges affiliated to Dr. A.P.J. Abdul",
+            "5 papers were received from academicians and researchers from institutions including IIM Kolkata; YMCA, Faridabad; NIT Jamshedpur; Rajkiya University, Mainpuri; Chhatrapati Shivaji University, Navi Mumbai;  Thapar Institute of Engineering and Technology, Patiala and Colleges affiliated to Dr. A.P.J. Abdul",
 
             "Kalam Technical University, Lucknow. 36 papers were selected for presentation and inclusion in e-proceedings after a blind peer review process.",
 
@@ -167,7 +167,7 @@ const conferenceTable = [
             {
                 "sNo": 9,
                 "name": "Dr. N. P. Gupta",
-                "designation": "Prof., ECE, ABES Engineering College, Ghaziabad",
+                "designation": "Prof., ECE, ABES University, Ghaziabad",
                 "email": "narbada.gupta@abes.ac.in"
             }
         ]
