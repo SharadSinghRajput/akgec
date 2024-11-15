@@ -44,6 +44,7 @@ const FaithCentre = () => {
                   layout="fill"
                   objectFit="cover"
                   className="transition-all duration-300 group-hover:blur-sm"
+                  priority 
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center">
                   <p className="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
@@ -73,6 +74,7 @@ const FaithCentre = () => {
                   alt={photos[selectedId].alt}
                   layout="fill"
                   objectFit="contain"
+                  priority 
                 />
                 <motion.button
                   className="absolute top-4 right-8 rounded-full p-1 text-white bg-black hover:text-gray-300 transition-colors duration-300"

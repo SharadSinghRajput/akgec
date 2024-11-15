@@ -34,7 +34,7 @@ To recognize the invaluable intellectual contribution made by professionals in a
                     <li>Dr. R.K. Agarwal has an exceptionally brilliant academic background with B.Tech from IIT Kanpur, M.S. from CIT, Cranfield, UK and PhD from IISc Bangalore. During his illustrious career of nearly three decades in the Indian Air Force and Defence Research & Development Organization (DRDO), he has held various key appointments including Chief Engineering Officer of an Operational Base, Director (Engg) at Air HQ and Project Director at Centre for Airborne Systems. His vast managerial, administrative, research and academic experience includes teaching assignments at Air Force Technical College and nine years of pioneering R&D work on the prestigious AWACS project in DRDO. He has also been a member of the Aeronautical Research & Development Board (ARDB) panel for approval and review of sponsored research projects at various centres of Excellence established at IITs and CSIR Laboratories.</li>
                     <li>He is the recipient of the coveted Royal Aeronautical Society (UK) award for academic excellence at CIT and a citation with cash award by DRDO for his contribution to the design and development of Airborne Early Warning aircraft, culminating in its maiden flight.</li>
                     <li>After taking voluntary retirement in 2004, Dr. Agarwal decided to contribute in the field of technical education and has been the Director of Ajay Kumar Garg University (AKGU), Ghaziabad since then. He has been persistently working towards setting new benchmarks in academic excellence as well as industry–academia interface to make the students globally competitive and employable. During his tenure, the college has not only been consistently maintaining exceptional results and placements but has also made significant progress in research and industry relevant consultancy projects. A number of initiatives and collaborative ventures with eminent multi-national companies have lead to establishment of many multi-disciplinary, high technology industry relevant facilities. These include India’s first Kuka Industrial Robotics Training Centre, NI-LabVIEW Academy, Bosch Rexroth Centre of Competence in Automation Technologies, Janatics Industrial Pneumatic Knowledge Centre and Mitsubishi Electric India. The college has also achieved the unique distinction of receiving the Academic Excellence Award for Best University in UPTU for two successive years under his able guidance.</li>
-                    <li>He has also contributed in bringing about a culture of corporate social responsibility in academic institutions. The social activities initiated by him include running a free primary school in the college, adopting a municipal corporation school in a nearby village, providing tuition fee subsidy to children of class IV employees, donating computers to spread computer literacy and generously contributing for relief work after natural calamities. Involvement in these activities makes the students conscious of their civic and social responsibilities. He places special emphasis on all round development with focus on inculcating self-discipline, good moral values, ethics, work culture and a positive attitude to make the students not just competent professionals but also good citizens and responsible members of the society.</li>
+                    <li>He has also contributed in bringing about a culture of corporate social responsibility in academic institutions. The social activities initiated by him include running a free primary school in the college, adopting a municipal corporation school in a nearby village, providing tuition fee subsidy to children of className IV employees, donating computers to spread computer literacy and generously contributing for relief work after natural calamities. Involvement in these activities makes the students conscious of their civic and social responsibilities. He places special emphasis on all round development with focus on inculcating self-discipline, good moral values, ethics, work culture and a positive attitude to make the students not just competent professionals but also good citizens and responsible members of the society.</li>
                     <li>His wide ranging experience, vision and dynamism have infused inspiration and provided a road map for academic institutions to achieve the zenith of excellence in all fields of activities.</li>
                     <li>Dr. R.K. Agarwal’s extraordinary inspiring-vision catapulted AKGU to numero uno position for all time to come. He took the momentous decision in 2010 to launch this biannual publication to nurture creativity and encourage innovations. The journal received manuscripts even from overseas authors, earning accolades from research community worldwide.</li>
                 </ul>
@@ -42,7 +42,7 @@ To recognize the invaluable intellectual contribution made by professionals in a
         </div>
     </>,
     "Editorial Advisory Board": <>
-        <div class="p-4 bg-gray-100 rounded-lg">
+        <div className="p-4 bg-gray-100 rounded-lg">
             <iframe
                 src="/pdf/international-journal/Editorial-Advisory-Board.pdf"
                 className="w-full h-[600px] border-2 border-gray-700 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
@@ -71,7 +71,7 @@ To recognize the invaluable intellectual contribution made by professionals in a
     "Call for Manuscripts": <>
         <ul className="font-novaReg space-y-3 list-inside">
             <li><strong>Invitation for Manuscripts concerning engineering subjects for publication in the AKG International Journal of Technology</strong></li>
-            <li>The “AKG International Journal of Technology” i.e. AKGIJT is a peer-reviewed journal published by Ajay Kumar Garg University (AKGU). The AKGU is among the top rung technical institutions situated in the Nationals Capital Region of India in Ghaziabad. The AKGU is committed to provide world class education and research in the cutting-edge areas and has developed industry scale innovation centres in the frontline technologies. The Institute’s modern infrastructure attracts the industry to supplement training and research. The AKGIJT lives up to the vision of AKGU and publishes peer review articles in the broad areas of Engineering & Technology involving all major disciplines for the last 13 years. The Journal has so far successfully published 14 biannual volumes and archived all the issues online with free accessibility in pdf format.</li>
+            <li>The “AKG International Journal of Technology” i.e. AKGIJT is a peer-reviewed journal published by Ajay Kumar Garg University (AKGU). The AKGU is among the top rung technical institutions situated in the Nationals Capital Region of India in Ghaziabad. The AKGU is committed to provide world className education and research in the cutting-edge areas and has developed industry scale innovation centres in the frontline technologies. The Institute’s modern infrastructure attracts the industry to supplement training and research. The AKGIJT lives up to the vision of AKGU and publishes peer review articles in the broad areas of Engineering & Technology involving all major disciplines for the last 13 years. The Journal has so far successfully published 14 biannual volumes and archived all the issues online with free accessibility in pdf format.</li>
             <li>The AKGIJT invites scientific articles, original research, state of the art reviews and case studies from the industry, research and academic professionals for consideration of publication in this open access (without APC) journal. The submitted articles will be peer-reviewed and further consideration will follow the review report/recommendations. Submissions will be peer-reviewed by a panel of experts.</li>
             <li><strong>Contributions in the broader contemporary research involving broad engineering disciplines and multi-disciplinary areas are welcomed.</strong></li>
             <li>Brief submission guidelines are given below, but the prospective authors are encouraged to visit the Journal's website .The journal regards high value to the publication ethics and plagiarism. Detailed information for the authors including manuscript preparations, publication ethics and journal overview can be viewed on the Journal’s website.</li>
@@ -97,45 +97,45 @@ To recognize the invaluable intellectual contribution made by professionals in a
             <div>
                 <h2>STEP-2</h2>
                 <span>Online Payment : Through RTGS/NEFT</span>
-                <table class="min-w-full border border-gray-300">
+                <table className="min-w-full border border-gray-300">
                     <thead>
                         <tr>
-                            <th class="px-4 py-2 border-b border-gray-300 bg-gray-100 text-left">Field</th>
-                            <th class="px-4 py-2 border-b border-gray-300 bg-gray-100 text-left">Details</th>
+                            <th className="px-4 py-2 border-b border-gray-300 bg-gray-100 text-left">Field</th>
+                            <th className="px-4 py-2 border-b border-gray-300 bg-gray-100 text-left">Details</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="px-4 py-2 border-b border-gray-300">Name of the Beneficiary</td>
-                            <td class="px-4 py-2 border-b border-gray-300">Ajay Kumar Garg University</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Name of the Beneficiary</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Ajay Kumar Garg University</td>
                         </tr>
                         <tr>
-                            <td class="px-4 py-2 border-b border-gray-300">Name of the Bank</td>
-                            <td class="px-4 py-2 border-b border-gray-300">Kotak Mahindra Bank Ltd</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Name of the Bank</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Kotak Mahindra Bank Ltd</td>
                         </tr>
                         <tr>
-                            <td class="px-4 py-2 border-b border-gray-300">Branch Address</td>
-                            <td class="px-4 py-2 border-b border-gray-300">30 & 31 Navyug Market, P.B.No. 75 Ghaziabad-201001 (U.P.) - INDIA</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Branch Address</td>
+                            <td className="px-4 py-2 border-b border-gray-300">30 & 31 Navyug Market, P.B.No. 75 Ghaziabad-201001 (U.P.) - INDIA</td>
                         </tr>
                         <tr>
-                            <td class="px-4 py-2 border-b border-gray-300">Branch Code</td>
-                            <td class="px-4 py-2 border-b border-gray-300">5295</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Branch Code</td>
+                            <td className="px-4 py-2 border-b border-gray-300">5295</td>
                         </tr>
                         <tr>
-                            <td class="px-4 py-2 border-b border-gray-300">Bank Account No.</td>
-                            <td class="px-4 py-2 border-b border-gray-300">508010250461</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Bank Account No.</td>
+                            <td className="px-4 py-2 border-b border-gray-300">508010250461</td>
                         </tr>
                         <tr>
-                            <td class="px-4 py-2 border-b border-gray-300">Type of Bank Account</td>
-                            <td class="px-4 py-2 border-b border-gray-300">Saving Bank Account</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Type of Bank Account</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Saving Bank Account</td>
                         </tr>
                         <tr>
-                            <td class="px-4 py-2 border-b border-gray-300">RTGS/NEFT/IFSC Code</td>
-                            <td class="px-4 py-2 border-b border-gray-300">KKBK0005295</td>
+                            <td className="px-4 py-2 border-b border-gray-300">RTGS/NEFT/IFSC Code</td>
+                            <td className="px-4 py-2 border-b border-gray-300">KKBK0005295</td>
                         </tr>
                         <tr>
-                            <td class="px-4 py-2 border-b border-gray-300">Contact No.</td>
-                            <td class="px-4 py-2 border-b border-gray-300">0120-2790969</td>
+                            <td className="px-4 py-2 border-b border-gray-300">Contact No.</td>
+                            <td className="px-4 py-2 border-b border-gray-300">0120-2790969</td>
                         </tr>
                     </tbody>
                 </table>

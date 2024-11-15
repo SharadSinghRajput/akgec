@@ -16,8 +16,8 @@ const PlacementSlider = ({placement, delay}) => {
                 modules={[ Autoplay]}
                 className="mySwiper"
               >
-                {placement?.map((item) => (
-                  <SwiperSlide key={item.id}>
+                {placement?.map((item, index) => (
+                  <SwiperSlide key={index}>
                     <article className="max-xl:w-full mx-auto cursor-grab">
                       <img
                       className=""

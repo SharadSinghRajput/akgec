@@ -15,8 +15,8 @@ const StickyFooter = ({ ShowState }) => {
           <div className="flex items-center justify-end gap-5 px-2 py-3 max-md:flex-col fixed">
             <div className="max-md:hidden">
               <div className="flex flex-col items-end text-white max-md:p-2 justify-center overflow-hidden">
-                {socialMediaLinks?.map((link) => (
-                  <div className="relative group">
+                {socialMediaLinks?.map((link, index) => (
+                  <div key={index} className="relative group">
                     <div className="bg-blue-700 flex items-center">
                       <span className="w-0 transition-all group-hover:w-20 overflow-hidden hover:visible group-hover:px-4 group-hover:py-1.5 rounded-lg text-xs duration-300">
                         {link.name}

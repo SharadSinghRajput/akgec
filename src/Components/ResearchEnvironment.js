@@ -9,7 +9,7 @@ const posts = [
         tag2: 'College',
     },
     {
-        id: 1,
+        id: 2,
         title: 'Advance Your Career with an M.Tech Degree at AKG College',
         href: '#',
         description: 'For engineering graduates looking to specialize and advance their careers, a Master of Technology (M.Tech) degree is an excellent choice. AKG College offers a comprehensive M.Tech program that provides in-depth knowledge and research opportunities in various engineering fields.',
@@ -18,7 +18,7 @@ const posts = [
         tag2: 'College',
     },
     {
-        id: 1,
+        id: 3,
         title: 'Master the World of IT with an MCA Degree from AKG College',
         href: '#',
         description: 'In the rapidly evolving field of Information Technology (IT), a Master of Computer Applications (MCA) degree can provide the expertise needed to succeed. AKG College offers an MCA program designed to develop skilled IT professionals who are ready to tackle the challenges of the digital age.',

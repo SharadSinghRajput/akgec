@@ -123,8 +123,6 @@ const PaymentProcedure = () => {
                     <div className="mt-5 text-green-700 font-novaBold text-xl italic max-sm:text-base max-sm:mt-2">
                         <p>Please do not pay through Phone Pay / Google Pay & UPI!</p>
                     </div>
-
-                    {/* Image Placeholder for Bank Payment */}
                     <div className="flex justify-center items-center flex-col mt-3 max-sm:mt-2">
                         <img src="/image/admission/bank6.png" alt="Payment Options" className="w-60 h-auto my-4 max-sm:my-2" />
                         <p className="text-base max-sm:text-sm">(Students Login &rarr; Fee payment &rarr; AXIS &rarr; Pay)</p>
@@ -147,7 +145,6 @@ const PaymentProcedure = () => {
 
             {openIndices.includes(2) && (
                 <>
-                    {/* Image Placeholder for Bank Payment */}
                     <img src="path/to/your/image.png" alt="Payment Options" className="w-full h-auto mt-4 mb-4" />
                     <img src="path/to/your/image.png" alt="Payment Options" className="w-full h-auto mt-4 mb-4" />
                     <img src="path/to/your/image.png" alt="Payment Options" className="w-full h-auto mt-4 mb-4" />
