@@ -40,7 +40,7 @@ export default function CampusSlider() {
             <div className="">
                 <div className='max-w-6xl mx-auto relative z-10 max-lg:px-2 px-24 flex flex-col gap-6 mb-10 max-sm:mb-2'>
                     <h2 className="max-w-4xl mx-auto text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl font-novaLight text-center tracking-tight text-gray-900">
-                        Uniting <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Students & Faculty</span> from Every Corner of India and Around the World!
+                        Uniting <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent animate-gradient'>Students & Faculty</span> from Every Corner of India and Around the World!
                     </h2>
                     <p className="mt-2 mb-6 mx-auto text-2xl max-lg:text-xl max-sm:text-base text-gray-600 text-center font-novaLight">
                         Bringing together students from around the world, our platform creates a dynamic network with unparalleled learning opportunities and experiences.

@@ -30,7 +30,7 @@ export default function NewsEvents() {
 
                 <div className="bg-[#ebebeb] h-[70%] w-full absolute top-0 left-0 -z-10"></div>
                 <h2 className="text-5xl max-lg:text-4xl max-md:text-3xl font-novaLight text-center text-gray-700">
-                    Spotlight of <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Success</span>!
+                    Spotlight of <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent animate-gradient'>Success</span>!
                 </h2>
                 <p className="mt-5 text-2xl max-lg:xl max-md:text-lg font-novaLight text-center max-w-screen-lg max-sm:px-2 mx-auto text-gray-700">
                     From our students clinching global honors to the university soaring in national and international rankings,

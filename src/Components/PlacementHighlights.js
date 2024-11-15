@@ -26,7 +26,7 @@ export default function PlacementHighlights() {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 max-sm:gap-2 h-auto">
             <div className="flex flex-col justify-center p-5 md:p-10 lg:p-16 bg-BG14 bg-center bg-cover text-white bg-black bg-blend-multiply bg-opacity-50">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-novaLight">
-                    <span className='font-novaSemi bg-gradient-to-r from-teal-300 to-green-400 bg-clip-text text-transparent'>Placements</span> Overview
+                    <span className='font-novaSemi bg-gradient-to-r from-green-500 to-indigo-400 bg-clip-text text-transparent animate-gradient'>Placements</span> Overview
                 </h2>
                 <p className="text-lg md:text-xl lg:text-2xl font-novaLight leading-5 mt-3">Record-Breaking Achievements and Industry-Driven Success</p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-6">

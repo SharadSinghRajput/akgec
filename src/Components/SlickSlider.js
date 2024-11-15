@@ -96,7 +96,7 @@ export default function SlickSlider() {
           <header className="text-center mb-8 max-xl:mb-5">
             <h1 className="text-[42px] font-novaReg max-lg:text-4xl max-md:text-3xl max-sm:px-4 text-gray-700">
               A Glimpse into Our{" "}
-              <span className="font-novaSemi bg-text-gradient bg-clip-text text-transparent">
+              <span className="font-novaSemi bg-text-gradient bg-clip-text text-transparent animate-gradient">
                 Vibrant Journey
               </span>
             </h1>

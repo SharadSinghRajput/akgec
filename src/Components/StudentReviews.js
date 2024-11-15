@@ -10,7 +10,7 @@ export default function StudentReviews() {
                 <div className="flex flex-col justify-center items-center">
                     <Image src={Quote} width={50} height={50} />
                     <h2 className="text-2xl font-extralight text-center max-w-3xl tracking-tight text-gray-900 sm:text-5xl">
-                        The <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent'>Echoes of Success</span> -
+                        The <span className='font-novaSemi bg-text-gradient bg-clip-text text-transparent animate-gradient'>Echoes of Success</span> -
                         Hear More from Our Esteemed Graduates!
                     </h2>
                     <p className="mt-6 text-xl max-md:text-lg text-gray-700 font-light px-3 sm:px-20 text-center">
