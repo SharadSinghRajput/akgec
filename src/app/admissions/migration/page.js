@@ -18,7 +18,7 @@ export const Home = () => {
         <>
         <div className="bg-gray-100">
         <Header Button={{ name: "Registration for Migration ", Link: "/" }} title={"Migration Policy"} gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
-            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 max-sm:py-2 gap-10 px-2 max-sm:gap-0">
+            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 max-sm:py-4 gap-10 px-2 max-sm:gap-0">
                 <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
                     <Migration />
                 </div>

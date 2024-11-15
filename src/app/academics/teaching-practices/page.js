@@ -23,11 +23,11 @@ export const Home = () => {
     <>
       <div className="bg-gray-100">
         <Header title={"Teaching Practices"} Button={{ name: "Apply Now", Link: "/" }} gradient={"bg-gradient-to-r from-zinc-900 to-gray-900/40"} />
-        <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 max-sm:py-2 gap-10 px-2 max-sm:gap-0">
+        <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 max-sm:py-5 gap-10 px-2 max-sm:gap-0">
           <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
-            <div className="container mx-auto p-4">
+            <div className="container mx-auto">
               <div className="px-3 max-sm:px-0">
-                <h2 className="text-2xl max-2xl:text-3xl max-lg:text-2xl font-novaBold mb-2.5">
+                <h2 className="text-2xl max-2xl:text-3xl max-lg:text-2xl font-novaSemi max-sm:leading-none mb-2.5">
                   Optimal Knowledge Acquisition at AKG University
                 </h2>
                 <p className="mb-5 mt-2.5 max-2xl:text-[15px] font-novaReg leading-6 max-2xl:leading-5">
@@ -35,7 +35,7 @@ export const Home = () => {
                 </p>
               </div>
               <div className="px-3 max-sm:px-0">
-                <h2 className="text-2xl max-2xl:text-3xl max-lg:text-2xl font-novaBold mb-2 leading-9">
+                <h2 className="text-2xl max-2xl:text-3xl max-lg:text-2xl font-novaSemi mb-2 leading-9 max-sm:leading-none">
                   Your Learning Adventure Begins: Unveiling AKG University's Transformative Practices
                 </h2>
                 <p className="font-novaReg mb-5 mt-2.5 leading-6">

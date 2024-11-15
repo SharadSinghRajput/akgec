@@ -51,27 +51,28 @@ const placementData = [
 
 const PlacementHighlights = () => {
     return (
-        <section>
-            <h2 className="text-4xl font-novaReg mb-3">Career Success Highlights</h2>
-            <p className='font-novaReg'>Our university takes pride in its exceptional placement records, consistently achieving impressive success rates year after year. With dedicated training and strong industry partnerships, our students are well-prepared to embark on fulfilling career journeys. From leading multinational corporations to fast-growing startups, graduates secure roles in various industries, showcasing their talent and skills. The continuous efforts of our career development team, along with focused career preparation programs, have resulted in placements across top-tier organizations, giving our students a competitive edge in today’s job market.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-5 mb-5">
+        <section className='py-2 px-2'>
+            <h2 className="text-4xl font-novaReg mb-3 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">Career Success Highlights</h2>
+
+            <p className='text-base font-novaReg max-sm:text-sm'>Our university takes pride in its exceptional placement records, consistently achieving impressive success rates year after year. With dedicated training and strong industry partnerships, our students are well-prepared to embark on fulfilling career journeys. From leading multinational corporations to fast-growing startups, graduates secure roles in various industries, showcasing their talent and skills. The continuous efforts of our career development team, along with focused career preparation programs, have resulted in placements across top-tier organizations, giving our students a competitive edge in today’s job market.</p>
+            <div className="grid grid-cols-3 gap-6 py-5 mb-5 max-xl:grid-cols-2 max-lg:grid-cols-3 max-md:grid-cols-2 max-md:gap-3 max-md:py-3 max-sm:grid-cols-1 max-sm:py-3 max-sm:mb-2.5 max-sm:gap-3">
                 {placementData.map((item, index) => (
                     <div
                         key={index}
-                        className="p-6 border bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 min-h-60 flex flex-col justify-between"
+                        className="p-6 border bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 min-h-60 flex flex-col justify-center max-md:p-3 max-sm:p-3"
                     >
                         {item.title ? (
                             <>
                                 <div>
-                                    <h3 className="text-5xl font-semibold text-center text-cyan-700">{item.title}</h3>
-                                    <h3 className="text-2xl font-semibold text-center text-cyan-700 mb-5">{item.comp}</h3>
+                                    <h3 className="text-5xl font-novaSemi text-center text-cyan-700 max-md:text-4xl max-sm:text-3xl">{item.title}</h3>
+                                    <h3 className="text-2xl font-novaSemi text-center text-cyan-700 mb-5 max-md:text-2xl max-md:mb-3 max-sm:text-xl max-sm:mb-3 ">{item.comp}</h3>
                                 </div>
-                                <p className="font-novaReg">{item.description}</p>
+                                <p className="text-base font-novaReg max-sm:text-sm max-sm:text-center">{item.description}</p>
                             </>
                         ) : (
                             <>
-                                <img src={item.img} alt={item.description} className="mx-auto w-32" />
-                                <p className="font-novaReg">{item.description}</p>
+                                <img src={item.img} alt={item.description} className="mx-auto w-32 max-md:mb-3 max-sm:mb-3"/>
+                                <p className="text-base font-novaReg max-sm:text-sm max-sm:text-center">{item.description}</p>
                             </>
                         )}
                     </div>

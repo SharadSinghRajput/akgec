@@ -4,7 +4,7 @@ const TeachingPractices = () => {
             <div className="py-6 bg-cyan-700 bg-opacity-80">
                 <div className="w-full max-w-7xl mx-auto p-10">
                     <div className="flex justify-around max-sm:flex-col relative text-white -mx-3">
-                        <article className="px-3">
+                        <article className="px-3 max-sm:px-0">
                             <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGU's Academic Focus: Pioneering Your Path to Success</h2>
                             <p className="mb-5 text-[15px] font-novaReg">At AKGU University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
                             <ul className="list-disc text-sm font-novaReg space-y-2 mb-4 mt-5">
@@ -25,7 +25,7 @@ const TeachingPractices = () => {
                                 </li>
                             </ul>
                         </article>
-                        <div className="px-3 flex-shrink-0 max-sm:mx-auto">
+                        <div className="px-3 max-sm:px-0 flex-shrink-0 max-sm:mx-auto">
                             <img src="/image/academic-overview/programs-tailored.png" alt="Programs Tailored for Students" className="lg:w-full md:w-36 sm:w-28 max-w-full item-center h-auto opacity-90 object-cover" />
                         </div>
                     </div>
@@ -34,10 +34,10 @@ const TeachingPractices = () => {
             <div className="py-6 bg-[#483285] bg-opacity-85">
                 <div className="w-full max-w-7xl mx-auto p-10">
                     <div className="flex justify-around max-sm:flex-col relative text-white -mx-3">
-                        <div className="px-3 flex-shrink-0 max-sm:mx-auto">
+                        <div className="px-3 max-sm:px-0 flex-shrink-0 max-sm:mx-auto">
                             <img src="/image/academic-overview/project-learning.png" alt="Project-Based Learning" className="lg:w-full md:w-36 sm:w-28 max-w-full item-center h-auto opacity-90 object-cover" />
                         </div>
-                        <article className="px-3">
+                        <article className="px-3 max-sm:px-0">
                             <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Embracing Outcome-Based Education: Your Path to Empowerment</h2>
                             <p className="mb-5 text-[15px] font-novaReg">At AKGU, Outcome-Based Education (OBE) is central to our teaching philosophy. We are committed to providing a structured learning experience that focuses on achieving specific educational outcomes through continuous feedback and improvement.</p>
                             <ul className="list-disc text-sm font-novaReg space-y-2 mb-4 mt-5">
@@ -61,7 +61,7 @@ const TeachingPractices = () => {
             <div className="py-6 bg-green-600 bg-opacity-85">
                 <div className="w-full max-w-7xl mx-auto p-10">
                     <div className="flex justify-around max-sm:flex-col relative text-white -mx-3">
-                        <article className="px-3">
+                        <article className="px-3 max-sm:px-0">
                             <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">Your Gateway to a Cutting-Edge Education</h2>
                             <p className="mb-5 text-[15px] font-novaReg">
                                 At AKGU, we believe that education goes beyond traditional learning. Our curriculum is designed to equip students with the skills and knowledge required to excel in today’s competitive environment. We focus on a comprehensive approach that integrates both theoretical knowledge and practical experience.
@@ -93,7 +93,7 @@ const TeachingPractices = () => {
                                 </li>
                             </ul>
                         </article>
-                        <div className="px-3 flex-shrink-0 max-sm:mx-auto">
+                        <div className="px-3 max-sm:px-0 flex-shrink-0 max-sm:mx-auto">
                             <img src="/image/academic-overview/scientific-tes.png" alt="Tailored Learning for Future" className="lg:w-full md:w-36 sm:w-28 max-w-full item-center h-auto opacity-90 object-cover" />
                         </div>
                     </div>

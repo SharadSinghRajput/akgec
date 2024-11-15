@@ -25,15 +25,12 @@ const ProfessorsOfPractice = () => {
                     <div className="relative mb-8">
                         <input
                             type="text"
-                            placeholder="Search Professors of Practice"
-                            className="w-full py-3 px-4 pr-12 rounded-full bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            placeholder="Search Professors"
+                            className="w-full py-3 px-4 pr-12 rounded-full bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-sm"
                             value={searchText}
                             onChange={(e) => setSearchText(e.target.value)}
                         />
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
-
                     </div>
-
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-[450px]:gap-3">
                         {filteredFacultyData?.map((faculty, index) => (
                             <div key={index} className="bg-white p-6 max-[450px]:p-3 rounded-lg shadow-md">

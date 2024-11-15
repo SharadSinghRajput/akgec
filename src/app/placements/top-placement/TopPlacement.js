@@ -114,11 +114,11 @@ const TopPlacement = () => {
     return (
         <section>
             <div className="mb-8">
-                <h2 className="text-4xl font-novaReg mb-4">AKG University - Student Success in Placements</h2>
-                <p className="text-gray-700 font-novaReg mb-2">
+                <h2 className="text-4xl max-lg:text-3xl max-sm:text-2xl  font-novaReg mb-4">AKG University - Student Success in Placements</h2>
+                <p className="text-gray-700 max-sm:text-sm font-novaReg mb-2">
                     AKG University takes pride in shaping the future of its students by offering top-notch academic programs and world-class placement opportunities. Below is a glimpse of our recent graduates who have secured placements in prestigious companies.
                 </p>
-                <p className="text-gray-700 font-novaReg">
+                <p className="text-gray-700 max-sm:text-sm font-novaReg">
                     Explore the student placement details across various courses and industries, showcasing the diverse talents nurtured at our institution.
                 </p>
             </div>
@@ -158,24 +158,24 @@ const TopPlacement = () => {
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white">
                     <thead>
-                        <tr className="bg-secondary uppercase border-inherit">
-                            <th className="px-4 py-2 text-left rounded-tl-lg">Student Name</th>
-                            <th className="px-4 py-2 text-left">Course</th>
-                            <th className="px-4 py-2 text-left rounded-tr-lg">Company</th>
+                        <tr className="bg-secondary max-md:text-sm max-sm:text-xs uppercase border-inherit">
+                            <th className="px-4 max-sm:px-3 py-2 text-left rounded-tl-lg">Student Name</th>
+                            <th className="px-4 max-sm:px-3 py-2 text-left">Course</th>
+                            <th className="px-4 max-sm:px-3 py-2 text-left rounded-tr-lg">Company</th>
                         </tr>
                     </thead>
                     <tbody>
                         {paginatedData.map((student, index) => {
                             const isLastRow = index === paginatedData.length - 1;
                             return (
-                                <tr key={index} className="bg-indigo-950 text-gray-200 text-sm border-inherit">
-                                    <td className={`px-4 py-2 ${isLastRow ? 'rounded-bl-lg' : 'border-b border-gray-300'}`}>
+                                <tr key={index} className="bg-indigo-950 text-gray-200 text-sm max-sm:text-xs border-inherit">
+                                    <td className={`px-4 max-sm:px-3 py-2 ${isLastRow ? 'rounded-bl-lg' : 'border-b border-gray-300'}`}>
                                         {student.name}
                                     </td>
-                                    <td className={`border-l px-4 py-2 ${isLastRow ? '' : 'border-b border-gray-300'}`}>
+                                    <td className={`border-l px-4 max-sm:px-3 py-2 ${isLastRow ? '' : 'border-b border-gray-300'}`}>
                                         {student.course}
                                     </td>
-                                    <td className={`border-l px-4 py-2 ${isLastRow ? 'rounded-br-lg' : 'border-b border-gray-300'}`}>
+                                    <td className={`border-l px-4 max-sm:px-3 py-2 ${isLastRow ? 'rounded-br-lg' : 'border-b border-gray-300'}`}>
                                         {student.company}
                                     </td>
                                 </tr>
@@ -184,13 +184,13 @@ const TopPlacement = () => {
                     </tbody>
                 </table>
             </div>
-            <div className="mt-4 flex justify-between">
+            <div className="mt-4 flex justify-between max-sm:flex-col max-sm:gap-2">
                 <div className="text-sm mb-2.5 mr-5 pt-3 text-gray-700">
                     Showing {indexOfFirstEntry + 1} to {Math.min(indexOfLastEntry + 1, filteredData.length)} of {filteredData.length} entries
                 </div>
-                <div className="text-sm bg-blue-950 rounded-lg flex items-center">
+                <div className="text-sm w-fit bg-blue-950 rounded-lg flex items-center">
                     <button
-                        className={`text-white px-4 py-2.5 rounded ${currentPage === 1 ? 'bg-blue-950 cursor-not-allowed' : ''}`}
+                        className={`max-[400px]:hidden text-white px-4 py-2.5 rounded ${currentPage === 1 ? 'bg-blue-950 cursor-not-allowed' : ''}`}
                         disabled={currentPage === 1}
                         onClick={() => handlePageChange(currentPage - 1)}
                     >
@@ -206,7 +206,7 @@ const TopPlacement = () => {
                         </button>
                     ))}
                     <button
-                        className={`text-white px-3 py-2 rounded ${currentPage === totalPages ? 'bg-blue-950 cursor-not-allowed' : ''}`}
+                        className={`max-[400px]:hidden text-white px-3 py-2 rounded ${currentPage === totalPages ? 'bg-blue-950 cursor-not-allowed' : ''}`}
                         disabled={currentPage === totalPages}
                         onClick={() => handlePageChange(currentPage + 1)}
                     >

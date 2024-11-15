@@ -4,7 +4,7 @@ const Scholarship = () => {
             <div className="bg-Header w-full h-[500px] bg-black bg-blend-darken bg-opacity-80 bg-cover bg-no-repeat">
                 <div className="max-w-[1400px] mx-auto h-full px-3 items-end flex justify-between">
                     <div className="text-white">
-                        <h2 className="text-[42px] leading-none font-novaReg ">AKG Engineering<br /> College, <br />Scholarship</h2>
+                        <h2 className="text-[42px] leading-none font-novaReg ">AKG <br /> University, <br />Scholarship</h2>
                     </div>
                     <div>
                         <img className="w-96" src="/image/scholarship/worth-crore-bg.png" alt="Scholarship" />

@@ -141,21 +141,21 @@ const EducationLoan = () => {
     const [selectedTab, setSelectedTab] = useState(0);
 
     return (
-        <div className="mx-auto p-5 max-w-[1400px]">
-            <h2 className="text-4xl text-gray-800 font-novaSemi text-center mb-10 max-sm:text-2xl">
+        <div className="mx-auto p-5 max-w-[1400px] max-sm:max-w-lg max-sm:p-0">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-gray-800 font-novaSemi mb-7 max-sm:text-2xl max-md:mb-3">
                 Financial Aid & Study Loans For AKG Students
             </h2>
-            <p className="text-sm text-gray-600 mb-4 max-sm:text-xs">
+            <p className="text-sm text-gray-600 mb-4 max-md:mb-2 max-sm:mb-2">
                 Ajay Kumar Garg University (AKGU) serves as a vital launchpad for students eager to turn their aspirations into achievements. Recognizing the financial barriers many students face in pursuing higher education, numerous banks, NBFCs, EMI service providers, and state governments have stepped in to offer student loans. This financial support aims to empower students to pursue their academic goals and unlock their potential for a successful future.
             </p>
-            <p className="text-sm text-gray-600 mb-10 max-sm:text-xs">
-                Ajay Kumar Garg University (AKGU) is committed to facilitating students in their pursuit of higher education. To aid students during the admission process—whether online or offline—the college has established a dedicated loan assistance cell. This initiative helps students secure financial support through loans from banks partnered with the university, ensuring they have the resources needed to achieve their academic ambitions.
+            <p className="text-sm text-gray-600 mb-5 max-md:mb-3 max-sm:mb-2">
+                Ajay Kumar Garg University (AKGU) is committed to facilitating students in their pursuit of higher education. To aid students during the admission process—whether online or offline—the university has established a dedicated loan assistance cell. This initiative helps students secure financial support through loans from banks partnered with the university, ensuring they have the resources needed to achieve their academic ambitions.
             </p>
             <div className="flex space-x-4 mb-6 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-2">
                 {loanData.map((loan, index) => (
                     <button
                         key={index}
-                        className={`flex-1 py-2 rounded-lg font-novaSemi transition-colors duration-300 max-sm:text-xs ${selectedTab === index ? "bg-yellow-400 text-black" : "bg-gray-200 text-gray-800"
+                        className={`flex-1 py-2 rounded-lg font-novaSemi transition-colors duration-300 ${selectedTab === index ? "bg-yellow-400 text-black" : "bg-gray-200 text-gray-800"
                             }`}
                         onClick={() => setSelectedTab(index)}
                     >
@@ -166,51 +166,49 @@ const EducationLoan = () => {
             <div className="border border-gray-300 rounded-lg shadow-lg p-4 max-sm:p-2">
                 {loanData[selectedTab].subheadings.map((sub, subIndex) => (
                     <div key={subIndex} className="mt-3">
-                        <h4 className="text-md font-novaSemi text-gray-800 max-sm:text-sm">{sub.title}</h4>
-                        <p className="text-sm text-gray-600 max-sm:text-xs">{sub.content}</p>
+                        <h4 className="text-md font-novaSemi text-gray-800 max-sm:text-sm max-sm:mb-1">{sub.title}</h4>
+                        <p className="text-sm text-gray-600">{sub.content}</p>
                     </div>
                 ))}
             </div>
-            <div className="p-4 bg-yellow-400 h-28 mt-5 flex justify-between items-center gap-10 rounded-md max-lg:flex-col max-lg:h-max max-lg:gap-4 max-lg:text-center max-sm:p-2">
+            <div className="p-4 bg-yellow-400 h-28 mt-5 flex justify-between items-center gap-10 rounded-md max-lg:flex-col max-lg:h-max max-lg:gap-4 max-lg:text-center max-sm:p-4">
                 <div className="max-sm:w-full">
-                    <h6 className="text-xl max-lg:text-lg max-sm:text-base font-novaBold">
-                        Download the E-Brochure for Education Loans
-                    </h6>
-                    <p className="text-sm mt-2 max-lg:mt-1 max-sm:text-xs">
+                    <h6 className="text-xl max-lg:text-lg max-md:text-base max-sm:text-sm font-novaBold"> Download the E-Brochure for Education Loans </h6>
+                    <p className="text-sm mt-2 max-lg:mt-1">
                         Unlock Your Potential! Access comprehensive information and valuable insights about our education loan programs.
                     </p>
                 </div>
-                <button className="p-4 bg-white flex justify-center items-center rounded-lg text-sm text-black max-sm:text-xs max-sm:p-3 max-lg:w-full max-lg:justify-center">
+                <button className="px-6 py-2 max-sm:py-2 max-sm:w-fit bg-white flex justify-center items-center rounded-lg text-sm text-black max-lg:justify-center">
                     DOWNLOAD BROCHURE
                 </button>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 my-8 max-sm:my-5 max-sm:gap-2 max-md:gap-3">
                 <div className="flex flex-col gap-5 justify-center items-center w-full">
-                    <div className="flex flex-col gap-5 text-center">
-                        <h5 className="text-2xl font-novaSemi max-lg:text-lg">Our Loan Approval Success</h5>
+                    <div className="flex flex-col gap-5 text-center max-sm:gap-2">
+                        <h5 className="text-2xl font-novaSemi max-lg:text-lg max-sm:text-lg">Our Loan Approval Success</h5>
                         <div className="flex flex-col lg:flex-row lg:gap-16 px-0 lg:px-10">
                             <div className="flex justify-center items-center flex-col text-red-700 mb-5 lg:mb-0">
-                                <span className="text-3xl">9,856</span>
+                                <span className="text-3xl max-sm:text-lg">9,856</span>
                                 <p className="text-[0.70rem] text-black">Education Loan Applications</p>
                             </div>
                             <div className="flex justify-center items-center flex-col text-black mb-5 lg:mb-0">
-                                <span className="text-3xl">15,232</span>
+                                <span className="text-3xl max-sm:text-lg">15,232</span>
                                 <p className="text-[0.70rem] text-black">Total Loans Approved</p>
                             </div>
                             <div className="flex justify-center items-center flex-col text-red-700 mb-5 lg:mb-0">
-                                <span className="text-3xl">80%</span>
+                                <span className="text-3xl max-sm:text-lg">80%</span>
                                 <p className="text-[0.70rem] text-black">Approval Rate</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-5">
-                        <h5 className="text-xl font-novaSemi max-lg:text-center">Collaborating Banks</h5>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-5 w-full">
+                    <div className="flex flex-col gap-5 max-sm:gap-3 max-md:gap-3">
+                        <h5 className="text-xl font-novaSemi max-lg:text-center max-md:text-lg max-sm:text-base">Collaborating Banks</h5>
+                        <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 w-full max-md:grid-cols-3 max-md:gap-3 max-sm:grid-cols-2 max-sm:gap-2">
                             {CollaboratingBanks?.map((bank, index) => (
                                 <div
                                     key={index}
-                                    className="bg-white shadow-md rounded-lg cursor-pointer p-1 flex justify-center items-center relative overflow-hidden group h-32"
+                                    className="bg-white shadow-md rounded-lg cursor-pointer p-5 flex justify-center items-center relative overflow-hidden group h-32 max-sm:h-24"
                                 >
                                     <img
                                         src={bank.src}
@@ -226,13 +224,13 @@ const EducationLoan = () => {
                     </div>
                 </div>
 
-                <div className="w-full h-full flex flex-col gap-6  max-lg:col-span-2">
-                    <h5 className="text-2xl font-novaSemi text-center">Partner Banks and Loan Schemes Associated with Ajay Kumar Garg University</h5>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-5 w-full">
+                <div className="w-full h-full flex flex-col gap-5 max-lg:col-span-2 max-sm:mt-2 max-sm:gap-3 max-md:mt-3">
+                    <h5 className="text-2xl font-novaSemi text-center max-sm:text-base">Partner Banks and Loan Schemes Associated with Ajay Kumar Garg University</h5>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-5 w-full max-sm:gap-2">
                         {partnerBanks?.map((bank, index) => (
                             <div
                                 key={index}
-                                className="bg-white shadow-md rounded-lg cursor-pointer p-1 flex justify-center items-center relative overflow-hidden group h-20"
+                                className="bg-white shadow-md rounded-lg cursor-pointer p-3 flex justify-center items-center relative overflow-hidden group h-20"
                             >
                                 <img
                                     src={bank.src}
@@ -247,12 +245,12 @@ const EducationLoan = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-auto px-6 py-4 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] bg-white">
-                <h1 className="text-2xl font-bold mb-4">FOR ANY QUERY REGARDING BANK</h1>
+            <div className="container mx-auto px-6 max-sm:px-2 py-4 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] rounded-lg bg-white">
+                <h1 className="text-2xl font-bold mb-4 max-sm:text-base max-sm:mb-3 max-sm:text-center">FOR ANY QUERY REGARDING BANK</h1>
                 <div className="overflow-x-auto">
                     <table className="min-w-full border-gray-300">
                         <thead>
-                            <tr className="bg-primary text-white">
+                            <tr className="text-sm bg-primary text-white max-sm:text-xs">
                                 <th className="py-2 px-4 rounded-tl-lg">BANK NAME</th>
                                 <th className="py-2 px-4">NAME/MOBILE</th>
                                 <th className="py-2 px-4">EMAIL ID</th>
@@ -262,10 +260,10 @@ const EducationLoan = () => {
                         <tbody>
                             {bankData.map((bank, index) => (
                                 <tr key={index} className="bg-blend-multiply text-center">
-                                    <td className={`py-2 px-4 border-b border-r ${index === bankData.length - 1 ? 'rounded-bl-lg border-b-0' : ''}`}>
-                                        <img className="bg-center w-28 h-16 rounded-md p-2 bg-white object-contain" src={bank.logo} alt={bank.name} />
+                                    <td className={`py-2 px-4 max-sm:px-1 border-b border-r ${index === bankData.length - 1 ? 'rounded-bl-lg border-b-0' : ''}`}>
+                                        <img className="w-20 object-contain" src={bank.logo} alt={bank.name} />
                                     </td>
-                                    <td className={`py-2 px-4 border-r ${index === bankData.length - 1 ? 'border-b-0' : 'border-b'}`}>
+                                    <td className={`py-2 px-4 border-r max-sm:py-1 max-sm:px-2 max-sm:text-sm ${index === bankData.length - 1 ? 'border-b-0' : 'border-b'}`}>
                                         {bank.contacts.map((contact, contactIndex) => (
                                             <div key={contactIndex}>
                                                 <p>{contact.name}</p>
@@ -273,7 +271,7 @@ const EducationLoan = () => {
                                             </div>
                                         ))}
                                     </td>
-                                    <td className={`py-2 px-4 border-r ${index === bankData.length - 1 ? 'border-b-0' : 'border-b'}`}>
+                                    <td className={`py-2 px-4 border-r max-sm:py-1 max-sm:px-2 ${index === bankData.length - 1 ? 'border-b-0' : 'border-b'}`}>
                                         {bank.contacts.map((contact, contactIndex) => (
                                             <div key={contactIndex}>
                                                 {contact.email.map((email, emailIndex) => (
@@ -282,8 +280,8 @@ const EducationLoan = () => {
                                             </div>
                                         ))}
                                     </td>
-                                    <td className={`py-2 px-4 ${index === bankData.length - 1 ? 'border-b-0 rounded-br-lg' : 'border-b'}`}>
-                                        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                                    <td className={`py-2 px-4 max-sm:py-1 max-sm:px-2 ${index === bankData.length - 1 ? 'border-b-0 rounded-br-lg' : 'border-b'}`}>
+                                        <button className="bg-blue-500 text-xs hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                                             Download
                                         </button>
                                     </td>
@@ -294,8 +292,6 @@ const EducationLoan = () => {
                 </div>
             </div>
         </div>
-
-
     );
 };
 

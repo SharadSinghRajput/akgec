@@ -46,21 +46,21 @@ const accessibilityInfo = [
 const Library = () => {
     return (
         <>
-            <div className="">
-                <h3 className="text-4xl font-novaReg mb-4">Learning Resource Centre</h3>
-                <p className="text-base font-novaReg mb-4">{cont[0].desc}</p>
-                <p className="text-base font-novaReg mb-4">{cont[1].desc}</p>
-                <p className="text-3xl font-novaReg mb-4">{cont[2].desc}</p>
+            <div className="px-3 max-sm:px-3">
+                <h3 className="text-4xl font-novaReg mb-4 max-lg:text-3xl max-md:text-2xl max-sm:text-xl max-sm:font-novaSemi max-sm:mb-2.5">Learning Resource Centre</h3>
+                <p className="text-base font-novaReg mb-4 max-sm:text-sm max-sm:mb-2.5">{cont[0].desc}</p>
+                <p className="text-base font-novaReg mb-4 max-sm:text-sm max-sm:mb-2.5">{cont[1].desc}</p>
+                <p className="text-3xl font-novaReg mb-4 ml-2 max-sm:text-xl max-sm:mb-2.5">{cont[2].desc}</p>
 
-                <ul className="mb-6 ml-5 list-disc font-novaReg">
+                <ul className="text-base mb-6 list-disc list-inside font-novaReg max-sm:text-sm max-sm:mb-3 max-sm:ml-1.5">
                     {libraryTimings.map((timing, index) => (
-                        <li key={index} className="mb-3 pl-4">{timing.day}: {timing.hours}</li>
+                        <li key={index} className="mb-3 pl-4 max-sm:mb-1.5 max-sm:pl-0">{timing.day}: {timing.hours}</li>
                     ))}
                 </ul>
 
-                <ul className="mb-2.5 ml-5 list-disc font-novaReg italic">
+                <ul className="text-base mb-2.5 list-disc list-inside font-novaReg italic max-sm:text-sm max-sm:mb-2">
                     {accessibilityInfo.map((item, index) => (
-                        <li key={index} className="mb-3 pl-4">{item.info}: {item.hours}</li>
+                        <li key={index} className="mb-3 pl-4 max-sm:mb-1.5 max-sm:pl-2">{item.info}: {item.hours}</li>
                     ))}
                 </ul>
             </div>

@@ -28,7 +28,7 @@ const Admissions = () => {
                   </p>
                 </div>
                 <p className="pb-4 max-sm:leading-none font-novaReg">
-                  AKG College offers admissions for a wide range of programs
+                  AKG University offers admissions for a wide range of programs
                   including B.Tech in Computer Science and Engineering (CSE) with
                   various specializations like Artificial Intelligence & Machine
                   Learning, Data Science. Other B.Tech programs include
@@ -37,10 +37,10 @@ const Admissions = () => {
                   Engineering, and Civil Engineering.
                 </p>
                 <p className="pb-4 max-sm:leading-none font-novaReg">
-                  For postgraduate studies, AKG College offers M.Tech in Computer
+                  For postgraduate studies, AKG University offers M.Tech in Computer
                   Science and Engineering, Electrical and Electronics Engineering,
                   Electronics and Communication Engineering, and Mechanical
-                  Engineering. The college also provides a Master of Computer
+                  Engineering. The University also provides a Master of Computer
                   Applications (MCA) program, catering to advanced studies in
                   computer applications and many more...
                 </p>

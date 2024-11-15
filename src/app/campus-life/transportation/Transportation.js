@@ -285,23 +285,19 @@ const TransportationFacilities = () => {
     return (
         <>
             <div className="">
-                <h1 className="text-4xl font-novaReg mb-3">Transportation Facilities</h1>
-                <p className="font-novaReg">
-                    AKGU situated in Uttarpradesh is well-connected with the national capital. It offers transport facilities to its
-                    students and faculty members at very nominal charges. The buses ply on different routes of Delhi, Noida, and other NCR
-                    areas to pick and drop the students.
+                <h1 className="text-2xl max-sm:font-novaSemi font-novaReg mb-3 sm:text-3xl lg:text-4xl">Transportation Facilities</h1>
+                <p className="text-base font-novaReg max-sm:text-sm">
+                    AKGU situated in Uttarpradesh is well-connected with the national capital. It offers transport facilities to its students and faculty members at very nominal charges. The buses ply on different routes of Delhi,Noida, and other NCR areas to pick and drop the students.</p>
+                <p className="text-base my-4 font-novaReg max-sm:text-sm">
+                    The students are spared from the difficulty of commuting to the University by public transport. The transport facility is also a significant contributor to inculcating an element of punctuality among the students.
                 </p>
-                <p className="my-4 font-novaReg">
-                    The students are spared from the difficulty of commuting to the University by public transport. The transport facility is
-                    also a significant contributor to inculcating an element of punctuality among the students.
-                </p>
-                <div className="flex justify-between items-start mt-4 mb-6 w-full">
-                    <div className="flex w-6/12">
-                        <div className="pr-5 border-r">
+                <div className="flex justify-between items-start mt-4 mb-6 w-full max-sm:flex-col max-sm:items-center">
+                    <div className="flex w-6/12 max-sm:w-full max-sm:py-4">
+                        <div className="pr-5 border-r max-sm:w-6/12">
                             <p className="font-novaBold">Concern Person</p>
                             <p>Mr. Jatin Yadav</p>
                         </div>
-                        <div className="pl-5">
+                        <div className="pl-5 max-sm:w-6/12">
                             <p className="font-novaBold">Contact No</p>
                             <p>+91-888888888</p>
                         </div>
@@ -312,14 +308,14 @@ const TransportationFacilities = () => {
                 </div>
             </div>
 
-            <div className="bg-white mt-9 p-5 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px]">
+            <div className="bg-white mt-4 px-3 py-2.5 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px]">
                 <h2 className="text-xl font-novaBold mb-4">Transport Route Plan</h2>
-                <div className="flex space-x-2 mb-6 w-full">
+                <div className="flex gap-2 mb-4 w-full max-sm:grid max-sm:grid-cols-2 max-sm:justify-center max-sm:items-center max-sm:space-x-0 max-sm:gap-1 max-sm:w-full">
                     {Object.keys(transportRoutes).map((routeKey) => (
                         <button
                             key={routeKey}
                             onClick={() => handleRouteChange(routeKey)}
-                            className={`px-4 w-fit py-2 transition-colors duration-200 ${currentRoutes === transportRoutes[routeKey]
+                            className={`px-4 w-fit py-2 transition-colors duration-200 max-sm:w-full max-sm:text-sm ${currentRoutes === transportRoutes[routeKey]
                                 ? "bg-blue-500 text-white"
                                 : "bg-white text-black border border-blue-400"
                                 }`}
@@ -331,13 +327,13 @@ const TransportationFacilities = () => {
 
                 <div className="w-full text-black">
                     {currentRoutes.map((route, index) => (
-                        <div key={index} className="mb-4 border-b border-gray-300">
+                        <div key={index} className="mb-2 max-sm:mb-2">
                             <a
                                 onClick={() => toggleRoute(index)}
                                 className={`flex justify-between items-center w-full cursor-pointer p-4`}
                                 aria-expanded={openIndices.includes(index)}
                             >
-                                <span className={`font-novaSemi ${openIndices.includes(index) ? 'text-[#00BFE7]' : 'text-black'}`}>
+                                <span className={`font-novaSemi max-sm:text-sm ${openIndices.includes(index) ? 'text-[#00BFE7]' : 'text-black'}`}>
                                     {route.route}
                                 </span>
                                 {openIndices.includes(index) ? (
@@ -347,18 +343,18 @@ const TransportationFacilities = () => {
                                 )}
                             </a>
                             {openIndices.includes(index) && (
-                                <div className="ml-5 px-3">
+                                <div className="ml-3 px-2 max-md:ml-2 max-md:px-2 max-sm:ml-1">
                                     <table className="min-w-full border-collapse">
                                         <thead>
-                                            <tr className="bg-secondary">
-                                                <th className="border p-2 w-32">Sr. No.</th> {/* Fixed width for Sr. No. */}
-                                                <th className="border p-2">Bus Stop</th>
-                                                <th className="border p-2">Time</th>
+                                            <tr className="text-base bg-secondary max-sm:text-sm">
+                                                <th className="border p-2 w-32 max-sm:w-10">Sr. No.</th> {/* Fixed width for Sr. No. */}
+                                                <th className="p-2">Bus Stop</th>
+                                                <th className="p-2">Time</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             {route.stops.map((stop) => (
-                                                <tr key={stop.srNo} className="bg-primary text-white">
+                                                <tr key={stop.srNo} className="text-base bg-primary text-white max-sm:text-sm">
                                                     <td className="border p-2">{stop.srNo}</td>
                                                     <td className="border p-2">{stop.stop}</td>
                                                     <td className="border p-2">{stop.time}</td>
@@ -372,24 +368,24 @@ const TransportationFacilities = () => {
                     ))}
                 </div>
             </div>
-            <section id="transportation-fee" className="py-10">
-                <div className="mb-10 bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] p-7">
-                    <h3 className="text-3xl font-novaBold mb-5">Transportation Fee</h3>
-                    <div className="mb-5">
+            <section id="transportation-fee" className="py-5 max-sm:py-5">
+                <div className="mb-4 bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] p-4 max-sm:mb-3 max-sm:p-3">
+                    <h3 className="text-3xl font-novaBold mb-5 max-md:text-2xl max-md:mb-3 max-sm:text-xl max-sm:mb-3">Transportation Fee</h3>
+                    <div className="mb-5 grid grid-cols-3 max-sm:grid-cols-2 max-sm:gap-2 gap-5">
                         <button
-                            className="mr-4 p-3 bg-blue-500 text-white rounded"
+                            className=" text-base p-3 bg-blue-500 text-white rounded max-sm:text-sm"
                             onClick={() => handleButtonClick(year)}
                         >
                             Yearly
                         </button>
                         <button
-                            className="mr-4 p-3 bg-blue-500 text-white rounded"
+                            className=" text-base p-3 bg-blue-500 text-white rounded max-sm:text-sm"
                             onClick={() => handleButtonClick(halfyear)}
                         >
                             Half-Yearly
                         </button>
                         <button
-                            className="p-3 bg-blue-500 text-white rounded"
+                            className="text-base p-3 bg-blue-500 text-white rounded max-sm:text-sm"
                             onClick={() => handleButtonClick(quarter)}
                         >
                             Quarterly
@@ -399,15 +395,15 @@ const TransportationFacilities = () => {
                         <table className="w-full border-collapse">
                             <thead>
                                 <tr className="bg-gray-200 bg-primary text-white">
-                                    <th className="p-4 w-6/12 rounded-tl-lg border-r border-current">City</th>
-                                    <th className="p-4 rounded-tr-lg">Amount</th>
+                                    <th className="text-base p-4 w-6/12 rounded-tl-lg border-r border-current max-sm:text-sm">City</th>
+                                    <th className="text-base p-4 rounded-tr-lg max-sm:text-sm">Amount</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {selectedData.map((item, index) => (
                                     <tr key={index} className="bg-white">
-                                        <td className="border  border-gray-400 p-4">{item.city}</td>
-                                        <td className="border border-gray-400 p-4">{item.amount}</td>
+                                        <td className="text-base border border-gray-400 p-4 max-sm:text-sm">{item.city}</td>
+                                        <td className="text-base border border-gray-400 p-4 max-sm:text-sm">{item.amount}</td>
                                     </tr>
                                 ))}
                             </tbody>

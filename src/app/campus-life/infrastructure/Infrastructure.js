@@ -63,25 +63,25 @@ const build = [
 
 const Infrastructure = () => {
     return (
-        <div className="">
+        <div className="max-sm:py-4">
             <div className="">
-                <h1 className="text-4xl font-novaReg mb-5">Infrastructure</h1>
-                <p className="font-novaReg mb-4">
+                <h1 className="text-4xl font-novaReg mb-5 max-lg:text-3xl max-md:text-2xl max-md:mb-3 max-sm:text-xl max-sm:mb-2.5 max-sm:font-novaSemi">Infrastructure</h1>
+                <p className="text-base font-novaReg mb-4 max-sm:text-sm max-sm:mb-2">
                     AKG University is dedicated to providing an exceptional educational experience, equipped with cutting-edge facilities and modern infrastructure. Recognized as one of the leading universities in the region, AKG University strives to meet international standards in education. The university features technologically advanced classrooms that enhance teaching and learning through innovative tools and techniques. Students benefit from spacious, air-conditioned classrooms, Wi-Fi-enabled projectors, collaborative tutorial rooms, extensive libraries, state-of-the-art seminar rooms, and multiple fully equipped auditoriums.
                 </p>
-                <p className="font-novaReg mb-2">
+                <p className="text-base font-novaReg mb-2 max-sm:text-sm max-sm:mb-2">
                     The university's libraries serve as vital resources for students, providing a comprehensive collection of books and digital media, along with audio-visual aids to facilitate learning. AKG University boasts recently renovated hostels, a robust medical support system (including access to nearby hospitals), a modern fitness center, and ample parking facilities for students and faculty. Committed to sustainability, the university maintains a smoke-free environment and actively pursues green initiatives such as solar energy, rainwater harvesting, and recycling programs. Furthermore, the campus is equipped with a thorough security system, including extensive CCTV coverage, ensuring the safety and well-being of all students and staff.
                 </p>
             </div>
-            <div className="grid grid-cols-3 gap-6 mt-5 cursor-pointer">
+            <div className="grid grid-cols-3 gap-6 mt-5 cursor-pointer max-xl:grid-cols-2 max-lg:grid-cols-3 max-md:grid-cols-2 max-md:gap-3 max-sm:grid-cols-1 max-sm:gap-3">
                 {build.map((building, index) => (
                     <div key={index} className="bg-white flex flex-col justify-between shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                        <img src={building.img} alt={building.title} className="w-full h-48 object-cover object-center mb-6" />
-                        <div className="mb-2 px-4">
-                            <h2 className="text-lg font-novaBold mb-2 hover:text-red-500">{building.title}</h2>
+                        <img src={building.img} alt={building.title} className="w-full h-48 object-cover object-center mb-6 max-sm:mb-3" />
+                        <div className="mb-2 px-4 max-md:px-3 max-sm:px-2.5">
+                            <h2 className="text-lg font-novaBold mb-2 hover:text-red-500 max-sm:text-base">{building.title}</h2>
                             <div className="w-24 h-1 bg-red-300"></div>
                         </div>
-                        <p className="text-sm p-4">{building.desc}</p>
+                        <p className="text-sm p-4 max-md:p-3 max-sm:p-2.5">{building.desc}</p>
                     </div>
                 ))}
             </div>

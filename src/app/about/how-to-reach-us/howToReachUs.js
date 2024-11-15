@@ -78,13 +78,13 @@ const HowToReachUs = () => {
                     </div>
                     {activeOption === 2 && (
                         <div className="py-1.5 px-3">
-                            <li className="text-lg font-novaReg max-sm:text-base">The nearest metro station to AKGU is Vaishali Metro Station (on the Blue Line), around 15 km from the campus. From Vaishali, you can hire a cab or take a shared auto to reach the college.</li>
+                            <li className="text-lg font-novaReg max-sm:text-base">The nearest metro station to AKGU is Vaishali Metro Station (on the Blue Line), around 15 km from the campus. From Vaishali, you can hire a cab or take a shared auto to reach the university.</li>
                             <div className="mt-2 mb-5 w-1/2 max-sm:w-full">
                                 <a className="w-[50%] object-cover" href="https://www.google.com/maps/dir/Vaishali+Metro+Station,+Madan+Mohan+Malviya+Marg,+Gaur+Ganga+2,+Phase+1,+Sector+4,+Vaishali,+Ghaziabad,+Uttar+Pradesh+201010/Ajay+Kumar+Garg+Engineering+College,+Delhi+-+Meerut+Expressway,+Ghaziabad,+Uttar+Pradesh/@28.6578434,77.3401034,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x390cfadbb9d8f833:0xa063c0e377aae595!2m2!1d77.33968!2d28.64984!1m5!1m1!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2m2!1d77.5020041!2d28.6756736!3e0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                     <img className='w-[100%]  object-cover' src="/image/about/Metro1.png" alt="Map1" />
                                 </a>
                             </div>
-                            <li className="text-lg font-novaReg max-sm:text-base">Alternatively, you can travel to Ghaziabad Metro Station on the Red Line, then take a cab or shared auto to the college.</li>
+                            <li className="text-lg font-novaReg max-sm:text-base">Alternatively, you can travel to Ghaziabad Metro Station on the Red Line, then take a cab or shared auto to the university.</li>
                             <div className="mt-2 mb-5 w-1/2 max-sm:w-full">
                                 <a className="w-[50%] object-cover" href="https://www.google.com/maps/place/84,+Village+Bajahi+Post+Khajuri+Dist+Sant+Kabir+Nagar,+above+Talab,+Railway+Colony,+Madhopura,+Ghaziabad,+Uttar+Pradesh+201009/@28.6674489,77.5004967,12.83z/data=!4m23!1m16!4m15!1m6!1m2!1s0x390cf0437a9dd911:0xa7052bc649f79007!2sHindon+River,+Sewa+Nagar,+Ghaziabad,+Uttar+Pradesh+201003!2m2!1d77.40637!2d28.673415!1m6!1m2!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2sAjay+Kumar+Garg+Engineering+College,+Delhi+-+Meerut+Expressway,+Ghaziabad,+Uttar+Pradesh!2m2!1d77.5020041!2d28.6756736!3e0!3m5!1s0x390cf13b91816bab:0x8b5c7816602bec2e!8m2!3d28.6536035!4d77.4274923!16s%2Fg%2F11vypdd41d?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                     <img className='w-[100%]  object-cover' src="/image/about/Metro2.png" alt="Map1" />
@@ -104,7 +104,7 @@ const HowToReachUs = () => {
                     </div>
                     {activeOption === 3 && (
                         <div className="py-1.5 px-3">
-                            <li className="text-lg font-novaReg max-sm:text-base">The nearest railway station is Ghaziabad Junction (GZB), which is around 10 km from AKGU. You can take an auto-rickshaw or taxi to reach the college from the station.</li>
+                            <li className="text-lg font-novaReg max-sm:text-base">The nearest railway station is Ghaziabad Junction (GZB), which is around 10 km from AKGU. You can take an auto-rickshaw or taxi to reach the university from the station.</li>
                             <div className="mt-2 mb-5 w-1/2 max-sm:w-full">
                                 <a className="w-[50%]  object-cover" href="https://www.google.com/maps/dir/Ghaziabad,+Bhur+Bharat+Nagar,+Railway+Colony,+Madhopura,+Ghaziabad,+Uttar+Pradesh+201009/Ajay+Kumar+Garg+Engineering+College,+Delhi+-+Meerut+Expressway,+Ghaziabad,+Uttar+Pradesh/@28.6586456,77.4274073,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x390cf1d263d479d5:0x1ec65e86735c7cf8!2m2!1d77.42744!2d28.6534785!1m5!1m1!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2m2!1d77.5020041!2d28.6756736!3e0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                     <img className='w-[100%] object-cover' src="/image/about/Map1.png" alt="Map1" />
@@ -130,7 +130,7 @@ const HowToReachUs = () => {
                     </div>
                     {activeOption === 4 && (
                         <div className="py-1.5 px-3">
-                            <li className="text-lg font-novaReg max-sm:text-base">The nearest airport is Indira Gandhi International (IGI) Airport, New Delhi, which is approximately 50 km from AKGU. You can hire a cab directly to the college or take the metro to Vaishali/Ghaziabad and then a cab or auto.</li>
+                            <li className="text-lg font-novaReg max-sm:text-base">The nearest airport is Indira Gandhi International (IGI) Airport, New Delhi, which is approximately 50 km from AKGU. You can hire a cab directly to the university or take the metro to Vaishali/Ghaziabad and then a cab or auto.</li>
                             <div className="mt-2 mb-5 w-1/2 max-sm:w-full">
                                 <a className="w-[50%]  object-cover" href="https://www.google.com/maps/dir/Indira+Gandhi+Int'l+Airport,+New+Delhi,+Delhi+110037/Ajay+Kumar+Garg+Engineering+College,+Delhi+-+Meerut+Expressway,+Ghaziabad,+Uttar+Pradesh/@28.5468665,77.2882397,12.04z/data=!4m14!4m13!1m5!1m1!1s0x390d1b85fc2a2d89:0xbef376182c43ed9d!2m2!1d77.0999623!2d28.5561437!1m5!1m1!1s0x390cf30885b1e2a5:0x9983675e24c6638b!2m2!1d77.5020041!2d28.6756736!3e0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                                     <img className='w-[100%] object-cover' src="/image/about/Airport.png" alt="Map1" />

@@ -43,7 +43,7 @@ const ListOfHolidays = ({holidays, activeTab}) => {
                             <th className="px-4 max-[350px]:px-2 py-2 text-left">
                                 Date
                             </th>
-                            <th className="px-4 max-[350px]:px-2 py-2 text-left rounded-tr-lg">
+                            <th className="px-4 max-[350px]:px-2 py-2 border-l border-white border-opacity-10 text-left rounded-tr-lg">
                                 Day
                             </th>
                         </tr>
