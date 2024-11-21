@@ -17,14 +17,14 @@ const StickyFooter = ({ ShowState }) => {
               <div className="flex flex-col items-end text-white max-md:p-2 justify-center overflow-hidden">
                 {socialMediaLinks?.map((link, index) => (
                   <div key={index} className="relative group">
-                    <div className="bg-blue-700 flex items-center">
+                    <Link href={link.url} className="bg-blue-700 flex items-center">
                       <span className="w-0 transition-all group-hover:w-20 overflow-hidden hover:visible group-hover:px-4 group-hover:py-1.5 rounded-lg text-xs duration-300">
                         {link.name}
                       </span>
-                      <Link className="flex w-10 border-b border-b-gray-50/20 h-10 items-center justify-center p-1 gap-2" href="https://www.youtube.com/@AKGECDigitalSchool" target="_blank">
+                      <span className="flex w-10 border-b border-b-gray-50/20 h-10 items-center justify-center p-1 gap-2">
                       {link.icon}
-                      </Link>
-                    </div>
+                      </span>
+                    </Link>
                   </div>
                 ))}
               </div>

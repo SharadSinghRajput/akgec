@@ -330,8 +330,8 @@ export default function NavBar() {
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[900px]"
-                    } left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[800px]"
+                    } -left-20 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-5 ">
@@ -452,7 +452,7 @@ export default function NavBar() {
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } -left-24 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -520,12 +520,12 @@ export default function NavBar() {
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[650px]"
-                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[600px]"
+                    } -left-72 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
-                  <div className="grid grid-cols-2">
-                    <div className="col-span-1 max-md:hidden">
+                  <div className="grid grid-cols-9">
+                    <div className="col-span-4 max-md:hidden">
                       <div className="bg-About ">
                         <div className="flex flex-col items-center p-4">
                           <p className="flex flex-col">
@@ -568,7 +568,7 @@ export default function NavBar() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-span-1 w-max pr-4 p-0 group-hover:p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                    <div className="col-span-5 w-max pr-4 p-0 group-hover:p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
                       <div className="w-max pr-5">
                         <LinksList title="PLACEMENTS" links={Placements.sublinks["Placements"]} />
                       </div>
