@@ -8,7 +8,7 @@ import PageDetails from "./PageDetails";
 function CreateNewsEvent() {
   const router = useRouter();
   const [showPageDetails, setShowPageDetails] = useState(false);
-  const [allPages, setAllPages] = useState([])
+  const [allPages, setAllPages] = useState([]);
   const [displayedPages, setDisplayedPages] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
@@ -81,9 +81,7 @@ function CreateNewsEvent() {
     }
   };
 
-
   const handleAddClick = async () => {
-
     if (!pageType) {
       alert("Please select page type");
       return;
@@ -100,29 +98,28 @@ function CreateNewsEvent() {
     const payload = {
       parent_id: selectedPage?.page_id,
       name: title,
-      type: pageType
-    }
+      type: pageType,
+    };
 
     try {
       const response = await fetch(`${API_NODE_URL}slug/add`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(payload)
-      })
+        body: JSON.stringify(payload),
+      });
 
       const result = await response.json();
       if (result.status) {
-        setAllData(result?.data)
-        alert("Add Page Successfully")
+        setAllData(result?.data);
+        alert("Add Page Successfully");
       } else {
-        setAllData({})
-        alert("Failed to Add Page")
+        setAllData({});
+        alert("Failed to Add Page");
       }
-
     } catch (err) {
-      console.error("Error: ", err)
+      console.error("Error: ", err);
     }
 
     setShowPageDetails(true);
@@ -133,8 +130,26 @@ function CreateNewsEvent() {
       <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex text-white items-center space-x-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-pencil"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg>
-            <h2 className="font-novaSemi text-xl text-white tracking-wide">Add New Page</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-add"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="16" />
+              <line x1="8" y1="12" x2="16" y2="12" />
+            </svg>
+
+            <h2 className="font-novaSemi text-xl text-white tracking-wide">
+              Add News And Event
+            </h2>
           </div>
         </div>
       </div>
@@ -219,8 +234,6 @@ function CreateNewsEvent() {
                 <option value="">Select Page Type</option>
                 <option value="News">News</option>
                 <option value="Event">Event</option>
-                <option value="Circuler">Circuler</option>
-                <option value="Article">Article</option>
               </select>
             </div>
 
@@ -251,10 +264,7 @@ function CreateNewsEvent() {
         </div>
       )}
       {showPageDetails && (
-        <PageDetails
-          allData={allData}
-          parentPage={selectedPage}
-        />
+        <PageDetails allData={allData} parentPage={selectedPage} />
       )}
     </div>
   );

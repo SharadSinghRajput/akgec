@@ -143,8 +143,6 @@ export default function PageDetails({ allData, parentPage }) {
                                     <option value="">Select Page Type</option>
                                     <option value="News">News</option>
                                     <option value="Event">Event</option>
-                                    <option value="Circuler">Circuler</option>
-                                    <option value="Article">Article</option>
                                 </select>
                             </div>
                         </div>

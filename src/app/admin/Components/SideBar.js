@@ -24,7 +24,7 @@ const navLinks = [
         label: 'Meta Data',
         nestedLinks: [
             { label: 'Add Meta Data', href: '/admin/page-metadata' },
-            { label: 'List of Meta', href: '/admin/metadata-list' }
+            { label: 'List of Meta', href: '/admin/page-metadata-list' }
         ]
     },
     {

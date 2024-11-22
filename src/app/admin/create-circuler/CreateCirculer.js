@@ -96,13 +96,34 @@ function CreateCirculer() {
   };
 
   return (
-    <div className="max-w-3xl">
-      <div className="flex gap-2 cursor-pointer mb-4" onClick={() => router.back()} >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-undo-dot"> <path d="M21 17a9 9 0 0 0-15-6.7L3 13" /> <path d="M3 7v6h6" /><circle cx="12" cy="17" r="1" /></svg>
-        <span>Back</span>
+    <div className="w-full">
+      <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg mr-5">
+        <div className="flex items-center justify-between">
+          <div className="flex text-white items-center space-x-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-add"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="16" />
+              <line x1="8" y1="12" x2="16" y2="12" />
+            </svg>
+
+            <h2 className="font-novaSemi text-xl text-white tracking-wide">
+              Add Circuler
+            </h2>
+          </div>
+        </div>
       </div>
-      <div className="m-10 mx-auto bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-6">Add News/Event</h2>
+      <div className="my-10 w-max bg-white rounded-lg shadow-md p-6">
         <form className="space-y-4">
           <div>
             <label htmlFor="title" className="block font-novaSemi">
@@ -253,9 +274,6 @@ function CreateCirculer() {
                 className="w-40 px-4 py-2 bg-gray-50 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
               >
                 <option value="circuler">Circuler</option>
-                <option value="article">Article</option>
-                <option value="news">News</option>
-                <option value="event">Event</option>
               </select>
             </div>
           </div>
