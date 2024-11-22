@@ -138,145 +138,153 @@ function PageMetaForm() {
   };
 
   return (
-    <div className="max-w-md">
-      <div className="flex gap-2 cursor-pointer mb-4" onClick={() => router.back()} >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-undo-dot"> <path d="M21 17a9 9 0 0 0-15-6.7L3 13" /> <path d="M3 7v6h6" /><circle cx="12" cy="17" r="1" /></svg>
-        <span>Back</span>
-      </div>
-      <div className="m-10 mx-auto bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-6">Page Metadata</h2>
-        <form className="space-y-4">
-          <div className="relative">
-            <label
-              htmlFor="page-id"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Search Page ID
-            </label>
-            <input
-              id="page-id"
-              type="text"
-              value={selectedPage ? selectedPage?.name : searchValue}
-              onChange={handleInputChange}
-              placeholder="Search by Page ID"
-              className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-            {showDropdown && (
-              <ul className="absolute z-10 w-full bg-white border border-gray-300 rounded-md mt-1 max-h-60 overflow-auto shadow-lg">
-                {displayedPages.map((page) => (
-                  <li
-                    key={page.pageid}
-                    onClick={() => handlePageSelect(page)}
-                    className="cursor-pointer px-4 py-2 hover:bg-gray-100"
-                  >
-                    {page.pageid} - {page.name}
-                  </li>
-                ))}
-              </ul>
-            )}
+    <div className="w-full">
+      <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
+        <div className="flex items-center justify-between">
+          <div className="flex text-white items-center space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-add"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+            <h2 className="font-novaSemi text-xl text-white tracking-wide">
+              Add Page Meta Data
+            </h2>
           </div>
-
-          {hasMore && displayedPages.length > 0 && (
-            <button
-              type="button"
-              onClick={handleShowMore}
-              className="mt-2 text-blue-500 hover:underline"
-            >
-              Show More
-            </button>
-          )}
-
-          {selectedPage && (
-            <>
-              <div>
-                <label
-                  htmlFor="metatitle"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Meta Title
-                </label>
-                <input
-                  id="metatitle"
-                  type="text"
-                  value={metatitle}
-                  onChange={(e) => setMetatitle(e.target.value)}
-                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="metaDescription"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Meta Description
-                </label>
-                <textarea
-                  id="metaDescription"
-                  value={metaDescription}
-                  onChange={(e) => setMetaDescription(e.target.value)}
-                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="metaKeywords"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Meta Keywords (press Enter to add)
-                </label>
-                <input
-                  id="metaKeywords"
-                  type="text"
-                  onKeyDown={handleKeywordKeyPress}
-                  placeholder="Press Enter to add a keyword"
-                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <div className="mt-2 flex flex-wrap">
-                  {metaKeywords.map((keyword, index) => (
-                    <span
-                      key={index}
-                      className="bg-blue-200 text-blue-800 px-3 py-1 rounded-full mr-2 mb-2 flex items-center"
+        </div>
+      </div>
+      <div className="max-w-md">
+        <div className="m-10 mx-auto bg-white shadow-md rounded-2xl p-6">
+          <h2 className="text-2xl font-bold mb-6">Page Metadata</h2>
+          <form className="space-y-4">
+            <div className="relative">
+              <label
+                htmlFor="page-id"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Search Page ID
+              </label>
+              <input
+                id="page-id"
+                type="text"
+                value={selectedPage ? selectedPage?.name : searchValue}
+                onChange={handleInputChange}
+                placeholder="Search by Page ID"
+                className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              {showDropdown && (
+                <ul className="absolute z-10 w-full bg-white border border-gray-300 rounded-md mt-1 max-h-60 overflow-auto shadow-lg">
+                  {displayedPages.map((page) => (
+                    <li
+                      key={page.pageid}
+                      onClick={() => handlePageSelect(page)}
+                      className="cursor-pointer px-4 py-2 hover:bg-gray-100"
                     >
-                      {keyword}
-                      <button
-                        type="button"
-                        onClick={() => handleKeywordDelete(keyword)}
-                        className="ml-2 text-xl text-red-600 hover:text-red-800"
-                      >
-                        &times;
-                      </button>
-                    </span>
+                      {page.pageid} - {page.name}
+                    </li>
                   ))}
-                </div>
-              </div>
+                </ul>
+              )}
+            </div>
 
-              <div>
-                <label
-                  htmlFor="path"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Path
-                </label>
-                <input
-                  id="path"
-                  type="text"
-                  value={path}
-                  onChange={(e) => setPath(e.target.value)}
-                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
+            {hasMore && displayedPages.length > 0 && (
               <button
                 type="button"
-                onClick={handleSubmit}
-                className="w-full bg-blue-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-blue-600"
+                onClick={handleShowMore}
+                className="mt-2 text-blue-500 hover:underline"
               >
-                Save Metadata
+                Show More
               </button>
-            </>
-          )}
-        </form>
+            )}
+
+            {selectedPage && (
+              <>
+                <div>
+                  <label
+                    htmlFor="metatitle"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Meta Title
+                  </label>
+                  <input
+                    id="metatitle"
+                    type="text"
+                    value={metatitle}
+                    onChange={(e) => setMetatitle(e.target.value)}
+                    className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="metaDescription"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Meta Description
+                  </label>
+                  <textarea
+                    id="metaDescription"
+                    value={metaDescription}
+                    onChange={(e) => setMetaDescription(e.target.value)}
+                    className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="metaKeywords"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Meta Keywords (press Enter to add)
+                  </label>
+                  <input
+                    id="metaKeywords"
+                    type="text"
+                    onKeyDown={handleKeywordKeyPress}
+                    placeholder="Press Enter to add a keyword"
+                    className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <div className="mt-2 flex flex-wrap">
+                    {metaKeywords.map((keyword, index) => (
+                      <span
+                        key={index}
+                        className="bg-blue-200 text-blue-800 px-3 py-1 rounded-full mr-2 mb-2 flex items-center"
+                      >
+                        {keyword}
+                        <button
+                          type="button"
+                          onClick={() => handleKeywordDelete(keyword)}
+                          className="ml-2 text-xl text-red-600 hover:text-red-800"
+                        >
+                          &times;
+                        </button>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="path"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Path
+                  </label>
+                  <input
+                    id="path"
+                    type="text"
+                    value={path}
+                    onChange={(e) => setPath(e.target.value)}
+                    className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleSubmit}
+                  className="w-full bg-blue-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-blue-600"
+                >
+                  Save Metadata
+                </button>
+              </>
+            )}
+          </form>
+        </div>
       </div>
     </div>
   );

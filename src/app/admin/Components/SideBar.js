@@ -24,7 +24,7 @@ const navLinks = [
         label: 'Meta Data',
         nestedLinks: [
             { label: 'Add Meta Data', href: '/admin/page-metadata' },
-            { label: 'List of Meta', href: '/admin/page-metadata-list' }
+            { label: 'List of Meta Data', href: '/admin/page-metadata-list' }
         ]
     },
     {
@@ -76,7 +76,7 @@ export default function SideBar() {
     return (
         <div className={`flex flex-col h-screen bg-gray-800 text-white transition-all duration-300 ${isOpen ? 'w-80' : 'w-20'}`}>
             <div className="flex items-center justify-between p-4 border-b border-gray-700">
-                <h1 className={`text-xl font-bold ${isOpen ? 'block' : 'hidden'}`}>Admin Panel</h1>
+                <h1 className={`text-xl font-semibold tracking-wider ${isOpen ? 'block' : 'hidden'}`}>Admin Panel</h1>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="hidden max-lg:block p-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
@@ -94,24 +94,24 @@ export default function SideBar() {
                             {!item.nestedLinks ? (
                                 <Link href={item.href} className={`p-2 flex items-center rounded-md hover:bg-gray-700 ${isActive(item.href) ? 'bg-gray-700' : 'hover:bg-gray-700'}`}>
                                     <item.icon className={`w-6 h-6 ${isOpen ? "mr-4" : null}`} />
-                                    <span className={`${isOpen ? 'block' : 'hidden'}`}>{item.label}</span>
+                                    <span className={`${isOpen ? 'block' : 'hidden'} font-novaSemi text-lg`}>{item.label}</span>
                                 </Link>
                             ) : (
                                 <div onClick={() => toggleSection(index)} className={`p-2 flex justify-between items-center rounded-md cursor-pointer hover:bg-gray-700 ${expandedSections[index] ? "bg-gray-700" : null}`}>
                                     <div className="flex items-center">
                                         <item.icon className={`w-6 h-6 ${isOpen ? "mr-4" : null}`} />
-                                        <span className={` ${isOpen ? 'block' : 'hidden'} `}>{item.label}</span>
+                                        <span className={` ${isOpen ? 'block' : 'hidden'} font-novaSemi text-lg `}>{item.label}</span>
                                     </div>
                                     {expandedSections[index] ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
                                 </div>
                             )}
                             {item.nestedLinks && (
                                 <ul
-                                    className={`pl-6 space-y-1 overflow-hidden ${expandedSections[index] ? 'max-h-screen' : 'max-h-0'} ${isOpen ? 'block' : 'hidden'}`}
+                                    className={`space-y-1 overflow-hidden ${expandedSections[index] ? 'max-h-screen' : 'max-h-0'} ${isOpen ? 'block' : 'hidden'}`}
                                 >
                                     {item.nestedLinks.map((nestedItem, nestedIndex) => (
-                                        <li key={nestedIndex} className="mt-2 pl-4">
-                                            <Link href={nestedItem.href} className="block p-1.5 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white">
+                                        <li key={nestedIndex} className="mt-2">
+                                            <Link href={nestedItem.href} className="pl-12 block p-1.5 rounded-md font-novaSemi text-lg text-gray-400 hover:bg-gray-700 hover:text-white">
                                                 {nestedItem.label}
                                             </Link>
                                         </li>
@@ -123,7 +123,7 @@ export default function SideBar() {
                 </ul>
             </nav>
             <div className="p-4 border-t border-gray-700">
-                <div className="flex items-center mb-4">
+                {/* <div className="flex items-center mb-4">
                     <img
                         src="/placeholder.svg?height=40&width=40"
                         alt="User avatar"
@@ -133,7 +133,7 @@ export default function SideBar() {
                         <p className="font-semibold">John Doe</p>
                         <p className="text-sm text-gray-400">john@example.com</p>
                     </div>
-                </div>
+                </div> */}
                 <ul className="space-y-2">
                     <li>
                         <Link href="/" className="flex items-center p-2 rounded-md hover:bg-gray-700">

@@ -126,23 +126,7 @@ function CreatePage({ setActiveBtn }) {
       <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex text-white items-center space-x-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-add"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="8" x2="12" y2="16" />
-              <line x1="8" y1="12" x2="16" y2="12" />
-            </svg>
-
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-add"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
             <h2 className="font-novaSemi text-xl text-white tracking-wide">
               Add New Page
             </h2>
@@ -150,7 +134,7 @@ function CreatePage({ setActiveBtn }) {
         </div>
       </div>
       {!showPageDetails && (
-        <div className="max-w-md bg-white rounded-lg shadow-md p-6">
+        <div className="max-w-md bg-white shadow-md rounded-2xl p-6">
           <form className="space-y-4">
             <div className="relative">
               <label

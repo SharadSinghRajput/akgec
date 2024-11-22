@@ -1,31 +1,81 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
 // import ReactQuill from 'react-quill'; // Import React Quill
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 import "react-quill/dist/quill.snow.css"; // Import styles
 import { API_NODE_URL } from "@/configs/config";
 export default function PageDetailsForm({ allData, parentPage }) {
-  console.log("Parent Page : ", parentPage);
-  console.log("ALL DATA ---- ", allData);
 
   const [formData, setFormData] = useState({
+    page_id: allData?.page_id,
+    parent_id: allData?.parent_id,
+    languageId: "English",
+    price: "",
+    name: allData?.name,
     parentPage: parentPage?.name,
     pageTitle: allData?.name,
-    subCategory: "",
-    date: "",
-    language: "English",
-    shortDescription: "",
-    pageDescription: "",
-    shortName: "",
-    secondaryType: "",
-    relatedTag: "",
-    banner: null,
-    featuredImage: null,
+    date: new Date(allData?.date).toISOString().split("T")[0],
+    shortdesc: "",
+    description: "",
+    param1: "",
+    paramvalue1: "",
+    param_img1: null,
+    param_url1: "",
+    param2: "",
+    paramvalue2: "",
+    param_img2: null,
+    param_url2: "",
+    param3: "",
+    paramvalue3: "",
+    param_img3: null,
+    param_url3: "",
+    param4: "",
+    paramvalue4: "",
+    param_img4: null,
+    param_url4: "",
+    param5: "",
+    paramvalue5: "",
+    param_img5: null,
+    param_url5: "",
+    param6: "",
+    paramvalue6: "",
+    param_img6: null,
+    param_url6: "",
+    param7: "",
+    paramvalue7: "",
+    param_img7: null,
+    param_url7: "",
+    param8: "",
+    paramvalue8: "",
+    param_img8: null,
+    param_url8: "",
+    param9: "",
+    paramvalue9: "",
+    param_img9: null,
+    param_url9: "",
+    param10: "",
+    paramvalue10: "",
+    param_img10: null,
+    param_url10: "",
+    banner_img: null,
+    tag1: "",
+    tag2: "",
+    tag3: "",
+    schemaid: "",
+    nic_name: "",
+    featured_img: null,
+    col_width: "",
+    video_url: "",
+    old_url: "",
+    featured_status: "",
+    highlightBanner: null,
+    galleryimg: [],
+    type: allData?.type,
     mainReportImage: null,
-    metaTitle: "",
-    metaDescription: "",
-    keywords: "",
+    metatitle: "",
+    metadesc: "",
+    keywords_tag: "",
   });
 
   const handleChange = (e) => {
@@ -35,6 +85,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
       [name]: value,
     }));
   };
+
   const handleQuillChange = (content, field) => {
     setFormData((prevData) => ({
       ...prevData,
@@ -48,33 +99,35 @@ export default function PageDetailsForm({ allData, parentPage }) {
       [field]: e.target.files[0],
     }));
   };
-  const insertPage = async () => {
-    const datas = {
-      parent_id: parentPage.page_id,
-      name: formData?.pageTitle,
-      date: formData?.date,
-      shortdesc: formData?.shortDescription,
-      description: formData?.pageDescription,
-      metatitle: formData?.metaTitle,
-      metadesc: formData?.metaDescription,
-      keywords_tag: formData?.keywords,
-      featured_img: formData?.featuredImage,
-      type: allData?.type,
-    };
-    console.log(datas);
 
+  const handleGalleryImg = (e, field) => {
+    const files = Array.from(e.target.files);
+    setFormData((prevData) => ({
+      ...prevData,
+      [field]: [...prevData[field], ...files],
+    }));
+  };
+
+  const insertPage = async () => {
+
+    console.log(formData);
+    
     try {
-      const response = await fetch(`${API_NODE_URL}slug/`, {
+      const response = await fetch(`${API_NODE_URL}slug/update`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...datas }), // Always request 10 pages
+        body: JSON.stringify(formData),
       });
       const data = await response.json();
 
+      console.log(data);
+      
       const fetchedPages = data.data.pages || [];
 
+      console.log(fetchedPages);
+      
       if (data.status) {
         alert("Page Inserted Successfully ");
       } else {
@@ -87,12 +140,13 @@ export default function PageDetailsForm({ allData, parentPage }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     insertPage();
+
   };
 
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-lg"
+      className="max-w-7xl p-6 bg-white shadow-lg rounded-lg"
     >
       <div className="mb-6 p-4 bg-red-100 text-red-800 rounded-lg cursor-pointer hover:bg-red-200 transition-colors">
         Click Here to Generate Page Meta Using AI (Artificial Intelligence)
@@ -118,6 +172,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
                 value={formData.parentPage}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
+                disabled
               />
             </div>
           </div>
@@ -161,15 +216,15 @@ export default function PageDetailsForm({ allData, parentPage }) {
               </div>
               <div>
                 <label
-                  htmlFor="pageType"
+                  htmlFor="type"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
                   Select Page Type*
                 </label>
                 <select
-                  id="pageType"
-                  name="pageType"
-                  value={allData?.type}
+                  id="type"
+                  name="type"
+                  value={formData.type}
                   onChange={handleChange}
                   className="w-full p-2 border rounded"
                 >
@@ -186,85 +241,206 @@ export default function PageDetailsForm({ allData, parentPage }) {
         <section className="grid grid-cols-2 gap-4">
           <div>
             <label
-              htmlFor="shortDescription"
+              htmlFor="shortdesc"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
               Short Description*
             </label>
             <ReactQuill
-              id="shortDescription"
-              name="shortDescription"
-              value={formData.shortDescription}
+              id="shortdesc"
+              name="shortdesc"
+              value={formData.shortdesc}
               onChange={(content) =>
-                handleQuillChange(content, "shortDescription")
+                handleQuillChange(content, "shortdesc")
               }
               className="border rounded"
             />
           </div>
           <div>
             <label
-              htmlFor="pageDescription"
+              htmlFor="description"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
               Page Description*
             </label>
             <ReactQuill
-              id="pageDescription"
-              name="pageDescription"
-              value={formData.pageDescription}
+              id="description"
+              name="description"
+              value={formData.description}
               onChange={(content) =>
-                handleQuillChange(content, "pageDescription")
+                handleQuillChange(content, "description")
               }
               className="border rounded"
             />
           </div>
         </section>
 
-        <section className="grid grid-cols-3 gap-4">
+        <section className="grid grid-cols-4 gap-4">
           <div>
             <label
-              htmlFor="shortName"
+              htmlFor="tag1"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
-              Short Name*
+              Tag 1
             </label>
             <input
               type="text"
-              id="shortName"
-              name="shortName"
-              value={formData.shortName}
+              id="tag1"
+              name="tag1"
+              value={formData.tag1}
               onChange={handleChange}
               className="w-full p-2 border rounded"
             />
           </div>
           <div>
             <label
-              htmlFor="secondaryType"
+              htmlFor="tag2"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
-              Secondary Type
+              Tag 2
             </label>
             <input
               type="text"
-              id="secondaryType"
-              name="secondaryType"
-              value={formData.secondaryType}
+              id="tag2"
+              name="tag2"
+              value={formData.tag2}
               onChange={handleChange}
               className="w-full p-2 border rounded"
             />
           </div>
           <div>
             <label
-              htmlFor="relatedTag"
+              htmlFor="tag3"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
-              Related Tag*
+              Tag 3
             </label>
             <input
               type="text"
-              id="relatedTag"
-              name="relatedTag"
-              value={formData.relatedTag}
+              id="tag3"
+              name="tag3"
+              value={formData.tag3}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="schemaid"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Schema ID
+            </label>
+            <input
+              type="number"
+              id="schemaid"
+              name="schemaid"
+              value={formData.schemaid}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
+        </section>
+
+        <section className="grid grid-cols-4 gap-4">
+          <div>
+            <label
+              htmlFor="nic_name"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Nickname
+            </label>
+            <input
+              type="text"
+              id="nic_name"
+              name="nic_name"
+              value={formData.nic_name}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="col_width"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Col Width
+            </label>
+            <input
+              type="number"
+              id="col_width"
+              name="col_width"
+              value={formData.col_width}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="featured_status"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Featured Status
+            </label>
+            <select
+              id="featured_status"
+              name="featured_status"
+              value={formData.featured_status}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            >
+              <option value="">Select Page Type</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div>
+            <label
+              htmlFor="price"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Price
+            </label>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              value={formData.price}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
+        </section>
+
+        <section className="grid grid-cols-2 gap-4">
+          <div>
+            <label
+              htmlFor="video_url"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Video URL
+            </label>
+            <input
+              type="text"
+              id="video_url"
+              name="video_url"
+              value={formData.video_url}
+              onChange={handleChange}
+              className="w-full p-2 border rounded"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="old_url"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Old URL
+            </label>
+            <input
+              type="text"
+              id="old_url"
+              name="old_url"
+              value={formData.old_url}
               onChange={handleChange}
               className="w-full p-2 border rounded"
             />
@@ -287,18 +463,18 @@ export default function PageDetailsForm({ allData, parentPage }) {
               <input
                 type="file"
                 accept="image/webp"
-                onChange={(e) => handleFileChange(e, "banner")}
+                onChange={(e) => handleFileChange(e, "banner_img")}
                 className="hidden"
-                id="uploadBanner"
+                id="banner_img"
               />
               <label
-                htmlFor="uploadBanner"
+                htmlFor="banner_img"
                 className="bg-blue-500 text-white px-4 py-2 rounded mr-2 cursor-pointer"
               >
                 Choose file
               </label>
               <span className="text-sm text-gray-500">
-                {formData.banner ? formData.banner.name : "No file chosen"}
+                {formData.banner_img ? formData.banner_img.name : "No file chosen"}
               </span>
             </div>
           </div>
@@ -317,19 +493,19 @@ export default function PageDetailsForm({ allData, parentPage }) {
               <input
                 type="file"
                 accept="image/webp"
-                onChange={(e) => handleFileChange(e, "featuredImage")}
+                onChange={(e) => handleFileChange(e, "featured_img")}
                 className="hidden"
-                id="uploadFeaturedImage"
+                id="featured_img"
               />
               <label
-                htmlFor="uploadFeaturedImage"
+                htmlFor="featured_img"
                 className="bg-blue-500 text-white px-4 py-2 rounded mr-2 cursor-pointer"
               >
                 Choose file
               </label>
               <span className="text-sm text-gray-500">
-                {formData.featuredImage
-                  ? formData.featuredImage.name
+                {formData.featured_img
+                  ? formData.featured_img.name
                   : "No file chosen"}
               </span>
             </div>
@@ -370,53 +546,124 @@ export default function PageDetailsForm({ allData, parentPage }) {
           </div>
         </section>
 
+        <section className="grid grid-cols-3 gap-4">
+          <div className="col-span-1">
+            <label
+              htmlFor="highlightBanner"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Highlight Banner
+            </label>
+            <div className="border-2 border-dashed border-gray-300 p-4 text-center">
+              <p className="text-sm text-gray-500 mb-2">
+                File should be an image with webp extension
+              </p>
+              <p className="text-sm text-gray-500 mb-2">(936 W X 337 H)</p>
+              <input
+                type="file"
+                accept="image/webp"
+                onChange={(e) => handleFileChange(e, "highlightBanner")}
+                className="hidden"
+                id="highlightBanner"
+              />
+              <label
+                htmlFor="highlightBanner"
+                className="bg-blue-500 text-white px-4 py-2 rounded mr-2 cursor-pointer"
+              >
+                Choose file
+              </label>
+              <span className="text-sm text-gray-500">
+                {formData.highlightBanner ? formData.highlightBanner.name : "No file chosen"}
+              </span>
+            </div>
+          </div>
+          <div className="col-span-2">
+            <label
+              htmlFor="galleryimg"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Gallery Images
+            </label>
+            <div className="border-2 border-dashed border-gray-300 p-4 text-center">
+              <p className="text-sm text-gray-500 mb-2">
+                File should be an image with webp extension
+              </p>
+              <p className="text-sm text-gray-500 mb-2">(100 W x 75 H)</p>
+              <input
+                type="file"
+                accept="image/webp"
+                multiple // Enable multiple file selection
+                onChange={(e) => handleGalleryImg(e, "galleryimg")}
+                className="hidden"
+                id="galleryimg"
+              />
+              <label
+                htmlFor="galleryimg"
+                className="bg-blue-500 text-white px-4 py-2 rounded mr-2 cursor-pointer"
+              >
+                Choose files
+              </label>
+              <div className="text-sm text-gray-500 mt-2">
+                {formData.galleryimg.length > 0 ? (
+                  formData.galleryimg.map((file, index) => (
+                    <p key={index}>{file.name}</p>
+                  ))
+                ) : (
+                  "No files chosen"
+                )}
+              </div>
+            </div>
+          </div>
+
+        </section>
+
         <section>
           <h3 className="text-lg font-semibold mb-4">Page Meta Detail</h3>
           <div className="grid grid-cols-3 gap-4">
             <div>
               <label
-                htmlFor="metaTitle"
+                htmlFor="metatitle"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
                 Meta Title*
               </label>
               <input
                 type="text"
-                id="metaTitle"
-                name="metaTitle"
-                value={formData.metaTitle}
+                id="metatitle"
+                name="metatitle"
+                value={formData.metatitle}
                 onChange={handleChange}
                 className="w-full p-2 border rounded h-12" // Set a fixed height
               />
             </div>
             <div>
               <label
-                htmlFor="metaDescription"
+                htmlFor="metadesc"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
                 Meta Description*
               </label>
               <textarea
-                id="metaDescription"
-                name="metaDescription"
+                id="metadesc"
+                name="metadesc"
                 rows={1} // Set rows to 1
-                value={formData.metaDescription}
+                value={formData.metadesc}
                 onChange={handleChange}
                 className="w-full p-2 border rounded resize-none h-12" // Set a fixed height and make it non-resizable
               ></textarea>
             </div>
             <div>
               <label
-                htmlFor="keywords"
+                htmlFor="keywords_tag"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
                 Keywords*
               </label>
               <input
                 type="text"
-                id="keywords"
-                name="keywords"
-                value={formData.keywords}
+                id="keywords_tag"
+                name="keywords_tag"
+                value={formData.keywords_tag}
                 onChange={handleChange}
                 className="w-full p-2 border rounded h-12" // Set a fixed height
               />
@@ -425,32 +672,100 @@ export default function PageDetailsForm({ allData, parentPage }) {
         </section>
 
         <section>
-          <h3 className="text-lg font-semibold mb-4">Add Images</h3>
-          <input
-            type="file"
-            accept="image/webp"
-            onChange={(e) => handleFileChange(e, "mainReportImage")}
-            className="hidden"
-            id="uploadMainReportImage"
-          />
-          <label
-            htmlFor="uploadMainReportImage"
-            className="bg-blue-500 text-white px-4 py-2 rounded mr-2 cursor-pointer"
-          >
-            Add Image
-          </label>
-          <span className="text-sm text-gray-500 hidden">
-            {formData.mainReportImage
-              ? formData.mainReportImage.name
-              : "No file chosen"}
-          </span>
+          <h3 className="text-lg font-semibold mb-4">Params</h3>
+          <div className="grid grid-cols-4 gap-4">
+            {Array.from({ length: 10 }, (_, index) => {
+              const paramIndex = index + 1; // 1-based index
+              return (
+                <React.Fragment key={paramIndex}>
+                  <div>
+                    <label
+                      htmlFor={`param${paramIndex}`}
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Param {paramIndex}
+                    </label>
+                    <input
+                      type="text"
+                      id={`param${paramIndex}`}
+                      name={`param${paramIndex}`}
+                      value={formData[`param${paramIndex}`]}
+                      onChange={handleChange}
+                      className="w-full p-2 border rounded h-12"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor={`paramvalue${paramIndex}`}
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Value
+                    </label>
+                    <input
+                      type="text"
+                      id={`paramvalue${paramIndex}`}
+                      name={`paramvalue${paramIndex}`}
+                      value={formData[`paramvalue${paramIndex}`]}
+                      onChange={handleChange}
+                      className="w-full p-2 border rounded h-12"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor={`param_img${paramIndex}`}
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      Upload Image
+                    </label>
+                    <div className="border border-gray-200 py-2.5 px-1 rounded-md">
+                      <input
+                        type="file"
+                        accept="image/webp"
+                        onChange={(e) => handleFileChange(e, `param_img${paramIndex}`)}
+                        className="hidden"
+                        id={`param_img${paramIndex}`}
+                      />
+                      <label
+                        htmlFor={`param_img${paramIndex}`}
+                        className="bg-blue-500 text-white px-4 py-2 rounded mr-2 cursor-pointer"
+                      >
+                        Choose file
+                      </label>
+                      <span className="text-sm text-gray-500">
+                        {formData[`param_img${paramIndex}`]
+                          ? formData[`param_img${paramIndex}`].name
+                          : "No file chosen"}
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      htmlFor={`param_url${paramIndex}`}
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
+                      URL
+                    </label>
+                    <input
+                      type="text"
+                      id={`param_url${paramIndex}`}
+                      name={`param_url${paramIndex}`}
+                      value={formData[`param_url${paramIndex}`]}
+                      onChange={handleChange}
+                      className="w-full p-2 border rounded h-12"
+                    />
+                  </div>
+                </React.Fragment>
+              );
+            })}
+          </div>
         </section>
+
       </div>
 
       <div className="mt-6">
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded  mx-auto"
+          className="bg-green-500 text-white py-2 px-6 rounded-xl uppercase font-novaSemi text-sm mt-4 hover:bg-blue-600 hover:scale-105 transition duration-200 ease-linear"
         >
           Submit
         </button>
