@@ -1,5 +1,5 @@
 import SideBar from "../Components/SideBar";
-import CirculerList from "./CirculerList";
+import CirculerList from "./MetadataList";
 
 export default function Home() {
   return (

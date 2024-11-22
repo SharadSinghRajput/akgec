@@ -23,34 +23,34 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
   const [tags, setTags] = useState([]);
   const [relatedLinks, setRelatedLinks] = useState([]);
 
-  console.log(router);
-  
-
-  useEffect(() => {``
+  useEffect(() => {
+    ``;
     if (sid) {
       const fetchEventData = async () => {
         try {
-          const response = await fetch(`${API_NODE_URL}news-and-event/get?sid=${sid}`);
+          const response = await fetch(
+            `${API_NODE_URL}slug/getbyid?page_id=${sid}`
+          );
           const data = await response.json();
           console.log(data);
-          
-          if (data.status && data.data) {
-            const event = data.data;
-            setTitle(event.title);
-            setShortDesc(event.shortDesc);
-            setDescription(event.description);
-            setFeaturedImage(event.featuredImage);
-            setGalleryImg(event.galleryimg || []);
-            setDate(event.date);
-            setPageUrl(event.pageUrl);
-            setFeatured(event.featured);
-            setType(event.type);
-            setTags(event.tags || []);
-            setRelatedLinks(event.relatedLinks || []);
-            setActiveBtn(5);
-          } else {
-            alert(data.message);
-          }
+
+          // if (data.status && data.data) {
+          //   const event = data.data;
+          //   setTitle(event.title);
+          //   setShortDesc(event.shortDesc);
+          //   setDescription(event.description);
+          //   setFeaturedImage(event.featuredImage);
+          //   setGalleryImg(event.galleryimg || []);
+          //   setDate(event.date);
+          //   setPageUrl(event.pageUrl);
+          //   setFeatured(event.featured);
+          //   setType(event.type);
+          //   setTags(event.tags || []);
+          //   setRelatedLinks(event.relatedLinks || []);
+          //   setActiveBtn(5);
+          // } else {
+          //   alert(data.message);
+          // }
         } catch (error) {
           console.error("Error fetching event data:", error);
         }
@@ -77,22 +77,11 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
     e.preventDefault();
 
     const updatedEvent = {
-      sid,
-      title,
-      shortDesc,
-      description,
-      featuredImage,
-      galleryimg: galleryImg,
-      date,
-      pageUrl,
-      featured,
-      type,
-      tags,
-      relatedLinks,
+      page_id: sid,
     };
 
     try {
-      const response = await fetch(`${API_NODE_URL}news-and-event/update`, {
+      const response = await fetch(`${API_NODE_URL}slug/update`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedEvent),
@@ -100,17 +89,6 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
       const data = await response.json();
       if (data.status) {
         alert(data.message || "News/Event updated successfully!");
-        setTitle("");
-        setShortDesc("");
-        setDescription("");
-        setFeaturedImage(null);
-        setGalleryImg([]);
-        setDate("");
-        setPageUrl("");
-        setFeatured("No");
-        setType("news");
-        setTags([]);
-        setRelatedLinks([]);
       } else {
         alert(data.message || "Failed to update news/event.");
       }
@@ -130,14 +108,16 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
       } else {
         alert(`This ${name} is already added!`);
       }
-
       e.target.value = "";
     }
   };
 
   return (
     <div className="w-[70%] m-10 mx-auto bg-white rounded-lg shadow-md p-6">
-      <div className="flex gap-2 cursor-pointer mb-4" onClick={() => router.back()}>
+      <div
+        className="flex gap-2 cursor-pointer mb-4"
+        onClick={() => router.back()}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -209,7 +189,11 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
           />
           {featuredImage && (
             <div className="mt-2">
-              <img src={featuredImage} alt="Featured Preview" className="w-40 h-40 object-cover rounded-md" />
+              <img
+                src={featuredImage}
+                alt="Featured Preview"
+                className="w-40 h-40 object-cover rounded-md"
+              />
             </div>
           )}
         </div>
@@ -229,10 +213,16 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
           <div className="mt-2 flex flex-wrap gap-5">
             {galleryImg.map((img, index) => (
               <span key={index} className="relative">
-                <img src={img} alt={`Gallery ${index + 1}`} className="w-20 h-20 object-cover rounded-md m-1" />
+                <img
+                  src={img}
+                  alt={`Gallery ${index + 1}`}
+                  className="w-20 h-20 object-cover rounded-md m-1"
+                />
                 <button
                   type="button"
-                  onClick={() => setGalleryImg(galleryImg.filter((_, i) => i !== index))}
+                  onClick={() =>
+                    setGalleryImg(galleryImg.filter((_, i) => i !== index))
+                  }
                   className="absolute top-0 right-0 text-black text-xl rounded-full -mt-2 -mr-2"
                 >
                   &times;
@@ -314,7 +304,10 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
           />
           <div className="mt-2 flex flex-wrap gap-2">
             {tags.map((tag, index) => (
-              <span key={index} className="bg-blue-200 px-2 py-1 rounded-full text-sm flex items-center">
+              <span
+                key={index}
+                className="bg-blue-200 px-2 py-1 rounded-full text-sm flex items-center"
+              >
                 {tag}
                 <button
                   type="button"
@@ -337,16 +330,23 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
             id="relatedLinks"
             type="text"
             placeholder="Press Enter to add related links"
-            onKeyDown={(e) => handleKeywordKeyPress(e, setRelatedLinks, relatedLinks, "link")}
+            onKeyDown={(e) =>
+              handleKeywordKeyPress(e, setRelatedLinks, relatedLinks, "link")
+            }
             className="w-full border rounded-md p-2"
           />
           <div className="mt-2 flex flex-wrap gap-2">
             {relatedLinks.map((link, index) => (
-              <span key={index} className="bg-green-200 px-2 py-1 rounded-full text-sm flex items-center">
+              <span
+                key={index}
+                className="bg-green-200 px-2 py-1 rounded-full text-sm flex items-center"
+              >
                 {link}
                 <button
                   type="button"
-                  onClick={() => setRelatedLinks(relatedLinks.filter((_, i) => i !== index))}
+                  onClick={() =>
+                    setRelatedLinks(relatedLinks.filter((_, i) => i !== index))
+                  }
                   className="ml-2 text-red-500 font-semibold"
                 >
                   &times;
@@ -365,6 +365,6 @@ const EditNewsAndEvent = ({ setActiveBtn }) => {
       </form>
     </div>
   );
-}
+};
 
 export default EditNewsAndEvent;

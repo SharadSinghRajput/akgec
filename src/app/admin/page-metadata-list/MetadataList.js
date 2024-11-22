@@ -4,19 +4,19 @@ import React, { useEffect, useState } from "react";
 import { API_NODE_URL } from "@/configs/config";
 import { useRouter } from "next/navigation";
 
-const CirculerList = () => {
+const MetaDataList = () => {
   const router = useRouter();
-  const [newsAndEvents, setNewsAndEvents] = useState([]);
+  const [MetaData, setMetaData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${API_NODE_URL}news-and-event/getAll`);
+        const response = await fetch(`${API_NODE_URL}meta/list`);
         const data = await response.json();
         console.log(data);
 
-        setNewsAndEvents(data.data || []);
+        setMetaData(data.data || []);
       } catch (error) {
         console.error("Error fetching news and events:", error);
       } finally {
@@ -38,7 +38,7 @@ const CirculerList = () => {
         );
         const data = await response.json();
         if (data.status) {
-          setNewsAndEvents(newsAndEvents.filter((event) => event.id !== id));
+          setMetaData(MetaData.filter((event) => event.id !== id));
           alert(data.message || "Event deleted successfully!");
         } else {
           alert("Failed to delete event.");
@@ -76,7 +76,7 @@ const CirculerList = () => {
             </svg>
 
             <h2 className="font-novaSemi text-xl text-white tracking-wide">
-              Circuler List
+              Mata Data List
             </h2>
           </div>
         </div>
@@ -88,33 +88,29 @@ const CirculerList = () => {
           <table className="w-full table-auto border-collapse">
             <thead>
               <tr>
-                <th className="border px-4 py-2">Image</th>
-                <th className="border px-4 py-2">Title</th>
-                <th className="border px-4 py-2">Date</th>
-                <th className="border px-4 py-2">Type</th>
+                <th className="border px-4 py-2">Meta Title</th>
+                <th className="border px-4 py-2">Meta Description</th>
+                <th className="border px-4 py-2">Path</th>
+                <th className="border px-4 py-2">Meta Keywords</th>
+                <th className="border px-4 py-2">Page</th>
                 <th className="border px-4 py-2">Actions</th>
               </tr>
             </thead>
             <tbody>
-              {newsAndEvents.length > 0 ? (
-                newsAndEvents.map((event) => (
-                  <tr key={event.id}>
-                    <td className="border px-4 py-2">
-                      <img
-                        src={event.featuredImage}
-                        alt={event.title}
-                        className="w-16 h-16 object-cover rounded-md"
-                      />
-                    </td>
-                    <td className="border px-4 py-2">{event.title}</td>
-                    <td className="border px-4 py-2">{event.date}</td>
-                    <td className="border px-4 py-2">{event.type}</td>
-                    <td className="border px-4 py-2">
+              {MetaData.length > 0 ? (
+                MetaData.map((event) => (
+                  <tr key={event._id}>
+                    <td className="border text-sm px-4 py-2">{event.metatitle}</td>
+                    <td className="border text-sm px-4 py-2">{event.metaDescription}</td>
+                    <td className="border text-sm px-4 py-2">{event.metaKeywords}</td>
+                    <td className="border text-sm px-4 py-2">{event.path}</td>
+                    <td className="border text-sm px-4 py-2">{event.pageName}</td>
+                    <td className="border text-sm px-4 py-2">
                       <div className="flex justify-start space-x-2">
                         <button
                           onClick={() =>
                             router.push(
-                              `/admin/edit-news-and-event?sid=${event?.sid}`
+                              `/admin/edit-page-metadata?pageid=${event?.pageid}`
                             )
                           }
                           className="bg-yellow-500 text-white px-4 py-2 rounded-md"
@@ -174,4 +170,4 @@ const CirculerList = () => {
   );
 };
 
-export default CirculerList;
+export default MetaDataList;

@@ -61,7 +61,6 @@ export default function PageDetails({ allData, parentPage }) {
             featured_img: formData?.featuredImage,
             type: allData?.type,
         }
-        console.log(datas);
 
         try {
             const response = await fetch(`${API_NODE_URL}slug/`, {
@@ -91,9 +90,9 @@ export default function PageDetails({ allData, parentPage }) {
 
     return (
         <form onSubmit={handleSubmit} className="max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-            <div className="mb-6 p-4 bg-red-100 text-red-800 rounded-lg cursor-pointer hover:bg-red-200 transition-colors">
+            {/* <div className="mb-6 p-4 bg-red-100 text-red-800 rounded-lg cursor-pointer hover:bg-red-200 transition-colors">
                 Click Here to Generate Page Meta Using AI (Artificial Intelligence)
-            </div>
+            </div> */}
             <h2 className="text-2xl font-bold mb-6">Add Page Details</h2>
             <div className="space-y-6">
                 <section>
