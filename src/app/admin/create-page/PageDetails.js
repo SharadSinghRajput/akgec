@@ -10,7 +10,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
   const [formData, setFormData] = useState({
     page_id: allData?.page_id,
     parent_id: allData?.parent_id,
-    languageId: "English",
+    languageId: 1,
     price: "",
     name: allData?.name,
     parentPage: parentPage?.name,
