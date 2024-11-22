@@ -2,11 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import { API_NODE_URL } from "@/configs/config";
-import { useRouter } from "next/navigation";
 import PageDetails from "./PageDetails";
 
 function CreateNewsEvent() {
-  const router = useRouter();
   const [showPageDetails, setShowPageDetails] = useState(false);
   const [allPages, setAllPages] = useState([]);
   const [displayedPages, setDisplayedPages] = useState([]);

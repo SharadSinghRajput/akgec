@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import { API_NODE_URL } from "@/configs/config";
 import { useRouter } from "next/navigation";
@@ -12,10 +11,11 @@ const CirculerList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${API_NODE_URL}news-and-event/getAll`);
+        const response = await fetch(
+          `${API_NODE_URL}slug/getbytype?type=Circuler`
+        );
         const data = await response.json();
         console.log(data);
-
         setNewsAndEvents(data.data || []);
       } catch (error) {
         console.error("Error fetching news and events:", error);
@@ -27,52 +27,71 @@ const CirculerList = () => {
     fetchData();
   }, []);
 
-  const handleDelete = async (id) => {
-    if (window.confirm("Are you sure you want to delete this event?")) {
-      try {
-        const response = await fetch(
-          `${API_NODE_URL}news-and-event/delete/${id}`,
-          {
-            method: "DELETE",
-          }
-        );
-        const data = await response.json();
-        if (data.status) {
-          setNewsAndEvents(newsAndEvents.filter((event) => event.id !== id));
-          alert(data.message || "Event deleted successfully!");
-        } else {
-          alert("Failed to delete event.");
-        }
-      } catch (error) {
-        console.error("Error deleting event:", error);
-        alert("Failed to delete event.");
-      }
-    }
-  };
-
+  // const handleDelete = async (id) => {
+  //   if (window.confirm("Are you sure you want to delete this event?")) {
+  //     try {
+  //       const response = await fetch(
+  //         `${API_NODE_URL}news-and-event/delete/${id}`,
+  //         {
+  //           method: "DELETE",
+  //         }
+  //       );
+  //       const data = await response.json();
+  //       if (data.status) {
+  //         setNewsAndEvents(newsAndEvents.filter((event) => event.id !== id));
+  //         alert(data.message || "Event deleted successfully!");
+  //       } else {
+  //         alert("Failed to delete event.");
+  //       }
+  //     } catch (error) {
+  //       console.error("Error deleting event:", error);
+  //       alert("Failed to delete event.");
+  //     }
+  //   }
+  // };
   return (
-    <div className="w-full">
+    <div className="w-full pr-10">
       <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex text-white items-center space-x-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-list"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><path d="M12 11h4" /><path d="M12 16h4" /><path d="M8 11h.01" /><path d="M8 16h.01" /></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-list"
+            >
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <circle cx="4" cy="6" r="1" />
+              <circle cx="4" cy="12" r="1" />
+              <circle cx="4" cy="18" r="1" />
+            </svg>
+
             <h2 className="font-novaSemi text-xl text-white tracking-wide">
-              Circuler List
+              News And Event List
             </h2>
           </div>
         </div>
       </div>
-      <div className=" bg-white rounded-2xl shadow-md p-6">
+      <div className=" bg-white rounded-lg shadow-md p-6">
         {loading ? (
           <p>Loading...</p>
         ) : (
           <table className="w-full table-auto border-collapse">
             <thead>
               <tr>
-                <th className="border px-4 py-2">Image</th>
-                <th className="border px-4 py-2">Title</th>
+                <th className="border px-4 py-2">Name</th>
+                <th className="border px-4 py-2">Short Desc</th>
                 <th className="border px-4 py-2">Date</th>
                 <th className="border px-4 py-2">Type</th>
+                <th className="border px-4 py-2">Status</th>
                 <th className="border px-4 py-2">Actions</th>
               </tr>
             </thead>
@@ -80,16 +99,22 @@ const CirculerList = () => {
               {newsAndEvents.length > 0 ? (
                 newsAndEvents.map((event) => (
                   <tr key={event.id}>
+                    {/* <td className="border px-4 py-2">
+                        <img
+                          src={event.featuredImage}
+                          alt={event.title}
+                          className="w-16 h-16 object-cover rounded-md"
+                        />
+                      </td> */}
+                    <td className="border px-4 py-2">{event.name}</td>
+                    <td className="border px-4 py-2">{event.shortDesc}</td>
                     <td className="border px-4 py-2">
-                      <img
-                        src={event.featuredImage}
-                        alt={event.title}
-                        className="w-16 h-16 object-cover rounded-md"
-                      />
+                      {event?.date?.split("T")[0]}
                     </td>
-                    <td className="border px-4 py-2">{event.title}</td>
-                    <td className="border px-4 py-2">{event.date}</td>
                     <td className="border px-4 py-2">{event.type}</td>
+                    <td className="border px-4 py-2">
+                      {event.status ? "Active" : "Inactive"}
+                    </td>
                     <td className="border px-4 py-2">
                       <div className="flex justify-start space-x-2">
                         <button
