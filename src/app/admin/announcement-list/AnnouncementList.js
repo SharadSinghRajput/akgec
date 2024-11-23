@@ -12,7 +12,7 @@ const CirculerList = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `${API_NODE_URL}slug/getbytype?type=Circuler`
+          `${API_NODE_URL}slug/getbytype?type=Announcement`
         );
         const data = await response.json();
         console.log(data);

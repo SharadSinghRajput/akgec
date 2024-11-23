@@ -42,6 +42,14 @@ const navLinks = [
             { label: 'Add Circuler', href: '/admin/create-circuler' },
             { label: 'List of Circuler', href: '/admin/circuler-list' }
         ]
+    },
+    {
+        icon: RefreshCcwDot,
+        label: 'Announcement',
+        nestedLinks: [
+            { label: 'Add Announcement', href: '/admin/create-announcement' },
+            { label: 'List of Announcement', href: '/admin/announcement-list' }
+        ]
     }
 ]
 

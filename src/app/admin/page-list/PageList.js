@@ -121,7 +121,7 @@ const PageList = () => {
                         <button
                           onClick={() =>
                             router.push(
-                              `/admin/edit-news-and-event?sid=${event?.sid}`
+                              `/admin/edit-page?page_id=${event?.page_id}`
                             )
                           }
                           className="bg-yellow-500 text-white px-4 py-2 rounded-md"
