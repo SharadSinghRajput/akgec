@@ -3,6 +3,9 @@
 import React, { useState } from "react";
 import PageDetailsForm from "./PageDetails";
 import { API_NODE_URL } from "@/configs/config";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const CreateCirculer = () => {
   const [showPageDetails, setShowPageDetails] = useState(false);
@@ -78,15 +81,15 @@ const CreateCirculer = () => {
 
   const handleAddClick = async () => {
     if (!pageType) {
-      alert("Please select page type");
+      toast.warning("Please select page type");
       return;
     }
     if (!selectedPage) {
-      alert("Please select a parent page.");
+      toast.warning("Please select a parent page.");
       return;
     }
     if (!title) {
-      alert("Please enter a title.");
+      toast.warning("Please enter a title.");
       return;
     }
 
@@ -108,16 +111,21 @@ const CreateCirculer = () => {
       const result = await response.json();
       if (result.status) {
         setAllData(result?.data);
-        alert("Add Page Successfully");
+        toast.success("Page added Successfully");
+        setTimeout(() => {
+          setShowPageDetails(true);
+        }, 1000);
+      } else if(result.message === 'Slug already exists'){
+        setAllData({});
+        toast.warning("Page already exists")
       } else {
         setAllData({});
-        alert("Failed to Add Page");
+        toast.error("Failed to Add Page");
       }
     } catch (err) {
       console.error("Error: ", err);
+      toast.error("An error occurred while processing your request.");
     }
-
-    setShowPageDetails(true);
   };
 
   return (
@@ -244,6 +252,7 @@ const CreateCirculer = () => {
       {showPageDetails && (
         <PageDetailsForm allData={allData} parentPage={selectedPage} />
       )}
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover/>
     </div>
   );
 }

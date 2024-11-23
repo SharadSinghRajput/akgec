@@ -24,7 +24,7 @@ const placement4 = [
 export default function PlacementHighlights() {
     return (
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 max-sm:gap-2 h-auto">
-            <div className="flex flex-col justify-center p-5 md:p-10 lg:p-16 bg-BG14 bg-center bg-cover text-white bg-black bg-blend-multiply bg-opacity-50">
+            <div className="flex flex-col justify-center p-5 md:p-10 lg:p-16 bg-BG14 bg-center bg-cover text-white bg-black bg-blend-multiply bg-opacity-75">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-novaLight">
                     <span className='font-novaSemi bg-gradient-to-r from-green-500 to-indigo-400 bg-clip-text text-transparent animate-gradient'>Placements</span> Overview
                 </h2>

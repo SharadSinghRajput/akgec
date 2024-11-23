@@ -1,12 +1,17 @@
 "use client";
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
-// import ReactQuill from 'react-quill'; // Import React Quill
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
-import "react-quill/dist/quill.snow.css"; // Import styles
+import "react-quill/dist/quill.snow.css";
 import { API_NODE_URL } from "@/configs/config";
-export default function PageDetailsForm({ allData, parentPage }) {
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
+
+export default function PageDetailsForm({ allData, parentPage }) {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     page_id: allData?.page_id,
     parent_id: allData?.parent_id,
@@ -111,7 +116,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
   const insertPage = async () => {
 
     console.log(formData);
-    
+
     try {
       const response = await fetch(`${API_NODE_URL}slug/update`, {
         method: "POST",
@@ -123,24 +128,27 @@ export default function PageDetailsForm({ allData, parentPage }) {
       const data = await response.json();
 
       console.log(data);
-      
+
       const fetchedPages = data.data.pages || [];
 
       console.log(fetchedPages);
-      
+
       if (data.status) {
-        alert("Page Inserted Successfully ");
+        toast.success("Page inserted Successfully");
+        setTimeout(() => {
+          router.push("/admin/list-news-event");
+        }, 2000);
       } else {
-        alert("Something went wrong : ", fetchedPages?.message);
+        toast.error(`Something went wrong: ${fetchedPages?.message}`);
       }
     } catch (error) {
       console.error("Error fetching parent pages:", error);
+      toast.error("An error occurred while processing your request.");
     }
   };
   const handleSubmit = (e) => {
     e.preventDefault();
     insertPage();
-
   };
 
   return (
@@ -229,9 +237,8 @@ export default function PageDetailsForm({ allData, parentPage }) {
                   className="w-full p-2 border rounded"
                 >
                   <option value="">Select Page Type</option>
-                  <option value="Page">Page</option>
-                  <option value="Admission">Admission</option>
-                  <option value="Article">Article</option>
+                  <option value="News">News</option>
+                  <option value="Event">Event</option>
                 </select>
               </div>
             </div>
@@ -770,6 +777,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
           Submit
         </button>
       </div>
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="colored"/>
     </form>
   );
 }

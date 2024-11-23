@@ -75,7 +75,7 @@ export default function About() {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center flex items-end pb-10 justify-center"
           style={{
-            backgroundImage: "url('/image/about/about1.jpg')",
+            backgroundImage: "url('/image/building/building2.webp')",
           }}
         >
           <div className="absolute inset-0 bg-[#2240c5] opacity-70"></div>
@@ -115,7 +115,7 @@ export default function About() {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/image/about/about2.jpg')",
+            backgroundImage: "url('/image/building/building3.webp')",
           }}
         >
           <div className="absolute inset-0 bg-[#28bcc7] opacity-70"></div>
@@ -204,7 +204,7 @@ export default function About() {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/image/about/about3.jpg')",
+            backgroundImage: "url('/image/building/building4.webp')",
           }}
         >
           <div className="absolute inset-0 bg-[#511ea3] opacity-70"></div>
@@ -289,7 +289,7 @@ export default function About() {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/image/about/about4.jpg')",
+            backgroundImage: "url('/image/building/building10.webp')",
           }}
         >
           <div className="absolute inset-0 bg-[#c78f28] opacity-70"></div>
@@ -355,7 +355,7 @@ export default function About() {
         <div
           className="absolute inset-0 z-0 bg-cover bg-center "
           style={{
-            backgroundImage: "url('/image/about/about5.jpg')",
+            backgroundImage: "url('/image/building/building5.webp')",
           }}
         >
           <div className="absolute inset-0 bg-[#23aa98] opacity-80"></div>

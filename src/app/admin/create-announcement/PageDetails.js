@@ -1,12 +1,17 @@
 "use client";
+
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
-// import ReactQuill from 'react-quill'; // Import React Quill
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
-import "react-quill/dist/quill.snow.css"; // Import styles
+import "react-quill/dist/quill.snow.css";
 import { API_NODE_URL } from "@/configs/config";
-export default function PageDetailsForm({ allData, parentPage }) {
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import { useRouter } from "next/navigation";
 
+export default function PageDetailsForm({ allData, parentPage }) {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     page_id: allData?.page_id,
     parent_id: allData?.parent_id,
@@ -121,20 +126,18 @@ export default function PageDetailsForm({ allData, parentPage }) {
         body: JSON.stringify(formData),
       });
       const data = await response.json();
-
-      console.log(data);
-      
-      const fetchedPages = data.data.pages || [];
-
-      console.log(fetchedPages);
       
       if (data.status) {
-        alert("Page Inserted Successfully ");
+        toast.success("Page inserted Successfully");
+        setTimeout(() => {
+          router.push("/admin/announcement-list");
+        }, 2000);
       } else {
-        alert("Something went wrong : ", fetchedPages?.message);
+        toast.error(`Something went wrong: ${data?.message}`);
       }
     } catch (error) {
       console.error("Error fetching parent pages:", error);
+      toast.error("An error occurred while processing your request.");
     }
   };
   const handleSubmit = (e) => {
@@ -770,6 +773,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
           Submit
         </button>
       </div>
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover/>
     </form>
   );
 }

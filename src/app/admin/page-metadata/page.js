@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="flex bg-gray-100">
         <SideBar />
-        <div className="pt-16 px-10 overflow-x-auto w-full h-screen">
+        <div className="pt-10 px-10 overflow-x-auto w-full h-screen">
           <PageMetaForm />
         </div>
       </div>

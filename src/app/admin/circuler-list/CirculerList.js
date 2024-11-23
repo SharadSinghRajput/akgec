@@ -2,85 +2,71 @@
 import React, { useEffect, useState } from "react";
 import { API_NODE_URL } from "@/configs/config";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const CirculerList = () => {
   const router = useRouter();
   const [newsAndEvents, setNewsAndEvents] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `${API_NODE_URL}slug/getbytype?type=Circuler`
-        );
-        const data = await response.json();
-        console.log(data);
-        setNewsAndEvents(data.data || []);
-      } catch (error) {
-        console.error("Error fetching news and events:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        `${API_NODE_URL}slug/getbytype?type=Circuler`
+      );
+      const data = await response.json();
+      console.log(data);
+      setNewsAndEvents(data.data || []);
+    } catch (error) {
+      console.error("Error fetching news and events:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchData();
   }, []);
 
-  // const handleDelete = async (id) => {
-  //   if (window.confirm("Are you sure you want to delete this event?")) {
-  //     try {
-  //       const response = await fetch(
-  //         `${API_NODE_URL}news-and-event/delete/${id}`,
-  //         {
-  //           method: "DELETE",
-  //         }
-  //       );
-  //       const data = await response.json();
-  //       if (data.status) {
-  //         setNewsAndEvents(newsAndEvents.filter((event) => event.id !== id));
-  //         alert(data.message || "Event deleted successfully!");
-  //       } else {
-  //         alert("Failed to delete event.");
-  //       }
-  //     } catch (error) {
-  //       console.error("Error deleting event:", error);
-  //       alert("Failed to delete event.");
-  //     }
-  //   }
-  // };
+  const handleDelete = async (event) => {
+    try {
+      const response = await fetch(`${API_NODE_URL}slug/update`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ page_id: event.page_id, name: event.name, status: false, deleteflag: true }),
+      });
+      const data = await response.json();
+      console.log(data);
+
+      if (data.status) {
+        toast.success("Page deleted successfully!");
+        fetchData();
+      } else {
+        toast.error("Failed to delete event.");
+      }
+    } catch (error) {
+      console.error("Error deleting event:", error);
+      toast.error("Failed to delete event.");
+    }
+  };
+
   return (
-    <div className="w-full pr-10">
+    <div className="w-full">
       <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex text-white items-center space-x-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-list"
-            >
-              <line x1="8" y1="6" x2="21" y2="6" />
-              <line x1="8" y1="12" x2="21" y2="12" />
-              <line x1="8" y1="18" x2="21" y2="18" />
-              <circle cx="4" cy="6" r="1" />
-              <circle cx="4" cy="12" r="1" />
-              <circle cx="4" cy="18" r="1" />
-            </svg>
-
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-list"> <line x1="8" y1="6" x2="21" y2="6" /><line x1="8" y1="12" x2="21" y2="12" /><line x1="8" y1="18" x2="21" y2="18" /><circle cx="4" cy="6" r="1" /><circle cx="4" cy="12" r="1" /><circle cx="4" cy="18" r="1" /></svg>
             <h2 className="font-novaSemi text-xl text-white tracking-wide">
               Circuler List
             </h2>
           </div>
         </div>
       </div>
-      <div className=" bg-white rounded-lg shadow-md p-6">
+      <div className="overflow-y-auto h-[85vh] bg-white rounded-lg shadow-md p-6">
         {loading ? (
           <p>Loading...</p>
         ) : (
@@ -107,7 +93,7 @@ const CirculerList = () => {
                         />
                       </td> */}
                     <td className="border px-4 py-2">{event.name}</td>
-                    <td className="border px-4 py-2">{event.shortDesc}</td>
+                    <td className="border px-4 py-2" dangerouslySetInnerHTML={{ __html: event.shortdesc }}></td>
                     <td className="border px-4 py-2">
                       {event?.date?.split("T")[0]}
                     </td>
@@ -116,50 +102,22 @@ const CirculerList = () => {
                       {event.status ? "Active" : "Inactive"}
                     </td>
                     <td className="border px-4 py-2">
-                      <div className="flex justify-start space-x-2">
+                      <div className="flex justify-center space-x-2">
                         <button
                           onClick={() =>
                             router.push(
-                              `/admin/edit-news-and-event?sid=${event?.sid}`
+                              `/admin/edit-circuler?page_id=${event?.page_id}`
                             )
                           }
-                          className="bg-yellow-500 text-white px-4 py-2 rounded-md"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="lucide lucide-pencil"
-                          >
-                            <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
-                            <path d="m15 5 4 4" />
-                          </svg>
+                          className="bg-green-500 text-black px-3 py-1 rounded-xl flex items-center gap-1 hover:scale-90 transition duration-200 ease-in-out">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-pencil"> <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg>
+                          Edit
                         </button>
                         <button
-                          disabled
-                          onClick={() => handleDelete(event.id)}
-                          className="bg-red-500 text-white px-4 py-2 rounded-md"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            className="w-5 h-5 text-white"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M6 18L18 6M6 6l12 12"
-                            />
-                          </svg>
+                          onClick={() => handleDelete(event)}
+                          className="bg-red-500 text-white px-3 py-1 rounded-xl flex items-center gap-1 hover:scale-90 transition duration-200 ease-in-out">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                          Delete
                         </button>
                       </div>
                     </td>
@@ -176,6 +134,7 @@ const CirculerList = () => {
           </table>
         )}
       </div>
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
     </div>
   );
 };

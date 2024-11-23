@@ -3,6 +3,9 @@
 import React, { useState } from "react";
 import PageDetailsForm from "./PageDetails";
 import { API_NODE_URL } from "@/configs/config";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const CreateCirculer = () => {
   const [showPageDetails, setShowPageDetails] = useState(false);
@@ -77,16 +80,16 @@ const CreateCirculer = () => {
   };
 
   const handleAddClick = async () => {
-    if (!pageType) {
-      alert("Please select page type");
-      return;
-    }
     if (!selectedPage) {
-      alert("Please select a parent page.");
+      toast.warning("Please select a parent page.");
       return;
     }
     if (!title) {
-      alert("Please enter a title.");
+      toast.warning("Please enter a title.");
+      return;
+    }
+    if (!pageType) {
+      toast.warning("Please select page type");
       return;
     }
 
@@ -108,16 +111,21 @@ const CreateCirculer = () => {
       const result = await response.json();
       if (result.status) {
         setAllData(result?.data);
-        alert("Add Page Successfully");
+        toast.success("Page added Successfully");
+        setTimeout(() => {
+          setShowPageDetails(true);
+        }, 1000);
+      } else if(result.message === 'Slug already exists'){
+        setAllData({});
+        toast.warning("Page already exists")
       } else {
         setAllData({});
-        alert("Failed to Add Page");
+        toast.error("Failed to Add Page");
       }
     } catch (err) {
       console.error("Error: ", err);
+      toast.error("An error occurred while processing your request.");
     }
-
-    setShowPageDetails(true);
   };
 
   return (
@@ -127,7 +135,7 @@ const CreateCirculer = () => {
           <div className="flex text-white items-center space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-add"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
             <h2 className="font-novaSemi text-xl text-white tracking-wide">
-              Add Circuler
+              Add Announcement
             </h2>
           </div>
         </div>
@@ -244,6 +252,7 @@ const CreateCirculer = () => {
       {showPageDetails && (
         <PageDetailsForm allData={allData} parentPage={selectedPage} />
       )}
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover/>
     </div>
   );
 }

@@ -1,11 +1,12 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import PageDetailsForm from "./PageDetails"; // Ensure this points to the correct path
+
+import React, { useState } from "react";
+import PageDetailsForm from "./PageDetails";
 import { API_NODE_URL } from "@/configs/config";
-import { useRouter } from "next/navigation";
-import SideBar from "../Components/SideBar";
-function CreatePage({ setActiveBtn }) {
-  const router = useRouter();
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+function CreatePage() {
   const [showPageDetails, setShowPageDetails] = useState(false);
   const [allPages, setAllPages] = useState([]); // To hold all pages from API
   const [displayedPages, setDisplayedPages] = useState([]); // To hold currently displayed pages
@@ -109,16 +110,21 @@ function CreatePage({ setActiveBtn }) {
       const result = await response.json();
       if (result.status) {
         setAllData(result?.data);
-        alert("Add Page Successfully");
+        toast.success("Page added Successfully");
+        setTimeout(() => {
+          setShowPageDetails(true);
+        }, 1000);
+      } else if(result.message === 'Slug already exists'){
+        setAllData({});
+        toast.warning("Page already exists")
       } else {
         setAllData({});
-        alert("Failed to Add Page");
+        toast.error("Failed to Add Page");
       }
     } catch (err) {
       console.error("Error: ", err);
+      toast.error("An error occurred while processing your request.");
     }
-
-    setShowPageDetails(true);
   };
 
   return (
@@ -247,6 +253,7 @@ function CreatePage({ setActiveBtn }) {
       {showPageDetails && (
         <PageDetailsForm allData={allData} parentPage={selectedPage} />
       )}
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover/>
     </div>
   );
 }

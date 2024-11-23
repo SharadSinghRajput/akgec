@@ -66,7 +66,7 @@ const NotificationSlider = () => {
                         <div className="grid grid-cols-12 h-full">
                             <div className="col-span-2 max-sm:hidden p-2 flex justify-center items-center">
                                 <img
-                                    src="https://www.akgec.ac.in/wp-content/themes/twentysixteen/img/AKGEC_1_0.png"
+                                    src="/image/company-logos/Akgec.png"
                                     alt="UNA Logo"
                                     className="w-28 aspect-square"
                                 />
@@ -79,7 +79,7 @@ const NotificationSlider = () => {
                             <div className="col-span-5 max-sm:col-span-7">
                                 <img
                                     className="rounded-xl max-2xl:h-full h-full w-full ml-auto max-lg:w-full max-lg:ml-0 object-cover"
-                                    src="/image/ajay-kumar-garg-750x375-1.jpg"
+                                    src="/image/building/building8.webp"
                                     alt="UNA Background"
                                 />
                             </div>

@@ -3,6 +3,9 @@
 import React, { useState, useEffect } from "react";
 import { API_NODE_URL } from "@/configs/config";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function PageMetaForm() {
   const router = useRouter();
@@ -19,8 +22,6 @@ function PageMetaForm() {
   const [hasMore, setHasMore] = useState(true);
 
   const fetchPages = async (searchTerm = "") => {
-    console.log(searchTerm);
-
     try {
       const response = await fetch(`${API_NODE_URL}slug/getParents`, {
         method: "POST",
@@ -30,10 +31,8 @@ function PageMetaForm() {
         body: JSON.stringify({ query: searchTerm, page: 1, limit: 10 }),
       });
       const data = await response.json();
-      console.log(data);
 
       const fetchedPages = data?.data?.pages || [];
-      console.log(fetchedPages);
 
       const filteredPages = fetchedPages.filter(page => page.page_id !== 0);
 
@@ -88,7 +87,7 @@ function PageMetaForm() {
     e.preventDefault();
 
     if (!selectedPage) {
-      alert("Please select a page.");
+      toast.warning("Please select a page.");
       return;
     }
 
@@ -111,24 +110,25 @@ function PageMetaForm() {
       console.log(data);
 
       if (data.status) {
-        alert(data.message);
+        toast.success(data.message);
+        setTimeout(() => {
+          router.push('/admin/page-metadata-list');
+        }, 2000);
       } else {
-        alert(data.message || "Error updating metadata.");
+        toast.error(data.message || "Error updating metadata.");
       }
     } catch (error) {
       console.error("Error add metadata:", error);
-      alert(data.message);
+      toast.error(data.message);
     }
   };
 
   const handleKeywordKeyPress = (e) => {
     if (e.key === "Enter" && e.target.value.trim() !== "") {
       const newKeyword = e.target.value.trim();
-
       if (!metaKeywords.includes(newKeyword)) {
         setMetaKeywords((prevKeywords) => [...prevKeywords, newKeyword]);
       }
-
       e.target.value = "";
     }
   };
@@ -150,7 +150,7 @@ function PageMetaForm() {
         </div>
       </div>
       <div className="max-w-md">
-        <div className="m-10 mx-auto bg-white shadow-md rounded-2xl p-6">
+        <div className="mx-auto bg-white shadow-md rounded-2xl p-6">
           <h2 className="text-2xl font-bold mb-6">Page Metadata</h2>
           <form className="space-y-4">
             <div className="relative">
@@ -286,6 +286,7 @@ function PageMetaForm() {
           </form>
         </div>
       </div>
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover/>
     </div>
   );
 }

@@ -10,21 +10,21 @@ const posts = [
         title: 'Master of Computer Applications (MCA)',
         href: '#',
         description: 'MCA',
-        imageUrl: '/image/b.tech_.jpg',
+        imageUrl: '/image/building/building6.webp',
     },
     {
         id: 2,
         title: 'Bachelor of Technology (B.Tech)',
         href: '#',
         description: 'CSE, CS, CS&IT, CSE (AI&ML), CSE (DS),CSE',
-        imageUrl: '/image/voc.jpg',
+        imageUrl: '/image/building/building7.webp',
     },
     {
         id: 3,
         title: 'Master of Technology (M.Tech)',
         href: '#',
         description: 'CSE, ECE, EN, ME',
-        imageUrl: '/image/MCA_300X150.jpg',
+        imageUrl: '/image/building/building4.webp',
     },
 ];
 
@@ -36,7 +36,7 @@ export default function ExploreCourses() {
                     Explore Our <span className='font-novaSemi bg-gradient-to-r from-red-300 to-teal-500 bg-clip-text text-transparent animate-gradient'>Courses</span>
                 </h2>
                 <p className="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl lg:text-[22px] leading-snug text-gray-200 mx-auto max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-screen-lg font-novaLight text-center">
-                    Ajay Kumar Garg University consistently excels in academics and placements. It stands out as the first and only institution in UP to receive the Academic Excellence Award for Best University in UPTU from the Governor of UP for two consecutive years.
+                Discover a wide range of courses at Ajay Kumar Garg University, designed to empower students with practical skills and in-depth knowledge for a successful career. Explore programs tailored to meet industry demands and ignite your passion for learning!
                 </p>
                 <div className="my-5 mx-auto max-w-6xl">
                     <dl className="grid grid-cols-2 gap-4 text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
