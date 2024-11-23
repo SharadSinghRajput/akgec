@@ -234,9 +234,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
                   className="w-full p-2 border rounded"
                 >
                   <option value="">Select Page Type</option>
-                  <option value="Page">Page</option>
-                  <option value="Admission">Admission</option>
-                  <option value="Article">Article</option>
+                  <option value="Circuler">Circuler</option>
                 </select>
               </div>
             </div>
