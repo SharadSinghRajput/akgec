@@ -18,7 +18,7 @@ const PageList = () => {
       );
       const data = await response.json();
       console.log(data);
-      
+
       setNewsAndEvents(data.data || []);
     } catch (error) {
       console.error("Error fetching news and events:", error);
@@ -32,30 +32,42 @@ const PageList = () => {
   }, []);
 
   const handleDelete = async (event) => {
-    try {
-      const response = await fetch(`${API_NODE_URL}slug/update`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ page_id: event.page_id, name: event.name, status: false, deleteflag: true }),
-      });
-      const data = await response.json();
-      console.log(data);
-      
-      if (data.status) {
-        toast.success("Page deleted successfully!");
-        fetchData();
-      } else {
+      const progressBar = document.getElementById("progress-bar");
+
+      try {
+        progressBar.style.width = "0%";
+        progressBar.style.transition = "none";
+        requestAnimationFrame(() => {
+          progressBar.style.transition = "width 0.5s ease";
+          progressBar.style.width = "100%";
+        });
+
+        const response = await fetch(`${API_NODE_URL}slug/update`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ page_id: event.page_id, name: event.name, status: false, deleteflag: true }),
+        });
+        const data = await response.json();
+        console.log(data);
+
+        if (data.status) {
+          toast.success("Page deleted successfully!");
+          fetchData();
+        } else {
+          toast.error("Failed to delete event.");
+        }
+      } catch (error) {
+        console.error("Error deleting event:", error);
         toast.error("Failed to delete event.");
+      } finally {
+        progressBar.style.width = "0%";
       }
-    } catch (error) {
-      console.error("Error deleting event:", error);
-      toast.error("Failed to delete event.");
-    }
   };
   return (
     <div className="w-full">
+      <div id="progress-bar" className="fixed top-0 left-0 h-1 bg-red-500 z-50"></div>
       <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex text-white items-center space-x-3">
@@ -121,7 +133,7 @@ const PageList = () => {
                       {event.status ? "Active" : "Inactive"}
                     </td>
                     <td className="border px-4 py-2">
-                    <div className="flex justify-center space-x-2">
+                      <div className="flex justify-center space-x-2">
                         <button
                           onClick={() =>
                             router.push(
@@ -135,7 +147,7 @@ const PageList = () => {
                         <button
                           onClick={() => handleDelete(event)}
                           className="bg-red-600 text-white px-3 py-1 rounded-xl flex items-center gap-1 hover:scale-90 transition duration-200 ease-in-out">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
                           Delete
                         </button>
                       </div>
@@ -153,7 +165,7 @@ const PageList = () => {
           </table>
         )}
       </div>
-      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover/>
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
     </div>
   );
 };

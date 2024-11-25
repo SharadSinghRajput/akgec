@@ -32,7 +32,16 @@ const CirculerList = () => {
   }, []);
 
   const handleDelete = async (event) => {
+    const progressBar = document.getElementById("progress-bar");
+
     try {
+      progressBar.style.width = "0%";
+      progressBar.style.transition = "none";
+      requestAnimationFrame(() => {
+        progressBar.style.transition = "width 0.5s ease";
+        progressBar.style.width = "100%";
+      });
+
       const response = await fetch(`${API_NODE_URL}slug/update`, {
         method: "POST",
         headers: {
@@ -52,11 +61,14 @@ const CirculerList = () => {
     } catch (error) {
       console.error("Error deleting event:", error);
       toast.error("Failed to delete event.");
+    } finally {
+      progressBar.style.width = "0%";
     }
   };
 
   return (
     <div className="w-full">
+      <div id="progress-bar" className="fixed top-0 left-0 h-1 bg-red-500 z-50"></div>
       <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex text-white items-center space-x-3">
@@ -129,7 +141,7 @@ const CirculerList = () => {
                         <button
                           onClick={() => handleDelete(event)}
                           className="bg-red-500 text-white px-3 py-1 rounded-xl flex items-center gap-1 hover:scale-90 transition duration-200 ease-in-out">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
                           Delete
                         </button>
                       </div>

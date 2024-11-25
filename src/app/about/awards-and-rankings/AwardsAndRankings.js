@@ -33,7 +33,6 @@ const rank = [
         title: <>QS I-Gauge Teaching & Learning<br />-2024</>,
         url: 'Click to Read More'
     },
-
 ];
 
 export default () => {

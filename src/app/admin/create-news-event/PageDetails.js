@@ -114,10 +114,16 @@ export default function PageDetailsForm({ allData, parentPage }) {
   };
 
   const insertPage = async () => {
-
-    console.log(formData);
+    const progressBar = document.getElementById("progress-bar");
 
     try {
+      progressBar.style.width = "0%";
+      progressBar.style.transition = "none";
+      requestAnimationFrame(() => {
+        progressBar.style.transition = "width 0.5s ease";
+        progressBar.style.width = "100%";
+      });
+
       const response = await fetch(`${API_NODE_URL}slug/update`, {
         method: "POST",
         headers: {
@@ -144,6 +150,8 @@ export default function PageDetailsForm({ allData, parentPage }) {
     } catch (error) {
       console.error("Error fetching parent pages:", error);
       toast.error("An error occurred while processing your request.");
+    } finally {
+      progressBar.style.width ="0%";
     }
   };
   const handleSubmit = (e) => {
@@ -156,6 +164,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
       onSubmit={handleSubmit}
       className="max-w-7xl p-6 bg-white shadow-lg rounded-lg"
     >
+      <div id="progress-bar" className="fixed top-0 left-0 h-1 bg-red-500 z-50"></div>
       <div className="mb-6 p-4 bg-red-100 text-red-800 rounded-lg cursor-pointer hover:bg-red-200 transition-colors">
         Click Here to Generate Page Meta Using AI (Artificial Intelligence)
       </div>
@@ -777,7 +786,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
           Submit
         </button>
       </div>
-      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="colored"/>
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="colored" />
     </form>
   );
 }

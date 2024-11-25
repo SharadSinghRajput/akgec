@@ -99,7 +99,16 @@ const CreateCirculer = () => {
       type: pageType,
     };
 
+    const progressBar = document.getElementById("progress-bar");
+
     try {
+      progressBar.style.width = "0%";
+      progressBar.style.transition = "none";
+      requestAnimationFrame(() => {
+        progressBar.style.transition = "width 0.5s ease";
+        progressBar.style.width = "100%";
+      });
+
       const response = await fetch(`${API_NODE_URL}slug/add`, {
         method: "POST",
         headers: {
@@ -115,7 +124,7 @@ const CreateCirculer = () => {
         setTimeout(() => {
           setShowPageDetails(true);
         }, 1000);
-      } else if(result.message === 'Slug already exists'){
+      } else if (result.message === 'Slug already exists') {
         setAllData({});
         toast.warning("Page already exists")
       } else {
@@ -125,11 +134,14 @@ const CreateCirculer = () => {
     } catch (err) {
       console.error("Error: ", err);
       toast.error("An error occurred while processing your request.");
+    } finally {
+      progressBar.style.width = "0%";
     }
   };
 
   return (
     <div className="w-full">
+      <div id="progress-bar" className="fixed top-0 left-0 h-1 bg-red-500 z-50"></div>
       <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex text-white items-center space-x-3">
@@ -252,7 +264,7 @@ const CreateCirculer = () => {
       {showPageDetails && (
         <PageDetailsForm allData={allData} parentPage={selectedPage} />
       )}
-      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover/>
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
     </div>
   );
 }

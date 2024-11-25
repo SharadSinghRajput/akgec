@@ -3,10 +3,11 @@
 import React, { useState } from "react";
 import PageDetailsForm from "./PageDetails";
 import { API_NODE_URL } from "@/configs/config";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
-function CreatePage() {
+const CreateHighlightBanner = () => {
   const [showPageDetails, setShowPageDetails] = useState(false);
   const [allPages, setAllPages] = useState([]); // To hold all pages from API
   const [displayedPages, setDisplayedPages] = useState([]); // To hold currently displayed pages
@@ -80,19 +81,17 @@ function CreatePage() {
 
   const handleAddClick = async () => {
     if (!pageType) {
-      alert("Please select page type");
+      toast.warning("Please select page type");
       return;
     }
     if (!selectedPage) {
-      alert("Please select a parent page.");
+      toast.warning("Please select a parent page.");
       return;
     }
     if (!title) {
-      alert("Please enter a title.");
+      toast.warning("Please enter a title.");
       return;
     }
-
-    const progressBar = document.getElementById("progress-bar");
 
     const payload = {
       parent_id: selectedPage?.page_id,
@@ -100,8 +99,9 @@ function CreatePage() {
       type: pageType,
     };
 
-    try {
+    const progressBar = document.getElementById("progress-bar");
 
+    try {
       progressBar.style.width = "0%";
       progressBar.style.transition = "none";
       requestAnimationFrame(() => {
@@ -147,7 +147,7 @@ function CreatePage() {
           <div className="flex text-white items-center space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-add"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
             <h2 className="font-novaSemi text-xl text-white tracking-wide">
-              Add New Page
+              Add Highlight Banner
             </h2>
           </div>
         </div>
@@ -158,8 +158,7 @@ function CreatePage() {
             <div className="relative">
               <label
                 htmlFor="parent-page"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+                className="block text-sm font-medium text-gray-700 mb-1">
                 Choose Parent Page
               </label>
               <input
@@ -231,9 +230,7 @@ function CreatePage() {
                 className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="">Select Page Type</option>
-                <option value="Page">Page</option>
-                <option value="Admission">Admission</option>
-                <option value="Article">Article</option>
+                <option value="Highlight Banner">Highlight Banner</option>
               </select>
             </div>
 
@@ -271,4 +268,4 @@ function CreatePage() {
   );
 }
 
-export default CreatePage;
+export default CreateHighlightBanner;

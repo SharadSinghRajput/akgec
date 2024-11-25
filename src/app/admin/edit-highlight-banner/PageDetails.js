@@ -1,93 +1,245 @@
 "use client";
-
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+// import ReactQuill from 'react-quill'; // Import React Quill
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
-import "react-quill/dist/quill.snow.css";
+import "react-quill/dist/quill.snow.css"; // Import styles
 import { API_NODE_URL } from "@/configs/config";
-import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import { useRouter } from "next/navigation";
 
-export default function PageDetailsForm({ allData, parentPage }) {
+export default function PageDetailsForm({ page_id }) {
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({
-    page_id: allData?.page_id,
-    parent_id: allData?.parent_id,
-    languageId: 1,
+    page_id: "",
+    parent_id: "",
+    languageId: "",
     price: "",
-    name: allData?.name,
-    parentPage: parentPage?.name,
-    pageTitle: allData?.name,
-    date: new Date(allData?.date).toISOString().split("T")[0],
+    name: "",
+    parentPage: "",
+    name: "",
+    date: "",
     shortdesc: "",
     description: "",
     param1: "",
     paramvalue1: "",
-    param_img1: null,
+    param_img1: "",
     param_url1: "",
     param2: "",
     paramvalue2: "",
-    param_img2: null,
+    param_img2: "",
     param_url2: "",
     param3: "",
     paramvalue3: "",
-    param_img3: null,
+    param_img3: "",
     param_url3: "",
     param4: "",
     paramvalue4: "",
-    param_img4: null,
+    param_img4: "",
     param_url4: "",
     param5: "",
     paramvalue5: "",
-    param_img5: null,
+    param_img5: "",
     param_url5: "",
     param6: "",
     paramvalue6: "",
-    param_img6: null,
+    param_img6: "",
     param_url6: "",
     param7: "",
     paramvalue7: "",
-    param_img7: null,
+    param_img7: "",
     param_url7: "",
     param8: "",
     paramvalue8: "",
-    param_img8: null,
+    param_img8: "",
     param_url8: "",
     param9: "",
     paramvalue9: "",
-    param_img9: null,
+    param_img9: "",
     param_url9: "",
     param10: "",
     paramvalue10: "",
-    param_img10: null,
+    param_img10: "",
     param_url10: "",
-    banner_img: null,
+    banner_img: "",
     tag1: "",
     tag2: "",
     tag3: "",
     schemaid: "",
     nic_name: "",
-    featured_img: null,
+    featured_img: "",
     col_width: "",
     video_url: "",
     old_url: "",
     featured_status: "",
-    highlightBanner: null,
+    highlightBanner: "",
     galleryimg: [],
-    type: allData?.type,
-    mainReportImage: null,
+    type: "",
+    mainReportImage: "",
     metatitle: "",
     metadesc: "",
     keywords_tag: "",
   });
 
+  const fetchParent = async (parent_id) => {
+    if (parent_id) {
+      try {
+        const response = await fetch(`${API_NODE_URL}slug/getbyid?page_id=${parent_id}`);
+        const result = await response.json();
+        console.log("Parent Page Name:", result?.data?.name);
+        return result?.data?.name || "";
+      } catch (err) {
+        console.error("Error fetching parent:", err);
+        return "";
+      }
+    }
+    return "";
+  };
+
+
+  useEffect(() => {
+    if (!page_id) return;
+
+    const fetchPageData = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `${API_NODE_URL}slug/getbyid?page_id=${page_id}`
+        );
+        const data = await response.json();
+        console.log(data);
+
+        if (data.status) {
+          const parent_id = data?.data?.parent_id;
+          const parentPageName =
+            parent_id !== 0 ? await fetchParent(parent_id) : data?.data?.name;
+
+          setFormData({
+            page_id: data?.data?.page_id || "",
+            parent_id: data?.data?.parent_id != 0 ? data?.data?.parent_id : 0,
+            languageId: data?.data?.languageId || 1,
+            price: data?.data?.price || "",
+            name: data?.data?.name || "",
+            parentPage: parentPageName,
+            name: data.data.name || "",
+            date: data.data.date ? new Date(data.data.date).toISOString().split("T")[0] : "",
+            shortdesc: data?.data?.shortdesc || "",
+            description: data?.data?.description || "",
+
+            param1: data?.data?.param1 || "",
+            paramvalue1: data?.data?.paramvalue1 || "",
+            param_img1: data?.data?.param_img1 || "",
+            param_url1: data?.data?.param_url1 || "",
+
+            param2: data?.data?.param2 || "",
+            paramvalue2: data?.data?.paramvalue2 || "",
+            param_img2: data?.data?.param_img2 || "",
+            param_url2: data?.data?.param_url2 || "",
+
+            param3: data?.data?.param3 || "",
+            paramvalue3: data?.data?.paramvalue3 || "",
+            param_img3: data?.data?.param_img3 || "",
+            param_url3: data?.data?.param_url3 || "",
+
+            param4: data?.data?.param4 || "",
+            paramvalue4: data?.data?.paramvalue4 || "",
+            param_img4: data?.data?.param_img4 || "",
+            param_url4: data?.data?.param_url4 || "",
+
+            param5: data?.data?.param5 || "",
+            paramvalue5: data?.data?.paramvalue5 || "",
+            param_img5: data?.data?.param_img5 || "",
+            param_url5: data?.data?.param_url5 || "",
+
+            param6: data?.data?.param6 || "",
+            paramvalue6: data?.data?.paramvalue6 || "",
+            param_img6: data?.data?.param_img6 || "",
+            param_url6: data?.data?.param_url6 || "",
+
+            param7: data?.data?.param7 || "",
+            paramvalue7: data?.data?.paramvalue7 || "",
+            param_img7: data?.data?.param_img7 || "",
+            param_url7: data?.data?.param_url7 || "",
+
+            param8: data?.data?.param8 || "",
+            paramvalue8: data?.data?.paramvalue8 || "",
+            param_img8: data?.data?.param_img8 || "",
+            param_url8: data?.data?.param_url8 || "",
+
+            param9: data?.data?.param9 || "",
+            paramvalue9: data?.data?.paramvalue9 || "",
+            param_img9: data?.data?.param_img9 || "",
+            param_url9: data?.data?.param_url9 || "",
+
+            param10: data?.data?.param10 || "",
+            paramvalue10: data?.data?.paramvalue10 || "",
+            param_img10: data?.data?.param_img10 || "",
+            param_url10: data?.data?.param_url10 || "",
+
+            banner_img: data?.data?.banner_img || "",
+            tag1: data?.data?.tag1 || "",
+            tag2: data?.data?.tag2 || "",
+            tag3: data?.data?.tag3 || "",
+            schemaid: data?.data?.schemaid || "",
+            nic_name: data?.data?.nic_name || "",
+            featured_img: data?.data?.featured_img || "",
+            col_width: data?.data?.col_width || "",
+            video_url: data?.data?.video_url || "",
+            old_url: data?.data?.old_url || "",
+            featured_status: data?.data?.featured_status || "",
+            highlightBanner: data?.data?.highlightBanner || "",
+            galleryimg: data.data.galleryimg,
+            type: data.data.type || "",
+            mainReportImage: data?.data?.mainReportImage || "",
+            metatitle: data?.data?.metatitle || "",
+            metadesc: data?.data?.metadesc || "",
+            keywords_tag: data?.data?.keywords_tag || "",
+          });
+
+        } else {
+          alert("Failed to fetch page details.");
+        }
+      } catch (error) {
+        console.error("Error fetching page details:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPageData();
+  }, [page_id]);
+
+  useEffect(() => {
+    console.log(formData);
+
+  }, [formData])
+
+  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
+    }));
+  };
+
+  // Handle file changes
+  const handleFileChange = (e, field) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [field]: e.target.files[0],
+    }));
+  };
+
+  // Handle gallery images
+  const handleGalleryImg = (e, field) => {
+    const files = Array.from(e.target.files);
+    setFormData((prevData) => ({
+      ...prevData,
+      [field]: [...prevData[field], ...files],
     }));
   };
 
@@ -98,31 +250,15 @@ export default function PageDetailsForm({ allData, parentPage }) {
     }));
   };
 
-  const handleFileChange = (e, field) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      [field]: e.target.files[0],
-    }));
-  };
-
-  const handleGalleryImg = (e, field) => {
-    const files = Array.from(e.target.files);
-    setFormData((prevData) => ({
-      ...prevData,
-      [field]: [...prevData[field], ...files],
-    }));
-  };
-
   const insertPage = async () => {
-    const progressBar = document.getElementById("progress-bar");
-    try {
-      progressBar.style.width = "0%";
-      progressBar.style.transition = "none";
-      requestAnimationFrame(() => {
-        progressBar.style.transition = "width 0.5s ease";
-        progressBar.style.width = "100%";
-      });
+    if (!formData) {
+      alert("Form data is not ready!");
+      return;
+    }
 
+    console.log(formData);
+
+    try {
       const response = await fetch(`${API_NODE_URL}slug/update`, {
         method: "POST",
         headers: {
@@ -132,36 +268,36 @@ export default function PageDetailsForm({ allData, parentPage }) {
       });
       const data = await response.json();
 
-      const fetchedPages = data.data.pages || [];
-
       if (data.status) {
-        toast.success("Page inserted Successfully");
+        toast.success("Page edited Successfully");
         setTimeout(() => {
-          router.push("/admin/page-list");
+          router.push("/admin/highlight-banner-list");
         }, 2000);
       } else {
-        toast.error(`Something went wrong: ${fetchedPages?.message}`);
+        toast.error(`Something went wrong: ${data?.message}`);
       }
     } catch (error) {
       console.error("Error fetching parent pages:", error);
       toast.error("An error occurred while processing your request.");
-    } finally {
-      progressBar.style.width = "0%";
     }
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     insertPage();
-
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-7xl p-6 bg-white shadow-lg rounded-lg">
-      <div id="progress-bar" className="fixed top-0 left-0 h-1 bg-red-500 z-50"></div>
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-7xl p-6 bg-white shadow-lg rounded-lg"
+    >
       <div className="mb-6 p-4 bg-red-100 text-red-800 rounded-lg cursor-pointer hover:bg-red-200 transition-colors">
         Click Here to Generate Page Meta Using AI (Artificial Intelligence)
       </div>
+
       <h2 className="text-2xl font-bold mb-6">Add Page Details</h2>
+
       <div className="space-y-6">
         <section>
           <h3 className="text-lg font-semibold mb-4">Basis Detail</h3>
@@ -191,16 +327,16 @@ export default function PageDetailsForm({ allData, parentPage }) {
           <div className="space-y-4">
             <div>
               <label
-                htmlFor="pageTitle"
+                htmlFor="name"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
                 Page Title*
               </label>
               <input
                 type="text"
-                id="pageTitle"
-                name="pageTitle"
-                value={formData.pageTitle}
+                id="name"
+                name="name"
+                value={formData.name}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
               />
@@ -237,9 +373,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
                   className="w-full p-2 border rounded"
                 >
                   <option value="">Select Page Type</option>
-                  <option value="Page">Page</option>
-                  <option value="Admission">Admission</option>
-                  <option value="Article">Article</option>
+                  <option value="Announcement">Announcement</option>
                 </select>
               </div>
             </div>
@@ -258,9 +392,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
               id="shortdesc"
               name="shortdesc"
               value={formData.shortdesc}
-              onChange={(content) =>
-                handleQuillChange(content, "shortdesc")
-              }
+              onChange={(content) => handleQuillChange(content, "shortdesc")}
               className="border rounded"
             />
           </div>
@@ -275,9 +407,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
               id="description"
               name="description"
               value={formData.description}
-              onChange={(content) =>
-                handleQuillChange(content, "description")
-              }
+              onChange={(content) => handleQuillChange(content, "description")}
               className="border rounded"
             />
           </div>
@@ -482,7 +612,9 @@ export default function PageDetailsForm({ allData, parentPage }) {
                 Choose file
               </label>
               <span className="text-sm text-gray-500">
-                {formData.banner_img ? formData.banner_img.name : "No file chosen"}
+                {formData.banner_img
+                  ? formData.banner_img.name
+                  : "No file chosen"}
               </span>
             </div>
           </div>
@@ -581,7 +713,9 @@ export default function PageDetailsForm({ allData, parentPage }) {
                 Choose file
               </label>
               <span className="text-sm text-gray-500">
-                {formData.highlightBanner ? formData.highlightBanner.name : "No file chosen"}
+                {formData.highlightBanner
+                  ? formData.highlightBanner.name
+                  : "No file chosen"}
               </span>
             </div>
           </div>
@@ -600,7 +734,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
               <input
                 type="file"
                 accept="image/webp"
-                multiple // Enable multiple file selection
+                multiple
                 onChange={(e) => handleGalleryImg(e, "galleryimg")}
                 className="hidden"
                 id="galleryimg"
@@ -612,17 +746,14 @@ export default function PageDetailsForm({ allData, parentPage }) {
                 Choose files
               </label>
               <div className="text-sm text-gray-500 mt-2">
-                {formData.galleryimg.length > 0 ? (
-                  formData.galleryimg.map((file, index) => (
+                {formData.galleryimg.length > 0
+                  ? formData.galleryimg.map((file, index) => (
                     <p key={index}>{file.name}</p>
                   ))
-                ) : (
-                  "No files chosen"
-                )}
+                  : "No files chosen"}
               </div>
             </div>
           </div>
-
         </section>
 
         <section>
@@ -729,7 +860,9 @@ export default function PageDetailsForm({ allData, parentPage }) {
                       <input
                         type="file"
                         accept="image/webp"
-                        onChange={(e) => handleFileChange(e, `param_img${paramIndex}`)}
+                        onChange={(e) =>
+                          handleFileChange(e, `param_img${paramIndex}`)
+                        }
                         className="hidden"
                         id={`param_img${paramIndex}`}
                       />
@@ -767,7 +900,6 @@ export default function PageDetailsForm({ allData, parentPage }) {
             })}
           </div>
         </section>
-
       </div>
 
       <div className="mt-6">

@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Home, LogOut, ReplaceAll, CalendarRange, ChevronUp, ChevronDown, RefreshCcwDot, FilePlus2, LayoutDashboard, BellDot } from 'lucide-react'
+import { Home, LogOut, ReplaceAll, CalendarRange, ChevronUp, ChevronDown, RefreshCcwDot, FilePlus2, LayoutDashboard, BellDot, Download, Notebook } from 'lucide-react'
 
 const navLinks = [
     {
@@ -50,7 +50,23 @@ const navLinks = [
             { label: 'Add Announcement', href: '/admin/create-announcement' },
             { label: 'List of Announcement', href: '/admin/announcement-list' }
         ]
-    }
+    },
+    {
+        icon: Download,
+        label: 'Download Center',
+        nestedLinks: [
+            { label: 'Add Download Center', href: '/admin/create-download-center' },
+            { label: 'List of Download Center', href: '/admin/download-center-list' }
+        ]
+    },
+    {
+        icon: Notebook,
+        label: 'Highlight Banner',
+        nestedLinks: [
+            { label: 'Add Highlight Banner', href: '/admin/create-highlight-banner' },
+            { label: 'List of Highlight Banner', href: '/admin/highlight-banner-list' }
+        ]
+    },
 ]
 
 export default function SideBar() {
@@ -95,7 +111,7 @@ export default function SideBar() {
                     </svg>
                 </button>
             </div>
-            <nav className="flex-1">
+            <nav className="flex-1 overflow-y-auto modern-scrollbar">
                 <ul className="p-4 space-y-4">
                     {navLinks.map((item, index) => (
                         <li key={index}>

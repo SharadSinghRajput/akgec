@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
-const CirculerList = () => {
+const HighlightBanner = () => {
   const router = useRouter();
   const [newsAndEvents, setNewsAndEvents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -14,7 +14,7 @@ const CirculerList = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `${API_NODE_URL}slug/getbytype?type=Circuler`
+        `${API_NODE_URL}slug/getbytype?type=Highlight Banner`
       );
       const data = await response.json();
       console.log(data);
@@ -72,7 +72,7 @@ const CirculerList = () => {
           <div className="flex text-white items-center space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-list"> <line x1="8" y1="6" x2="21" y2="6" /><line x1="8" y1="12" x2="21" y2="12" /><line x1="8" y1="18" x2="21" y2="18" /><circle cx="4" cy="6" r="1" /><circle cx="4" cy="12" r="1" /><circle cx="4" cy="18" r="1" /></svg>
             <h2 className="font-novaSemi text-xl text-white tracking-wide">
-              Circuler List
+              Highlight Banner List
             </h2>
           </div>
         </div>
@@ -117,7 +117,7 @@ const CirculerList = () => {
                         <button
                           onClick={() =>
                             router.push(
-                              `/admin/edit-circuler?page_id=${event?.page_id}`
+                              `/admin/edit-highlight-banner?page_id=${event?.page_id}`
                             )
                           }
                           className="bg-green-500 text-black px-3 py-1 rounded-xl flex items-center gap-1 hover:scale-90 transition duration-200 ease-in-out">
@@ -150,4 +150,4 @@ const CirculerList = () => {
   );
 };
 
-export default CirculerList;
+export default HighlightBanner;

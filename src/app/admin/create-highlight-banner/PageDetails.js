@@ -5,10 +5,10 @@ import dynamic from "next/dynamic";
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 import "react-quill/dist/quill.snow.css";
 import { API_NODE_URL } from "@/configs/config";
-import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 export default function PageDetailsForm({ allData, parentPage }) {
   const router = useRouter();
@@ -115,6 +115,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
 
   const insertPage = async () => {
     const progressBar = document.getElementById("progress-bar");
+
     try {
       progressBar.style.width = "0%";
       progressBar.style.transition = "none";
@@ -130,17 +131,16 @@ export default function PageDetailsForm({ allData, parentPage }) {
         },
         body: JSON.stringify(formData),
       });
-      const data = await response.json();
 
-      const fetchedPages = data.data.pages || [];
+      const data = await response.json();
 
       if (data.status) {
         toast.success("Page inserted Successfully");
         setTimeout(() => {
-          router.push("/admin/page-list");
+          router.push("/admin/highlight-banner-list");
         }, 2000);
       } else {
-        toast.error(`Something went wrong: ${fetchedPages?.message}`);
+        toast.error(`Something went wrong: ${data?.message}`);
       }
     } catch (error) {
       console.error("Error fetching parent pages:", error);
@@ -149,19 +149,24 @@ export default function PageDetailsForm({ allData, parentPage }) {
       progressBar.style.width = "0%";
     }
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     insertPage();
-
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-7xl p-6 bg-white shadow-lg rounded-lg">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-7xl p-6 bg-white shadow-lg rounded-lg"
+    >
       <div id="progress-bar" className="fixed top-0 left-0 h-1 bg-red-500 z-50"></div>
       <div className="mb-6 p-4 bg-red-100 text-red-800 rounded-lg cursor-pointer hover:bg-red-200 transition-colors">
         Click Here to Generate Page Meta Using AI (Artificial Intelligence)
       </div>
+
       <h2 className="text-2xl font-bold mb-6">Add Page Details</h2>
+
       <div className="space-y-6">
         <section>
           <h3 className="text-lg font-semibold mb-4">Basis Detail</h3>
@@ -237,9 +242,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
                   className="w-full p-2 border rounded"
                 >
                   <option value="">Select Page Type</option>
-                  <option value="Page">Page</option>
-                  <option value="Admission">Admission</option>
-                  <option value="Article">Article</option>
+                  <option value="Highlight Banner">Highlight Banner</option>
                 </select>
               </div>
             </div>
@@ -735,8 +738,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
                       />
                       <label
                         htmlFor={`param_img${paramIndex}`}
-                        className="bg-blue-500 text-white px-4 py-2 rounded mr-2 cursor-pointer"
-                      >
+                        className="bg-blue-500 text-white px-4 py-2 rounded mr-2 cursor-pointer">
                         Choose file
                       </label>
                       <span className="text-sm text-gray-500">
@@ -749,8 +751,7 @@ export default function PageDetailsForm({ allData, parentPage }) {
                   <div>
                     <label
                       htmlFor={`param_url${paramIndex}`}
-                      className="block text-sm font-medium text-gray-700 mb-1"
-                    >
+                      className="block text-sm font-medium text-gray-700 mb-1">
                       URL
                     </label>
                     <input
@@ -767,14 +768,11 @@ export default function PageDetailsForm({ allData, parentPage }) {
             })}
           </div>
         </section>
-
       </div>
-
       <div className="mt-6">
         <button
           type="submit"
-          className="bg-green-500 text-white py-2 px-6 rounded-xl uppercase font-novaSemi text-sm mt-4 hover:bg-blue-600 hover:scale-105 transition duration-200 ease-linear"
-        >
+          className="bg-green-500 text-white py-2 px-6 rounded-xl uppercase font-novaSemi text-sm mt-4 hover:bg-blue-600 hover:scale-105 transition duration-200 ease-linear">
           Submit
         </button>
       </div>

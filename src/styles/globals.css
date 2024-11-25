@@ -122,3 +122,28 @@
 .Cutout {
   clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
 }
+/* Custom modern scrollbar */
+.modern-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Adjust width for vertical scrollbar */
+}
+
+.modern-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05); /* Subtle light background for the track */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.modern-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark thumb */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Border for spacing effect */
+}
+
+.modern-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6); /* Darker on hover */
+}
+
+/* For Firefox */
+.modern-scrollbar {
+  scrollbar-width: thin; /* Slim scrollbar */
+  scrollbar-color: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.05); /* Thumb and track color */
+}
