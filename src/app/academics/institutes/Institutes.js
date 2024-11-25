@@ -1,14 +1,14 @@
 const institute = [
     {
-        img: "/image/institute/university-school-of-engineering.jpg",
+        img: "/image/lab/ece-circuit-lab.webp",
         text: "School of Computer Science & Engineering",
     },
     {
-        img: "/image/institute/university-school-of-business.jpg",
+        img: "/image/lab/User-Manual-AKGEC 4.webp",
         text: "School of Engineering & Applied Science",
     },
     {
-        img: "/image/institute/university-school-of-computing.jpg",
+        img: "/image/lab/User-Manual-AKGEC 6.webp",
         text: "School of Business Studies",
     },
     // {

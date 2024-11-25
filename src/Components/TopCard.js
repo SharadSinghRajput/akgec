@@ -18,7 +18,7 @@ const TopCard = () => {
                 >
                     <SwiperSlide>
                         <img
-                            src="/image/card-1.webp"
+                            src="/image/card-1.jpg"
                             alt="card-top"
                             className="w-full h-auto border transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                         />
@@ -41,7 +41,7 @@ const TopCard = () => {
                     <div className="flex flex-wrap justify-between gap-2">
                         <div className="grid grid-cols-3">
                             <img
-                                src="/image/card-1.webp"
+                                src="/image/card-1.jpg"
                                 alt="card-top"
                                 className="object-contain transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                             />
@@ -51,7 +51,7 @@ const TopCard = () => {
                                 className="object-contain transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                             />
                             <img
-                                src="/image/card-1.webp"
+                                src="/image/card-1.jpg"
                                 alt="card-top"
                                 className="object-contain transform hover:scale-105 focus:scale-105 transition duration-300 ease-in-out mx-auto"
                             />

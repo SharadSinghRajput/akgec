@@ -15,8 +15,8 @@ const ThreeSlides = ({slides}) => {
                     slidesPerView={3}
                     loop={true}
                     autoplay={{
-                        delay: 3000, // Change this to set the delay between slides
-                        disableOnInteraction: false, // Set to true if you want to stop autoplay after user interactions
+                        delay: 3000,
+                        disableOnInteraction: false,
                     }}
                     navigation={{
                         nextEl: '#slider-button-right',

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import ThreeSlides from "@/Components/ThreeSlides";
 
 const statisticsData = [
@@ -45,13 +44,6 @@ const slides = [
 ];
 
 const Research = () => {
-
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const nextSlide = () => {
-    setActiveIndex((current) => (current + 1) % slides.length); // Loop back to start
-  };
-
   return (
     <>
       <section className="bg-BG14 bg-cover w-full h-[90vh]">
@@ -162,8 +154,6 @@ const Research = () => {
               </div>
             </div>
           </div>
-
-
         </div>
       </section>
 
@@ -192,44 +182,43 @@ const Research = () => {
       <ThreeSlides slides={slides} />
 
       <section className="max-w-4xl mx-auto">
-      <div className="container mx-auto px-4 py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <Image
-            src="/image/research/student-1.jpg"
-            alt="Students presenting Queen Belt"
-            width={400}
-            height={200}
-            className="w-full h-64  object-cover"
-          />
-          <div className="p-4 mb-10">
-            <h2 className="text-xl font-novaBold mb-2">AKG University students invent 'King Belt' for women's safety</h2>
-            <p className="leading-5 font-novaLight">
-              At a time when rape cases are increasing at an alarming rate, a group of students from AKG
-              University have invented a device for women's safety. The students have invented.
-            </p>
+        <div className="container mx-auto px-4 py-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <Image
+                src="/image/research/student-1.jpg"
+                alt="Students presenting Queen Belt"
+                width={400}
+                height={200}
+                className="w-full h-64  object-cover"
+              />
+              <div className="p-4 mb-10">
+                <h2 className="text-xl font-novaBold mb-2">AKG University students invent 'King Belt' for women's safety</h2>
+                <p className="leading-5 font-novaLight">
+                  At a time when rape cases are increasing at an alarming rate, a group of students from AKG
+                  University have invented a device for women's safety. The students have invented.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <Image
+                src="/image/research/student-2.jpg"
+                alt="Student with app-based cycle"
+                width={400}
+                height={200}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 mb-10">
+                <h2 className="text-xl font-novaBold mb-2">AKG University student invents app-based, battery-operated</h2>
+                <p className="leading-5 font-novaLight">
+                  A university student in AKG invented an application-based battery-operated for the
+                  students living in hostel to travel to their classes.Spot can be traced through.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <Image
-            src="/image/research/student-2.jpg"
-            alt="Student with app-based cycle"
-            width={400}
-            height={200}
-            className="w-full h-64 object-cover"
-          />
-          <div className="p-4 mb-10">
-            <h2 className="text-xl font-novaBold mb-2">AKG University student invents app-based, battery-operated</h2>
-            <p className="leading-5 font-novaLight">
-              A university student in AKG invented an application-based battery-operated for the
-              students living in hostel to travel to their classes.Spot can be traced through.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
       </section>
-
     </>
   );
 }

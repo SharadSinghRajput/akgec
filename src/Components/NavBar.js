@@ -208,8 +208,8 @@ export default function NavBar() {
                       </div>
                     </div>
                     <div className="col-span-1 max-md:hidden">
-                      <div className="bg-About bg-cover">
-                        <div className="flex flex-col items-center p-4">
+                      <div className="bg-About bg-cover bg-center bg-black bg-blend-darken bg-opacity-80">
+                        <div className="flex flex-col items-center p-5">
                           <p className="flex flex-col">
                             <span className="text-center font-normal text-xl font-novaLight text-white">
                               AKG University
@@ -219,7 +219,7 @@ export default function NavBar() {
                             </span>
                           </p>
                         </div>
-                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#3c5686] to-[#3c568696]">
+                        <div className="grid grid-cols-2 bg-indigo-950 mt-5">
                           <div className="flex flex-col items-center text-white border-r border-b border-t-white/50 p-7">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="sm:h-10 h-20"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
                             <span className="mt-2 text-xs text-white font-novaLight">
@@ -291,10 +291,11 @@ export default function NavBar() {
                         className="absolute inset-0 bg-cover bg-center rounded-lg shadow-md"
                         style={{
                           backgroundImage:
-                            "url('/image/slider-home/asfdasda.jpg')",
+                            "url('/image/lab/ece-lab.webp')",
+                          backgroundPosition: "left"
                         }}
                       >
-                        <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+                        <div className="absolute inset-0 bg-black opacity-70 rounded-lg"></div>
                       </div>
                       <div className="relative z-10 p-6 text-white">
                         <h3 className="text-xl font-novaLight">University of</h3>
@@ -302,17 +303,17 @@ export default function NavBar() {
                           Top Placements
                         </h2>
                         <div className="mt-4">
-                          <div className="bg-[#3c5686c4] w-40 p-2 rounded-md">
+                          <div className="bg-indigo-950 w-40 p-2 rounded-md">
                             <h3 className="text-3xl font-novaBold">1406</h3>
                             <p className="text-xs font-novaLight">PLACEMENTS</p>
                           </div>
                           <p className="text-xs font-novaLight mb-2">Offered in Batch 2023-24</p>
-                          <div className="bg-[#3c5686c4] w-40 p-2 rounded-md">
+                          <div className="bg-indigo-950 w-40 p-2 rounded-md">
                             <h3 className="text-3xl font-novaBold">1.13 <small className="-ml-1 text-lg">CR</small></h3>
                             <p className="text-xs font-novaLight">INTERNATIONAL</p>
                           </div>
                           <p className="text-xs font-novaLight mb-2">Highest Package Offered</p>
-                          <div className="bg-[#3c5686c4] p-2 w-40 rounded-md">
+                          <div className="bg-indigo-950 p-2 w-40 rounded-md">
                             <h3 className="text-3xl font-novaBold">33.80 <small className="-ml-1 text-lg">LPA</small></h3>
                             <p className="text-xs font-novaLight">NATIONAL</p>
                           </div>
@@ -342,18 +343,16 @@ export default function NavBar() {
                       </div>
                     </div>
                     <div className="col-span-2 max-md:hidden h-full">
-                      <div className="bg-About h-full flex flex-col justify-between">
-                        <div className="flex flex-col items-center mt-10">
-                          <p className="flex flex-col">
+                      <div className="bg-Academics bg-cover bg-black bg-blend-multiply bg-opacity-70 h-full flex flex-col justify-between">
+                        <div className="flex flex-col items-center mt-20">
                             <span className="text-center text-lg font-novaLight text-white">
                               Milestones in
                             </span>
                             <span className="text-center text-2xl font-novaBold leading-none text-secondary">
                               Educational Achievement
                             </span>
-                          </p>
                         </div>
-                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#3c5686] to-[#3c5686a8]">
+                        <div className="grid grid-cols-2 bg-indigo-950">
                           <div className="flex flex-col items-center text-white border-r border-t-white/50 p-7">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-boxes"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /><path d="m7 16.5-4.74-2.85" /><path d="m7 16.5 5-3" /><path d="M7 16.5v5.17" /><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /><path d="m17 16.5-5-3" /><path d="m17 16.5 4.74-2.85" /><path d="M17 16.5v5.17" /><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /><path d="M12 8 7.26 5.15" /><path d="m12 8 4.74-2.85" /><path d="M12 13.5V8" /></svg>
                             <span className="mt-2 text-xs text-white font-novaLight">
@@ -409,10 +408,10 @@ export default function NavBar() {
                       className="absolute inset-0 bg-cover bg-center rounded-lg shadow-md"
                       style={{
                         backgroundImage:
-                          "url('/image/slider-home/asfdasda.jpg')",
+                          "url('/image/lab/User-Manual-AKGEC 2.jpg')",
                       }}
                     >
-                      <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+                      <div className="absolute inset-0 bg-indigo-950 opacity-70 rounded-lg"></div>
                     </div>
                     <div className="relative bg-gradient-to-r from-[#3c5686c4] to-[#3c568693] bg-opacity-75 ">
                       <div className="relative h-1/2 z-10 text-white">
@@ -462,10 +461,10 @@ export default function NavBar() {
                           className="absolute inset-0 bg-cover bg-center rounded-lg shadow-md"
                           style={{
                             backgroundImage:
-                              "url('/image/slider-home/asfdasda.jpg')",
+                              "url('/image/lab/User-Manual-AKGEC 4.webp')",
                           }}
                         >
-                          <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+                          <div className="absolute inset-0 bg-black opacity-70 rounded-lg"></div>
                         </div>
                         <div className="relative bg-gradient-to-r from-[#3c5686c4] to-[#3c568693] bg-opacity-75 ">
                           <div className="relative h-1/2 z-10 text-white">
@@ -526,7 +525,7 @@ export default function NavBar() {
                 >
                   <div className="grid grid-cols-9">
                     <div className="col-span-4 max-md:hidden">
-                      <div className="bg-About ">
+                      <div className="bg-Placement bg-cover bg-black bg-blend-multiply bg-opacity-50">
                         <div className="flex flex-col items-center p-4">
                           <p className="flex flex-col">
                             <span className="text-center font-novaLight text-base text-white">
@@ -540,7 +539,7 @@ export default function NavBar() {
                             </span>
                           </p>
                         </div>
-                        <div className="grid grid-cols-2 bg-gradient-to-r from-[#3c5686c4] to-[#3c568693]">
+                        <div className="grid grid-cols-2 bg-indigo-950">
                           <div className="flex flex-col items-center text-white border-r border-b border-t-white/50 p-7">
                             <FontAwesomeIcon icon={faGoogle} size="3x" />
                             <span className="mt-2 text-xs text-white font-light">
@@ -589,7 +588,7 @@ export default function NavBar() {
                 >
                   <div className="grid grid-cols-5">
                     <div className="col-span-2 max-md:hidden">
-                      <div className="bg-About h-full">
+                      <div className="bg-Research bg-cover bg-black bg-blend-multiply bg-opacity-70">
                         <div className="flex flex-col justify-start items-start pt-5 px-6">
                           <p className="flex flex-col pb-10">
                             <span className="font-novaLight text-xl text-white">
@@ -604,19 +603,19 @@ export default function NavBar() {
                         <div className="h-full">
                           <div className="relative z-10 p-6 text-white">
                             <div className="grid grid-cols-2 gap-4 mt-3">
-                              <div className="bg-[#3c568693] w-36 px-10 py-4 rounded-md flex flex-col items-center text-center">
+                              <div className="bg-indigo-950 w-36 px-10 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">19K+</h3>
                                 <p className="text-xs font-novaLight">Students Graduated</p>
                               </div>
-                              <div className="bg-[#3c568693] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                              <div className="bg-indigo-950 w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">8</h3>
                                 <p className="text-xs font-novaLight">Departmental Research Groups</p>
                               </div>
-                              <div className="bg-[#3c568693] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                              <div className="bg-indigo-950 w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">213</h3>
                                 <p className="text-xs font-novaLight">Students in Univ. Merit List</p>
                               </div>
-                              <div className="bg-[#3c568693] w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
+                              <div className="bg-indigo-950 w-36 px-5 py-4 rounded-md flex flex-col items-center text-center">
                                 <h3 className="text-3xl font-novaBold">2000+</h3>
                                 <p className="text-xs font-novaLight">Students Placed (2021-22)</p>
                               </div>

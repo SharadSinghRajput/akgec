@@ -10,21 +10,21 @@ const posts = [
         title: 'Master of Computer Applications (MCA)',
         href: '#',
         description: 'MCA',
-        imageUrl: '/image/building/building6.webp',
+        imageUrl: '/image/lab/ece-circuit-lab.webp',
     },
     {
         id: 2,
         title: 'Bachelor of Technology (B.Tech)',
         href: '#',
         description: 'CSE, CS, CS&IT, CSE (AI&ML), CSE (DS),CSE',
-        imageUrl: '/image/building/building7.webp',
+        imageUrl: '/image/lab/User-Manual-AKGEC 4.webp',
     },
     {
         id: 3,
         title: 'Master of Technology (M.Tech)',
         href: '#',
         description: 'CSE, ECE, EN, ME',
-        imageUrl: '/image/building/building4.webp',
+        imageUrl: '/image/lab/User-Manual-AKGEC 6.webp',
     },
 ];
 

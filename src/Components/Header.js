@@ -1,11 +1,11 @@
-export default function Header({ title, height, subHeading, Button, gradient, bg = "/image/header-img.jpg" }) {
+export default function Header({ title, height, subHeading, Button, gradient, position = "center", bg = "/image/header-img.jpg" }) {
     return (
         <div className={`relative isolate overflow-hidden py-24 sm:py-32 max-[400px]:py-12 ${height}`}>
             <div className="absolute inset-0 -z-10 h-full w-full">
                 <img
                     alt=""
                     src={bg}
-                    className="h-full w-full object-center object-cover"
+                    className={`h-full w-full object-${position} object-cover`}
                 />
                 <div className={`absolute inset-0 ${gradient}`}></div>
             </div>
@@ -20,7 +20,7 @@ export default function Header({ title, height, subHeading, Button, gradient, bg
                     <p className="mt-4 text-white font-novaReg max-w-xl text-xl lg:text-2xl">{subHeading}</p>
                     {Button ? <>
                         <a href={Button.Link} target="_blank" rel="noopener noreferrer" >
-                            <button className="rounded-md uppercase bg-secondary px-5 py-3 max-sm:py-2 max-sm:text-sm mt-2 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-white/20 duration-500">{Button.name} ➜</button> 
+                            <button className="rounded-md uppercase bg-secondary px-5 py-3 max-sm:py-2 max-sm:text-sm mt-2 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-white/20 duration-500">{Button.name} ➜</button>
                         </a>
                     </> : null}
                 </div>
