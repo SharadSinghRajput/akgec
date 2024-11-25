@@ -49,7 +49,7 @@ module.exports = {
         'BG13': "url('/image/esteemed-partners-bg.jpg')",
         'BG14': "url('/image/lab/User-Manual-AKGEC 5.webp')",
         'BG15': "url('/image/placements/8464.png')",
-        'BG16': "url('/image/lab/ece-circuit-lab.webp')",
+        'BG16': "url('/image/building/building4.webp')",
         'BG17': "url('/image/recognitions-and-approvals/bottom-banner-bg.jpg')",
         'BG18': "url('/image/scholarship/bottom-banner-bg.jpg')",
         'BG19': "url('/image/awards-and-ranking/banner-bg.jpg')",

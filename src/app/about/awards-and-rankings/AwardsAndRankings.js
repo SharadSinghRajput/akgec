@@ -40,7 +40,7 @@ export default () => {
     return (
         <>
             <section className="bg-BG16 w-full bg-cover bg-center bg-no-repeat relative">
-                <div className="absolute w-full h-full z-0 bg-cyan-600 bg-blend-darken bg-opacity-80" />
+                <div className="absolute w-full h-full z-0 bg-black bg-blend-darken bg-opacity-70" />
                 <div className="max-w-[1400px] mx-auto px-3 relative z-10 py-28 pb-40 ">
                     <div className="pt-40 w-full">
                         <div className="flex gap-2 w-fit mb-4">
