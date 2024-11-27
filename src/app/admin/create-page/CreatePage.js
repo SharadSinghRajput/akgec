@@ -101,7 +101,6 @@ function CreatePage() {
     };
 
     try {
-
       progressBar.style.width = "0%";
       progressBar.style.transition = "none";
       requestAnimationFrame(() => {
@@ -124,9 +123,9 @@ function CreatePage() {
         setTimeout(() => {
           setShowPageDetails(true);
         }, 1000);
-      } else if (result.message === 'Slug already exists') {
+      } else if (result.message === "Slug already exists") {
         setAllData({});
-        toast.warning("Page already exists")
+        toast.warning("Page already exists");
       } else {
         setAllData({});
         toast.error("Failed to Add Page");
@@ -141,11 +140,29 @@ function CreatePage() {
 
   return (
     <div className="w-full">
-      <div id="progress-bar" className="fixed top-0 left-0 h-1 bg-red-500 z-50"></div>
+      <div
+        id="progress-bar"
+        className="fixed top-0 left-0 h-1 bg-red-500 z-50"
+      ></div>
       <div className="bg-gradient-to-r from-purple-600 to-blue-800 rounded-lg p-4 mb-5 shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex text-white items-center space-x-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-add"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-add"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="16" />
+              <line x1="8" y1="12" x2="16" y2="12" />
+            </svg>
             <h2 className="font-novaSemi text-xl text-white tracking-wide">
               Add New Page
             </h2>
@@ -266,7 +283,16 @@ function CreatePage() {
       {showPageDetails && (
         <PageDetailsForm allData={allData} parentPage={selectedPage} />
       )}
-      <ToastContainer position="top-right" autoClose={2000} hideProgressBar={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
