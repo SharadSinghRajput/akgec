@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import { API_NODE_URL } from "@/configs/config";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/navigation";
 
 function CreateSchool() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     location: "",
@@ -57,6 +59,9 @@ function CreateSchool() {
           email: "",
           schoolCode: "",
         });
+        setTimeout(() => {
+          router.push("/admin/school-list");
+        }, 2000);
       } else {
         toast.error(result.message || "Failed to add school.");
       }

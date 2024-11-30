@@ -48,7 +48,7 @@ const SchoolList = () => {
 
       if (data.status) {
         toast.success("School deleted successfully!");
-        fetchData();
+        setNewsAndEvents((prev) => prev.filter((item) => item._id !== event._id));
       } else {
         toast.error("Failed to delete School.");
       }

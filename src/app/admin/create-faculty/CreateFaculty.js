@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import { API_NODE_URL } from "@/configs/config";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/navigation";
 
 function AddFaculty() {
+  const router = useRouter();
   const [selectedSchool, setSelectedSchool] = useState(null);
   const [searchQuery1, setSearchQuery1] = useState("");
   const [departmentSuggestions, setDepartmentSuggestions] = useState([]);
@@ -109,6 +111,9 @@ function AddFaculty() {
         });
         setDepartmentSuggestions([]);
         setSearchQuery1("");
+        setTimeout(() => {
+          router.push("/admin/faculty-list");
+        }, 2000);
       } else {
         toast.error(result.message || "Failed to add faculty member.");
       }

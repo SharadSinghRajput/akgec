@@ -4,17 +4,20 @@ import React, { useState, useEffect } from "react";
 import { API_NODE_URL } from "@/configs/config";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/navigation";
 
 function CreateDepartment() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
-    school: "", // Holds selected school ID
+    school: "",
     description: "",
     departmentCode: "",
     // headOfDepartment: "",
-    programsOffered: "",
+    programsOffered: [],
   });
 
+  const [programInput, setProgramInput] = useState("");
   const [schools, setSchools] = useState([]); // State to hold school options
   const [searchQuery, setSearchQuery] = useState(""); // State for search input
   const [showDropdown, setShowDropdown] = useState(false); // Toggle dropdown visibility
@@ -47,6 +50,24 @@ function CreateDepartment() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+  };
+
+  const handleProgramAdd = (e) => {
+    if (e.key === "Enter" && programInput.trim() !== "") {
+      e.preventDefault(); // Prevent form submission on Enter key
+      setFormData({
+        ...formData,
+        programsOffered: [...formData.programsOffered, programInput.trim()],
+      });
+      setProgramInput(""); // Clear the input field
+    }
+  };
+
+  const handleProgramRemove = (index) => {
+    const updatedPrograms = formData.programsOffered.filter(
+      (_, i) => i !== index
+    );
+    setFormData({ ...formData, programsOffered: updatedPrograms });
   };
 
   const handleSchoolSelect = (school) => {
@@ -84,9 +105,12 @@ function CreateDepartment() {
           description: "",
           departmentCode: "",
           // headOfDepartment: "",
-          programsOffered: "",
+          programsOffered: [],
         });
         setSearchQuery("");
+        setTimeout(() => {
+          router.push("/admin/department-list");
+        }, 2000);
       } else {
         toast.error(result.message || "Failed to add department.");
       }
@@ -115,18 +139,8 @@ function CreateDepartment() {
             { label: "Department Name", name: "name", type: "text" },
             { label: "Description", name: "description", type: "text" },
             { label: "Department Code", name: "departmentCode", type: "text" },
-            // {
-            //   label: "Head of Department",
-            //   name: "headOfDepartment",
-            //   type: "text",
-            // },
-            {
-              label: "Programs Offered",
-              name: "programsOffered",
-              type: "text",
-            },
           ].map((field) => (
-            <div key={field.name}>
+            <div key={field.name} className="mb-4">
               <label
                 htmlFor={field.name}
                 className="block text-sm font-medium text-gray-700 mb-1"
@@ -144,6 +158,42 @@ function CreateDepartment() {
               />
             </div>
           ))}
+
+          <div className="mb-4">
+            <label
+              htmlFor="programsOffered"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Programs Offered
+            </label>
+            <input
+              id="programsOffered"
+              type="text"
+              value={programInput}
+              onChange={(e) => setProgramInput(e.target.value)}
+              onKeyDown={handleProgramAdd}
+              placeholder="Enter program and press Enter..."
+              className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <div className="mt-2">
+              {Array.isArray(formData.programsOffered) &&
+                formData.programsOffered.map((program, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-between bg-gray-100 rounded-md py-1 px-2 mb-1"
+                  >
+                    <span className="text-sm text-gray-700">{program}</span>
+                    <button
+                      type="button"
+                      onClick={() => handleProgramRemove(index)}
+                      className="text-red-500 hover:text-red-700 text-sm"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                ))}
+            </div>
+          </div>
 
           {/* Custom Searchable Dropdown */}
           <div>

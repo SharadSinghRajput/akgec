@@ -5,8 +5,10 @@ import { API_NODE_URL } from "@/configs/config";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 const CreateHighlightBanner = () => {
+  const router = useRouter();
   const [allPages, setAllPages] = useState([]);
   const [displayedPages, setDisplayedPages] = useState([]);
   const [searchValue, setSearchValue] = useState("");
@@ -97,6 +99,9 @@ const CreateHighlightBanner = () => {
       const result = await response.json();
       if (result.status) {
         toast.success("Highlight banner added successfully.");
+        setTimeout(() => {
+          router.push("/admin/highlight-banner-list");
+        }, 2000);
       } else {
         toast.error(result.message || "Failed to add highlight banner.");
       }
