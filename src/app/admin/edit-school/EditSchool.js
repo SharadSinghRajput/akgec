@@ -6,7 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter, useSearchParams } from "next/navigation";
 
-function CreateSchool() {
+function EditSchool() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const _id = searchParams.get("_id");
@@ -206,4 +206,4 @@ function CreateSchool() {
   );
 }
 
-export default CreateSchool;
+export default EditSchool;

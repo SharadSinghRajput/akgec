@@ -20,7 +20,6 @@ const placement4 = [
     "/image/student/placement-4.jpg",
 ]
 
-
 export default function PlacementHighlights() {
     return (
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 max-sm:gap-2 h-auto">
