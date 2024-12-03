@@ -4,13 +4,13 @@ import { Bookmark } from "lucide-react"
 const OurIdentity = () => {
     return (
         <section className='mb-10'>
-            <div className='border border-gray-300 flex items-center justify-center py-32 max-md:py-12 '>
-                <img className='w-96 max-[500px]:w-72 max-[470px]:w-64 ' src="/image/akg-logo.jpg" alt="Akg Logo" />
+            <div className='border border-gray-300 flex items-center justify-center py-10 max-md:py-16'>
+                <img className='w-48 max-[500px]:w-32 ' src="/image/LOGO_AKGEC.webp" alt="Akg Logo" />
             </div>
             <div className="mt-10">
                 <h1 className="text-4xl max-sm:text-3xl font-novaReg mb-6">Official Emblem</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2">
-                    <div className="bg-[#FCFCFC] p-8 max-[470px]:p-2 border-y border-x border-gray-300">
+                    <div className="bg-white p-8 max-[470px]:p-2 border-y border-x border-gray-300">
                         <div className="flex items-center mb-2">
                             <Bookmark className="text-blue-600 mr-3 flex-shrink-0" />
                             <h2 className="text-2xl font-novaReg">The Color Blue</h2>
@@ -19,7 +19,7 @@ const OurIdentity = () => {
                             At AKGU, blue symbolizes knowledge, stability, and trust. It reflects the university’s commitment to fostering a calm yet inspiring environment for learning.
                         </p>
                     </div>
-                    <div className="bg-[#FCFCFC] p-8 max-[470px]:p-2 md:border-y max-md:border-l max-md:border-b border-r border-gray-300">
+                    <div className="bg-white p-8 max-[470px]:p-2 md:border-y max-md:border-l max-md:border-b border-r border-gray-300">
                         <div className="flex items-center mb-2">
                             <Bookmark className="text-blue-600 mr-3 flex-shrink-0" />
                             <h2 className="text-2xl font-novaReg">Globe</h2>
@@ -28,7 +28,7 @@ const OurIdentity = () => {
                             AKGU's global perspective in education is represented by the globe, symbolizing its focus on international collaboration, modern technological advancements, and the adoption of globally recognized academic standards.
                         </p>
                     </div>
-                    <div className="bg-[#FCFCFC] p-8 max-[470px]:p-2 border-x border-b border-gray-300">
+                    <div className="bg-white p-8 max-[470px]:p-2 border-x border-b border-gray-300">
                         <div className="flex items-center mb-2">
                             <Bookmark className="text-blue-600 mr-3 flex-shrink-0" />
                             <h2 className="text-2xl font-novaReg">The Human Chain</h2>
@@ -37,7 +37,7 @@ const OurIdentity = () => {
                             AKGU promotes a strong sense of unity and collaboration through its diverse student body. The human chain symbolizes teamwork, respect for cultural diversity, and a commitment to national unity.
                         </p>
                     </div>
-                    <div className="bg-[#FCFCFC] p-8 max-[470px]:p-2 border-r max-md:border-l border-b border-gray-300">
+                    <div className="bg-white p-8 max-[470px]:p-2 border-r max-md:border-l border-b border-gray-300">
                         <div className="flex items-center mb-2">
                             <Bookmark className="text-blue-600 mr-3 flex-shrink-0" />
                             <h2 className="text-2xl font-novaReg">The Color Yellow and Black</h2>

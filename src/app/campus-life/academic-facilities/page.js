@@ -29,7 +29,7 @@ export const Home = () => {
             <div className="bg-gray-200">
                 <div className="bg-PaperBackground ">
                     <div className="bg-white/80">
-                        <Header title={"Academic Facilities"} bg="/image/Building2.jpg" gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+                        <Header title={"Academic Facilities"} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
                         <div className="w-full max-w-[1400px] pl-7 max-sm:pl-3 mt-20 max-sm:mt-10 mx-auto ">
                             <Breadcrumb data={BreadCrumb} />
                         </div>

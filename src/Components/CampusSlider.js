@@ -71,7 +71,6 @@ export default function CampusSlider() {
                                     Innovate and Inspire<br />
                                     Be a Future Innovator
                                 </h3>
-                                
                             </div>
                             <div className='col-span-1 max-lg:col-span-3'>
                                 <div className="flex justify-start space-x-4 z-10 ">

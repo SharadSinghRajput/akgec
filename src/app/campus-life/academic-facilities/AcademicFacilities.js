@@ -1,7 +1,7 @@
 const facilityData = [
     {
         title: "Computer Labs",
-        image: "/image/academic-facilities/computer-lab.webp",
+        image: "/image/academic-facilities/StudentCSELab5.webp",
         description: "AKG University provides state-of-the-art computer labs with the latest technology to support students in IT, engineering, and research work.",
     },
     {

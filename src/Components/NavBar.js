@@ -77,43 +77,42 @@ export default function NavBar() {
   );
   return (
     <header
-      className={`z-[100] w-full fixed top-0 left-0 max-md:bg-blue-700 ${isScrolled100 ? "bg-white" : ""
-        } transition-all duration-200`}
+      className={`z-[100] w-full fixed top-0 left-0 max-md:bg-blue-700 bg-white transition-all duration-200`}
     >
       <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-4  gap-x-10">
         <div className="col-span-2 flex max-xl:col-span-2 max-lg:col-span-8 max-md:col-span-2 max-md:pt-2 max-sm:col-span-2  max-sm:mb-4  ">
           <div
-            className={`text-white max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
+            className={`text-white flex max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
           >
-            <div className={`flex justify-start items-center gap-1 pl-5 ${isScrolled100 ? "flex-row max-xl:flex-col" : "flex-col"}`}>
+            <div className={`flex justify-start items-center gap-1 pl-5 `}>
               <div className="flex justify-center xl:w-full">
                 <img
                   onClick={() => router.push("/")}
-                  src="/image/akg-logo.jpg"
+                  src="/image/AKGEC_LOGO.webp"
                   alt="AKG University Logo"
-                  className={`w-48 xl:w-60 xl:h-14 xl:object-contain xl:bg-white   cursor-pointer`}
+                  className={`h-16 max-xl:h-20 object-contain bg-blend-color-dodge cursor-pointer`}
                 />
               </div>
-              <div className={`grid gap-0 ${isScrolled100 ? "grid-cols-2 max-xl:grid-cols-4 " : "grid-cols-4"}`}>
+              <div className={`grid gap-0 grid-cols-4 max-[1430px]:grid-cols-2 max-[1430px]:gap-1 `}>
                 <img
                   src="/image/NaaC.webp"
                   alt="NAAC Logo"
-                  className={`h-9 w-full max-xl:h-auto max-lg:w-12  object-contain bg-blend-color-dodge relative z-[4] ${isScrolled100 ? "" : "shadow-effect-right" }`}
+                  className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`}
                 />
                 <img
                   src="/image/nba.jpg"
                   alt="NBA Logo"
-                  className={`h-9 w-full max-xl:h-auto max-lg:w-12 object-contain bg-blend-color-dodge relative z-[3] ${isScrolled100 ? "" : "shadow-effect-right" }`}
+                  className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`}
                 />
                 <img
                   src="/image/qs-i-gauge.jpg"
                   alt="QS-I-GAUGE Logo"
-                  className={`h-9 w-full max-xl:h-auto max-lg:w-12 object-contain bg-blend-color-dodge relative z-[2] ${isScrolled100 ? "" : "shadow-effect-right" }`}
+                  className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`}
                 />
                 <img
                   src="/image/iic.jpg"
                   alt="IIC Logo"
-                  className={`h-9 w-full max-xl:h-auto max-lg:w-12 object-contain bg-blend-color-dodge relative z-[1] ${isScrolled100 ? "" : "shadow-effect-right" }`}
+                  className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`}
                 />
               </div>
             </div>
@@ -136,10 +135,9 @@ export default function NavBar() {
           <button
             type="button"
             onClick={() => setBigMenuToggle(!BigMenuToggle)}
-            className="-m-2 flex flex-col items-center justify-center rounded-md p-2 text-white"
-          >
+            className="-m-2 flex flex-col items-center justify-center rounded-md p-2 text-white">
             <span className="sr-only">Open main menu</span>
-            <Bars2Icon aria-hidden="true" className="h-9 w-9" />
+            <Bars2Icon aria-hidden="true" className="h-9 w-9"/>
             <p className="text-xs uppercase -mt-1">Menu</p>
           </button>
         </div>
@@ -150,35 +148,23 @@ export default function NavBar() {
                 }`}
             >
               <div className="hidden lg:flex gap-10  justify-start max-xl:gap-8  text-[13px] font-novaLight">
-                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500 ">
-                  Campus
-                </a>
-                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
-                  Library
-                </a>
-                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
-                  Student Services
-                </a>
-                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">
-                  Contact us
-                </a>
+                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Campus</a>
+                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Library</a>
+                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Student Services</a>
+                <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Contact us</a>
               </div>
               <div className="flex justify-end max-2xl:flex-col gap-4">
                 <a href="tel:1800-200-0777" className="bg-cyan-500 max-xl:w-36 flex justify-start items-end gap-2 py-3 px-4">
-                  <PhoneIcon
-                    className={`h-4 w-4 text-white`}
-                    aria-hidden="true"
-                  />
+                  <PhoneIcon className={`h-4 w-4 text-white`} aria-hidden="true"/>
                   <span className="text-white text-sm uppercase font-bold">Call now</span>
                 </a>
               </div>
             </div>
             <ul
               className={`${BigMenuToggle
-                ? "fixed w-full h-full left-0 top-0  pt-10"
-                : `hidden relative` }  lg:flex items-center justify-end gap-0 xl:gap-4
-                text-black font-semibold text-sm bg-white max-xl:pl-2`}
-            >
+                ? "fixed w-full h-full left-0 top-0 pt-10"
+                : `hidden relative`}  lg:flex items-center justify-end gap-0 xl:gap-4
+                text-black font-semibold text-sm bg-white max-xl:pl-2`}>
               {BigMenuToggle ? (
                 <>
                   <button
@@ -187,7 +173,7 @@ export default function NavBar() {
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
                   </button>
-                </> 
+                </>
               ) : null}
               <li className="relative group">
                 <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
@@ -345,12 +331,12 @@ export default function NavBar() {
                     <div className="col-span-2 max-md:hidden h-full">
                       <div className="bg-Academics bg-cover bg-black bg-blend-multiply bg-opacity-70 h-full flex flex-col justify-between">
                         <div className="flex flex-col items-center mt-20">
-                            <span className="text-center text-lg font-novaLight text-white">
-                              Milestones in
-                            </span>
-                            <span className="text-center text-2xl font-novaBold leading-none text-secondary">
-                              Educational Achievement
-                            </span>
+                          <span className="text-center text-lg font-novaLight text-white">
+                            Milestones in
+                          </span>
+                          <span className="text-center text-2xl font-novaBold leading-none text-secondary">
+                            Educational Achievement
+                          </span>
                         </div>
                         <div className="grid grid-cols-2 bg-indigo-950">
                           <div className="flex flex-col items-center text-white border-r border-t-white/50 p-7">
