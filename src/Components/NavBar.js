@@ -77,7 +77,7 @@ export default function NavBar() {
   );
   return (
     <header
-      className={`z-[100] w-full fixed top-0 left-0 max-md:bg-blue-700 bg-white transition-all duration-200`}
+      className={`z-[100] w-full fixed top-0 left-0 max-md:bg-blue-700 bg-white transition-all duration-200 shadow-lg`}
     >
       <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-4  gap-x-10">
         <div className="col-span-2 flex max-xl:col-span-2 max-lg:col-span-8 max-md:col-span-2 max-md:pt-2 max-sm:col-span-2  max-sm:mb-4  ">
@@ -90,30 +90,14 @@ export default function NavBar() {
                   onClick={() => router.push("/")}
                   src="/image/AKGEC_LOGO.webp"
                   alt="AKG University Logo"
-                  className={`h-16 max-xl:h-20 object-contain bg-blend-color-dodge cursor-pointer`}
+                  className={`h-[61px] object-contain bg-blend-color-dodge cursor-pointer`}
                 />
               </div>
               <div className={`grid gap-0 grid-cols-4 max-[1430px]:grid-cols-2 max-[1430px]:gap-1 `}>
-                <img
-                  src="/image/NaaC.webp"
-                  alt="NAAC Logo"
-                  className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`}
-                />
-                <img
-                  src="/image/nba.jpg"
-                  alt="NBA Logo"
-                  className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`}
-                />
-                <img
-                  src="/image/qs-i-gauge.jpg"
-                  alt="QS-I-GAUGE Logo"
-                  className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`}
-                />
-                <img
-                  src="/image/iic.jpg"
-                  alt="IIC Logo"
-                  className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`}
-                />
+                <img src="/image/NaaC.webp" alt="NAAC Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`}/>
+                <img src="/image/nba.jpg" alt="NBA Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`}/>
+                <img src="/image/qs-i-gauge.jpg" alt="QS-I-GAUGE Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`}/>
+                <img src="/image/iic.jpg" alt="IIC Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`}/>
               </div>
             </div>
             {/* <div hidden={isScrolled} className="max-xl:hidden">

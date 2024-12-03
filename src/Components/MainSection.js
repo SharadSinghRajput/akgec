@@ -39,7 +39,7 @@ const MainSection = () => {
                             The only University in Uttar Pradesh (AKGU) Accredited by NAAC with an A++ grade
                         </p>
                         <div className="h-20">
-                            <Button text={'Apply Today'} className="py-3 px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-btn-gradient animate-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform  scale-y-105 tracking-widest" />
+                            <Button text={'Apply Today'} className="py-3 max-sm:px-6 max-sm:text-xs px-10 mt-5 text-[15px] rounded-xl font-novaBold uppercase bg-btn-gradient animate-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform  scale-y-105 tracking-widest" />
                         </div>
                     </div>
                     <div className="max-md:mt-10 max-sm:px-2 mt-10 pt-5">
