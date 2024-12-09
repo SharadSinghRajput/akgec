@@ -46,14 +46,15 @@ const slides = [
 const Research = () => {
   return (
     <>
-      <section className="bg-BG14 bg-cover w-full h-[90vh]">
-        <div className="flex h-full max-w-7xl mx-auto pt-20 px-3">
+      <section className="relative bg-BG45 bg-cover w-full h-[90vh]">
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"/>
+        <div className="relative flex h-full max-w-7xl mx-auto pt-20 px-3">
           <div className="flex justify-end w-full my-auto -mx-4">
             <div className="w-9/12 px-3">
               <div className="max-w-[440px]">
                 <div className="mb-6">
                   <h2 className="text-[32px] font-novaReg text-white mb-2">Innovation &
-                    <span className="text-[32px] font-novaReg text-[#f7a600]"> Entrepreneurship</span>
+                    <span className="text-[32px] font-novaReg text-black"> Entrepreneurship</span>
                   </h2>
                 </div>
                 <p className="font-novaBold text-lg text-white mb-4 leading-[1.20]">Firmly established as a rapidly rising hub of excellence for innovation and entrepreneurship, AKG University actively nurtures and empowers handpicked creative ideas across diverse fields, transforming them into valuable and viable business opportunities.</p>
@@ -84,7 +85,7 @@ const Research = () => {
             <div className="h-full px-3">
               <div className="max-w-[430px]">
                 <div className="mb-6">
-                  <h1 className="mb-2"><span className="text-[#f7a600] font-novaReg text-[40px] text-center">Research</span></h1>
+                  <h1 className="mb-2"><span className="text-black font-novaReg text-[40px] text-center">Research</span></h1>
                 </div>
                 <p className="font-novaBold text-lg text-white mb-4 leading-[1.20]">A beacon of innovation & education, AKG fosters research, experiential learning, and industry ties for students' future success. With substantial funding, 50 research groups, 30 advanced labs, and numerous patents, AKG sets remarkable standards in academia & research.</p>
                 <div className="flex flex-wrap w-full">
@@ -138,7 +139,7 @@ const Research = () => {
             <div>
               <div className="relative">
                 <Image
-                  src="/image/research/research-female.jpg"
+                  src="/image/research/research-female.webp"
                   alt="Research Video"
                   width={600}
                   height={400}
@@ -186,7 +187,7 @@ const Research = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <Image
-                src="/image/research/student-1.jpg"
+                src="/image/research/student-1.webp"
                 alt="Students presenting Queen Belt"
                 width={400}
                 height={200}
@@ -202,7 +203,7 @@ const Research = () => {
             </div>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <Image
-                src="/image/research/student-2.jpg"
+                src="/image/research/student-2.webp"
                 alt="Student with app-based cycle"
                 width={400}
                 height={200}

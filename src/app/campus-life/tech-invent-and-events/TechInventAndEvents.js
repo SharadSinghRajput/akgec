@@ -3,35 +3,50 @@ import EventTabs from "@/Components/EventTabs";
 
 const eventsData = [
     {
-        img: '/image/campus-life/convocation.jpg',
-        title: 'Master of Business Administration (MBA)',
-        desc: 'A comprehensive program designed to develop business skills and leadership qualities.'
-    },
-    {
-        img: '/image/campus-life/convocation.jpg',
+        img: '/image/campus-life/tech-event-1.webp',
         title: 'Master of Computer Applications (MCA)',
         desc: 'A postgraduate program focused on computer applications and software development.'
     },
     {
-        img: '/image/campus-life/convocation.jpg',
-        title: 'Bachelor of Technology (BTech)',
-        desc: 'An undergraduate degree that provides a solid foundation in engineering principles.'
+        img: '/image/campus-life/tech-event-2.webp',
+        title: 'Master of Computer Applications (MCA)',
+        desc: 'A postgraduate program focused on computer applications and software development.'
     },
     {
-        img: '/image/campus-life/convocation.jpg',
-        title: 'Master of Technology (MTech)',
-        desc: 'An advanced degree focusing on specialized areas of technology and engineering.'
+        img: '/image/campus-life/tech-event-3.webp',
+        title: 'Master of Computer Applications (MCA)',
+        desc: 'A postgraduate program focused on computer applications and software development.'
     },
     {
-        img: '/image/campus-life/convocation.jpg',
-        title: 'Post Graduate Diploma in Management',
-        desc: 'A diploma program designed for students looking to enhance their managerial skills.'
+        img: '/image/campus-life/tech-event-4.webp',
+        title: 'Master of Computer Applications (MCA)',
+        desc: 'A postgraduate program focused on computer applications and software development.'
     },
     {
-        img: '/image/campus-life/convocation.jpg',
-        title: 'Ph.D. in Engineering and Technology',
-        desc: 'A research-oriented program for candidates pursuing a career in academia and research.'
-    }
+        img: '/image/campus-life/tech-event-5.webp',
+        title: 'Master of Computer Applications (MCA)',
+        desc: 'A postgraduate program focused on computer applications and software development.'
+    },
+    {
+        img: '/image/campus-life/tech-event-6.webp',
+        title: 'Master of Computer Applications (MCA)',
+        desc: 'A postgraduate program focused on computer applications and software development.'
+    },
+    {
+        img: '/image/campus-life/tech-event-7.webp',
+        title: 'Master of Computer Applications (MCA)',
+        desc: 'A postgraduate program focused on computer applications and software development.'
+    },
+    {
+        img: '/image/campus-life/tech-event-8.webp',
+        title: 'Master of Computer Applications (MCA)',
+        desc: 'A postgraduate program focused on computer applications and software development.'
+    },
+    {
+        img: '/image/campus-life/tech-event-9.webp',
+        title: 'Master of Computer Applications (MCA)',
+        desc: 'A postgraduate program focused on computer applications and software development.'
+    },
 ];
 
 const TechInventAndEvents = () => {

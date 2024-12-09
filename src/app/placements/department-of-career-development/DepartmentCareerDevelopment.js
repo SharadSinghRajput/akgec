@@ -152,8 +152,9 @@ const DepartmentCareerDevelopment = () => {
 
     return (
         <section className='bg-PaperBackground'>
-            <div className='bg-BG28 bg-cover h-[100vh] max-2xl:h-[90vh] max-lg:h-[80vh] max-md:h-[70vh] bg-top flex items-end'>
-                <div className='text-white w-full max-w-7xl mx-auto mb-20 max-md:mb-5 px-4'>
+            <div className='relative bg-BG47 bg-cover h-[100vh] max-2xl:h-[90vh] max-lg:h-[80vh] max-md:h-[70vh] bg-top flex items-end'>
+                <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent'/>
+                <div className='relative text-white w-full max-w-7xl mx-auto mb-20 max-md:mb-5 px-4'>
                     <span className='text-sm text-gray-300 tracking-widest uppercase font-novaReg'>Career - placements</span>
                     <h1 className='my-2 text-5xl max-lg:text-4xl max-w-2xl font-novaSemi uppercase'>Today's Actions Shape Tomorrow's Success</h1>
                 </div>
@@ -162,7 +163,7 @@ const DepartmentCareerDevelopment = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     <div>
                         <Image
-                            src="/image/placements/three-students.jpg"
+                            src="/image/placements/three-students.webp"
                             alt="Students studying together"
                             width={600}
                             height={300}
@@ -184,7 +185,7 @@ const DepartmentCareerDevelopment = () => {
                             <strong>Vision:</strong> To equip students with a robust platform to develop and refine their professional skills, empowering them for a successful career.
                         </p>
                         <Image
-                            src="/image/placements/student-1.jpg"
+                            src="/image/placements/students.webp"
                             alt="Students collaborating on a project"
                             width={600}
                             height={300}
@@ -232,7 +233,7 @@ const DepartmentCareerDevelopment = () => {
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                     <div className="w-full md:w-1/2">
                         <Image
-                            src="/image/placements/computer-group.jpg"
+                            src="/image/placements/computer-group.webp"
                             alt="Training session"
                             width={600}
                             height={400}
@@ -267,7 +268,7 @@ const DepartmentCareerDevelopment = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-BG28 bg-cover bg-cente bg-gray-800 bg-opacity-80 bg-blend-multiply text-white py-14 ">
+            <div className="bg-BG42 bg-cover bg-cente bg-gray-800 bg-opacity-80 bg-blend-multiply text-white py-14 ">
                 <div className="max-w-6xl mx-auto">
                     <h1 className="text-4xl font-montserrat font-bold leading-none text-center mb-2">Benefits of Choosing the Department of Career</h1>
                     <h1 className="text-4xl font-montserrat font-bold text-center mb-4">Planning for Future Development</h1>
