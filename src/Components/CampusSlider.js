@@ -11,12 +11,8 @@ const product = {
         'Compatible with Figma, Sketch, and Adobe XD',
         'Drawn on 24 x 24 pixel grid',
     ],
-    imageSrc: '/image/lab/User-Manual-AKGEC 2.jpg',
+    imageSrc: '/image/home/building7.jpg',
     imageAlt: 'Sample of 30 icons with friendly and fun details in outline, filled, and brand color styles.',
-}
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
 }
 
 const CartData = [
