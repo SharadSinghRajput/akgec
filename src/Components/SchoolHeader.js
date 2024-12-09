@@ -5,7 +5,7 @@ const SchoolHeader = ({ heading, desc, gradientColors, banner }) => {
         background: `linear-gradient(to right, ${gradientColors.join(', ')})`,
     };
     return (
-        <section className={`relative ${banner} bg-cover bg-center w-full text-white`}>
+        <section className={`relative ${banner} bg-cover bg-top w-full text-white`}>
             <div className='absolute inset-0 max-lg:w-full opacity-75' style={gradientStyle}></div>
             <div className='max-w-7xl pt-56 mx-auto relative z-10'>
                 <div className='grid grid-cols-2 gap-10 pb-10 max-lg:pb-0 max-lg:grid-cols-1'>

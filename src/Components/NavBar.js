@@ -94,10 +94,10 @@ export default function NavBar() {
                 />
               </div>
               <div className={`grid gap-0 grid-cols-4 max-[1430px]:grid-cols-2 max-[1430px]:gap-1 `}>
-                <img src="/image/NaaC.webp" alt="NAAC Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`}/>
-                <img src="/image/nba.jpg" alt="NBA Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`}/>
-                <img src="/image/qs-i-gauge.jpg" alt="QS-I-GAUGE Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`}/>
-                <img src="/image/iic.jpg" alt="IIC Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`}/>
+                <img src="/image/NaaC.webp" alt="NAAC Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`} />
+                <img src="/image/nba.jpg" alt="NBA Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`} />
+                <img src="/image/qs-i-gauge.jpg" alt="QS-I-GAUGE Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`} />
+                <img src="/image/iic.jpg" alt="IIC Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`} />
               </div>
             </div>
             {/* <div hidden={isScrolled} className="max-xl:hidden">
@@ -121,7 +121,7 @@ export default function NavBar() {
             onClick={() => setBigMenuToggle(!BigMenuToggle)}
             className="-m-2 flex flex-col items-center justify-center rounded-md p-2 text-white">
             <span className="sr-only">Open main menu</span>
-            <Bars2Icon aria-hidden="true" className="h-9 w-9"/>
+            <Bars2Icon aria-hidden="true" className="h-9 w-9" />
             <p className="text-xs uppercase -mt-1">Menu</p>
           </button>
         </div>
@@ -139,7 +139,7 @@ export default function NavBar() {
               </div>
               <div className="flex justify-end max-2xl:flex-col gap-4">
                 <a href="tel:1800-200-0777" className="bg-cyan-500 max-xl:w-36 flex justify-start items-end gap-2 py-3 px-4">
-                  <PhoneIcon className={`h-4 w-4 text-white`} aria-hidden="true"/>
+                  <PhoneIcon className={`h-4 w-4 text-white`} aria-hidden="true" />
                   <span className="text-white text-sm uppercase font-bold">Call now</span>
                 </a>
               </div>

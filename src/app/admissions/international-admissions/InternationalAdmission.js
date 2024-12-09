@@ -12,8 +12,8 @@ import AdmissionsShowcase from "@/Components/AdmissionsShowcase";
 import ScholarshipHighlight from "@/Components/ScholarshipHighlight";
 import HighlightPlacement from "@/Components/HighlightPlacement";
 import OurOffice from "@/Components/OurOffice";
-import ResearchFaciliy from "@/Components/ResearchFaciliy";
 import SpotlightHighlight from "@/Components/SpotlightHighlight";
+import ResearchFacility from "@/Components/ResearchFacility";
 
 
 const cards = [
@@ -111,7 +111,7 @@ const InternationalAdmission = () => {
 
     return (
         <>
-            <section className="h-screen w-full bg-BG20 bg-no-repeat bg-cover bg-center bg-indigo-950 bg-blend-multiply bg-opacity-60">
+            <section className="h-screen w-full bg-BG50 bg-no-repeat bg-cover bg-top bg-gray-800 bg-blend-multiply bg-opacity-95">
                 <div className="flex px-1 md:px-12 lg:px-24">
                     <div className="container max-w-7xl mx-auto flex justify-end max-xl:flex-col-reverse gap-10">
                         <div className="w-full h-screen flex justify-center items-center">
@@ -147,7 +147,7 @@ const InternationalAdmission = () => {
             <AdmissionsShowcase />
             <LogoSlider />
 
-            <section className="bg-BG28 bg-cover bg-no-repeat bg-top h-[85vh] pt-24 pb-36">
+            <section className="bg-BG42 bg-cover bg-no-repeat bg-black bg-blend-multiply bg-opacity-85 bg-top h-[85vh] pt-24 pb-36">
                 <div className="max-w-[1400px] mx-auto px-3 scale-x-2">
                     <div className="flex justify-center items-center text-center w-full">
                         <div className="w-7/12">
@@ -192,7 +192,7 @@ const InternationalAdmission = () => {
             <MilestonesSection />
             <HighlightPlacement />
             <OurOffice />
-            <ResearchFaciliy />
+            <ResearchFacility />
             <SpotlightHighlight />
         </>
     );

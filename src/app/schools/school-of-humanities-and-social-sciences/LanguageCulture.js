@@ -89,7 +89,7 @@ const LanguageCulture = () => {
   const gradientColors = ['#8711c1', '#2472fc'];
   return (
     <>
-      <SchoolHeader banner="bg-BG38" heading="AKGU School of Humanities & Social Sciences" desc={description} gradientColors={gradientColors} />
+      <SchoolHeader banner="bg-BG17" heading="AKGU School of Humanities & Social Sciences" desc={description} gradientColors={gradientColors} />
       <section className='max-w-7xl mx-auto px-5 max-sm:px-2 py-10'>
         <div>
           <div className='sm:flex justify-between'>

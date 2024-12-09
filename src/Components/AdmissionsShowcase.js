@@ -6,7 +6,7 @@ const AdmissionsShowcase = () => {
         <section className="w-full bg-gray-100" >
             <div className="max-w-7xl mx-auto px-3 py-10">
                 <div className="relative">
-                    <img className="h-60 w-4/5 object-cover rounded-xl" src="/image/national-admission/photo-1.jpeg" alt="Student" />
+                    <img className="h-60 w-4/5 object-cover object-top rounded-xl" src="/image/national-admission/photo-1.webp" alt="Student" />
                     <div className="absolute inset-0 w-1/4 bg-[#F9FF42] bg-opacity-80 text-black rounded-l-xl">
                         <div className="flex items-start h-full justify-center flex-col leading-none pl-5">
                             <GraduationCap strokeWidth={1.25} size={40} />
@@ -17,7 +17,7 @@ const AdmissionsShowcase = () => {
                     </div>
                 </div>
                 <div className="flex justify-end relative">
-                    <img className="h-60 w-4/5 object-cover rounded-xl" src="/image/national-admission/photo-2.jpeg" alt="Student" />
+                    <img className="h-60 w-4/5 object-cover rounded-xl" src="/image/new-imgs/StudentCSEMTechLab.webp" alt="Student" />
                     <div className="absolute right-0 h-full w-1/4 bg-[#00007D] bg-opacity-80 text-white rounded-r-xl">
                         <div className="flex items-start h-full justify-center flex-col leading-none pl-5">
                             <MapPinned strokeWidth={1.25} size={40} />
@@ -27,7 +27,7 @@ const AdmissionsShowcase = () => {
                     </div>
                 </div>
                 <div className="relative">
-                    <img className="h-60 w-4/5 object-cover rounded-xl" src="/image/national-admission/photo-3.jpeg" alt="Student" />
+                    <img className="h-60 w-4/5 object-cover object-top rounded-xl" src="/image/new-imgs/taal.webp" alt="Student" />
                     <div className="absolute inset-0 w-1/4 bg-[#42FFF9] bg-opacity-80 text-black rounded-l-xl">
                         <div className="flex items-start h-full justify-center flex-col leading-none pl-5">
                             <BookHeart strokeWidth={1.25} size={40} />
@@ -37,7 +37,7 @@ const AdmissionsShowcase = () => {
                     </div>
                 </div>
                 <div className="flex justify-end relative">
-                    <img className="h-60 w-4/5 object-cover rounded-xl" src="/image/national-admission/photo-4.jpeg" alt="Student" />
+                    <img className="h-60 w-4/5 object-cover rounded-xl" src="/image/new-imgs/StudentCSELab3.webp" alt="Student" />
                     <div className="absolute right-0 h-full w-1/4 bg-[#930084] bg-opacity-80 text-white rounded-r-xl">
                         <div className="flex items-start h-full justify-center flex-col leading-none pl-5">
                             <Landmark strokeWidth={1.25} size={48} />

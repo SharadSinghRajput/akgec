@@ -11,7 +11,7 @@ const Scholarship = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-BG18 h-[450px] w-full top-20 bg-no-repeat bg-cover">
+            <div className="bg-BG17 h-[450px] w-full top-20 bg-no-repeat bg-cover">
                 <div className="max-w-[1400px] mx-auto h-full px-3">
                     <div className="max-w-2xl">
                         <div className="Cutout py-1.5 bg-yellow-400 mb-10"><h2 className="text-4xl font-novaReg">Year 2024-2025</h2></div>

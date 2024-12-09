@@ -52,24 +52,15 @@ const AdmissionForm = () => {
                         </div>
                     </div>
 
-                    {/* Date of Birth */}
                     <div className="mb-4">
-                        <label
-                            htmlFor="dob"
-                            className="block text-sm font-medium text-gray-700 mb-1"
-                        >
-                            How old are you?
-                        </label>
+                        <label htmlFor="dob" className="block text-sm font-medium text-gray-700 mb-1">How old are you?</label>
                         <div className="flex space-x-2">
                             <select
                                 id="day"
                                 name="day"
                                 className="w-1/3 px-4 py-2 border placeholder:font-serif placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                required
-                            >
-                                <option value="" disabled selected>
-                                    DD
-                                </option>
+                                required>
+                                <option value="" disabled selected>DD</option>
                                 {Array.from({ length: 31 }, (_, i) => (
                                     <option key={i + 1} value={i + 1}>
                                         {i + 1}
@@ -80,11 +71,8 @@ const AdmissionForm = () => {
                                 id="month"
                                 name="month"
                                 className="w-1/3 px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                required
-                            >
-                                <option value="" disabled selected>
-                                    MM
-                                </option>
+                                required>
+                                <option value="" disabled selected>MM</option>
                                 {Array.from({ length: 12 }, (_, i) => (
                                     <option key={i + 1} value={i + 1}>
                                         {new Date(0, i).toLocaleString("en", {
@@ -97,11 +85,8 @@ const AdmissionForm = () => {
                                 id="year"
                                 name="year"
                                 className="w-1/3 px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                required
-                            >
-                                <option value="" disabled selected>
-                                    YYYY
-                                </option>
+                                required>
+                                <option value="" disabled selected>YYYY</option>
                                 {Array.from({ length: 100 }, (_, i) => (
                                     <option key={i} value={2023 - i}>
                                         {2023 - i}

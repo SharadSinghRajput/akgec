@@ -16,12 +16,12 @@ const facilityData = [
     },
     {
         title: "E-learning Rooms (Swayam/MOOCs)",
-        image: "/image/academic-facilities/e-learning.webp",
+        image: "/image/academic-facilities/StudentCSEMTechLab.webp",
         description: "Our E-learning rooms provide students with access to the latest digital learning platforms like SWAYAM and MOOCs for interactive education.",
     },
     {
         title: "Recording Studios (Multimedia Development)",
-        image: "/image/academic-facilities/stud.webp",
+        image: "/image/academic-facilities/ECEProjectLab3.webp",
         description: "AKG University's multimedia development studios offer students a platform to experiment with media projects in arts, film, and animation.",
     }
 ];

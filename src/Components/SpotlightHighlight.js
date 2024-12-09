@@ -15,7 +15,6 @@ const SpotlightHighlight = () => {
                             <p className="text-3xl font-novaBold my-4">AICRA 2018 Awards for Best Technology Infrastructure of the Year and Best Vocational Robotics Educational Centre</p>
                             <button className="bg-yellow-500 text-black font-bold py-3 px-5 rounded-lg">KNOW MORE →</button>
                         </div>
-
                         <div className="shadow-lg w-full h-auto">
                             <img src="/image/national-admission/sport-light.jpg" alt="University officials" className="rounded-t-3xl" />
                         </div>
@@ -24,16 +23,14 @@ const SpotlightHighlight = () => {
                             <p className="text-3xl font-novaBold my-4">India STEM College Award and Best Robolab Setup</p>
                             <button className="bg-yellow-500 text-black font-bold py-3 px-5 rounded-lg">KNOW MORE →</button>
                         </div>
-
                         <div className="bg-teal-500 p-6 shadow-lg w-full h-auto rounded-l-3xl rounded-b-3xl">
                             <h3 className="text-xs uppercase mb-2 font-novaReg text-secondary">Dialogue India 2018 Award</h3>
                             <p className="text-3xl font-novaBold my-4 text-white">Dialogue India 2018 Award for Best Private University in North India</p>
                             <button className="bg-primary text-white font-bold py-3 px-5 rounded-lg hover:bg-transparent">KNOW MORE →</button>
                         </div>
-                        <div className="shadow-lg w-full h-auto">
+                        <div className="shadow-lg w-full h-auto rounded-b-3xl">
                             <img src="/image/national-admission/award-for-excellence.jpg" alt="Convocation ceremony" className="rounded-b-3xl" />
                         </div>
-
                         <div className="bg-secondary text-white p-6  w-full h-auto rounded-r-3xl rounded-b-3xl">
                             <h3 className="text-xs uppercase mb-2 font-novaReg text-primary">NABL</h3>
                             <p className="text-3xl text-black font-novaBold my-4">Accreditation of Measurement and Metrology Centre by National Accreditation Board for Testing and Calibration Laboratories</p>

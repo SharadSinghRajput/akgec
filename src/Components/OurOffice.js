@@ -31,8 +31,8 @@ const prog = [
 
 const OurOffice = () => {
     return (
-        <section className="bg-BG20 bg-blend-multiply bg-primary bg-cover bg-no-repeat bg-center">
-            <div className="max-w-7xl mx-auto px-3 py-10 sm:px-6 lg:px-8 relative ">
+        <section className="bg-BG16 bg-blend-multiply bg-primary bg-cover bg-center">
+            <div className="max-w-7xl mx-auto px-3 py-32 sm:px-6 lg:px-8 relative ">
                 <div className="relative z-10 max-w-7xl mx-auto">
                     <h1 className="text-4xl font-novaBold text-center mb-2 text-secondary"> OUR OFFICE OF INTERNATIONAL RELATIONS </h1>
                     <p className="text-xl text-center mb-12 text-secondary">offers exclusive opportunities to explore the world</p>

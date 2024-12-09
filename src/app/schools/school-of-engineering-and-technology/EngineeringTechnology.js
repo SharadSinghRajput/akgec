@@ -119,7 +119,7 @@ const EngineeringTechnology = () => {
   const gradientColors = ['#6366F1', '#A855F7', '#EC4899'];
   return (
     <>
-      <SchoolHeader banner="bg-BG36" heading="AKGU School of Engineering and Technology" desc={description} gradientColors={gradientColors} />
+      <SchoolHeader banner="bg-BG17" heading="AKGU School of Engineering and Technology" desc={description} gradientColors={gradientColors} />
       <section className='max-w-7xl mx-auto px-5 max-sm:px-2 py-10'>
         <div>
           <div className='sm:flex justify-between'>

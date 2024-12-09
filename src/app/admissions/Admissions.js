@@ -187,8 +187,7 @@ const Admissions = () => {
                     <div className="text-center">
                       <button
                         type="submit"
-                        className="w-full bg-secondary text-sm font-slick font-bold uppercase px-4 py-3 rounded-md hover:bg-indigo-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      >
+                        className="w-full bg-secondary text-sm font-slick font-bold uppercase px-4 py-3 rounded-md hover:bg-indigo-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
                         Submit Application
                       </button>
                     </div>
@@ -305,31 +304,31 @@ const Admissions = () => {
             </div>
           </div>
       </section>
-      <ScholarshipHighlight />
+      <ScholarshipHighlight heading={"Early Access Grant"} desc={"Higher Education Pathway 2025-2026"} />
       <section className=" max-w-7xl max-xl:max-w-5xl max-lg:max-w-2xl max-md:max-w-lg mx-auto py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-3">
             <div className="min-h-52 flex flex-col group">
               <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">Education Loan Facility</h4>
-              <p className="py-2 max-sm:leading-none text-base font-novaReg">Get a loan of up to ₹4 lakh without any security. To take advantage of this facility, visit your nearest PNB or Indian Overseas Bank branch today.</p>
+              <p className="pt-2 max-sm:leading-none text-base font-novaReg line-clamp-2">Get a loan of up to ₹4 lakh without any security. To take advantage of this facility, visit your nearest PNB or Indian Overseas Bank branch today.</p>
               <button className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
               <div className="mt-auto">
-                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/scholar.webp" alt="" />
+                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/scholar.webp" alt="scholar" />
               </div>
             </div>
             <div className="min-h-52 flex flex-col group">
               <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">AKG Advantages</h4>
-              <p className="py-2 max-sm:leading-none text-base font-novaReg">Industry-Institute Interface: Bridging Academics with Transparent Learning and Objective Assessment</p>
-              <button className="my-3 w-fit mt-auto px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
+              <p className="pt-2 max-sm:leading-none text-base font-novaReg line-clamp-2">Industry-Institute Interface: Bridging Academics with Transparent Learning and Objective Assessment</p>
+              <button className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
               <div className="mt-auto">
-                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/scholarship.webp" alt="" />
+                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/enlab_4.webp" alt="advantages" />
               </div>
             </div>
             <div className="min-h-52 flex flex-col group">
               <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">Why AKGU ?</h4>
-              <p className="py-2 max-sm:leading-none text-base font-novaReg">History, Culture, Innovation, Technology, and more—AKGU University provides a diverse array of opportunities.</p>
-              <button className="my-3 w-fit mt-auto px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
+              <p className="pt-2 max-sm:leading-none text-base font-novaReg line-clamp-2">History, Culture, Innovation, Technology, and more—AKGU University provides a diverse array of opportunities.</p>
+              <button className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
               <div className="mt-auto">
-                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/advantages.webp" alt="" />
+                <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/building/building6.webp" alt="" />
               </div>
             </div>
           </div>

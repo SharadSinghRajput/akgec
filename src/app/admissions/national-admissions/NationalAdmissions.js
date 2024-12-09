@@ -10,7 +10,7 @@ import AdmissionsShowcase from "@/Components/AdmissionsShowcase";
 import ScholarshipHighlight from "@/Components/ScholarshipHighlight";
 import HighlightPlacement from "@/Components/HighlightPlacement";
 import OurOffice from "@/Components/OurOffice";
-import ResearchFaciliy from "@/Components/ResearchFaciliy";
+import ResearchFacility from "@/Components/ResearchFacility";
 
 
 const statsData = [
@@ -238,7 +238,7 @@ const NationalAdmissions = () => {
 
     return (
         <>
-            <section className="h-screen w-full bg-BG40 bg-cover bg-center bg-indigo-950 bg-blend-multiply bg-opacity-50">
+            <section className="h-screen w-full bg-BG16 bg-cover bg-center bg-indigo-950 bg-blend-multiply bg-opacity-80">
                 <div className="flex px-1 md:px-12 lg:px-24">
                     <div className="container max-w-full lg:max-w-[1700px] flex justify-end max-xl:flex-col-reverse gap-10">
                         <div className="max-w-[1400px] w-full mx-auto h-screen flex justify-between items-center">
@@ -395,7 +395,6 @@ const NationalAdmissions = () => {
                             </div>
                         ))}
                     </div>
-
                     <button
                         onClick={prevSlide}
                         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md"
@@ -423,14 +422,9 @@ const NationalAdmissions = () => {
                             <div className='p-4 '>
                                 <h2 className="text-2xl font-bold max-lg:text-xl max-md:text-lg mb-4">{moon[0].title}</h2>
                                 <div className='mb-5'>
-                                    <p className="text-base mb-2.5">
-                                        {moon[0].description}
-                                    </p>
+                                    <p className="text-base mb-2.5">{moon[0].description}</p>
                                 </div>
-                                <img
-                                    src={moon[0].url}
-                                    className="rounded-3xl "
-                                />
+                                <img src={moon[0].url} className="rounded-3xl"/>
                             </div>
                         </div>
                         <div className="bg-teal-500 text-black col-span-2 rounded-3xl card overflow-hidden">
@@ -459,9 +453,8 @@ const NationalAdmissions = () => {
                     </div>
                 </div>
             </section>
-
             <OurOffice />
-            <ResearchFaciliy />
+            <ResearchFacility />
         </>
     );
 };

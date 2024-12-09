@@ -1,15 +1,14 @@
 import React from 'react'
 
-const ScholarshipHighlight = ({heading, subheading, desc, pgSub, ugSub}) => {
+const ScholarshipHighlight = ({heading, desc, pgSub, ugSub}) => {
     return (
         <section className="relative grid grid-cols-2 max-xl:grid-cols-1">
-            <div className=" bg-no-repeat bg-cover h-full bg-BG16 bg-blue-700 bg-blend-multiply">
+            <div className=" bg-no-repeat bg-cover h-full bg-BG14 bg-blue-700 bg-blend-multiply">
                 <div className="flex justify-center items-center max-lg:justify-start max-lg:items-start max-lg:mt-10 max-lg:ml-10  h-full">
                     <div className="max-xl:flex max-xl:items-end gap-10 py-10 max-sm:flex-col max-sm:items-start">
                         <div>
                             <h2 className="text-white text-5xl max-md:text-4xl leading-12 uppercase tracking-wide font-normal">
-                                {heading} <br />
-                                {subheading}
+                                {heading}
                             </h2>
                             <p className="text-white text-base leading-6 my-3">
                                 {desc} <br />
