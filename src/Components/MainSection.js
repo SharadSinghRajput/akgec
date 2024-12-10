@@ -9,11 +9,11 @@ const MainSection = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const buildingImages = [
-        "/image/building/building1.webp",
-        "/image/building/building2.webp",
-        "/image/building/building3.webp",
         "/image/building/building4.webp",
-        "/image/building/building5.webp"
+        "/image/building/building3.webp",
+        "/image/building/building2.webp",
+        "/image/building/building1.webp",
+        "/image/building/building5.webp",
     ];
 
     useEffect(() => {

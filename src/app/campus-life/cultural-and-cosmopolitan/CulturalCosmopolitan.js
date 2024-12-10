@@ -38,7 +38,7 @@ const culturalData = [
 const CulturalCosmopolitan = () => {
     return (
         <>
-            <section className="relative bg-BG27 bg-center bg-no-repeat bg-cover h-[90vh]">
+            <section className="relative bg-BG44 bg-center bg-no-repeat bg-cover h-[90vh]">
                 <div className="max-w-7xl mx-auto px-3">
                     <div className="absolute inset-0 flex">
                         <div className="w-1/2 h-full"></div>

@@ -353,8 +353,9 @@ export default function CenterOfExcellence() {
 
     return (
         <>
-            <div className="w-full flex justify-center items-center h-[600px] max-lg:h-80 bg-cover bg-center bg-[#535353] bg-blend-overlay bg-BG12">
-                <div className="text-white text-center mt-auto mb-32 max-w-2xl max-md:max-w-lg max-sm:max-w-sm max-sm:px-2">
+            <div className="w-full flex justify-center items-center h-[600px] max-lg:h-80 bg-cover bg-top bg-[#535353] bg-blend-overlay bg-BG47 relative">
+                <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent'/>
+                <div className="relative text-white text-center mt-auto mb-32 max-w-2xl max-md:max-w-lg max-sm:max-w-sm max-sm:px-2">
                     <h3 className="text-xl tracking-wide font-novaReg max-sm:text-[18px]">
                         University with Best Placements
                     </h3>

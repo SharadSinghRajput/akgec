@@ -34,7 +34,7 @@ const scholar = [
 const VisitingScholars = () => {
     return (
         <>
-            <section className="relative bg-BG35 h-[80vh] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-end bg-black bg-blend-darken bg-opacity-70">
+            <section className="relative bg-BG44 h-[80vh] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-end bg-black bg-blend-darken bg-opacity-70">
                 <div className="max-w-5xl w-full mx-auto bg-gray-300 opacity-90 h-96 flex items-center justify-center flex-col">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-6xl font-novaReg uppercase mb-3">Discover <span className="font-semibold text-blue-600">Opportunities as a</span> Visiting Scholar</h2>

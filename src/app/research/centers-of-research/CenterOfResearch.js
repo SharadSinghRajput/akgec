@@ -162,8 +162,8 @@ const CenterOfResearch = () => {
 
             <section className="bg-BG30 bg-no-repeat bg-center bg-cover bg-fixed min-h-[600px]"></section>
 
-            <section className="bg-BG34 bg-no-repeat bg-cover">
-                <div className="bg-black/80">
+            <section className="bg-BG42 bg-no-repeat bg-cover">
+                <div className="bg-black/90">
                     <div className="max-w-[1400px] mx-auto px-3 py-20">
                         <h3 className="text-4xl font-novaBold uppercase mt-5 mb-4 w-full text-white">
                             {sky[0].title}
@@ -195,10 +195,10 @@ const CenterOfResearch = () => {
                     <div className="px-6 lg:px-8">
                         <div className="w-full text-center">
                             <div>
-                                <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
+                                <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500">
                                     What everyone is saying
                                 </h2>
-                                <h3 className="mt-2 text-pretty uppercase text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-5xl">
+                                <h3 className="mt-2 text-pretty uppercase text-4xl font-medium tracking-tighter text-gray-950 sm:text-5xl">
                                     Trusted by professionals.
                                 </h3>
                             </div>
@@ -239,16 +239,16 @@ const CenterOfResearch = () => {
                 </div>
             </section>
 
-            <section className="bg-BG22 bg-no-repeat bg-center bg-cover bg-indigo-950 bg-blend-multiply bg-opacity-90 py-10">
+            <section className="bg-BG49 bg-no-repeat h-screen bg-center bg-cover bg-indigo-950 bg-blend-multiply bg-opacity-90 py-10">
                 <div>
                     <div className="max-w-[1400px] mx-auto">
                         <div className="w-full">
                             <div className="flex items-center w-full">
-                                <div className="mt-16 sm:mt-20 w-full">
+                                <div className="mt-20 w-full">
                                     <div className="-my-4 flex justify-center gap-5 py-4 sm:gap-8">
 
                                         {students.map((student, index) => (
-                                            <div key={index} className={`relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 ${index % 2 === 0 ? "rotate-2" : "-rotate-2"}`}>
+                                            <div key={index} className={`relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl ${index % 2 === 0 ? "rotate-2" : "-rotate-2"}`}>
                                                 <img
                                                     alt={student.alt}
                                                     loading="lazy"
@@ -264,13 +264,12 @@ const CenterOfResearch = () => {
                                             </div>
                                         ))}
                                     </div>
-
-                                    <div className="max-w-7xl mx-auto">
+                                    <div className="max-w-7xl mx-auto flex flex-col justify-center items-center">
                                         <div className="py-8 text-center">
-                                            <h2 className="text-3xl font-bold text-white sm:text-4xl dark:text-black">{outcomes.title}</h2>
+                                            <h2 className="text-3xl font-bold text-white sm:text-4xl">{outcomes.title}</h2>
                                         </div>
 
-                                        <ul className="list-disc space-y-4 py-6 text-white dark:text-black">
+                                        <ul className="list-disc space-y-4 py-6 text-white">
                                             {outcomes.list.map((item, index) => (
                                                 <li key={index}>{item}</li>
                                             ))}

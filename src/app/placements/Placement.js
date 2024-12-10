@@ -262,7 +262,7 @@ const Placement = () => {
         </div>
       </section>
 
-      <section className="relative bg-BG10 h-[80vh] bg-indigo-950 bg-blend-multiply py-24 -mt-[72px]">
+      <section className="relative bg-BG42 h-[80vh] bg-indigo-950 bg-blend-multiply py-24 -mt-[72px]">
         <div className="relative z-10 container px-3 max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-white font-novaBold text-3xl mb-2">Highest Package</h2>
@@ -340,7 +340,7 @@ const Placement = () => {
             </h4>
             <div className="flex justify-center mt-8">
               <div className="relative w-[800px] h-[450px] bg-white rounded-lg overflow-hidden shadow-lg">
-                <img src="/image/placements/video-thumbnail.jpeg" alt="thumbnail" className="w-full h-full object-cover" />
+                <img src="/image/building/building4.webp" alt="thumbnail" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 flex justify-center items-center">
                   <a href="https://youtu.be/tOl8-QPLIAU?si=mhbEHi44Z0VX6NsE" target="_blank">
                     <div className="bg-blue-400 rounded-full h-16 w-16 flex items-center justify-center">
@@ -447,9 +447,9 @@ const Placement = () => {
         </div>
       </section>
 
-      <section className='bg-BG26 min-h-screen bg-cover bg-center cursor-pointer'>
+      <section className='bg-BG45 min-h-screen bg-cover bg-center cursor-pointer'>
         <div className='max-w-full mx-auto'>
-          <div className='px-3 flex justify-start ml-auto bg-[#1f4171] w-1/2 opacity-90'>
+          <div className='px-3 flex items-center justify-start h-screen ml-auto bg-[#1f4171] w-1/2 opacity-90'>
             <div className='p-20 max-w-2xl'>
               <div className=''>
                 <h2 className='text-3xl font-novaBold text-white mb-4'>AKG <br />University<br />
