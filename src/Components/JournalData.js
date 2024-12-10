@@ -7,7 +7,7 @@ export default function JournalData({tabs, content}) {
 
     return (
         <div className="grid grid-cols-5 bg-gray-100">
-            <div className="col-span-1 h-full bg-white shadow-md rounded-lg">
+            <div className="col-span-1 sticky top-32 h-fit bg-white shadow-md rounded-lg">
                 <div className="p-4 border-b">
                     <h2 className="text-lg font-novaBold uppercase">Navigation</h2>
                 </div>

@@ -1,3 +1,5 @@
+import Accordion from "@/Components/Accordion"
+
 export const tabs = [
     "About",
     "Patron-in-Chief",
@@ -90,12 +92,20 @@ To recognize the invaluable intellectual contribution made by professionals in a
     "Payment & Subscription": <>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-                <h2>STEP-1</h2>
+                <h2 className="font-novaBold text-xl">STEP-1</h2>
                 <span>Choose your Subscription</span>
                 <img src="/image/international-journal/subscription-rates.jpg" alt="subscription-rates" />
+                <div>
+                    <h2 className="font-novaBold text-xl mt-10">STEP-3</h2>
+                    <span>Click <a className="text-blue-500 hover:underline" href="https://docs.google.com/forms/d/13e-9_Aw1v-Eebu86ztvQCZyfiyH532Nkz8mtK8jCPJw/viewform?edit_requested=true" target="_blank">“Fill details online"</a> link.</span>
+                </div>
+                <div>
+                    <h2 className="font-novaBold text-xl mt-10">STEP-4</h2>
+                    <span>Fill the required details in the form and submit.</span>
+                </div>
             </div>
             <div>
-                <h2>STEP-2</h2>
+                <h2 className="font-novaBold text-xl">STEP-2</h2>
                 <span>Online Payment : Through RTGS/NEFT</span>
                 <table className="min-w-full border border-gray-300">
                     <thead>
@@ -139,9 +149,12 @@ To recognize the invaluable intellectual contribution made by professionals in a
                         </tr>
                     </tbody>
                 </table>
-
+                <h2 className="mt-5 font-novaSemi text-lg text-center">Offline Payment : Through Bank Draft/Cheque</h2>
+                <p>All Cheques / Demand Drafts (DD) should be made in favour of “Ajay Kumar Garg Engineering College.", payable at Ghaziabad.</p>
             </div>
         </div>
     </>,
-    "Archives": "Access to past issues and archived content would be available in this section."
+    "Archives": <>
+        <Accordion />
+    </>
 }

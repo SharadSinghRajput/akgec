@@ -545,7 +545,7 @@ export const ResearchInnovation = {
             },
             {
                 name:"Patent & Publications",
-                url:"/research/patent"
+                url:"/patent"
             },
             {
                 name:"Centers Of Research",
