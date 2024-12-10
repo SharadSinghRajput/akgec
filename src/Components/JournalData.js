@@ -6,8 +6,8 @@ export default function JournalData({tabs, content}) {
     const [activeTab, setActiveTab] = useState("About")
 
     return (
-        <div className="grid grid-cols-5 bg-gray-100">
-            <div className="col-span-1 sticky top-32 h-fit bg-white shadow-md rounded-lg">
+        <div className="grid grid-cols-8 bg-gray-100">
+            <div className="col-span-2 sticky top-24 h-fit bg-white shadow-md rounded-lg">
                 <div className="p-4 border-b">
                     <h2 className="text-lg font-novaBold uppercase">Navigation</h2>
                 </div>
@@ -22,7 +22,7 @@ export default function JournalData({tabs, content}) {
                     </div>
                 </div>
             </div>
-            <div className="col-span-4 flex-grow ml-2 overflow-auto bg-white shadow-md rounded-lg">
+            <div className="col-span-6 flex-grow ml-2 overflow-auto bg-white shadow-md rounded-lg">
                 <div className="p-4 border-b">
                     <h2 className="text-lg font-novaBold uppercase">{activeTab}</h2>
                 </div>

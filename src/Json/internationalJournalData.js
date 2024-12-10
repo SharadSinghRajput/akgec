@@ -1,4 +1,37 @@
 import Accordion from "@/Components/Accordion"
+import { Journal_Jan_June_2010, Journal_Jan_June_2011, Journal_Jan_June_2012, Journal_Jan_June_2013, Journal_Jan_June_2014, Journal_Jan_June_2015, Journal_Jan_June_2016, Journal_Jan_June_2017, Journal_January_June_2018, Journal_January_June_2019, Journal_January_June_2020, Journal_January_June_2021, Journal_January_June_2022, Journal_January_June_2023, Journal_January_June_2024, Journal_July_Dec_2010, Journal_July_Dec_2011, Journal_July_Dec_2012, Journal_July_Dec_2013, Journal_July_Dec_2014, Journal_July_Dec_2015, Journal_July_Dec_2016, Journal_July_Dec_2017, Journal_July_December_2018, Journal_July_December_2019, Journal_July_December_2020, Journal_July_December_2021, Journal_July_December_2022, Journal_July_December_2023, journalYears } from "@/Json/JournalTableData";
+
+const JournalDataMapping = {
+    1: Journal_January_June_2024,
+    2: Journal_July_December_2023,
+    3: Journal_January_June_2023,
+    4: Journal_July_December_2022,
+    5: Journal_January_June_2022,
+    6: Journal_July_December_2021,
+    7: Journal_January_June_2021,
+    8: Journal_July_December_2020,
+    9: Journal_January_June_2020,
+    10: Journal_July_December_2019,
+    11: Journal_January_June_2019,
+    12: Journal_July_December_2018,
+    13: Journal_January_June_2018,
+    14: Journal_July_Dec_2017,
+    15: Journal_Jan_June_2017,
+    16: Journal_July_Dec_2016,
+    17: Journal_Jan_June_2016,
+    18: Journal_July_Dec_2015,
+    19: Journal_Jan_June_2015,
+    20: Journal_July_Dec_2014,
+    21: Journal_Jan_June_2014,
+    22: Journal_July_Dec_2013,
+    23: Journal_Jan_June_2013,
+    24: Journal_July_Dec_2012,
+    25: Journal_Jan_June_2012,
+    26: Journal_July_Dec_2011,
+    27: Journal_Jan_June_2011,
+    28: Journal_Jan_June_2010,
+    29: Journal_July_Dec_2010,
+};
 
 export const tabs = [
     "About",
@@ -67,7 +100,7 @@ To recognize the invaluable intellectual contribution made by professionals in a
             <li>He has abiding passion for teaching and research. Guided 10 M. Tech and 2 PhD scholars besides supervising 15 B.Tech projects. Delivered Keynote address on ‘Mobile Computing’ in Feb 2014 at Annual Convention of JIMS.</li>
             <li>He is Life Fellow of the IETE and attended international conferences held in France, Singapore, USA, Hong Kong and Nepal. Daily practices advanced ‘Art-of-Living’ meditation. Also associated with ‘Amway’ and Insurance sector.</li>
             <li><strong>Contact Details:</strong> +91 9868041558</li>
-            <li><strong>Email Id:</strong> editor_journal@akgec.ac.in, akgec.ece@gmail.com</li>
+            <li><strong>Email Id:</strong> <a className="text-blue-500" href="mailto:editor_journal@akgec.ac.in">editor_journal@akgec.ac.in</a>, <a className="text-blue-500" href="mailto:akgec.ece@gmail.com">akgec.ece@gmail.com</a></li>
         </ul>
     </>,
     "Call for Manuscripts": <>
@@ -77,7 +110,7 @@ To recognize the invaluable intellectual contribution made by professionals in a
             <li>The AKGIJT invites scientific articles, original research, state of the art reviews and case studies from the industry, research and academic professionals for consideration of publication in this open access (without APC) journal. The submitted articles will be peer-reviewed and further consideration will follow the review report/recommendations. Submissions will be peer-reviewed by a panel of experts.</li>
             <li><strong>Contributions in the broader contemporary research involving broad engineering disciplines and multi-disciplinary areas are welcomed.</strong></li>
             <li>Brief submission guidelines are given below, but the prospective authors are encouraged to visit the Journal's website .The journal regards high value to the publication ethics and plagiarism. Detailed information for the authors including manuscript preparations, publication ethics and journal overview can be viewed on the Journal’s website.</li>
-            <li>All Contributions Should be Emailed to <span className="text-blue-600 font-novaBold">editor_journal@akgec.ac.in</span></li>
+            <li>All Contributions Should be Emailed to <span className="text-blue-600 font-novaBold"><a className="text-blue-500" href="mailto:editor_journal@akgec.ac.in">editor_journal@akgec.ac.in</a></span></li>
             <li><strong>Submission guidelines:</strong></li>
             <ul className="list-disc pl-5 font-novaReg">
                 <li>Submissions should be original and must not be under consideration for publications elsewhere.</li>
@@ -155,6 +188,6 @@ To recognize the invaluable intellectual contribution made by professionals in a
         </div>
     </>,
     "Archives": <>
-        <Accordion />
+        <Accordion years={journalYears} dataMapping={JournalDataMapping}/>
     </>
 }

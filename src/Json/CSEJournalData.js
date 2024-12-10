@@ -1,4 +1,6 @@
+
 import Accordion from "@/Components/Accordion"
+import { Volume_1_Issue_1, Volume_1_Issue_2, Volume_2_Issue_1, Volume_2_Issue_2, Volume_3_Issue_1, Volume_3_Issue_2 } from "./CSEJournalTableData";
 
 const journalDetails = [
     { label: "Title", value: "GLIMPSE – Journal of Computer Science" },
@@ -87,6 +89,32 @@ const editorialBoard = [
         pdf: "/pdf/cse-journal-gjcs/Akhilesh-Verma-.pdf"
     }
 ];
+
+const volume3 = [
+    { id: 1, title: "Volume-3 | Issue - 2 July to December" },
+    { id: 2, title: "Volume-3 | Issue - 1 January to June" },
+]
+const volume2 = [
+    { id: 1, title: "Volume-2 | Issue - 2 July to December" },
+    { id: 2, title: "Volume-2 | Issue - 1 January to June" },
+]
+const volume1 = [
+    { id: 1, title: "Volume-1 | Issue - 2 July to December" },
+    { id: 2, title: "Volume-1 | Issue - 1 January to June" },
+]
+
+const volume3Mapping = {
+    1: Volume_3_Issue_2,
+    2: Volume_3_Issue_1,
+}
+const volume2Mapping = {
+    1: Volume_2_Issue_2,
+    2: Volume_2_Issue_1,
+}
+const volume1Mapping = {
+    1: Volume_1_Issue_2,
+    2: Volume_1_Issue_1,
+}
 
 export const tabs = [
     "About",
@@ -182,8 +210,8 @@ export const content = {
             </div>
         </div>
     </>,
-    "Aim and Scope": <>
-        <p className="mb-5">Glimpse Journal of Computer Science, is the official journal of the Department of Computer Science and Engineering, Ajay Kumar Garg Engineering College, Ghaziabad. It publishes the work involved in all aspects of computer science, information technology and technology. Papers reporting original research and innovative applications from all parts of the world are welcome. Papers for publication in the journal are selected through rigorous peer review, to ensure originality, timeliness, relevance, and readability. While the journal emphasizes the publication of previously unpublished articles, selected extended conference papers with exceptional merit are also considered. The journal also seeks clearly written survey and review articles from experts in the field, to promote insightful understanding of the state-of-the-art and technology trends.</p>
+    "Aim and Scope": <div>
+        <span className="mb-5">Glimpse Journal of Computer Science, is the official journal of the Department of Computer Science and Engineering, Ajay Kumar Garg Engineering College, Ghaziabad. It publishes the work involved in all aspects of computer science, information technology and technology. Papers reporting original research and innovative applications from all parts of the world are welcome. Papers for publication in the journal are selected through rigorous peer review, to ensure originality, timeliness, relevance, and readability. While the journal emphasizes the publication of previously unpublished articles, selected extended conference papers with exceptional merit are also considered. The journal also seeks clearly written survey and review articles from experts in the field, to promote insightful understanding of the state-of-the-art and technology trends.</span>
         <strong>Topics covered by the journal include but are not limited to:</strong>
         <ul className="font-novaReg list-disc space-y-3 mt-2 pl-5">
             <li>Theoretical Computer Science</li>
@@ -198,28 +226,39 @@ export const content = {
             <li>Theory and Algorithms</li>
             <li>Emerging Areas</li>
         </ul>
-    </>,
-    "Paper Submission": <>
+    </div>,
+    "Paper Submission": <div>
         <ul className="space-y-3">
             <li><strong>Submission guideline: </strong> Authors can format their paper as per the IEEE template available at <a className="text-blue-500" href="/pdf/cse-journal-gjcs/Template.docx">Template</a></li>
             <li><strong>Submit manuscript: </strong> Email your manuscript to this email-id: <a className="text-blue-500" href="mailto:prasadrajesh@akgec.ac.in">prasadrajesh@akgec.ac.in</a></li>
         </ul>
-    </>,
+    </div>,
     "Archives": <>
-        
+        <div>
+            <h2 className="text-xl font-novaSemi mb-4">Volume-3 | 2024</h2>
+            <Accordion years={volume3} dataMapping={volume3Mapping} />
+        </div>
+        <div>
+            <h2 className="text-xl font-novaSemi mb-4">Volume-2 | 2023</h2>
+            <Accordion years={volume2} dataMapping={volume2Mapping} />
+        </div>
+        <div>
+            <h2 className="text-xl font-novaSemi mb-4">Volume-1 | 2022</h2>
+            <Accordion years={volume1} dataMapping={volume1Mapping} />
+        </div>
     </>,
     "Contact Us": <div className="flex justify-between gap-3">
         <div className="max-w-md space-y-3">
             <h2 className="font-novaSemi text-2xl">Editor-in-chief</h2>
             <strong>Dr. Rajesh Prasad</strong>
-            <p>Professor, Computer Science and Engineering, Ajay Kumar Garg Engineering College, Ghaziabad, UP, India-201009</p>
+            <span>Professor, Computer Science and Engineering, Ajay Kumar Garg Engineering College, Ghaziabad, UP, India-201009</span>
             <span className="block"><strong>Email: </strong> prasadrajesh@akgec.ac.in</span>
             <span className="block"><strong>Mobile No: </strong> +919667896459</span>
         </div>
         <div className="max-w-md space-y-3">
             <h2 className="font-novaSemi text-2xl">Publisher</h2>
             <strong>Department of Computer Science and Engineering, Ajay Kumar Garg Engineering College,</strong>
-            <p>27th KM Milestone, Delhi – Meerut Expy, Ghaziabad-201009, Uttar Pradesh</p>
+            <span>27th KM Milestone, Delhi – Meerut Expy, Ghaziabad-201009, Uttar Pradesh</span>
             <span className="block"><strong>Email: </strong> info@akgec.ac.in</span>
             <span className="block"><strong>Mobile No: </strong> +917290034978</span>
         </div>
