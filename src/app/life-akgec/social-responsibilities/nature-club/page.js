@@ -1,0 +1,28 @@
+import Header from "@/Components/Header";
+import SideBar from "@/Components/SideBar";
+// import natureclub from "./natureclub";
+import Natureclub from "./NatureClub";
+
+// const Button = {
+//     name: "Apply Now",
+//     Link: "",
+// };
+
+
+const Home = () => {
+    return (
+        <>
+            <div className="bg-gray-100">
+                <Header /*{title={"VECell SDPs"} Button={Button}}*/ gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
+                <section className="w-full max-w-[1400px] mx-auto py-10">
+                    <div className="">
+                        <Natureclub />
+                    </div>
+                </section>
+            </div>
+        </>
+    )
+}
+
+
+export default Home;
