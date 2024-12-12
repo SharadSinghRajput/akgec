@@ -41,7 +41,7 @@ const FDPS = () => {
                   {openIndices.includes(index) ? (<ChevronUp className="w-6 h-6" />) : (<ChevronDown className="w-6 h-6" />)}
                 </a>
                 {openIndices.includes(index) && (
-                  <div className="pl-5 py-10 bg-gray-200">
+                  <div className="py-10 bg-gray-200">
                     <p className="font-novaReg mb-4">{result.desc}</p>
                     {result.table && <>
                       <div className="">

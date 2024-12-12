@@ -6,7 +6,7 @@ import { Autoplay, EffectCube } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/effect-cube'
 
-export default function CubeSlider({slides, width = "w-96"}) {
+export default function CubeSlider({slides, width = "w-72"}) {
 
     return (
         <div className="w-full mx-auto p-4">
