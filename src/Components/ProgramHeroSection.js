@@ -3,7 +3,7 @@ import { IndianRupee } from 'lucide-react'
 
 const ProgramHeroSection = () => {
     return (
-        <div className='relative bg-BG43 bg-cover h-[90vh] max-sm:h-[70vh]'>
+        <div className='relative bg-BG43 bg-cover h-[90vh]'>
             <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent' />
             <div className='absolute inset-0 flex justify-center items-start flex-col max-w-7xl mx-auto'>
                 <div className='mt-auto px-10 max-[400px]:px-2 pt-32
