@@ -229,7 +229,7 @@ export const Programs = {
                 "Graduate": [
                     {
                         name: 'B.Tech',
-                        url: '/programs/btech'
+                        url: '/programs/btech-cse'
                     },
                     {
                         name: 'BCA',
@@ -548,12 +548,12 @@ export const ResearchInnovation = {
                 url:"/patent"
             },
             {
-                name:"Centers Of Research",
-                url:"/research/centers-of-research"
+                name:"Centres Of Research",
+                url:"/research/centres-of-research"
             },
             {
-                name:"Centers of Excellence",
-                url:"/research/centers-of-excellence"
+                name:"Centres of Excellence",
+                url:"/research/centres-of-excellence"
             },
             {
                 name:"Visiting Scholars",

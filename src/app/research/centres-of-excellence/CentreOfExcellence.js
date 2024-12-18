@@ -348,7 +348,7 @@ const other = [
     }
 ];
 
-export default function CenterOfExcellence() {
+export default function CentreOfExcellence() {
     const [hoveredCard, setHoveredCard] = useState(null);
 
     return (
@@ -402,7 +402,7 @@ export default function CenterOfExcellence() {
                                         src={card.image}
                                         alt={card.title}
                                         layout="fill"
-                                        objectFit="cover"
+                                        objectfit="cover"
                                         className="transition-transform duration-300 ease-in-out "
                                         style={{ transform: hoveredCard === index ? 'scale(1.1)' : 'scale(1)' }}
                                     />

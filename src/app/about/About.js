@@ -25,9 +25,9 @@ export default function About() {
           ${activeSection > 4 ? "hidden" : "block"} 
           max-xl:hidden`}
         style={{
-          height: "75vh",
+          height: "600px",
+          width: "400px",
           transform: `translateY(${translateY}px) translateX(${translateX}px)`,
-          width: "50vh",
           transition: "transform 0.4s ease-in-out",
         }}
       >
@@ -41,11 +41,11 @@ export default function About() {
                 whileInView={{ opacity: 1, scale: 1, bottom: 0 }}
                 className="flex flex-col items-center justify-center px-5 h-full w-full py-10"
               >
-                <h1 className="text-4xl font-normal text-center">
+                <h1 className="text-3xl font-normal text-center">
                   {section.title}
                 </h1>
                 {section.subtitle && (
-                  <h2 className="text-green-500 w-60 text-center tracking-wide text-4xl uppercase">
+                  <h2 className="text-green-500 w-60 text-center tracking-wide text-3xl uppercase">
                     {section.subtitle}
                   </h2>
                 )}

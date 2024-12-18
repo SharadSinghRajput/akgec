@@ -58,7 +58,7 @@ export default function Gallery() {
                     src={photo.src}
                     alt={photo.alt}
                     layout="fill"
-                    objectFit="cover"
+                    objectfit="cover"
                     className="transition-all duration-300 group-hover:blur-sm"
                     priority
                   />
@@ -89,7 +89,7 @@ export default function Gallery() {
                   src={photos[selectedId].src}
                   alt={photos[selectedId].alt}
                   layout="fill"
-                  objectFit="contain"
+                  objectfit="contain"
                   priority 
                 />
                 <motion.button

@@ -14,9 +14,9 @@ const sky = [
             "Experimental studies on Compact Structures of satellites for LEO",
             "Experimental Materials for Antennae and Deployment Methods",
             "Unmanned Arial Vehicle Design",
-            "Center for research in Geospatial",
+            "Centre for research in Geospatial",
             "Model Rocketry Lab",
-            "Star Gazing Center"
+            "Star Gazing Centre"
         ]
     }
 ];
@@ -83,7 +83,7 @@ const outcomes = {
     ]
 }
 
-const CenterOfResearch = () => {
+const CentreOfResearch = () => {
     const slide = (direction) => {
         const slider = document.getElementById('slider');
         const scrollAmount = 300;
@@ -111,7 +111,7 @@ const CenterOfResearch = () => {
                                 Leading Innovations in Space Science<br /> at AKG University
                             </p>
                             <h3 className="text-5xl font-novaBold uppercase text-white mt-5 leading-[42px]">
-                                Ajay K. Gupta University Center for Research in Space Science & Technology
+                                Ajay Kumar Garg University Centre for Research in Space Science & Technology
                             </h3>
                             <a href="/apply" className="flex mt-5 w-fit text-black py-3 px-9 bg-secondary rounded-3xl">
                                 Apply Now
@@ -126,14 +126,14 @@ const CenterOfResearch = () => {
                                     INNOVATIONS IN SPACE SCIENCE & TECHNOLOGY
                                 </h2>
                                 <p className="mb-6 text-white">
-                                    The establishment of the Ajay K. Gupta Center for Research in Space Science & Technology represents a groundbreaking advancement for students at
-                                    AKG University. This center aims to foster intellectual growth and enhance the nation's capabilities in space exploration and technology.
+                                    The establishment of the Ajay K. Gupta Centre for Research in Space Science & Technology represents a groundbreaking advancement for students at
+                                    AKG University. This centre aims to foster intellectual growth and enhance the nation's capabilities in space exploration and technology.
                                 </p>
                                 <h3 className="text-xl font-bold mb-4 text-white">
                                     AKG University is proud to be the first institution in India to operate a fully functional real-time ground station for satellite communications.
                                 </h3>
                                 <p className="mb-6 text-white">
-                                    Our commitment is to provide unparalleled educational experiences and resources to inspire young innovators. The center serves as a platform for students to delve
+                                    Our commitment is to provide unparalleled educational experiences and resources to inspire young innovators. The centre serves as a platform for students to delve
                                     into advanced research in space science, fostering curiosity and ambition, and significantly contributing to national technological progress.
                                 </p>
                                 <button className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full flex items-center gap-2">
@@ -179,7 +179,7 @@ const CenterOfResearch = () => {
                             <div className="px-3 pt-10">
                                 <ol className="mt-12 pl-10 list-decimal">
                                     {sky[0].features.map((feature, index) => (
-                                        <li li key={index} className="text-white text-xl font-novaReg mb-5 pl-8" >
+                                        <li key={index} className="text-white text-xl font-novaReg mb-5 pl-8" >
                                             {feature}
                                         </li>
                                     ))}
@@ -289,4 +289,4 @@ const CenterOfResearch = () => {
     );
 };
 
-export default CenterOfResearch;
+export default CentreOfResearch;

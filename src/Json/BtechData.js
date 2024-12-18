@@ -1,6 +1,6 @@
 export const slidesData = [
     {
-      imageUrl: '/image/Programs/slide-1.jpg',
+      imageUrl: '/image/building/building1.webp',
       title: 'AKG University has Welcomed Students from more than 50 Countries',
       description: 'With more than 100+ Bachelors, Masters, and Doctoral programs to choose from, AKG is one of the highly preferred destinations for International Students.',
       linkText: 'EXPLORE MORE →',
@@ -10,7 +10,7 @@ export const slidesData = [
       overlay: true,
     },
     {
-      imageUrl: '/image/Programs/slide-2.jpg',
+      imageUrl: '/image/building/building2.webp',
       title: 'Predict Your Future Career',
       description: 'Career Guide 2024',
       linkText: 'VIEW MORE →',
@@ -19,7 +19,7 @@ export const slidesData = [
       buttonClass: 'bg-white text-red-600 hover:bg-zinc-200',
     },
     {
-      imageUrl: '/image/Programs/slide-3.jpg',
+      imageUrl: '/image/building/building3.webp',
       title: 'Detailed Report on AKG Placements',
       description: 'Career Guide 2024',
       linkText: 'VIEW MORE →',
@@ -29,7 +29,7 @@ export const slidesData = [
       overlay: true,
     },
     {
-      imageUrl: '/image/Programs/slide-4.jpg',
+      imageUrl: '/image/building/building4.webp',
       title: 'A Guide to Discover. Learn. Empower.',
       description: 'Career Guide 2024',
       linkText: 'VIEW MORE →',
