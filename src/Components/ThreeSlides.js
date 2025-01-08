@@ -1,5 +1,6 @@
+"use client";
+
 import React from 'react'
-import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css'
@@ -22,8 +23,8 @@ const ThreeSlides = ({slides}) => {
                         nextEl: '#slider-button-right',
                         prevEl: '#slider-button-left',
                     }}
-                    className="multiple-slide-carousel"
-                >
+                    className="multiple-slide-carousel">
+                        
                     {slides?.map((slide) => (
                         <SwiperSlide key={slide.id}>
                             <div className="rounded-2xl shadow-cardShadow flex flex-col justify-start items-center flex-grow p-8 my-10 pt-0 min-h-52 bg-yellow-100/10">

@@ -77,7 +77,7 @@ export default function NavBar() {
   );
   return (
     <header
-      className={`z-[100] w-full fixed top-0 left-0 max-md:bg-blue-700 bg-white transition-all duration-200 shadow-lg`}
+      className={`z-[100] w-full fixed top-0 left-0 max-md:bg-blue-700 bg-[#F7F7F7] transition-all duration-200 shadow-lg`}
     >
       <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-4  gap-x-10">
         <div className="col-span-2 flex max-xl:col-span-2 max-lg:col-span-8 max-md:col-span-2 max-md:pt-2 max-sm:col-span-2  max-sm:mb-4  ">
@@ -148,7 +148,7 @@ export default function NavBar() {
               className={`${BigMenuToggle
                 ? "fixed w-full h-full left-0 top-0 pt-10"
                 : `hidden relative`}  lg:flex items-center justify-end gap-0 xl:gap-4
-                text-black font-semibold text-sm bg-white max-xl:pl-2`}>
+                text-black font-semibold text-sm bg-[#F7F7F7] max-xl:pl-2`}>
               {BigMenuToggle ? (
                 <>
                   <button

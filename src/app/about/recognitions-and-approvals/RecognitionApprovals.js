@@ -9,7 +9,13 @@ const RecognitionApprovals = () => {
             id: "naac",
             title: "NAAC Accreditation",
             description: "NAAC recognizes institutions for their excellence in education and infrastructure. AKG University holds a prestigious NAAC 'A++' accreditation.",
-            imgSrc: "/image/recognitions-and-approvals/NAAC_LOGO.png",
+            imgSrc: "/image/NaaC.webp",
+        },
+        {
+            id: "nba",
+            title: "NBA Accreditation",
+            description: "NBA recognizes institutions for their excellence in education and infrastructure. AKG University holds a prestigious NBA accreditation.",
+            imgSrc: "/image/nba.jpg",
         },
         {
             id: "aicte",
@@ -65,7 +71,7 @@ const RecognitionApprovals = () => {
                                             ? "bg-[#d91f23] text-white"
                                             : "bg-[#333333] hover:bg-[#d91f23] hover:text-white"
                                             }`}>
-                                            <img src={item.imgSrc} alt={item.title} className="mr-4 rounded-full w-16"/>
+                                            <img src={item.imgSrc} alt={item.title} className="mr-4 w-16" />
                                             <p className="text-sm font-novaReg text-white">{item.title}</p>
                                         </div>
                                     </a>
@@ -73,8 +79,6 @@ const RecognitionApprovals = () => {
                                 ))}
                             </div>
                         </div>
-
-                        {/* Content Area */}
                         <div className="px-3 col-span-5">
                             <h3 className="text-[32px] font-novaReg mb-6">Recognitions & Approvals</h3>
                             <div className="p-11 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px]">
@@ -87,8 +91,6 @@ const RecognitionApprovals = () => {
                                     </div>
                                 </div>
                             </div>
-
-                            {/* Contact Us Component */}
                             <div className="grid grid-cols-7 mt-4 w-full bg-red-600">
                                 <div className="col-span-3">
                                     <img

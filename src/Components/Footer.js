@@ -203,10 +203,10 @@ export default function Footer() {
                 <div className="items-center justify-center mt-4 mx-auto grid grid-cols-12 gap-8 place-items-center">
                     <div className="col-span-5 max-[1160px]:col-span-6 max-[850px]:col-span-12 flex items-center space-x-4">
                         <div className="flex justify-center py-2 w-32 max-[420px]:w-24 max-[360px]:w-20 max-[420px]:py-0 bg-white">
-                            <img src="/image/hgcas.jpg" alt="Radio" className="h-16 max-[360px]:h-14" />
+                            <img src="/image/nba.jpg" alt="NBA" className="h-16 max-[360px]:h-14" />
                         </div>
                         <div className="flex justify-center py-2 w-32 max-[420px]:w-24 max-[360px]:w-20 max-[420px]:py-0 bg-white">
-                            <img src="/image/UNAi.png" alt="Virtual Tour" className="h-16 max-[360px]:h-14" />
+                            <img src="/image/qs-i-gauge.jpg" alt="QS-IGAUGE" className="h-16 max-[360px]:h-14" />
                         </div>
                         <div className="flex justify-center py-2 w-32 max-[420px]:w-24 max-[360px]:w-20 max-[420px]:py-0 bg-white">
                             <img src="/image/NaaC.webp" alt="UN Academic Impact" className="h-16 max-[360px]:h-14" />

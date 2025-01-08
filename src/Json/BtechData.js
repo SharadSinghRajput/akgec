@@ -7,7 +7,6 @@ export const slidesData = [
       linkUrl: '#',
       text: 'text-white',
       buttonClass: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-      overlay: true,
     },
     {
       imageUrl: '/image/building/building2.webp',
@@ -26,7 +25,6 @@ export const slidesData = [
       linkUrl: '#',
       text: 'text-white',
       buttonClass: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-      overlay: true,
     },
     {
       imageUrl: '/image/building/building4.webp',
@@ -36,7 +34,6 @@ export const slidesData = [
       linkUrl: '#',
       text: 'text-white',
       buttonClass: 'bg-white text-red-600 hover:bg-zinc-200',
-      
     },
 ];
   

@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
+
 import"@/styles/globals.css";
 
 
 // import AboutSideBar from './AboutSideBar'
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata = {
   title: "Hostel | AKGU",
@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <div className={inter.className}>
+    <div >
       
       {children}
       
