@@ -63,7 +63,7 @@ export const About = {
         ],
         "Related Links": [
             {
-                name: 'Institutes & Departments',
+                name: 'Departments',
                 url: '/academics/institutes'
             },
             {

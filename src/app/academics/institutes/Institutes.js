@@ -11,67 +11,6 @@ const institute = [
         img: "/image/lab/User-Manual-AKGEC 6.webp",
         text: "School of Business Studies",
     },
-    // {
-    //     img: "/image/institute/university-school-of-pharma-sciences.jpg",
-    //     text: "University School of Pharma Sciences",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University School of Bio Technology",
-    // },
-    //images not done
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University School of Architecture",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Liberal Arts & Humanities",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Film and Visual Arts",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Teacher Training And Research",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Legal Studies",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Media Studies",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Sciences",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Allied Health Sciences",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Design",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Tourism & Hospitality Management",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "Global School of Finance and Accounting",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "Centre for Advanced Studies in Social Science and Management",
-    // },
-    // {
-    //     img: "/image/institute/university-school-of-bio-technology.jpg",
-    //     text: "University Institute of Physical Education and Sports",
-    // },
 ];
 
 const Institutes = () => {

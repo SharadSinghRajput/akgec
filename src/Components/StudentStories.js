@@ -5,60 +5,68 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const testimonials = [
   {
-    "name": "Arjun Singh",
-    "company": "GOOGLE",
-    "image": "/image/placement/test-1.jpg",
-    "quote": "I Aarav Kapoor secured placements in three amazing companies: Google, Amazon, and Microsoft.",
-    "desc": "The environment at AKG University was exceptional, providing me with the resources and support needed to succeed. The detailed and engaging curriculum played a crucial role in helping me land a job at Google. My time at AKG University has been a pivotal step in my career."
+    name: "Avinash Singh",
+    education: "B.Tech IT (2015-2019)",
+    company: "UKG",
+    designation: "Senior Product Manager",
+    image: "/",
+    speaks: "My experience at AKGEC has been nothing less than phenomenal. The college provided me with a supportive environment that fostered growth and learning. The faculty was welcoming, and their guidance greatly aided our academic journey, moving us closer toward our goals. I had mentors who consistently went the extra mile to offer help and guidance. Being a part of Software Incubator - SDC, an R&D center at our college, was transformative, expanding my knowledge of diverse technologies and the corporate landscape. The camaraderie within the team was truly remarkable, nurturing a supportive and collaborative environment."
   },
   {
-    "name": "Atul Sadiwal",
-    "company": "JP MORGAN",
-    "image": "/image/placement/test-2.jpg",
-    "quote": "I am deeply grateful to the AKG University faculty for their support.",
-    "desc": "The environment at AKG University was exceptional, providing the perfect space for me to study and learn. This played a key role in my success and helped me secure a position at JP Morgan. The detailed and engaging curriculum has been instrumental in my career development."
+    name: "Ishu Bansal",
+    education: "B.Tech IT (2007-2011)",
+    company: "Truck Suvidha",
+    designation: "Founder & CEO",
+    image: "/",
+    speaks: "While at AKGEC, I was actively involved in various societies, won awards for academic and extracurricular achievements, and was a founding member of the Software Incubator. These experiences have shaped my journey, ultimately leading me to found TruckSuvidha, a startup aimed at revolutionizing the transportation industry.",
   },
   {
-    "name": "Aarohi Jain",
-    "company": "ACCENTURE",
-    "image": "/image/placement/test-3.jpg",
-    "quote": "Choosing to study at AKG University was one of the best decisions of my life.",
-    "desc": "The supportive environment at AKG University was crucial to my success in landing a job at Accenture. The comprehensive and engaging coursework made my learning experience truly valuable and has been a significant stepping stone in my career."
+    name: "Aditya Gupta",
+    education: "2021 Batch",
+    company: "Sigmoid",
+    designation: "Software Developer",
+    image: "/",
+    speaks: "AKGEC was a great experience. The college was lively, with bustling corridors and lively classrooms. It wasn't just about studying; it was about growing and making lifelong friends. AKGEC made me feel like I belonged.",
   },
   {
-    "name": "Ashutosh Sharma",
-    "company": "WIPRO",
-    "image": "/image/placement/test-4.jpg",
-    "quote": "Studying at AKG University was a pivotal choice for my career.",
-    "desc": "The learning environment at AKG University was outstanding and directly contributed to my success in securing a role at Wipro. The detailed course content kept me engaged and has greatly influenced my professional journey."
+    name: "Avadesh Chaudhary",
+    education: "2015 Batch",
+    company: "Infosys",
+    designation: "Sr. Technical Architect",
+    image: "/",
+    speaks: "My time at AKGEC was amazing. The campus was always buzzing with energy, featuring lively classrooms and engaging discussions. It wasn't just about earning a degree; it was about being part of a vibrant community.",
   },
   {
-    "name": "Pankaj Jat",
-    "company": "TCS",
-    "image": "/image/placement/test-5.jpg",
-    "quote": "Enrolling at AKG University was one of the most rewarding decisions I made.",
-    "desc": "The incredible support from faculty and the dynamic environment at AKG University were vital in helping me land my job at TCS. The curriculum was thorough and captivating, laying a strong foundation for my career."
+    name: "Ram Bahadur Singh",
+    education: "MCA - 2008",
+    company: "KNNX",
+    designation: "Vice President- Product Manager",
+    image: "/",
+    speaks: "My journey at AKGEC was remarkable. From the bustling corridors to the lively classrooms, the college was filled with energy and opportunity. It wasn't just about studying; it was about growing, learning, and building lasting friendships. AKGEC provided more than just an education—it gave me a sense of belonging and community.",
   },
   {
-    "name": "Sneha Verma",
-    "company": "INFOSYS",
-    "image": "/image/placement/test-3.jpg",
-    "quote": "I consider my time at AKG University as one of the best investments in my future.",
-    "desc": "The nurturing atmosphere at AKG University allowed me to thrive academically and secure a position at Infosys. The engaging course structure and faculty support have been crucial elements in shaping my career."
+    name: "Ashish Mishra",
+    education: "2015 Batch",
+    company: "Innovaccer",
+    designation: "Associate Director - Platform and Engineering",
+    image: "/",
+    speaks: "My time at AKGEC was genuinely transformative. The campus buzzed with energy, and every class sparked engaging conversations and personal growth. AKGEC is more than just a college; it's a supportive network that fosters teamwork and progress.",
   },
   {
-    "name": "Shyam Joshi",
-    "company": "GOOGLE",
-    "image": "/image/placement/test-1.jpg",
-    "quote": "I Aarav Kapoor secured placements in three amazing companies: Google, Amazon, and Microsoft.",
-    "desc": "The environment at AKG University was exceptional, providing me with the resources and support needed to succeed. The detailed and engaging curriculum played a crucial role in helping me land a job at Google. My time at AKG University has been a pivotal step in my career."
+    name: "Madhur Vashistha",
+    education: "2018-2022 Batch",
+    company: "Google",
+    designation: "Software Engineer",
+    image: "/",
+    speaks: "My experience at AKGEC was truly exceptional. From the bustling campus atmosphere to the engaging classroom discussions, the college provided a rich environment for personal and academic growth. AKGEC wasn’t just about obtaining a degree; it was about fostering a sense of belonging and community among students. What sets AKGEC apart is its commitment to excellence, evident in the success of its graduates who are making significant contributions in their respective fields. Being part of AKGEC means being part of a supportive network that empowers individuals to thrive and succeed.",
   },
   {
-    "name": "Ankit Prajapat",
-    "company": "JP MORGAN",
-    "image": "/image/placement/test-2.jpg",
-    "quote": "I am deeply grateful to the AKG University faculty for their support.",
-    "desc": "The environment at AKG University was exceptional, providing the perfect space for me to study and learn. This played a key role in my success and helped me secure a position at JP Morgan. The detailed and engaging curriculum has been instrumental in my career development."
+    name: "Garima Pandey",
+    education: "2019-2013 Batch",
+    company: "Amazon",
+    designation: "Senior Developer - 1",
+    image: "/",
+    speaks: "Looking back on my time at AKGEC, it has been an enlightening journey. The vibrant campus atmosphere fueled my curiosity, and the mentors' guidance shaped my growth. AKGEC's unique strength lies in its close-knit community and hands-on learning approach. Beyond academics, it was a place where lifelong friendships were forged and dreams were nurtured.",
   },
 ]
 
@@ -87,7 +95,7 @@ const StudentStories = () => {
             >
               <div className="bg-white shadow-lg rounded-lg p-4 md:p-6">
                 <div className="flex gap-4 border-b border-gray-100 pb-3 mb-3">
-                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-cyan-500">
+                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-cyan-500">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
@@ -95,11 +103,12 @@ const StudentStories = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-semibold text-gray-800">{testimonial.name}</p>
-                    <p className="text-xs text-gray-600">{testimonial.company}</p>
+                    <p className="font-novaBold text-gray-800">{testimonial.name}</p>
+                    <p className="text-xs font-novaReg text-gray-600">{testimonial.education}</p>
+                    <p className="text-xs font-novaSemi text-gray-600">{testimonial.designation} at {testimonial.company}</p>
                   </div>
                 </div>
-                <p className="text-sm text-gray-700 line-clamp-5">{testimonial.desc}</p>
+                <p className="text-sm font-novaReg text-gray-700 line-clamp-5">{testimonial.speaks}</p>
               </div>
             </div>
           ))}

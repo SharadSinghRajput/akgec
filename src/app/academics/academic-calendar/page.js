@@ -11,7 +11,6 @@ import Calendar from "@/Components/Calendar";
 const SideBarLink = [
     {name: "Our Identity" , link : "/overview"},
     {name: "Leadership" , link : ""},
-    {name: "Leadership" , link : ""},
     {name: "Governance" , link : ""},
     {name: "Recognition and Approvals" , link : ""},
     {name: "Awards and Rankings" , link : ""},

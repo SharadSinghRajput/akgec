@@ -3,54 +3,77 @@ import { Bookmark } from "lucide-react"
 
 const OurIdentity = () => {
     return (
-        <section className='mb-10'>
-            <div className='border border-gray-300 flex items-center justify-center py-10 max-md:py-16'>
-                <img className='w-48 max-[500px]:w-32 ' src="/image/LOGO_AKGEC.webp" alt="Akg Logo" />
-            </div>
-            <div className="mt-10">
-                <h1 className="text-4xl max-sm:text-3xl font-novaReg mb-6">Official Emblem</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2">
-                    <div className="bg-white p-8 max-[470px]:p-2 border-y border-x border-gray-300">
-                        <div className="flex items-center mb-2">
-                            <Bookmark className="text-blue-600 mr-3 flex-shrink-0" />
-                            <h2 className="text-2xl font-novaReg">The Color Blue</h2>
-                        </div>
-                        <p className="ml-9 font-novaReg text-sm leading-6">
-                            At AKGU, blue symbolizes knowledge, stability, and trust. It reflects the university’s commitment to fostering a calm yet inspiring environment for learning.
+        <section>
+            {/* <div className="px-3">
+                <div className="flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0 md:space-x-12">
+                    <div className="w-full md:w-1/2 bg-white p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300">
+                        <h2 className="text-3xl font-novaBold mb-6 text-indigo-600 border-b-2 border-indigo-200 pb-2">Our Mission</h2>
+                        <p className="text-gray-700 font-novaReg">
+                            To foster a culture of innovation and excellence, empowering students to become leaders in their chosen fields and contribute positively to society. We strive to create an environment that nurtures creativity, critical thinking, and a passion for lifelong learning.
                         </p>
                     </div>
-                    <div className="bg-white p-8 max-[470px]:p-2 md:border-y max-md:border-l max-md:border-b border-r border-gray-300">
-                        <div className="flex items-center mb-2">
-                            <Bookmark className="text-blue-600 mr-3 flex-shrink-0" />
-                            <h2 className="text-2xl font-novaReg">Globe</h2>
-                        </div>
-                        <p className="ml-9 font-novaReg text-sm leading-6">
-                            AKGU's global perspective in education is represented by the globe, symbolizing its focus on international collaboration, modern technological advancements, and the adoption of globally recognized academic standards.
+                    <div className="w-full md:w-1/2 bg-indigo-600 p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300">
+                        <h2 className="text-3xl font-novaBold mb-6 text-white border-b-2 border-indigo-400 pb-2">Our Vision</h2>
+                        <p className="text-white font-novaReg">
+                            To be a globally recognized institution that nurtures talent, promotes cutting-edge research, and drives technological advancements for a sustainable future. We aim to create a community of thinkers, innovators, and leaders who will shape the world of tomorrow.
                         </p>
                     </div>
-                    <div className="bg-white p-8 max-[470px]:p-2 border-x border-b border-gray-300">
-                        <div className="flex items-center mb-2">
-                            <Bookmark className="text-blue-600 mr-3 flex-shrink-0" />
-                            <h2 className="text-2xl font-novaReg">The Human Chain</h2>
+                </div>
+            </div> */}
+            <h1 className="text-4xl max-sm:text-3xl font-novaReg">Official Emblem</h1>
+            <div className="max-w-7xl mx-auto px-3 py-5 max-md:space-y-3">
+                <div className="relative">
+                    <img className="h-60 w-[90%] max-md:w-full object-cover object-top rounded-xl" src="/image/building/building7.webp" alt="Building" />
+                    <div className="absolute inset-0 w-[45%] max-md:w-full max-md:rounded-xl bg-blue-600 bg-opacity-95 text-white rounded-l-xl">
+                        <div className="flex items-start h-full justify-center flex-col leading-none pl-5">
+                            <div className="flex items-center gap-1 mb-2">
+                                <Bookmark strokeWidth={1.5} size={30} />
+                                <h2 className="text-2xl max-[400px]:text-xl font-novaSemi">The Color Blue</h2>
+                            </div>
+                            <h3 className="text-lg max-[400px]:text-base font-novaReg">At AKGU, blue symbolizes knowledge, stability, and trust. It reflects the university’s commitment to fostering a calm yet inspiring environment for learning.</h3>
                         </div>
-                        <p className="ml-9 font-novaReg text-sm leading-6">
-                            AKGU promotes a strong sense of unity and collaboration through its diverse student body. The human chain symbolizes teamwork, respect for cultural diversity, and a commitment to national unity.
-                        </p>
                     </div>
-                    <div className="bg-white p-8 max-[470px]:p-2 border-r max-md:border-l border-b border-gray-300">
-                        <div className="flex items-center mb-2">
-                            <Bookmark className="text-blue-600 mr-3 flex-shrink-0" />
-                            <h2 className="text-2xl font-novaReg">The Color Yellow and Black</h2>
+                </div>
+                <div className="flex justify-end relative">
+                    <img className="h-60 w-[90%] max-md:w-full object-cover rounded-xl" src="/image/building/building3.webp" alt="Student" />
+                    <div className="absolute right-0 h-full w-[45%] max-md:w-full max-md:rounded-xl bg-[#c41b9f] bg-opacity-95 text-white rounded-r-xl">
+                        <div className="flex items-start h-full justify-center flex-col leading-none pl-5">
+                            <div className="flex items-center gap-1 mb-2">
+                                <Bookmark strokeWidth={1.5} size={30} />
+                                <h2 className="text-2xl max-[400px]:text-xl font-novaSemi">Globe</h2>
+                            </div>
+                            <h3 className="text-lg max-[400px]:text-base font-novaReg">AKGU's global perspective in education is represented by the globe, symbolizing its focus on international collaboration, modern technological advancements, and the adoption of globally recognized academic standards.</h3>
                         </div>
-                        <p className="ml-9 font-novaReg text-sm leading-6">
-                            The combination of yellow and black at AKGU signifies balance between creativity and discipline. Yellow stands for optimism, innovation, and the bright future that education at AKGU promises.
-                        </p>
+                    </div>
+                </div>
+                <div className="relative">
+                    <img className="h-60 w-[90%] max-md:w-full object-cover object-center rounded-xl" src="/image/building/building2.webp" alt="Student" />
+                    <div className="absolute inset-0 w-[45%] max-md:w-full max-md:rounded-xl bg-[#0b7470] bg-opacity-95 text-white rounded-l-xl">
+                        <div className="flex items-start h-full justify-center flex-col leading-none pl-5">
+                            <div className="flex items-center gap-1 mb-2">
+                                <Bookmark strokeWidth={1.5} size={30} />
+                                <h2 className="text-2xl max-[400px]:text-xl font-novaSemi">The Human Chain</h2>
+                            </div>
+                            <h3 className="text-lg max-[400px]:text-base font-novaReg">AKGU promotes a strong sense of unity and collaboration through its diverse student body. The human chain symbolizes teamwork, respect for cultural diversity, and a commitment to national unity.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex justify-end relative">
+                    <img className="h-60 w-[90%] max-md:w-full object-cover rounded-xl" src="/image/building/building5.webp" alt="Student" />
+                    <div className="absolute right-0 h-full w-[45%] max-md:w-full max-md:rounded-xl bg-[#fff127] bg-opacity-95 text-black rounded-r-xl">
+                        <div className="flex items-start h-full justify-center flex-col leading-none pl-5">
+                            <div className="flex items-center gap-1 mb-2">
+                                <Bookmark strokeWidth={1.5} size={30} />
+                                <h2 className="text-2xl max-[400px]:text-xl font-novaSemi">The Color Yellow and Black</h2>
+                            </div>
+                            <h3 className="text-lg max-[400px]:text-base font-novaReg">The combination of yellow and black at AKGU signifies balance between creativity and discipline. Yellow stands for optimism, innovation, and the bright future that education at AKGU promises.</h3>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className='px-2'>
                 <h1 className="text-4xl max-sm:text-3xl font-novaReg mt-10 mb-6">How to use the Official Emblem?</h1>
-                <ul className="list-disc space-y-2 pl-5 font-novaReg text-sm">
+                <ul className="list-disc space-y-2 pl-5 font-novaReg">
                     <li>The official emblem may not be modified in any way. Its design must remain intact to preserve its significance and visual identity.</li>
                     <li>When the emblem is used alongside the university's name, the designated wordmark "AKGU University" should be utilized in its standard format.</li>
                     <li>The emblem should appear only in the official university colors—Blue, Yellow, and Black—maintaining a consistent and professional appearance.</li>

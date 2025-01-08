@@ -410,7 +410,7 @@ const Placement = () => {
 
       <section className='pb-24'>
         <div className='px-3 max-w-7xl mx-auto'>
-          <div className='flex'>
+          <div className='flex max-md:flex-col'>
             <div className='flex-1'>
               <img
                 src="/image/leadership/Director_AKGEC.webp"
@@ -447,9 +447,9 @@ const Placement = () => {
         </div>
       </section>
 
-      <section className='bg-BG45 min-h-screen bg-cover bg-center cursor-pointer'>
+      <section className='bg-BG45 h-full bg-cover bg-center cursor-pointer'>
         <div className='max-w-full mx-auto'>
-          <div className='px-3 flex items-center justify-start h-screen ml-auto bg-[#1f4171] w-1/2 opacity-90'>
+          <div className='px-3 flex items-center max-lg:w-full justify-start h-full ml-auto bg-[#1f4171] w-1/2 opacity-90'>
             <div className='p-20 max-w-2xl'>
               <div className=''>
                 <h2 className='text-3xl font-novaBold text-white mb-4'>AKG <br />University<br />
@@ -472,8 +472,8 @@ const Placement = () => {
 
       <section className='pt-20'>
         <div className="relative w-full max-w-7xl mx-auto px-3 overflow-hidden">
-          <h2 className="text-3xl font-bold text-center mb-4">Students Stories</h2>
-          <p className="text-center mx-36 text-gray-600">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-novaBold text-center mb-4">Students Stories</h2>
+          <p className="text-center md:text-lg font-novaReg mx-36 text-gray-600">
             At AKG College, we are committed to student success, empowering individuals to thrive academically, socially, and professionally. Through exceptional learning experiences and comprehensive support services, we inspire our students to reach their fullest potential.
           </p>
           <StudentStories />
