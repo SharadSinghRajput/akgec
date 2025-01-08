@@ -6,7 +6,7 @@ const ProgramHeroSection = () => {
         <div className='relative bg-BG43 bg-cover h-[90vh]'>
             <div className='absolute inset-0 bg-gradient-to-t from-black to-transparent' />
             <div className='absolute inset-0 flex justify-center items-start flex-col max-w-7xl mx-auto'>
-                <div className='mt-auto px-10 max-[400px]:px-2 pt-32
+                <div className='px-10 max-[400px]:px-2
                 '>
                     <span className='font-novaReg text-gray-300 pl-1 max-sm:pl-0 max-sm:text-xs tracking-wider mb-2 uppercase max-lg:text-sm'>Empowering Digital Innovators</span>
                     <h2 className="text-pretty text-4xl max-[500px]:text-3xl font-novaReg tracking-tighter text-white sm:text-5xl md:text-6xl">
@@ -18,7 +18,7 @@ const ProgramHeroSection = () => {
                     </h2>
                     <button className="mt-8 py-3 max-sm:px-6 max-sm:text-xs px-10 text-[15px] rounded-xl font-novaBold uppercase bg-btn-gradient animate-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform  scale-y-105 tracking-widest">Apply Now</button>
                 </div>
-                <div className='mt-auto py-10 w-full grid grid-cols-4 max-lg:grid-cols-2 gap-5 max-[400px]:gap-2
+                {/* <div className='mt-auto py-10 w-full grid grid-cols-4 max-lg:grid-cols-2 gap-5 max-[400px]:gap-2
                     '>
                     <div className='flex flex-col items-center justify-center text-gray-300 border-r-4 border-yellow-400 max-sm:border-none'>
                         <span className='flex items-center text-6xl max-xl:text-5xl max-lg:text-4xl max-[400px]:text-3xl font-novaBold'><IndianRupee className='w-12 h-12 max-xl:h-8 max-xl:w-8 max-lg:h-6 max-lg:w-6' />1.13<small className='text-2xl max-lg:text-base max-lg:mt-3 font-novaReg mt-5'>CR</small></span>
@@ -36,7 +36,7 @@ const ProgramHeroSection = () => {
                         <span className='flex items-center text-6xl max-xl:text-5xl max-lg:text-4xl max-[400px]:text-3xl font-novaBold'>282<small className='text-2xl font-novaReg mt-5'></small></span>
                         <span className='font-novaSemi tracking-wider text-sm max-sm:text-xs w-28 max-sm:w-20 text-center text-gray-400'>Highest Package</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -1,14 +1,14 @@
 export const dropdownJsonData = [
-    {
-        title: "What are the branches available in B.Tech. course at AKG University?",
-        content: `AKG University offers BTech in the following branches:
-      Biotechnology
-      Computer Science
-      Electronics & Communication
-      Engineering Physics
-      Mechanical
-      Electronics & Computing`
-    },
+    // {
+    //     title: "What are the branches available in B.Tech. course at AKG University?",
+    //     content: `AKG University offers BTech in the following branches:
+    //   Biotechnology
+    //   Computer Science
+    //   Electronics & Communication
+    //   Engineering Physics
+    //   Mechanical
+    //   Electronics & Computing`
+    // },
     {
         title: "How can a student get an Honors degree?",
         content: "Pursuing an honors B.Tech degree gives students a definite advantage over a general student in terms of additional knowledge. At AKG University, we encourage students to strive for academic excellence and offer the flexibility to earn an additional 18 credits above a general B.Tech. degree. Any student can earn credits towards an honors degree on top of meeting the regular degree requirements subject to qualifying criteria through academic performance. The selection of the students rests entirely with the Department subject to their assessment of the student’s strengths and capabilities."
