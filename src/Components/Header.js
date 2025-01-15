@@ -1,13 +1,13 @@
 export default function Header({ title, height, subHeading, Button, gradient, position = "center", bg = "/image/header-img.jpg" }) {
     return (
-        <div className={`relative isolate overflow-hidden py-24 sm:py-32 max-[400px]:py-12 ${height}`}>
+        <div className={`relative isolate overflow-hidden py-24 sm:py-32 xl:py-40 max-[400px]:py-12 ${height}`}>
             <div className="absolute inset-0 -z-10 h-full w-full">
                 <img
                     alt=""
                     src={bg}
                     className={`h-full w-full object-${position} object-cover`}
                 />
-                <div className={`absolute inset-0 ${gradient}`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent`}></div>
             </div>
             <div
                 aria-hidden="true"

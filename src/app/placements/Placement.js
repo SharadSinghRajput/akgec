@@ -456,10 +456,10 @@ const Placement = () => {
                   <span>Leader in Campus Placements</span>
                 </h2>
               </div>
-              <p className='font mb-4 leading-tight text-white'>Dreaming of securing a position with Fortune 500 or India's Top 100 Companies? Look no further than AKG College, your gateway to realizing those aspirations. With a robust Industry-Academic interface, AKG College is setting new standards in campus placements. Year after year, renowned companies like Microsoft, Amazon, and IBM actively recruit fresh talent from our campus.</p>
-              <p className='font mb-4 leading-tight text-white'>For the Batch of 2023-24, AKG College has welcomed over 600 Multi-National Corporations, resulting in an impressive total of 7,500 placement offers. The highest package has seen a remarkable increase of 25%, reaching a new high of 1.5 CR for international placements, alongside 50 LPA for national placements.</p>
-              <p className='font mb-4 leading-tight text-white'>Continuing the Tradition of Excellence, AKG College Registers 7,500 Placement Offers for Batch 2023-24 (Highest in the Region).</p>
-              <p className='font mb-4 leading-tight text-white'>Over 40 MNCs have consistently recruited engineering students from AKG College, competing with IITs and NITs. Additionally, the University School of Business at AKG College has attracted more than 30 leading firms, including top names such as Deloitte, Ernst & Young, SAP Labs, and Hitachi.</p>
+              <p className='font mb-4 leading-tight text-white'>Dreaming of securing a position with Fortune 500 or India's Top 100 Companies? Look no further than AKG University, your gateway to realizing those aspirations. With a robust Industry-Academic interface, AKG University is setting new standards in campus placements. Year after year, renowned companies like Microsoft, Amazon, and IBM actively recruit fresh talent from our campus.</p>
+              <p className='font mb-4 leading-tight text-white'>For the Batch of 2023-24, AKG University has welcomed over 600 Multi-National Corporations, resulting in an impressive total of 7,500 placement offers. The highest package has seen a remarkable increase of 25%, reaching a new high of 1.5 CR for international placements, alongside 50 LPA for national placements.</p>
+              <p className='font mb-4 leading-tight text-white'>Continuing the Tradition of Excellence, AKG University Registers 7,500 Placement Offers for Batch 2023-24 (Highest in the Region).</p>
+              <p className='font mb-4 leading-tight text-white'>Over 40 MNCs have consistently recruited engineering students from AKG University, competing with IITs and NITs. Additionally, the University School of Business at AKG University has attracted more than 30 leading firms, including top names such as Deloitte, Ernst & Young, SAP Labs, and Hitachi.</p>
               <p className='font mb-4 leading-tight text-white'>Our Corporate Relations Office is located in Greater Noida, dedicated to connecting students with industry leaders. For any inquiries, please contact Mr. Ravi Sharma (Director of Corporate Relations & Placements) at 9812345678.</p>
               <Button
                 text={"APPLY TODAY"}
@@ -474,7 +474,7 @@ const Placement = () => {
         <div className="relative w-full max-w-7xl mx-auto px-3 overflow-hidden">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-novaBold text-center mb-4">Students Stories</h2>
           <p className="text-center md:text-lg font-novaReg mx-36 text-gray-600">
-            At AKG College, we are committed to student success, empowering individuals to thrive academically, socially, and professionally. Through exceptional learning experiences and comprehensive support services, we inspire our students to reach their fullest potential.
+            At AKG University, we are committed to student success, empowering individuals to thrive academically, socially, and professionally. Through exceptional learning experiences and comprehensive support services, we inspire our students to reach their fullest potential.
           </p>
           <StudentStories />
 

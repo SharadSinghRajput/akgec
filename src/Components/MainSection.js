@@ -24,7 +24,7 @@ const MainSection = () => {
     }, []);
 
     return (
-        <div className="h-[95vh] overflow-hidden relative max-lg:h-auto">
+        <div className="overflow-hidden relative">
             <div className="flex justify-center relative z-20 min-h-screen">
                 <div className="grid grid-cols-2 max-lg:grid-cols-1">
                     <div className="flex justify-center max-w-3xl flex-col pl-20 max-lg:mt-52 max-lg:items-center max-lg:px-5 max-sm:mt-40">

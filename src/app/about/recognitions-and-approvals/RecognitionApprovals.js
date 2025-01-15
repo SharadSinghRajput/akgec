@@ -41,8 +41,9 @@ const RecognitionApprovals = () => {
 
     return (
         <>
-            <div className="bg-Header w-full h-[500px] bg-black bg-blend-darken bg-opacity-80 bg-cover bg-no-repeat">
-                <div className="max-w-[1400px] mx-auto h-full px-3 items-end flex justify-between">
+            <div className="relative bg-BG44 w-full h-[500px] bg-center bg-cover bg-no-repeat">
+                <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent "/>
+                <div className="relative max-w-[1400px] mx-auto h-full px-3 items-end flex justify-between">
                     <div className="text-white">
                         <h2 className="text-4xl font-novaReg">Ranked amongst <br />Top 5% institutions of <br />India for receiving </h2>
                     </div>

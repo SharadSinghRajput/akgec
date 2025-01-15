@@ -49,8 +49,8 @@ export default function Form() {
   return (
     <div className="flex items-center justify-center h-full pb-4 md:pt-20 ">
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full overflow-hidden">
-        <div className='bg-gray-100 flex flex-col justify-center items-center px-8 py-8 max-sm:py-6'>
-          <h2 className="text-sm bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold tracking-wider text-center">APPLY TODAY FOR</h2>
+        <div className='bg-gray-100 flex flex-col justify-center items-center px-8 py-6 max-sm:py-6'>
+          <h2 className="text-lg bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold tracking-wider text-center">APPLY TODAY FOR</h2>
           <h1 className="mt-3 font-novaBold text-center text-xl max-sm:text-base">AKG UNIVERSITY PROGRAMS</h1>
           <p className="bg-btn-gradient animate-gradient text-white text-center font-novaBold mb-6 max-sm:mb-0 text-xs w-max py-2 px-4 rounded-lg mt-2">Registration End Date (Phase-II) - 30 Aug 2024</p>
         </div>
