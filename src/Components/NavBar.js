@@ -3,10 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from 'next/navigation';
 import { faAmazon, faGoogle, faMicrosoft, faShopify, } from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
-import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverPanel, } from "@headlessui/react";
-import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon, } from "@heroicons/react/24/outline";
-import { Bars2Icon, ChevronDownIcon, PhoneIcon, } from "@heroicons/react/20/solid";
-const products = [{ icon: ChartPieIcon }, { icon: CursorArrowRaysIcon }];
+import { Bars2Icon, PhoneIcon, } from "@heroicons/react/20/solid";
 import { About, Academics, Admissions, CampusLife, ResearchInnovation, Placements, Programs } from "../Json/MenuItem";
 const socialLinks = [
   {
@@ -30,8 +27,6 @@ const socialLinks = [
 
 export default function NavBar() {
   const router = useRouter();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isScrolled100, setIsScrolled100] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [BigMenuToggle, setBigMenuToggle] = useState(false);
   const [activeTab, setActiveTab] = useState("School of Engineering & Technology");
@@ -39,7 +34,6 @@ export default function NavBar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setIsScrolled100(scrollY > 10);
       setIsScrolled(scrollY > 10);
     };
 
@@ -50,26 +44,16 @@ export default function NavBar() {
     };
   }, []);
 
-  // const LinksList = ({ title, links }) => (
-  //   <div className=" ">
-  //     <h3 className="font-bold">{title}</h3>
-  //     <ul className="mt-2">
-  //       {links?.map(link => (
-  //         <li key={link.url} className="py-0.5 hover:underline font-novaLight text-sm">
-  //           <a href={link.url}>{link.name}</a>
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   </div>
-  // );
-
-  const LinksList = ({ title, links, titleClassName, ulClassName }) => (
+  const LinksList = ({ title, links, titleClassName, ulClassName, setBigMenuToggle }) => (
     <div className="pr-6 max-md:w-full">
-      {title && <h3 className={`font-bold ${titleClassName}`}>{title}</h3>}
+      {title && <h3 className={`font-novaBold ${titleClassName}`}>{title}</h3>}
       <ul className={`mt-2 ${ulClassName}`}>
         {links?.map((link, index) => (
           <li key={index} className="">
-            <button className="py-0.5 hover:underline cursor-pointer text-left font-novaLight text-sm" onClick={() => router.push(link.url)}>{link.name}</button>
+            <button className="py-0.5 hover:underline cursor-pointer text-left font-novaLight text-sm" onClick={() => {
+              router.push(link.url);
+              setBigMenuToggle(false); // Close the menu
+            }}>{link.name}</button>
           </li>
         ))}
       </ul>
@@ -77,28 +61,29 @@ export default function NavBar() {
   );
   return (
     <header
-      className={`z-[100] w-full fixed top-0 left-0 max-md:bg-blue-700 bg-[#F7F7F7] transition-all duration-200 shadow-lg`}
+      className={`z-[100] w-full fixed top-0 left-0 bg-[#F7F7F7] transition-all duration-200 shadow-lg max-[500px]:py-1`}
     >
-      <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-4  gap-x-10">
-        <div className="col-span-2 flex max-xl:col-span-2 max-lg:col-span-8 max-md:col-span-2 max-md:pt-2 max-sm:col-span-2  max-sm:mb-4  ">
+      <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-12 gap-x-5 max-[1320px]:gap-x-0 max-md:gap-x-2">
+        <div className="col-span-2 flex max-xl:col-span-3 max-lg:col-span-6 max-md:col-span-7 max-sm:col-span-7">
           <div
-            className={`text-white flex max-sm:py-0 ${isScrolled ? "pl-0" : ""} `}
+            className={`text-white flex max-sm:py-0`}
           >
-            <div className={`flex justify-start items-center gap-1 pl-5 `}>
-              <div className="flex justify-center xl:w-full">
+            <div className={`flex justify-start items-center gap-2 pl-5 ${BigMenuToggle && "relative z-[10] bg-[#F7F7F7]"}`}>
+              <div className="flex justify-center">
                 <img
                   onClick={() => router.push("/")}
                   src="/image/AKGEC_LOGO.webp"
                   alt="AKG University Logo"
-                  className={`h-[61px] object-contain bg-blend-color-dodge cursor-pointer`}
+                  className={`h-16 w-36 max-lg:h-14 max-[1430px]:w-fit object-contain bg-blend-color-dodge cursor-pointer`}
                 />
               </div>
-              <div className={`grid gap-0 grid-cols-4 max-[1430px]:grid-cols-2 max-[1430px]:gap-1 `}>
-                <img src="/image/NaaC.webp" alt="NAAC Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`} />
-                <img src="/image/nba.jpg" alt="NBA Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`} />
-                <img src="/image/qs-i-gauge.jpg" alt="QS-I-GAUGE Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`} />
-                <img src="/image/iic.jpg" alt="IIC Logo" className={`w-full max-xl:h-auto max-lg:w-12 max-[1430px]:h-10 max-[1430px]:w-28 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`} />
+              <div className={`grid gap-0 grid-cols-4 max-[1430px]:grid-cols-2 max-lg:grid-cols-4 max-sm:grid-cols-2 max-[1430px]:gap-1`}>
+                <img src="/image/NaaC.webp" alt="NAAC Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-7 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`} />
+                <img src="/image/nba.jpg" alt="NBA Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-7 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`} />
+                <img src="/image/qs-i-gauge.jpg" alt="QS-I-GAUGE Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-7 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`} />
+                <img src="/image/iic.jpg" alt="IIC Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-7 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`} />
               </div>
+
             </div>
             {/* <div hidden={isScrolled} className="max-xl:hidden">
               <div className="flex items-center px-5">
@@ -115,21 +100,20 @@ export default function NavBar() {
             </div> */}
           </div>
         </div>
-        <div className="flex lg:hidden  max-md:order-2 max-lg:col-span-2 max-md:col-span-1 max-sm:col-span-1 max-md:pt-0 max-md:justify-end max-md:mr-5 justify-center max-sm:mb-4">
+        <div className="flex lg:hidden max-md:order-2 max-lg:col-span-3 max-md:col-span-2 max-sm:col-span-2 max-[500px]:col-span-5 max-md:pt-0 max-md:justify-end justify-center ">
           <button
             type="button"
             onClick={() => setBigMenuToggle(!BigMenuToggle)}
-            className="-m-2 flex flex-col items-center justify-center rounded-md p-2 text-white">
+            className="flex flex-col items-center justify-center rounded-md p-2 text-black">
             <span className="sr-only">Open main menu</span>
             <Bars2Icon aria-hidden="true" className="h-9 w-9" />
             <p className="text-xs uppercase -mt-1">Menu</p>
           </button>
         </div>
-        <div className="col-span-6 max-md:order-3 max-xl:col-span-10 max-lg:col-span-2 max-md:col-span-1 max-xl:flex max-xl:items-center max-xl:justify-end  max-md:justify-start">
-          <nav className="px-5 max-md:px-1  ">
+        <div className="col-span-6 max-lg:flex max-lg:items-center max-lg:justify-center max-md:order-3 max-xl:col-span-9 max-lg:col-span-3 max-md:col-span-1 max-md:justify-start">
+          <nav className="" >
             <div
-              className={` bg-gray-700 max-md:hidden lg:flex max-md:pt-0 lg:gap-x-8 justify-end pl-7 max-xl:pl-0 items-center  max-md:px-1 ${isScrolled ? "max-md:hidden" : ""
-                }`}
+              className={` lg:bg-gray-700 max-md:hidden lg:flex max-md:pt-0 lg:gap-x-8 justify-end pl-7 max-xl:pl-0 items-center max-md:px-1`}
             >
               <div className="hidden lg:flex gap-10  justify-start max-xl:gap-8  text-[13px] font-novaLight">
                 <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Campus</a>
@@ -137,44 +121,44 @@ export default function NavBar() {
                 <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Student Services</a>
                 <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Contact us</a>
               </div>
-              <div className="flex justify-end max-2xl:flex-col gap-4">
-                <a href="tel:1800-200-0777" className="bg-cyan-500 max-xl:w-36 flex justify-start items-end gap-2 py-3 px-4">
-                  <PhoneIcon className={`h-4 w-4 text-white`} aria-hidden="true" />
+              <div className="flex justify-end">
+                <a href="tel:1800-200-0777" className="bg-cyan-500 whitespace-nowrap flex justify-center items-center gap-2 py-3 px-4">
+                  <PhoneIcon className={`h-5 w-5 text-white`} aria-hidden="true" />
                   <span className="text-white text-sm uppercase font-bold">Call now</span>
                 </a>
               </div>
             </div>
             <ul
               className={`${BigMenuToggle
-                ? "fixed w-full h-full left-0 top-0 pt-10"
-                : `hidden relative`}  lg:flex items-center justify-end gap-0 xl:gap-4
+                ? "fixed w-full h-full left-0 top-0 py-20 overflow-y-auto"
+                : `hidden relative`}  lg:flex items-center justify-end gap-2 max-[1320px]:gap-0
                 text-black font-semibold text-sm bg-[#F7F7F7] max-xl:pl-2`}>
               {BigMenuToggle ? (
                 <>
                   <button
                     onClick={() => setBigMenuToggle(!BigMenuToggle)}
-                    className="mb-4 text-white"
+                    className="absolute right-5 top-5 text-black"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
                   </button>
                 </>
               ) : null}
               <li className="relative group">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 py-3 focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   ABOUT{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[800px]"
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
                     } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-3">
                     <div className="col-span-2 max-md:col-span-3 pr-4 p-0 group-hover:p-5 transition-all">
                       <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
-                        <LinksList title="WHO WE ARE" links={About.sublinks["Who We Are"]} />
-                        <LinksList title="Related Links" links={About.sublinks["Related Links"]} />
+                        <LinksList title="WHO WE ARE" links={About.sublinks["Who We Are"]} setBigMenuToggle={setBigMenuToggle} />
+                        <LinksList title="Related Links" links={About.sublinks["Related Links"]} setBigMenuToggle={setBigMenuToggle} />
                       </div>
                     </div>
                     <div className="col-span-1 max-md:hidden">
@@ -227,7 +211,7 @@ export default function NavBar() {
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[1200px]"
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute"
                     } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
@@ -240,15 +224,15 @@ export default function NavBar() {
                             {key}</button>)
                         }
                       </div>
-                      <div className="flex p-10 gap-10 ">
+                      <div className="flex p-6 max-xl:p-4 gap-5 ">
                         {
                           Object.keys(Programs.sublinks[activeTab])?.map((key, index) => {
                             if (key === 'Programs') {
-                              return <LinksList key={index} title={key} links={Programs.sublinks[activeTab][key]} />
+                              return <LinksList key={index} title={key} links={Programs.sublinks[activeTab][key]} setBigMenuToggle={setBigMenuToggle} />
                             }
                             if (key === 'Program') {
                               return Object.keys(Programs.sublinks[activeTab][key])?.map((key1, index) => {
-                                return <LinksList key={index} title={key1} links={Programs.sublinks[activeTab][key][key1]} />
+                                return <LinksList key={index} title={key1} links={Programs.sublinks[activeTab][key][key1]} setBigMenuToggle={setBigMenuToggle} />
                               })
                             }
                           })
@@ -301,18 +285,18 @@ export default function NavBar() {
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[800px]"
-                    } -left-20 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[840px]"
+                    } -left-52 max-lg:left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
-                  <div className="grid grid-cols-5 ">
-                    <div className="col-span-3 max-md:col-span-2 pr-4 p-0 group-hover:p-5 transition-all">
+                  <div className="grid grid-cols-12">
+                    <div className="col-span-8 max-md:col-span-12 pr-4 p-0 group-hover:p-5 transition-all">
                       <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
-                        <LinksList title="ACADEMICS" links={Academics.sublinks["Academics"]} />
-                        <LinksList title="SCHOOLS" links={Academics.sublinks["Schools"]} />
+                        <LinksList title="ACADEMICS" links={Academics.sublinks["Academics"]} setBigMenuToggle={setBigMenuToggle} />
+                        <LinksList title="SCHOOLS" links={Academics.sublinks["Schools"]} setBigMenuToggle={setBigMenuToggle} />
                       </div>
                     </div>
-                    <div className="col-span-2 max-md:hidden h-full">
+                    <div className="col-span-4 max-md:hidden h-full">
                       <div className="bg-Academics bg-cover bg-black bg-blend-multiply bg-opacity-70 h-full flex flex-col justify-between">
                         <div className="flex flex-col items-center mt-20">
                           <span className="text-center text-lg font-novaLight text-white">
@@ -343,7 +327,7 @@ export default function NavBar() {
                           </div>
                           <div className="flex flex-col items-center text-white border-t border-t-white/50 p-7">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-git-2"><path d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5" /><circle cx="13" cy="12" r="2" /><path d="M18 19c-2.8 0-5-2.2-5-5v8" /><circle cx="20" cy="19" r="2" /></svg>
-                            <span className="mt-2 text-xs text-white font-novaLight">
+                            <span className="mt-2 text-xs text-center text-white font-novaLight">
                               Experiential Learning
                             </span>
                           </div>
@@ -360,17 +344,17 @@ export default function NavBar() {
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[600px]"
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute"
                     } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
-                  <div className="flex group-hover:p-4 w-max transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col max-md:gap-5">
+                  <div className="flex group-hover:p-4 w-max transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col max-md:gap-5 max-md:w-full">
 
-                    <div className="w-52 ">
-                      <LinksList title="ADMISSIONS" links={Admissions?.sublinks["Admission"].slice(0, Math.ceil(Admissions?.sublinks["Admission"].length / 2))} />
+                    <div className="w-52">
+                      <LinksList title="ADMISSIONS" links={Admissions?.sublinks["Admission"].slice(0, Math.ceil(Admissions?.sublinks["Admission"].length / 2))} setBigMenuToggle={setBigMenuToggle} />
                     </div>
-                    <div className="w-52 ">
-                      <LinksList title='  ' titleClassName="mt-4" links={Admissions?.sublinks["Admission"].slice(Math.ceil(Admissions?.sublinks["Admission"].length / 2))} />
+                    <div className="w-52">
+                      <LinksList title='  ' titleClassName="mt-4" links={Admissions?.sublinks["Admission"].slice(Math.ceil(Admissions?.sublinks["Admission"].length / 2))} setBigMenuToggle={setBigMenuToggle} />
                     </div>
                   </div>
                   <div className="w-full relative max-md:hidden ">
@@ -414,14 +398,14 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="relative group">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1 whitespace-nowrap`}>
                   CAMPUS LIFE{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } -left-24 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-[420px]"
+                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -472,10 +456,10 @@ export default function NavBar() {
                       </div>
                       <div className="flex p-0 group-hover:p-4 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
                         <div className="w-52 ">
-                          <LinksList title="CAMPUS LIFE" links={CampusLife.sublinks.slice(0, Math.ceil(CampusLife?.sublinks.length / 2))} />
+                          <LinksList title="CAMPUS LIFE" links={CampusLife.sublinks.slice(0, Math.ceil(CampusLife?.sublinks.length / 2))} setBigMenuToggle={setBigMenuToggle} />
                         </div>
                         <div className="w-52 ">
-                          <LinksList title="" links={CampusLife.sublinks.slice(Math.ceil(CampusLife?.sublinks.length / 2))} />
+                          <LinksList title="" links={CampusLife.sublinks.slice(Math.ceil(CampusLife?.sublinks.length / 2))} setBigMenuToggle={setBigMenuToggle} />
                         </div>
                       </div>
                     </div>
@@ -490,7 +474,7 @@ export default function NavBar() {
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-[600px]"
-                    } -left-72 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-9">
@@ -539,20 +523,20 @@ export default function NavBar() {
                     </div>
                     <div className="col-span-5 w-max pr-4 p-0 group-hover:p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
                       <div className="w-max pr-5">
-                        <LinksList title="PLACEMENTS" links={Placements.sublinks["Placements"]} />
+                        <LinksList title="PLACEMENTS" links={Placements.sublinks["Placements"]} setBigMenuToggle={setBigMenuToggle} />
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
               <li className="group relative">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
+                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1 whitespace-nowrap`}>
                   RESEARCH & INNOVATION{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
-                  className={`${BigMenuToggle ? "relative w-max" : "absolute w-max"
+                  className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
                     } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
@@ -594,16 +578,16 @@ export default function NavBar() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-span-3 max-md:col-span-2 pr-4 p-0 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
-                      <div className="flex">
-                        <div className=" w-40 pr-2">
-                          <LinksList title="Research Intensive University" links={ResearchInnovation.sublinks['Research Intensive University']} />
+                    <div className="col-span-3 max-md:col-span-5 pr-4 p-0 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                      <div className={`flex ${BigMenuToggle && "flex-col gap-y-5"}`}>
+                        <div className={`w-40 pr-2 ${BigMenuToggle && "w-full"}`}>
+                          <LinksList title="Research Intensive University" links={ResearchInnovation.sublinks['Research Intensive University']} setBigMenuToggle={setBigMenuToggle} />
                         </div>
-                        <div className="w-40 pr-2">
-                          <LinksList title="Entrepreneurship Cells" links={ResearchInnovation.sublinks['Entrepreneurship Cells']} />
+                        <div className={`w-40 pr-2 ${BigMenuToggle && "w-full"}`}>
+                          <LinksList title="Entrepreneurship Cells" links={ResearchInnovation.sublinks['Entrepreneurship Cells']} setBigMenuToggle={setBigMenuToggle} />
                         </div>
-                        <div className="w-40 pr-2">
-                          <LinksList title="Sustainable Development Goals (SDG's)" links={ResearchInnovation.sublinks[`Sustainable Development Goals (SDG's)`]} />
+                        <div className={`w-40 pr-2 ${BigMenuToggle && "w-full"}`}>
+                          <LinksList title="Sustainable Development Goals (SDG's)" links={ResearchInnovation.sublinks[`Sustainable Development Goals (SDG's)`]} setBigMenuToggle={setBigMenuToggle} />
                         </div>
                       </div>
                     </div>
@@ -613,10 +597,10 @@ export default function NavBar() {
             </ul>
           </nav>
         </div>
-        <div className={`md:hidden max-md:order-1 max-md:col-span-1 ${isScrolled100 ? "hidden" : ""}`}>
+        <div className={`max-[500px]:hidden md:hidden max-md:order-1 max-md:col-span-3`}>
           <div className="grid grid-cols-2 pt-2 gap-2 pr-5">
             {socialLinks?.map((item, index) => (
-              <a key={index} className="text-xs text-center flex flex-col gap-1 justify-start items-center text-white" href="">
+              <a key={index} className="text-xs text-center flex flex-col justify-start items-center text-black" href="">
                 {item.svg}
                 <span className="text-[10px]">{item.name}</span>
               </a>
@@ -624,84 +608,6 @@ export default function NavBar() {
           </div>
         </div>
       </div>
-
-      <Dialog
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-        className="lg:hidden"
-      >
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1 p-1">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="/image/slider-home/AKGEC_1_0.png"
-                className="h-8 w-auto"
-              />
-            </a>
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2 rounded-md p-2 text-gray-700"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-4">
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    Campus
-                    <ChevronDownIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 flex-none group-data-[open]:rotate-180"
-                    />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    <div className="p-3 grid grid-cols-2 gap-3">
-                      {products?.map((item, index) => (
-                        <div
-                          key={index}
-                          className="group relative flex justify-center rounded-lg text-sm hover:bg-gray-50"
-                        >
-                          <div className="h-32 w-32 p-3 rounded-lg bg-gray-50 flex items-center justify-center">
-                            <item.icon
-                              aria-hidden="true"
-                              className="h-28 w-28 text-gray-600"
-                            />
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </DisclosurePanel>
-                </Disclosure>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
-                </a>
-              </div>
-            </div>
-          </div>
-        </DialogPanel>
-      </Dialog>
     </header>
   );
 };

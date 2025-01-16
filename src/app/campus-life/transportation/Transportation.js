@@ -330,10 +330,13 @@ const TransportationFacilities = () => {
                         <div key={index} className="mb-2 max-sm:mb-2">
                             <a
                                 onClick={() => toggleRoute(index)}
-                                className={`flex justify-between items-center w-full cursor-pointer p-4`}
+                                className="flex justify-between items-center w-full cursor-pointer p-4"
                                 aria-expanded={openIndices.includes(index)}
                             >
-                                <span className={`font-novaSemi max-sm:text-sm ${openIndices.includes(index) ? 'text-[#00BFE7]' : 'text-black'}`}>
+                                <span
+                                    className={`font-novaSemi max-sm:text-sm ${openIndices.includes(index) ? 'text-[#00BFE7]' : 'text-black'
+                                        }`}
+                                >
                                     {route.route}
                                 </span>
                                 {openIndices.includes(index) ? (
@@ -347,14 +350,17 @@ const TransportationFacilities = () => {
                                     <table className="min-w-full border-collapse">
                                         <thead>
                                             <tr className="text-base bg-secondary max-sm:text-sm">
-                                                <th className="border p-2 w-32 max-sm:w-10">Sr. No.</th> {/* Fixed width for Sr. No. */}
+                                                <th className="border p-2 w-32 max-sm:w-10">Sr. No.</th>
                                                 <th className="p-2">Bus Stop</th>
                                                 <th className="p-2">Time</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             {route.stops.map((stop) => (
-                                                <tr key={stop.srNo} className="text-base bg-primary text-white max-sm:text-sm">
+                                                <tr
+                                                    key={stop.srNo}
+                                                    className="text-base bg-primary text-white max-sm:text-sm"
+                                                >
                                                     <td className="border p-2">{stop.srNo}</td>
                                                     <td className="border p-2">{stop.stop}</td>
                                                     <td className="border p-2">{stop.time}</td>
@@ -367,6 +373,7 @@ const TransportationFacilities = () => {
                         </div>
                     ))}
                 </div>
+
             </div>
             <section id="transportation-fee" className="py-5 max-sm:py-5">
                 <div className="mb-4 bg-white shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] p-4 max-sm:mb-3 max-sm:p-3">
