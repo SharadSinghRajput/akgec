@@ -61,8 +61,7 @@ export default function NavBar() {
   );
   return (
     <header
-      className={`z-[100] w-full fixed top-0 left-0 bg-[#F7F7F7] transition-all duration-200 shadow-lg max-[500px]:py-1`}
-    >
+      className={`z-[100] w-full fixed top-0 left-0 bg-[#F7F7F7] transition-all duration-200 shadow-lg max-[500px]:py-1`}>
       <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-12 gap-x-5 max-[1320px]:gap-x-0 max-md:gap-x-2">
         <div className="col-span-2 flex max-xl:col-span-3 max-lg:col-span-6 max-md:col-span-7 max-sm:col-span-7">
           <div
@@ -74,14 +73,14 @@ export default function NavBar() {
                   onClick={() => router.push("/")}
                   src="/image/AKGEC_LOGO.webp"
                   alt="AKG University Logo"
-                  className={`h-16 w-36 max-lg:h-14 max-[1430px]:w-fit object-contain bg-blend-color-dodge cursor-pointer`}
+                  className={`h-16 max-sm:w-12 max-lg:h-14 object-contain bg-blend-color-dodge cursor-pointer`}
                 />
               </div>
               <div className={`grid gap-0 grid-cols-4 max-[1430px]:grid-cols-2 max-lg:grid-cols-4 max-sm:grid-cols-2 max-[1430px]:gap-1`}>
-                <img src="/image/NaaC.webp" alt="NAAC Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-7 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`} />
-                <img src="/image/nba.jpg" alt="NBA Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-7 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`} />
-                <img src="/image/qs-i-gauge.jpg" alt="QS-I-GAUGE Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-7 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`} />
-                <img src="/image/iic.jpg" alt="IIC Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-7 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`} />
+                <img src="/image/NaaC.webp" alt="NAAC Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-6 object-contain bg-blend-color-dodge relative z-[4] shadow-effect-right`} />
+                <img src="/image/nba.jpg" alt="NBA Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-6 object-contain bg-blend-color-dodge relative z-[3] shadow-effect-right`} />
+                <img src="/image/qs-i-gauge.jpg" alt="QS-I-GAUGE Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-6 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`} />
+                <img src="/image/iic.jpg" alt="IIC Logo" className={`h-11 max-[1430px]:h-9 max-sm:h-6 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`} />
               </div>
 
             </div>
