@@ -27,6 +27,8 @@ const socialLinks = [
 
 export default function NavBar() {
   const router = useRouter();
+  const [openMenu, setOpenMenu] = useState(null);
+  const [isBelowLg, setIsBelowLg] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [BigMenuToggle, setBigMenuToggle] = useState(false);
   const [activeTab, setActiveTab] = useState("School of Engineering & Technology");
@@ -43,6 +45,27 @@ export default function NavBar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (typeof window !== 'undefined') {
+        setIsBelowLg(window.innerWidth < 1024);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleMenu = (menu) => {
+    if (isBelowLg) {
+      setOpenMenu(prevMenu => (prevMenu === menu ? null : menu));
+    }
+  };
 
   const LinksList = ({ title, links, titleClassName, ulClassName, setBigMenuToggle }) => (
     <div className="pr-6 max-md:w-full">
@@ -143,18 +166,18 @@ export default function NavBar() {
                 </>
               ) : null}
               <li className="relative group">
-                <button className={`relative px-3 max-xl:px-1 py-3 focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
+                <button onClick={() => toggleMenu('about')} className={`relative px-3 max-xl:px-1 py-3 focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   ABOUT{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } ${openMenu === 'about' && "absolute h-auto mt-0 w-full"} left-0 h-0 mt-5 overflow-hidden lg:group-hover:h-auto lg:group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-3">
-                    <div className="col-span-2 max-md:col-span-3 pr-4 p-0 group-hover:p-5 transition-all">
+                    <div className="col-span-2 max-md:col-span-3 p-5 transition-all">
                       <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
                         <LinksList title="WHO WE ARE" links={About.sublinks["Who We Are"]} setBigMenuToggle={setBigMenuToggle} />
                         <LinksList title="Related Links" links={About.sublinks["Related Links"]} setBigMenuToggle={setBigMenuToggle} />
@@ -204,18 +227,18 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="group">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm3 max-[1600px]:text-sm flex items-center gap-1`}>
+                <button onClick={() => toggleMenu('programs')} className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm3 max-[1600px]:text-sm flex items-center gap-1`}>
                   PROGRAMS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } ${openMenu === 'programs' && "absolute h-auto mt-0 w-full"} left-0 h-0 mt-5 overflow-hidden lg:group-hover:h-auto lg:group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
                   <div className="grid grid-cols-3">
-                    <div className="col-span-2 max-md:col-span-3 p-0  transition-all">
+                    <div className="col-span-2 max-md:col-span-3 p-0 transition-all">
                       <div className=" w-full h-16 flex justify-center items-center gap-1">
                         {
                           Object.keys(Programs.sublinks)?.map((key, index) => <button onClick={() => { setActiveTab(key) }} key={index}
@@ -223,7 +246,7 @@ export default function NavBar() {
                             {key}</button>)
                         }
                       </div>
-                      <div className="flex p-6 max-xl:p-4 gap-5 ">
+                      <div className="flex max-md:flex-col p-5 max-xl:p-4 gap-5">
                         {
                           Object.keys(Programs.sublinks[activeTab])?.map((key, index) => {
                             if (key === 'Programs') {
@@ -278,18 +301,18 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="relative group">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
+                <button onClick={() => toggleMenu('academics')} className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   ACADEMICS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-[840px]"
-                    } -left-52 max-lg:left-0 h-0  mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } ${openMenu === 'academics' && "absolute h-auto mt-0 w-full"} -left-52 max-lg:left-0 h-0  mt-5 overflow-hidden lg:group-hover:h-auto lg:group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-12">
-                    <div className="col-span-8 max-md:col-span-12 pr-4 p-0 group-hover:p-5 transition-all">
+                    <div className="col-span-8 max-md:col-span-12 p-5 transition-all">
                       <div className="flex max-md:flex-col max-md:gap-5 max-md:max-h-72 max-md:overflow-y-scroll">
                         <LinksList title="ACADEMICS" links={Academics.sublinks["Academics"]} setBigMenuToggle={setBigMenuToggle} />
                         <LinksList title="SCHOOLS" links={Academics.sublinks["Schools"]} setBigMenuToggle={setBigMenuToggle} />
@@ -337,17 +360,17 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="relative group">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
+                <button onClick={() => toggleMenu('admissions')} className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   ADMISSIONS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } ${openMenu === 'admissions' && "absolute h-auto mt-0 w-full"} left-0 h-0 mt-5 overflow-hidden lg:group-hover:h-auto lg:group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
-                  <div className="flex group-hover:p-4 w-max transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col max-md:gap-5 max-md:w-full">
+                  <div className="flex p-5 w-max transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col max-md:gap-5 max-md:w-full">
 
                     <div className="w-52">
                       <LinksList title="ADMISSIONS" links={Admissions?.sublinks["Admission"].slice(0, Math.ceil(Admissions?.sublinks["Admission"].length / 2))} setBigMenuToggle={setBigMenuToggle} />
@@ -397,14 +420,14 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="relative group">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1 whitespace-nowrap`}>
+                <button onClick={() => toggleMenu('campus-life')} className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1 whitespace-nowrap`}>
                   CAMPUS LIFE{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-[420px]"
-                    } left-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } ${openMenu === 'campus-life' && "absolute h-auto mt-0 w-full"} left-0 h-0 mt-5 overflow-hidden lg:group-hover:h-auto lg:group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-2">
@@ -453,7 +476,7 @@ export default function NavBar() {
                           </div>
                         </div>
                       </div>
-                      <div className="flex p-0 group-hover:p-4 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                      <div className="flex p-5 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
                         <div className="w-52 ">
                           <LinksList title="CAMPUS LIFE" links={CampusLife.sublinks.slice(0, Math.ceil(CampusLife?.sublinks.length / 2))} setBigMenuToggle={setBigMenuToggle} />
                         </div>
@@ -466,14 +489,14 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="xl:relative group">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
+                <button onClick={() => toggleMenu('placements')} className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   PLACEMENTS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-[600px]"
-                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } ${openMenu === 'placements' && "absolute h-auto mt-0 w-full"} right-0 h-0 mt-5 overflow-hidden lg:group-hover:h-auto lg:group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-9">
@@ -520,7 +543,7 @@ export default function NavBar() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-span-5 w-max pr-4 p-0 group-hover:p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                    <div className="col-span-5 w-max p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
                       <div className="w-max pr-5">
                         <LinksList title="PLACEMENTS" links={Placements.sublinks["Placements"]} setBigMenuToggle={setBigMenuToggle} />
                       </div>
@@ -529,14 +552,14 @@ export default function NavBar() {
                 </div>
               </li>
               <li className="group relative">
-                <button className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1 whitespace-nowrap`}>
+                <button onClick={() => toggleMenu('research')} className={`relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1 whitespace-nowrap`}>
                   RESEARCH & INNOVATION{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
                   <span className="absolute inset-x-0 top-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 origin-bottom" />
                 </button>
                 <div
                   className={`${BigMenuToggle ? "relative w-full" : "absolute w-max"
-                    } right-0 h-0 mt-5 overflow-hidden group-hover:h-auto group-hover:mt-0 transition-all bg-white
+                    } ${openMenu === 'research' && "absolute h-auto mt-0 w-full"} right-0 h-0 mt-5 overflow-hidden lg:group-hover:h-auto lg:group-hover:mt-0 transition-all bg-white
                                     text-black rounded-lg shadow-lg`}
                 >
                   <div className="grid grid-cols-5">
@@ -577,7 +600,7 @@ export default function NavBar() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-span-3 max-md:col-span-5 pr-4 p-0 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                    <div className="col-span-3 max-md:col-span-5 p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
                       <div className={`flex ${BigMenuToggle && "flex-col gap-y-5"}`}>
                         <div className={`w-40 pr-2 ${BigMenuToggle && "w-full"}`}>
                           <LinksList title="Research Intensive University" links={ResearchInnovation.sublinks['Research Intensive University']} setBigMenuToggle={setBigMenuToggle} />

@@ -63,7 +63,7 @@ export default function Form() {
             <input type="tel" placeholder="Enter Mobile No" className="w-full px-4 max-sm:px-2 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
             <input type="text" placeholder="Type your City" className="w-full px-4 max-sm:px-2 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
           </div>
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          <div className="grid grid-cols-2 gap-4 h-9 mb-4">
             <select className="w-full px-4 max-sm:px-1 py-3 max-sm:py-1.5 border border-gray-500 rounded-md text-xs font-novaReg" value={selectedDiscipline} onChange={handleDisciplineChange}>
               <option value="">Select Discipline</option>
               {programData?.map((item, index) => (
@@ -82,7 +82,7 @@ export default function Form() {
             </select>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-3 gap-4 h-9 mb-6">
             <select className="w-full px-4 max-sm:px-1 py-3 max-sm:py-1.5 border border-gray-500 rounded-md text-xs font-novaReg">
               <option>DD</option>
               {[...Array(31)]?.map((_, i) => (

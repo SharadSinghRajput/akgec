@@ -24,49 +24,49 @@ const OurIdentity = () => {
             <div className="max-w-7xl mx-auto px-3 py-5 max-md:space-y-3">
                 <div className="relative">
                     <img className="h-60 w-[90%] max-md:w-full object-cover object-top rounded-xl" src="/image/building/building7.webp" alt="Building" />
-                    <div className="absolute w-[90%] inset-0 bg-gradient-to-r from-blue-600 to-transparent bg-opacity-70 text-white rounded-l-xl">
-                        <div className="flex items-start h-full justify-center flex-col leading-none px-5 w-2/4">
+                    <div className="absolute w-[90%] max-sm:w-full inset-0 bg-gradient-to-r from-blue-600 to-transparent bg-opacity-70 text-white rounded-l-xl" >
+                        <div className="flex items-start h-full justify-center flex-col leading-none px-5 w-2/4 max-md:w-2/3 max-sm:w-full">
                             <div className="flex items-center gap-1 mb-2">
                                 <Bookmark strokeWidth={1.5} size={30} />
                                 <h2 className="text-2xl max-[400px]:text-xl font-novaSemi">The Color Blue</h2>
                             </div>
-                            <h3 className="text-lg max-[400px]:text-base leading-snug font-novaReg text-justify">At AKGU, blue symbolizes knowledge, stability, and trust. It reflects the university’s commitment to fostering a calm yet inspiring environment for learning.</h3>
+                            <h3 className="text-lg max-md:text-base leading-snug font-novaReg text-justify">At AKGU, blue symbolizes knowledge, stability, and trust. It reflects the university’s commitment to fostering a calm yet inspiring environment for learning.</h3>
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-end relative">
                     <img className="h-60 w-[90%] max-md:w-full object-cover rounded-xl" src="/image/building/building3.webp" alt="Student" />
-                    <div className="absolute h-full w-[90%] bg-gradient-to-l from-indigo-600 to-transparent bg-opacity-95 text-white rounded-r-xl flex justify-end">
-                        <div className="flex items-start h-full justify-center flex-col leading-none px-5 w-2/4">
+                    <div className="absolute h-full w-[90%] max-sm:w-full bg-gradient-to-l from-indigo-600 to-transparent bg-opacity-95 text-white rounded-r-xl flex justify-end">
+                        <div className="flex items-start h-full justify-center flex-col leading-none px-5 w-2/4 max-md:w-2/3 max-sm:w-full">
                             <div className="flex items-center gap-1 mb-2">
                                 <Bookmark strokeWidth={1.5} size={30} />
                                 <h2 className="text-2xl max-[400px]:text-xl font-novaSemi">Globe</h2>
                             </div>
-                            <h3 className="text-lg max-[400px]:text-base leading-snug font-novaReg text-justify">AKGU's global perspective in education is represented by the globe, symbolizing its focus on international collaboration, modern technological advancements, and the adoption of globally recognized academic standards.</h3>
+                            <h3 className="text-lg max-md:text-base leading-snug font-novaReg text-justify">AKGU's global perspective in education is represented by the globe, symbolizing its focus on international collaboration, modern technological advancements, and the adoption of globally recognized academic standards.</h3>
                         </div>
                     </div>
                 </div>
                 <div className="relative">
                     <img className="h-60 w-[90%] max-md:w-full object-cover object-center rounded-xl" src="/image/building/building2.webp" alt="Student" />
-                    <div className="absolute w-[90%] inset-0 bg-gradient-to-r from-gray-800 to-transparent bg-opacity-70 text-white rounded-l-xl">
-                        <div className="flex items-start h-full justify-center flex-col leading-none px-5 w-2/4">
+                    <div className="absolute w-[90%] max-sm:w-full inset-0 bg-gradient-to-r from-gray-800 to-transparent bg-opacity-70 text-white rounded-l-xl">
+                        <div className="flex items-start h-full justify-center flex-col leading-none px-5 w-2/4 max-md:w-2/3 max-sm:w-full">
                             <div className="flex items-center gap-1 mb-2">
                                 <Bookmark strokeWidth={1.5} size={30} />
                                 <h2 className="text-2xl max-[400px]:text-xl font-novaSemi">The Human Chain</h2>
                             </div>
-                            <h3 className="text-lg max-[400px]:text-base leading-snug font-novaReg text-justify">AKGU promotes a strong sense of unity and collaboration through its diverse student body. The human chain symbolizes teamwork, respect for cultural diversity, and a commitment to national unity.</h3>
+                            <h3 className="text-lg max-md:text-base leading-snug font-novaReg text-justify">AKGU promotes a strong sense of unity and collaboration through its diverse student body. The human chain symbolizes teamwork, respect for cultural diversity, and a commitment to national unity.</h3>
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-end relative">
                     <img className="h-60 w-[90%] max-md:w-full object-cover rounded-xl" src="/image/building/building5.webp" alt="Student" />
-                    <div className="absolute h-full w-[90%] bg-gradient-to-l from-amber-800 to-transparent bg-opacity-95 text-white rounded-r-xl flex justify-end">
-                        <div className="flex items-start h-full justify-center flex-col leading-none px-5 w-2/4">
+                    <div className="absolute h-full w-[90%] max-sm:w-full bg-gradient-to-l from-amber-800 to-transparent bg-opacity-95 text-white rounded-r-xl flex justify-end">
+                        <div className="flex items-start h-full justify-center flex-col leading-none px-5 w-2/4 max-md:w-2/3 max-sm:w-full">
                             <div className="flex items-center gap-1 mb-2">
                                 <Bookmark strokeWidth={1.5} size={30} />
                                 <h2 className="text-2xl max-[400px]:text-xl font-novaSemi">The Color Yellow and Black</h2>
                             </div>
-                            <h3 className="text-lg max-[400px]:text-base leading-snug font-novaReg text-justify">The combination of yellow and black at AKGU signifies balance between creativity and discipline. Yellow stands for optimism, innovation, and the bright future that education at AKGU promises.</h3>
+                            <h3 className="text-lg max-md:text-base leading-snug font-novaReg text-justify">The combination of yellow and black at AKGU signifies balance between creativity and discipline. Yellow stands for optimism, innovation, and the bright future that education at AKGU promises.</h3>
                         </div>
                     </div>
                 </div>
