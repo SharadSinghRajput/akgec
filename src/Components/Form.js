@@ -50,9 +50,9 @@ export default function Form() {
     <div className="flex items-center justify-center h-full pb-4 md:pt-20 ">
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full overflow-hidden">
         <div className='bg-gray-100 flex flex-col justify-center items-center px-8 py-6 max-sm:py-6'>
-          <h2 className="text-lg bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold tracking-wider text-center">APPLY TODAY FOR</h2>
+          <h2 className="text-sm bg-gradient-to-r from-blue-600 to-rose-600 bg-clip-text text-transparent font-novaBold tracking-wider text-center">APPLY TODAY FOR</h2>
           <h1 className="mt-3 font-novaBold text-center text-xl max-sm:text-base">AKG UNIVERSITY PROGRAMS</h1>
-          <p className="bg-btn-gradient animate-gradient text-white text-center font-novaBold mb-6 max-sm:mb-0 text-xs w-max py-2 px-4 rounded-lg mt-2">Registration End Date (Phase-II) - 30 Aug 2024</p>
+          <p className="bg-btn-gradient animate-gradient text-white text-center font-novaBold mb-6 max-sm:mb-0 text-xs w-max py-2 px-4 max-sm:px-2 max-sm:py-1.5 rounded-lg mt-2">Registration End Date (Phase-II) - 30 Aug 2024</p>
         </div>
         <form className='p-6 max-sm:p-4'>
           <div className="grid grid-cols-2 gap-4 mb-4">
@@ -63,7 +63,7 @@ export default function Form() {
             <input type="tel" placeholder="Enter Mobile No" className="w-full px-4 max-sm:px-2 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
             <input type="text" placeholder="Type your City" className="w-full px-4 max-sm:px-2 py-3 max-sm:py-2 border placeholder:text-gray-600 placeholder:text-[13px] border-gray-500 rounded-md text-xs font-novaReg"/>
           </div>
-          <div className="grid grid-cols-2 gap-4 h-9 mb-4">
+          <div className="grid grid-cols-2 gap-4 h-9 mb-6">
             <select className="w-full px-4 max-sm:px-1 py-3 max-sm:py-1.5 border border-gray-500 rounded-md text-xs font-novaReg" value={selectedDiscipline} onChange={handleDisciplineChange}>
               <option value="">Select Discipline</option>
               {programData?.map((item, index) => (

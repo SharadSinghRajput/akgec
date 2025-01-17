@@ -34,34 +34,34 @@ const results = [
         Round 1: This Round was conducted in 2 days in which we explained the cloud and its application along with Hands-On-Experience on Virtual Machine creation on AWS and GitHub to all the participants. This round was held at Web technology lab, IT lab 1 and IT lab 2 on 28th and 29th April at 4 PM. <br /><br />
         Round 2: This Round was consisted of quiz based on cloud and it`s services such as Virtual Machine creation and GitHub questions which was self-paced to access the basic technical and IQ of the students. The students were shortlisted on the basis of their marks for this round. This round was held online at D2C Platform on 30th April 2022 at 7:00 PM. <br /><br />
         The top three winners of the event were awarded with the cash prizes: <br />
-        <div class="overflow-x-auto max-w-md my-5">
-          <table class="table-auto w-full border-collapse border border-gray-300">
+        <div className="overflow-x-auto max-w-md my-5">
+          <table className="table-auto w-full border-collapse border border-gray-300">
             <thead>
-              <tr class="bg-indigo-950 text-white">
-                <th class="border border-gray-300 px-4 py-2 text-left rounded-tl-lg">Name</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Branch</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Year</th>
-                <th class="border border-gray-300 px-4 py-2 text-left rounded-tr-lg">Prizes</th>
+              <tr className="bg-indigo-950 text-white">
+                <th className="border border-gray-300 px-4 py-2 text-left rounded-tl-lg">Name</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Branch</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Year</th>
+                <th className="border border-gray-300 px-4 py-2 text-left rounded-tr-lg">Prizes</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-white hover:bg-gray-100">
-                <td class="border border-gray-300 px-4 py-2">Atul Kumar</td>
-                <td class="border border-gray-300 px-4 py-2">IT</td>
-                <td class="border border-gray-300 px-4 py-2">1st Year</td>
-                <td class="border border-gray-300 px-4 py-2">1st</td>
+              <tr className="bg-white hover:bg-gray-100">
+                <td className="border border-gray-300 px-4 py-2">Atul Kumar</td>
+                <td className="border border-gray-300 px-4 py-2">IT</td>
+                <td className="border border-gray-300 px-4 py-2">1st Year</td>
+                <td className="border border-gray-300 px-4 py-2">1st</td>
               </tr>
-              <tr class="bg-gray-50 hover:bg-gray-100">
-                <td class="border border-gray-300 px-4 py-2">Archas Srivastava</td>
-                <td class="border border-gray-300 px-4 py-2">CS</td>
-                <td class="border border-gray-300 px-4 py-2">1st Year</td>
-                <td class="border border-gray-300 px-4 py-2">2nd</td>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="border border-gray-300 px-4 py-2">Archas Srivastava</td>
+                <td className="border border-gray-300 px-4 py-2">CS</td>
+                <td className="border border-gray-300 px-4 py-2">1st Year</td>
+                <td className="border border-gray-300 px-4 py-2">2nd</td>
               </tr>
-              <tr class="bg-white hover:bg-gray-100">
-                <td class="border border-gray-300 px-4 py-2">Malika Garg</td>
-                <td class="border border-gray-300 px-4 py-2">CS</td>
-                <td class="border border-gray-300 px-4 py-2">1st Year</td>
-                <td class="border border-gray-300 px-4 py-2">3rd</td>
+              <tr className="bg-white hover:bg-gray-100">
+                <td className="border border-gray-300 px-4 py-2">Malika Garg</td>
+                <td className="border border-gray-300 px-4 py-2">CS</td>
+                <td className="border border-gray-300 px-4 py-2">1st Year</td>
+                <td className="border border-gray-300 px-4 py-2">3rd</td>
               </tr>
             </tbody>
           </table>
@@ -84,34 +84,34 @@ const results = [
         Cloud Computing Cell conducted a 9-hour interactive workshop Erudition’20 on AWS, GitHub, Raspberry Pi, version control system and other trending topics on IOT. The event included hands on project for deploying home based Personal Cloud Storage. A Raspberry Pi kit worth ₹ 3000 is rewarded to the top performing student in the event. <br />
         For this event we received massive participation of registered entries over 400 but due to limited seats available only 70 participants were allowed. <br />
         <strong>List Of Winners</strong> <br />
-        <div class="overflow-x-auto max-w-xl my-5">
-          <table class="table-auto w-full border-collapse border border-gray-300">
+        <div className="overflow-x-auto max-w-xl my-5">
+          <table className="table-auto w-full border-collapse border border-gray-300">
             <thead>
-              <tr class="bg-indigo-950 text-white">
-                <th class="border border-gray-300 px-4 py-2 text-left rounded-tl-lg">Position</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Names</th>
-                <th class="border border-gray-300 px-4 py-2 text-left">Student No.</th>
-                <th class="border border-gray-300 px-4 py-2 text-left rounded-tr-lg">Award</th>
+              <tr className="bg-indigo-950 text-white">
+                <th className="border border-gray-300 px-4 py-2 text-left rounded-tl-lg">Position</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Names</th>
+                <th className="border border-gray-300 px-4 py-2 text-left">Student No.</th>
+                <th className="border border-gray-300 px-4 py-2 text-left rounded-tr-lg">Award</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-white hover:bg-gray-100">
-                <td class="border border-gray-300 px-4 py-2">1st</td>
-                <td class="border border-gray-300 px-4 py-2">Rydam Agrawal</td>
-                <td class="border border-gray-300 px-4 py-2">1911007</td>
-                <td class="border border-gray-300 px-4 py-2">Raspberry Pi + Goodies</td>
+              <tr className="bg-white hover:bg-gray-100">
+                <td className="border border-gray-300 px-4 py-2">1st</td>
+                <td className="border border-gray-300 px-4 py-2">Rydam Agrawal</td>
+                <td className="border border-gray-300 px-4 py-2">1911007</td>
+                <td className="border border-gray-300 px-4 py-2">Raspberry Pi + Goodies</td>
               </tr>
-              <tr class="bg-gray-50 hover:bg-gray-100">
-                <td class="border border-gray-300 px-4 py-2">2nd</td>
-                <td class="border border-gray-300 px-4 py-2">Aditya Dwivedi</td>
-                <td class="border border-gray-300 px-4 py-2">1931011</td>
-                <td class="border border-gray-300 px-4 py-2">goodies</td>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="border border-gray-300 px-4 py-2">2nd</td>
+                <td className="border border-gray-300 px-4 py-2">Aditya Dwivedi</td>
+                <td className="border border-gray-300 px-4 py-2">1931011</td>
+                <td className="border border-gray-300 px-4 py-2">goodies</td>
               </tr>
-              <tr class="bg-white hover:bg-gray-100">
-                <td class="border border-gray-300 px-4 py-2">3rd</td>
-                <td class="border border-gray-300 px-4 py-2">Sumit Dagar</td>
-                <td class="border border-gray-300 px-4 py-2">1910091</td>
-                <td class="border border-gray-300 px-4 py-2">goodies</td>
+              <tr className="bg-white hover:bg-gray-100">
+                <td className="border border-gray-300 px-4 py-2">3rd</td>
+                <td className="border border-gray-300 px-4 py-2">Sumit Dagar</td>
+                <td className="border border-gray-300 px-4 py-2">1910091</td>
+                <td className="border border-gray-300 px-4 py-2">goodies</td>
               </tr>
             </tbody>
           </table>
