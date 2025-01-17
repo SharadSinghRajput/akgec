@@ -130,13 +130,13 @@ const EngineeringTechnology = () => {
           </div>
           <h4 className='text-xl font-semibold my-3'>Overview</h4>
           <p className='font-novaReg'>
-            A.K.G. College of Engineering and Technology is committed to fostering an innovative learning environment where students can excel in their academic pursuits and develop their skills for the modern workforce. Recognized as a leading institution in India, A.K.G. provides a comprehensive education that blends theoretical knowledge with practical application.
+            A.K.G. University is committed to fostering an innovative learning environment where students can excel in their academic pursuits and develop their skills for the modern workforce. Recognized as a leading institution in India, A.K.G. provides a comprehensive education that blends theoretical knowledge with practical application.
           </p>
           <p className='font-novaReg my-3'>
             With a focus on student engagement and hands-on learning, A.K.G. offers a dynamic curriculum that encourages creativity, critical thinking, and collaboration. Students are guided by experienced faculty members who are dedicated to nurturing talent and preparing graduates for success in their chosen fields.
           </p>
           <p className='font-novaReg'>
-            The mission of A.K.G. College of Engineering and Technology is to empower students through rigorous education, ensuring they become well-rounded professionals capable of addressing the challenges of an ever-evolving global landscape.
+            The mission of A.K.G. University is to empower students through rigorous education, ensuring they become well-rounded professionals capable of addressing the challenges of an ever-evolving global landscape.
           </p>
         </div>
 
@@ -158,7 +158,7 @@ const EngineeringTechnology = () => {
               <h2 className="text-2xl font-bold mb-2 max-lg:text-xl max-md:text-lg">Objective</h2>
               <div className=''>
                 <p className="">
-                  The programmes under the <strong>A.K.G. College of Engineering & Technology</strong> are designed to enable students to:
+                  The programmes under the <strong>A.K.G. University</strong> are designed to enable students to:
                 </p>
                 <ul className='mt-3 list-disc pl-5 font-novaReg space-y-2'>
                   <li className='leading-5'>Acquire a solid foundation in scientific and mathematical principles necessary for engineering practice.</li>
@@ -179,7 +179,7 @@ const EngineeringTechnology = () => {
               <h2 className="text-2xl font-bold mb-2 max-lg:text-xl max-md:text-lg">Key Highlights</h2>
               <div className=''>
                 <ul className='mt-3 list-disc pl-5 font-novaReg space-y-2'>
-                  <li className='leading-5'>A.K.G. College recognized as a leading institution in engineering education in the region, receiving multiple accolades for academic excellence.</li>
+                  <li className='leading-5'>A.K.G. University recognized as a leading institution in engineering education in the region, receiving multiple accolades for academic excellence.</li>
                   <li className='leading-5'>ISO 9001:2015 Certified Institute, ensuring high-quality education and continuous improvement in all operations.</li>
                   <li className='leading-5'>Opportunities for engineering students to engage in international internships in countries like the USA, Germany, Canada, and Australia.</li>
                   <li className='leading-5'>Strong placement record with partnerships with top industries, ensuring students have access to a wide range of career opportunities.</li>
