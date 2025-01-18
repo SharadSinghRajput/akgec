@@ -5,7 +5,7 @@ export default function VisionAndMission() {
                 <div className="col-span-1 bg-white max-sm:col-span-2 max-sm:bg-gradient-to-tr from-purple-400 to-cyan-100 p-5">
                     <div className="flex w-full h-full flex-col justify-center items-center">
                         <h2 className="text-4xl max-sm:text-3xl w-full text-start font-novaReg mb-4 max-w-[350px]">Our Vision</h2>
-                        <p className="font-novaReg text-gray-600 max-w-[350px] ">
+                        <p className="font-novaReg text-gray-600 max-w-[350px] text-justify">
                             To introduce undergraduate and postgraduate courses for all engineering branches and award of Ph.D degree to be one of the best University in the country and to be a deemed university.
                         </p>
                     </div>
@@ -25,7 +25,7 @@ export default function VisionAndMission() {
                 <div className="col-span-1 bg-white max-sm:col-span-2 max-sm:bg-gradient-to-tr from-cyan-400 to-purple-100 p-5">
                     <div className="flex w-full h-full flex-col justify-center items-center ">
                         <h2 className="text-4xl max-sm:text-3xl w-full text-start font-novaReg max-w-[350px] mb-4">Our Mission</h2>
-                        <p className="font-novaReg text-gray-600 max-w-[350px] ">
+                        <p className="font-novaReg text-gray-600 max-w-[350px] text-justify">
                             We strive to provide and maintain academic environment and systems, enabling maximum learning to produce competent professionals. We also aim at achieving this through transparent academic and administrative policies in the college.
                         </p>
                     </div>
@@ -45,7 +45,7 @@ export default function VisionAndMission() {
                 <div className="col-span-1 bg-white max-sm:col-span-2 max-sm:bg-gradient-to-tr from-amber-400 to-cyan-100 p-5">
                     <div className="flex w-full h-full flex-col justify-center items-center">
                         <h2 className="text-4xl max-sm:text-3xl w-full text-start font-novaReg mb-4 max-w-[350px]">Our Quality Policy</h2>
-                        <p className="font-novaReg text-gray-600 max-w-[350px] ">
+                        <p className="font-novaReg text-gray-600 max-w-[350px] text-justify">
                             To provide and continually improve academic environment and systems which give total satisfaction and enable students to develop their full potential and mature into competent professionals and responsible members of society.
                         </p>
                     </div>

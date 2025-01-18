@@ -19,7 +19,7 @@ const MetaData = ({
       <meta name="author" content={author} />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="copyright" content="Copyright © AKGU University. All Rights Reserved." />
+      <meta name="copyright" content="Copyright © AKG University. All Rights Reserved." />
 
       <link rel="alternate" href={`${path}`} hreflang="es-us" />
       <link rel="canonical" href={`${path}`} />

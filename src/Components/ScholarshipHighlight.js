@@ -26,21 +26,21 @@ const ScholarshipHighlight = ({heading, desc, pgSub, ugSub}) => {
             </div>
             <div className="flex max-sm:flex-wrap justify-start max-xl:justify-center items-start gap-5 mx-10 max-sm:mx-0 max-sm:gap-3 mt-10 ">
                 <div className=" ">
-                    <div className=" bg-[#f9f9f9] border w-full border-gray-300 shadow-lg">
-                        <div className=" text-center bg-white py-3">
+                    <div className=" bg-[#F7F7F7] border w-full border-gray-300 shadow-lg">
+                        <div className=" text-center py-3">
                             <img
-                                src="/image/akg-new.png"
+                                src="/image/AKGEC_LOGO.webp"
                                 alt="logo"
-                                className="inline-block w-52 max-lg:w-40 mb-2"
+                                className="inline-block w-20 mb-2"
                             />
-                            <span className="block w-fit mx-auto bg-[#fbe8e9] text-[16px] uppercase text-center py-0 px-2.5 mt-1.5">
+                            <span className="block w-fit mx-auto text-[16px] uppercase text-center py-0 px-2.5 mt-1.5">
                                {ugSub}
                             </span>
-                            <p className="text-sm mt-2">AIR in JEE Examination</p>
-                            <p className="text-sm mt-2">Scholarship</p>
+                            <p className="text-sm mt-2 font-novaReg">AIR in JEE Examination</p>
+                            <p className="text-lg font-novaSemi">Scholarship</p>
                         </div>
                         <div className="py-5 px-16 max-lg:px-10">
-                            <ul className="list-none pl-0 space-y-6 max-lg:space-y-3">
+                            <ul className="list-none pl-0 space-y-6 max-lg:space-y-3 font-novaReg">
                                 <li className="relative text-sm leading-[16px] mb-3">
                                     1 – 10,000:
                                     <b>
@@ -74,7 +74,7 @@ const ScholarshipHighlight = ({heading, desc, pgSub, ugSub}) => {
                         <div className="py-5 px-10">
                             <a
                                 href=""
-                                className="font-novaBold border bg-secondary text-center inline-block rounded-md uppercase tracking-wide py-3 w-full text-sm hover:bg-blue-950 hover:text-white transition ease-in-out duration-200"
+                                className="font-novaBold border bg-btn-gradient animate-gradient text-center inline-block rounded-md uppercase tracking-wide py-3 w-full text-sm text-white transition ease-in-out duration-200"
                             >
                                 Apply Now
                             </a>
@@ -82,21 +82,21 @@ const ScholarshipHighlight = ({heading, desc, pgSub, ugSub}) => {
                     </div>
                 </div>
                 <div className=" ">
-                    <div className=" bg-[#f9f9f9] border w-full border-gray-300 shadow-lg ">
-                        <div className=" text-center bg-white py-3">
+                    <div className="bg-[#F7F7F7] border w-full border-gray-300 shadow-lg ">
+                        <div className=" text-center py-3">
                             <img
-                                src="/image/akg-new.png"
+                                src="/image/AKGEC_LOGO.webp"
                                 alt="logo"
-                                className="inline-block w-52 max-lg:w-40 mb-2"
+                                className="inline-block w-20 mb-2"
                             />
-                            <span className="block w-fit mx-auto bg-[#fbe8e9] text-[16px] uppercase text-center py-0 px-2.5 mt-1.5">
+                            <span className="block w-fit mx-auto text-[16px] uppercase text-center py-0 px-2.5 mt-1.5">
                                 {pgSub}
                             </span>
-                            <p className="text-sm mt-2">AIR in CUET PG Examination</p>
-                            <p className="text-sm mt-2">Scholarship</p>
+                            <p className="text-sm mt-2 font-novaReg">AIR in CUET PG Examination</p>
+                            <p className="text-lg font-novaSemi">Scholarship</p>
                         </div>
                         <div className="py-5 px-16 max-lg:px-10">
-                            <ul className="list-none pl-0 space-y-6 max-lg:space-y-3">
+                            <ul className="list-none pl-0 space-y-6 max-lg:space-y-3 font-novaReg">
                                 <li className="relative text-sm leading-[16px] mb-3">
                                     1 – 100:
                                     <br />
@@ -128,7 +128,7 @@ const ScholarshipHighlight = ({heading, desc, pgSub, ugSub}) => {
                         <div className="py-5 px-10">
                             <a
                                 href=""
-                                className="border font-novaBold bg-secondary w-full text-center inline-block rounded-md uppercase tracking-wide py-3 px-6 text-sm hover:bg-blue-950 hover:text-white transition ease-in-out duration-200"
+                                className="border font-novaBold bg-btn-gradient animate-gradient w-full text-center inline-block rounded-md uppercase tracking-wide py-3 px-6 text-sm text-white transition ease-in-out duration-200"
                             >
                                 Apply Now
                             </a>

@@ -9,6 +9,10 @@ import Link from "next/link";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 import { easeIn } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const socialLinks = [
   {
@@ -33,6 +37,10 @@ const socialLinks = [
   }
 ]
 
+const notifications = [
+  "Admissions Open: PGDM and MBA Programs 2024-2025",
+  "Upcoming Workshop: Leadership and Soft Skills Training - Aug 2024",
+];
 
 export default function NavBar() {
   const router = useRouter();
@@ -93,20 +101,21 @@ export default function NavBar() {
   );
 
   useGSAP(() => {
-    gsap.from(".logo", {scale: 0, duration: 0.5, ease: easeIn})
-    gsap.from(".sideimgs", {scale: 0, duration: 0.5, ease: easeIn, stagger: 0.1})
-    gsap.from(".navlinks", {x: 400, duration: 0.3, ease: easeIn, stagger: 0.1})
+    gsap.from(".logo", { scale: 0, duration: 0.5, ease: easeIn })
+    gsap.from(".notification", { y: -30, duration: 0.5, ease: easeIn })
+    gsap.from(".sideimgs", { scale: 0, duration: 0.5, ease: easeIn, stagger: 0.1 })
+    gsap.from(".navlinks", { x: 400, duration: 0.3, ease: easeIn, stagger: 0.1 })
   })
 
   return (
     <header
-      className={`navbar z-[100] w-full fixed top-0 left-0 bg-[#F7F7F7] transition-all duration-200 shadow-lg max-[500px]:py-1`}>
+      className={`navbar z-[100] w-full fixed top-0 left-0 bg-[#F7F7F7] transition-all duration-200 shadow-lg`}>
       <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-12 gap-x-5 max-[1320px]:gap-x-0 max-md:gap-x-2">
         <div className="col-span-2 flex max-xl:col-span-3 max-lg:col-span-6 max-md:col-span-7 max-sm:col-span-7">
           <div
-            className={`text-white flex max-sm:py-0`}
+            className={`text-white flex `}
           >
-            <div className={`flex justify-start items-center gap-2 pl-5 ${BigMenuToggle && "relative z-[10] bg-[#F7F7F7]"}`}>
+            <div className={`flex justify-start items-center gap-2 pl-5 ${BigMenuToggle && "relative z-[20] shadow-lg w-screen bg-[#F7F7F7]"}`}>
               <div className="flex justify-center">
                 <img
                   onClick={() => router.push("/")}
@@ -121,7 +130,22 @@ export default function NavBar() {
                 <img src="/image/qs-i-gauge.jpg" alt="QS-I-GAUGE Logo" className={`sideimgs h-11 max-[1430px]:h-9 max-sm:h-6 object-contain bg-blend-color-dodge relative z-[2] shadow-effect-right`} />
                 <img src="/image/iic.jpg" alt="IIC Logo" className={`sideimgs h-11 max-[1430px]:h-9 max-sm:h-6 object-contain bg-blend-color-dodge relative z-[1] shadow-effect-right`} />
               </div>
-
+              {BigMenuToggle &&
+                <>
+                  <div className="pl-10 max-sm:pl-2 flex justify-end">
+                    <a href="tel:1800-200-0777" className="bg-cyan-500 whitespace-nowrap flex justify-center items-center gap-2 py-3 px-4 max-[370px]:px-2 max-[370px]:py-2">
+                      <PhoneIcon className={`h-5 w-5 text-white max-[340px]:hidden`} aria-hidden="true" />
+                      <span className="text-white text-sm uppercase font-bold">Call now</span>
+                    </a>
+                  </div>
+                  <button
+                    onClick={() => setBigMenuToggle(!BigMenuToggle)}
+                    className="absolute right-2 top-3 text-black"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+                  </button>
+                </>
+              }
             </div>
             {/* <div hidden={isScrolled} className="max-xl:hidden">
               <div className="flex items-center px-5">
@@ -138,7 +162,7 @@ export default function NavBar() {
             </div> */}
           </div>
         </div>
-        <div className="flex lg:hidden max-md:order-2 max-lg:col-span-3 max-md:col-span-2 max-sm:col-span-2 max-[500px]:col-span-5 max-md:pt-0 max-md:justify-end justify-center ">
+        <div className="flex lg:hidden max-md:order-2 max-lg:col-span-3 max-md:col-span-2 max-sm:col-span-2 max-[500px]:col-span-5 max-md:pt-0 max-md:justify-end justify-center">
           <button
             type="button"
             onClick={() => setBigMenuToggle(!BigMenuToggle)}
@@ -151,9 +175,27 @@ export default function NavBar() {
         <div className="col-span-6 max-lg:flex max-lg:items-center max-lg:justify-center max-md:order-3 max-xl:col-span-9 max-lg:col-span-3 max-md:col-span-1 max-md:justify-start">
           <nav className="" >
             <div
-              className={` lg:bg-gray-700 max-md:hidden lg:flex max-md:pt-0 lg:gap-x-8 justify-end pl-7 max-xl:pl-0 items-center max-md:px-1`}
+              className={` lg:bg-gray-700 max-md:hidden lg:flex max-md:pt-0 lg:gap-x-6 justify-end pl-7 max-xl:pl-0 items-center max-md:px-1  overflow-hidden`}
             >
-              <div className="hidden lg:flex gap-10  justify-start max-xl:gap-8  text-[13px] font-novaLight">
+              <div className="notification max-w-lg max-2xl:max-w-md max-[1400px]:max-w-sm max-[1300px]:max-w-xs max-[1180px]:hidden">
+                <h2 className="text-center text-white text-xs font-novaBold uppercase">Notifications
+                </h2>
+                <Swiper
+                  modules={[Pagination, Autoplay]}
+                  spaceBetween={50}
+                  slidesPerView={1}
+                  autoplay={{ delay: 3000, disableOnInteraction: false }}
+                  loop={true}
+                  className="w-full"
+                >
+                  {notifications.map((notification, index) => (
+                    <SwiperSlide key={index}>
+                      <p className="text-center text-white font-novaReg cursor-grab text-xs">{notification}</p>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+              <div className="hidden lg:flex gap-10  justify-start max-xl:gap-8  text-[13px] font-novaLight whitespace-nowrap">
                 <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Campus</a>
                 <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Library</a>
                 <a href="#" className="leading-6 text-sm font-bold uppercase text-white hover:underline hover:text-gray-400 transition duration-500">Student Services</a>
@@ -171,16 +213,27 @@ export default function NavBar() {
                 ? "fixed w-full h-full left-0 top-0 py-20 overflow-y-auto"
                 : `hidden relative`}  lg:flex items-center justify-end gap-2 max-[1320px]:gap-0
                 text-black font-semibold text-sm bg-[#F7F7F7] max-xl:pl-2`}>
-              {BigMenuToggle ? (
-                <>
-                  <button
-                    onClick={() => setBigMenuToggle(!BigMenuToggle)}
-                    className="absolute right-5 top-5 text-black"
+
+              {BigMenuToggle && <>
+                <div className="my-6">
+                  <h2 className="text-center text-black text-sm font-novaSemi mb-1 uppercase">Notifications
+                  </h2>
+                  <Swiper
+                    modules={[Pagination, Autoplay]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    loop={true}
+                    className="w-full"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
-                  </button>
-                </>
-              ) : null}
+                    {notifications.map((notification, index) => (
+                      <SwiperSlide key={index}>
+                        <p className="text-center text-gray-700 font-novaReg cursor-grab text-sm">{notification}</p>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
+              </>}
               <li className="relative group">
                 <button onClick={() => toggleMenu('about')} className={`navlinks relative px-3 max-xl:px-1 py-3 focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   ABOUT{" "}

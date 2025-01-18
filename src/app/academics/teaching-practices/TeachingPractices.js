@@ -6,7 +6,7 @@ const TeachingPractices = () => {
                     <div className="flex justify-around max-sm:flex-col relative text-white -mx-3">
                         <article className="px-3 max-sm:px-0">
                             <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGU's Academic Focus: Pioneering Your Path to Success</h2>
-                            <p className="mb-5 text-[15px] font-novaReg">At AKGU University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
+                            <p className="mb-5 text-[15px] font-novaReg">At AKG University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
                             <ul className="list-disc text-sm font-novaReg space-y-2 mb-4 mt-5">
                                 <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">
                                     <b>Comprehensive Expertise</b> - World-class faculty provide both theoretical knowledge and practical application

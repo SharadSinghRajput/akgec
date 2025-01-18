@@ -27,7 +27,7 @@ const HighlightSlider = () => {
                             <div className="relative p-6 max-sm:p-0">
                                 <h2 className={`text-4xl max-sm:text-2xl max-w-xs font-novaReg mb-2 ${slide.text} `}>{slide.title}</h2>
                                 <p className={`${slide.text} max-w-md max-sm:text-xs mb-5`}>{slide.description}</p>
-                                <Link href={slide.linkUrl} className={`${slide.buttonClass} py-2 max-sm:text-sm font-novaSemi px-4 rounded`}>
+                                <Link href={slide.linkUrl} className={`bg-btn-gradient animate-gradient text-white py-2 text-sm font-novaSemi px-4 rounded`}>
                                     {slide.linkText}
                                 </Link>
                             </div>

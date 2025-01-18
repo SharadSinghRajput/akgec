@@ -38,7 +38,7 @@ const LeaderShip = () => {
                     </blockquote>
                 </div>
             </div>
-            <div className="grid grid-cols-8 gap-5 mb-20 max-md:border-t-2 max-md:border-t-gray-200 pt-5">
+            <div className="grid grid-cols-8 gap-5 mb-20 max-md:border-t-2 max-md:border-t-gray-200 pt-5 max-md:flex max-md:flex-col-reverse">
                 <div className="relative col-span-5 max-md:col-span-8 h-full max-h-[550px] overflow-y-scroll text-sm font-novaReg scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300 text-justify pr-5 max-sm:pr-2">
                     <p className="leading-5">
                         Graduating with honors in Electrical Engineering from Kurukshetra University in 2001, Dr. Ahuja's journey continued with an M.Tech. in Energy and Environmental Management from the Indian Institute of Technology, Delhi, in 2008. His exceptional academic prowess was recognized with the Prof. O.P. Gupta Gold Medal, an accolade bestowed upon him for achieving the highest CGPA during his M.Tech. program. Dr. Ahuja's academic pursuits culminated in a PhD from IIT Delhi in 2013, cementing his reputation as a dedicated scholar.

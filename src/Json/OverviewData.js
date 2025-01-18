@@ -88,7 +88,7 @@ export const sectionData = [
       buttonText: "READ MORE",
     },
     {
-      title: "About AKGU University",
+      title: "About AKG University",
       description: `Ajay Kumar Garg University (AKGU), Ghaziabad is affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow, and is approved by the All India Council for Technical Education. The college was established in 1998 and offers B.Tech courses in nine disciplines of Engineering namely Computer Science and Engineering, Information Technology, Computer Science, Computer Science & Information Technology, Computer Science and Engineering (Artificial Intelligence & Machine Learning), Computer Science and Engineering (Data Science), Computer Science and Engineering (Hindi), Artificial Intelligence & Machine Learning, Electronics and Communication Engineering, Electrical and Electronics Engineering, Mechanical Engineering, and Civil Engineering.`,
     },
     {

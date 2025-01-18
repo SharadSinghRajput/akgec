@@ -20,7 +20,7 @@ const plant = [
   {
     img: '/image/environment-protection/nature-club-3.jpg',
     title: 'Unnat Bharat',
-    desc: 'AKGU University’s Recycling Program is aimed at educating students on waste segregation and recycling practices. Through this program, the university fosters a culture of sustainability, ensuring proper waste management and minimizing environmental impact.'
+    desc: 'AKG University’s Recycling Program is aimed at educating students on waste segregation and recycling practices. Through this program, the university fosters a culture of sustainability, ensuring proper waste management and minimizing environmental impact.'
   }
 ];
 
@@ -31,7 +31,7 @@ function InstitutionalSocialResponsibilities() {
       <div className='max-w-[1400px] mx-auto px-4'>
         <h1 className="text-4xl font-novaReg mb-1">Environment Protection</h1>
         <p className="">
-          AKGU University Launches ‘Eco Friendly Environment: Our Earth, Our Responsibility’ Initiative to Promote Environmental Awareness
+          AKG University Launches ‘Eco Friendly Environment: Our Earth, Our Responsibility’ Initiative to Promote Environmental Awareness
         </p>
       </div>
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-5 px-4">

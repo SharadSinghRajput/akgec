@@ -39,10 +39,10 @@ const ResidentialFacilities = () => {
                 <button className="max-[350px]:mt-1 bg-black w-fit text-white hover:bg-white hover:text-black hover:border hover:bordgra py-2 px-6 rounded-3xl max-sm:text-xs max-sm:py-1 max-sm:px-3 max-sm:leading-tight"> Hostel Manual 2024 </button>
             </div>
             <p className="max-[350px]:mt-5 text-base mb-4 text-gray-600 max-md:mb-3 max-sm:text-sm max-sm:mb-2.5">
-                AKGU University offers on-campus accommodation to students, fostering a supportive and inclusive residential community. Hostels are available on a first-come, first-served basis and provide comfortable lodging and dining facilities for both male and female students. Each hostel is managed by dedicated wardens and faculty supervisors who prioritize the well-being and safety of residents, ensuring a well-rounded living experience with all necessary amenities to support students' academic and personal growth.
+                AKG University offers on-campus accommodation to students, fostering a supportive and inclusive residential community. Hostels are available on a first-come, first-served basis and provide comfortable lodging and dining facilities for both male and female students. Each hostel is managed by dedicated wardens and faculty supervisors who prioritize the well-being and safety of residents, ensuring a well-rounded living experience with all necessary amenities to support students' academic and personal growth.
             </p>
             <p className="text-base mb-6 text-gray-600 max-xl:mb-4 max-md:mb-3 max-sm:text-sm max-sm:mb-2.5">
-                AKGU University organizes a diverse array of cultural, athletic, and social events to enrich students' campus life. Beyond the various interactive spaces on campus, each hostel features well-equipped common rooms where students can gather for daily interactions, fostering camaraderie and a sense of community.
+                AKG University organizes a diverse array of cultural, athletic, and social events to enrich students' campus life. Beyond the various interactive spaces on campus, each hostel features well-equipped common rooms where students can gather for daily interactions, fostering camaraderie and a sense of community.
             </p>
             <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5 max-lg:gap-4 max-md:gap-3 max-sm:gap-3">
                 {hostels.map((hostel, index) => (

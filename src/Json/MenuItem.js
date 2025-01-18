@@ -64,7 +64,7 @@ export const About = {
         "Related Links": [
             {
                 name: 'Departments',
-                url: '/academics/institutes'
+                url: '/academics/departments'
             },
             {
                 name: 'Admissions',

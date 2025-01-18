@@ -184,7 +184,7 @@ const CSDepartment = () => {
             <img className='w-60 rounded-lg' src="/image/qs-i-gauge.jpg" alt="I-GAUGE" />
           </div>
         </div>
-        <div className='relative h-[40vh] bg-blue-600 px-8'>
+        <div className='relative h-[40vh] bg-blue-600 max-lg:bg-transparent px-8'>
           <div className="-mt-40 grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-[1400px] mx-auto">
 
             {/* Department at a Glance Card */}
@@ -472,7 +472,7 @@ const CSDepartment = () => {
             </ul>
             <Link
               href="#"
-              className="group font-novaSemi inline-flex items-center gap-2 rounded-full bg-red-600 px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-red-700"
+              className="group font-novaSemi inline-flex items-center gap-2 rounded-full bg-btn-gradient animate-gradient px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-red-700"
             >
               VIEW MORE
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

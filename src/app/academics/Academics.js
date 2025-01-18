@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const slides = [
     {
         title: 'Advanced Research Programs',
-        description: `AKGU University offers cutting-edge research programs in collaboration with leading institutions. Students can engage in groundbreaking projects and gain practical experience...`,
+        description: `AKG University offers cutting-edge research programs in collaboration with leading institutions. Students can engage in groundbreaking projects and gain practical experience...`,
         points: [
             'Access to research labs and resources across various disciplines.',
             'Opportunities for publishing papers and presenting at conferences.',
@@ -18,7 +18,7 @@ const slides = [
     },
     {
         title: 'Industry-Academia Partnerships',
-        description: `AKGU University has established partnerships with top industry players to bridge the gap between academic learning and real-world applications...`,
+        description: `AKG University has established partnerships with top industry players to bridge the gap between academic learning and real-world applications...`,
         points: [
             'Internships and co-op programs with leading companies.',
             'Guest lectures and workshops by industry experts.',
@@ -38,7 +38,7 @@ const slides = [
     },
     {
         title: 'Global Learning Opportunities',
-        description: `AKGU University provides numerous global learning opportunities, including exchange programs and international collaborations to broaden students' horizons...`,
+        description: `AKG University provides numerous global learning opportunities, including exchange programs and international collaborations to broaden students' horizons...`,
         points: [
             'Student exchange programs with partner universities worldwide.',
             'International research collaborations and projects.',
@@ -73,7 +73,7 @@ const Academics = () => {
                                     <h1 className="text-[22px] lg:text-4xl mb-4 pt-2.5 font-novaReg uppercase">Innovative and Inspiring Academic Pathways</h1>
                                     <p className="mb-4 pb-2.5 text-sm font-novaReg max-w-2xl">
                                         <em>
-                                            At AKGU University, we are committed to providing a dynamic and transformative educational experience. Our aim is to empower students by encouraging exploration, fostering innovation, and supporting continuous growth through a diverse range of academic and extracurricular opportunities.
+                                            At AKG University, we are committed to providing a dynamic and transformative educational experience. Our aim is to empower students by encouraging exploration, fostering innovation, and supporting continuous growth through a diverse range of academic and extracurricular opportunities.
                                         </em>
                                     </p>
                                 </article>
@@ -138,7 +138,7 @@ const Academics = () => {
                                 <article className="px-3">
                                     <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGU's Academic Excellence: Pioneering Your Journey to Success</h2>
                                     <p className="mb-5 text-[14px] lg:text-[15px] md:text-[15px] sm:text-[15px] font-novaReg">
-                                        At AKGU University, our academic philosophy is designed to foster a comprehensive educational experience. We offer a diverse and adaptable curriculum that emphasizes critical thinking, creative problem-solving, and practical skills to prepare students for the dynamic demands of the professional world.
+                                        At AKG University, our academic philosophy is designed to foster a comprehensive educational experience. We offer a diverse and adaptable curriculum that emphasizes critical thinking, creative problem-solving, and practical skills to prepare students for the dynamic demands of the professional world.
                                     </p>
                                     <ul className="list-disc text-[14px] lg:text-[15px] md:text-[15px] font-novaReg space-y-2 mb-4 mt-5">
                                         <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">Global Perspectives - Preparing for a globalized world</li>
@@ -161,7 +161,7 @@ const Academics = () => {
                             <div className="flex justify-around max-sm:flex-col relative text-white -mx-3">
                                 <article className="px-3">
                                     <h2 className="text-[22px] mb-2 font-novaReg uppercase lg:text-4xl md:text-[26px] sm:text-[22px]">AKGU's Academic Focus: Pioneering Your Path to Success</h2>
-                                    <p className="mb-5 text-[15px] font-novaReg">At AKGU University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
+                                    <p className="mb-5 text-[15px] font-novaReg">At AKG University, our academic focus is designed to prepare students for the complexities of the modern world. We integrate deep knowledge with practical skills to ensure our graduates excel in their careers and contribute to societal advancement.</p>
                                     <ul className="list-disc font-novaReg space-y-2 mb-4 mt-5">
                                         <li className="ml-4 mb-2.5 pl-3 pb-2.5 leading-5">
                                             <b>Comprehensive Expertise</b> - World-class faculty provide both theoretical knowledge and practical application

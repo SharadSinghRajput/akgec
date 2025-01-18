@@ -125,7 +125,7 @@ export default function About() {
             <div className="flex items-center justify-center w-full">
               <div className="max-xl:py-5 flex flex-col items-center justify-center h-full px-10">
                 <h1 className="text-4xl max-xl:text-3xl max-sm:text-2xl font-normal text-center mb-10 tracking-wide">
-                  About AKGU University
+                  About AKG University
                 </h1>
                 <p className="text-center text-[13px]">
                   Ajay Kumar Garg University (AKGU), Ghaziabad is

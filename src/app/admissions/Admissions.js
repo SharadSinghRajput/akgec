@@ -2,8 +2,10 @@
 
 import ScholarshipHighlight from "@/Components/ScholarshipHighlight";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Admissions = () => {
+  const router = useRouter();
   const [showUndergraduateCourses, setShowUndergraduateCourses] =
     useState(false);
   const [showPostgraduateCourses, setShowPostgraduateCourses] = useState(false);
@@ -18,7 +20,7 @@ const Admissions = () => {
                     AKG University
                     <br className="w-auto" />
                     <div className="">
-                      <span className="text-5xl max-sm:text-3xl max-sm:py-0.5 py-1 inline-block font-novaReg lg:text-5xl bg-secondary text-center w-fit h-fit px-2.5">
+                      <span className="text-5xl max-sm:text-3xl max-sm:py-0.5 py-1 inline-block font-novaReg lg:text-5xl bg-btn-gradient animate-gradient text-white text-center w-fit h-fit px-2.5">
                         Admissions
                       </span>
                     </div>
@@ -51,149 +53,6 @@ const Admissions = () => {
                   </p>
                 </div>
               </div>
-              <div className="absolute max-xl:static -top-96 right-40 max-w-md md:max-w-2xl xl:max-w-md mx-auto bg-white rounded-lg mt-8 lg:mt-0">
-                <div className="bg-secondary rounded-t-lg flex justify-center items-center h-20">
-                  <h1 className="w-full text-[27px] tracking-tight font-novaSemi ml-5 rounded-md">
-                    Register Today
-                  </h1>
-                </div>
-                <div className="p-10 max-sm:p-4">
-                  <p className="text-xs font-novaReg mb-6 ">
-                    Fill the registration form and get information regarding
-                    different programs at AKG University or call us at 1800
-                    1212 88800. Our experienced advisors are available 24*7.
-                  </p>
-
-                  <form action="#" method="POST">
-                    <div className="mb-3">
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="w-full px-4 py-2 border placeholder:text-black placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="Enter your full Name"
-                        required
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="w-full px-4 py-2 border placeholder:text-black placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="Enter your email address"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4">
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        className="w-full px-4 py-2 border placeholder:text-black placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="Enter your phone number"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4">
-                      <label
-                        htmlFor="dob"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
-                        How old are you?
-                      </label>
-                      <div className="flex space-x-2">
-                        <select
-                          id="day"
-                          name="day"
-                          className="w-1/3 px-4 py-2 border placeholder:font-serif placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                          required
-                        >
-                          <option value="" disabled selected>
-                            DD
-                          </option>
-                          {Array.from({ length: 31 }, (_, i) => (
-                            <option key={i + 1} value={i + 1}>
-                              {i + 1}
-                            </option>
-                          ))}
-                        </select>
-                        <select
-                          id="month"
-                          name="month"
-                          className="w-1/3 px-4 py-2 border  border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                          required
-                        >
-                          <option value="" disabled selected>
-                            MM
-                          </option>
-                          {Array.from({ length: 12 }, (_, i) => (
-                            <option key={i + 1} value={i + 1}>
-                              {new Date(0, i).toLocaleString("en", {
-                                month: "long",
-                              })}
-                            </option>
-                          ))}
-                        </select>
-                        <select
-                          id="year"
-                          name="year"
-                          className="w-1/3 px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                          required
-                        >
-                          <option value="" disabled selected>
-                            YYYY
-                          </option>
-                          {Array.from({ length: 100 }, (_, i) => (
-                            <option key={i} value={2023 - i}>
-                              {2023 - i}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                    </div>
-                    <div className="mb-4">
-                      <select
-                        id="program"
-                        name="program"
-                        className="w-full px-4 py-2 border  border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        required
-                      >
-                        <option value="" disabled selected>
-                          Select your program
-                        </option>
-                        <option value="engineering">Engineering</option>
-                        <option value="business">Business Administration</option>
-                        <option value="arts">Arts & Humanities</option>
-                        <option value="science">Science</option>
-                        <option value="law">Law</option>
-                      </select>
-                    </div>
-                    <div className="mb-4">
-                      <label
-                        htmlFor="message"
-                        className="block text-sm font-medium text-gray-700 mb-1"
-                      >
-                        Additional Information
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        className="w-full px-4 py-2 border placeholder:font-serif placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="Enter any additional information"
-                      ></textarea>
-                    </div>
-                    <div className="text-center">
-                      <button
-                        type="submit"
-                        className="w-full bg-secondary text-sm font-slick font-bold uppercase px-4 py-3 rounded-md hover:bg-indigo-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        Submit Application
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
             </div>
           </div>
       </section>
@@ -212,10 +71,10 @@ const Admissions = () => {
                   alt="dynamic"
                   className="absolute w-20 max-sm:w-16 max-sm:mb-20 mb-16 inset-x-auto inset-y-auto object-cover opacity-0 transition-opacity duration-100 ease-in-out group-hover:opacity-100"
                 />
-                <h2 className="text-xl font-bold max-sm:font-semibold text-black group-hover:text-white absolute bottom-20">
+                <h2 className="text-xl font-novaBold max-sm:font-novaSemi text-black group-hover:text-white absolute bottom-20">
                   Undergraduate Programs
                 </h2>
-                <p className="text-black max-sm:text-sm text-center group-hover:text-white absolute bottom-6">
+                <p className="text-black max-sm:text-sm font-novaReg text-center group-hover:text-white absolute bottom-6">
                   Explore our
                   <br />
                   Undergraduate programs
@@ -224,7 +83,7 @@ const Admissions = () => {
               <div className="flex flex-col sm:flex-row justify-evenly mt-4 w-full">
                 <a
                   href="#"
-                  className="bg-secondary uppercase text-sm font-novaSemi w-full sm:w-48 text-center px-4 py-2.5 mb-2 sm:mb-0 sm:mr-2 rounded-md hover:bg-blue-950 hover:text-white"
+                  className="flex-1 bg-btn-gradient animate-gradient uppercase text-sm font-novaSemi w-full sm:w-48 text-center px-4 py-2.5 mb-2 sm:mb-0 sm:mr-2 rounded-md text-white"
                 >
                   Apply Now
                 </a>
@@ -233,13 +92,13 @@ const Admissions = () => {
                   id="undergraduate-program"
                   onMouseEnter={() => setShowUndergraduateCourses(true)}
                   onMouseLeave={() => setShowUndergraduateCourses(false)}
-                  className="bg-white uppercase text-sm font-novaReg border border-black w-full sm:w-48 text-center text-black px-4 py-2 rounded-md hover:bg-blue-950 hover:text-white relative"
+                  className="flex-1 bg-white uppercase text-sm font-novaReg border border-black w-full sm:w-48 text-center text-black px-4 py-2 rounded-md hover:bg-blue-950 hover:text-white relative"
                 >
                   Our Program
                   {showUndergraduateCourses && (
                     <div className="absolute bottom-12 text-black left-0 w-full bg-white border border-gray-300 rounded-lg shadow-lg p-4 z-10">
-                      <h3 className="text-lg font-bold">Undergraduate Courses</h3>
-                      <ul>
+                      <h3 className="text-base font-novaBold">Undergraduate Courses</h3>
+                      <ul className="font-novaReg mt-3">
                         <li>Bachelor of Science in Computer Science</li>
                         <li>Bachelor of Arts in Psychology</li>
                         <li>Bachelor of Business Administration</li>
@@ -264,10 +123,10 @@ const Admissions = () => {
                   alt="dynamic"
                   className="absolute w-20 max-sm:w-16 max-sm:mb-20 mb-16 inset-x-auto inset-y-auto object-cover opacity-0 transition-opacity duration-100 ease-in-out group-hover:opacity-100"
                 />
-                <h2 className="text-xl font-bold max-sm:font-semibold text-black group-hover:text-white absolute bottom-20">
+                <h2 className="text-xl font-novaBold max-sm:font-novaSemi text-black group-hover:text-white absolute bottom-20">
                   Postgraduate Programs
                 </h2>
-                <p className="text-black max-sm:text-sm text-center group-hover:text-white absolute bottom-6">
+                <p className="text-black max-sm:text-sm text-center font-novaReg group-hover:text-white absolute bottom-6">
                   Explore our
                   <br />
                   Postgraduate programs
@@ -276,7 +135,7 @@ const Admissions = () => {
               <div className="flex flex-col sm:flex-row justify-evenly mt-4 w-full">
                 <a
                   href="#"
-                  className="bg-secondary w-full uppercase text-sm font-novaSemi sm:w-48 text-center py-2.5 mb-2 sm:mb-0 sm:mr-2 rounded-md hover:bg-blue-950 hover:text-white"
+                  className="flex-1 bg-btn-gradient animate-gradient w-full uppercase text-sm font-novaSemi sm:w-48 text-center py-2.5 mb-2 sm:mb-0 sm:mr-2 rounded-md text-white"
                 >
                   Apply Now
                 </a>
@@ -285,17 +144,16 @@ const Admissions = () => {
                   id="postgraduate-program"
                   onMouseEnter={() => setShowPostgraduateCourses(true)}
                   onMouseLeave={() => setShowPostgraduateCourses(false)}
-                  className="bg-white border uppercase font-novaReg text-sm border-black w-full sm:w-48 text-center text-black py-2.5 rounded-md hover:bg-blue-950 hover:text-white relative"
+                  className="flex-1 bg-white border uppercase font-novaReg text-sm border-black w-full sm:w-48 text-center text-black py-2.5 rounded-md hover:bg-blue-950 hover:text-white relative"
                 >
                   Our Program
                   {showPostgraduateCourses && (
                     <div className="absolute bottom-12 text-black bg-white border border-gray-300 rounded-lg shadow-lg p-4 z-10">
-                      <h3 className="text-lg font-bold">Postgraduate Courses</h3>
-                      <ul>
+                      <h3 className="text-base font-novaBold">Postgraduate Courses</h3>
+                      <ul className="font-novaReg mt-3">
                         <li>Master of Business Administration</li>
-                        <li>Master of Science in Engineering</li>
-                        <li>Master of Arts in Education</li>
-                        <li>Doctorate in Philosophy</li>
+                        <li>Master of Technology</li>
+                        <li>Master of Computer Applications</li>
                       </ul>
                     </div>
                   )}
@@ -310,7 +168,7 @@ const Admissions = () => {
             <div className="min-h-52 flex flex-col group">
               <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">Education Loan Facility</h4>
               <p className="pt-2 max-sm:leading-none text-base font-novaReg line-clamp-2">Get a loan of up to ₹4 lakh without any security. To take advantage of this facility, visit your nearest PNB or Indian Overseas Bank branch today.</p>
-              <button className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
+              <button onClick={() => router.push("/admissions/education-loan")} className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
               <div className="mt-auto">
                 <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/scholar.webp" alt="scholar" />
               </div>
@@ -318,15 +176,15 @@ const Admissions = () => {
             <div className="min-h-52 flex flex-col group">
               <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">AKG Advantages</h4>
               <p className="pt-2 max-sm:leading-none text-base font-novaReg line-clamp-2">Industry-Institute Interface: Bridging Academics with Transparent Learning and Objective Assessment</p>
-              <button className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
+              <button onClick={() => router.push("/about/core-values")} className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
               <div className="mt-auto">
                 <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/admission/enlab_4.webp" alt="advantages" />
               </div>
             </div>
             <div className="min-h-52 flex flex-col group">
               <h4 className="text-xl sm:text-2xl font-novaReg group-hover:text-[#fecc00] transition-colors duration-300 ease-in-out">Why AKGU ?</h4>
-              <p className="pt-2 max-sm:leading-none text-base font-novaReg line-clamp-2">History, Culture, Innovation, Technology, and more—AKGU University provides a diverse array of opportunities.</p>
-              <button className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
+              <p className="pt-2 max-sm:leading-none text-base font-novaReg line-clamp-2">History, Culture, Innovation, Technology, and more—AKG University provides a diverse array of opportunities.</p>
+              <button onClick={() => router.push("/about/vision-and-mission")} className="my-3 w-fit px-5 py-2.5 font-novaReg border border-gray-200 rounded-md uppercase text-sm tracking-widest hover:bg-indigo-950 hover:text-white transition duration-300 ease-in-out">View More Details</button>
               <div className="mt-auto">
                 <img className="w-full h-48 max-sm:h-40 object-cover" src="/image/building/building6.webp" alt="" />
               </div>

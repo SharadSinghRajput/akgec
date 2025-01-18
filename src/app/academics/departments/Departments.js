@@ -1,19 +1,26 @@
-const institute = [
+"use client";
+import { useRouter } from "next/navigation";
+
+const department = [
     {
         img: "/image/lab/ece-circuit-lab.webp",
+        link: "/department-of-computer-science-and-engineering",
         text: "School of Computer Science & Engineering",
     },
     {
         img: "/image/lab/User-Manual-AKGEC 4.webp",
+        link: "",
         text: "School of Engineering & Applied Science",
     },
     {
         img: "/image/lab/User-Manual-AKGEC 6.webp",
+        link: "",
         text: "School of Business Studies",
     },
 ];
 
-const Institutes = () => {
+const Departments = () => {
+    const router = useRouter();
     return (
         <div className="container mx-auto p-4 max-sm:p-1">
             <h1 className="mb-2.5 text-4xl font-novaReg max-lg:text-3xl max-sm:text-2xl">Best University <br />in India</h1>
@@ -31,14 +38,14 @@ const Institutes = () => {
             </p>
 
             <div className="mt-6">
-                <h3 className="text-[42px] font-novaLight mb-3 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Our Institutes</h3>
+                <h3 className="text-[42px] font-novaLight mb-3 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Our Departments</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {institute?.map((inst, index) => (
+                    {department?.map((department, index) => (
                         <div key={index} className="relative overflow-hidden shadow-lg bg-zinc-700 group">
-                            <img src={inst.img} alt={inst.text} className="w-full h-full object-cover opacity-70 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 max-sm:h-64" />
+                            <img src={department.img} alt={department.text} className="w-full h-full object-cover opacity-70 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 max-sm:h-64" />
                             <div className="absolute inset-0 flex flex-col items-center justify-center bg-indigo-950 text-white transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-                                <span className="text-lg font-novaBold text-center px-5 mb-4">{inst.text}</span>
-                                <button className="rounded-md uppercase bg-secondary px-5 py-2.5 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-blue-400">Know More ➜</button>
+                                <span className="text-lg font-novaBold text-center px-5 mb-4">{department.text}</span>
+                                <button onClick={() => router.push(department.link)} className="rounded-md uppercase bg-secondary px-5 py-2.5 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-blue-400">Know More ➜</button>
                             </div>
                         </div>
                     ))}
@@ -50,4 +57,4 @@ const Institutes = () => {
     );
 };
 
-export default Institutes;
+export default Departments;

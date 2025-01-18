@@ -44,7 +44,7 @@ const PlacementBanner = () => {
                     <div className='my-20 max-w-2xl max-lg:max-w-5xl'>
                         <div className='relative z-20'>
                             <h1 className='text-4xl font-novaReg max-w-md leading-none max-sm:text-center max-sm:text-3xl'>
-                                AKGU University Engineering Placement Highlights
+                                AKG University Engineering Placement Highlights
                             </h1>
                         </div>
                         <div className='grid grid-cols-2 md:grid-cols-4 gap-5 mt-8 relative z-20'>

@@ -6,7 +6,6 @@ export const slidesData = [
     linkText: 'EXPLORE MORE →',
     linkUrl: '#',
     text: 'text-white',
-    buttonClass: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
   },
   {
     imageUrl: '/image/building/building2.webp',
@@ -15,7 +14,6 @@ export const slidesData = [
     linkText: 'VIEW MORE →',
     linkUrl: '#',
     text: 'text-white',
-    buttonClass: 'bg-white text-red-600 hover:bg-zinc-200',
   },
   {
     imageUrl: '/image/building/building3.webp',
@@ -24,7 +22,6 @@ export const slidesData = [
     linkText: 'VIEW MORE →',
     linkUrl: '#',
     text: 'text-white',
-    buttonClass: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
   },
   {
     imageUrl: '/image/building/building4.webp',
@@ -33,7 +30,6 @@ export const slidesData = [
     linkText: 'VIEW MORE →',
     linkUrl: '#',
     text: 'text-white',
-    buttonClass: 'bg-white text-red-600 hover:bg-zinc-200',
   },
 ];
 

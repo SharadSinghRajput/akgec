@@ -5,84 +5,84 @@ import React, { useState } from 'react';
 const gbody = [
     {
         "sr_no": 1,
-        "name": "John Doe",
+        "name": "Ankur Vishwakarma",
         "designation": "The Chancellor",
         "under_section": "1 (1) (a)",
         "position": "Chairman"
     },
     {
         "sr_no": 2,
-        "name": "Jane Smith",
+        "name": "Swati Jain",
         "designation": "Vice-Chancellor",
         "under_section": "1 (1) (b)",
         "position": "Member"
     },
     {
         "sr_no": 3,
-        "name": "Alice Johnson",
+        "name": "Mahesh Sisodiya",
         "designation": "Pro-Chancellor",
         "under_section": "1 (1) (c)",
         "position": "Member"
     },
     {
         "sr_no": 4,
-        "name": "Bob Brown",
+        "name": "Lokesh Sharma",
         "designation": "Eminent Educationist",
         "under_section": "1 (1) (c)",
         "position": "Member"
     },
     {
         "sr_no": 5,
-        "name": "Sara White",
+        "name": "Ajay Singh",
         "designation": "Eminent Educationist",
         "under_section": "1 (1) (c)",
         "position": "Member"
     },
     {
         "sr_no": 6,
-        "name": "Michael Green",
+        "name": "Radhika Joshi",
         "designation": "Senior Vice President, Management & Technology Expert",
         "under_section": "1 (1) (d)",
         "position": "Member"
     },
     {
         "sr_no": 7,
-        "name": "Emily Davis",
+        "name": "Prem Singh Upadhyay",
         "designation": "Chief Advisor, AKG University, nominated by Hon’ble Chancellor",
         "under_section": "--------",
         "position": "Special Member"
     },
     {
         "sr_no": 8,
-        "name": "William Wilson",
+        "name": "Nitin Jain",
         "designation": "Pro-Vice Chancellor",
         "under_section": "--------",
         "position": "Special Invitee"
     },
     {
         "sr_no": 9,
-        "name": "David Martinez",
+        "name": "Satyam Rajput",
         "designation": "Finance Expert",
         "under_section": "1 (1) (e)",
         "position": "Member"
     },
     {
         "sr_no": 10,
-        "name": "The Secretary, Higher Education Department, Punjab Government",
-        "designation": "The Principal Secretary to Government of Punjab, Department of Higher Education.",
+        "name": "Hemant Chauhan",
+        "designation": "Department of Higher Education.",
         "under_section": "1 (1) (f)",
         "position": "Member"
     },
     {
         "sr_no": 11,
-        "name": "Dr. Anna Scott",
-        "designation": "Eminent Educationist Nominated by the Secretary to Government of Punjab, Department of Higher Education.",
+        "name": "Adarsh Sharma",
+        "designation": "Department of Higher Education.",
         "under_section": "1 (1) (g)",
         "position": "Member"
     },
     {
         "sr_no": 12,
-        "name": "Chris Johnson",
+        "name": "Prerna Prajapati",
         "designation": "Registrar",
         "under_section": "1 (1)",
         "position": "Member Secretary"

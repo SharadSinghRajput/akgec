@@ -1,9 +1,9 @@
 const cont = [
     {
-        desc: 'Known as a beacon of knowledge, the AKGU University Library, along with its specialized school libraries, houses an extensive collection of over 100,000 books and numerous print journals to support the academic and intellectual development of students. The library collection is regularly updated with the latest resources and study materials to benefit students from a wide range of disciplines.'
+        desc: 'Known as a beacon of knowledge, the AKG University Library, along with its specialized school libraries, houses an extensive collection of over 100,000 books and numerous print journals to support the academic and intellectual development of students. The library collection is regularly updated with the latest resources and study materials to benefit students from a wide range of disciplines.'
     },
     {
-        desc: 'AKGU University Library strives to make library management highly accessible and user-friendly for students, researchers, and faculty members. It offers access to a vast array of resources, including online databases, multimedia, and print materials. By embracing technological advancements and innovative research practices, the libraries work closely with faculty to enhance research and learning skills. AKGU libraries are committed to providing an enriching, student-focused research and learning environment.'
+        desc: 'AKG University Library strives to make library management highly accessible and user-friendly for students, researchers, and faculty members. It offers access to a vast array of resources, including online databases, multimedia, and print materials. By embracing technological advancements and innovative research practices, the libraries work closely with faculty to enhance research and learning skills. AKGU libraries are committed to providing an enriching, student-focused research and learning environment.'
     },
     {
         desc: 'Library Hours'

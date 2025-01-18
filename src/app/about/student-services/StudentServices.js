@@ -73,7 +73,7 @@ const StudentServices = () => {
         <>
             <BannerSlider slides={slides} />
             <div className='max-w-7xl mx-auto py-8'>
-                <h2 className='text-3xl max-sm:text-2xl font-novaSemi max-xl:px-4'>Exciting Student Journey at AKGU University!</h2>
+                <h2 className='text-3xl max-sm:text-2xl font-novaSemi max-xl:px-4'>Exciting Student Journey at AKG University!</h2>
                 <p className='mt-2 text-base font-novaReg max-xl:px-4 max-sm:text-sm max-sm:leading-tight'>At AKGU, the university experience is about embracing independence and personal growth. Our campus is fully equipped with everything you need—comfortable accommodation, diverse entertainment, dining options, and excellent sports facilities. With students from various Indian states and union territories, as well as an increasing global presence, AKGU offers abundant opportunities for making lifelong friends, engaging in cultural exchange, and creating lasting memories.</p>
                 <div className='py-20 max-md:py-16 max-sm:py-10 max-sm:px-2'>
                     <ul className='grid grid-cols-4 gap-4 max-sm:grid-cols-2'>
@@ -177,7 +177,7 @@ const StudentServices = () => {
                                                 <div>
                                                     <h2 className="text-lg font-novaBold mb-5">Banking Facilities</h2>
                                                     <p className='border-y border-gray-300 text-sm py-5'>
-                                                        At AKGU University, we provide the best banking facilities to our students. In order
+                                                        At AKG University, we provide the best banking facilities to our students. In order
                                                         to cater to their banking needs, we have on-campus, fully air-conditioned and fully computerized branches of the State Bank of India.
                                                     </p>
                                                 </div>

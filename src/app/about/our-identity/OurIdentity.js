@@ -75,7 +75,7 @@ const OurIdentity = () => {
                 <h1 className="text-4xl max-sm:text-3xl font-novaReg mt-10 mb-6">How to use the Official Emblem?</h1>
                 <ul className="list-disc space-y-2 pl-5 font-novaReg text-justify">
                     <li>The official emblem may not be modified in any way. Its design must remain intact to preserve its significance and visual identity.</li>
-                    <li>When the emblem is used alongside the university's name, the designated wordmark "AKGU University" should be utilized in its standard format.</li>
+                    <li>When the emblem is used alongside the university's name, the designated wordmark "AKG University" should be utilized in its standard format.</li>
                     <li>The emblem should appear only in the official university colors—Blue, Yellow, and Black—maintaining a consistent and professional appearance.</li>
                     <li>Do not crop or rotate the emblem. It must always be displayed in its original orientation.</li>
                     <li>The emblem should never be reduced to a size smaller than ½ inch in diameter, ensuring that all details are visible and legible.</li>

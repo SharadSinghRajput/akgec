@@ -35,7 +35,7 @@ const PlacementPolicy = () => {
         <div>
           <h3 className="text-lg font-semibold mb-2">The University</h3>
           <ul className="list-disc pl-10 space-y-1">
-            <li>The term "University" in this policy refers to AKGU University</li>
+            <li>The term "University" in this policy refers to AKG University</li>
             <li>T&P stands for Training and Placement teams</li>
             <li>
               The role of T&P is to provide placement support to graduating students. T&P strives to bridge the gap between students

@@ -421,7 +421,7 @@ const Placement = () => {
             <div className='relative p-10 bg-[#f3f3f3] flex-1 flex flex-col rounded-tr-lg rounded-br-lg overflow-hidden'>
               <h3 className='mb-2.5 text-2xl uppercase'>Dr. Hemant Ahuja</h3>
               <p className='mb-[15px]'>
-                <strong className='text-lg font-novaSemi pr-3 border-r-2 border-r-[#f7a600] mr-2'>Director</strong> AKGU University
+                <strong className='text-lg font-novaSemi pr-3 border-r-2 border-r-[#f7a600] mr-2'>Director</strong> AKG University
               </p>
               <div className="mt-[15px]">
                 <p className='mb-2.5'>
