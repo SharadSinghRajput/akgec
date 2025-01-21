@@ -101,7 +101,7 @@ export const Governance = () => {
             <div>
                 <div>
                     <h3 className="text-4xl font-novaReg mb-2.5 px-2 max-sm:text-3xl">Governance</h3>
-                    <p className="text-sm font-novaReg mb-4 px-2 text-justify leading-4">
+                    <p className="font-novaReg text-gray-700 mb-4 px-2 text-justify">
                         The AKG University Act grants distinct powers and responsibilities to various governing bodies within the university. These entities play a vital role in shaping policies, upholding academic standards, and ensuring both the integrity of financial management and the responsible use of resources. They also provide strategic direction, oversee policy implementation, and intervene with corrective actions when required. The University's governance is supported by the following bodies:
                     </p>
                     <br />

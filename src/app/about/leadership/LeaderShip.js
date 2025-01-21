@@ -16,7 +16,7 @@ const LeaderShip = () => {
                     </div>
                     <p className="w-full pt-1 text-start font-light text-xs md:text-sm 2xl:text-sm">
                         <span className="font-bold text-6xl block font-serif italic">"</span>
-                        <cite className="-mt-5 block text-sm leading-5 font-novaReg">Dr. R.K. Agarwal has an exceptionally brilliant academic background with B.Tech from IIT Kanpur, M.S. from CIT, Cranfield, UK and PhD from IISc Bangalore. During his illustrious career of nearly three decades in the Indian Air Force and Defence Research & Development Organization (DRDO)</cite>
+                        <cite className="-mt-5 block text-sm leading-5 font-novaReg text-justify">Dr. R.K. Agarwal has an exceptionally brilliant academic background with B.Tech from IIT Kanpur, M.S. from CIT, Cranfield, UK and PhD from IISc Bangalore. During his illustrious career of nearly three decades in the Indian Air Force and Defence Research & Development Organization (DRDO)</cite>
                     </p>
                 </div>
 
@@ -67,7 +67,7 @@ const LeaderShip = () => {
                     </div>
                     <p className="w-full pt-1 text-start text-xs md:text-sm 2xl:text-sm">
                         <span className="font-bold text-6xl block font-serif italic">"</span>
-                        <cite className="-mt-5 block">Dr. Hemant Ahuja, the esteemed Director of Ajay Kumar Garg University, Ghaziabad, is a seasoned professional with an illustrious career spanning over 22 years in academia and industry.</cite>
+                        <cite className="-mt-5 block text-justify">Dr. Hemant Ahuja, the esteemed Director of Ajay Kumar Garg University, Ghaziabad, is a seasoned professional with an illustrious career spanning over 22 years in academia and industry.</cite>
                     </p>
                 </div>
             </div>

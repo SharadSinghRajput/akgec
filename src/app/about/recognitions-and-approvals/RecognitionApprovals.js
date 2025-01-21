@@ -53,7 +53,7 @@ const RecognitionApprovals = () => {
                 <div className="max-w-[1400px] mx-auto h-full px-3">
                     <div className="max-w-2xl">
                         <div className="Cutout py-1 bg-yellow-400 mb-10"><h2 className="text-4xl font-novaReg">NAAC A++ rating</h2></div>
-                        <p className="font-novaReg text-lg leading-6">AKG University is a fully established institution under the UP State Legislature and is recognized by the University Grants Commission (UGC) under Section 2(f) of the UGC Act, 1956. The university holds the authority to confer degrees under Section 22(1) of the same Act. For further details, click here to view the UGC list of universities, where AKG University is listed under serial no. 420.</p>
+                        <p className="font-novaReg text-lg leading-6 text-justify">AKG University is a fully established institution under the UP State Legislature and is recognized by the University Grants Commission (UGC) under Section 2(f) of the UGC Act, 1956. The university holds the authority to confer degrees under Section 22(1) of the same Act. For further details, click here to view the UGC list of universities, where AKG University is listed under serial no. 420.</p>
                         <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">View More ➜</button>
                     </div>
                 </div>

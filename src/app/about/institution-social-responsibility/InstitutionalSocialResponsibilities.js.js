@@ -43,7 +43,7 @@ function InstitutionalSocialResponsibilities() {
               className="w-full h-60 object-cover rounded-md mb-4"
             />
             <h3 className="text-2xl font-novaReg mb-2">{item.title}</h3>
-            <p className="text-gray-700 text-sm">{item.desc}</p>
+            <p className="text-gray-700 text-sm text-justify">{item.desc}</p>
           </div>
         ))}
       </div>
@@ -58,10 +58,10 @@ function InstitutionalSocialResponsibilities() {
           <div className="bg-gray-800 text-white rounded-lg overflow-hidden flex flex-col justify-between">
             <div className="p-6 space-y-4">
               <h2 className="text-2xl font-bold">Unnat Bharat Abhiyaan</h2>
-              <p className="text-sm">
+              <p className="text-sm text-justify">
                 An Awareness campaign for cleanliness and environment was conducted by the Ajay Kumar Garg University, Ghaziabad under Unnat Bharat Abhiyan by college National Social Service students at Galand and Raghunathpur villages.
               </p>
-              <p className="text-sm">
+              <p className="text-sm text-justify">
                 First of all the students inititated a cleanliness drive at Panchayat house of Galand village of Ghaziabad district in which the cooperation of the village head Mr.Sanjay Singh ji was unforgettable.The program moved ahead when students have started a rally on swachh bharat abhiyan through an awareness was created for cleanliness program under Swachh Bharat Abhiyan on the main road of Galand village.
               </p>
               <button className="bg-yellow-500 uppercase px-2 py-1 font-novaSemi rounded-md hover:bg-yellow-600 text-black">SEE OUR PROGRAM</button>
@@ -77,11 +77,11 @@ function InstitutionalSocialResponsibilities() {
           <div className="space-y-4">
             <div className="bg-cyan-600 text-white rounded-lg p-6 space-y-4">
               <h2 className="text-2xl font-bold">Nature Club Programs</h2>
-              <p className="text-sm">
+              <p className="text-sm text-justify">
                 In view of the increasing problems of global warming, deforestation, ozone layer depletion, pollution and many more due to modern development, it is believed globally that the awareness about the present status of the environment to sensitize people about the inherent relationships with Nature has become very important.
               </p>
               <h3 className="text-xl font-semibold">» Establish Program</h3>
-              <p className="text-sm">
+              <p className="text-sm text-justify">
                 AKGU has established ‘Nature Club’ which is committed not only to spreading awareness about the problems but also to motivate students to find solutions to the problems in the light of inherent relationships. The effort will improve the competence of students to contribute towards the sustainability of nature and avoid environmental degradation in their individual capacity as well as in groups.
               </p>
               <div className="grid grid-cols-2 gap-4">
@@ -112,7 +112,7 @@ function InstitutionalSocialResponsibilities() {
             <span className="text-green-600 text-4xl">&#8594;</span>
           </div>
           <div className="flex items-center mb-4 justify-center">
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               Environmental protection is essential for maintaining the health of our planet and ensuring a sustainable future for generations to come. Here are some key reasons why it matters:
             </p>
           </div>

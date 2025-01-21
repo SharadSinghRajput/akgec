@@ -15,8 +15,8 @@ const Scholarship = () => {
                 <div className="max-w-[1400px] mx-auto h-full px-3">
                     <div className="max-w-2xl">
                         <div className="Cutout py-1.5 bg-yellow-400 mb-10"><h2 className="text-4xl font-novaReg">Year 2024-2025</h2></div>
-                        <p className="font-novaLight text-lg leading-6">AKGU is dedicated to its Institutional Social Responsibility. As a leader in quality education, the University actively works to enhance educational standards and qualifications for students across the nation, with a particular focus on the northern region. AKGU is passionate about inspiring and supporting exceptional students by offering additional benefits and resources to recognize their achievements and potential.</p>
-                        <p className="mt-3 font-novaLight text-lg leading-6">As a continuation of this commitment, new and attractive scholarship opportunities have been introduced for the academic year 2024-2025.</p>
+                        <p className="font-novaLight text-lg leading-6 text-justify">AKGU is dedicated to its Institutional Social Responsibility. As a leader in quality education, the University actively works to enhance educational standards and qualifications for students across the nation, with a particular focus on the northern region. AKGU is passionate about inspiring and supporting exceptional students by offering additional benefits and resources to recognize their achievements and potential.</p>
+                        <p className="mt-3 font-novaLight text-lg leading-6 text-justify">As a continuation of this commitment, new and attractive scholarship opportunities have been introduced for the academic year 2024-2025.</p>
                         <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">Avail Scholarship ➜</button>
                     </div>
                 </div>
@@ -110,10 +110,10 @@ const Scholarship = () => {
                                 <div className="flex mb-12 -mx-3">
                                     <div className="px-3">
                                         <h3 className="text-2xl font-novaLight">AKG University For The Academic Year 2024-2025</h3>
-                                        <p className="text-lg font-novaLight mt-2.5 mb-5">To offer an opportunity to bright and inquisitive young minds from across the country to study in a challenging and diverse academic environment, AKG University has launched its entrance examination, providing double benefits. This scholarship initiative of the year allows students to access a total of ₹170 Crores in scholarships. It aims to recognize and reward the brilliance and potential of young aspirants, enabling them to secure scholarships and pursue futuristic courses of their choice.</p>
+                                        <p className="text-lg font-novaLight mt-2.5 mb-5 text-justify">To offer an opportunity to bright and inquisitive young minds from across the country to study in a challenging and diverse academic environment, AKG University has launched its entrance examination, providing double benefits. This scholarship initiative of the year allows students to access a total of ₹170 Crores in scholarships. It aims to recognize and reward the brilliance and potential of young aspirants, enabling them to secure scholarships and pursue futuristic courses of their choice.</p>
 
                                         <h3 className="text-2xl font-novaLight">Scholarships Renewal Criteria & Renewal Process:</h3>
-                                        <p className="text-lg font-novaLight mt-2.5 mb-5">Once awarded, scholarships will be valid for the entire duration of the program, provided that students consistently meet the established criteria, which will be reviewed annually. Scholarships will be renewed upon successful compliance with these requirements.</p>
+                                        <p className="text-lg font-novaLight mt-2.5 mb-5 text-justify">Once awarded, scholarships will be valid for the entire duration of the program, provided that students consistently meet the established criteria, which will be reviewed annually. Scholarships will be renewed upon successful compliance with these requirements.</p>
 
                                         <h3 className="text-2xl font-novaLight">Current Renewal Criteria</h3>
                                         <ul className="text-lg font-novaLight mt-2 mb-4 pl-4">
@@ -137,7 +137,7 @@ const Scholarship = () => {
                                             </svg>
                                         </span>
 
-                                        <p className="font-novaLight text-red-500">
+                                        <p className="font-novaLight text-red-500 text-justify">
                                             <b>-</b> If a scholarship is discontinued in one year due to failure to meet the required criteria, the student may reapply in the following year if they then satisfy the minimum requirements. However, in this case, the student will only be eligible for 50% of the previously awarded scholarship amount for that subsequent year of study.
                                             <br />
                                             <b>-</b>
