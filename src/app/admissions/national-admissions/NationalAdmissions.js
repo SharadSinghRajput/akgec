@@ -238,14 +238,14 @@ const NationalAdmissions = () => {
 
     return (
         <>
-            <section className="h-screen w-full bg-BG16 bg-cover bg-center bg-indigo-950 bg-blend-multiply bg-opacity-80">
-                <div className="flex px-1 md:px-12 lg:px-24">
+            <section className="h-screen max-lg:h-max w-full bg-BG16 bg-cover bg-center bg-indigo-950 bg-blend-multiply bg-opacity-80">
+                <div className="flex px-1 md:px-12 pt-40 lg:px-24 max-lg:pt-32 max-lg:pb-10">
                     <div className="container max-w-full lg:max-w-[1700px] flex justify-end max-xl:flex-col-reverse gap-10">
-                        <div className="max-w-[1400px] w-full mx-auto h-screen flex justify-between items-center">
-                            <div className="text-white">
-                                <span className="text-xl uppercase font-novaSemi">Unlock Your Future: Apply Now!</span>
-                                <h3 className="text-6xl font-novaBold">Start Your Journey: <br /> National Admission 2024</h3>
-                                <p className="font-novaReg max-w-lg leading-none mt-3">Join a diverse community of learners and innovators at our esteemed institution. Our National Admission program welcomes students from all backgrounds, offering unparalleled academic opportunities. Don't miss your chance to be part of a vibrant academic environment that fosters growth and success.</p>
+                        <div className="max-w-[1400px] w-full mx-auto flex max-lg:flex-col justify-between items-center">
+                            <div className="text-white max-lg:text-center max-lg:px-10 max-sm:px-4">
+                                <span className="text-base md:text-xl uppercase font-novaSemi">Unlock Your Future: Apply Now!</span>
+                                <h3 className="text-4xl sm:text-5xl md:text-6xl font-novaBold">Start Your Journey: <br /> National Admission 2024</h3>
+                                <p className="font-novaReg lg:max-w-lg leading-none mt-3">Join a diverse community of learners and innovators at our esteemed institution. Our National Admission program welcomes students from all backgrounds, offering unparalleled academic opportunities. Don't miss your chance to be part of a vibrant academic environment that fosters growth and success.</p>
                                 <button className="rounded-md uppercase bg-secondary px-5 py-3 mt-10 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-white/20 duration-500">APPLY NOW ➜</button>
                             </div>
                             <AdmissionForm />
@@ -267,11 +267,11 @@ const NationalAdmissions = () => {
                         AKG University Common Entrance Test (AKG CET 2024) is a national-level entrance exam and scholarship test mandatory for admission. The AKG CET forms the basis of eligibility that is required for admission in Engineering, MBA, MCA, Pharmacy, LLM, and Integrated Law programs. The scholarship amount depends on the program's fee, the date of admission, and the student's performance in AKG CET 2024.
                     </p>
                 </div>
-                <ScholarshipHighlight heading={"Early Bird"} subheading={"Scholarship"} desc={"For PG Students for the Academic"} ugSub={"B.Tech [For I, II, III and IV Year]"} pgSub={"MCA [For I and II Year]"}/>
+                <ScholarshipHighlight heading={"Early Bird"} subheading={"Scholarship"} desc={"For PG Students for the Academic"} ugSub={"B.Tech [For I, II, III and IV Year]"} pgSub={"MCA [For I and II Year]"} />
             </section >
             <section className="max-w-[1400px] mx-auto px-3 my-10">
                 <div className="grid grid-cols-5 gap-4">
-                    <div className="bg-teal-500 text-black col-span-2 rounded-3xl card overflow-hidden">
+                    <div className="bg-teal-500 text-black col-span-2 max-lg:col-span-5 rounded-3xl card overflow-hidden">
                         <div className='h-16 flex items-center pl-5 bg-indigo-950'>
                             <img className='w-9 h-9' src="/image/icons/icon-academic-excellence.png" alt="academic logo" />
                         </div>
@@ -290,7 +290,7 @@ const NationalAdmissions = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-[#f6ffaa] col-span-3 text-black rounded-3xl card overflow-hidden">
+                    <div className="bg-[#f6ffaa] col-span-3 text-black max-lg:col-span-5 rounded-3xl card overflow-hidden">
                         <div className='h-16 flex items-center pl-5 bg-indigo-950'>
                             <img className='w-9 h-9' src="/image/icons/icon-academic-excellence.png" alt="academic logo" />
                         </div>
@@ -320,15 +320,15 @@ const NationalAdmissions = () => {
             <section className="px-3">
                 <div className="bg-white min-h-screen py-6 px-4 sm:px-6 lg:px-8">
                     <div className="max-w-7xl mx-auto">
-                        <h1 className="text-4xl font-bold text-center text-gray-900 mb-4">
+                        <h1 className="text-3xl md:text-4xl font-novaSemi text-center text-gray-900 mb-4">
                             VENTURE INTO ENTREPRENEURSHIP
                         </h1>
-                        <p className="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                        <p className="text-lg md:text-xl text-center font-novaReg text-gray-600 mb-12 max-w-3xl mx-auto">
                             Nurturing leaders of tomorrow, by building the foundation for their
                             dreams and equipping them with global exposure and industry support.
                         </p>
 
-                        <div className="flex justify-center items-center gap-8">
+                        <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8">
                             {statsData.map((item, index) => (
                                 <div
                                     key={index}
@@ -347,8 +347,8 @@ const NationalAdmissions = () => {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                        <h2 className="text-5xl font-bold mb-2">{item.number}</h2>
-                                        <p className="text-xl">{item.text}</p>
+                                        <h2 className="text-5xl font-novaBold mb-2">{item.number}</h2>
+                                        <p className="text-xl font-novaSemi">{item.text}</p>
                                     </div>
                                 </div>
                             ))}
@@ -363,20 +363,20 @@ const NationalAdmissions = () => {
                         {[currentSlide].map((index) => (
                             <div
                                 key={index}
-                                className={`flex flex-col md:flex-row items-stretch w-full md:w-10/12 transition-all duration-1000 ease-in-out`}
+                                className={`flex md:flex-row items-stretch w-full md:w-10/12 transition-all duration-1000 ease-in-out`}
                             >
-                                <div className="flex-shrink-0 w-full md:w-1/2 flex items-center justify-center">
+                                <div className="flex-shrink-0 w-1/2 flex items-center justify-center">
                                     <img
                                         src={slides[index].imgSrc}
                                         alt={slides[index].altText}
-                                        className="w-full h-auto object-cover"
+                                        className="w-full h-auto object-cover mt-auto"
                                     />
                                 </div>
-                                <div className="pt-10 w-full md:w-1/2 flex flex-col p-4 max-md:bg-[#f3f3f3] justify-center">
-                                    <h2 className="text-xl text-secondary xl:text-3xl max-lg:text-2xl max-md:text:2xl font-novaBold mt-2.5 uppercase">
+                                <div className="pt-10 w-full md:w-1/2 flex flex-col p-4 justify-center">
+                                    <h2 className="max-sm:text-base text-xl text-secondary xl:text-3xl max-lg:text-2xl font-novaBold mt-2.5 uppercase">
                                         {slides[index].heading}
                                     </h2>
-                                    <p className="font-novaReg text-base md:text-lg mt-2.5 mb-12 max-w-md mx-auto italic text-white">
+                                    <p className="font-novaReg text-sm md:text-lg mt-2.5 mb-12 max-sm:mb-6 max-w-md mx-auto italic text-white">
                                         {slides[index].description}
                                     </p>
                                     <p className="text-sm mb-2 text-secondary">
@@ -413,21 +413,21 @@ const NationalAdmissions = () => {
             </section>
 
             <section className="bg-BG33 bg-fixed bg-center bg-no-repeat bg-cover py-5">
-                <div className="max-w-7xl mx-auto px-3 pt-80">
+                <div className="max-w-7xl mx-auto px-3 py-8 md:py-24 lg:py-32">
                     <div className="grid grid-cols-4 gap-4">
-                        <div className="bg-teal-500 text-black col-span-2 rounded-3xl card overflow-hidden">
+                        <div className="bg-teal-500 text-black col-span-2 max-lg:col-span-4 rounded-3xl card overflow-hidden">
                             <div className='h-16 flex items-center pl-5 bg-indigo-950'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-earth"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" /><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" /><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" /><circle cx="12" cy="12" r="10" /></svg>
                             </div>
                             <div className='p-4 '>
-                                <h2 className="text-2xl font-bold max-lg:text-xl max-md:text-lg mb-4">{moon[0].title}</h2>
+                                <h2 className="text-2xl font-novaSemi max-lg:text-xl max-md:text-lg mb-2">{moon[0].title}</h2>
                                 <div className='mb-5'>
-                                    <p className="text-base mb-2.5">{moon[0].description}</p>
+                                    <p className="text-base mb-2.5 font-novaReg">{moon[0].description}</p>
                                 </div>
-                                <img src={moon[0].url} className="rounded-3xl"/>
+                                <img src={moon[0].url} className="rounded-3xl" />
                             </div>
                         </div>
-                        <div className="bg-teal-500 text-black col-span-2 rounded-3xl card overflow-hidden">
+                        <div className="bg-teal-500 text-black col-span-2 max-lg:col-span-4 rounded-3xl card overflow-hidden">
                             <div className='h-16 flex items-center pl-5 bg-indigo-950'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-satellite">
                                     <path d="M12 2l1.5 3h3l-2.5 2 1 3-3-1-2.5 2 2-2.5-3-1 2-2.5z" />
@@ -438,11 +438,11 @@ const NationalAdmissions = () => {
                                 </svg>
                             </div>
                             <div className='p-4'>
-                                <h2 className="text-2xl font-bold max-lg:text-xl max-md:text-lg mb-4">{ground[0].title}</h2>
+                                <h2 className="text-2xl font-novaSemi max-lg:text-xl max-md:text-lg mb-2">{ground[0].title}</h2>
                                 <div className=''>
                                     <ul className="text-base mb-2.5 list-disc pl-6">
                                         {ground[0].features.map((feature, index) => (
-                                            <li key={index} className="mb-2.5">
+                                            <li key={index} className="mb-2.5 font-novaReg">
                                                 {feature}
                                             </li>
                                         ))}

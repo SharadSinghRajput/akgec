@@ -170,121 +170,142 @@ const CSDepartment = () => {
           </div>
         </div>
       </main>
-      <section className='relative h-screen bg-cover flex flex-col justify-between'>
-        <div className='absolute inset-0 bg-BG42 bg-cover bg-fixed grayscale'>
-          <div className='absolute inset-0 bg-gray-800 bg-opacity-90' />
+      {/* Section 1: Computer Science & Engineering */}
+      <section className="relative h-[40vh] xl:h-[50vh] bg-cover flex flex-col justify-between lg:p-10">
+        <div className="absolute inset-0 bg-BG42 bg-cover bg-fixed grayscale">
+          <div className="absolute inset-0 bg-gray-800 bg-opacity-90" />
         </div>
-        <div className='relative h-[30vh] max-w-4xl w-full mx-auto text-white text-center flex items-center justify-between'>
+        <div className="relative max-w-4xl w-full mx-auto text-white text-center flex max-md:flex-col max-md:gap-5 items-center justify-between px-4 py-10">
           <div>
-            <h2 className='text-4xl font-novaBold max-w-lg leading-7'>COMPUTER SCIENCE & ENGINEERING</h2>
-            <span className='font-novaReg text-2xl'>Program Ranked Amongst</span>
-            <h1 className='text-6xl text-yellow-500 font-novaBold'>TOP UNIVERSITY</h1>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-novaBold max-w-lg leading-6 sm:leading-7">
+              COMPUTER SCIENCE & ENGINEERING
+            </h2>
+            <span className="text-lg sm:text-xl md:text-2xl font-novaReg">
+              Program Ranked Amongst
+            </span>
+            <h1 className="text-2xl sm:text-4xl xl:text-6xl text-yellow-500 font-novaBold">
+              TOP UNIVERSITY
+            </h1>
           </div>
           <div>
-            <img className='w-60 rounded-lg' src="/image/qs-i-gauge.jpg" alt="I-GAUGE" />
+            <img
+              className="w-40 sm:w-48 md:w-60 rounded-lg"
+              src="/image/qs-i-gauge.jpg"
+              alt="I-GAUGE"
+            />
           </div>
         </div>
-        <div className='relative h-[40vh] bg-blue-600 max-lg:bg-transparent px-8'>
-          <div className="-mt-40 grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-[1400px] mx-auto">
+      </section>
 
-            {/* Department at a Glance Card */}
-            <div className="bg-white rounded-lg p-6 shadow-lg h-fit">
-              <div className="flex items-center gap-3 mb-6">
-                <svg className="w-10 h-10 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <path d="M3 9h18M9 21V9" />
-                </svg>
-                <h2 className="text-2xl font-novaSemi text-black">Department at a Glance</h2>
-              </div>
-              <ul className="space-y-2 font-novaReg">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Innovative Curriculum with Global Standards</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Hands-on Experience with Emerging Technologies</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Strong Network with Industry Leaders</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Outstanding Career Opportunities</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Practical Learning through Real-world Projects</span>
-                </li>
-              </ul>
-              <button className="py-2 max-sm:py-1.5 max-sm:px-4 max-sm:text-xs px-5 mt-5 text-[15px] rounded-lg font-novaBold uppercase bg-btn-gradient animate-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform scale-y-105 tracking-widest flex items-center gap-1">
-                VIEW MORE <MoveRight className='w-5 h-5' />
-              </button>
+
+      {/* Section 2: Blue Background with 3 Cards */}
+      <section className="bg-blue-600 px-8 py-16 h-full xl:h-[50vh]">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-[1400px] mx-auto xl:-translate-y-40">
+          {/* Department at a Glance Card */}
+          <div className="bg-white rounded-lg p-6 shadow-lg h-fit">
+            <div className="flex items-center gap-3 mb-6">
+              <svg
+                className="w-10 h-10 text-gray-700"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M3 9h18M9 21V9" />
+              </svg>
+              <h2 className="text-2xl font-novaSemi text-black">
+                Department at a Glance
+              </h2>
             </div>
-
-            {/* Exclusive Labs Card */}
-            <div className="bg-white rounded-lg p-6 shadow-lg h-fit">
-              <div className="flex items-center gap-3 mb-6">
-                <svg className="w-10 h-10 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
-                  <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1" />
-                </svg>
-                <h2 className="text-2xl font-novaSemi text-black">Exclusive Labs</h2>
-              </div>
-              <ul className="space-y-2 font-novaReg">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Google Cloud Innovation Hub</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Amazon Web Services (AWS) Technical Center</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Intel Innovation Labs</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Cisco Systems Technology Center</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">SAP Next-Gen Labs</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
-                  <span className="text-gray-600">Dell Technologies Innovation Center</span>
-                </li>
-              </ul>
-              <button className="py-2 max-sm:py-1.5 max-sm:px-4 max-sm:text-xs px-5 mt-5 text-[15px] rounded-lg font-novaBold uppercase bg-btn-gradient animate-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform scale-y-105 tracking-widest flex items-center gap-1">
-                VIEW MORE <MoveRight className='w-5 h-5' />
-              </button>
-            </div>
-
-            {/* Department in a Nutshell Card */}
-            <div className="bg-white rounded-lg p-6 shadow-lg">
-              <div className="flex items-center gap-3 mb-6">
-                <h2 className="text-2xl font-novaSemi text-black">Your Department in a <br /> Nutshell</h2>
-              </div>
-
-              <ul className="space-y-1 font-novaReg">
-                {[
-                  'Innovations', 'Publications', 'Workshops', 'Guest Lectures',
-                  'Events', 'Research Centers', 'Coaching Programs', 'Syllabus',
-                  'Program Outcomes', 'Staff Directory', 'Best Practices'
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-[15px] text-gray-900 cursor-pointer hover:pl-1.5 duration-200 ease-in-out">
-                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                      <path d="M5 12h14m-7-7l7 7-7 7" />
-                    </svg>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+            <ul className="space-y-2 font-novaReg">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Innovative Curriculum with Global Standards</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Hands-on Experience with Emerging Technologies</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Strong Network with Industry Leaders</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Outstanding Career Opportunities</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Practical Learning through Real-world Projects</span>
+              </li>
+            </ul>
+            <button className="py-2 max-sm:py-1.5 max-sm:px-4 max-sm:text-xs px-5 mt-5 text-[15px] rounded-lg font-novaBold uppercase bg-btn-gradient animate-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform scale-y-105 tracking-widest flex items-center gap-1">
+              VIEW MORE <MoveRight className='w-5 h-5' />
+            </button>
           </div>
+
+          {/* Exclusive Labs Card */}
+          <div className="bg-white rounded-lg p-6 shadow-lg h-fit">
+            <div className="flex items-center gap-3 mb-6">
+              <svg className="w-10 h-10 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1" />
+              </svg>
+              <h2 className="text-2xl font-novaSemi text-black">Exclusive Labs</h2>
+            </div>
+            <ul className="space-y-2 font-novaReg">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Google Cloud Innovation Hub</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Amazon Web Services (AWS) Technical Center</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Intel Innovation Labs</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Cisco Systems Technology Center</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">SAP Next-Gen Labs</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mt-2"></span>
+                <span className="text-gray-600">Dell Technologies Innovation Center</span>
+              </li>
+            </ul>
+            <button className="py-2 max-sm:py-1.5 max-sm:px-4 max-sm:text-xs px-5 mt-5 text-[15px] rounded-lg font-novaBold uppercase bg-btn-gradient animate-gradient text-white w-max  hover:bg-[#3c5686] hover:border-b-4 hover:border-[#beb6ff] hover:transform scale-y-105 tracking-widest flex items-center gap-1">
+              VIEW MORE <MoveRight className='w-5 h-5' />
+            </button>
+          </div>
+
+          {/* Department in a Nutshell Card */}
+          <div className="bg-white rounded-lg p-6 shadow-lg">
+            <div className="flex items-center gap-3 mb-6">
+              <h2 className="text-2xl font-novaSemi text-black">Your Department in a <br /> Nutshell</h2>
+            </div>
+
+            <ul className="space-y-1 font-novaReg">
+              {[
+                'Innovations', 'Publications', 'Workshops', 'Guest Lectures',
+                'Events', 'Research Centers', 'Coaching Programs', 'Syllabus',
+                'Program Outcomes', 'Staff Directory', 'Best Practices'
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2 text-[15px] text-gray-900 cursor-pointer hover:pl-1.5 duration-200 ease-in-out">
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M5 12h14m-7-7l7 7-7 7" />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
       </section>
       <div className="max-w-[1400px] mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">

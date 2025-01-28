@@ -15,8 +15,8 @@ const Scholarship = () => {
                 <div className="max-w-[1400px] mx-auto h-full px-3">
                     <div className="max-w-2xl">
                         <div className="Cutout py-1.5 bg-yellow-400 mb-10"><h2 className="text-4xl font-novaReg">Year 2024-2025</h2></div>
-                        <p className="font-novaLight text-lg leading-6 text-justify">AKGU is dedicated to its Institutional Social Responsibility. As a leader in quality education, the University actively works to enhance educational standards and qualifications for students across the nation, with a particular focus on the northern region. AKGU is passionate about inspiring and supporting exceptional students by offering additional benefits and resources to recognize their achievements and potential.</p>
-                        <p className="mt-3 font-novaLight text-lg leading-6 text-justify">As a continuation of this commitment, new and attractive scholarship opportunities have been introduced for the academic year 2024-2025.</p>
+                        <p className="font-novaLight text-lg leading-6">AKGU is dedicated to its Institutional Social Responsibility. As a leader in quality education, the University actively works to enhance educational standards and qualifications for students across the nation, with a particular focus on the northern region. AKGU is passionate about inspiring and supporting exceptional students by offering additional benefits and resources to recognize their achievements and potential.</p>
+                        <p className="mt-3 font-novaLight text-lg leading-6">As a continuation of this commitment, new and attractive scholarship opportunities have been introduced for the academic year 2024-2025.</p>
                         <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">Avail Scholarship ➜</button>
                     </div>
                 </div>
@@ -24,8 +24,8 @@ const Scholarship = () => {
 
             <section className="px-3">
                 <div className="max-w-[1400px] mx-auto py-12 px-3 ">
-                    <div className="grid grid-cols-12 w-full gap-3">
-                        <div className="col-span-3 sticky">
+                    <div className="grid grid-cols-1 w-full gap-3 md:grid-cols-12">
+                        <div className="col-span-1 md:col-span-3 sticky">
                             <h3 className="text-2xl font-novaReg mb-6">Click below to view other Scholarships</h3>
                             <div className="flex flex-col">
                                 <a className="-mb-[1px]">
@@ -104,16 +104,16 @@ const Scholarship = () => {
                             </div>
                         </div>
 
-                        <div className="px-3 col-span-9">
+                        <div className="px-3 col-span-1 md:col-span-9">
                             <h3 className="text-4xl font-novaReg mb-6 ">AKG University <span className="font-novaSemi bg-text-gradient bg-clip-text text-transparent">Scholarships!</span></h3>
                             <div className="p-11 shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px]">
                                 <div className="flex mb-12 -mx-3">
                                     <div className="px-3">
                                         <h3 className="text-2xl font-novaLight">AKG University For The Academic Year 2024-2025</h3>
-                                        <p className="text-lg font-novaLight mt-2.5 mb-5 text-justify">To offer an opportunity to bright and inquisitive young minds from across the country to study in a challenging and diverse academic environment, AKG University has launched its entrance examination, providing double benefits. This scholarship initiative of the year allows students to access a total of ₹170 Crores in scholarships. It aims to recognize and reward the brilliance and potential of young aspirants, enabling them to secure scholarships and pursue futuristic courses of their choice.</p>
+                                        <p className="text-lg font-novaLight mt-2.5 mb-5">To offer an opportunity to bright and inquisitive young minds from across the country to study in a challenging and diverse academic environment, AKG University has launched its entrance examination, providing double benefits. This scholarship initiative of the year allows students to access a total of ₹170 Crores in scholarships. It aims to recognize and reward the brilliance and potential of young aspirants, enabling them to secure scholarships and pursue futuristic courses of their choice.</p>
 
                                         <h3 className="text-2xl font-novaLight">Scholarships Renewal Criteria & Renewal Process:</h3>
-                                        <p className="text-lg font-novaLight mt-2.5 mb-5 text-justify">Once awarded, scholarships will be valid for the entire duration of the program, provided that students consistently meet the established criteria, which will be reviewed annually. Scholarships will be renewed upon successful compliance with these requirements.</p>
+                                        <p className="text-lg font-novaLight mt-2.5 mb-5">Once awarded, scholarships will be valid for the entire duration of the program, provided that students consistently meet the established criteria, which will be reviewed annually. Scholarships will be renewed upon successful compliance with these requirements.</p>
 
                                         <h3 className="text-2xl font-novaLight">Current Renewal Criteria</h3>
                                         <ul className="text-lg font-novaLight mt-2 mb-4 pl-4">
@@ -137,7 +137,7 @@ const Scholarship = () => {
                                             </svg>
                                         </span>
 
-                                        <p className="font-novaLight text-red-500 text-justify">
+                                        <p className="font-novaLight text-red-500">
                                             <b>-</b> If a scholarship is discontinued in one year due to failure to meet the required criteria, the student may reapply in the following year if they then satisfy the minimum requirements. However, in this case, the student will only be eligible for 50% of the previously awarded scholarship amount for that subsequent year of study.
                                             <br />
                                             <b>-</b>
@@ -156,22 +156,34 @@ const Scholarship = () => {
                                     </div>
                                 </div>
                             </div>
-
-                            <div className="flex mt-4 w-full">
-                                <div className="w-6/12">
+                            <div className="flex flex-wrap mt-4 w-full">
+                                {/* Image Section */}
+                                <div className="w-full md:w-6/12">
                                     <img
                                         src="/image/top-nav.jpg"
                                         className="w-full"
+                                        alt="Top Navigation"
                                     />
                                 </div>
-                                <div className="bg-[#d91f24] w-6/12">
-                                    <div className="p-12">
-                                        <h3 className="text-2xl text-white font-novaReg">Get in Touch</h3>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">For any information please contact the below mentioned helpline nos:</p>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">General Inquiries:+91-1800-200-0777</p>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Mobile: +91-7290034978</p>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Toll Free: 8744052891-93</p>
-                                        <p className="mt-2.5 mb-5 text-white font-novaReg text-lg">Email: info@akgec.ac.in</p>
+                                {/* Text Section */}
+                                <div className="bg-[#d91f24] w-full md:w-6/12">
+                                    <div className="p-6 md:p-12">
+                                        <h3 className="text-xl md:text-2xl text-white font-novaReg">Get in Touch</h3>
+                                        <p className="mt-2 mb-4 text-white font-novaReg text-base md:text-lg">
+                                            For any information, please contact the below-mentioned helpline nos:
+                                        </p>
+                                        <p className="mt-2 mb-4 text-white font-novaReg text-base md:text-lg">
+                                            General Inquiries: +91-1800-200-0777
+                                        </p>
+                                        <p className="mt-2 mb-4 text-white font-novaReg text-base md:text-lg">
+                                            Mobile: +91-7290034978
+                                        </p>
+                                        <p className="mt-2 mb-4 text-white font-novaReg text-base md:text-lg">
+                                            Toll Free: 8744052891-93
+                                        </p>
+                                        <p className="mt-2 mb-4 text-white font-novaReg text-base md:text-lg">
+                                            Email: info@akgec.ac.in
+                                        </p>
                                     </div>
                                 </div>
                             </div>
