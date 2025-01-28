@@ -196,47 +196,55 @@ const FAQS = () => {
     };
 
     return (
-        <div className="bg-white p-10">
-            <h2 className="text-2xl font-novaBold mb-6">Frequently Asked Questions</h2>
+        <div className="bg-white p-2">
+            <h2 className="text-2xl font-novaBold mb-6 max-sm:text-xl">
+                Frequently Asked Questions
+            </h2>
 
-            <div className="flex space-x-2 mb-6 w-full">
+            <div className="flex gap-2 mb-6 w-full max-md:grid max-md:grid-cols-2 max-sm:grid max-sm:grid-cols-2 max-sm:gap-1.5 max-sm:mb-3">
                 {Object.keys(faqItems).map((section) => (
-                    <button
-                        key={section}
-                        onClick={() => handleSectionChange(section)}
-                        className={`px-4 w-fit py-2 transition-colors duration-200 ${currentSection === section
-                            ? "bg-blue-500 text-white "
-                            : "bg-white text-black border border-blue-400 "
-                            }`}
-                    >
-                        {section.charAt(0).toUpperCase() + section.slice(1).replace(/([A-Z])/g, ' $1')}
-                    </button>
+                <button
+                    key={section}
+                    onClick={() => handleSectionChange(section)}
+                    className={`px-4 py-2 transition-colors duration-200 rounded-md max-md:text-sm max-sm:text-sm max-sm:px-1.5 max-xl:px-3 max-lg:px-2.5 ${
+                    currentSection === section
+                        ? "bg-blue-500 text-white"
+                        : "bg-white text-black border border-blue-400"
+                    }`}
+                >
+                    {section.charAt(0).toUpperCase() +
+                    section.slice(1).replace(/([A-Z])/g, " $1")}
+                </button>
                 ))}
             </div>
 
             <div className="w-full text-black">
                 {faqItems[currentSection].map((item, index) => (
-                    <div key={index} className="mb-4 border-b border-gray-300">
-                        <a
-                            onClick={() => toggleFAQ(index)}
-                            className={`flex justify-between items-center w-full cursor-pointer p-4`}
-                            aria-expanded={openIndices.includes(index)}
-                        >
-                            <span className={`font-novaSemi ${openIndices.includes(index) ? 'text-[#00BFE7]' : 'text-black'}`}>
-                                {item.question}
-                            </span>
-                            {openIndices.includes(index) ? (
-                                <ChevronUp className="w-6 h-6" />
-                            ) : (
-                                <ChevronDown className="w-6 h-6" />
-                            )}
-                        </a>
-                        {openIndices.includes(index) && (
-                            <div className="ml-5 px-3">
-                                <p className="text-sm mb-2">{item.answer}</p>
-                            </div>
-                        )}
+                <div key={index} className="mb-4 border-b border-gray-300">
+                    <a
+                    onClick={() => toggleFAQ(index)}
+                    className="flex justify-between items-center w-full cursor-pointer p-4 max-sm:p-2"
+                    aria-expanded={openIndices.includes(index)}
+                    >
+                    <span
+                        className={`font-novaSemi ${
+                        openIndices.includes(index) ? "text-[#00BFE7]" : "text-black"
+                        } max-sm:text-sm`}
+                    >
+                        {item.question}
+                    </span>
+                    {openIndices.includes(index) ? (
+                        <ChevronUp className="w-6 h-6 max-sm:w-5 max-sm:h-5" />
+                    ) : (
+                        <ChevronDown className="w-6 h-6 max-sm:w-5 max-sm:h-5" />
+                    )}
+                    </a>
+                    {openIndices.includes(index) && (
+                    <div className="ml-5 px-3 max-sm:ml-2 max-sm:px-2">
+                        <p className="text-sm mb-2">{item.answer}</p>
                     </div>
+                    )}
+                </div>
                 ))}
             </div>
         </div>

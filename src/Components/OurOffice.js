@@ -32,9 +32,9 @@ const prog = [
 const OurOffice = () => {
     return (
         <section className="bg-BG16 bg-blend-multiply bg-primary bg-cover bg-center">
-            <div className="max-w-7xl mx-auto px-3 py-32 sm:px-6 lg:px-8 relative ">
+            <div className="max-w-7xl mx-auto px-3 py-32 sm:px-6 lg:px-8 relative max-sm:py-20">
                 <div className="relative z-10 max-w-7xl mx-auto">
-                    <h1 className="text-4xl font-novaBold text-center mb-2 text-secondary"> OUR OFFICE OF INTERNATIONAL RELATIONS </h1>
+                    <h1 className="text-4xl font-novaBold text-center mb-2 text-secondary max-md:text-3xl max-sm:text-2xl"> OUR OFFICE OF INTERNATIONAL RELATIONS </h1>
                     <p className="text-xl text-center mb-12 text-secondary">offers exclusive opportunities to explore the world</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {prog.map((prog, index) => (
