@@ -1,27 +1,22 @@
 import Header from "@/Components/Header";
 import SideBar from "@/Components/SideBar";
-import Breadcrumb from '@/Components/Breadcrumb';
 import ResidentialFacilities from "./ResidentialFacilities";
-const BreadCrumb = [
-    {
-        name: "Admissions",
-        Link: "#",
-    },
-    {
-        name: "Residential Facilities",
-        Link: "#",
-    }
+
+const SideBarLink = [
+    { name: "Campus Life", link: "/campus-life" },
+    { name: "Infrastructure", link: "/infrastructure" },
+    { name: "Academic Facilities", link: "/campus-life/academic-facilities" },
+    { name: "Campus Facilities", link: "/campus-life/campus-facilities" },
+    { name: "Transportation", link: "/campus-life/transportation" },
+    { name: "Residential Facilities", link: "/campus-life/residential-facilities" },
+    { name: "Library", link: "/campus-life/library" },
+    { name: "Auditorium", link: "/campus-life/auditorium" },
+    { name: "Student Welfare", link: "/campus-life/student-welfare" },
+    { name: "Convocations", link: "/campus-life/convocations" },
+    { name: "Tech Invent & Events", link: "/campus-life/tech-invent-and-events" },
+    { name: "Cultural & Cosmopolitan", link: "/campus-life/cultural-and-cosmopolitan" },
 ]
 
-// const SideBarLink = [
-//     { name: "Our Identity", link: "/overview" },
-//     { name: "Leadership", link: "" },
-//     { name: "Leadership", link: "" },
-//     { name: "Governance", link: "" },
-//     { name: "Recognition and Approvals", link: "" },
-//     { name: "Awards and Rankings", link: "" },
-//     { name: "Institution Social Responsibility", link: "" }
-// ]
 
 export const Home = () => {
     return (
@@ -29,17 +24,14 @@ export const Home = () => {
             <div className="bg-gray-200">
                 <div className="bg-PaperBackground ">
                     <div className="bg-white/80">
-                        <Header title={"Residential Facilities"} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
-                        <div className="w-full max-w-[1400px] pl-5 mt-20 mx-auto ">
-                            <Breadcrumb data={BreadCrumb} />
-                        </div>
-                        <section className="w-full max-w-[1400px] mx-auto px-4 max-sm:px-2">
+                        <Header title={"Residential Facilities"} bg="/image/building/building4.webp" gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+                        <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-8 px-4 max-sm:py-6 max-sm:px-2 max-sm:gap-0">
                             <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
                                 <ResidentialFacilities />
                             </div>
-                            {/* <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-12">
+                            <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-12">
                                 <SideBar title={"About Us"} LinkList={SideBarLink} />
-                            </div> */}
+                            </div>
                         </section>
                     </div>
                 </div>

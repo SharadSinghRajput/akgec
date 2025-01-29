@@ -40,13 +40,13 @@ export default function CampusFacilities() {
                 <div className="">
                     <h1 className="text-4xl font-novaReg mb-4 max-sm:text-xl max-sm:mb-2 max-sm:font-novaSemi">Campus Facilities</h1>
                     <div className="space-y-4 mb-8 max-sm:space-y-2.5 max-sm:mb-4">
-                        <p className="text-base text-gray-900 max-sm:text-sm">
+                        <p className="text-base text-gray-900 max-sm:text-sm text-justify">
                             AKG University provides a wide range of exceptional facilities designed to foster an environment where students can shape their future. The campus includes various cafés, restaurants, spaces for conferences and meetings, special events, receptions, and athletic competitions. We place great importance on our facilities and learning resources, ensuring that both staff and students have access to everything they need to excel in their academic and professional pursuits.
                         </p>
-                        <p className="text-base text-gray-900 max-sm:text-sm">
+                        <p className="text-base text-gray-900 max-sm:text-sm text-justify">
                             At AKG University, we understand the value of taking a break from academic pressures and relaxing with friends. Our university-owned and managed accommodations offer students the choice of quieter settings along with excellent social opportunities to meet new people. Our sports centers provide opportunities for fitness enthusiasts of all levels to stay active.
                         </p>
-                        <p className="text-base text-gray-900 max-sm:text-sm">
+                        <p className="text-base text-gray-900 max-sm:text-sm text-justify">
                             Safety and comfort remain our top priorities for both staff and students. The university’s dedicated fleet of buses offers a reliable pick-and-drop service, ensuring a comfortable travel experience for all students.
                         </p>
                     </div>
@@ -54,7 +54,7 @@ export default function CampusFacilities() {
 
                 <div className="grid grid-cols-3 max-xl:grid-cols-2 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-5 max-sm:gap-3 max-sm:">
                     {campusFacility?.map((CampusFacilities) => (
-                        <div key={CampusFacilities.name} className="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div key={CampusFacilities.name} className="bg-white group hover:scale-95 transition-all duration-300 ease-in-out rounded-lg shadow-md overflow-hidden">
                             <div
                                 className="w-full h-[180px] bg-cover"
                                 style={{
@@ -64,8 +64,8 @@ export default function CampusFacilities() {
                             />
                             <div className="p-4 max-sm:p-2.5">
                                 <h2 className="text-lg font-novaSemi mb-2 max-sm:text-base">{CampusFacilities.name}</h2>
-                                <div className="w-16 h-0.5 bg-red-500 mb-4 max-sm:mb-2.5"></div>
-                                <p className="text-gray-600 font-novaReg text-sm">{CampusFacilities.description}</p>
+                                <div className=" w-0 group-hover:w-full transition-all duration-300 ease-linear  h-0.5 bg-red-500 mb-4 max-sm:mb-2.5"></div>
+                                <p className="text-gray-600 font-novaReg text-sm text-justify">{CampusFacilities.description}</p>
                             </div>
                         </div>
                     ))}

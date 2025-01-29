@@ -501,6 +501,14 @@ export default function NavBar() {
                 >
                   <div className="grid grid-cols-2">
                     <div className="col-span-2 transition-all">
+                      <div className="flex p-5 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                        <div className="w-52 ">
+                          <LinksList title="CAMPUS LIFE" links={CampusLife.sublinks.slice(0, Math.ceil(CampusLife?.sublinks.length / 2))} setBigMenuToggle={setBigMenuToggle} />
+                        </div>
+                        <div className="w-52 ">
+                          <LinksList title="" links={CampusLife.sublinks.slice(Math.ceil(CampusLife?.sublinks.length / 2))} setBigMenuToggle={setBigMenuToggle} />
+                        </div>
+                      </div>
                       <div className="w-full relative max-md:hidden">
                         <div
                           className="absolute inset-0 bg-cover bg-center rounded-lg shadow-md"
@@ -514,43 +522,29 @@ export default function NavBar() {
                         <div className="relative bg-gradient-to-r from-[#3c5686c4] to-[#3c568693] bg-opacity-75 ">
                           <div className="relative h-1/2 z-10 text-white">
                             <h3 className="text-xl py-2 text-center font-novaLight">
-                              A Place Like Home
+                              Place Like Home
                             </h3>
                           </div>
-                          <div className="flex justify-evenly">
+                          <div className="flex justify-evenly text-center">
                             <div className="flex flex-col items-center text-white p-7">
                               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-ferris-wheel"><circle cx="12" cy="12" r="2" /><path d="M12 2v4" /><path d="m6.8 15-3.5 2" /><path d="m20.7 7-3.5 2" /><path d="M6.8 9 3.3 7" /><path d="m20.7 17-3.5-2" /><path d="m9 22 3-8 3 8" /><path d="M8 22h8" /><path d="M18 18.7a9 9 0 1 0-12 0" /></svg>
                               <span className="mt-2 text-xs text-white font-novaLight">
-                                Festivals
+                                Technology Infusion
                               </span>
                             </div>
                             <div className="flex flex-col items-center text-white p-7">
                               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-hand-coins"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /><path d="m2 16 6 6" /><circle cx="16" cy="9" r="2.9" /><circle cx="6" cy="5" r="3" /></svg>
                               <span className="mt-2 text-xs text-white font-novaLight">
-                                Culturally Diverse
+                                Student centered
                               </span>
                             </div>
                             <div className="flex flex-col items-center text-white p-7">
                               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3" /><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /><path d="m21 3 1 11h-2" /><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /><path d="M3 4h8" /></svg>
                               <span className="mt-2 text-xs text-white font-novaLight">
-                                Student-Friendly
-                              </span>
-                            </div>
-                            <div className="flex flex-col items-center text-white p-7">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-notebook-tabs"><path d="M2 6h4" /><path d="M2 10h4" /><path d="M2 14h4" /><path d="M2 18h4" /><rect width="16" height="20" x="4" y="2" rx="2" /><path d="M15 2v20" /><path d="M15 7h5" /><path d="M15 12h5" /><path d="M15 17h5" /></svg>
-                              <span className="mt-2 text-xs text-white font-novaLight">
-                                Technology integration
+                                Supportive Environment
                               </span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div className="flex p-5 group-hover:p-5 transition-all max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
-                        <div className="w-52 ">
-                          <LinksList title="CAMPUS LIFE" links={CampusLife.sublinks.slice(0, Math.ceil(CampusLife?.sublinks.length / 2))} setBigMenuToggle={setBigMenuToggle} />
-                        </div>
-                        <div className="w-52 ">
-                          <LinksList title="" links={CampusLife.sublinks.slice(Math.ceil(CampusLife?.sublinks.length / 2))} setBigMenuToggle={setBigMenuToggle} />
                         </div>
                       </div>
                     </div>

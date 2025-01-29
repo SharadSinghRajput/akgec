@@ -21,7 +21,7 @@ const membersData = [
 export default function StudentWelfare() {
     return (
         <div className="px-4 py-3 max-sm:px-2 max-sm:py-2">
-            <h2 className="text-4xl font-novaReg text-gray-900 mb-6 max-md:text-2xl max-md:mb-4 max-sm:text-xl max-sm:mb-3 max-sm:font-novaSemi">Quality Education and University System & Processes</h2>
+            <h2 className="text-4xl font-novaReg text-gray-900 mb-6 max-md:text-2xl max-md:mb-4 max-sm:text-xl max-sm:mb-3 max-sm:font-novaSemi">University Frameworks for Quality Learning</h2>
             <div className="mt-8 max-md:mt-5 max-sm:mt-3">
                 <h3 className="text-xl font-novaSemi text-gray-900 mb-6 max-md:mb-4 max-sm:text-lg max-sm:mb-3">Members</h3>
                 <div className="grid grid-cols-3 gap-6 max-xl:grid-cols-2 max-lg:grid-cols-3 max-md:grid-cols-2 max-md:gap-4 max-sm:grid-cols-1 max-sm:gap-3">
