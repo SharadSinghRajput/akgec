@@ -458,7 +458,7 @@ export default function NavBar() {
                     >
                       <div className="absolute inset-0 bg-indigo-950 opacity-70 rounded-lg"></div>
                     </div>
-                    <div className="relative bg-gradient-to-r from-[#3c5686c4] to-[#3c568693] bg-opacity-75 ">
+                    <div className="relative bg-indigo-950">
                       <div className="relative h-1/2 z-10 text-white">
                         <h3 className="text-xl py-2 text-center font-novaLight">
                           Open Doors to Your Future
@@ -519,7 +519,7 @@ export default function NavBar() {
                         >
                           <div className="absolute inset-0 bg-black opacity-70 rounded-lg"></div>
                         </div>
-                        <div className="relative bg-gradient-to-r from-[#3c5686c4] to-[#3c568693] bg-opacity-75 ">
+                        <div className="relative bg-indigo-950">
                           <div className="relative h-1/2 z-10 text-white">
                             <h3 className="text-xl py-2 text-center font-novaLight">
                               Place Like Home

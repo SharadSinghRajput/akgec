@@ -16,7 +16,7 @@ export default function Header({ title, height, subHeading, Button, gradient, po
             </div>
             <div className="mx-auto max-w-[1400px] px-6 mt-36">
                 <div className="mx-auto lg:mx-0">
-                    <h2 className="text-3xl font-novaReg tracking-tight text-white sm:text-[40px]">{title}</h2>
+                    <h2 className="text-3xl max-w-lg font-novaReg tracking-tight text-white sm:text-[40px]">{title}</h2>
                     <p className="mt-4 text-white font-novaReg max-w-xl text-xl lg:text-2xl">{subHeading}</p>
                     {Button ? <>
                         <a href={Button.Link} target="_blank" rel="noopener noreferrer" >

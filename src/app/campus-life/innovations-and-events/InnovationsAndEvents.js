@@ -49,7 +49,7 @@ const eventsData = [
     },
 ];
 
-const TechInventAndEvents = () => {
+const InnovationsAndEvents = () => {
 
     return (
         <>
@@ -81,4 +81,4 @@ const TechInventAndEvents = () => {
     );
 };
 
-export default TechInventAndEvents;
+export default InnovationsAndEvents;

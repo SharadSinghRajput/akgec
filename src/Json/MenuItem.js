@@ -448,12 +448,12 @@ export const CampusLife = {
             url: "/campus-life/convocations"
         },
         {
-            name: "Tech Invent & Events",
-            url: "/campus-life/tech-invent-and-events"
+            name: "Innovations & Events",
+            url: "/campus-life/innovations-and-events"
         },
         {
-            name: "Cultural & Cosmopolitan",
-            url: "/campus-life/cultural-and-cosmopolitan"
+            name: "Extra-Curricular Societies",
+            url: "/campus-life/extra-curricular-societies"
         },
     ]
 }

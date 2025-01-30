@@ -166,37 +166,6 @@ const CampusLife = () => {
 
             <div className="bg-indigo-900 text-white min-h-screen py-20">
                 <div className="max-w-7xl max-xl:max-w-5xl max-lg:grid-cols-1 max-lg:max-w-3xl mx-auto grid grid-cols-5 gap-5 px-5">
-                    <div className="col-span-2 max-lg:col-span-1">
-                        <div className="space-y-6">
-                            <div>  
-                                <h1 className="text-5xl font-bold max-w-lg max-lg:max-w-full uppercase">
-                                Where Comfort Meets<span className="text-orange-400"> New</span>
-                                    <span className="text-orange-400"> Beginnings</span>
-                                </h1>
-                                <p className="mt-4 text-3xl max-w-md max-lg:max-w-xl leading-none font-novaReg">
-                                A Cosmopolitan Campus: Where Cultures Converge, <strong>Ideas Flourish, and Opportunities Abound</strong> </p>
-                            </div>
-                            <button className="py-2.5 px-6 rounded-xl bg-yellow-500 text-black font-novaBold tracking-wider text-sm hover:bg-orange-600 flex items-center gap-2">
-                                {slides[currentSlide].buttonText}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-play"><circle cx="12" cy="12" r="10" /><polygon points="10 8 16 12 10 16 10 8" /></svg>
-                            </button>
-                        </div>
-
-                        <div className="flex items-center mt-32 max-xl:mt-10 max-lg:mt-20">
-                            <svg className="w-12 h-12 mr-2 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                            <h2 className="text-2xl font-novaBold leading-none max-w-52 mb-4 flex items-center">
-                                WHAT PEOPLE SAY ABOUT US?
-                            </h2>
-                        </div>
-                        <div className="space-y-12 max-xl:space-y-3 max-lg:space-y-10 mt-10">
-                            <Slider heading={"Student Speaks"} slidesData={studentSpeaks} />
-                            <Slider white={true} heading={"Faculty Speaks"} slidesData={facultySpeaks} />
-                        </div>
-
-                    </div>
-
                     <div className="col-span-3">
                         <div className="space-y-8">
                             <div className="relative group overflow-hidden rounded-2xl h-[400px]">
@@ -234,6 +203,35 @@ const CampusLife = () => {
                                     </button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="col-span-2 max-lg:col-span-1">
+                        <div className="space-y-6 text-right">
+                            <div>
+                                <h1 className="text-5xl font-bold max-w-lg max-lg:max-w-full uppercase">
+                                    Where Comfort Meets<span className="text-orange-400"> New</span>
+                                    <span className="text-orange-400"> Beginnings</span>
+                                </h1>
+                                <p className="mt-4 text-3xl leading-none font-novaReg">
+                                    A Cosmopolitan Campus: Where Cultures Converge, <strong>Ideas Flourish, and Opportunities Abound</strong> </p>
+                            </div>
+                            <button className="py-2.5 px-6 rounded-xl float-right bg-yellow-500 text-black font-novaBold tracking-wider text-sm hover:bg-orange-600 flex items-center gap-2">
+                                {slides[currentSlide].buttonText}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#fff" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-play"><circle cx="12" cy="12" r="10" /><polygon points="10 8 16 12 10 16 10 8" /></svg>
+                            </button>
+                        </div>
+
+                        <div className="flex justify-end mt-32 max-xl:mt-10 max-lg:mt-20">
+                            <svg className="w-12 h-12 mr-2 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            <h2 className="text-2xl font-novaBold text-right leading-none max-w-48 mb-4 flex items-center">
+                                WHAT PEOPLE SAY ABOUT US?
+                            </h2>
+                        </div>
+                        <div className="space-y-12 max-xl:space-y-3 max-lg:space-y-10 mt-10">
+                            <Slider right={true} heading={"Student Speaks"} slidesData={studentSpeaks} />
+                            <Slider right={true} white={true} heading={"Faculty Speaks"} slidesData={facultySpeaks} />
                         </div>
                     </div>
                 </div>
@@ -276,35 +274,35 @@ const CampusLife = () => {
                         </div>
                     </div>
                     <div className="col-span-2 mb-auto">
-                    <div className="space-y-8">
-                        <Slider right={true} heading={"Distinguished Guests"} slidesData={distinguishedGuests} />
-                        <div className="relative group overflow-hidden rounded-2xl h-[450px]">
-                            <img src="/image/campus-life/plantation.jpeg" alt="Plantation" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
-                            <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Plantation</h3>
+                        <div className="space-y-8">
+                            <Slider right={true} heading={"Distinguished Guests"} slidesData={distinguishedGuests} />
+                            <div className="relative group overflow-hidden rounded-2xl h-[450px]">
+                                <img src="/image/campus-life/plantation.jpeg" alt="Plantation" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
+                                <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Plantation</h3>
 
-                            {/* Hover overlay */}
-                            <div className="absolute inset-0 bg-indigo-900 bg-opacity-70 flex justify-center items-end translate-y-full group-hover:translate-y-0 transition-transform duration-200">
-                                <button className="mb-10 px-6 py-3 uppercase tracking-wider bg-secondary font-novaBold text-black rounded-md">
-                                    View More
-                                </button>
+                                {/* Hover overlay */}
+                                <div className="absolute inset-0 bg-indigo-900 bg-opacity-70 flex justify-center items-end translate-y-full group-hover:translate-y-0 transition-transform duration-200">
+                                    <button className="mb-10 px-6 py-3 uppercase tracking-wider bg-secondary font-novaBold text-black rounded-md">
+                                        View More
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="relative group overflow-hidden rounded-2xl h-[450px]">
+                                <img src="/image/campus-life/sports.jpg" alt="Sports" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
+                                <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Sports</h3>
+
+                                {/* Hover overlay */}
+                                <div className="absolute inset-0 bg-indigo-900 bg-opacity-70 flex justify-center items-end translate-y-full group-hover:translate-y-0 transition-transform duration-200">
+                                    <button className="mb-10 px-6 py-3 uppercase tracking-wider bg-secondary font-novaBold text-black rounded-md">
+                                        View More
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div className="relative group overflow-hidden rounded-2xl h-[450px]">
-                            <img src="/image/campus-life/sports.jpg" alt="Sports" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
-                            <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Sports</h3>
-
-                            {/* Hover overlay */}
-                            <div className="absolute inset-0 bg-indigo-900 bg-opacity-70 flex justify-center items-end translate-y-full group-hover:translate-y-0 transition-transform duration-200">
-                                <button className="mb-10 px-6 py-3 uppercase tracking-wider bg-secondary font-novaBold text-black rounded-md">
-                                    View More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div className="max-w-7xl max-xl:max-w-5xl max-lg:grid-cols-1 max-lg:max-w-3xl mx-auto grid grid-cols-3 gap-8 px-5 mt-20">
-                    <div className="relative group overflow-hidden rounded-2xl h-[500px]">
+                    <div className="relative group overflow-hidden rounded-2xl h-[300px]">
                         <img src="/image/campus-life/Award2023.jpg" alt="Awards" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
                         <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Awards</h3>
 
@@ -315,7 +313,7 @@ const CampusLife = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="relative group overflow-hidden rounded-2xl h-[500px]">
+                    <div className="relative group overflow-hidden rounded-2xl h-[300px]">
                         <img src="/image/campus-life/sports-fest.jpg" alt="Sports Fest" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
                         <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Sports Fest</h3>
 
@@ -326,7 +324,7 @@ const CampusLife = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="relative group overflow-hidden rounded-2xl h-[500px]">
+                    <div className="relative group overflow-hidden rounded-2xl h-[300px]">
                         <img src="/image/campus-life/Yoga2023.jpg" alt="Yoga" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
                         <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Yoga</h3>
 
@@ -337,7 +335,7 @@ const CampusLife = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="relative group overflow-hidden rounded-2xl h-[500px]">
+                    <div className="relative group overflow-hidden rounded-2xl h-[300px]">
                         <img src="/image/campus-life/sports.jpg" alt="Sports" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
                         <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Sports</h3>
 
@@ -348,7 +346,7 @@ const CampusLife = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="relative group overflow-hidden rounded-2xl h-[500px]">
+                    <div className="relative group overflow-hidden rounded-2xl h-[300px]">
                         <img src="/image/campus-life/plantation.jpeg" alt="Plantation" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
                         <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Plantation</h3>
 
@@ -359,7 +357,7 @@ const CampusLife = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="relative group overflow-hidden rounded-2xl h-[500px]">
+                    <div className="relative group overflow-hidden rounded-2xl h-[300px]">
                         <img src="/image/campus-life/cultural.jpg" alt="Garba" className="w-full h-full object-cover transition-transform duration-[5s] group-hover:scale-125" />
                         <h3 className="absolute z-10 top-5 left-1/2 -translate-x-1/2 text-4xl w-full text-center font-novaReg">Garba</h3>
 

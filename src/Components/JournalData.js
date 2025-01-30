@@ -14,8 +14,8 @@ export default function JournalData({tabs, content}) {
                 <div className="p-4">
                     <div className="flex flex-col space-y-2">
                         {tabs.map((tab) => (
-                            <ul>
-                                <li key={tab} className={`px-4 py-2 rounded cursor-pointer ${activeTab === tab ? "bg-black text-white" : "bg-transparent text-gray-700 hover:bg-gray-100"} 
+                            <ul key={tab}>
+                                <li className={`px-4 py-2 rounded font-novaReg cursor-pointer ${activeTab === tab ? "bg-black text-white" : "bg-transparent text-gray-700 hover:bg-gray-100"} 
                             justify-start`} onClick={() => setActiveTab(tab)}>{tab}</li>
                             </ul>
                         ))}

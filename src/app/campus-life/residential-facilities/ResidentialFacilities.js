@@ -54,9 +54,9 @@ const ResidentialFacilities = () => {
                         />
                         <div className="px-4 max-sm:px-2.5">
                             <h2 className="text-lg font-semibold mb-2 group-hover:text-blue-500 max-sm:text-base">{hostel.title}</h2>
-                            <div className="w-0 group-hover:w-full transition-all duration-300 ease-linear h-1 bg-blue-300 mb-2 max-sm:mb-1.5"></div>
+                            <div className="w-0 group-hover:w-full transition-all duration-300 ease-linear h-0.5 bg-blue-300 mb-2 max-sm:mb-1.5"></div>
                         </div>
-                        <p className="text-sm p-4 max-md:p-3 max-sm:p-2.5">{hostel.desc}</p>
+                        <p className="text-sm p-4 max-md:p-3 max-sm:p-2.5 text-justify">{hostel.desc}</p>
                         <div className="flex justify-between p-2 max-sm:p-2.5">
                             <button className="hover:text-blue-400">Read More</button>
                             <button className="text-base border border-blue-400 px-5 py-1.5 rounded-3xl hover:bg-blue-500 max-sm:px-3 max-sm:text-sm">Book Now</button>

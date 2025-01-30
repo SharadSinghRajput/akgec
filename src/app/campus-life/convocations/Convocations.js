@@ -109,7 +109,7 @@ const Convocations = () => {
     return (
         <>
             <section className="relative bg-BG45 bg-center bg-no-repeat bg-cover h-[90vh]">
-                <div className='absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-80' />
+                <div className='absolute inset-0 bg-black opacity-30' />
                 <div className="max-w-7xl mx-auto px-3">
                     <div className="absolute inset-0 flex">
                         <div className="w-1/2 h-full">
