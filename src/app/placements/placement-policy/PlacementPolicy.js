@@ -4,7 +4,7 @@ const PlacementPolicy = () => {
   return (
     <section className="">
       <h2 className="text-4xl font-novaReg mb-2">Placement Policy</h2>
-      <main className="space-y-6">
+      <main className="space-y-6 text-justify">
         <p className="">
           The objective of the placement policy at AKGU is to outline the overall structure and processes involved in
           the Training and Placement, ensuring clear responsibilities for all teams working toward successful placements.

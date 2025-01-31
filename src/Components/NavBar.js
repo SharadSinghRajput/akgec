@@ -109,7 +109,7 @@ export default function NavBar() {
 
   return (
     <header
-      className={`navbar z-[100] w-full fixed top-0 left-0 bg-[#F7F7F7] transition-all duration-200 shadow-lg`}>
+      className={`navbar z-[100] w-full sticky top-0 left-0 bg-[#F7F7F7] transition-all duration-200 shadow-lg`}>
       <div className="grid grid-cols-8 max-xl:grid-cols-12 max-lg:grid-cols-12 max-md:grid-cols-12 gap-x-5 max-[1320px]:gap-x-0 max-md:gap-x-2">
         <div className="col-span-2 flex max-xl:col-span-3 max-lg:col-span-6 max-md:col-span-7 max-sm:col-span-7">
           <div
@@ -551,7 +551,7 @@ export default function NavBar() {
                   </div>
                 </div>
               </li>
-              <li className="xl:relative group">
+              <li className="group">
                 <button onClick={() => toggleMenu('placements')} className={`navlinks relative px-3 max-xl:px-1 ${isScrolled ? "py-3" : "py-3"}  focus:outline-none text-gray-700 font-novaBold text-sm max-[1600px]:text-sm flex items-center gap-1`}>
                   PLACEMENTS{" "}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
@@ -563,6 +563,11 @@ export default function NavBar() {
                                     text-black rounded-lg shadow-lg `}
                 >
                   <div className="grid grid-cols-9">
+                    <div className="col-span-5 w-max p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
+                      <div className="w-max pr-5">
+                        <LinksList title="PLACEMENTS" links={Placements.sublinks["Placements"]} setBigMenuToggle={setBigMenuToggle} />
+                      </div>
+                    </div>
                     <div className="col-span-4 max-md:hidden">
                       <div className="bg-Placement bg-cover bg-black bg-blend-multiply bg-opacity-50">
                         <div className="flex flex-col items-center p-4">
@@ -580,35 +585,30 @@ export default function NavBar() {
                         </div>
                         <div className="grid grid-cols-2 bg-indigo-950">
                           <div className="flex flex-col items-center text-white border-r border-b border-t-white/50 p-7">
-                            <FontAwesomeIcon icon={faGoogle} size="3x" />
-                            <span className="mt-2 text-xs text-white font-light">
+                            <img src="/image/navbar/Google-logo.png" alt="google" />
+                            <span className="mt-2 text-xs text-white font-novaSemi">
                               Google
                             </span>
                           </div>
-                          <div className="flex flex-col items-center text-white border-b border-t-white/50 p-7">
-                            <FontAwesomeIcon icon={faAmazon} size="3x" />
-                            <span className="mt-2 text-xs text-white font-light">
+                          <div className="mt-3 flex flex-col items-center text-white border-b border-t-white/50 p-7">
+                            <img src="/image/navbar/Amazon-Logo.png" alt="Amazon" />
+                            <span className="mt-2 text-xs text-white font-novaSemi">
                               Amazon
                             </span>
                           </div>
                           <div className="flex flex-col items-center text-white border-r border-t-white/50 p-7">
-                            <FontAwesomeIcon icon={faMicrosoft} size="3x" />
-                            <span className="mt-2 text-xs text-white font-light">
+                            <img src="/image/navbar/infosys-logo-png.png" alt="Infosys" />
+                            <span className="mt-2 text-xs text-white font-novaSemi">
                               Microsoft
                             </span>
                           </div>
                           <div className="flex flex-col items-center text-white border-t-white/50 p-7">
-                            <FontAwesomeIcon icon={faShopify} size="3x" />
-                            <span className="mt-2 text-xs text-white font-light">
-                              Shopify
+                            <img src="/image/navbar/TCS.NS_BIG.png" alt="TCS" />
+                            <span className="mt-4 text-xs text-white font-novaSemi">
+                              TCS
                             </span>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div className="col-span-5 w-max p-5 transition-all max-md:col-span-2 max-md:max-h-72 max-md:overflow-y-scroll max-md:flex-col">
-                      <div className="w-max pr-5">
-                        <LinksList title="PLACEMENTS" links={Placements.sublinks["Placements"]} setBigMenuToggle={setBigMenuToggle} />
                       </div>
                     </div>
                   </div>

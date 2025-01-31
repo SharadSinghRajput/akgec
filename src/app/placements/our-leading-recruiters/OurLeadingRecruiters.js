@@ -28,7 +28,6 @@ const content = [
 const company = [
     { img: "/image/company-logos/AccentureIcon.webp" },
     { img: "/image/company-logos/Adobe.webp" },
-    { img: "/image/company-logos/AirForce.webp" },
     { img: "/image/company-logos/airtel.webp" },
     { img: "/image/company-logos/Amazon.webp" },
     { img: "/image/company-logos/amdocsIcon.webp" },
@@ -53,7 +52,6 @@ const company = [
     { img: "/image/company-logos/HSBC.webp" },
     { img: "/image/company-logos/ibm.webp" },
     { img: "/image/company-logos/Impetus.webp" },
-    { img: "/image/company-logos/IndianArmy.webp" },
     { img: "/image/company-logos/IndianNavy.webp" },
     { img: "/image/company-logos/infosys.webp" },
     { img: "/image/company-logos/Interra.webp" },
@@ -87,48 +85,54 @@ const company = [
     { img: "/image/company-logos/uTorrent.webp" },
     { img: "/image/company-logos/vivo.webp" },
     { img: "/image/company-logos/WalmartIcon.webp" },
-    { img: "/image/company-logos/WIPRO.webp" }
+    { img: "/image/company-logos/WIPRO.webp" },
+    { img: "/image/company-logos/AirForce.webp" },
+    { img: "/image/company-logos/IndianArmy.webp" },
 ];
 
 const OurLeadingRecruiters = () => {
     return (
         <>
-            <section className="max-w-[1400px] mx-auto px-3 pt-20">
-                <div className="flex mb-6">
-                    <div className="px-3">
-                        <div className="w-full mb-4">
-                            <h3 className="font-novaReg text-4xl">AKG University: Placement Overview</h3>
-                        </div>
-                        <p className="text-lg font-novaReg mb-4">
-                            <strong>Reaching New Heights, Setting New Records!</strong>
-                        </p>
-                        {content.map((item, index) => (
-                            <p key={index} className="text-sm mb-3">
-                                {item.text}
+            <section className="max-w-[1400px] mx-auto px-3 pt-20 max-md:pt-10">
+                <div className="mb-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        <div>
+                            <div className="w-full mb-4">
+                                <h3 className="font-novaReg text-4xl max-md:text-2xl">AKG University: Placement Overview</h3>
+                            </div>
+                            <p className="text-lg font-novaReg mb-4">
+                                <strong>Reaching New Heights, Setting New Records!</strong>
                             </p>
-                        ))}
-
-                        <div className="mb-4 mt-6">
-                            <h3 className="font-novaReg text-4xl">Our Leading Recruiters</h3>
-                            <p className="text-sm font-novaReg">
-                                Strategic Partnerships with Leading Companies for Enhanced Industry Connections and More!
-                            </p>
+                            {content.map((item, index) => (
+                                <p key={index} className="font-novaReg mb-3 text-justify">
+                                    {item.text}
+                                </p>
+                            ))}
                         </div>
 
-                        <div className="mb-10">
-                            <ul className="flex flex-wrap justify-between">
-                                {company.map((comp, index) => (
-                                    <li key={index} className="w-36 m-2.5 max-md:m-1 max-md:w-28">
-                                        <span aria-label={`Logo of Company ${index + 1}`}>
-                                            <img
-                                                src={comp.img}
-                                                className="w-full h-40 object-contain p-2.5"
-                                                alt={`Logo of Company ${index + 1}`}
-                                            />
-                                        </span>
-                                    </li>
-                                ))}
-                            </ul>
+                        <div className="border">
+                            <div className="mb-4 bg-gray-100 p-6 max-sm:p-2">
+                                <h3 className="font-novaReg text-4xl max-md:text-2xl">Our Leading Recruiters</h3>
+                                <p className="text-sm font-novaReg">
+                                    Strategic Partnerships with Leading Companies for Enhanced Industry Connections and More!
+                                </p>
+                            </div>
+
+                            <div className="mb-10">
+                                <ul className="flex flex-wrap justify-between">
+                                    {company.map((comp, index) => (
+                                        <li key={index} className="flex items-center justify-center">
+                                            <span aria-label={`Logo of Company ${index + 1}`}>
+                                                <img
+                                                    src={comp.img}
+                                                    className="w-24 object-contain p-2.5"
+                                                    alt={`Logo of Company ${index + 1}`}
+                                                />
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

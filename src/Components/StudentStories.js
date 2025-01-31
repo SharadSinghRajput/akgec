@@ -108,7 +108,7 @@ const StudentStories = () => {
                     <p className="text-xs font-novaSemi text-gray-600">{testimonial.designation} at {testimonial.company}</p>
                   </div>
                 </div>
-                <p className="text-sm font-novaReg text-gray-700 line-clamp-5">{testimonial.speaks}</p>
+                <p className="text-sm font-novaReg text-gray-700 line-clamp-5 text-justify">{testimonial.speaks}</p>
               </div>
             </div>
           ))}

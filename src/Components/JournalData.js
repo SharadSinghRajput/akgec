@@ -27,7 +27,7 @@ export default function JournalData({tabs, content}) {
                     <h2 className="text-lg font-novaBold uppercase">{activeTab}</h2>
                 </div>
                 <div className="p-4">
-                    <p className="whitespace-pre-wrap">{content[activeTab]}</p>
+                    <span className="whitespace-pre-wrap">{content[activeTab]}</span>
                 </div>
             </div>
         </div>

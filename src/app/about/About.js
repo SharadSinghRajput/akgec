@@ -12,7 +12,7 @@ export default function About() {
     (_, i) => `/image/company-logos/logo${i + 1}.jpg`
   );
   return (
-    <div className="about-page-container" style={{ marginTop: "88px" }}>
+    <div className="about-page-container">
       {/* Section 1 */}
       <motion.section
         className="relative w-full h-screen"

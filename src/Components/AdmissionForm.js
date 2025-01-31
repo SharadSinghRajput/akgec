@@ -60,7 +60,7 @@ const AdmissionForm = () => {
                                 name="day"
                                 className="w-1/3 px-4 py-2 border placeholder:font-serif placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 required>
-                                <option value="" disabled selected>DD</option>
+                                <option value="" disabled>DD</option>
                                 {Array.from({ length: 31 }, (_, i) => (
                                     <option key={i + 1} value={i + 1}>
                                         {i + 1}
@@ -72,7 +72,7 @@ const AdmissionForm = () => {
                                 name="month"
                                 className="w-1/3 px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 required>
-                                <option value="" disabled selected>MM</option>
+                                <option value="" disabled>MM</option>
                                 {Array.from({ length: 12 }, (_, i) => (
                                     <option key={i + 1} value={i + 1}>
                                         {new Date(0, i).toLocaleString("en", {
@@ -86,7 +86,7 @@ const AdmissionForm = () => {
                                 name="year"
                                 className="w-1/3 px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 required>
-                                <option value="" disabled selected>YYYY</option>
+                                <option value="" disabled>YYYY</option>
                                 {Array.from({ length: 100 }, (_, i) => (
                                     <option key={i} value={2023 - i}>
                                         {2023 - i}
@@ -102,9 +102,8 @@ const AdmissionForm = () => {
                             id="program"
                             name="program"
                             className="w-full px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            required
-                        >
-                            <option value="" disabled selected>
+                            required>
+                            <option value="" disabled>
                                 Select your program
                             </option>
                             <option value="engineering">Engineering</option>
@@ -126,7 +125,7 @@ const AdmissionForm = () => {
                         <textarea id="message" name="message" rows="4" className="w-full px-4 py-2 border placeholder:font-serif placeholder:text-sm border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter any additional information"></textarea>
                     </div>
                     <div className="text-center">
-                        <button type="submit" className="w-full bg-secondary text-sm font-slick font-bold uppercase px-4 py-3 rounded-md hover:bg-indigo-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500">Submit Application</button>
+                        <button type="submit" className="w-full bg-secondary text-sm font-novaBold uppercase px-4 py-3 rounded-md hover:bg-indigo-950 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500">Submit Application</button>
                     </div>
                 </form>
             </div>

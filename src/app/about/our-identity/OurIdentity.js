@@ -35,7 +35,7 @@ const OurIdentity = () => {
             <div className="py-6 overflow-hidden relative">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     {features.map((item, index) => (
-                        <div className={`w-full bg-gradient-to-r ${item.bg} p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300`}>
+                        <div key={index} className={`w-full bg-gradient-to-r ${item.bg} p-8 rounded-2xl shadow-lg transform hover:-translate-y-2 transition duration-300`}>
                             <h2 className="text-2xl font-novaSemi mb-6 text-white border-b-2 border-indigo-200 pb-2">{item.title}</h2>
                             <p className="text-white text-justify font-novaReg">{item.description}</p>
                         </div>
