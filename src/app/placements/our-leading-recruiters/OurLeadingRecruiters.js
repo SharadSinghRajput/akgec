@@ -1,3 +1,5 @@
+import SideBar from "@/Components/SideBar";
+
 const content = [
     {
         text: <>Recognized as the <strong>'University with Best Placements', AKG University (NAAC A+ grade University)</strong> has emerged as a prominent leader in the region. A remarkable 65% increase in corporate visits to the university highlights the outstanding achievements of our Alumni in their respective fields. AKG University has proudly become the first institution in India to be featured in the <strong>Limca Book of Records</strong> for the Highest Number of Companies Participating in a single academic year.</>
@@ -90,49 +92,63 @@ const company = [
     { img: "/image/company-logos/IndianArmy.webp" },
 ];
 
+const SideBarLink = [
+    { name: "About Placements", link: "/placements" },
+    { name: "Dept. of Career Planning & Development", link: "/placements/department-of-career-development" },
+    { name: "Top Placement", link: "/placements/top-placement" },
+    { name: "Placement Highlights", link: "/placements/placement-highlights" },
+    { name: "Placement Policy", link: "/placements/placement-policy" },
+    { name: "Our Leading Recruiters", link: "/placements/our-leading-recruiters" },
+    { name: "Contact Placement Cell", link: "/placements/contact-placement-cell" }
+]
+
 const OurLeadingRecruiters = () => {
     return (
         <>
             <section className="max-w-[1400px] mx-auto px-3 pt-20 max-md:pt-10">
                 <div className="mb-6">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                        <div>
-                            <div className="w-full mb-4">
-                                <h3 className="font-novaReg text-4xl max-md:text-2xl">AKG University: Placement Overview</h3>
-                            </div>
-                            <p className="text-lg font-novaReg mb-4">
-                                <strong>Reaching New Heights, Setting New Records!</strong>
-                            </p>
-                            {content.map((item, index) => (
-                                <p key={index} className="font-novaReg mb-3 text-justify">
-                                    {item.text}
+                    <div className="">
+                        <div className="grid grid-cols-12 gap-8 max-sm:gap-0">
+                            <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
+                                <div className="w-full mb-4">
+                                    <h3 className="font-novaReg text-4xl max-md:text-2xl">AKG University: Placement Overview</h3>
+                                </div>
+                                <p className="text-lg font-novaReg mb-4">
+                                    <strong>Reaching New Heights, Setting New Records!</strong>
                                 </p>
-                            ))}
+                                {content.map((item, index) => (
+                                    <p key={index} className="font-novaReg mb-3 text-justify">
+                                        {item.text}
+                                    </p>
+                                ))}
+                            </div>
+                            <div className="col-span-3 max-xl:col-span-4 max-lg:col-span-12">
+                                <SideBar title={"About Us"} LinkList={SideBarLink} />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border mt-10">
+                        <div className="mb-4 bg-gray-100 p-6 max-sm:p-2">
+                            <h3 className="font-novaReg text-4xl max-md:text-2xl">Our Leading Recruiters</h3>
+                            <p className="text-sm font-novaReg">
+                                Strategic Partnerships with Leading Companies for Enhanced Industry Connections and More!
+                            </p>
                         </div>
 
-                        <div className="border">
-                            <div className="mb-4 bg-gray-100 p-6 max-sm:p-2">
-                                <h3 className="font-novaReg text-4xl max-md:text-2xl">Our Leading Recruiters</h3>
-                                <p className="text-sm font-novaReg">
-                                    Strategic Partnerships with Leading Companies for Enhanced Industry Connections and More!
-                                </p>
-                            </div>
-
-                            <div className="mb-10">
-                                <ul className="flex flex-wrap justify-between">
-                                    {company.map((comp, index) => (
-                                        <li key={index} className="flex items-center justify-center">
-                                            <span aria-label={`Logo of Company ${index + 1}`}>
-                                                <img
-                                                    src={comp.img}
-                                                    className="w-24 object-contain p-2.5"
-                                                    alt={`Logo of Company ${index + 1}`}
-                                                />
-                                            </span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
+                        <div className="mb-10">
+                            <ul className="flex flex-wrap justify-between">
+                                {company.map((comp, index) => (
+                                    <li key={index} className="flex items-center justify-center">
+                                        <span aria-label={`Logo of Company ${index + 1}`}>
+                                            <img
+                                                src={comp.img}
+                                                className="w-32 object-contain p-2.5"
+                                                alt={`Logo of Company ${index + 1}`}
+                                            />
+                                        </span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
