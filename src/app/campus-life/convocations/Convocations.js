@@ -104,30 +104,36 @@ const convocationData = [
     },
 ];
 
-
 const Convocations = () => {
     return (
         <>
-            <section className="relative bg-BG45 bg-center bg-no-repeat bg-cover h-[90vh]">
-                <div className='absolute inset-0 bg-black opacity-30' />
+            <section className="relative bg-BG27 bg-center bg-no-repeat bg-cover h-[90vh]">
+                <div className='absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-80' />
                 <div className="max-w-7xl mx-auto px-3">
                     <div className="absolute inset-0 flex">
-                        <div className="w-1/2 h-full">
-                        </div>
-                        <div className="w-1/2 bg-cyan-300 opacity-80 h-full flex items-center justify-center flex-col">
-                            <div className="max-w-xl">
-                                <h2 className="text-6xl font-novaReg uppercase mb-3">Proudly <span className="font-semibold text-white">Graduating</span> Future Leaders</h2>
-                                <h6 className="font-novaReg text-2xl border-y py-3 border-gray-600 text-center">A Day to Celebrate and Reflect on Success</h6>
-                                <p className="mt-3 font-novaSemi text-center">Celebrating graduates' achievements as they embark on new journeys.</p>
+                        <div className="hidden md:block w-1/2 h-full"></div>
+
+                        <div className="w-full md:w-1/2 bg-red-300 opacity-80 h-full flex items-center justify-center flex-col">
+                            <div className="max-w-xl px-4 text-center">
+                                <h2 className="text-3xl md:text-5xl lg:text-6xl font-novaReg uppercase mb-3">
+                                    Proudly <span className="font-semibold text-white">Graduating</span> Future Leaders
+                                </h2>
+                                <h6 className="font-novaReg text-lg md:text-xl lg:text-2xl border-y py-2 md:py-3 border-gray-600">
+                                    A Day to Celebrate and Reflect on Success
+                                </h6>
+                                <p className="mt-3 text-sm md:text-base lg:text-lg font-novaSemi">
+                                    Celebrating graduates' achievements as they embark on new journeys.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section className="bg-[#faf9f6]">
                 <div className="max-w-[1400px] mx-auto px-3 py-10">
                     <EventTabs />
-                    <div className='max-w-[1400px] max-2xl:max-w-6xl max-xl:max-w-5xl max-lg:max-w-3xl mx-auto grid grid-cols-12 gap-8 py-10'>
+                    <div className='grid grid-cols-12 gap-8 py-10 max-sm:gap-4'>
                         {convocationData?.map((event, index) => (
                             <Card key={index} img={event.img} title={event.title} desc={event.desc} />
                         ))}
