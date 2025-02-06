@@ -4,11 +4,11 @@ import { Mail, Phone } from 'lucide-react'
 const ContactPlacementCell = () => {
     return (
         <div className="px-2 rounded-xl text-black">
-            <h1 className="text-4xl font-novaReg mb-8">Contact Information of Placement Cell</h1>
-            <div className="grid md:grid-cols-2 gap-10">
-                <div className="space-y-6">
-                    <h2 className="text-2xl font-novaReg">Dr. Rakesh Srivastava</h2>
-                    <p className="font-novaReg">Dean - Training & Placement</p>
+            <h1 className="text-4xl font-novaReg mb-8 max-md:text-3xl max-sm:text-2xl max-md:mb-6 max-sm:mb-4">Contact Information of Placement Cell</h1>
+            <div className="grid md:grid-cols-2 gap-10 max-lg:gap-8 max-md:gap-6 max-sm:gap-4">
+                <div className="space-y-6 max-md:space-y-4 max-sm:space-y-3">
+                    <h2 className="text-2xl font-novaReg max-md:text-xl max-sm:text-lg">Dr. Rakesh Srivastava</h2>
+                    <p className="text-base font-novaReg max-sm:text-sm">Dean - Training & Placement</p>
                     <div className="flex items-center space-x-3">
                         <Mail className="w-6 h-6" />
                         <a
@@ -30,9 +30,9 @@ const ContactPlacementCell = () => {
                         </a>
                     </div>
                 </div>
-                <div className="space-y-6">
-                    <h2 className="text-2xl font-novaReg">Dr. Hemant Ahuja</h2>
-                    <p className=" font-novaReg">Joint Director AKGU, Training and Placement Department</p>
+                <div className="max-sm:pb-6 space-y-6 max-md:space-y-5 max-sm:space-y-4">
+                    <h2 className="text-2xl font-novaReg max-md:text-xl max-sm:text-lg">Dr. Hemant Ahuja</h2>
+                    <p className="text-base font-novaReg max-sm:text-sm">Joint Director AKGU, Training and Placement Department</p>
                     <div className="flex flex-col space-y-2">
                         <div className="flex items-center space-x-3">
                             <Mail className="w-6 h-6" />

@@ -6,7 +6,7 @@ const Card = ({ img, title, desc }) => {
             <div className='h-60 max-2xl:h-48 w-full overflow-hidden group'>
                 <img className='h-full w-full object-cover object-top transition-transform duration-[5s] group-hover:scale-125' src={img} alt={title} />
             </div>
-            <div className='mt-3 px-4'>
+            <div className='mt-3 px-4 max-sm:px-2'>
                 <h2 className=' max-xl:text-base leading-none uppercase font-novaBold'>
                     {title}
                 </h2>
