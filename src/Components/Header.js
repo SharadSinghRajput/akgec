@@ -9,9 +9,12 @@ const bgImages = {
     'BG8': "/image/building/building8.webp",
     'BG9': "/image/building/building9.webp",
     'BG10': "/image/building/building10.webp",
+    'BG11': "/image/building/central_Library.webp",
+    'BG12': "/image/building/girls hostel.webp",
+    'BG13': "/image/building/lecture theatre.webp",
 }
 
-export default function Header({ title, height, subHeading, Button, gradient, position = "center", bgKey ="BG3" }) {
+export default function Header({ title, height, subHeading, Button, gradient = true, position = "center", bgKey ="BG3" }) {
 
     const bg=bgImages[bgKey] || "/image/header-image.jpg";
     
@@ -23,7 +26,7 @@ export default function Header({ title, height, subHeading, Button, gradient, po
                     src={bg}
                     className={`h-full w-full object-${position} object-cover`}
                 />
-                <div className={`absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent`}></div>
+                {gradient && <div className={`absolute inset-0 ${typeof gradient === "string" ? gradient : "bg-gradient-to-r from-black/70 to-transparent"}`}></div>}
             </div>
             <div
                 aria-hidden="true"
