@@ -1,3 +1,4 @@
+"use client";
 
 const data = [
     {
@@ -45,7 +46,16 @@ function ProfessionalBodies() {
                 <div className='absolute z-20 bottom-0 right-0 w-1/2 max-lg:w-2/3 bg-[#db1e46] max-sm:bg-transparent max-sm:w-full max-sm:justify-center flex flex-col gap-5 p-24 max-2xl:p-16 max-md:p-10 text-white'>
                     <h1 className='text-7xl max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-sm:text-2xl font-novaSemi max-w-2xl'>Professional Bodies at Ajay Kumar Garg University</h1>
                     <p className='max-lg:text-sm max-sm:text-xs max-w-md'>The Professional Bodies at AKG University are organisations designed to advance their members' intellectual capabilities through an open exchange of information.</p>
-                    <button className='bg-white w-fit text-xs py-2.5 px-6 tracking-widest text-black uppercase font-novaBold rounded-xl'>Know More</button>
+                    <button
+                        className='bg-white w-fit text-xs py-2.5 px-6 tracking-widest text-black uppercase font-novaBold rounded-xl'
+                        onClick={() => {
+                            const section = document.getElementById("industry-partner");
+                            if (section) {
+                                section.scrollIntoView({ behavior: "smooth" });
+                                window.history.pushState(null, "", "#industry-partner");
+                            }
+                        }}
+                    >Know More</button>
                 </div>
             </section>
             <section className='max-w-7xl mx-auto text-center py-16 max-sm:py-10'>
@@ -69,7 +79,7 @@ function ProfessionalBodies() {
                     </p>
                 </div>
             </section>
-            <section className='relative bg-BG13 bg-cover min-h-screen'>
+            <section className='relative bg-BG13 bg-cover min-h-screen' id="industry-partner">
                 <div className='hidden max-lg:block absolute inset-0 bg-black opacity-70'></div>
                 <div className='absolute inset-0 max-w-[1300px] mx-auto flex justify-end max-lg:justify-center'>
                     <div className='p-10 max-lg:p-0'>

@@ -9,9 +9,24 @@ export default function CampusVirtualTour() {
   const [currentPanoramaIndex, setCurrentPanoramaIndex] = useState(0)
   const [fov, setFov] = useState(100)
 
-  const panoramas = [
-    'https://pannellum.org/images/alma.jpg', 
-    'https://pannellum.org/images/bma-1.jpg',
+  const virtualTour = [
+    '/image/virtual-tour/img.jpg',
+    '/image/virtual-tour/img-1.jpg',
+    '/image/virtual-tour/img-2.jpg',
+    '/image/virtual-tour/img-3.jpg',
+    '/image/virtual-tour/img-4.jpg',
+    '/image/virtual-tour/img-5.jpg',
+    '/image/virtual-tour/img-6.jpg',
+    '/image/virtual-tour/img-7.jpg',
+    '/image/virtual-tour/img-8.jpg',
+    '/image/virtual-tour/img-9.jpg',
+    '/image/virtual-tour/img-10.jpg',
+    '/image/virtual-tour/img-11.jpg',
+    '/image/virtual-tour/img-12.jpg',
+    '/image/virtual-tour/img-13.jpg',
+    '/image/virtual-tour/img-14.jpg',
+    '/image/virtual-tour/img-15.jpg',
+    '/image/virtual-tour/img-16.jpg',
   ]
 
   useEffect(() => {
@@ -31,7 +46,7 @@ export default function CampusVirtualTour() {
         if (pannellum && viewerRef.current) {
           const v = pannellum.viewer(viewerRef.current, {
             type: 'equirectangular',
-            panorama: panoramas[currentPanoramaIndex],
+            panorama: virtualTour[currentPanoramaIndex],
             autoLoad: true,
             hfov: fov,
           })
@@ -63,41 +78,41 @@ export default function CampusVirtualTour() {
       const initialFov = 100;
       setFov(initialFov);
       viewer.setHfov(initialFov);
-      viewer.setYaw(0); // Reset yaw
-      viewer.setPitch(0); // Reset pitch
+      viewer.setYaw(0);
+      viewer.setPitch(0);
     }
   }
 
   const handleFullscreen = () => viewer?.toggleFullscreen()
 
   const handleNextPanorama = () => {
-    setCurrentPanoramaIndex((currentPanoramaIndex + 1) % panoramas.length)
+    setCurrentPanoramaIndex((currentPanoramaIndex + 1) % virtualTour.length)
   }
 
   const handlePreviousPanorama = () => {
-    setCurrentPanoramaIndex((currentPanoramaIndex - 1 + panoramas.length) % panoramas.length)
+    setCurrentPanoramaIndex((currentPanoramaIndex - 1 + virtualTour.length) % virtualTour.length)
   }
 
   return (
     <div className="w-full mx-auto py-4">
       <div ref={viewerRef} className="w-full aspect-video rounded-lg overflow-hidden shadow-lg"></div>
       <div className="mt-4 flex justify-center space-x-2">
-        <button onClick={handlePreviousPanorama} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400">
+        <button onClick={handlePreviousPanorama} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">
           <ChevronLeft className="h-6 w-6" />
         </button>
-        <button onClick={handleNextPanorama} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400">
+        <button onClick={handleNextPanorama} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">
           <ChevronRight className="h-6 w-6" />
         </button>
-        <button onClick={handleZoomIn} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400">
+        <button onClick={handleZoomIn} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">
           <ZoomIn className="h-6 w-6" />
         </button>
-        <button onClick={handleZoomOut} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400">
+        <button onClick={handleZoomOut} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">
           <ZoomOut className="h-6 w-6" />
         </button>
-        <button onClick={handleReset} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400">
-          <RotateCcw className="h-6 w-6" /> {/* Reset button with rotation icon */}
+        <button onClick={handleReset} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">
+          <RotateCcw className="h-6 w-6" />
         </button>
-        <button onClick={handleFullscreen} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400">
+        <button onClick={handleFullscreen} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">
           <Maximize className="h-6 w-6" />
         </button>
       </div>
