@@ -19,10 +19,12 @@ const DegreeVerification = () => {
                 </p>
                 <div className="p-6 rounded-lg mb-4 bg-[#f0f9fe]">
                     <h2 className="text-lg max-sm:text-sm font-novaSemi mb-4">Verify documents associated with AKG University in no time!</h2>
+                    <a href="/contact" target="_blank">
                     <button className="text-blue-500 max-sm:text-sm flex items-center">
                         Need Help?
                         <HelpCircle className="w-4 h-4 ml-1" />
                     </button>
+                    </a>
                     <div
                         className="border-2 border-dashed border-gray-300 rounded-lg p-8 my-5 text-center cursor-pointer"
                         onClick={handleCloudUploadClick}

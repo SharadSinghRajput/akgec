@@ -140,10 +140,10 @@ export const Academics = {
                 name: 'System of Evaluation',
                 url: '/academics/system-of-evaluation'
             },
-            {
-                name: 'Degree Verification',
-                url: '/academics/degree-verification'
-            },
+            // {
+            //     name: 'Degree Verification',
+            //     url: '/academics/degree-verification'
+            // },
             {
                 name: 'National Academic Depository(NAD)',
                 url: '/academics/national-academic-depository'

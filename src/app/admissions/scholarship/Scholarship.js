@@ -1,8 +1,8 @@
 const Scholarship = () => {
     return (
         <>
-            <div className="bg-Header w-full h-[500px] bg-black bg-blend-darken bg-opacity-80 bg-cover bg-no-repeat">
-                <div className="max-w-[1400px] mx-auto h-full px-3 items-end flex justify-between">
+            <div className="bg-BG16 w-full h-[60vh] bg-black bg-blend-darken bg-opacity-40 bg-center bg-cover bg-no-repeat">
+                <div className="max-w-[1400px] mx-auto h-full px-3 items-end flex justify-start">
                     <div className="text-white">
                         <h2 className="text-[42px] leading-none font-novaReg ">AKG <br /> University, <br />Scholarship</h2>
                     </div>
@@ -14,7 +14,7 @@ const Scholarship = () => {
             <div className="bg-BG17 h-[450px] w-full top-20 bg-no-repeat bg-cover">
                 <div className="max-w-[1400px] mx-auto h-full px-3">
                     <div className="max-w-2xl">
-                        <div className="Cutout py-1.5 bg-yellow-400 mb-10"><h2 className="text-4xl font-novaReg">Year 2024-2025</h2></div>
+                        <div className="Cutout py-1.5 bg-[#d7292b] mb-10"><h2 className="text-4xl font-novaReg text-white">Year 2024-2025</h2></div>
                         <p className="font-novaLight text-lg leading-6">AKGU is dedicated to its Institutional Social Responsibility. As a leader in quality education, the University actively works to enhance educational standards and qualifications for students across the nation, with a particular focus on the northern region. AKGU is passionate about inspiring and supporting exceptional students by offering additional benefits and resources to recognize their achievements and potential.</p>
                         <p className="mt-3 font-novaLight text-lg leading-6">As a continuation of this commitment, new and attractive scholarship opportunities have been introduced for the academic year 2024-2025.</p>
                         <button className="mt-5 rounded-md uppercase bg-secondary px-5 py-3 text-base font-novaBold tracking-wider hover:text-white text-black shadow-sm hover:bg-[#3c5686] duration-300">Avail Scholarship ➜</button>

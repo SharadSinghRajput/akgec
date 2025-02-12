@@ -1,4 +1,20 @@
-export default function Header({ title, height, subHeading, Button, gradient, position = "center", bg = "/image/header-img.jpg" }) {
+const bgImages = {
+    'BG1': "/image/building/building1.webp",
+    'BG2': "/image/building/building2.webp",
+    'BG3': "/image/building/building3.webp",
+    'BG4': "/image/building/building4.webp",
+    'BG5': "/image/building/building5.webp",
+    'BG6': "/image/building/building6.webp",
+    'BG7': "/image/building/building7.webp",
+    'BG8': "/image/building/building8.webp",
+    'BG9': "/image/building/building9.webp",
+    'BG10': "/image/building/building10.webp",
+}
+
+export default function Header({ title, height, subHeading, Button, gradient, position = "center", bgKey ="BG3" }) {
+
+    const bg=bgImages[bgKey] || "/image/header-image.jpg";
+    
     return (
         <div className={`relative isolate overflow-hidden py-24 sm:py-32 xl:py-36 max-[400px]:py-12 ${height}`}>
             <div className="absolute inset-0 -z-10 h-full w-full">

@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <>
             <div className="bg-gray-100">
-                <Header title={<>Academic Bank of Credits (ABC)</>} Button={{ name: "Go to ABC", Link: "https://www.abc.gov.in/" }} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+                <Header title={<>Academic Bank of Credits (ABC)</>} Button={{ name: "Go to ABC", Link: "https://www.abc.gov.in/" }} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} bgKey="BG3"/>
                 <ABC />
             </div>
         </>
