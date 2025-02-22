@@ -350,7 +350,7 @@ export const Admissions = {
             },
             {
                 name: 'Admission Flow',
-                url: '/admissions/admission-flow'
+                url: '/admissions/admission-process'
             },
             {
                 name: 'AKGU Scholarship',

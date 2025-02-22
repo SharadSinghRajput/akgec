@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <>
         <div className="bg-gray-100">
-        <Header title={"Programme Curriculum"} Button={Button} gradient={true} bgKey="BG9"/>
+        <Header title={"Programme Curriculum"} buttonType={"link"} buttonText="Apply Now" buttonLink="" gradient={true} bgKey="BG9"/>
             <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 max-sm:py-2 gap-10 px-2 max-sm:gap-2">
                 <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
                     <ProgrammeCurriculum />

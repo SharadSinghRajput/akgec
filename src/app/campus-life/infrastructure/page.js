@@ -8,23 +8,34 @@ const SideBarLink = [
   { name: "Academic Facilities", link: "/campus-life/academic-facilities" },
   { name: "Campus Facilities", link: "/campus-life/campus-facilities" },
   { name: "Transportation", link: "/campus-life/transportation" },
-  { name: "Residential Facilities", link: "/campus-life/residential-facilities" },
-  { name: "Library", link: "/campus-life/library"},
-  { name: "Auditorium", link: "/campus-life/auditorium"},
-  { name: "Student Welfare", link: "/campus-life/student-welfare"},
-  { name: "Convocations", link: "/campus-life/convocations"},
-  { name: "Tech Invent & Events", link: "/campus-life/tech-invent-and-events"},
-  { name: "Cultural & Cosmopolitan", link: "/campus-life/cultural-and-cosmopolitan"},
-]
-
-
+  {
+    name: "Residential Facilities",
+    link: "/campus-life/residential-facilities",
+  },
+  { name: "Library", link: "/campus-life/library" },
+  { name: "Auditorium", link: "/campus-life/auditorium" },
+  { name: "Student Welfare", link: "/campus-life/student-welfare" },
+  { name: "Convocations", link: "/campus-life/convocations" },
+  { name: "Tech Invent & Events", link: "/campus-life/tech-invent-and-events" },
+  {
+    name: "Cultural & Cosmopolitan",
+    link: "/campus-life/cultural-and-cosmopolitan",
+  },
+];
 
 export default function AboutPlacement() {
   return (
     <>
       <div className="bg-[#f2f6ff]">
-        <Header title={"Designed to inspire, built to empower"} bg="/image/building/building4.webp" Button={{ name: "Apply Now", Link: "/" }} gradient={"bg-gradient-to-r from-zinc-900 to-gray-900/40"} />
-        <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-8 px-4 max-sm:py-6 max-sm:px-2 max-sm:gap-0">
+        <Header
+          title={"Designed to inspire, built to empower"}
+          bgKey="BG4"
+          buttonType={"link"}
+          buttonText="Apply Now"
+          buttonLink="/"
+          gradient={"bg-gradient-to-r from-black/70 to-transparent"}
+        />
+        <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-16 gap-8 px-4 max-lg:py-10 max-md:py-8 max-sm:py-6 max-sm:px-2 max-sm:gap-0">
           <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
             <Infrastructure />
           </div>
