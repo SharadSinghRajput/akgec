@@ -69,7 +69,7 @@ export default function Header({
             </div>
 
             <div className="relative mx-auto max-w-[1400px] px-6 py-20">
-                <div className="mx-auto lg:mx-0">
+                <div className="mx-auto lg:mx-0 space-y-6">
                     <h2 className="text-3xl max-w-lg font-novaReg tracking-tight text-white sm:text-[40px]">{title}</h2>
                     <p className="mt-4 text-white font-novaReg max-w-xl text-xl lg:text-2xl">{subHeading}</p>
 

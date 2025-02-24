@@ -24,7 +24,7 @@ export const Home = () => {
         <div className="bg-gray-200">
             <div className="bg-PaperBackground ">
                 <div className="bg-white/80">
-                    <Header title={"Campus Facilities"} bg="/image/building/building5.webp" gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+                    <Header title={"Campus Facilities"} bgKey="BG2" gradient={"bg-gradient-to-r from-black to-slate-900/"} height="h-[600px]"/>
                     <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 gap-8 px-4 max-sm:px-2 max-sm:gap-2 max-sm:py-8">
                         <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
                             <CampusFacilities/>
