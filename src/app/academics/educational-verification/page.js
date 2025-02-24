@@ -27,7 +27,11 @@ export const Home = () => {
     return (
         <>
             <div className="">
-                <Header title={"Educational Verification"} gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+                <Header 
+                    title={"Educational Verification"}
+                    bgKey="BG8"
+                    gradient={"bg-gradient-to-r from-black to-white/"} 
+                />
                 <div className="w-full max-w-[1400px] pl-10 mt-20 mx-auto ">
                     <Breadcrumb data={BreadCrumb} />
                 </div>
