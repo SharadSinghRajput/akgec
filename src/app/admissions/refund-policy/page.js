@@ -15,7 +15,14 @@ const SideBarLink = [
 export const Home = () => {
     return (
         <div className="bg-gray-100">
-        <Header Button={{ name: "Apply Now", Link: "/" }} title="Fee Refund Policy" gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"} />
+        <Header
+            title="Fee Refund Policy"
+            bgKey="BG6"
+            buttonType={"link"}
+            buttonLink="/"
+            buttonText="Fee Refund Policy"
+            gradient={"bg-gradient-to-r from-gray-900 to-gray-900/40"}
+        />
             <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-20 max-sm:py-5 gap-10 px-2 max-sm:gap-0">
                 <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
                 <RefundPolicy />

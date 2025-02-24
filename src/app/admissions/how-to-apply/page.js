@@ -17,11 +17,10 @@ export default function Home() {
       <div className="bg-gray-100">
         <Header
           title="How To Apply"
-          gradient="bg-gradient-to-r from-gray-900 to-transparent"
+          gradient="bg-gradient-to-r from-black to-white/"
           buttonType="form"
           buttonText="Apply Now"
           formKey="applyNow"
-          // buttonLink="/admissions/admission-criteria"
           bgKey="BG2"
         />
 
