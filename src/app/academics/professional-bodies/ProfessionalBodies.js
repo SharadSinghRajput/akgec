@@ -73,7 +73,7 @@ function ProfessionalBodies() {
                     </p>
                 </div>
             </section>
-            <section className='relative bg-BG13 bg-cover min-h-[90vh] max-2xl:h-[120vh] max-lg:h-[120vh] max-md:h-[120vh] max-sm:h-[120vh]' id="industry-partner">
+            <section className='relative bg-BG13 bg-cover min-h-[90vh] max-lg:h-[120vh]' id="industry-partner">
                 <div className='hidden max-lg:block absolute inset-0 bg-black opacity-70'></div>
                 <div className='absolute inset-0 max-w-[1300px] mx-auto flex justify-end max-lg:justify-center'>
                     <div className='p-10 max-lg:p-0'>
