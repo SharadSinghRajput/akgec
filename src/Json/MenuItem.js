@@ -205,20 +205,36 @@ export const Programs = {
     name: "Programs",
     links: "/",
     sublinks: {
-        "School of Engineering & Technology": {
+        "School of Computer Science Engineering & Technology": {
             "Programs": [
                 {
-                    name: 'Department of Computer Science & Engineering',
+                    name: 'B.Tech in Computer Science Engineering',
                     url: '/department-of-computer-science-and-engineering'
                 },
                 {
-                    name: 'Department of Information Technology',
-                    url: '/'
+                    name: 'B.Tech in Data Science',
+                    url: '/department-of-data-science'
                 },
                 {
-                    name: 'Department of Artificial Intelligence & Machine Learning',
+                    name: 'B.Tech in Artificial Intelligence & Machine Learning',
+                    url: '/department-of-artificial-intelligence-&-machine-learning'
+                },
+                {
+                    name: 'B.Tech in Information Technology',
+                    url: '/department-of-information-technology'
+                },
+                {
+                    name: 'M.Tech in Computer Science Engineering',
+                    url: 'department-of-masters-in-computer-science-and-engineering'
+                },
+                {
+                    name: 'MCA- Master of Computer Applications',
+                    url: '/department-of-masters-of-computer-application'
+                },
+                {
+                    name: 'Ph.D',
                     url: '/'
-                }
+                },
             ],
             "Program": {
                 "Graduate": [
@@ -243,24 +259,36 @@ export const Programs = {
                 ]
             }
         },
-        "School of Applied Science Engineering": {
+        "School of Engineering & Technology": {
             "Programs": [
                 {
-                    name: 'Department of Electronics & Communication Engineering',
+                    name: 'B.Tech in Electronics and Communication Engineering',
+                    url: '/department-of-electronics-and-communication-engineering'
+                },
+                {
+                    name: 'B.Tech in Electrical & Electronics Engineering',
                     url: '/'
                 },
                 {
-                    name: 'Department of Electrical Engineering',
+                    name: 'B.Tech in Mechanical Engineering',
                     url: '/'
                 },
                 {
-                    name: 'Department of Mechanical Engineering',
+                    name: 'B.Tech in Civil Engineering',
                     url: '/'
                 },
                 {
-                    name: 'Department of Civil Engineering',
+                    name: 'M.Tech in Electronics and Communication Engineering',
                     url: '/'
-                }
+                },
+                {
+                    name: 'M.Tech in Electrical & Electronics Engineering',
+                    url: '/'
+                },
+                {
+                    name: 'Ph.D',
+                    url: '/'
+                },
             ],
             "Program": {
                 "Graduate": [
@@ -280,9 +308,13 @@ export const Programs = {
         "School of Business Studies": {
             "Programs": [
                 {
-                    name: 'Department of Management',
+                    name: 'MBA- Master of Business Administration',
                     url: '/'
-                }
+                },
+                {
+                    name: 'Ph.D',
+                    url: '/'
+                },
             ],
             "Program": {
                 "Graduate": [
